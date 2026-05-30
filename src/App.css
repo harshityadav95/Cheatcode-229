@@ -1,0 +1,14 @@
+#root {
+  min-height: 100vh;
+}
+
+pre,
+code {
+  font-family:
+    "SFMono-Regular", Consolas, "Liberation Mono", Menlo, ui-monospace,
+    monospace;
+}
+
+svg text {
+  letter-spacing: 0;
+}
