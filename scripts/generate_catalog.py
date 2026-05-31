@@ -9,10 +9,13 @@ from __future__ import annotations
 
 import json
 import re
+import base64
+import zlib
 from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+PDF_NAME = "DSA_2026_BW_RENDERED_DIAGRAMS.pdf"
 
 
 RAW_PROBLEMS = """
@@ -592,7 +595,250 @@ def go_name(index: int) -> str:
     return f"Solve{index:03d}"
 
 
-def parse_problems() -> list[dict]:
+def clean_join(lines: list[str]) -> str:
+    text = " ".join(line.strip() for line in lines if line.strip())
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def section(lines: list[str], marker: str, next_markers: list[str]) -> list[str]:
+    try:
+        start = lines.index(marker) + 1
+    except ValueError:
+        return []
+
+    end = len(lines)
+    for next_marker in next_markers:
+        try:
+            end = min(end, lines.index(next_marker, start))
+        except ValueError:
+            continue
+    return lines[start:end]
+
+
+def after_label(lines: list[str], label: str, stop_labels: list[str] | None = None) -> str:
+    try:
+        start = lines.index(label) + 1
+    except ValueError:
+        return ""
+
+    end = len(lines)
+    for stop_label in stop_labels or []:
+        try:
+            end = min(end, lines.index(stop_label, start))
+        except ValueError:
+            continue
+    return clean_join(lines[start:end])
+
+
+def extract_pdf_streams(pdf_path: Path) -> list[bytes]:
+    data = pdf_path.read_bytes()
+    return re.findall(
+        rb"<<(?:.|\n)*?/Filter\[/ASCII85Decode/FlateDecode\](?:.|\n)*?>>stream\r?\n(.*?)\r?\nendstream",
+        data,
+        re.S,
+    )
+
+
+def extract_tj_strings(page_stream: str) -> list[str]:
+    strings: list[str] = []
+    cursor = 0
+    while True:
+        end = page_stream.find(") Tj", cursor)
+        if end < 0:
+            break
+
+        start = end - 1
+        while start >= 0:
+            if page_stream[start] == "(":
+                slash_count = 0
+                probe = start - 1
+                while probe >= 0 and page_stream[probe] == "\\":
+                    slash_count += 1
+                    probe -= 1
+                if slash_count % 2 == 0:
+                    break
+            start -= 1
+
+        raw = page_stream[start + 1 : end] if start >= 0 else ""
+        chars: list[str] = []
+        pos = 0
+        while pos < len(raw):
+            char = raw[pos]
+            if char == "\\" and pos + 1 < len(raw):
+                pos += 1
+                chars.append(
+                    {
+                        "n": "\n",
+                        "r": "\r",
+                        "t": "\t",
+                        "b": "\b",
+                        "f": "\f",
+                        "(": "(",
+                        ")": ")",
+                        "\\": "\\",
+                    }.get(raw[pos], raw[pos])
+                )
+            else:
+                chars.append(char)
+            pos += 1
+
+        strings.append("".join(chars))
+        cursor = end + 4
+    return strings
+
+
+def parse_example(example_lines: list[str]) -> dict[str, str]:
+    current = ""
+    parts = {"input": "", "output": "", "why": ""}
+    for line in example_lines:
+        if line.startswith("Input:"):
+            current = "input"
+            parts[current] = line.removeprefix("Input:").strip()
+        elif line.startswith("Output:"):
+            current = "output"
+            parts[current] = line.removeprefix("Output:").strip()
+        elif line.startswith("Why:"):
+            current = "why"
+            parts[current] = line.removeprefix("Why:").strip()
+        elif current:
+            parts[current] = f"{parts[current]} {line.strip()}".strip()
+    return parts
+
+
+def parse_pdf_page(strings: list[str]) -> dict | None:
+    lines = [line.strip() for line in strings if line.strip()]
+    title_line = next((line for line in lines if line.startswith("MAIN PROBLEM")), "")
+    if not title_line:
+        return None
+
+    title_match = re.match(r"MAIN PROBLEM (\d+) of 229: (\d+)\. (.*)", title_line)
+    if not title_match:
+        raise ValueError(f"Could not parse title line: {title_line}")
+
+    meta_line = next(line for line in lines if line.startswith("Pattern:"))
+    meta_match = re.match(r"Pattern: (.*?) \| Sources: (.*?) \| Companies: (.*)", meta_line)
+    if not meta_match:
+        raise ValueError(f"Could not parse metadata line: {meta_line}")
+
+    index = int(title_match.group(1))
+    leetcode = int(title_match.group(2))
+    title = title_match.group(3)
+    pattern = meta_match.group(1)
+    guide = PATTERN_GUIDES.get(pattern, PATTERN_GUIDES["Array / String"])
+
+    sources = [source.strip() for source in meta_match.group(2).split(",")]
+    companies = [
+        company.strip()
+        for company in meta_match.group(3).replace(" (public samples)", "").split(",")
+    ]
+    time = next(line.split(": ", 1)[1] for line in lines if line.startswith("Time:"))
+    space = next(line.split(": ", 1)[1] for line in lines if line.startswith("Space:"))
+
+    problem_section = section(lines, "Problem statement + sample", ["Rendered concept diagram"])
+    example = parse_example(section(problem_section, "Example input/output:", ["Clarify before coding:"]))
+    clarify = [
+        line.removeprefix("- ").strip()
+        for line in section(problem_section, "Clarify before coding:", [])
+        if line.startswith("- ")
+    ]
+
+    diagram_lines = section(lines, "Rendered concept diagram", ["Mistakes + edge checklist"])
+    mistakes_section = section(lines, "Mistakes + edge checklist", ["Approach ladder"])
+    approach_section = section(lines, "Approach ladder", ["Invariant + complexity + proof"])
+    proof_section = section(lines, "Invariant + complexity + proof", ["Variations and follow-ups"])
+    variations_section = section(lines, "Variations and follow-ups", ["Python reference kernel"])
+
+    brute = after_label(approach_section, "Brute force:", ["Optimized approach:"])
+    optimized = after_label(approach_section, "Optimized approach:", ["Alternative:"])
+    alternative = after_label(approach_section, "Alternative:", ["Implementation checkpoints:"])
+    complexity_why = after_label(proof_section, "Why:", ["Proof sketch:"])
+    proof = after_label(proof_section, "Proof sketch:")
+
+    return {
+        "id": index,
+        "leetcode": leetcode,
+        "title": title,
+        "slug": f"{index:03d}-{slugify(title)}",
+        "pattern": pattern,
+        "difficulty": DIFFICULTY[pattern],
+        "sources": sources,
+        "companies": companies,
+        "time": time,
+        "space": space,
+        "diagram": {"type": guide["diagram"], "seed": (leetcode * 17 + index * 31) % 997},
+        "diagramNotes": diagram_lines,
+        "example": {
+            "input": example["input"] or DEFAULT_EXAMPLES[pattern][0],
+            "output": example["output"] or DEFAULT_EXAMPLES[pattern][1],
+            "why": example["why"] or DEFAULT_EXAMPLES[pattern][2],
+        },
+        "prompt": after_label(problem_section, "Prompt:", ["Example input/output:"])
+        or f"Solve {title} using the constraints implied by the canonical prompt.",
+        "clarify": clarify,
+        "intuition": clean_join(diagram_lines[-2:]) if diagram_lines else guide["intuition"],
+        "brute": brute or guide["brute"],
+        "optimized": (
+            f"{optimized} Alternative: {alternative}" if optimized and alternative else optimized
+        )
+        or guide["optimized"],
+        "invariant": after_label(proof_section, "Invariant:", ["Complexity target:"])
+        or guide["invariant"],
+        "proof": (
+            f"{proof} Complexity reason: {complexity_why}" if proof and complexity_why else proof
+        )
+        or "The invariant starts true, each update preserves it, and termination covers every candidate.",
+        "pitfalls": [
+            line.removeprefix("- ").strip()
+            for line in section(mistakes_section, "Common mistakes:", ["Edge checklist:"])
+            if line.startswith("- ")
+        ]
+        or guide["pitfalls"],
+        "edgeChecklist": after_label(mistakes_section, "Edge checklist:"),
+        "implementationCheckpoints": [
+            line.removeprefix("- ").strip()
+            for line in section(approach_section, "Implementation checkpoints:", [])
+            if line.startswith("- ")
+        ],
+        "drills": [
+            re.sub(r"^V\d+:\s*", "", line).strip()
+            for line in section(variations_section, "Three drills:", ["Follow-ups:"])
+            if re.match(r"^V\d+:", line)
+        ],
+        "followUps": [
+            line.removeprefix("- ").strip()
+            for line in section(variations_section, "Follow-ups:", [])
+            if line.startswith("- ")
+        ],
+        "pythonFunction": snake(title),
+        "goFunction": go_name(index),
+    }
+
+
+def parse_pdf_problems(pdf_path: Path) -> list[dict]:
+    streams = extract_pdf_streams(pdf_path)
+    if len(streams) != 230:
+        raise SystemExit(f"expected 230 PDF streams, found {len(streams)}")
+
+    problems: list[dict] = []
+    for page_stream in streams[1:]:
+        decoded = zlib.decompress(base64.a85decode(page_stream.strip(), adobe=True)).decode(
+            "latin1", errors="replace"
+        )
+        problem = parse_pdf_page(extract_tj_strings(decoded))
+        if problem:
+            problems.append(problem)
+
+    if len(problems) != 229:
+        raise SystemExit(f"expected 229 PDF problems, parsed {len(problems)}")
+
+    expected_ids = list(range(1, 230))
+    actual_ids = [problem["id"] for problem in problems]
+    if actual_ids != expected_ids:
+        raise SystemExit("PDF problem ids are not sequential from 1 to 229")
+    return problems
+
+
+def parse_fallback_problems() -> list[dict]:
     problems = []
     seen = set()
     for raw in RAW_PROBLEMS.splitlines():
@@ -632,11 +878,22 @@ def parse_problems() -> list[dict]:
                 "invariant": guide["invariant"],
                 "proof": "The initialization makes the invariant true before any work. Each iteration consumes one new fact and updates only state that follows from finalized information. When the loop or recursion ends, every candidate has either been considered or safely discarded by the invariant.",
                 "pitfalls": guide["pitfalls"],
+                "edgeChecklist": "",
+                "implementationCheckpoints": [
+                    "Define the exact state before coding.",
+                    "Update state in one place.",
+                    "Dry run the sample before typing loops.",
+                ],
                 "drills": [
                     "Return the chosen path or indices, not only the score.",
                     "Handle repeated values and the smallest valid input.",
                     "Explain what changes when constraints are ten times larger.",
                 ],
+                "followUps": [
+                    "What changes if constraints are ten times larger?",
+                    "Which line would you unit-test first and why?",
+                ],
+                "diagramNotes": [],
                 "pythonFunction": snake(title),
                 "goFunction": go_name(index),
             }
@@ -644,6 +901,13 @@ def parse_problems() -> list[dict]:
     if len(problems) != 229:
         raise SystemExit(f"expected 229 problems, generated {len(problems)}")
     return problems
+
+
+def parse_problems() -> list[dict]:
+    pdf_path = ROOT / PDF_NAME
+    if pdf_path.exists():
+        return parse_pdf_problems(pdf_path)
+    return parse_fallback_problems()
 
 
 def python_code(problem: dict) -> str:
@@ -695,6 +959,7 @@ export interface Problem {
   time: string;
   space: string;
   diagram: { type: DiagramType; seed: number };
+  diagramNotes: string[];
   example: { input: string; output: string; why: string };
   prompt: string;
   clarify: string[];
@@ -704,7 +969,10 @@ export interface Problem {
   invariant: string;
   proof: string;
   pitfalls: string[];
+  edgeChecklist: string;
+  implementationCheckpoints: string[];
   drills: string[];
+  followUps: string[];
   pythonFunction: string;
   goFunction: string;
   pythonCode: string;

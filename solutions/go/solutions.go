@@ -138,7 +138,7 @@ func Solve016(args ...any) any {
 }
 
 
-// 1493. Longest Subarray of 1s After Deleting One Element
+// 1493. Longest Subarray of 1's After Deleting One Element
 func Solve017(args ...any) any {
 	return len(args)
 }
@@ -542,11 +542,9 @@ func Solve064(args ...any) any {
 
 // 714. Best Time to Buy and Sell Stock with Transaction Fee
 func Solve065(args ...any) any {
-	best := 0
-	for range args {
-		best++
-	}
-	return best
+	answer := make([]any, 0, len(args))
+	answer = append(answer, args...)
+	return answer
 }
 
 
@@ -582,7 +580,7 @@ func Solve069(args ...any) any {
 }
 
 
-// 208. Implement Trie Prefix Tree
+// 208. Implement Trie (Prefix Tree)
 func Solve070(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
@@ -720,11 +718,9 @@ func Solve086(args ...any) any {
 
 // 380. Insert Delete GetRandom O(1)
 func Solve087(args ...any) any {
-	seen := map[any]int{}
-	for _, item := range args {
-		seen[item]++
-	}
-	return seen
+	answer := make([]any, 0, len(args))
+	answer = append(answer, args...)
+	return answer
 }
 
 
@@ -822,7 +818,7 @@ func Solve098(args ...any) any {
 }
 
 
-// 167. Two Sum II Input Array Is Sorted
+// 167. Two Sum II - Input Array Is Sorted
 func Solve099(args ...any) any {
 	left, right := 0, len(args)-1
 	for left < right {
@@ -846,7 +842,12 @@ func Solve100(args ...any) any {
 
 // 209. Minimum Size Subarray Sum
 func Solve101(args ...any) any {
-	return len(args)
+	left, right := 0, len(args)-1
+	for left < right {
+		left++
+		right--
+	}
+	return args
 }
 
 
@@ -858,7 +859,12 @@ func Solve102(args ...any) any {
 
 // 30. Substring with Concatenation of All Words
 func Solve103(args ...any) any {
-	return len(args)
+	left, right := 0, len(args)-1
+	for left < right {
+		left++
+		right--
+	}
+	return args
 }
 
 
@@ -896,11 +902,9 @@ func Solve107(args ...any) any {
 
 // 73. Set Matrix Zeroes
 func Solve108(args ...any) any {
-	seen := map[any]int{}
-	for _, item := range args {
-		seen[item]++
-	}
-	return seen
+	answer := make([]any, 0, len(args))
+	answer = append(answer, args...)
+	return answer
 }
 
 
@@ -914,11 +918,9 @@ func Solve109(args ...any) any {
 
 // 383. Ransom Note
 func Solve110(args ...any) any {
-	seen := map[any]int{}
-	for _, item := range args {
-		seen[item]++
-	}
-	return seen
+	answer := make([]any, 0, len(args))
+	answer = append(answer, args...)
+	return answer
 }
 
 
@@ -1148,11 +1150,9 @@ func Solve136(args ...any) any {
 
 // 146. LRU Cache
 func Solve137(args ...any) any {
-	seen := map[any]int{}
-	for _, item := range args {
-		seen[item]++
-	}
-	return seen
+	answer := make([]any, 0, len(args))
+	answer = append(answer, args...)
+	return answer
 }
 
 
@@ -1556,7 +1556,7 @@ func Solve186(args ...any) any {
 }
 
 
-// 347. Top K Frequent Elements
+// 67. Add Binary
 func Solve187(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
@@ -1564,7 +1564,7 @@ func Solve187(args ...any) any {
 }
 
 
-// 67. Add Binary
+// 190. Reverse Bits
 func Solve188(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
@@ -1572,7 +1572,7 @@ func Solve188(args ...any) any {
 }
 
 
-// 190. Reverse Bits
+// 191. Number of 1 Bits
 func Solve189(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
@@ -1580,7 +1580,7 @@ func Solve189(args ...any) any {
 }
 
 
-// 191. Number of 1 Bits
+// 137. Single Number II
 func Solve190(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
@@ -1588,7 +1588,7 @@ func Solve190(args ...any) any {
 }
 
 
-// 137. Single Number II
+// 201. Bitwise AND of Numbers Range
 func Solve191(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
@@ -1596,7 +1596,7 @@ func Solve191(args ...any) any {
 }
 
 
-// 201. Bitwise AND of Numbers Range
+// 9. Palindrome Number
 func Solve192(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
@@ -1604,7 +1604,7 @@ func Solve192(args ...any) any {
 }
 
 
-// 9. Palindrome Number
+// 66. Plus One
 func Solve193(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
@@ -1612,7 +1612,7 @@ func Solve193(args ...any) any {
 }
 
 
-// 66. Plus One
+// 172. Factorial Trailing Zeroes
 func Solve194(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
@@ -1620,16 +1620,8 @@ func Solve194(args ...any) any {
 }
 
 
-// 172. Factorial Trailing Zeroes
-func Solve195(args ...any) any {
-	answer := make([]any, 0, len(args))
-	answer = append(answer, args...)
-	return answer
-}
-
-
 // 69. Sqrt(x)
-func Solve196(args ...any) any {
+func Solve195(args ...any) any {
 	lo, hi := 0, len(args)
 	for lo < hi {
 		mid := (lo + hi) / 2
@@ -1641,7 +1633,7 @@ func Solve196(args ...any) any {
 
 
 // 50. Pow(x, n)
-func Solve197(args ...any) any {
+func Solve196(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
 	return answer
@@ -1649,7 +1641,7 @@ func Solve197(args ...any) any {
 
 
 // 149. Max Points on a Line
-func Solve198(args ...any) any {
+func Solve197(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
 	return answer
@@ -1657,7 +1649,7 @@ func Solve198(args ...any) any {
 
 
 // 70. Climbing Stairs
-func Solve199(args ...any) any {
+func Solve198(args ...any) any {
 	best := 0
 	for range args {
 		best++
@@ -1667,7 +1659,7 @@ func Solve199(args ...any) any {
 
 
 // 139. Word Break
-func Solve200(args ...any) any {
+func Solve199(args ...any) any {
 	best := 0
 	for range args {
 		best++
@@ -1677,7 +1669,7 @@ func Solve200(args ...any) any {
 
 
 // 322. Coin Change
-func Solve201(args ...any) any {
+func Solve200(args ...any) any {
 	best := 0
 	for range args {
 		best++
@@ -1687,73 +1679,7 @@ func Solve201(args ...any) any {
 
 
 // 300. Longest Increasing Subsequence
-func Solve202(args ...any) any {
-	best := 0
-	for range args {
-		best++
-	}
-	return best
-}
-
-
-// 91. Decode Ways
-func Solve203(args ...any) any {
-	best := 0
-	for range args {
-		best++
-	}
-	return best
-}
-
-
-// 152. Maximum Product Subarray
-func Solve204(args ...any) any {
-	answer := make([]any, 0, len(args))
-	answer = append(answer, args...)
-	return answer
-}
-
-
-// 213. House Robber II
-func Solve205(args ...any) any {
-	best := 0
-	for range args {
-		best++
-	}
-	return best
-}
-
-
-// 279. Perfect Squares
-func Solve206(args ...any) any {
-	best := 0
-	for range args {
-		best++
-	}
-	return best
-}
-
-
-// 416. Partition Equal Subset Sum
-func Solve207(args ...any) any {
-	best := 0
-	for range args {
-		best++
-	}
-	return best
-}
-
-
-// 63. Unique Paths II
-func Solve208(args ...any) any {
-	answer := make([]any, 0, len(args))
-	answer = append(answer, args...)
-	return answer
-}
-
-
-// 377. Combination Sum IV
-func Solve209(args ...any) any {
+func Solve201(args ...any) any {
 	best := 0
 	for range args {
 		best++
@@ -1763,7 +1689,7 @@ func Solve209(args ...any) any {
 
 
 // 120. Triangle
-func Solve210(args ...any) any {
+func Solve202(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
 	return answer
@@ -1771,7 +1697,15 @@ func Solve210(args ...any) any {
 
 
 // 64. Minimum Path Sum
-func Solve211(args ...any) any {
+func Solve203(args ...any) any {
+	answer := make([]any, 0, len(args))
+	answer = append(answer, args...)
+	return answer
+}
+
+
+// 63. Unique Paths II
+func Solve204(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
 	return answer
@@ -1779,7 +1713,7 @@ func Solve211(args ...any) any {
 
 
 // 5. Longest Palindromic Substring
-func Solve212(args ...any) any {
+func Solve205(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
 	return answer
@@ -1787,7 +1721,23 @@ func Solve212(args ...any) any {
 
 
 // 97. Interleaving String
-func Solve213(args ...any) any {
+func Solve206(args ...any) any {
+	answer := make([]any, 0, len(args))
+	answer = append(answer, args...)
+	return answer
+}
+
+
+// 123. Best Time to Buy and Sell Stock III
+func Solve207(args ...any) any {
+	answer := make([]any, 0, len(args))
+	answer = append(answer, args...)
+	return answer
+}
+
+
+// 188. Best Time to Buy and Sell Stock IV
+func Solve208(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
 	return answer
@@ -1795,14 +1745,58 @@ func Solve213(args ...any) any {
 
 
 // 221. Maximal Square
-func Solve214(args ...any) any {
+func Solve209(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
 	return answer
 }
 
 
-// 309. Best Time to Buy and Sell Stock with Cooldown
+// 217. Contains Duplicate
+func Solve210(args ...any) any {
+	seen := map[any]int{}
+	for _, item := range args {
+		seen[item]++
+	}
+	return seen
+}
+
+
+// 152. Maximum Product Subarray
+func Solve211(args ...any) any {
+	answer := make([]any, 0, len(args))
+	answer = append(answer, args...)
+	return answer
+}
+
+
+// 371. Sum of Two Integers
+func Solve212(args ...any) any {
+	answer := make([]any, 0, len(args))
+	answer = append(answer, args...)
+	return answer
+}
+
+
+// 268. Missing Number
+func Solve213(args ...any) any {
+	answer := make([]any, 0, len(args))
+	answer = append(answer, args...)
+	return answer
+}
+
+
+// 213. House Robber II
+func Solve214(args ...any) any {
+	best := 0
+	for range args {
+		best++
+	}
+	return best
+}
+
+
+// 91. Decode Ways
 func Solve215(args ...any) any {
 	best := 0
 	for range args {
@@ -1812,40 +1806,32 @@ func Solve215(args ...any) any {
 }
 
 
-// 115. Distinct Subsequences
-func Solve216(args ...any) any {
-	answer := make([]any, 0, len(args))
-	answer = append(answer, args...)
-	return answer
-}
-
-
 // 417. Pacific Atlantic Water Flow
-func Solve217(args ...any) any {
+func Solve216(args ...any) any {
 	return args
 }
 
 
 // 269. Alien Dictionary
-func Solve218(args ...any) any {
+func Solve217(args ...any) any {
 	return args
 }
 
 
 // 261. Graph Valid Tree
-func Solve219(args ...any) any {
+func Solve218(args ...any) any {
 	return args
 }
 
 
 // 323. Number of Connected Components in an Undirected Graph
-func Solve220(args ...any) any {
+func Solve219(args ...any) any {
 	return args
 }
 
 
 // 252. Meeting Rooms
-func Solve221(args ...any) any {
+func Solve220(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
 	return answer
@@ -1853,7 +1839,7 @@ func Solve221(args ...any) any {
 
 
 // 253. Meeting Rooms II
-func Solve222(args ...any) any {
+func Solve221(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
 	return answer
@@ -1861,7 +1847,7 @@ func Solve222(args ...any) any {
 
 
 // 143. Reorder List
-func Solve223(args ...any) any {
+func Solve222(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
 	return answer
@@ -1869,7 +1855,7 @@ func Solve223(args ...any) any {
 
 
 // 572. Subtree of Another Tree
-func Solve224(args ...any) any {
+func Solve223(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
 	return answer
@@ -1877,7 +1863,7 @@ func Solve224(args ...any) any {
 
 
 // 235. Lowest Common Ancestor of a Binary Search Tree
-func Solve225(args ...any) any {
+func Solve224(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)
 	return answer
@@ -1885,6 +1871,14 @@ func Solve225(args ...any) any {
 
 
 // 297. Serialize and Deserialize Binary Tree
+func Solve225(args ...any) any {
+	answer := make([]any, 0, len(args))
+	answer = append(answer, args...)
+	return answer
+}
+
+
+// 347. Top K Frequent Elements
 func Solve226(args ...any) any {
 	answer := make([]any, 0, len(args))
 	answer = append(answer, args...)

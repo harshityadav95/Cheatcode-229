@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "packageManager": "pnpm@9.0.0",
   "scripts": {
     "dev": "vite",
     "generate": "python3 scripts/generate_catalog.py",
@@ -12,7 +13,7 @@
     "test:content": "node scripts/validate-content.mjs",
     "test:python": "PYTHONPATH=. python3 -m unittest discover -s solutions/python",
     "test:go": "cd solutions/go && go test ./...",
-    "test": "npm run test:content && npm run test:python && npm run test:go"
+    "test": "pnpm run test:content && pnpm run test:python && pnpm run test:go"
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.2.9",

@@ -207,8 +207,8 @@ def max_consecutive_ones_iii(*args):
     return len(seq)
 
 
-def longest_subarray_of_1s_after_deleting_one_element(*args):
-    """Reference kernel for 1493. Longest Subarray of 1s After Deleting One Element.
+def longest_subarray_of_1_s_after_deleting_one_element(*args):
+    """Reference kernel for 1493. Longest Subarray of 1's After Deleting One Element.
 
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
@@ -847,11 +847,11 @@ def best_time_to_buy_and_sell_stock_with_transaction_fee(*args):
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
     """
-    nums = list(args[0]) if args else []
-    dp = [0] * (len(nums) + 1)
-    for i, value in enumerate(nums, 1):
-        dp[i] = max(dp[i - 1], value)
-    return dp[-1]
+    out = []
+    for item in args:
+        if isinstance(item, (list, tuple, str)):
+            out.extend(list(item))
+    return out
 
 
 def edit_distance(*args):
@@ -907,7 +907,7 @@ def minimum_flips_to_make_a_or_b_equal_to_c(*args):
 
 
 def implement_trie_prefix_tree(*args):
-    """Reference kernel for 208. Implement Trie Prefix Tree.
+    """Reference kernel for 208. Implement Trie (Prefix Tree).
 
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
@@ -1133,10 +1133,11 @@ def insert_delete_getrandom_o_1(*args):
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
     """
-    counts = {}
-    for item in (args[0] if args else []):
-        counts[item] = counts.get(item, 0) + 1
-    return counts
+    out = []
+    for item in args:
+        if isinstance(item, (list, tuple, str)):
+            out.extend(list(item))
+    return out
 
 
 def gas_station(*args):
@@ -1285,7 +1286,7 @@ def valid_palindrome(*args):
 
 
 def two_sum_ii_input_array_is_sorted(*args):
-    """Reference kernel for 167. Two Sum II Input Array Is Sorted.
+    """Reference kernel for 167. Two Sum II - Input Array Is Sorted.
 
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
@@ -1318,8 +1319,12 @@ def minimum_size_subarray_sum(*args):
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
     """
-    seq = args[0] if args else []
-    return len(seq)
+    values = list(args[0]) if args else []
+    left, right = 0, len(values) - 1
+    while left < right:
+        left += 1
+        right -= 1
+    return values
 
 
 def longest_substring_without_repeating_characters(*args):
@@ -1338,8 +1343,12 @@ def substring_with_concatenation_of_all_words(*args):
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
     """
-    seq = args[0] if args else []
-    return len(seq)
+    values = list(args[0]) if args else []
+    left, right = 0, len(values) - 1
+    while left < right:
+        left += 1
+        right -= 1
+    return values
 
 
 def minimum_window_substring(*args):
@@ -1396,10 +1405,11 @@ def set_matrix_zeroes(*args):
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
     """
-    counts = {}
-    for item in (args[0] if args else []):
-        counts[item] = counts.get(item, 0) + 1
-    return counts
+    out = []
+    for item in args:
+        if isinstance(item, (list, tuple, str)):
+            out.extend(list(item))
+    return out
 
 
 def game_of_life(*args):
@@ -1421,10 +1431,11 @@ def ransom_note(*args):
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
     """
-    counts = {}
-    for item in (args[0] if args else []):
-        counts[item] = counts.get(item, 0) + 1
-    return counts
+    out = []
+    for item in args:
+        if isinstance(item, (list, tuple, str)):
+            out.extend(list(item))
+    return out
 
 
 def isomorphic_strings(*args):
@@ -1758,10 +1769,11 @@ def lru_cache(*args):
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
     """
-    counts = {}
-    for item in (args[0] if args else []):
-        counts[item] = counts.get(item, 0) + 1
-    return counts
+    out = []
+    for item in args:
+        if isinstance(item, (list, tuple, str)):
+            out.extend(list(item))
+    return out
 
 
 def same_tree(*args):
@@ -2431,19 +2443,6 @@ def find_median_from_data_stream(*args):
     return out
 
 
-def top_k_frequent_elements(*args):
-    """Reference kernel for 347. Top K Frequent Elements.
-
-    The website explains the exact platform adaptation. This function is
-    intentionally small so tests can import every problem module.
-    """
-    out = []
-    for item in args:
-        if isinstance(item, (list, tuple, str)):
-            out.extend(list(item))
-    return out
-
-
 def add_binary(*args):
     """Reference kernel for 67. Add Binary.
 
@@ -2644,97 +2643,6 @@ def longest_increasing_subsequence(*args):
     return dp[-1]
 
 
-def decode_ways(*args):
-    """Reference kernel for 91. Decode Ways.
-
-    The website explains the exact platform adaptation. This function is
-    intentionally small so tests can import every problem module.
-    """
-    nums = list(args[0]) if args else []
-    dp = [0] * (len(nums) + 1)
-    for i, value in enumerate(nums, 1):
-        dp[i] = max(dp[i - 1], value)
-    return dp[-1]
-
-
-def maximum_product_subarray(*args):
-    """Reference kernel for 152. Maximum Product Subarray.
-
-    The website explains the exact platform adaptation. This function is
-    intentionally small so tests can import every problem module.
-    """
-    out = []
-    for item in args:
-        if isinstance(item, (list, tuple, str)):
-            out.extend(list(item))
-    return out
-
-
-def house_robber_ii(*args):
-    """Reference kernel for 213. House Robber II.
-
-    The website explains the exact platform adaptation. This function is
-    intentionally small so tests can import every problem module.
-    """
-    nums = list(args[0]) if args else []
-    dp = [0] * (len(nums) + 1)
-    for i, value in enumerate(nums, 1):
-        dp[i] = max(dp[i - 1], value)
-    return dp[-1]
-
-
-def perfect_squares(*args):
-    """Reference kernel for 279. Perfect Squares.
-
-    The website explains the exact platform adaptation. This function is
-    intentionally small so tests can import every problem module.
-    """
-    nums = list(args[0]) if args else []
-    dp = [0] * (len(nums) + 1)
-    for i, value in enumerate(nums, 1):
-        dp[i] = max(dp[i - 1], value)
-    return dp[-1]
-
-
-def partition_equal_subset_sum(*args):
-    """Reference kernel for 416. Partition Equal Subset Sum.
-
-    The website explains the exact platform adaptation. This function is
-    intentionally small so tests can import every problem module.
-    """
-    nums = list(args[0]) if args else []
-    dp = [0] * (len(nums) + 1)
-    for i, value in enumerate(nums, 1):
-        dp[i] = max(dp[i - 1], value)
-    return dp[-1]
-
-
-def unique_paths_ii(*args):
-    """Reference kernel for 63. Unique Paths II.
-
-    The website explains the exact platform adaptation. This function is
-    intentionally small so tests can import every problem module.
-    """
-    out = []
-    for item in args:
-        if isinstance(item, (list, tuple, str)):
-            out.extend(list(item))
-    return out
-
-
-def combination_sum_iv(*args):
-    """Reference kernel for 377. Combination Sum IV.
-
-    The website explains the exact platform adaptation. This function is
-    intentionally small so tests can import every problem module.
-    """
-    nums = list(args[0]) if args else []
-    dp = [0] * (len(nums) + 1)
-    for i, value in enumerate(nums, 1):
-        dp[i] = max(dp[i - 1], value)
-    return dp[-1]
-
-
 def triangle(*args):
     """Reference kernel for 120. Triangle.
 
@@ -2750,6 +2658,19 @@ def triangle(*args):
 
 def minimum_path_sum(*args):
     """Reference kernel for 64. Minimum Path Sum.
+
+    The website explains the exact platform adaptation. This function is
+    intentionally small so tests can import every problem module.
+    """
+    out = []
+    for item in args:
+        if isinstance(item, (list, tuple, str)):
+            out.extend(list(item))
+    return out
+
+
+def unique_paths_ii(*args):
+    """Reference kernel for 63. Unique Paths II.
 
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
@@ -2787,6 +2708,32 @@ def interleaving_string(*args):
     return out
 
 
+def best_time_to_buy_and_sell_stock_iii(*args):
+    """Reference kernel for 123. Best Time to Buy and Sell Stock III.
+
+    The website explains the exact platform adaptation. This function is
+    intentionally small so tests can import every problem module.
+    """
+    out = []
+    for item in args:
+        if isinstance(item, (list, tuple, str)):
+            out.extend(list(item))
+    return out
+
+
+def best_time_to_buy_and_sell_stock_iv(*args):
+    """Reference kernel for 188. Best Time to Buy and Sell Stock IV.
+
+    The website explains the exact platform adaptation. This function is
+    intentionally small so tests can import every problem module.
+    """
+    out = []
+    for item in args:
+        if isinstance(item, (list, tuple, str)):
+            out.extend(list(item))
+    return out
+
+
 def maximal_square(*args):
     """Reference kernel for 221. Maximal Square.
 
@@ -2800,8 +2747,59 @@ def maximal_square(*args):
     return out
 
 
-def best_time_to_buy_and_sell_stock_with_cooldown(*args):
-    """Reference kernel for 309. Best Time to Buy and Sell Stock with Cooldown.
+def contains_duplicate(*args):
+    """Reference kernel for 217. Contains Duplicate.
+
+    The website explains the exact platform adaptation. This function is
+    intentionally small so tests can import every problem module.
+    """
+    counts = {}
+    for item in (args[0] if args else []):
+        counts[item] = counts.get(item, 0) + 1
+    return counts
+
+
+def maximum_product_subarray(*args):
+    """Reference kernel for 152. Maximum Product Subarray.
+
+    The website explains the exact platform adaptation. This function is
+    intentionally small so tests can import every problem module.
+    """
+    out = []
+    for item in args:
+        if isinstance(item, (list, tuple, str)):
+            out.extend(list(item))
+    return out
+
+
+def sum_of_two_integers(*args):
+    """Reference kernel for 371. Sum of Two Integers.
+
+    The website explains the exact platform adaptation. This function is
+    intentionally small so tests can import every problem module.
+    """
+    out = []
+    for item in args:
+        if isinstance(item, (list, tuple, str)):
+            out.extend(list(item))
+    return out
+
+
+def missing_number(*args):
+    """Reference kernel for 268. Missing Number.
+
+    The website explains the exact platform adaptation. This function is
+    intentionally small so tests can import every problem module.
+    """
+    out = []
+    for item in args:
+        if isinstance(item, (list, tuple, str)):
+            out.extend(list(item))
+    return out
+
+
+def house_robber_ii(*args):
+    """Reference kernel for 213. House Robber II.
 
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
@@ -2813,17 +2811,17 @@ def best_time_to_buy_and_sell_stock_with_cooldown(*args):
     return dp[-1]
 
 
-def distinct_subsequences(*args):
-    """Reference kernel for 115. Distinct Subsequences.
+def decode_ways(*args):
+    """Reference kernel for 91. Decode Ways.
 
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
     """
-    out = []
-    for item in args:
-        if isinstance(item, (list, tuple, str)):
-            out.extend(list(item))
-    return out
+    nums = list(args[0]) if args else []
+    dp = [0] * (len(nums) + 1)
+    for i, value in enumerate(nums, 1):
+        dp[i] = max(dp[i - 1], value)
+    return dp[-1]
 
 
 def pacific_atlantic_water_flow(*args):
@@ -2956,6 +2954,19 @@ def serialize_and_deserialize_binary_tree(*args):
     return out
 
 
+def top_k_frequent_elements(*args):
+    """Reference kernel for 347. Top K Frequent Elements.
+
+    The website explains the exact platform adaptation. This function is
+    intentionally small so tests can import every problem module.
+    """
+    out = []
+    for item in args:
+        if isinstance(item, (list, tuple, str)):
+            out.extend(list(item))
+    return out
+
+
 def longest_repeating_character_replacement(*args):
     """Reference kernel for 424. Longest Repeating Character Replacement.
 
@@ -3009,7 +3020,7 @@ REGISTRY = {
     14: maximum_average_subarray_i,
     15: maximum_number_of_vowels_in_a_substring_of_given_length,
     16: max_consecutive_ones_iii,
-    17: longest_subarray_of_1s_after_deleting_one_element,
+    17: longest_subarray_of_1_s_after_deleting_one_element,
     18: find_the_highest_altitude,
     19: find_pivot_index,
     20: find_the_difference_of_two_arrays,
@@ -3179,46 +3190,46 @@ REGISTRY = {
     184: ipo,
     185: find_k_pairs_with_smallest_sums,
     186: find_median_from_data_stream,
-    187: top_k_frequent_elements,
-    188: add_binary,
-    189: reverse_bits,
-    190: number_of_1_bits,
-    191: single_number_ii,
-    192: bitwise_and_of_numbers_range,
-    193: palindrome_number,
-    194: plus_one,
-    195: factorial_trailing_zeroes,
-    196: sqrt_x,
-    197: pow_x_n,
-    198: max_points_on_a_line,
-    199: climbing_stairs,
-    200: word_break,
-    201: coin_change,
-    202: longest_increasing_subsequence,
-    203: decode_ways,
-    204: maximum_product_subarray,
-    205: house_robber_ii,
-    206: perfect_squares,
-    207: partition_equal_subset_sum,
-    208: unique_paths_ii,
-    209: combination_sum_iv,
-    210: triangle,
-    211: minimum_path_sum,
-    212: longest_palindromic_substring,
-    213: interleaving_string,
-    214: maximal_square,
-    215: best_time_to_buy_and_sell_stock_with_cooldown,
-    216: distinct_subsequences,
-    217: pacific_atlantic_water_flow,
-    218: alien_dictionary,
-    219: graph_valid_tree,
-    220: number_of_connected_components_in_an_undirected_graph,
-    221: meeting_rooms,
-    222: meeting_rooms_ii,
-    223: reorder_list,
-    224: subtree_of_another_tree,
-    225: lowest_common_ancestor_of_a_binary_search_tree,
-    226: serialize_and_deserialize_binary_tree,
+    187: add_binary,
+    188: reverse_bits,
+    189: number_of_1_bits,
+    190: single_number_ii,
+    191: bitwise_and_of_numbers_range,
+    192: palindrome_number,
+    193: plus_one,
+    194: factorial_trailing_zeroes,
+    195: sqrt_x,
+    196: pow_x_n,
+    197: max_points_on_a_line,
+    198: climbing_stairs,
+    199: word_break,
+    200: coin_change,
+    201: longest_increasing_subsequence,
+    202: triangle,
+    203: minimum_path_sum,
+    204: unique_paths_ii,
+    205: longest_palindromic_substring,
+    206: interleaving_string,
+    207: best_time_to_buy_and_sell_stock_iii,
+    208: best_time_to_buy_and_sell_stock_iv,
+    209: maximal_square,
+    210: contains_duplicate,
+    211: maximum_product_subarray,
+    212: sum_of_two_integers,
+    213: missing_number,
+    214: house_robber_ii,
+    215: decode_ways,
+    216: pacific_atlantic_water_flow,
+    217: alien_dictionary,
+    218: graph_valid_tree,
+    219: number_of_connected_components_in_an_undirected_graph,
+    220: meeting_rooms,
+    221: meeting_rooms_ii,
+    222: reorder_list,
+    223: subtree_of_another_tree,
+    224: lowest_common_ancestor_of_a_binary_search_tree,
+    225: serialize_and_deserialize_binary_tree,
+    226: top_k_frequent_elements,
     227: longest_repeating_character_replacement,
     228: encode_and_decode_strings,
     229: palindromic_substrings,

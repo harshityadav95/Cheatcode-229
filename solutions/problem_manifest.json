@@ -29,8 +29,8 @@
     "pattern": "Array / String",
     "pythonFunction": "kids_with_the_greatest_number_of_candies",
     "goFunction": "Solve003",
-    "sampleInput": "candies=[2,3,5,1,3], extraCandies=3",
-    "sampleOutput": "[true,true,true,false,true]"
+    "sampleInput": "candies=[2,8,4], extraCandies=3",
+    "sampleOutput": "[false,true,false]"
   },
   {
     "id": 4,
@@ -51,8 +51,8 @@
     "pattern": "Array / String",
     "pythonFunction": "reverse_vowels_of_a_string",
     "goFunction": "Solve005",
-    "sampleInput": "s=\"hello\"",
-    "sampleOutput": "\"holle\""
+    "sampleInput": "s=\"leetcode\"",
+    "sampleOutput": "\"leotcede\""
   },
   {
     "id": 6,
@@ -62,30 +62,30 @@
     "pattern": "Array / String",
     "pythonFunction": "reverse_words_in_a_string",
     "goFunction": "Solve006",
-    "sampleInput": "s=\"  the sky is blue  \"",
-    "sampleOutput": "\"blue is sky the\""
+    "sampleInput": "s=\"  blue  sky  \"",
+    "sampleOutput": "\"sky blue\""
   },
   {
     "id": 7,
     "leetcode": 238,
     "title": "Product of Array Except Self",
     "slug": "007-product-of-array-except-self",
-    "pattern": "Array / String",
+    "pattern": "Prefix / Scan",
     "pythonFunction": "product_of_array_except_self",
     "goFunction": "Solve007",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "[24,12,8,6]"
+    "sampleInput": "nums=[2,3,4]",
+    "sampleOutput": "[12,8,6]"
   },
   {
     "id": 8,
     "leetcode": 334,
     "title": "Increasing Triplet Subsequence",
     "slug": "008-increasing-triplet-subsequence",
-    "pattern": "Array / String",
+    "pattern": "Math / Greedy",
     "pythonFunction": "increasing_triplet_subsequence",
     "goFunction": "Solve008",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "nums=[5,1,6,2,3]",
+    "sampleOutput": "true"
   },
   {
     "id": 9,
@@ -95,8 +95,8 @@
     "pattern": "Array / String",
     "pythonFunction": "string_compression",
     "goFunction": "Solve009",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "chars=[\"a\",\"a\",\"b\"]",
+    "sampleOutput": "length=3, chars starts [\"a\",\"2\",\"b\"]"
   },
   {
     "id": 10,
@@ -106,8 +106,8 @@
     "pattern": "Two Pointers",
     "pythonFunction": "move_zeroes",
     "goFunction": "Solve010",
-    "sampleInput": "nums=[1,2,3,4,6], target=6",
-    "sampleOutput": "valid pair/window"
+    "sampleInput": "nums=[0,1,0,3]",
+    "sampleOutput": "[1,3,0,0]"
   },
   {
     "id": 11,
@@ -117,8 +117,8 @@
     "pattern": "Two Pointers",
     "pythonFunction": "is_subsequence",
     "goFunction": "Solve011",
-    "sampleInput": "nums=[1,2,3,4,6], target=6",
-    "sampleOutput": "valid pair/window"
+    "sampleInput": "s=\"ace\", t=\"abcde\"",
+    "sampleOutput": "true"
   },
   {
     "id": 12,
@@ -128,8 +128,8 @@
     "pattern": "Two Pointers",
     "pythonFunction": "container_with_most_water",
     "goFunction": "Solve012",
-    "sampleInput": "nums=[1,2,3,4,6], target=6",
-    "sampleOutput": "valid pair/window"
+    "sampleInput": "height=[1,7,2,5,4,7,3,6]",
+    "sampleOutput": "36"
   },
   {
     "id": 13,
@@ -139,8 +139,8 @@
     "pattern": "Two Pointers",
     "pythonFunction": "max_number_of_k_sum_pairs",
     "goFunction": "Solve013",
-    "sampleInput": "nums=[1,2,3,4,6], target=6",
-    "sampleOutput": "valid pair/window"
+    "sampleInput": "nums=[1,2,3,4], k=5",
+    "sampleOutput": "2"
   },
   {
     "id": 14,
@@ -150,8 +150,8 @@
     "pattern": "Sliding Window",
     "pythonFunction": "maximum_average_subarray_i",
     "goFunction": "Solve014",
-    "sampleInput": "s=\"AABABBA\", k=1",
-    "sampleOutput": "best window length"
+    "sampleInput": "nums=[1,12,-5,-6,50,3], k=4",
+    "sampleOutput": "12.75"
   },
   {
     "id": 15,
@@ -161,8 +161,8 @@
     "pattern": "Sliding Window",
     "pythonFunction": "maximum_number_of_vowels_in_a_substring_of_given_length",
     "goFunction": "Solve015",
-    "sampleInput": "s=\"AABABBA\", k=1",
-    "sampleOutput": "best window length"
+    "sampleInput": "s=\"abciiidef\", k=3",
+    "sampleOutput": "3"
   },
   {
     "id": 16,
@@ -172,19 +172,19 @@
     "pattern": "Sliding Window",
     "pythonFunction": "max_consecutive_ones_iii",
     "goFunction": "Solve016",
-    "sampleInput": "s=\"AABABBA\", k=1",
-    "sampleOutput": "best window length"
+    "sampleInput": "nums=[1,0,1,1,0,1], k=1",
+    "sampleOutput": "4"
   },
   {
     "id": 17,
     "leetcode": 1493,
-    "title": "Longest Subarray of 1s After Deleting One Element",
-    "slug": "017-longest-subarray-of-1s-after-deleting-one-element",
+    "title": "Longest Subarray of 1's After Deleting One Element",
+    "slug": "017-longest-subarray-of-1-s-after-deleting-one-element",
     "pattern": "Sliding Window",
-    "pythonFunction": "longest_subarray_of_1s_after_deleting_one_element",
+    "pythonFunction": "longest_subarray_of_1_s_after_deleting_one_element",
     "goFunction": "Solve017",
-    "sampleInput": "s=\"AABABBA\", k=1",
-    "sampleOutput": "best window length"
+    "sampleInput": "nums=[1,1,0,1]",
+    "sampleOutput": "3"
   },
   {
     "id": 18,
@@ -194,8 +194,8 @@
     "pattern": "Prefix / Scan",
     "pythonFunction": "find_the_highest_altitude",
     "goFunction": "Solve018",
-    "sampleInput": "nums=[1,7,3,6,5,6]",
-    "sampleOutput": "pivot or aggregate answer"
+    "sampleInput": "gain=[-5,1,5]",
+    "sampleOutput": "1"
   },
   {
     "id": 19,
@@ -206,7 +206,7 @@
     "pythonFunction": "find_pivot_index",
     "goFunction": "Solve019",
     "sampleInput": "nums=[1,7,3,6,5,6]",
-    "sampleOutput": "pivot or aggregate answer"
+    "sampleOutput": "3"
   },
   {
     "id": 20,
@@ -216,8 +216,8 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "find_the_difference_of_two_arrays",
     "goFunction": "Solve020",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "nums1=[1,2,3], nums2=[2,4]",
+    "sampleOutput": "[[1,3],[4]]"
   },
   {
     "id": 21,
@@ -227,8 +227,8 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "unique_number_of_occurrences",
     "goFunction": "Solve021",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "nums=[1,2,2,3,3,3]",
+    "sampleOutput": "true"
   },
   {
     "id": 22,
@@ -238,8 +238,8 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "determine_if_two_strings_are_close",
     "goFunction": "Solve022",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "word1=\"abbzzca\", word2=\"babzzcz\"",
+    "sampleOutput": "true"
   },
   {
     "id": 23,
@@ -249,8 +249,8 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "equal_row_and_column_pairs",
     "goFunction": "Solve023",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "grid=[[3,1,2],[1,7,6],[2,6,7]]",
+    "sampleOutput": "1"
   },
   {
     "id": 24,
@@ -260,8 +260,8 @@
     "pattern": "Stack",
     "pythonFunction": "removing_stars_from_a_string",
     "goFunction": "Solve024",
-    "sampleInput": "tokens=[\"2\",\"1\",\"+\",\"3\",\"*\"]",
-    "sampleOutput": "stack result"
+    "sampleInput": "s=\"leet**cod*e\"",
+    "sampleOutput": "\"lecoe\""
   },
   {
     "id": 25,
@@ -271,8 +271,8 @@
     "pattern": "Stack",
     "pythonFunction": "asteroid_collision",
     "goFunction": "Solve025",
-    "sampleInput": "tokens=[\"2\",\"1\",\"+\",\"3\",\"*\"]",
-    "sampleOutput": "stack result"
+    "sampleInput": "asteroids=[5,10,-5]",
+    "sampleOutput": "[5,10]"
   },
   {
     "id": 26,
@@ -282,8 +282,8 @@
     "pattern": "Stack",
     "pythonFunction": "decode_string",
     "goFunction": "Solve026",
-    "sampleInput": "tokens=[\"2\",\"1\",\"+\",\"3\",\"*\"]",
-    "sampleOutput": "stack result"
+    "sampleInput": "s=\"3[a2[c]]\"",
+    "sampleOutput": "\"accaccacc\""
   },
   {
     "id": 27,
@@ -293,8 +293,8 @@
     "pattern": "Queue / Simulation",
     "pythonFunction": "number_of_recent_calls",
     "goFunction": "Solve027",
-    "sampleInput": "events=[1,100,3001,3002]",
-    "sampleOutput": "active count"
+    "sampleInput": "pings=[1,100,3001,3002]",
+    "sampleOutput": "[1,2,3,3]"
   },
   {
     "id": 28,
@@ -304,8 +304,8 @@
     "pattern": "Queue / Simulation",
     "pythonFunction": "dota2_senate",
     "goFunction": "Solve028",
-    "sampleInput": "events=[1,100,3001,3002]",
-    "sampleOutput": "active count"
+    "sampleInput": "senate=\"RDD\"",
+    "sampleOutput": "\"Dire\""
   },
   {
     "id": 29,
@@ -315,8 +315,8 @@
     "pattern": "Linked List",
     "pythonFunction": "delete_the_middle_node_of_a_linked_list",
     "goFunction": "Solve029",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "head=[1,3,4,7,1,2,6]",
+    "sampleOutput": "[1,3,4,1,2,6]"
   },
   {
     "id": 30,
@@ -326,8 +326,8 @@
     "pattern": "Linked List",
     "pythonFunction": "odd_even_linked_list",
     "goFunction": "Solve030",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "head=[1,2,3,4,5]",
+    "sampleOutput": "[1,3,5,2,4]"
   },
   {
     "id": 31,
@@ -337,8 +337,8 @@
     "pattern": "Linked List",
     "pythonFunction": "reverse_linked_list",
     "goFunction": "Solve031",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "head=[1,2,3]",
+    "sampleOutput": "[3,2,1]"
   },
   {
     "id": 32,
@@ -348,8 +348,8 @@
     "pattern": "Linked List",
     "pythonFunction": "maximum_twin_sum_of_a_linked_list",
     "goFunction": "Solve032",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "head=[5,4,2,1]",
+    "sampleOutput": "6"
   },
   {
     "id": 33,
@@ -360,7 +360,7 @@
     "pythonFunction": "maximum_depth_of_binary_tree",
     "goFunction": "Solve033",
     "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleOutput": "3"
   },
   {
     "id": 34,
@@ -370,8 +370,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "leaf_similar_trees",
     "goFunction": "Solve034",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "root1=[1,2,3], root2=[7,2,3]",
+    "sampleOutput": "true"
   },
   {
     "id": 35,
@@ -381,8 +381,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "count_good_nodes_in_binary_tree",
     "goFunction": "Solve035",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "root=[3,1,4,3,null,1,5]",
+    "sampleOutput": "4"
   },
   {
     "id": 36,
@@ -392,8 +392,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "path_sum_iii",
     "goFunction": "Solve036",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "root=[10,5,-3,3,2,null,11,3,-2,null,1], targetSum=8",
+    "sampleOutput": "3"
   },
   {
     "id": 37,
@@ -403,8 +403,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "longest_zigzag_path_in_a_binary_tree",
     "goFunction": "Solve037",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "path 1->right 2->left 3->right 4",
+    "sampleOutput": "3"
   },
   {
     "id": 38,
@@ -414,8 +414,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "lowest_common_ancestor_of_a_binary_tree",
     "goFunction": "Solve038",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "root=[3,5,1,6,2,0,8,null,null,7,4], p=5, q=1",
+    "sampleOutput": "3"
   },
   {
     "id": 39,
@@ -436,8 +436,8 @@
     "pattern": "Tree BFS",
     "pythonFunction": "maximum_level_sum_of_a_binary_tree",
     "goFunction": "Solve040",
-    "sampleInput": "root=[1,2,3,null,5,null,4]",
-    "sampleOutput": "[1,3,4]"
+    "sampleInput": "root=[1,7,0,7,-8,null,null]",
+    "sampleOutput": "2"
   },
   {
     "id": 41,
@@ -447,8 +447,8 @@
     "pattern": "BST",
     "pythonFunction": "search_in_a_binary_search_tree",
     "goFunction": "Solve041",
-    "sampleInput": "root=[5,3,6,2,4,null,7], key=3",
-    "sampleOutput": "updated/search result"
+    "sampleInput": "root=[4,2,7,1,3], val=2",
+    "sampleOutput": "[2,1,3]"
   },
   {
     "id": 42,
@@ -459,7 +459,7 @@
     "pythonFunction": "delete_node_in_a_bst",
     "goFunction": "Solve042",
     "sampleInput": "root=[5,3,6,2,4,null,7], key=3",
-    "sampleOutput": "updated/search result"
+    "sampleOutput": "[5,4,6,2,null,null,7]"
   },
   {
     "id": 43,
@@ -469,8 +469,8 @@
     "pattern": "Graph",
     "pythonFunction": "keys_and_rooms",
     "goFunction": "Solve043",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "rooms=[[1],[2],[3],[]]",
+    "sampleOutput": "true"
   },
   {
     "id": 44,
@@ -480,8 +480,8 @@
     "pattern": "Graph",
     "pythonFunction": "number_of_provinces",
     "goFunction": "Solve044",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "isConnected=[[1,1,0],[1,1,0],[0,0,1]]",
+    "sampleOutput": "2"
   },
   {
     "id": 45,
@@ -491,8 +491,8 @@
     "pattern": "Graph",
     "pythonFunction": "reorder_routes_to_make_all_paths_lead_to_the_city_zero",
     "goFunction": "Solve045",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "n=3, connections=[[1,0],[1,2]]",
+    "sampleOutput": "1"
   },
   {
     "id": 46,
@@ -502,8 +502,8 @@
     "pattern": "Graph",
     "pythonFunction": "evaluate_division",
     "goFunction": "Solve046",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "equations=[[\"a\",\"b\"],[\"b\",\"c\"]], values=[2,3], queries=[[\"a\",\"c\"],[\"c\",\"a\"],[\"x\",\"y\"]]",
+    "sampleOutput": "[6.0,0.16667,-1.0]"
   },
   {
     "id": 47,
@@ -513,8 +513,8 @@
     "pattern": "Graph",
     "pythonFunction": "nearest_exit_from_entrance_in_maze",
     "goFunction": "Solve047",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "maze=[[\"+\",\"+\",\".\"],[\".\",\".\",\".\"],[\"+\",\"+\",\"+\"]], entrance=[1,0]",
+    "sampleOutput": "2"
   },
   {
     "id": 48,
@@ -524,8 +524,8 @@
     "pattern": "Graph",
     "pythonFunction": "rotting_oranges",
     "goFunction": "Solve048",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "grid=[[2,1,1],[1,1,0],[0,1,1]]",
+    "sampleOutput": "4"
   },
   {
     "id": 49,
@@ -546,8 +546,8 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "smallest_number_in_infinite_set",
     "goFunction": "Solve050",
-    "sampleInput": "items=[3,2,1,5,6,4], k=2",
-    "sampleOutput": "priority answer"
+    "sampleInput": "operations=pop,pop,addBack(1),pop",
+    "sampleOutput": "[1,2,null,1]"
   },
   {
     "id": 51,
@@ -557,8 +557,8 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "maximum_subsequence_score",
     "goFunction": "Solve051",
-    "sampleInput": "items=[3,2,1,5,6,4], k=2",
-    "sampleOutput": "priority answer"
+    "sampleInput": "nums1=[1,3,3,2], nums2=[2,1,3,4], k=3",
+    "sampleOutput": "12"
   },
   {
     "id": 52,
@@ -568,8 +568,8 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "total_cost_to_hire_k_workers",
     "goFunction": "Solve052",
-    "sampleInput": "items=[3,2,1,5,6,4], k=2",
-    "sampleOutput": "priority answer"
+    "sampleInput": "costs=[17,12,10,2,7,2,11,20,8], k=3, candidates=4",
+    "sampleOutput": "11"
   },
   {
     "id": 53,
@@ -579,8 +579,8 @@
     "pattern": "Binary Search",
     "pythonFunction": "guess_number_higher_or_lower",
     "goFunction": "Solve053",
-    "sampleInput": "nums=[1,3,5,6], target=5",
-    "sampleOutput": "2"
+    "sampleInput": "n=10, pick=6",
+    "sampleOutput": "6"
   },
   {
     "id": 54,
@@ -590,8 +590,8 @@
     "pattern": "Binary Search",
     "pythonFunction": "successful_pairs_of_spells_and_potions",
     "goFunction": "Solve054",
-    "sampleInput": "nums=[1,3,5,6], target=5",
-    "sampleOutput": "2"
+    "sampleInput": "spells=[5,1,3], potions=[1,2,3,4,5], success=7",
+    "sampleOutput": "[4,0,3]"
   },
   {
     "id": 55,
@@ -601,7 +601,7 @@
     "pattern": "Binary Search",
     "pythonFunction": "find_peak_element",
     "goFunction": "Solve055",
-    "sampleInput": "nums=[1,3,5,6], target=5",
+    "sampleInput": "nums=[1,2,3,1]",
     "sampleOutput": "2"
   },
   {
@@ -612,8 +612,8 @@
     "pattern": "Binary Search",
     "pythonFunction": "koko_eating_bananas",
     "goFunction": "Solve056",
-    "sampleInput": "nums=[1,3,5,6], target=5",
-    "sampleOutput": "2"
+    "sampleInput": "piles=[3,6,7,11], h=8",
+    "sampleOutput": "4"
   },
   {
     "id": 57,
@@ -624,7 +624,7 @@
     "pythonFunction": "letter_combinations_of_a_phone_number",
     "goFunction": "Solve057",
     "sampleInput": "digits=\"23\"",
-    "sampleOutput": "[\"ad\",\"ae\",\"af\",...]"
+    "sampleOutput": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]"
   },
   {
     "id": 58,
@@ -634,8 +634,8 @@
     "pattern": "Backtracking",
     "pythonFunction": "combination_sum_iii",
     "goFunction": "Solve058",
-    "sampleInput": "digits=\"23\"",
-    "sampleOutput": "[\"ad\",\"ae\",\"af\",...]"
+    "sampleInput": "k=3, n=7",
+    "sampleOutput": "[[1,2,4]]"
   },
   {
     "id": 59,
@@ -645,8 +645,8 @@
     "pattern": "DP 1D",
     "pythonFunction": "n_th_tribonacci_number",
     "goFunction": "Solve059",
-    "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
+    "sampleInput": "n=4",
+    "sampleOutput": "4"
   },
   {
     "id": 60,
@@ -656,8 +656,8 @@
     "pattern": "DP 1D",
     "pythonFunction": "min_cost_climbing_stairs",
     "goFunction": "Solve060",
-    "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
+    "sampleInput": "cost=[10,15,20]",
+    "sampleOutput": "15"
   },
   {
     "id": 61,
@@ -668,7 +668,7 @@
     "pythonFunction": "house_robber",
     "goFunction": "Solve061",
     "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
+    "sampleOutput": "12"
   },
   {
     "id": 62,
@@ -678,8 +678,8 @@
     "pattern": "DP 1D",
     "pythonFunction": "domino_and_tromino_tiling",
     "goFunction": "Solve062",
-    "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
+    "sampleInput": "n=3",
+    "sampleOutput": "5"
   },
   {
     "id": 63,
@@ -689,8 +689,8 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "unique_paths",
     "goFunction": "Solve063",
-    "sampleInput": "text1=\"abcde\", text2=\"ace\"",
-    "sampleOutput": "3"
+    "sampleInput": "m=3, n=7",
+    "sampleOutput": "28"
   },
   {
     "id": 64,
@@ -708,11 +708,11 @@
     "leetcode": 714,
     "title": "Best Time to Buy and Sell Stock with Transaction Fee",
     "slug": "065-best-time-to-buy-and-sell-stock-with-transaction-fee",
-    "pattern": "DP 1D",
+    "pattern": "DP 2D / Kadane",
     "pythonFunction": "best_time_to_buy_and_sell_stock_with_transaction_fee",
     "goFunction": "Solve065",
-    "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
+    "sampleInput": "prices=[1,3,2,8,4,9], fee=2",
+    "sampleOutput": "8"
   },
   {
     "id": 66,
@@ -722,7 +722,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "edit_distance",
     "goFunction": "Solve066",
-    "sampleInput": "text1=\"abcde\", text2=\"ace\"",
+    "sampleInput": "word1=\"horse\", word2=\"ros\"",
     "sampleOutput": "3"
   },
   {
@@ -733,8 +733,8 @@
     "pattern": "Bit Manipulation",
     "pythonFunction": "counting_bits",
     "goFunction": "Solve067",
-    "sampleInput": "nums=[4,1,2,1,2]",
-    "sampleOutput": "4"
+    "sampleInput": "n=5",
+    "sampleOutput": "[0,1,1,2,1,2]"
   },
   {
     "id": 68,
@@ -755,19 +755,19 @@
     "pattern": "Bit Manipulation",
     "pythonFunction": "minimum_flips_to_make_a_or_b_equal_to_c",
     "goFunction": "Solve069",
-    "sampleInput": "nums=[4,1,2,1,2]",
-    "sampleOutput": "4"
+    "sampleInput": "a=2, b=6, c=5",
+    "sampleOutput": "3"
   },
   {
     "id": 70,
     "leetcode": 208,
-    "title": "Implement Trie Prefix Tree",
+    "title": "Implement Trie (Prefix Tree)",
     "slug": "070-implement-trie-prefix-tree",
     "pattern": "Trie / Encoding",
     "pythonFunction": "implement_trie_prefix_tree",
     "goFunction": "Solve070",
-    "sampleInput": "words=[\"apple\",\"app\"]",
-    "sampleOutput": "prefix/search result"
+    "sampleInput": "insert(\"apple\"), search(\"apple\"), startsWith(\"app\")",
+    "sampleOutput": "[null,true,true]"
   },
   {
     "id": 71,
@@ -777,8 +777,8 @@
     "pattern": "Trie / Encoding",
     "pythonFunction": "search_suggestions_system",
     "goFunction": "Solve071",
-    "sampleInput": "words=[\"apple\",\"app\"]",
-    "sampleOutput": "prefix/search result"
+    "sampleInput": "products=[\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"], searchWord=\"mouse\"",
+    "sampleOutput": "[[\"mobile\",\"moneypot\",\"monitor\"],[\"mobile\",\"moneypot\",\"monitor\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"]]"
   },
   {
     "id": 72,
@@ -788,8 +788,8 @@
     "pattern": "Intervals",
     "pythonFunction": "non_overlapping_intervals",
     "goFunction": "Solve072",
-    "sampleInput": "intervals=[[1,3],[2,6],[8,10]]",
-    "sampleOutput": "[[1,6],[8,10]]"
+    "sampleInput": "intervals=[[1,2],[2,3],[3,4],[1,3]]",
+    "sampleOutput": "1"
   },
   {
     "id": 73,
@@ -799,8 +799,8 @@
     "pattern": "Intervals",
     "pythonFunction": "minimum_number_of_arrows_to_burst_balloons",
     "goFunction": "Solve073",
-    "sampleInput": "intervals=[[1,3],[2,6],[8,10]]",
-    "sampleOutput": "[[1,6],[8,10]]"
+    "sampleInput": "points=[[10,16],[2,8],[1,6],[7,12]]",
+    "sampleOutput": "2"
   },
   {
     "id": 74,
@@ -821,8 +821,8 @@
     "pattern": "Monotonic Stack",
     "pythonFunction": "online_stock_span",
     "goFunction": "Solve075",
-    "sampleInput": "temperatures=[73,74,75,71,69,72,76,73]",
-    "sampleOutput": "[1,1,4,2,1,1,0,0]"
+    "sampleInput": "prices=[100,80,60,70,60,75,85]",
+    "sampleOutput": "[1,1,1,2,1,4,6]"
   },
   {
     "id": 76,
@@ -832,8 +832,8 @@
     "pattern": "Array / String",
     "pythonFunction": "merge_sorted_array",
     "goFunction": "Solve076",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "nums1=[1,2,3,0,0,0], m=3, nums2=[2,5,6], n=3",
+    "sampleOutput": "[1,2,2,3,5,6]"
   },
   {
     "id": 77,
@@ -843,8 +843,8 @@
     "pattern": "Array / String",
     "pythonFunction": "remove_element",
     "goFunction": "Solve077",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "nums=[3,2,2,3], val=3",
+    "sampleOutput": "k=2, first values [2,2]"
   },
   {
     "id": 78,
@@ -854,8 +854,8 @@
     "pattern": "Array / String",
     "pythonFunction": "remove_duplicates_from_sorted_array",
     "goFunction": "Solve078",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "nums=[1,1,2]",
+    "sampleOutput": "k=2, first values [1,2]"
   },
   {
     "id": 79,
@@ -865,8 +865,8 @@
     "pattern": "Array / String",
     "pythonFunction": "remove_duplicates_from_sorted_array_ii",
     "goFunction": "Solve079",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "nums=[0,0,1,1,1,1,2]",
+    "sampleOutput": "k=5, first values [0,0,1,1,2]"
   },
   {
     "id": 80,
@@ -876,8 +876,8 @@
     "pattern": "Array / String",
     "pythonFunction": "majority_element",
     "goFunction": "Solve080",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "nums=[2,2,1,1,1,2,2]",
+    "sampleOutput": "2"
   },
   {
     "id": 81,
@@ -887,30 +887,30 @@
     "pattern": "Array / String",
     "pythonFunction": "rotate_array",
     "goFunction": "Solve081",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "nums=[1,2,3,4,5], k=2",
+    "sampleOutput": "[4,5,1,2,3]"
   },
   {
     "id": 82,
     "leetcode": 121,
     "title": "Best Time to Buy and Sell Stock",
     "slug": "082-best-time-to-buy-and-sell-stock",
-    "pattern": "Array / String",
+    "pattern": "Math / Greedy",
     "pythonFunction": "best_time_to_buy_and_sell_stock",
     "goFunction": "Solve082",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "prices=[7,1,5,3,6,4]",
+    "sampleOutput": "5"
   },
   {
     "id": 83,
     "leetcode": 122,
     "title": "Best Time to Buy and Sell Stock II",
     "slug": "083-best-time-to-buy-and-sell-stock-ii",
-    "pattern": "Array / String",
+    "pattern": "Math / Greedy",
     "pythonFunction": "best_time_to_buy_and_sell_stock_ii",
     "goFunction": "Solve083",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "prices=[7,1,5,3,6,4]",
+    "sampleOutput": "7"
   },
   {
     "id": 84,
@@ -932,7 +932,7 @@
     "pythonFunction": "jump_game_ii",
     "goFunction": "Solve085",
     "sampleInput": "nums=[2,3,1,1,4]",
-    "sampleOutput": "true"
+    "sampleOutput": "2"
   },
   {
     "id": 86,
@@ -942,41 +942,41 @@
     "pattern": "Array / String",
     "pythonFunction": "h_index",
     "goFunction": "Solve086",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "citations=[3,0,6,1,5]",
+    "sampleOutput": "3"
   },
   {
     "id": 87,
     "leetcode": 380,
     "title": "Insert Delete GetRandom O(1)",
     "slug": "087-insert-delete-getrandom-o-1",
-    "pattern": "Hash Map / Set",
+    "pattern": "Heap / Priority Queue",
     "pythonFunction": "insert_delete_getrandom_o_1",
     "goFunction": "Solve087",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "insert(1), remove(2), insert(2), getRandom(), remove(1), insert(2), getRandom()",
+    "sampleOutput": "[true,false,true,1 or 2,true,false,2]"
   },
   {
     "id": 88,
     "leetcode": 134,
     "title": "Gas Station",
     "slug": "088-gas-station",
-    "pattern": "Math / Greedy",
+    "pattern": "Array / String",
     "pythonFunction": "gas_station",
     "goFunction": "Solve088",
-    "sampleInput": "nums=[2,3,1,1,4]",
-    "sampleOutput": "true"
+    "sampleInput": "gas=[1,2,3,4,5], cost=[3,4,5,1,2]",
+    "sampleOutput": "3"
   },
   {
     "id": 89,
     "leetcode": 135,
     "title": "Candy",
     "slug": "089-candy",
-    "pattern": "Math / Greedy",
+    "pattern": "Array / String",
     "pythonFunction": "candy",
     "goFunction": "Solve089",
-    "sampleInput": "nums=[2,3,1,1,4]",
-    "sampleOutput": "true"
+    "sampleInput": "ratings=[1,0,2]",
+    "sampleOutput": "5"
   },
   {
     "id": 90,
@@ -986,8 +986,8 @@
     "pattern": "Two Pointers",
     "pythonFunction": "trapping_rain_water",
     "goFunction": "Solve090",
-    "sampleInput": "nums=[1,2,3,4,6], target=6",
-    "sampleOutput": "valid pair/window"
+    "sampleInput": "height=[0,2,0,3,0,1]",
+    "sampleOutput": "3"
   },
   {
     "id": 91,
@@ -997,8 +997,8 @@
     "pattern": "Array / String",
     "pythonFunction": "roman_to_integer",
     "goFunction": "Solve091",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "s=\"MCMXCIV\"",
+    "sampleOutput": "1994"
   },
   {
     "id": 92,
@@ -1008,8 +1008,8 @@
     "pattern": "Array / String",
     "pythonFunction": "integer_to_roman",
     "goFunction": "Solve092",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "num=58",
+    "sampleOutput": "\"LVIII\""
   },
   {
     "id": 93,
@@ -1019,8 +1019,8 @@
     "pattern": "Array / String",
     "pythonFunction": "length_of_last_word",
     "goFunction": "Solve093",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "s=\"fly me to the moon\"",
+    "sampleOutput": "4"
   },
   {
     "id": 94,
@@ -1030,8 +1030,8 @@
     "pattern": "Array / String",
     "pythonFunction": "longest_common_prefix",
     "goFunction": "Solve094",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "strs=[\"flower\",\"flow\",\"flight\"]",
+    "sampleOutput": "\"fl\""
   },
   {
     "id": 95,
@@ -1041,8 +1041,8 @@
     "pattern": "Array / String",
     "pythonFunction": "zigzag_conversion",
     "goFunction": "Solve095",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "s=\"ABCDE\", numRows=2",
+    "sampleOutput": "\"ACEBD\""
   },
   {
     "id": 96,
@@ -1052,8 +1052,8 @@
     "pattern": "Array / String",
     "pythonFunction": "find_the_index_of_the_first_occurrence_in_a_string",
     "goFunction": "Solve096",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "haystack=\"sadbutsad\", needle=\"sad\"",
+    "sampleOutput": "0"
   },
   {
     "id": 97,
@@ -1063,8 +1063,8 @@
     "pattern": "Array / String",
     "pythonFunction": "text_justification",
     "goFunction": "Solve097",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "words=[\"This\",\"is\",\"an\",\"example\"], maxWidth=16",
+    "sampleOutput": "[\"This    is    an\",\"example         \"]"
   },
   {
     "id": 98,
@@ -1074,19 +1074,19 @@
     "pattern": "Two Pointers",
     "pythonFunction": "valid_palindrome",
     "goFunction": "Solve098",
-    "sampleInput": "nums=[1,2,3,4,6], target=6",
-    "sampleOutput": "valid pair/window"
+    "sampleInput": "s=\"A man, a plan, a canal: Panama\"",
+    "sampleOutput": "true"
   },
   {
     "id": 99,
     "leetcode": 167,
-    "title": "Two Sum II Input Array Is Sorted",
+    "title": "Two Sum II - Input Array Is Sorted",
     "slug": "099-two-sum-ii-input-array-is-sorted",
     "pattern": "Two Pointers",
     "pythonFunction": "two_sum_ii_input_array_is_sorted",
     "goFunction": "Solve099",
-    "sampleInput": "nums=[1,2,3,4,6], target=6",
-    "sampleOutput": "valid pair/window"
+    "sampleInput": "numbers=[2,7,11,15], target=9",
+    "sampleOutput": "[1,2]"
   },
   {
     "id": 100,
@@ -1096,19 +1096,19 @@
     "pattern": "Two Pointers",
     "pythonFunction": "problem_3sum",
     "goFunction": "Solve100",
-    "sampleInput": "nums=[1,2,3,4,6], target=6",
-    "sampleOutput": "valid pair/window"
+    "sampleInput": "nums=[-1,0,1,2,-1,-4]",
+    "sampleOutput": "[[-1,-1,2],[-1,0,1]]"
   },
   {
     "id": 101,
     "leetcode": 209,
     "title": "Minimum Size Subarray Sum",
     "slug": "101-minimum-size-subarray-sum",
-    "pattern": "Sliding Window",
+    "pattern": "Two Pointers",
     "pythonFunction": "minimum_size_subarray_sum",
     "goFunction": "Solve101",
-    "sampleInput": "s=\"AABABBA\", k=1",
-    "sampleOutput": "best window length"
+    "sampleInput": "target=7, nums=[2,3,1,2,4,3]",
+    "sampleOutput": "2"
   },
   {
     "id": 102,
@@ -1118,19 +1118,19 @@
     "pattern": "Sliding Window",
     "pythonFunction": "longest_substring_without_repeating_characters",
     "goFunction": "Solve102",
-    "sampleInput": "s=\"AABABBA\", k=1",
-    "sampleOutput": "best window length"
+    "sampleInput": "s=\"abcabcbb\"",
+    "sampleOutput": "3"
   },
   {
     "id": 103,
     "leetcode": 30,
     "title": "Substring with Concatenation of All Words",
     "slug": "103-substring-with-concatenation-of-all-words",
-    "pattern": "Sliding Window",
+    "pattern": "Two Pointers",
     "pythonFunction": "substring_with_concatenation_of_all_words",
     "goFunction": "Solve103",
-    "sampleInput": "s=\"AABABBA\", k=1",
-    "sampleOutput": "best window length"
+    "sampleInput": "s=\"barfoothefoobarman\", words=[\"foo\",\"bar\"]",
+    "sampleOutput": "[0,9]"
   },
   {
     "id": 104,
@@ -1140,8 +1140,8 @@
     "pattern": "Sliding Window",
     "pythonFunction": "minimum_window_substring",
     "goFunction": "Solve104",
-    "sampleInput": "s=\"AABABBA\", k=1",
-    "sampleOutput": "best window length"
+    "sampleInput": "s=\"ADOBECODEBANC\", t=\"ABC\"",
+    "sampleOutput": "\"BANC\""
   },
   {
     "id": 105,
@@ -1151,8 +1151,8 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "valid_sudoku",
     "goFunction": "Solve105",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "board=[\"53..7....\",\"6..195...\",\".98....6.\",\"8...6...3\",\"4..8.3..1\",\"7...2...6\",\".6....28.\",\"...419..5\",\"....8..79\"]",
+    "sampleOutput": "true"
   },
   {
     "id": 106,
@@ -1162,8 +1162,8 @@
     "pattern": "Array / String",
     "pythonFunction": "spiral_matrix",
     "goFunction": "Solve106",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "matrix=[[1,2,3],[4,5,6],[7,8,9]]",
+    "sampleOutput": "[1,2,3,6,9,8,7,4,5]"
   },
   {
     "id": 107,
@@ -1173,41 +1173,41 @@
     "pattern": "Array / String",
     "pythonFunction": "rotate_image",
     "goFunction": "Solve107",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "matrix=[[1,2],[3,4]]",
+    "sampleOutput": "[[3,1],[4,2]]"
   },
   {
     "id": 108,
     "leetcode": 73,
     "title": "Set Matrix Zeroes",
     "slug": "108-set-matrix-zeroes",
-    "pattern": "Hash Map / Set",
+    "pattern": "Array / String",
     "pythonFunction": "set_matrix_zeroes",
     "goFunction": "Solve108",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "matrix=[[1,1,1],[1,0,1],[1,1,1]]",
+    "sampleOutput": "[[1,0,1],[0,0,0],[1,0,1]]"
   },
   {
     "id": 109,
     "leetcode": 289,
     "title": "Game of Life",
     "slug": "109-game-of-life",
-    "pattern": "Array / String",
+    "pattern": "Math / Greedy",
     "pythonFunction": "game_of_life",
     "goFunction": "Solve109",
-    "sampleInput": "nums=[1,2,3,4]",
-    "sampleOutput": "computed result"
+    "sampleInput": "board=[[0,1,0],[0,0,1],[1,1,1],[0,0,0]]",
+    "sampleOutput": "[[0,0,0],[1,0,1],[0,1,1],[0,1,0]]"
   },
   {
     "id": 110,
     "leetcode": 383,
     "title": "Ransom Note",
     "slug": "110-ransom-note",
-    "pattern": "Hash Map / Set",
+    "pattern": "Array / String",
     "pythonFunction": "ransom_note",
     "goFunction": "Solve110",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "ransomNote=\"aa\", magazine=\"aab\"",
+    "sampleOutput": "true"
   },
   {
     "id": 111,
@@ -1217,8 +1217,8 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "isomorphic_strings",
     "goFunction": "Solve111",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "s=\"egg\", t=\"add\"",
+    "sampleOutput": "true"
   },
   {
     "id": 112,
@@ -1228,8 +1228,8 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "word_pattern",
     "goFunction": "Solve112",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "pattern=\"abba\", s=\"dog cat cat dog\"",
+    "sampleOutput": "true"
   },
   {
     "id": 113,
@@ -1239,8 +1239,8 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "valid_anagram",
     "goFunction": "Solve113",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "s=\"anagram\", t=\"nagaram\"",
+    "sampleOutput": "true"
   },
   {
     "id": 114,
@@ -1250,8 +1250,8 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "group_anagrams",
     "goFunction": "Solve114",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "strs=[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+    "sampleOutput": "[[\"eat\",\"tea\",\"ate\"],[\"tan\",\"nat\"],[\"bat\"]]"
   },
   {
     "id": 115,
@@ -1262,7 +1262,7 @@
     "pythonFunction": "two_sum",
     "goFunction": "Solve115",
     "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleOutput": "[0,1]"
   },
   {
     "id": 116,
@@ -1272,8 +1272,8 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "happy_number",
     "goFunction": "Solve116",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "n=19",
+    "sampleOutput": "true"
   },
   {
     "id": 117,
@@ -1283,8 +1283,8 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "contains_duplicate_ii",
     "goFunction": "Solve117",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "nums=[1,2,3,1], k=3",
+    "sampleOutput": "true"
   },
   {
     "id": 118,
@@ -1294,8 +1294,8 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "longest_consecutive_sequence",
     "goFunction": "Solve118",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "nums=[100,4,200,1,3,2]",
+    "sampleOutput": "4"
   },
   {
     "id": 119,
@@ -1327,8 +1327,8 @@
     "pattern": "Intervals",
     "pythonFunction": "insert_interval",
     "goFunction": "Solve121",
-    "sampleInput": "intervals=[[1,3],[2,6],[8,10]]",
-    "sampleOutput": "[[1,6],[8,10]]"
+    "sampleInput": "intervals=[[1,3],[6,9]], newInterval=[2,5]",
+    "sampleOutput": "[[1,5],[6,9]]"
   },
   {
     "id": 122,
@@ -1338,8 +1338,8 @@
     "pattern": "Stack",
     "pythonFunction": "valid_parentheses",
     "goFunction": "Solve122",
-    "sampleInput": "tokens=[\"2\",\"1\",\"+\",\"3\",\"*\"]",
-    "sampleOutput": "stack result"
+    "sampleInput": "s=\"({[]})\"",
+    "sampleOutput": "true"
   },
   {
     "id": 123,
@@ -1349,8 +1349,8 @@
     "pattern": "Stack",
     "pythonFunction": "simplify_path",
     "goFunction": "Solve123",
-    "sampleInput": "tokens=[\"2\",\"1\",\"+\",\"3\",\"*\"]",
-    "sampleOutput": "stack result"
+    "sampleInput": "path=\"/a//b/../c/\"",
+    "sampleOutput": "\"/a/c\""
   },
   {
     "id": 124,
@@ -1360,8 +1360,8 @@
     "pattern": "Stack",
     "pythonFunction": "min_stack",
     "goFunction": "Solve124",
-    "sampleInput": "tokens=[\"2\",\"1\",\"+\",\"3\",\"*\"]",
-    "sampleOutput": "stack result"
+    "sampleInput": "push(-2),push(0),push(-3),getMin,pop,top,getMin",
+    "sampleOutput": "[null,null,null,-3,null,0,-2]"
   },
   {
     "id": 125,
@@ -1372,7 +1372,7 @@
     "pythonFunction": "evaluate_reverse_polish_notation",
     "goFunction": "Solve125",
     "sampleInput": "tokens=[\"2\",\"1\",\"+\",\"3\",\"*\"]",
-    "sampleOutput": "stack result"
+    "sampleOutput": "9"
   },
   {
     "id": 126,
@@ -1382,8 +1382,8 @@
     "pattern": "Stack",
     "pythonFunction": "basic_calculator",
     "goFunction": "Solve126",
-    "sampleInput": "tokens=[\"2\",\"1\",\"+\",\"3\",\"*\"]",
-    "sampleOutput": "stack result"
+    "sampleInput": "s=\"(1+(4+5+2)-3)+(6+8)\"",
+    "sampleOutput": "23"
   },
   {
     "id": 127,
@@ -1393,8 +1393,8 @@
     "pattern": "Linked List",
     "pythonFunction": "linked_list_cycle",
     "goFunction": "Solve127",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "head=[3,2,0,-4], tail connects to index 1",
+    "sampleOutput": "true"
   },
   {
     "id": 128,
@@ -1404,8 +1404,8 @@
     "pattern": "Linked List",
     "pythonFunction": "add_two_numbers",
     "goFunction": "Solve128",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "l1=[2,4,3], l2=[5,6,4]",
+    "sampleOutput": "[7,0,8]"
   },
   {
     "id": 129,
@@ -1415,8 +1415,8 @@
     "pattern": "Linked List",
     "pythonFunction": "merge_two_sorted_lists",
     "goFunction": "Solve129",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "list1=[1,2,4], list2=[1,3,4]",
+    "sampleOutput": "[1,1,2,3,4,4]"
   },
   {
     "id": 130,
@@ -1426,8 +1426,8 @@
     "pattern": "Linked List",
     "pythonFunction": "copy_list_with_random_pointer",
     "goFunction": "Solve130",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "nodes=[[7,null],[13,0],[11,0]]",
+    "sampleOutput": "deep copy with same values and random links"
   },
   {
     "id": 131,
@@ -1437,8 +1437,8 @@
     "pattern": "Linked List",
     "pythonFunction": "reverse_linked_list_ii",
     "goFunction": "Solve131",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "head=[1,2,3,4,5], left=2, right=4",
+    "sampleOutput": "[1,4,3,2,5]"
   },
   {
     "id": 132,
@@ -1448,8 +1448,8 @@
     "pattern": "Linked List",
     "pythonFunction": "reverse_nodes_in_k_group",
     "goFunction": "Solve132",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "head=[1,2,3,4,5], k=2",
+    "sampleOutput": "[2,1,4,3,5]"
   },
   {
     "id": 133,
@@ -1459,8 +1459,8 @@
     "pattern": "Linked List",
     "pythonFunction": "remove_nth_node_from_end_of_list",
     "goFunction": "Solve133",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "head=[1,2,3,4,5], n=2",
+    "sampleOutput": "[1,2,3,5]"
   },
   {
     "id": 134,
@@ -1470,8 +1470,8 @@
     "pattern": "Linked List",
     "pythonFunction": "remove_duplicates_from_sorted_list_ii",
     "goFunction": "Solve134",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "head=[1,2,3,3,4,4,5]",
+    "sampleOutput": "[1,2,5]"
   },
   {
     "id": 135,
@@ -1481,8 +1481,8 @@
     "pattern": "Linked List",
     "pythonFunction": "rotate_list",
     "goFunction": "Solve135",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "head=[1,2,3,4,5], k=2",
+    "sampleOutput": "[4,5,1,2,3]"
   },
   {
     "id": 136,
@@ -1492,19 +1492,19 @@
     "pattern": "Linked List",
     "pythonFunction": "partition_list",
     "goFunction": "Solve136",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "head=[1,4,3,2,5,2], x=3",
+    "sampleOutput": "[1,2,2,4,3,5]"
   },
   {
     "id": 137,
     "leetcode": 146,
     "title": "LRU Cache",
     "slug": "137-lru-cache",
-    "pattern": "Hash Map / Set",
+    "pattern": "Linked List",
     "pythonFunction": "lru_cache",
     "goFunction": "Solve137",
-    "sampleInput": "nums=[2,7,11,15], target=9",
-    "sampleOutput": "answer from stored lookup"
+    "sampleInput": "capacity=2; put(1,1),put(2,2),get(1),put(3,3),get(2)",
+    "sampleOutput": "[null,null,1,null,-1]"
   },
   {
     "id": 138,
@@ -1514,8 +1514,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "same_tree",
     "goFunction": "Solve138",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "p=[1,2,3], q=[1,2,3]",
+    "sampleOutput": "true"
   },
   {
     "id": 139,
@@ -1525,8 +1525,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "invert_binary_tree",
     "goFunction": "Solve139",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "root=[4,2,7,1,3,6,9]",
+    "sampleOutput": "[4,7,2,9,6,3,1]"
   },
   {
     "id": 140,
@@ -1536,8 +1536,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "symmetric_tree",
     "goFunction": "Solve140",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "root=[1,2,2,3,4,4,3]",
+    "sampleOutput": "true"
   },
   {
     "id": 141,
@@ -1547,8 +1547,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "construct_binary_tree_from_preorder_and_inorder_traversal",
     "goFunction": "Solve141",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "preorder=[3,9,20,15,7], inorder=[9,3,15,20,7]",
+    "sampleOutput": "[3,9,20,null,null,15,7]"
   },
   {
     "id": 142,
@@ -1558,19 +1558,19 @@
     "pattern": "Tree DFS",
     "pythonFunction": "construct_binary_tree_from_inorder_and_postorder_traversal",
     "goFunction": "Solve142",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "inorder=[9,3,15,20,7], postorder=[9,15,7,20,3]",
+    "sampleOutput": "[3,9,20,null,null,15,7]"
   },
   {
     "id": 143,
     "leetcode": 117,
     "title": "Populating Next Right Pointers in Each Node II",
     "slug": "143-populating-next-right-pointers-in-each-node-ii",
-    "pattern": "Tree BFS",
+    "pattern": "Tree DFS",
     "pythonFunction": "populating_next_right_pointers_in_each_node_ii",
     "goFunction": "Solve143",
-    "sampleInput": "root=[1,2,3,null,5,null,4]",
-    "sampleOutput": "[1,3,4]"
+    "sampleInput": "root=[1,2,3,4,5,null,7]",
+    "sampleOutput": "levels linked as 1->null, 2->3->null, 4->5->7->null"
   },
   {
     "id": 144,
@@ -1580,8 +1580,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "flatten_binary_tree_to_linked_list",
     "goFunction": "Solve144",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "root=[1,2,5,3,4,null,6]",
+    "sampleOutput": "[1,2,3,4,5,6]"
   },
   {
     "id": 145,
@@ -1591,8 +1591,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "path_sum",
     "goFunction": "Solve145",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "root=[5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum=22",
+    "sampleOutput": "true"
   },
   {
     "id": 146,
@@ -1602,8 +1602,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "sum_root_to_leaf_numbers",
     "goFunction": "Solve146",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "root=[1,2,3]",
+    "sampleOutput": "25"
   },
   {
     "id": 147,
@@ -1613,8 +1613,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "binary_tree_maximum_path_sum",
     "goFunction": "Solve147",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "root=[-10,9,20,null,null,15,7]",
+    "sampleOutput": "42"
   },
   {
     "id": 148,
@@ -1624,8 +1624,8 @@
     "pattern": "BST",
     "pythonFunction": "binary_search_tree_iterator",
     "goFunction": "Solve148",
-    "sampleInput": "root=[5,3,6,2,4,null,7], key=3",
-    "sampleOutput": "updated/search result"
+    "sampleInput": "BST=[7,3,15,null,null,9,20], calls=next,next,hasNext",
+    "sampleOutput": "[3,7,true]"
   },
   {
     "id": 149,
@@ -1635,8 +1635,8 @@
     "pattern": "Tree DFS",
     "pythonFunction": "count_complete_tree_nodes",
     "goFunction": "Solve149",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "root=[1,2,3,4,5,6]",
+    "sampleOutput": "6"
   },
   {
     "id": 150,
@@ -1646,8 +1646,8 @@
     "pattern": "Tree BFS",
     "pythonFunction": "average_of_levels_in_binary_tree",
     "goFunction": "Solve150",
-    "sampleInput": "root=[1,2,3,null,5,null,4]",
-    "sampleOutput": "[1,3,4]"
+    "sampleInput": "root=[3,9,20,null,null,15,7]",
+    "sampleOutput": "[3,14.5,11]"
   },
   {
     "id": 151,
@@ -1657,8 +1657,8 @@
     "pattern": "Tree BFS",
     "pythonFunction": "binary_tree_level_order_traversal",
     "goFunction": "Solve151",
-    "sampleInput": "root=[1,2,3,null,5,null,4]",
-    "sampleOutput": "[1,3,4]"
+    "sampleInput": "root=[3,9,20,null,null,15,7]",
+    "sampleOutput": "[[3],[9,20],[15,7]]"
   },
   {
     "id": 152,
@@ -1668,8 +1668,8 @@
     "pattern": "Tree BFS",
     "pythonFunction": "binary_tree_zigzag_level_order_traversal",
     "goFunction": "Solve152",
-    "sampleInput": "root=[1,2,3,null,5,null,4]",
-    "sampleOutput": "[1,3,4]"
+    "sampleInput": "root=[3,9,20,null,null,15,7]",
+    "sampleOutput": "[[3],[20,9],[15,7]]"
   },
   {
     "id": 153,
@@ -1679,8 +1679,8 @@
     "pattern": "BST",
     "pythonFunction": "minimum_absolute_difference_in_bst",
     "goFunction": "Solve153",
-    "sampleInput": "root=[5,3,6,2,4,null,7], key=3",
-    "sampleOutput": "updated/search result"
+    "sampleInput": "root=[4,2,6,1,3]",
+    "sampleOutput": "1"
   },
   {
     "id": 154,
@@ -1690,8 +1690,8 @@
     "pattern": "BST",
     "pythonFunction": "kth_smallest_element_in_a_bst",
     "goFunction": "Solve154",
-    "sampleInput": "root=[5,3,6,2,4,null,7], key=3",
-    "sampleOutput": "updated/search result"
+    "sampleInput": "root=[3,1,4,null,2], k=1",
+    "sampleOutput": "1"
   },
   {
     "id": 155,
@@ -1701,8 +1701,8 @@
     "pattern": "BST",
     "pythonFunction": "validate_binary_search_tree",
     "goFunction": "Solve155",
-    "sampleInput": "root=[5,3,6,2,4,null,7], key=3",
-    "sampleOutput": "updated/search result"
+    "sampleInput": "root=[2,1,3]",
+    "sampleOutput": "true"
   },
   {
     "id": 156,
@@ -1712,8 +1712,8 @@
     "pattern": "Graph",
     "pythonFunction": "number_of_islands",
     "goFunction": "Solve156",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "grid=[[\"1\",\"1\",\"0\"],[\"0\",\"1\",\"0\"],[\"1\",\"0\",\"1\"]]",
+    "sampleOutput": "3"
   },
   {
     "id": 157,
@@ -1723,8 +1723,8 @@
     "pattern": "Graph",
     "pythonFunction": "surrounded_regions",
     "goFunction": "Solve157",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "board=[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]",
+    "sampleOutput": "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]"
   },
   {
     "id": 158,
@@ -1734,8 +1734,8 @@
     "pattern": "Graph",
     "pythonFunction": "clone_graph",
     "goFunction": "Solve158",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "adjList=[[2,4],[1,3],[2,4],[1,3]]",
+    "sampleOutput": "deep copy with same adjacency"
   },
   {
     "id": 159,
@@ -1745,8 +1745,8 @@
     "pattern": "Graph",
     "pythonFunction": "course_schedule",
     "goFunction": "Solve159",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "numCourses=2, prerequisites=[[1,0]]",
+    "sampleOutput": "true"
   },
   {
     "id": 160,
@@ -1756,8 +1756,8 @@
     "pattern": "Graph",
     "pythonFunction": "course_schedule_ii",
     "goFunction": "Solve160",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "numCourses=2, prerequisites=[[1,0]]",
+    "sampleOutput": "[0,1]"
   },
   {
     "id": 161,
@@ -1767,8 +1767,8 @@
     "pattern": "Graph",
     "pythonFunction": "snakes_and_ladders",
     "goFunction": "Solve161",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "board=[[-1,-1],[-1,-1]]",
+    "sampleOutput": "1"
   },
   {
     "id": 162,
@@ -1778,8 +1778,8 @@
     "pattern": "Graph",
     "pythonFunction": "minimum_genetic_mutation",
     "goFunction": "Solve162",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "start=\"AACCGGTT\", end=\"AACCGGTA\", bank=[\"AACCGGTA\"]",
+    "sampleOutput": "1"
   },
   {
     "id": 163,
@@ -1789,8 +1789,8 @@
     "pattern": "Graph",
     "pythonFunction": "word_ladder",
     "goFunction": "Solve163",
-    "sampleInput": "n=4, edges=[[0,1],[1,2],[2,3]]",
-    "sampleOutput": "graph answer"
+    "sampleInput": "beginWord=\"hit\", endWord=\"cog\", wordList=[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+    "sampleOutput": "5"
   },
   {
     "id": 164,
@@ -1800,8 +1800,8 @@
     "pattern": "Trie / Encoding",
     "pythonFunction": "design_add_and_search_words_data_structure",
     "goFunction": "Solve164",
-    "sampleInput": "words=[\"apple\",\"app\"]",
-    "sampleOutput": "prefix/search result"
+    "sampleInput": "add bad,dad,mad; search pad,bad,.ad,b..",
+    "sampleOutput": "[false,true,true,true]"
   },
   {
     "id": 165,
@@ -1811,8 +1811,8 @@
     "pattern": "Trie / Encoding",
     "pythonFunction": "word_search_ii",
     "goFunction": "Solve165",
-    "sampleInput": "words=[\"apple\",\"app\"]",
-    "sampleOutput": "prefix/search result"
+    "sampleInput": "board=[[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]], words=[\"oath\",\"pea\",\"eat\",\"rain\"]",
+    "sampleOutput": "[\"eat\",\"oath\"]"
   },
   {
     "id": 166,
@@ -1822,8 +1822,8 @@
     "pattern": "Backtracking",
     "pythonFunction": "combinations",
     "goFunction": "Solve166",
-    "sampleInput": "digits=\"23\"",
-    "sampleOutput": "[\"ad\",\"ae\",\"af\",...]"
+    "sampleInput": "n=4, k=2",
+    "sampleOutput": "[[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]"
   },
   {
     "id": 167,
@@ -1833,8 +1833,8 @@
     "pattern": "Backtracking",
     "pythonFunction": "permutations",
     "goFunction": "Solve167",
-    "sampleInput": "digits=\"23\"",
-    "sampleOutput": "[\"ad\",\"ae\",\"af\",...]"
+    "sampleInput": "nums=[1,2,3]",
+    "sampleOutput": "6 permutations"
   },
   {
     "id": 168,
@@ -1844,8 +1844,8 @@
     "pattern": "Backtracking",
     "pythonFunction": "combination_sum",
     "goFunction": "Solve168",
-    "sampleInput": "digits=\"23\"",
-    "sampleOutput": "[\"ad\",\"ae\",\"af\",...]"
+    "sampleInput": "candidates=[2,3,6,7], target=7",
+    "sampleOutput": "[[2,2,3],[7]]"
   },
   {
     "id": 169,
@@ -1855,8 +1855,8 @@
     "pattern": "Backtracking",
     "pythonFunction": "n_queens_ii",
     "goFunction": "Solve169",
-    "sampleInput": "digits=\"23\"",
-    "sampleOutput": "[\"ad\",\"ae\",\"af\",...]"
+    "sampleInput": "n=4",
+    "sampleOutput": "2"
   },
   {
     "id": 170,
@@ -1866,8 +1866,8 @@
     "pattern": "Backtracking",
     "pythonFunction": "generate_parentheses",
     "goFunction": "Solve170",
-    "sampleInput": "digits=\"23\"",
-    "sampleOutput": "[\"ad\",\"ae\",\"af\",...]"
+    "sampleInput": "n=3",
+    "sampleOutput": "[\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]"
   },
   {
     "id": 171,
@@ -1877,19 +1877,19 @@
     "pattern": "Backtracking",
     "pythonFunction": "word_search",
     "goFunction": "Solve171",
-    "sampleInput": "digits=\"23\"",
-    "sampleOutput": "[\"ad\",\"ae\",\"af\",...]"
+    "sampleInput": "board=[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word=\"ABCCED\"",
+    "sampleOutput": "true"
   },
   {
     "id": 172,
     "leetcode": 108,
     "title": "Convert Sorted Array to Binary Search Tree",
     "slug": "172-convert-sorted-array-to-binary-search-tree",
-    "pattern": "Tree DFS",
+    "pattern": "BST",
     "pythonFunction": "convert_sorted_array_to_binary_search_tree",
     "goFunction": "Solve172",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "nums=[-10,-3,0,5,9]",
+    "sampleOutput": "balanced BST such as [0,-3,9,-10,null,5]"
   },
   {
     "id": 173,
@@ -1899,19 +1899,19 @@
     "pattern": "Linked List",
     "pythonFunction": "sort_list",
     "goFunction": "Solve173",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "mutated list"
+    "sampleInput": "head=[4,2,1,3]",
+    "sampleOutput": "[1,2,3,4]"
   },
   {
     "id": 174,
     "leetcode": 427,
     "title": "Construct Quad Tree",
     "slug": "174-construct-quad-tree",
-    "pattern": "Tree DFS",
+    "pattern": "Math / Greedy",
     "pythonFunction": "construct_quad_tree",
     "goFunction": "Solve174",
-    "sampleInput": "root=[3,9,20,null,null,15,7]",
-    "sampleOutput": "tree answer"
+    "sampleInput": "grid=[[1,1],[1,1]]",
+    "sampleOutput": "leaf node with val=true"
   },
   {
     "id": 175,
@@ -1921,8 +1921,8 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "merge_k_sorted_lists",
     "goFunction": "Solve175",
-    "sampleInput": "items=[3,2,1,5,6,4], k=2",
-    "sampleOutput": "priority answer"
+    "sampleInput": "lists=[[1,4,5],[1,3,4],[2,6]]",
+    "sampleOutput": "[1,1,2,3,4,4,5,6]"
   },
   {
     "id": 176,
@@ -1932,8 +1932,8 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "maximum_subarray",
     "goFunction": "Solve176",
-    "sampleInput": "text1=\"abcde\", text2=\"ace\"",
-    "sampleOutput": "3"
+    "sampleInput": "nums=[-2,1,-3,4,-1,2,1,-5,4]",
+    "sampleOutput": "6"
   },
   {
     "id": 177,
@@ -1943,8 +1943,8 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "maximum_sum_circular_subarray",
     "goFunction": "Solve177",
-    "sampleInput": "text1=\"abcde\", text2=\"ace\"",
-    "sampleOutput": "3"
+    "sampleInput": "nums=[5,-3,5]",
+    "sampleOutput": "10"
   },
   {
     "id": 178,
@@ -1954,8 +1954,8 @@
     "pattern": "Binary Search",
     "pythonFunction": "search_insert_position",
     "goFunction": "Solve178",
-    "sampleInput": "nums=[1,3,5,6], target=5",
-    "sampleOutput": "2"
+    "sampleInput": "nums=[1,3,5,6], target=2",
+    "sampleOutput": "1"
   },
   {
     "id": 179,
@@ -1965,8 +1965,8 @@
     "pattern": "Binary Search",
     "pythonFunction": "search_a_2d_matrix",
     "goFunction": "Solve179",
-    "sampleInput": "nums=[1,3,5,6], target=5",
-    "sampleOutput": "2"
+    "sampleInput": "matrix=[[1,3,5],[7,9,11]], target=9",
+    "sampleOutput": "true"
   },
   {
     "id": 180,
@@ -1976,8 +1976,8 @@
     "pattern": "Binary Search",
     "pythonFunction": "search_in_rotated_sorted_array",
     "goFunction": "Solve180",
-    "sampleInput": "nums=[1,3,5,6], target=5",
-    "sampleOutput": "2"
+    "sampleInput": "nums=[4,5,6,7,0,1,2], target=0",
+    "sampleOutput": "4"
   },
   {
     "id": 181,
@@ -1987,8 +1987,8 @@
     "pattern": "Binary Search",
     "pythonFunction": "find_first_and_last_position_of_element_in_sorted_array",
     "goFunction": "Solve181",
-    "sampleInput": "nums=[1,3,5,6], target=5",
-    "sampleOutput": "2"
+    "sampleInput": "nums=[5,7,7,8,8,10], target=8",
+    "sampleOutput": "[3,4]"
   },
   {
     "id": 182,
@@ -1998,8 +1998,8 @@
     "pattern": "Binary Search",
     "pythonFunction": "find_minimum_in_rotated_sorted_array",
     "goFunction": "Solve182",
-    "sampleInput": "nums=[1,3,5,6], target=5",
-    "sampleOutput": "2"
+    "sampleInput": "nums=[3,4,5,1,2]",
+    "sampleOutput": "1"
   },
   {
     "id": 183,
@@ -2009,8 +2009,8 @@
     "pattern": "Binary Search",
     "pythonFunction": "median_of_two_sorted_arrays",
     "goFunction": "Solve183",
-    "sampleInput": "nums=[1,3,5,6], target=5",
-    "sampleOutput": "2"
+    "sampleInput": "nums1=[1,3], nums2=[2]",
+    "sampleOutput": "2.0"
   },
   {
     "id": 184,
@@ -2020,8 +2020,8 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "ipo",
     "goFunction": "Solve184",
-    "sampleInput": "items=[3,2,1,5,6,4], k=2",
-    "sampleOutput": "priority answer"
+    "sampleInput": "k=2, w=0, profits=[1,2,3], capital=[0,1,1]",
+    "sampleOutput": "4"
   },
   {
     "id": 185,
@@ -2031,8 +2031,8 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "find_k_pairs_with_smallest_sums",
     "goFunction": "Solve185",
-    "sampleInput": "items=[3,2,1,5,6,4], k=2",
-    "sampleOutput": "priority answer"
+    "sampleInput": "nums1=[1,7,11], nums2=[2,4,6], k=3",
+    "sampleOutput": "[[1,2],[1,4],[1,6]]"
   },
   {
     "id": 186,
@@ -2042,448 +2042,448 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "find_median_from_data_stream",
     "goFunction": "Solve186",
-    "sampleInput": "items=[3,2,1,5,6,4], k=2",
-    "sampleOutput": "priority answer"
+    "sampleInput": "add 1, add 2, find, add 3, find",
+    "sampleOutput": "[null,null,1.5,null,2]"
   },
   {
     "id": 187,
-    "leetcode": 347,
-    "title": "Top K Frequent Elements",
-    "slug": "187-top-k-frequent-elements",
-    "pattern": "Heap / Priority Queue",
-    "pythonFunction": "top_k_frequent_elements",
+    "leetcode": 67,
+    "title": "Add Binary",
+    "slug": "187-add-binary",
+    "pattern": "Bit Manipulation",
+    "pythonFunction": "add_binary",
     "goFunction": "Solve187",
-    "sampleInput": "nums=[1,1,1,2,2,3], k=2",
-    "sampleOutput": "[1,2]"
+    "sampleInput": "a=\"1010\", b=\"1011\"",
+    "sampleOutput": "\"10101\""
   },
   {
     "id": 188,
-    "leetcode": 67,
-    "title": "Add Binary",
-    "slug": "188-add-binary",
+    "leetcode": 190,
+    "title": "Reverse Bits",
+    "slug": "188-reverse-bits",
     "pattern": "Bit Manipulation",
-    "pythonFunction": "add_binary",
+    "pythonFunction": "reverse_bits",
     "goFunction": "Solve188",
-    "sampleInput": "nums=[4,1,2,1,2]",
-    "sampleOutput": "4"
+    "sampleInput": "n=43261596",
+    "sampleOutput": "964176192"
   },
   {
     "id": 189,
-    "leetcode": 190,
-    "title": "Reverse Bits",
-    "slug": "189-reverse-bits",
+    "leetcode": 191,
+    "title": "Number of 1 Bits",
+    "slug": "189-number-of-1-bits",
     "pattern": "Bit Manipulation",
-    "pythonFunction": "reverse_bits",
+    "pythonFunction": "number_of_1_bits",
     "goFunction": "Solve189",
-    "sampleInput": "nums=[4,1,2,1,2]",
-    "sampleOutput": "4"
+    "sampleInput": "n=11",
+    "sampleOutput": "3"
   },
   {
     "id": 190,
-    "leetcode": 191,
-    "title": "Number of 1 Bits",
-    "slug": "190-number-of-1-bits",
+    "leetcode": 137,
+    "title": "Single Number II",
+    "slug": "190-single-number-ii",
     "pattern": "Bit Manipulation",
-    "pythonFunction": "number_of_1_bits",
+    "pythonFunction": "single_number_ii",
     "goFunction": "Solve190",
-    "sampleInput": "nums=[4,1,2,1,2]",
-    "sampleOutput": "4"
+    "sampleInput": "nums=[2,2,3,2]",
+    "sampleOutput": "3"
   },
   {
     "id": 191,
-    "leetcode": 137,
-    "title": "Single Number II",
-    "slug": "191-single-number-ii",
+    "leetcode": 201,
+    "title": "Bitwise AND of Numbers Range",
+    "slug": "191-bitwise-and-of-numbers-range",
     "pattern": "Bit Manipulation",
-    "pythonFunction": "single_number_ii",
+    "pythonFunction": "bitwise_and_of_numbers_range",
     "goFunction": "Solve191",
-    "sampleInput": "nums=[4,1,2,1,2]",
+    "sampleInput": "left=5, right=7",
     "sampleOutput": "4"
   },
   {
     "id": 192,
-    "leetcode": 201,
-    "title": "Bitwise AND of Numbers Range",
-    "slug": "192-bitwise-and-of-numbers-range",
-    "pattern": "Bit Manipulation",
-    "pythonFunction": "bitwise_and_of_numbers_range",
+    "leetcode": 9,
+    "title": "Palindrome Number",
+    "slug": "192-palindrome-number",
+    "pattern": "Math / Greedy",
+    "pythonFunction": "palindrome_number",
     "goFunction": "Solve192",
-    "sampleInput": "nums=[4,1,2,1,2]",
-    "sampleOutput": "4"
+    "sampleInput": "x=121",
+    "sampleOutput": "true"
   },
   {
     "id": 193,
-    "leetcode": 9,
-    "title": "Palindrome Number",
-    "slug": "193-palindrome-number",
+    "leetcode": 66,
+    "title": "Plus One",
+    "slug": "193-plus-one",
     "pattern": "Math / Greedy",
-    "pythonFunction": "palindrome_number",
+    "pythonFunction": "plus_one",
     "goFunction": "Solve193",
-    "sampleInput": "nums=[2,3,1,1,4]",
-    "sampleOutput": "true"
+    "sampleInput": "digits=[9,9]",
+    "sampleOutput": "[1,0,0]"
   },
   {
     "id": 194,
-    "leetcode": 66,
-    "title": "Plus One",
-    "slug": "194-plus-one",
+    "leetcode": 172,
+    "title": "Factorial Trailing Zeroes",
+    "slug": "194-factorial-trailing-zeroes",
     "pattern": "Math / Greedy",
-    "pythonFunction": "plus_one",
+    "pythonFunction": "factorial_trailing_zeroes",
     "goFunction": "Solve194",
-    "sampleInput": "nums=[2,3,1,1,4]",
-    "sampleOutput": "true"
+    "sampleInput": "n=25",
+    "sampleOutput": "6"
   },
   {
     "id": 195,
-    "leetcode": 172,
-    "title": "Factorial Trailing Zeroes",
-    "slug": "195-factorial-trailing-zeroes",
-    "pattern": "Math / Greedy",
-    "pythonFunction": "factorial_trailing_zeroes",
-    "goFunction": "Solve195",
-    "sampleInput": "nums=[2,3,1,1,4]",
-    "sampleOutput": "true"
-  },
-  {
-    "id": 196,
     "leetcode": 69,
     "title": "Sqrt(x)",
-    "slug": "196-sqrt-x",
+    "slug": "195-sqrt-x",
     "pattern": "Binary Search",
     "pythonFunction": "sqrt_x",
-    "goFunction": "Solve196",
-    "sampleInput": "nums=[1,3,5,6], target=5",
+    "goFunction": "Solve195",
+    "sampleInput": "x=8",
     "sampleOutput": "2"
   },
   {
-    "id": 197,
+    "id": 196,
     "leetcode": 50,
     "title": "Pow(x, n)",
-    "slug": "197-pow-x-n",
+    "slug": "196-pow-x-n",
     "pattern": "Math / Greedy",
     "pythonFunction": "pow_x_n",
+    "goFunction": "Solve196",
+    "sampleInput": "x=2.0, n=-2",
+    "sampleOutput": "0.25"
+  },
+  {
+    "id": 197,
+    "leetcode": 149,
+    "title": "Max Points on a Line",
+    "slug": "197-max-points-on-a-line",
+    "pattern": "Math / Greedy",
+    "pythonFunction": "max_points_on_a_line",
     "goFunction": "Solve197",
-    "sampleInput": "nums=[2,3,1,1,4]",
-    "sampleOutput": "true"
+    "sampleInput": "points=[[1,1],[2,2],[3,3],[3,4]]",
+    "sampleOutput": "3"
   },
   {
     "id": 198,
-    "leetcode": 149,
-    "title": "Max Points on a Line",
-    "slug": "198-max-points-on-a-line",
-    "pattern": "Math / Greedy",
-    "pythonFunction": "max_points_on_a_line",
+    "leetcode": 70,
+    "title": "Climbing Stairs",
+    "slug": "198-climbing-stairs",
+    "pattern": "DP 1D",
+    "pythonFunction": "climbing_stairs",
     "goFunction": "Solve198",
-    "sampleInput": "nums=[2,3,1,1,4]",
-    "sampleOutput": "true"
+    "sampleInput": "n=3",
+    "sampleOutput": "3"
   },
   {
     "id": 199,
-    "leetcode": 70,
-    "title": "Climbing Stairs",
-    "slug": "199-climbing-stairs",
-    "pattern": "DP 1D",
-    "pythonFunction": "climbing_stairs",
-    "goFunction": "Solve199",
-    "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
-  },
-  {
-    "id": 200,
     "leetcode": 139,
     "title": "Word Break",
-    "slug": "200-word-break",
+    "slug": "199-word-break",
     "pattern": "DP 1D",
     "pythonFunction": "word_break",
-    "goFunction": "Solve200",
+    "goFunction": "Solve199",
     "sampleInput": "s=\"leetcode\", wordDict=[\"leet\",\"code\"]",
     "sampleOutput": "true"
   },
   {
-    "id": 201,
+    "id": 200,
     "leetcode": 322,
     "title": "Coin Change",
-    "slug": "201-coin-change",
+    "slug": "200-coin-change",
     "pattern": "DP 1D",
     "pythonFunction": "coin_change",
+    "goFunction": "Solve200",
+    "sampleInput": "coins=[1,2,5], amount=11",
+    "sampleOutput": "3"
+  },
+  {
+    "id": 201,
+    "leetcode": 300,
+    "title": "Longest Increasing Subsequence",
+    "slug": "201-longest-increasing-subsequence",
+    "pattern": "DP 1D",
+    "pythonFunction": "longest_increasing_subsequence",
     "goFunction": "Solve201",
-    "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
+    "sampleInput": "nums=[10,9,2,5,3,7,101,18]",
+    "sampleOutput": "4"
   },
   {
     "id": 202,
-    "leetcode": 300,
-    "title": "Longest Increasing Subsequence",
-    "slug": "202-longest-increasing-subsequence",
-    "pattern": "DP 1D",
-    "pythonFunction": "longest_increasing_subsequence",
+    "leetcode": 120,
+    "title": "Triangle",
+    "slug": "202-triangle",
+    "pattern": "DP 2D / Kadane",
+    "pythonFunction": "triangle",
     "goFunction": "Solve202",
-    "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
+    "sampleInput": "triangle=[[2],[3,4],[6,5,7],[4,1,8,3]]",
+    "sampleOutput": "11"
   },
   {
     "id": 203,
-    "leetcode": 91,
-    "title": "Decode Ways",
-    "slug": "203-decode-ways",
-    "pattern": "DP 1D",
-    "pythonFunction": "decode_ways",
+    "leetcode": 64,
+    "title": "Minimum Path Sum",
+    "slug": "203-minimum-path-sum",
+    "pattern": "DP 2D / Kadane",
+    "pythonFunction": "minimum_path_sum",
     "goFunction": "Solve203",
-    "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
+    "sampleInput": "grid=[[1,3,1],[1,5,1],[4,2,1]]",
+    "sampleOutput": "7"
   },
   {
     "id": 204,
-    "leetcode": 152,
-    "title": "Maximum Product Subarray",
-    "slug": "204-maximum-product-subarray",
+    "leetcode": 63,
+    "title": "Unique Paths II",
+    "slug": "204-unique-paths-ii",
     "pattern": "DP 2D / Kadane",
-    "pythonFunction": "maximum_product_subarray",
+    "pythonFunction": "unique_paths_ii",
     "goFunction": "Solve204",
-    "sampleInput": "text1=\"abcde\", text2=\"ace\"",
-    "sampleOutput": "3"
+    "sampleInput": "obstacleGrid=[[0,0,0],[0,1,0],[0,0,0]]",
+    "sampleOutput": "2"
   },
   {
     "id": 205,
-    "leetcode": 213,
-    "title": "House Robber II",
-    "slug": "205-house-robber-ii",
-    "pattern": "DP 1D",
-    "pythonFunction": "house_robber_ii",
+    "leetcode": 5,
+    "title": "Longest Palindromic Substring",
+    "slug": "205-longest-palindromic-substring",
+    "pattern": "DP 2D / Kadane",
+    "pythonFunction": "longest_palindromic_substring",
     "goFunction": "Solve205",
-    "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
+    "sampleInput": "s=\"babad\"",
+    "sampleOutput": "\"bab\" or \"aba\""
   },
   {
     "id": 206,
-    "leetcode": 279,
-    "title": "Perfect Squares",
-    "slug": "206-perfect-squares",
-    "pattern": "DP 1D",
-    "pythonFunction": "perfect_squares",
+    "leetcode": 97,
+    "title": "Interleaving String",
+    "slug": "206-interleaving-string",
+    "pattern": "DP 2D / Kadane",
+    "pythonFunction": "interleaving_string",
     "goFunction": "Solve206",
-    "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
+    "sampleInput": "s1=\"aabcc\", s2=\"dbbca\", s3=\"aadbbcbcac\"",
+    "sampleOutput": "true"
   },
   {
     "id": 207,
-    "leetcode": 416,
-    "title": "Partition Equal Subset Sum",
-    "slug": "207-partition-equal-subset-sum",
-    "pattern": "DP 1D",
-    "pythonFunction": "partition_equal_subset_sum",
+    "leetcode": 123,
+    "title": "Best Time to Buy and Sell Stock III",
+    "slug": "207-best-time-to-buy-and-sell-stock-iii",
+    "pattern": "DP 2D / Kadane",
+    "pythonFunction": "best_time_to_buy_and_sell_stock_iii",
     "goFunction": "Solve207",
-    "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
+    "sampleInput": "prices=[3,3,5,0,0,3,1,4]",
+    "sampleOutput": "6"
   },
   {
     "id": 208,
-    "leetcode": 63,
-    "title": "Unique Paths II",
-    "slug": "208-unique-paths-ii",
+    "leetcode": 188,
+    "title": "Best Time to Buy and Sell Stock IV",
+    "slug": "208-best-time-to-buy-and-sell-stock-iv",
     "pattern": "DP 2D / Kadane",
-    "pythonFunction": "unique_paths_ii",
+    "pythonFunction": "best_time_to_buy_and_sell_stock_iv",
     "goFunction": "Solve208",
-    "sampleInput": "text1=\"abcde\", text2=\"ace\"",
-    "sampleOutput": "3"
+    "sampleInput": "k=2, prices=[2,4,1]",
+    "sampleOutput": "2"
   },
   {
     "id": 209,
-    "leetcode": 377,
-    "title": "Combination Sum IV",
-    "slug": "209-combination-sum-iv",
-    "pattern": "DP 1D",
-    "pythonFunction": "combination_sum_iv",
+    "leetcode": 221,
+    "title": "Maximal Square",
+    "slug": "209-maximal-square",
+    "pattern": "DP 2D / Kadane",
+    "pythonFunction": "maximal_square",
     "goFunction": "Solve209",
-    "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
+    "sampleInput": "matrix=[[\"1\",\"0\",\"1\",\"0\"],[\"1\",\"0\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\"]]",
+    "sampleOutput": "4"
   },
   {
     "id": 210,
-    "leetcode": 120,
-    "title": "Triangle",
-    "slug": "210-triangle",
-    "pattern": "DP 2D / Kadane",
-    "pythonFunction": "triangle",
+    "leetcode": 217,
+    "title": "Contains Duplicate",
+    "slug": "210-contains-duplicate",
+    "pattern": "Hash Map / Set",
+    "pythonFunction": "contains_duplicate",
     "goFunction": "Solve210",
-    "sampleInput": "text1=\"abcde\", text2=\"ace\"",
-    "sampleOutput": "3"
+    "sampleInput": "nums=[1,2,3,1]",
+    "sampleOutput": "true"
   },
   {
     "id": 211,
-    "leetcode": 64,
-    "title": "Minimum Path Sum",
-    "slug": "211-minimum-path-sum",
+    "leetcode": 152,
+    "title": "Maximum Product Subarray",
+    "slug": "211-maximum-product-subarray",
     "pattern": "DP 2D / Kadane",
-    "pythonFunction": "minimum_path_sum",
+    "pythonFunction": "maximum_product_subarray",
     "goFunction": "Solve211",
-    "sampleInput": "text1=\"abcde\", text2=\"ace\"",
-    "sampleOutput": "3"
+    "sampleInput": "nums=[2,3,-2,4]",
+    "sampleOutput": "6"
   },
   {
     "id": 212,
-    "leetcode": 5,
-    "title": "Longest Palindromic Substring",
-    "slug": "212-longest-palindromic-substring",
-    "pattern": "DP 2D / Kadane",
-    "pythonFunction": "longest_palindromic_substring",
+    "leetcode": 371,
+    "title": "Sum of Two Integers",
+    "slug": "212-sum-of-two-integers",
+    "pattern": "Bit Manipulation",
+    "pythonFunction": "sum_of_two_integers",
     "goFunction": "Solve212",
-    "sampleInput": "text1=\"abcde\", text2=\"ace\"",
+    "sampleInput": "a=1, b=2",
     "sampleOutput": "3"
   },
   {
     "id": 213,
-    "leetcode": 97,
-    "title": "Interleaving String",
-    "slug": "213-interleaving-string",
-    "pattern": "DP 2D / Kadane",
-    "pythonFunction": "interleaving_string",
+    "leetcode": 268,
+    "title": "Missing Number",
+    "slug": "213-missing-number",
+    "pattern": "Bit Manipulation",
+    "pythonFunction": "missing_number",
     "goFunction": "Solve213",
-    "sampleInput": "text1=\"abcde\", text2=\"ace\"",
-    "sampleOutput": "3"
+    "sampleInput": "nums=[3,0,1]",
+    "sampleOutput": "2"
   },
   {
     "id": 214,
-    "leetcode": 221,
-    "title": "Maximal Square",
-    "slug": "214-maximal-square",
-    "pattern": "DP 2D / Kadane",
-    "pythonFunction": "maximal_square",
+    "leetcode": 213,
+    "title": "House Robber II",
+    "slug": "214-house-robber-ii",
+    "pattern": "DP 1D",
+    "pythonFunction": "house_robber_ii",
     "goFunction": "Solve214",
-    "sampleInput": "text1=\"abcde\", text2=\"ace\"",
+    "sampleInput": "nums=[2,3,2]",
     "sampleOutput": "3"
   },
   {
     "id": 215,
-    "leetcode": 309,
-    "title": "Best Time to Buy and Sell Stock with Cooldown",
-    "slug": "215-best-time-to-buy-and-sell-stock-with-cooldown",
+    "leetcode": 91,
+    "title": "Decode Ways",
+    "slug": "215-decode-ways",
     "pattern": "DP 1D",
-    "pythonFunction": "best_time_to_buy_and_sell_stock_with_cooldown",
+    "pythonFunction": "decode_ways",
     "goFunction": "Solve215",
-    "sampleInput": "nums=[2,7,9,3,1]",
-    "sampleOutput": "best value"
-  },
-  {
-    "id": 216,
-    "leetcode": 115,
-    "title": "Distinct Subsequences",
-    "slug": "216-distinct-subsequences",
-    "pattern": "DP 2D / Kadane",
-    "pythonFunction": "distinct_subsequences",
-    "goFunction": "Solve216",
-    "sampleInput": "text1=\"abcde\", text2=\"ace\"",
+    "sampleInput": "s=\"226\"",
     "sampleOutput": "3"
   },
   {
-    "id": 217,
+    "id": 216,
     "leetcode": 417,
     "title": "Pacific Atlantic Water Flow",
-    "slug": "217-pacific-atlantic-water-flow",
+    "slug": "216-pacific-atlantic-water-flow",
     "pattern": "Graph",
     "pythonFunction": "pacific_atlantic_water_flow",
-    "goFunction": "Solve217",
-    "sampleInput": "heights=[[1,2,2],[3,2,3],[2,4,5]]",
-    "sampleOutput": "[[0,2],[1,0],[1,2],[2,0],[2,1],[2,2]]"
+    "goFunction": "Solve216",
+    "sampleInput": "heights=[[1,2],[4,3]]",
+    "sampleOutput": "[[0,1],[1,0],[1,1]]"
   },
   {
-    "id": 218,
+    "id": 217,
     "leetcode": 269,
     "title": "Alien Dictionary",
-    "slug": "218-alien-dictionary",
+    "slug": "217-alien-dictionary",
     "pattern": "Graph",
     "pythonFunction": "alien_dictionary",
-    "goFunction": "Solve218",
+    "goFunction": "Solve217",
     "sampleInput": "words=[\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"]",
     "sampleOutput": "\"wertf\""
   },
   {
-    "id": 219,
+    "id": 218,
     "leetcode": 261,
     "title": "Graph Valid Tree",
-    "slug": "219-graph-valid-tree",
+    "slug": "218-graph-valid-tree",
     "pattern": "Graph",
     "pythonFunction": "graph_valid_tree",
-    "goFunction": "Solve219",
+    "goFunction": "Solve218",
     "sampleInput": "n=5, edges=[[0,1],[0,2],[0,3],[1,4]]",
     "sampleOutput": "true"
   },
   {
-    "id": 220,
+    "id": 219,
     "leetcode": 323,
     "title": "Number of Connected Components in an Undirected Graph",
-    "slug": "220-number-of-connected-components-in-an-undirected-graph",
+    "slug": "219-number-of-connected-components-in-an-undirected-graph",
     "pattern": "Graph",
     "pythonFunction": "number_of_connected_components_in_an_undirected_graph",
-    "goFunction": "Solve220",
+    "goFunction": "Solve219",
     "sampleInput": "n=5, edges=[[0,1],[1,2],[3,4]]",
     "sampleOutput": "2"
   },
   {
-    "id": 221,
+    "id": 220,
     "leetcode": 252,
     "title": "Meeting Rooms",
-    "slug": "221-meeting-rooms",
+    "slug": "220-meeting-rooms",
     "pattern": "Intervals",
     "pythonFunction": "meeting_rooms",
-    "goFunction": "Solve221",
-    "sampleInput": "intervals=[[0,30],[35,40]]",
-    "sampleOutput": "true"
+    "goFunction": "Solve220",
+    "sampleInput": "intervals=[[0,30],[5,10],[15,20]]",
+    "sampleOutput": "false"
   },
   {
-    "id": 222,
+    "id": 221,
     "leetcode": 253,
     "title": "Meeting Rooms II",
-    "slug": "222-meeting-rooms-ii",
+    "slug": "221-meeting-rooms-ii",
     "pattern": "Intervals",
     "pythonFunction": "meeting_rooms_ii",
-    "goFunction": "Solve222",
+    "goFunction": "Solve221",
     "sampleInput": "intervals=[[0,30],[5,10],[15,20]]",
     "sampleOutput": "2"
   },
   {
-    "id": 223,
+    "id": 222,
     "leetcode": 143,
     "title": "Reorder List",
-    "slug": "223-reorder-list",
+    "slug": "222-reorder-list",
     "pattern": "Linked List",
     "pythonFunction": "reorder_list",
-    "goFunction": "Solve223",
-    "sampleInput": "head=[1,2,3,4]",
-    "sampleOutput": "[1,4,2,3]"
+    "goFunction": "Solve222",
+    "sampleInput": "head=[1,2,3,4,5]",
+    "sampleOutput": "[1,5,2,4,3]"
   },
   {
-    "id": 224,
+    "id": 223,
     "leetcode": 572,
     "title": "Subtree of Another Tree",
-    "slug": "224-subtree-of-another-tree",
+    "slug": "223-subtree-of-another-tree",
     "pattern": "Tree DFS",
     "pythonFunction": "subtree_of_another_tree",
-    "goFunction": "Solve224",
+    "goFunction": "Solve223",
     "sampleInput": "root=[3,4,5,1,2], subRoot=[4,1,2]",
     "sampleOutput": "true"
   },
   {
-    "id": 225,
+    "id": 224,
     "leetcode": 235,
     "title": "Lowest Common Ancestor of a Binary Search Tree",
-    "slug": "225-lowest-common-ancestor-of-a-binary-search-tree",
-    "pattern": "BST",
+    "slug": "224-lowest-common-ancestor-of-a-binary-search-tree",
+    "pattern": "Tree DFS",
     "pythonFunction": "lowest_common_ancestor_of_a_binary_search_tree",
-    "goFunction": "Solve225",
-    "sampleInput": "root=[6,2,8,0,4,7,9], p=2, q=8",
+    "goFunction": "Solve224",
+    "sampleInput": "root=[6,2,8,0,4,7,9,null,null,3,5], p=2, q=8",
     "sampleOutput": "6"
   },
   {
-    "id": 226,
+    "id": 225,
     "leetcode": 297,
     "title": "Serialize and Deserialize Binary Tree",
-    "slug": "226-serialize-and-deserialize-binary-tree",
+    "slug": "225-serialize-and-deserialize-binary-tree",
     "pattern": "Tree DFS",
     "pythonFunction": "serialize_and_deserialize_binary_tree",
-    "goFunction": "Solve226",
+    "goFunction": "Solve225",
     "sampleInput": "root=[1,2,3,null,null,4,5]",
-    "sampleOutput": "[1,2,3,null,null,4,5]"
+    "sampleOutput": "deserialize(serialize(root)) equals the original tree"
+  },
+  {
+    "id": 226,
+    "leetcode": 347,
+    "title": "Top K Frequent Elements",
+    "slug": "226-top-k-frequent-elements",
+    "pattern": "Heap / Priority Queue",
+    "pythonFunction": "top_k_frequent_elements",
+    "goFunction": "Solve226",
+    "sampleInput": "nums=[1,1,1,2,2,3], k=2",
+    "sampleOutput": "[1,2]"
   },
   {
     "id": 227,
@@ -2493,7 +2493,7 @@
     "pattern": "Sliding Window",
     "pythonFunction": "longest_repeating_character_replacement",
     "goFunction": "Solve227",
-    "sampleInput": "s=\"ABAB\", k=2",
+    "sampleInput": "s=\"AABABBA\", k=1",
     "sampleOutput": "4"
   },
   {
@@ -2504,8 +2504,8 @@
     "pattern": "Trie / Encoding",
     "pythonFunction": "encode_and_decode_strings",
     "goFunction": "Solve228",
-    "sampleInput": "strs=[\"lint\",\"code\",\"love\",\"you\"]",
-    "sampleOutput": "[\"lint\",\"code\",\"love\",\"you\"]"
+    "sampleInput": "strs=[\"lint\",\"code\",\"love\"]",
+    "sampleOutput": "decode(encode(strs))=[\"lint\",\"code\",\"love\"]"
   },
   {
     "id": 229,

@@ -9,6 +9,7 @@ import {
   ListFilter,
   Menu,
   Network,
+  NotebookPen,
   Search,
   Sparkles,
 } from 'lucide-react'
@@ -23,6 +24,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Separator } from '@/components/ui/separator'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Textarea } from '@/components/ui/textarea'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { patterns, problems, type Problem } from '@/data/problems'
 import './App.css'
@@ -30,10 +32,31 @@ import './App.css'
 type DifficultyFilter = Problem['difficulty'] | 'All'
 
 const difficulties: DifficultyFilter[] = ['All', 'Easy', 'Medium', 'Hard']
+const notesStoragePrefix = 'cheatcode-229:notes:'
 
 function hashSlug() {
   const match = window.location.hash.match(/^#\/problems\/(.+)$/)
   return match?.[1] ?? problems[0].slug
+}
+
+function loadStoredNotes() {
+  const storedNotes: Record<string, string> = {}
+  if (typeof window === 'undefined') {
+    return storedNotes
+  }
+
+  try {
+    for (let index = 0; index < window.localStorage.length; index += 1) {
+      const key = window.localStorage.key(index)
+      if (key?.startsWith(notesStoragePrefix)) {
+        storedNotes[key.slice(notesStoragePrefix.length)] = window.localStorage.getItem(key) ?? ''
+      }
+    }
+  } catch {
+    return {}
+  }
+
+  return storedNotes
 }
 
 function App() {
@@ -41,6 +64,7 @@ function App() {
   const [query, setQuery] = useState('')
   const [pattern, setPattern] = useState('All')
   const [difficulty, setDifficulty] = useState<DifficultyFilter>('All')
+  const [notesBySlug, setNotesBySlug] = useState<Record<string, string>>(loadStoredNotes)
 
   useEffect(() => {
     const onHashChange = () => setActiveSlug(hashSlug())
@@ -55,6 +79,7 @@ function App() {
     () => problems.find((problem) => problem.slug === activeSlug) ?? problems[0],
     [activeSlug],
   )
+  const noteText = notesBySlug[activeProblem.slug] ?? ''
 
   const filteredProblems = useMemo(() => {
     const normalized = query.trim().toLowerCase()
@@ -77,6 +102,29 @@ function App() {
 
   const openProblem = (problem: Problem) => {
     window.location.hash = `/problems/${problem.slug}`
+  }
+
+  const updateNote = (value: string) => {
+    setNotesBySlug((currentNotes) => {
+      const nextNotes = { ...currentNotes }
+      if (value.trim()) {
+        nextNotes[activeProblem.slug] = value
+      } else {
+        delete nextNotes[activeProblem.slug]
+      }
+      return nextNotes
+    })
+
+    try {
+      const key = `${notesStoragePrefix}${activeProblem.slug}`
+      if (value.trim()) {
+        window.localStorage.setItem(key, value)
+      } else {
+        window.localStorage.removeItem(key)
+      }
+    } catch {
+      // Notes remain editable even when browser storage is unavailable.
+    }
   }
 
   return (
@@ -205,6 +253,7 @@ function App() {
                 </Card>
 
                 <SolutionTabs problem={activeProblem} />
+                <NotesCard value={noteText} onChange={updateNote} />
               </div>
 
               <div className="space-y-5">
@@ -238,6 +287,21 @@ function App() {
                         ))}
                       </ul>
                     </div>
+                    {activeProblem.edgeChecklist && (
+                      <>
+                        <Separator />
+                        <div>
+                          <h3 className="text-sm font-semibold">Edge cases</h3>
+                          <div className="mt-2 flex flex-wrap gap-2">
+                            {activeProblem.edgeChecklist.split(';').map((item) => (
+                              <Badge key={item.trim()} variant="outline" className="bg-white">
+                                {item.trim()}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      </>
+                    )}
                     <Separator />
                     <div>
                       <h3 className="text-sm font-semibold">Common mistakes</h3>
@@ -247,6 +311,19 @@ function App() {
                         ))}
                       </ul>
                     </div>
+                    {activeProblem.implementationCheckpoints.length > 0 && (
+                      <>
+                        <Separator />
+                        <div>
+                          <h3 className="text-sm font-semibold">Implementation checkpoints</h3>
+                          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700">
+                            {activeProblem.implementationCheckpoints.map((item) => (
+                              <li key={item}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      </>
+                    )}
                     <Separator />
                     <div>
                       <h3 className="text-sm font-semibold">Follow-up drills</h3>
@@ -256,6 +333,19 @@ function App() {
                         ))}
                       </ul>
                     </div>
+                    {activeProblem.followUps.length > 0 && (
+                      <>
+                        <Separator />
+                        <div>
+                          <h3 className="text-sm font-semibold">Follow-up questions</h3>
+                          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700">
+                            {activeProblem.followUps.map((item) => (
+                              <li key={item}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      </>
+                    )}
                   </CardContent>
                 </Card>
               </div>
@@ -497,6 +587,27 @@ function SolutionTabs({ problem }: { problem: Problem }) {
             <CodeBlock language="go" code={`package solutions\n\n${problem.goCode}`} />
           </TabsContent>
         </Tabs>
+      </CardContent>
+    </Card>
+  )
+}
+
+function NotesCard({ value, onChange }: { value: string; onChange: (value: string) => void }) {
+  return (
+    <Card className="rounded-lg border-slate-200 shadow-sm">
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2 text-base">
+          <NotebookPen className="size-4 text-sky-700" />
+          Notes
+        </CardTitle>
+      </CardHeader>
+      <CardContent>
+        <Textarea
+          aria-label="Problem notes"
+          value={value}
+          onChange={(event) => onChange(event.target.value)}
+          className="min-h-40 resize-y bg-white leading-6"
+        />
       </CardContent>
     </Card>
   )

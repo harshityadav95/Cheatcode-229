@@ -21,11 +21,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.0.0
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+          cache: pnpm
 
       - name: Setup Go
         uses: actions/setup-go@v5
@@ -33,13 +38,13 @@ jobs:
           go-version: '1.25'
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Validate generated content
-        run: npm test
+        run: pnpm test
 
       - name: Build static site
-        run: npm run build
+        run: pnpm build
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
