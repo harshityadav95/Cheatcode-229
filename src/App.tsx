@@ -492,7 +492,7 @@ function ProblemHeader({
                 {problem.title}
               </h2>
               <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-600">
-                Deep tutorial page with sample I/O, thinking steps, proof, unique diagram, and Python/Go reference kernels.
+                Deep tutorial page with sample I/O, thinking steps, proof, unique diagram, and standalone Python/Go code.
               </p>
             </div>
           </div>
@@ -584,7 +584,7 @@ function SolutionTabs({ problem }: { problem: Problem }) {
             <CodeBlock language="python" code={problem.pythonCode} />
           </TabsContent>
           <TabsContent value="go" className="mt-4">
-            <CodeBlock language="go" code={`package solutions\n\n${problem.goCode}`} />
+            <CodeBlock language="go" code={problem.goCode} />
           </TabsContent>
         </Tabs>
       </CardContent>
@@ -638,6 +638,12 @@ function ConceptDiagram({ problem }: { problem: Problem }) {
   const seed = problem.diagram.seed
   const cells = Array.from({ length: 6 }, (_, index) => (seed + index * 7) % 10)
   const label = problem.diagram.type.replace(/^\w/, (char) => char.toUpperCase())
+  const tokens = problem.diagramNotes
+    .concat([problem.example.input, problem.example.output])
+    .map((note) => note.replace(/\s+/g, ' ').trim())
+    .filter((note) => note && note.length <= 26)
+    .slice(0, 6)
+  const caption = truncateText(problem.diagramNotes.at(-1) ?? problem.invariant, 74)
 
   return (
     <div className="rounded-lg border border-slate-200 bg-gradient-to-br from-white via-slate-50 to-cyan-50 p-3">
@@ -649,16 +655,34 @@ function ConceptDiagram({ problem }: { problem: Problem }) {
         <text x="24" y="55" className="fill-slate-500 text-[11px]">
           {problem.pattern} / state invariant
         </text>
-        <DiagramBody type={problem.diagram.type} cells={cells} seed={seed} />
+        <DiagramBody type={problem.diagram.type} cells={cells} seed={seed} tokens={tokens} />
         <text x="24" y="228" className="fill-slate-700 text-[11px]">
-          Invariant: finalized state stays valid after each update.
+          {caption}
         </text>
       </svg>
     </div>
   )
 }
 
-function DiagramBody({ type, cells, seed }: { type: Problem['diagram']['type']; cells: number[]; seed: number }) {
+function truncateText(value: string, maxLength: number) {
+  return value.length > maxLength ? `${value.slice(0, maxLength - 3)}...` : value
+}
+
+function diagramLabel(tokens: string[], cells: number[], index: number) {
+  return truncateText(tokens[index] ?? String(cells[index % cells.length]), 8)
+}
+
+function DiagramBody({
+  type,
+  cells,
+  seed,
+  tokens,
+}: {
+  type: Problem['diagram']['type']
+  cells: number[]
+  seed: number
+  tokens: string[]
+}) {
   if (type === 'tree') {
     return (
       <g>
@@ -675,7 +699,7 @@ function DiagramBody({ type, cells, seed }: { type: Problem['diagram']['type']; 
             {index > 0 && <line x1={index < 3 ? 210 : index < 5 ? 130 : 290} y1={index < 3 ? 96 : 146} x2={x} y2={y - 18} stroke="#64748b" strokeWidth="2" />}
             <circle cx={x} cy={y} r="18" fill={index === seed % 7 ? '#cffafe' : '#f1f5f9'} stroke="#0f172a" />
             <text x={x} y={y + 4} textAnchor="middle" className="fill-slate-900 text-[12px] font-semibold">
-              {cells[index % cells.length]}
+              {diagramLabel(tokens, cells, index)}
             </text>
           </g>
         ))}
@@ -707,7 +731,7 @@ function DiagramBody({ type, cells, seed }: { type: Problem['diagram']['type']; 
           <g key={`${x}-${y}`}>
             <circle cx={x} cy={y} r="20" fill={index === seed % 5 ? '#dcfce7' : '#f8fafc'} stroke="#166534" />
             <text x={x} y={y + 4} textAnchor="middle" className="fill-slate-900 text-[12px] font-semibold">
-              {index}
+              {diagramLabel(tokens, cells, index)}
             </text>
           </g>
         ))}
@@ -731,7 +755,7 @@ function DiagramBody({ type, cells, seed }: { type: Problem['diagram']['type']; 
                 stroke="#cbd5e1"
               />
               <text x={80 + col * 50} y={89 + row * 26} textAnchor="middle" className="fill-slate-700 text-[10px]">
-                dp
+                {row === 0 && col < tokens.length ? truncateText(tokens[col], 6) : 'dp'}
               </text>
             </g>
           )),
@@ -759,7 +783,7 @@ function DiagramBody({ type, cells, seed }: { type: Problem['diagram']['type']; 
               {index > 0 && <line x1={index < 3 ? 210 : index < 5 ? 150 : 270} y1={index < 3 ? 100 : 150} x2={x} y2={y - 18} stroke="#64748b" />}
               <circle cx={x} cy={y} r="18" fill="#ede9fe" stroke="#6d28d9" />
               <text x={x} y={y + 4} textAnchor="middle" className="fill-slate-900 text-[12px] font-semibold">
-                {cells[index]}
+                {diagramLabel(tokens, cells, index)}
               </text>
             </g>
           )
@@ -775,11 +799,11 @@ function DiagramBody({ type, cells, seed }: { type: Problem['diagram']['type']; 
   const pointerB = 330 - (seed % 3) * 42
   return (
     <g>
-      {cells.map((cell, index) => (
-        <g key={index}>
+      {cells.map((_, index) => (
+            <g key={index}>
           <rect x={54 + index * 52} y="104" width="44" height="44" rx="6" fill={index <= seed % 6 ? '#e0f2fe' : '#f8fafc'} stroke="#0f172a" />
           <text x={76 + index * 52} y="131" textAnchor="middle" className="fill-slate-900 text-[13px] font-semibold">
-            {cell}
+            {diagramLabel(tokens, cells, index)}
           </text>
         </g>
       ))}

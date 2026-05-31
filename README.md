@@ -1,6 +1,6 @@
 # Cheatcode 229
 
-Cheatcode 229 is a light-theme, mobile-friendly DSA study site for 229 LeetCode-style problems. It turns the DSA 2026 PDF sheet into a searchable web app with problem statements, sample input/output, thinking notes, edge-case checklists, reference diagrams, and Python plus Go reference kernels.
+Cheatcode 229 is a light-theme, mobile-friendly DSA study site for 229 LeetCode-style problems. It turns the DSA 2026 PDF sheet into a searchable web app with problem statements, sample input/output, thinking notes, edge-case checklists, reference diagrams, and standalone Python plus Go code snippets.
 
 Live site target: `https://harshityadav95.github.io/Cheatcode-229/`
 
@@ -25,7 +25,8 @@ The project is intentionally simple to host:
 - Problem pages with prompt, sample I/O, approach ladder, invariant, proof sketch, common mistakes, edge cases, and follow-ups
 - Reference diagrams rendered in the app with reusable SVG primitives
 - Blank per-problem notes boxes saved locally in the browser
-- Python and Go reference kernels for every problem
+- Standalone Python and Go snippets for every problem page
+- Generated Python and Go registries for validation and future exact-solution testing
 - Content validation, Python tests, Go tests, linting, and production build checks
 - GitHub Pages deployment workflow
 

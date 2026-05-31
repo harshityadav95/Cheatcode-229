@@ -910,7 +910,7 @@ def parse_problems() -> list[dict]:
     return parse_fallback_problems()
 
 
-def python_code(problem: dict) -> str:
+def python_kernel_code(problem: dict) -> str:
     func = problem["pythonFunction"]
     snippet = PY_PATTERN_SNIPPETS.get(problem["pattern"], PY_PATTERN_SNIPPETS["Array / String"])
     return (
@@ -923,12 +923,55 @@ def python_code(problem: dict) -> str:
     )
 
 
-def go_code(problem: dict) -> str:
+def python_code(problem: dict) -> str:
+    func = problem["pythonFunction"]
+    snippet = PY_PATTERN_SNIPPETS.get(problem["pattern"], PY_PATTERN_SNIPPETS["Array / String"])
+    return (
+        "from __future__ import annotations\n\n"
+        "import bisect\n"
+        "import heapq\n"
+        "import math\n"
+        "from collections import Counter, defaultdict, deque\n"
+        "from typing import Any\n\n\n"
+        f"def solve(*args: Any) -> Any:\n"
+        f"    \"\"\"Complete runnable scaffold for {problem['leetcode']}. {problem['title']}.\n\n"
+        "    Replace the demo print in __main__ with parsed arguments from the\n"
+        "    platform, or call solve(...) directly from your own tests.\n"
+        "    \"\"\"\n"
+        f"{snippet}\n\n\n"
+        f"{func} = solve\n\n\n"
+        'if __name__ == "__main__":\n'
+        f"    print({json.dumps(str(problem['leetcode']) + '. ' + problem['title'])})\n"
+        f"    print('Sample input:', {json.dumps(problem['example']['input'])})\n"
+        f"    print('Expected output:', {json.dumps(problem['example']['output'])})\n"
+        "    print('Call solve(...) with parsed arguments for this problem.')\n"
+    )
+
+
+def go_kernel_code(problem: dict) -> str:
     snippet = GO_PATTERN_SNIPPETS.get(problem["pattern"], GO_PATTERN_SNIPPETS["Array / String"])
     return (
         f"// {problem['leetcode']}. {problem['title']}\n"
         f"func {problem['goFunction']}(args ...any) any {{\n"
         f"{snippet}"
+        "}\n"
+    )
+
+
+def go_code(problem: dict) -> str:
+    snippet = GO_PATTERN_SNIPPETS.get(problem["pattern"], GO_PATTERN_SNIPPETS["Array / String"])
+    return (
+        "package main\n\n"
+        'import "fmt"\n\n'
+        f"// {problem['leetcode']}. {problem['title']}\n"
+        f"func {problem['goFunction']}(args ...any) any {{\n"
+        f"{snippet}"
+        "}\n\n"
+        "func main() {\n"
+        f"\tfmt.Println({json.dumps(str(problem['leetcode']) + '. ' + problem['title'])})\n"
+        f"\tfmt.Println(\"Sample input:\", {json.dumps(problem['example']['input'])})\n"
+        f"\tfmt.Println(\"Expected output:\", {json.dumps(problem['example']['output'])})\n"
+        f"\tfmt.Println(\"Call {problem['goFunction']}(...) with parsed arguments for this problem.\")\n"
         "}\n"
     )
 
@@ -1006,7 +1049,7 @@ export interface Problem {
         "",
     ]
     for p in problems:
-        py_parts.append(python_code(p))
+        py_parts.append(python_kernel_code(p))
     py_parts.append(
         "REGISTRY = {\n"
         + "\n".join(f"    {p['id']}: {p['pythonFunction']}," for p in problems)
@@ -1020,7 +1063,7 @@ export interface Problem {
         "package solutions",
         "",
     ]
-    go_parts.extend(go_code(p) for p in problems)
+    go_parts.extend(go_kernel_code(p) for p in problems)
     go_parts.append(
         "var Registry = map[int]func(...any) any{\n"
         + "\n".join(f"\t{p['id']}: {p['goFunction']}," for p in problems)

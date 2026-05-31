@@ -110,8 +110,8 @@ export const problems = [
     ],
     "pythonFunction": "merge_strings_alternately",
     "goFunction": "Solve001",
-    "pythonCode": "def merge_strings_alternately(*args):\n    \"\"\"Reference kernel for 1768. Merge Strings Alternately.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 1768. Merge Strings Alternately\nfunc Solve001(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1768. Merge Strings Alternately.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmerge_strings_alternately = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1768. Merge Strings Alternately\")\n    print('Sample input:', \"word1=\\\"abc\\\", word2=\\\"pq\\\"\")\n    print('Expected output:', \"\\\"apbqc\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1768. Merge Strings Alternately\nfunc Solve001(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1768. Merge Strings Alternately\")\n\tfmt.Println(\"Sample input:\", \"word1=\\\"abc\\\", word2=\\\"pq\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"apbqc\\\"\")\n\tfmt.Println(\"Call Solve001(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 2,
@@ -190,8 +190,8 @@ export const problems = [
     ],
     "pythonFunction": "greatest_common_divisor_of_strings",
     "goFunction": "Solve002",
-    "pythonCode": "def greatest_common_divisor_of_strings(*args):\n    \"\"\"Reference kernel for 1071. Greatest Common Divisor of Strings.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 1071. Greatest Common Divisor of Strings\nfunc Solve002(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1071. Greatest Common Divisor of Strings.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ngreatest_common_divisor_of_strings = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1071. Greatest Common Divisor of Strings\")\n    print('Sample input:', \"str1=\\\"ABABAB\\\", str2=\\\"ABAB\\\"\")\n    print('Expected output:', \"\\\"AB\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1071. Greatest Common Divisor of Strings\nfunc Solve002(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1071. Greatest Common Divisor of Strings\")\n\tfmt.Println(\"Sample input:\", \"str1=\\\"ABABAB\\\", str2=\\\"ABAB\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"AB\\\"\")\n\tfmt.Println(\"Call Solve002(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 3,
@@ -270,8 +270,8 @@ export const problems = [
     ],
     "pythonFunction": "kids_with_the_greatest_number_of_candies",
     "goFunction": "Solve003",
-    "pythonCode": "def kids_with_the_greatest_number_of_candies(*args):\n    \"\"\"Reference kernel for 1431. Kids With the Greatest Number of Candies.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 1431. Kids With the Greatest Number of Candies\nfunc Solve003(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1431. Kids With the Greatest Number of Candies.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nkids_with_the_greatest_number_of_candies = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1431. Kids With the Greatest Number of Candies\")\n    print('Sample input:', \"candies=[2,8,4], extraCandies=3\")\n    print('Expected output:', \"[false,true,false]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1431. Kids With the Greatest Number of Candies\nfunc Solve003(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1431. Kids With the Greatest Number of Candies\")\n\tfmt.Println(\"Sample input:\", \"candies=[2,8,4], extraCandies=3\")\n\tfmt.Println(\"Expected output:\", \"[false,true,false]\")\n\tfmt.Println(\"Call Solve003(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 4,
@@ -350,8 +350,8 @@ export const problems = [
     ],
     "pythonFunction": "can_place_flowers",
     "goFunction": "Solve004",
-    "pythonCode": "def can_place_flowers(*args):\n    \"\"\"Reference kernel for 605. Can Place Flowers.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 605. Can Place Flowers\nfunc Solve004(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 605. Can Place Flowers.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncan_place_flowers = solve\n\n\nif __name__ == \"__main__\":\n    print(\"605. Can Place Flowers\")\n    print('Sample input:', \"flowerbed=[1,0,0,0,1], n=1\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 605. Can Place Flowers\nfunc Solve004(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"605. Can Place Flowers\")\n\tfmt.Println(\"Sample input:\", \"flowerbed=[1,0,0,0,1], n=1\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve004(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 5,
@@ -430,8 +430,8 @@ export const problems = [
     ],
     "pythonFunction": "reverse_vowels_of_a_string",
     "goFunction": "Solve005",
-    "pythonCode": "def reverse_vowels_of_a_string(*args):\n    \"\"\"Reference kernel for 345. Reverse Vowels of a String.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 345. Reverse Vowels of a String\nfunc Solve005(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 345. Reverse Vowels of a String.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreverse_vowels_of_a_string = solve\n\n\nif __name__ == \"__main__\":\n    print(\"345. Reverse Vowels of a String\")\n    print('Sample input:', \"s=\\\"leetcode\\\"\")\n    print('Expected output:', \"\\\"leotcede\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 345. Reverse Vowels of a String\nfunc Solve005(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"345. Reverse Vowels of a String\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"leetcode\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"leotcede\\\"\")\n\tfmt.Println(\"Call Solve005(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 6,
@@ -511,8 +511,8 @@ export const problems = [
     ],
     "pythonFunction": "reverse_words_in_a_string",
     "goFunction": "Solve006",
-    "pythonCode": "def reverse_words_in_a_string(*args):\n    \"\"\"Reference kernel for 151. Reverse Words in a String.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 151. Reverse Words in a String\nfunc Solve006(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 151. Reverse Words in a String.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreverse_words_in_a_string = solve\n\n\nif __name__ == \"__main__\":\n    print(\"151. Reverse Words in a String\")\n    print('Sample input:', \"s=\\\"  blue  sky  \\\"\")\n    print('Expected output:', \"\\\"sky blue\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 151. Reverse Words in a String\nfunc Solve006(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"151. Reverse Words in a String\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"  blue  sky  \\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"sky blue\\\"\")\n\tfmt.Println(\"Call Solve006(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 7,
@@ -593,8 +593,8 @@ export const problems = [
     ],
     "pythonFunction": "product_of_array_except_self",
     "goFunction": "Solve007",
-    "pythonCode": "def product_of_array_except_self(*args):\n    \"\"\"Reference kernel for 238. Product of Array Except Self.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 238. Product of Array Except Self\nfunc Solve007(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 238. Product of Array Except Self.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nproduct_of_array_except_self = solve\n\n\nif __name__ == \"__main__\":\n    print(\"238. Product of Array Except Self\")\n    print('Sample input:', \"nums=[2,3,4]\")\n    print('Expected output:', \"[12,8,6]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 238. Product of Array Except Self\nfunc Solve007(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"238. Product of Array Except Self\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,3,4]\")\n\tfmt.Println(\"Expected output:\", \"[12,8,6]\")\n\tfmt.Println(\"Call Solve007(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 8,
@@ -668,8 +668,8 @@ export const problems = [
     ],
     "pythonFunction": "increasing_triplet_subsequence",
     "goFunction": "Solve008",
-    "pythonCode": "def increasing_triplet_subsequence(*args):\n    \"\"\"Reference kernel for 334. Increasing Triplet Subsequence.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 334. Increasing Triplet Subsequence\nfunc Solve008(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 334. Increasing Triplet Subsequence.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nincreasing_triplet_subsequence = solve\n\n\nif __name__ == \"__main__\":\n    print(\"334. Increasing Triplet Subsequence\")\n    print('Sample input:', \"nums=[5,1,6,2,3]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 334. Increasing Triplet Subsequence\nfunc Solve008(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"334. Increasing Triplet Subsequence\")\n\tfmt.Println(\"Sample input:\", \"nums=[5,1,6,2,3]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve008(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 9,
@@ -748,8 +748,8 @@ export const problems = [
     ],
     "pythonFunction": "string_compression",
     "goFunction": "Solve009",
-    "pythonCode": "def string_compression(*args):\n    \"\"\"Reference kernel for 443. String Compression.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 443. String Compression\nfunc Solve009(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 443. String Compression.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nstring_compression = solve\n\n\nif __name__ == \"__main__\":\n    print(\"443. String Compression\")\n    print('Sample input:', \"chars=[\\\"a\\\",\\\"a\\\",\\\"b\\\"]\")\n    print('Expected output:', \"length=3, chars starts [\\\"a\\\",\\\"2\\\",\\\"b\\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 443. String Compression\nfunc Solve009(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"443. String Compression\")\n\tfmt.Println(\"Sample input:\", \"chars=[\\\"a\\\",\\\"a\\\",\\\"b\\\"]\")\n\tfmt.Println(\"Expected output:\", \"length=3, chars starts [\\\"a\\\",\\\"2\\\",\\\"b\\\"]\")\n\tfmt.Println(\"Call Solve009(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 10,
@@ -828,8 +828,8 @@ export const problems = [
     ],
     "pythonFunction": "move_zeroes",
     "goFunction": "Solve010",
-    "pythonCode": "def move_zeroes(*args):\n    \"\"\"Reference kernel for 283. Move Zeroes.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n",
-    "goCode": "// 283. Move Zeroes\nfunc Solve010(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 283. Move Zeroes.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nmove_zeroes = solve\n\n\nif __name__ == \"__main__\":\n    print(\"283. Move Zeroes\")\n    print('Sample input:', \"nums=[0,1,0,3]\")\n    print('Expected output:', \"[1,3,0,0]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 283. Move Zeroes\nfunc Solve010(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"283. Move Zeroes\")\n\tfmt.Println(\"Sample input:\", \"nums=[0,1,0,3]\")\n\tfmt.Println(\"Expected output:\", \"[1,3,0,0]\")\n\tfmt.Println(\"Call Solve010(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 11,
@@ -909,8 +909,8 @@ export const problems = [
     ],
     "pythonFunction": "is_subsequence",
     "goFunction": "Solve011",
-    "pythonCode": "def is_subsequence(*args):\n    \"\"\"Reference kernel for 392. Is Subsequence.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n",
-    "goCode": "// 392. Is Subsequence\nfunc Solve011(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 392. Is Subsequence.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nis_subsequence = solve\n\n\nif __name__ == \"__main__\":\n    print(\"392. Is Subsequence\")\n    print('Sample input:', \"s=\\\"ace\\\", t=\\\"abcde\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 392. Is Subsequence\nfunc Solve011(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"392. Is Subsequence\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"ace\\\", t=\\\"abcde\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve011(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 12,
@@ -991,8 +991,8 @@ export const problems = [
     ],
     "pythonFunction": "container_with_most_water",
     "goFunction": "Solve012",
-    "pythonCode": "def container_with_most_water(*args):\n    \"\"\"Reference kernel for 11. Container With Most Water.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n",
-    "goCode": "// 11. Container With Most Water\nfunc Solve012(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 11. Container With Most Water.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\ncontainer_with_most_water = solve\n\n\nif __name__ == \"__main__\":\n    print(\"11. Container With Most Water\")\n    print('Sample input:', \"height=[1,7,2,5,4,7,3,6]\")\n    print('Expected output:', \"36\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 11. Container With Most Water\nfunc Solve012(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"11. Container With Most Water\")\n\tfmt.Println(\"Sample input:\", \"height=[1,7,2,5,4,7,3,6]\")\n\tfmt.Println(\"Expected output:\", \"36\")\n\tfmt.Println(\"Call Solve012(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 13,
@@ -1071,8 +1071,8 @@ export const problems = [
     ],
     "pythonFunction": "max_number_of_k_sum_pairs",
     "goFunction": "Solve013",
-    "pythonCode": "def max_number_of_k_sum_pairs(*args):\n    \"\"\"Reference kernel for 1679. Max Number of K-Sum Pairs.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n",
-    "goCode": "// 1679. Max Number of K-Sum Pairs\nfunc Solve013(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1679. Max Number of K-Sum Pairs.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nmax_number_of_k_sum_pairs = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1679. Max Number of K-Sum Pairs\")\n    print('Sample input:', \"nums=[1,2,3,4], k=5\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1679. Max Number of K-Sum Pairs\nfunc Solve013(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"1679. Max Number of K-Sum Pairs\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,3,4], k=5\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve013(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 14,
@@ -1151,8 +1151,8 @@ export const problems = [
     ],
     "pythonFunction": "maximum_average_subarray_i",
     "goFunction": "Solve014",
-    "pythonCode": "def maximum_average_subarray_i(*args):\n    \"\"\"Reference kernel for 643. Maximum Average Subarray I.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n",
-    "goCode": "// 643. Maximum Average Subarray I\nfunc Solve014(args ...any) any {\n\treturn len(args)\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 643. Maximum Average Subarray I.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nmaximum_average_subarray_i = solve\n\n\nif __name__ == \"__main__\":\n    print(\"643. Maximum Average Subarray I\")\n    print('Sample input:', \"nums=[1,12,-5,-6,50,3], k=4\")\n    print('Expected output:', \"12.75\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 643. Maximum Average Subarray I\nfunc Solve014(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"643. Maximum Average Subarray I\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,12,-5,-6,50,3], k=4\")\n\tfmt.Println(\"Expected output:\", \"12.75\")\n\tfmt.Println(\"Call Solve014(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 15,
@@ -1231,8 +1231,8 @@ export const problems = [
     ],
     "pythonFunction": "maximum_number_of_vowels_in_a_substring_of_given_length",
     "goFunction": "Solve015",
-    "pythonCode": "def maximum_number_of_vowels_in_a_substring_of_given_length(*args):\n    \"\"\"Reference kernel for 1456. Maximum Number of Vowels in a Substring of Given Length.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n",
-    "goCode": "// 1456. Maximum Number of Vowels in a Substring of Given Length\nfunc Solve015(args ...any) any {\n\treturn len(args)\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1456. Maximum Number of Vowels in a Substring of Given Length.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nmaximum_number_of_vowels_in_a_substring_of_given_length = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1456. Maximum Number of Vowels in a Substring of Given Length\")\n    print('Sample input:', \"s=\\\"abciiidef\\\", k=3\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1456. Maximum Number of Vowels in a Substring of Given Length\nfunc Solve015(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"1456. Maximum Number of Vowels in a Substring of Given Length\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"abciiidef\\\", k=3\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve015(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 16,
@@ -1311,8 +1311,8 @@ export const problems = [
     ],
     "pythonFunction": "max_consecutive_ones_iii",
     "goFunction": "Solve016",
-    "pythonCode": "def max_consecutive_ones_iii(*args):\n    \"\"\"Reference kernel for 1004. Max Consecutive Ones III.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n",
-    "goCode": "// 1004. Max Consecutive Ones III\nfunc Solve016(args ...any) any {\n\treturn len(args)\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1004. Max Consecutive Ones III.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nmax_consecutive_ones_iii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1004. Max Consecutive Ones III\")\n    print('Sample input:', \"nums=[1,0,1,1,0,1], k=1\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1004. Max Consecutive Ones III\nfunc Solve016(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"1004. Max Consecutive Ones III\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,0,1,1,0,1], k=1\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve016(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 17,
@@ -1391,8 +1391,8 @@ export const problems = [
     ],
     "pythonFunction": "longest_subarray_of_1_s_after_deleting_one_element",
     "goFunction": "Solve017",
-    "pythonCode": "def longest_subarray_of_1_s_after_deleting_one_element(*args):\n    \"\"\"Reference kernel for 1493. Longest Subarray of 1's After Deleting One Element.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n",
-    "goCode": "// 1493. Longest Subarray of 1's After Deleting One Element\nfunc Solve017(args ...any) any {\n\treturn len(args)\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1493. Longest Subarray of 1's After Deleting One Element.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nlongest_subarray_of_1_s_after_deleting_one_element = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1493. Longest Subarray of 1's After Deleting One Element\")\n    print('Sample input:', \"nums=[1,1,0,1]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1493. Longest Subarray of 1's After Deleting One Element\nfunc Solve017(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"1493. Longest Subarray of 1's After Deleting One Element\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,1,0,1]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve017(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 18,
@@ -1471,8 +1471,8 @@ export const problems = [
     ],
     "pythonFunction": "find_the_highest_altitude",
     "goFunction": "Solve018",
-    "pythonCode": "def find_the_highest_altitude(*args):\n    \"\"\"Reference kernel for 1732. Find the Highest Altitude.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 1732. Find the Highest Altitude\nfunc Solve018(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1732. Find the Highest Altitude.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nfind_the_highest_altitude = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1732. Find the Highest Altitude\")\n    print('Sample input:', \"gain=[-5,1,5]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1732. Find the Highest Altitude\nfunc Solve018(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1732. Find the Highest Altitude\")\n\tfmt.Println(\"Sample input:\", \"gain=[-5,1,5]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve018(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 19,
@@ -1551,8 +1551,8 @@ export const problems = [
     ],
     "pythonFunction": "find_pivot_index",
     "goFunction": "Solve019",
-    "pythonCode": "def find_pivot_index(*args):\n    \"\"\"Reference kernel for 724. Find Pivot Index.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 724. Find Pivot Index\nfunc Solve019(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 724. Find Pivot Index.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nfind_pivot_index = solve\n\n\nif __name__ == \"__main__\":\n    print(\"724. Find Pivot Index\")\n    print('Sample input:', \"nums=[1,7,3,6,5,6]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 724. Find Pivot Index\nfunc Solve019(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"724. Find Pivot Index\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,7,3,6,5,6]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve019(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 20,
@@ -1632,8 +1632,8 @@ export const problems = [
     ],
     "pythonFunction": "find_the_difference_of_two_arrays",
     "goFunction": "Solve020",
-    "pythonCode": "def find_the_difference_of_two_arrays(*args):\n    \"\"\"Reference kernel for 2215. Find the Difference of Two Arrays.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 2215. Find the Difference of Two Arrays\nfunc Solve020(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 2215. Find the Difference of Two Arrays.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nfind_the_difference_of_two_arrays = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2215. Find the Difference of Two Arrays\")\n    print('Sample input:', \"nums1=[1,2,3], nums2=[2,4]\")\n    print('Expected output:', \"[[1,3],[4]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 2215. Find the Difference of Two Arrays\nfunc Solve020(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"2215. Find the Difference of Two Arrays\")\n\tfmt.Println(\"Sample input:\", \"nums1=[1,2,3], nums2=[2,4]\")\n\tfmt.Println(\"Expected output:\", \"[[1,3],[4]]\")\n\tfmt.Println(\"Call Solve020(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 21,
@@ -1713,8 +1713,8 @@ export const problems = [
     ],
     "pythonFunction": "unique_number_of_occurrences",
     "goFunction": "Solve021",
-    "pythonCode": "def unique_number_of_occurrences(*args):\n    \"\"\"Reference kernel for 1207. Unique Number of Occurrences.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 1207. Unique Number of Occurrences\nfunc Solve021(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1207. Unique Number of Occurrences.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nunique_number_of_occurrences = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1207. Unique Number of Occurrences\")\n    print('Sample input:', \"nums=[1,2,2,3,3,3]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1207. Unique Number of Occurrences\nfunc Solve021(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"1207. Unique Number of Occurrences\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,2,3,3,3]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve021(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 22,
@@ -1794,8 +1794,8 @@ export const problems = [
     ],
     "pythonFunction": "determine_if_two_strings_are_close",
     "goFunction": "Solve022",
-    "pythonCode": "def determine_if_two_strings_are_close(*args):\n    \"\"\"Reference kernel for 1657. Determine if Two Strings Are Close.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 1657. Determine if Two Strings Are Close\nfunc Solve022(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1657. Determine if Two Strings Are Close.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\ndetermine_if_two_strings_are_close = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1657. Determine if Two Strings Are Close\")\n    print('Sample input:', \"word1=\\\"abbzzca\\\", word2=\\\"babzzcz\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1657. Determine if Two Strings Are Close\nfunc Solve022(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"1657. Determine if Two Strings Are Close\")\n\tfmt.Println(\"Sample input:\", \"word1=\\\"abbzzca\\\", word2=\\\"babzzcz\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve022(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 23,
@@ -1875,8 +1875,8 @@ export const problems = [
     ],
     "pythonFunction": "equal_row_and_column_pairs",
     "goFunction": "Solve023",
-    "pythonCode": "def equal_row_and_column_pairs(*args):\n    \"\"\"Reference kernel for 2352. Equal Row and Column Pairs.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 2352. Equal Row and Column Pairs\nfunc Solve023(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 2352. Equal Row and Column Pairs.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nequal_row_and_column_pairs = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2352. Equal Row and Column Pairs\")\n    print('Sample input:', \"grid=[[3,1,2],[1,7,6],[2,6,7]]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 2352. Equal Row and Column Pairs\nfunc Solve023(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"2352. Equal Row and Column Pairs\")\n\tfmt.Println(\"Sample input:\", \"grid=[[3,1,2],[1,7,6],[2,6,7]]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve023(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 24,
@@ -1952,8 +1952,8 @@ export const problems = [
     ],
     "pythonFunction": "removing_stars_from_a_string",
     "goFunction": "Solve024",
-    "pythonCode": "def removing_stars_from_a_string(*args):\n    \"\"\"Reference kernel for 2390. Removing Stars From a String.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n",
-    "goCode": "// 2390. Removing Stars From a String\nfunc Solve024(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 2390. Removing Stars From a String.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nremoving_stars_from_a_string = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2390. Removing Stars From a String\")\n    print('Sample input:', \"s=\\\"leet**cod*e\\\"\")\n    print('Expected output:', \"\\\"lecoe\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 2390. Removing Stars From a String\nfunc Solve024(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"2390. Removing Stars From a String\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"leet**cod*e\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"lecoe\\\"\")\n\tfmt.Println(\"Call Solve024(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 25,
@@ -2029,8 +2029,8 @@ export const problems = [
     ],
     "pythonFunction": "asteroid_collision",
     "goFunction": "Solve025",
-    "pythonCode": "def asteroid_collision(*args):\n    \"\"\"Reference kernel for 735. Asteroid Collision.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n",
-    "goCode": "// 735. Asteroid Collision\nfunc Solve025(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 735. Asteroid Collision.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nasteroid_collision = solve\n\n\nif __name__ == \"__main__\":\n    print(\"735. Asteroid Collision\")\n    print('Sample input:', \"asteroids=[5,10,-5]\")\n    print('Expected output:', \"[5,10]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 735. Asteroid Collision\nfunc Solve025(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"735. Asteroid Collision\")\n\tfmt.Println(\"Sample input:\", \"asteroids=[5,10,-5]\")\n\tfmt.Println(\"Expected output:\", \"[5,10]\")\n\tfmt.Println(\"Call Solve025(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 26,
@@ -2106,8 +2106,8 @@ export const problems = [
     ],
     "pythonFunction": "decode_string",
     "goFunction": "Solve026",
-    "pythonCode": "def decode_string(*args):\n    \"\"\"Reference kernel for 394. Decode String.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n",
-    "goCode": "// 394. Decode String\nfunc Solve026(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 394. Decode String.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\ndecode_string = solve\n\n\nif __name__ == \"__main__\":\n    print(\"394. Decode String\")\n    print('Sample input:', \"s=\\\"3[a2[c]]\\\"\")\n    print('Expected output:', \"\\\"accaccacc\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 394. Decode String\nfunc Solve026(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"394. Decode String\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"3[a2[c]]\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"accaccacc\\\"\")\n\tfmt.Println(\"Call Solve026(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 27,
@@ -2182,8 +2182,8 @@ export const problems = [
     ],
     "pythonFunction": "number_of_recent_calls",
     "goFunction": "Solve027",
-    "pythonCode": "def number_of_recent_calls(*args):\n    \"\"\"Reference kernel for 933. Number of Recent Calls.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 933. Number of Recent Calls\nfunc Solve027(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 933. Number of Recent Calls.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nnumber_of_recent_calls = solve\n\n\nif __name__ == \"__main__\":\n    print(\"933. Number of Recent Calls\")\n    print('Sample input:', \"pings=[1,100,3001,3002]\")\n    print('Expected output:', \"[1,2,3,3]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 933. Number of Recent Calls\nfunc Solve027(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"933. Number of Recent Calls\")\n\tfmt.Println(\"Sample input:\", \"pings=[1,100,3001,3002]\")\n\tfmt.Println(\"Expected output:\", \"[1,2,3,3]\")\n\tfmt.Println(\"Call Solve027(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 28,
@@ -2258,8 +2258,8 @@ export const problems = [
     ],
     "pythonFunction": "dota2_senate",
     "goFunction": "Solve028",
-    "pythonCode": "def dota2_senate(*args):\n    \"\"\"Reference kernel for 649. Dota2 Senate.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 649. Dota2 Senate\nfunc Solve028(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 649. Dota2 Senate.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ndota2_senate = solve\n\n\nif __name__ == \"__main__\":\n    print(\"649. Dota2 Senate\")\n    print('Sample input:', \"senate=\\\"RDD\\\"\")\n    print('Expected output:', \"\\\"Dire\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 649. Dota2 Senate\nfunc Solve028(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"649. Dota2 Senate\")\n\tfmt.Println(\"Sample input:\", \"senate=\\\"RDD\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"Dire\\\"\")\n\tfmt.Println(\"Call Solve028(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 29,
@@ -2334,8 +2334,8 @@ export const problems = [
     ],
     "pythonFunction": "delete_the_middle_node_of_a_linked_list",
     "goFunction": "Solve029",
-    "pythonCode": "def delete_the_middle_node_of_a_linked_list(*args):\n    \"\"\"Reference kernel for 2095. Delete the Middle Node of a Linked List.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 2095. Delete the Middle Node of a Linked List\nfunc Solve029(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 2095. Delete the Middle Node of a Linked List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ndelete_the_middle_node_of_a_linked_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2095. Delete the Middle Node of a Linked List\")\n    print('Sample input:', \"head=[1,3,4,7,1,2,6]\")\n    print('Expected output:', \"[1,3,4,1,2,6]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 2095. Delete the Middle Node of a Linked List\nfunc Solve029(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"2095. Delete the Middle Node of a Linked List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,3,4,7,1,2,6]\")\n\tfmt.Println(\"Expected output:\", \"[1,3,4,1,2,6]\")\n\tfmt.Println(\"Call Solve029(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 30,
@@ -2410,8 +2410,8 @@ export const problems = [
     ],
     "pythonFunction": "odd_even_linked_list",
     "goFunction": "Solve030",
-    "pythonCode": "def odd_even_linked_list(*args):\n    \"\"\"Reference kernel for 328. Odd Even Linked List.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 328. Odd Even Linked List\nfunc Solve030(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 328. Odd Even Linked List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nodd_even_linked_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"328. Odd Even Linked List\")\n    print('Sample input:', \"head=[1,2,3,4,5]\")\n    print('Expected output:', \"[1,3,5,2,4]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 328. Odd Even Linked List\nfunc Solve030(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"328. Odd Even Linked List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,4,5]\")\n\tfmt.Println(\"Expected output:\", \"[1,3,5,2,4]\")\n\tfmt.Println(\"Call Solve030(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 31,
@@ -2487,8 +2487,8 @@ export const problems = [
     ],
     "pythonFunction": "reverse_linked_list",
     "goFunction": "Solve031",
-    "pythonCode": "def reverse_linked_list(*args):\n    \"\"\"Reference kernel for 206. Reverse Linked List.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 206. Reverse Linked List\nfunc Solve031(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 206. Reverse Linked List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreverse_linked_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"206. Reverse Linked List\")\n    print('Sample input:', \"head=[1,2,3]\")\n    print('Expected output:', \"[3,2,1]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 206. Reverse Linked List\nfunc Solve031(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"206. Reverse Linked List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3]\")\n\tfmt.Println(\"Expected output:\", \"[3,2,1]\")\n\tfmt.Println(\"Call Solve031(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 32,
@@ -2563,8 +2563,8 @@ export const problems = [
     ],
     "pythonFunction": "maximum_twin_sum_of_a_linked_list",
     "goFunction": "Solve032",
-    "pythonCode": "def maximum_twin_sum_of_a_linked_list(*args):\n    \"\"\"Reference kernel for 2130. Maximum Twin Sum of a Linked List.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 2130. Maximum Twin Sum of a Linked List\nfunc Solve032(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 2130. Maximum Twin Sum of a Linked List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_twin_sum_of_a_linked_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2130. Maximum Twin Sum of a Linked List\")\n    print('Sample input:', \"head=[5,4,2,1]\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 2130. Maximum Twin Sum of a Linked List\nfunc Solve032(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"2130. Maximum Twin Sum of a Linked List\")\n\tfmt.Println(\"Sample input:\", \"head=[5,4,2,1]\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve032(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 33,
@@ -2643,8 +2643,8 @@ export const problems = [
     ],
     "pythonFunction": "maximum_depth_of_binary_tree",
     "goFunction": "Solve033",
-    "pythonCode": "def maximum_depth_of_binary_tree(*args):\n    \"\"\"Reference kernel for 104. Maximum Depth of Binary Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 104. Maximum Depth of Binary Tree\nfunc Solve033(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 104. Maximum Depth of Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_depth_of_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"104. Maximum Depth of Binary Tree\")\n    print('Sample input:', \"root=[3,9,20,null,null,15,7]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 104. Maximum Depth of Binary Tree\nfunc Solve033(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"104. Maximum Depth of Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[3,9,20,null,null,15,7]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve033(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 34,
@@ -2721,8 +2721,8 @@ export const problems = [
     ],
     "pythonFunction": "leaf_similar_trees",
     "goFunction": "Solve034",
-    "pythonCode": "def leaf_similar_trees(*args):\n    \"\"\"Reference kernel for 872. Leaf-Similar Trees.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 872. Leaf-Similar Trees\nfunc Solve034(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 872. Leaf-Similar Trees.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nleaf_similar_trees = solve\n\n\nif __name__ == \"__main__\":\n    print(\"872. Leaf-Similar Trees\")\n    print('Sample input:', \"root1=[1,2,3], root2=[7,2,3]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 872. Leaf-Similar Trees\nfunc Solve034(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"872. Leaf-Similar Trees\")\n\tfmt.Println(\"Sample input:\", \"root1=[1,2,3], root2=[7,2,3]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve034(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 35,
@@ -2799,8 +2799,8 @@ export const problems = [
     ],
     "pythonFunction": "count_good_nodes_in_binary_tree",
     "goFunction": "Solve035",
-    "pythonCode": "def count_good_nodes_in_binary_tree(*args):\n    \"\"\"Reference kernel for 1448. Count Good Nodes in Binary Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 1448. Count Good Nodes in Binary Tree\nfunc Solve035(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1448. Count Good Nodes in Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncount_good_nodes_in_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1448. Count Good Nodes in Binary Tree\")\n    print('Sample input:', \"root=[3,1,4,3,null,1,5]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1448. Count Good Nodes in Binary Tree\nfunc Solve035(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1448. Count Good Nodes in Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[3,1,4,3,null,1,5]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve035(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 36,
@@ -2877,8 +2877,8 @@ export const problems = [
     ],
     "pythonFunction": "path_sum_iii",
     "goFunction": "Solve036",
-    "pythonCode": "def path_sum_iii(*args):\n    \"\"\"Reference kernel for 437. Path Sum III.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 437. Path Sum III\nfunc Solve036(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 437. Path Sum III.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npath_sum_iii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"437. Path Sum III\")\n    print('Sample input:', \"root=[10,5,-3,3,2,null,11,3,-2,null,1], targetSum=8\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 437. Path Sum III\nfunc Solve036(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"437. Path Sum III\")\n\tfmt.Println(\"Sample input:\", \"root=[10,5,-3,3,2,null,11,3,-2,null,1], targetSum=8\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve036(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 37,
@@ -2955,8 +2955,8 @@ export const problems = [
     ],
     "pythonFunction": "longest_zigzag_path_in_a_binary_tree",
     "goFunction": "Solve037",
-    "pythonCode": "def longest_zigzag_path_in_a_binary_tree(*args):\n    \"\"\"Reference kernel for 1372. Longest ZigZag Path in a Binary Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 1372. Longest ZigZag Path in a Binary Tree\nfunc Solve037(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1372. Longest ZigZag Path in a Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlongest_zigzag_path_in_a_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1372. Longest ZigZag Path in a Binary Tree\")\n    print('Sample input:', \"path 1->right 2->left 3->right 4\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1372. Longest ZigZag Path in a Binary Tree\nfunc Solve037(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1372. Longest ZigZag Path in a Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"path 1->right 2->left 3->right 4\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve037(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 38,
@@ -3034,8 +3034,8 @@ export const problems = [
     ],
     "pythonFunction": "lowest_common_ancestor_of_a_binary_tree",
     "goFunction": "Solve038",
-    "pythonCode": "def lowest_common_ancestor_of_a_binary_tree(*args):\n    \"\"\"Reference kernel for 236. Lowest Common Ancestor of a Binary Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 236. Lowest Common Ancestor of a Binary Tree\nfunc Solve038(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 236. Lowest Common Ancestor of a Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlowest_common_ancestor_of_a_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"236. Lowest Common Ancestor of a Binary Tree\")\n    print('Sample input:', \"root=[3,5,1,6,2,0,8,null,null,7,4], p=5, q=1\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 236. Lowest Common Ancestor of a Binary Tree\nfunc Solve038(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"236. Lowest Common Ancestor of a Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[3,5,1,6,2,0,8,null,null,7,4], p=5, q=1\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve038(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 39,
@@ -3116,8 +3116,8 @@ export const problems = [
     ],
     "pythonFunction": "binary_tree_right_side_view",
     "goFunction": "Solve039",
-    "pythonCode": "def binary_tree_right_side_view(*args):\n    \"\"\"Reference kernel for 199. Binary Tree Right Side View.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 199. Binary Tree Right Side View\nfunc Solve039(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 199. Binary Tree Right Side View.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbinary_tree_right_side_view = solve\n\n\nif __name__ == \"__main__\":\n    print(\"199. Binary Tree Right Side View\")\n    print('Sample input:', \"root=[1,2,3,null,5,null,4]\")\n    print('Expected output:', \"[1,3,4]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 199. Binary Tree Right Side View\nfunc Solve039(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"199. Binary Tree Right Side View\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,3,null,5,null,4]\")\n\tfmt.Println(\"Expected output:\", \"[1,3,4]\")\n\tfmt.Println(\"Call Solve039(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 40,
@@ -3197,8 +3197,8 @@ export const problems = [
     ],
     "pythonFunction": "maximum_level_sum_of_a_binary_tree",
     "goFunction": "Solve040",
-    "pythonCode": "def maximum_level_sum_of_a_binary_tree(*args):\n    \"\"\"Reference kernel for 1161. Maximum Level Sum of a Binary Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 1161. Maximum Level Sum of a Binary Tree\nfunc Solve040(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1161. Maximum Level Sum of a Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_level_sum_of_a_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1161. Maximum Level Sum of a Binary Tree\")\n    print('Sample input:', \"root=[1,7,0,7,-8,null,null]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1161. Maximum Level Sum of a Binary Tree\nfunc Solve040(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1161. Maximum Level Sum of a Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[1,7,0,7,-8,null,null]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve040(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 41,
@@ -3275,8 +3275,8 @@ export const problems = [
     ],
     "pythonFunction": "search_in_a_binary_search_tree",
     "goFunction": "Solve041",
-    "pythonCode": "def search_in_a_binary_search_tree(*args):\n    \"\"\"Reference kernel for 700. Search in a Binary Search Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 700. Search in a Binary Search Tree\nfunc Solve041(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 700. Search in a Binary Search Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsearch_in_a_binary_search_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"700. Search in a Binary Search Tree\")\n    print('Sample input:', \"root=[4,2,7,1,3], val=2\")\n    print('Expected output:', \"[2,1,3]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 700. Search in a Binary Search Tree\nfunc Solve041(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"700. Search in a Binary Search Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[4,2,7,1,3], val=2\")\n\tfmt.Println(\"Expected output:\", \"[2,1,3]\")\n\tfmt.Println(\"Call Solve041(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 42,
@@ -3353,8 +3353,8 @@ export const problems = [
     ],
     "pythonFunction": "delete_node_in_a_bst",
     "goFunction": "Solve042",
-    "pythonCode": "def delete_node_in_a_bst(*args):\n    \"\"\"Reference kernel for 450. Delete Node in a BST.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 450. Delete Node in a BST\nfunc Solve042(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 450. Delete Node in a BST.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ndelete_node_in_a_bst = solve\n\n\nif __name__ == \"__main__\":\n    print(\"450. Delete Node in a BST\")\n    print('Sample input:', \"root=[5,3,6,2,4,null,7], key=3\")\n    print('Expected output:', \"[5,4,6,2,null,null,7]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 450. Delete Node in a BST\nfunc Solve042(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"450. Delete Node in a BST\")\n\tfmt.Println(\"Sample input:\", \"root=[5,3,6,2,4,null,7], key=3\")\n\tfmt.Println(\"Expected output:\", \"[5,4,6,2,null,null,7]\")\n\tfmt.Println(\"Call Solve042(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 43,
@@ -3430,8 +3430,8 @@ export const problems = [
     ],
     "pythonFunction": "keys_and_rooms",
     "goFunction": "Solve043",
-    "pythonCode": "def keys_and_rooms(*args):\n    \"\"\"Reference kernel for 841. Keys and Rooms.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 841. Keys and Rooms\nfunc Solve043(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 841. Keys and Rooms.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nkeys_and_rooms = solve\n\n\nif __name__ == \"__main__\":\n    print(\"841. Keys and Rooms\")\n    print('Sample input:', \"rooms=[[1],[2],[3],[]]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 841. Keys and Rooms\nfunc Solve043(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"841. Keys and Rooms\")\n\tfmt.Println(\"Sample input:\", \"rooms=[[1],[2],[3],[]]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve043(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 44,
@@ -3507,8 +3507,8 @@ export const problems = [
     ],
     "pythonFunction": "number_of_provinces",
     "goFunction": "Solve044",
-    "pythonCode": "def number_of_provinces(*args):\n    \"\"\"Reference kernel for 547. Number of Provinces.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 547. Number of Provinces\nfunc Solve044(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 547. Number of Provinces.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nnumber_of_provinces = solve\n\n\nif __name__ == \"__main__\":\n    print(\"547. Number of Provinces\")\n    print('Sample input:', \"isConnected=[[1,1,0],[1,1,0],[0,0,1]]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 547. Number of Provinces\nfunc Solve044(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"547. Number of Provinces\")\n\tfmt.Println(\"Sample input:\", \"isConnected=[[1,1,0],[1,1,0],[0,0,1]]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve044(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 45,
@@ -3584,8 +3584,8 @@ export const problems = [
     ],
     "pythonFunction": "reorder_routes_to_make_all_paths_lead_to_the_city_zero",
     "goFunction": "Solve045",
-    "pythonCode": "def reorder_routes_to_make_all_paths_lead_to_the_city_zero(*args):\n    \"\"\"Reference kernel for 1466. Reorder Routes to Make All Paths Lead to the City Zero.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 1466. Reorder Routes to Make All Paths Lead to the City Zero\nfunc Solve045(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1466. Reorder Routes to Make All Paths Lead to the City Zero.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nreorder_routes_to_make_all_paths_lead_to_the_city_zero = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1466. Reorder Routes to Make All Paths Lead to the City Zero\")\n    print('Sample input:', \"n=3, connections=[[1,0],[1,2]]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1466. Reorder Routes to Make All Paths Lead to the City Zero\nfunc Solve045(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"1466. Reorder Routes to Make All Paths Lead to the City Zero\")\n\tfmt.Println(\"Sample input:\", \"n=3, connections=[[1,0],[1,2]]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve045(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 46,
@@ -3662,8 +3662,8 @@ export const problems = [
     ],
     "pythonFunction": "evaluate_division",
     "goFunction": "Solve046",
-    "pythonCode": "def evaluate_division(*args):\n    \"\"\"Reference kernel for 399. Evaluate Division.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 399. Evaluate Division\nfunc Solve046(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 399. Evaluate Division.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nevaluate_division = solve\n\n\nif __name__ == \"__main__\":\n    print(\"399. Evaluate Division\")\n    print('Sample input:', \"equations=[[\\\"a\\\",\\\"b\\\"],[\\\"b\\\",\\\"c\\\"]], values=[2,3], queries=[[\\\"a\\\",\\\"c\\\"],[\\\"c\\\",\\\"a\\\"],[\\\"x\\\",\\\"y\\\"]]\")\n    print('Expected output:', \"[6.0,0.16667,-1.0]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 399. Evaluate Division\nfunc Solve046(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"399. Evaluate Division\")\n\tfmt.Println(\"Sample input:\", \"equations=[[\\\"a\\\",\\\"b\\\"],[\\\"b\\\",\\\"c\\\"]], values=[2,3], queries=[[\\\"a\\\",\\\"c\\\"],[\\\"c\\\",\\\"a\\\"],[\\\"x\\\",\\\"y\\\"]]\")\n\tfmt.Println(\"Expected output:\", \"[6.0,0.16667,-1.0]\")\n\tfmt.Println(\"Call Solve046(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 47,
@@ -3739,8 +3739,8 @@ export const problems = [
     ],
     "pythonFunction": "nearest_exit_from_entrance_in_maze",
     "goFunction": "Solve047",
-    "pythonCode": "def nearest_exit_from_entrance_in_maze(*args):\n    \"\"\"Reference kernel for 1926. Nearest Exit from Entrance in Maze.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 1926. Nearest Exit from Entrance in Maze\nfunc Solve047(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1926. Nearest Exit from Entrance in Maze.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nnearest_exit_from_entrance_in_maze = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1926. Nearest Exit from Entrance in Maze\")\n    print('Sample input:', \"maze=[[\\\"+\\\",\\\"+\\\",\\\".\\\"],[\\\".\\\",\\\".\\\",\\\".\\\"],[\\\"+\\\",\\\"+\\\",\\\"+\\\"]], entrance=[1,0]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1926. Nearest Exit from Entrance in Maze\nfunc Solve047(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"1926. Nearest Exit from Entrance in Maze\")\n\tfmt.Println(\"Sample input:\", \"maze=[[\\\"+\\\",\\\"+\\\",\\\".\\\"],[\\\".\\\",\\\".\\\",\\\".\\\"],[\\\"+\\\",\\\"+\\\",\\\"+\\\"]], entrance=[1,0]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve047(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 48,
@@ -3816,8 +3816,8 @@ export const problems = [
     ],
     "pythonFunction": "rotting_oranges",
     "goFunction": "Solve048",
-    "pythonCode": "def rotting_oranges(*args):\n    \"\"\"Reference kernel for 994. Rotting Oranges.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 994. Rotting Oranges\nfunc Solve048(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 994. Rotting Oranges.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nrotting_oranges = solve\n\n\nif __name__ == \"__main__\":\n    print(\"994. Rotting Oranges\")\n    print('Sample input:', \"grid=[[2,1,1],[1,1,0],[0,1,1]]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 994. Rotting Oranges\nfunc Solve048(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"994. Rotting Oranges\")\n\tfmt.Println(\"Sample input:\", \"grid=[[2,1,1],[1,1,0],[0,1,1]]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve048(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 49,
@@ -3895,8 +3895,8 @@ export const problems = [
     ],
     "pythonFunction": "kth_largest_element_in_an_array",
     "goFunction": "Solve049",
-    "pythonCode": "def kth_largest_element_in_an_array(*args):\n    \"\"\"Reference kernel for 215. Kth Largest Element in an Array.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 215. Kth Largest Element in an Array\nfunc Solve049(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 215. Kth Largest Element in an Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nkth_largest_element_in_an_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"215. Kth Largest Element in an Array\")\n    print('Sample input:', \"nums=[3,2,1,5,6,4], k=2\")\n    print('Expected output:', \"5\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 215. Kth Largest Element in an Array\nfunc Solve049(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"215. Kth Largest Element in an Array\")\n\tfmt.Println(\"Sample input:\", \"nums=[3,2,1,5,6,4], k=2\")\n\tfmt.Println(\"Expected output:\", \"5\")\n\tfmt.Println(\"Call Solve049(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 50,
@@ -3973,8 +3973,8 @@ export const problems = [
     ],
     "pythonFunction": "smallest_number_in_infinite_set",
     "goFunction": "Solve050",
-    "pythonCode": "def smallest_number_in_infinite_set(*args):\n    \"\"\"Reference kernel for 2336. Smallest Number in Infinite Set.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 2336. Smallest Number in Infinite Set\nfunc Solve050(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 2336. Smallest Number in Infinite Set.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsmallest_number_in_infinite_set = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2336. Smallest Number in Infinite Set\")\n    print('Sample input:', \"operations=pop,pop,addBack(1),pop\")\n    print('Expected output:', \"[1,2,null,1]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 2336. Smallest Number in Infinite Set\nfunc Solve050(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"2336. Smallest Number in Infinite Set\")\n\tfmt.Println(\"Sample input:\", \"operations=pop,pop,addBack(1),pop\")\n\tfmt.Println(\"Expected output:\", \"[1,2,null,1]\")\n\tfmt.Println(\"Call Solve050(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 51,
@@ -4051,8 +4051,8 @@ export const problems = [
     ],
     "pythonFunction": "maximum_subsequence_score",
     "goFunction": "Solve051",
-    "pythonCode": "def maximum_subsequence_score(*args):\n    \"\"\"Reference kernel for 2542. Maximum Subsequence Score.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 2542. Maximum Subsequence Score\nfunc Solve051(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 2542. Maximum Subsequence Score.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_subsequence_score = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2542. Maximum Subsequence Score\")\n    print('Sample input:', \"nums1=[1,3,3,2], nums2=[2,1,3,4], k=3\")\n    print('Expected output:', \"12\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 2542. Maximum Subsequence Score\nfunc Solve051(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"2542. Maximum Subsequence Score\")\n\tfmt.Println(\"Sample input:\", \"nums1=[1,3,3,2], nums2=[2,1,3,4], k=3\")\n\tfmt.Println(\"Expected output:\", \"12\")\n\tfmt.Println(\"Call Solve051(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 52,
@@ -4129,8 +4129,8 @@ export const problems = [
     ],
     "pythonFunction": "total_cost_to_hire_k_workers",
     "goFunction": "Solve052",
-    "pythonCode": "def total_cost_to_hire_k_workers(*args):\n    \"\"\"Reference kernel for 2462. Total Cost to Hire K Workers.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 2462. Total Cost to Hire K Workers\nfunc Solve052(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 2462. Total Cost to Hire K Workers.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ntotal_cost_to_hire_k_workers = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2462. Total Cost to Hire K Workers\")\n    print('Sample input:', \"costs=[17,12,10,2,7,2,11,20,8], k=3, candidates=4\")\n    print('Expected output:', \"11\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 2462. Total Cost to Hire K Workers\nfunc Solve052(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"2462. Total Cost to Hire K Workers\")\n\tfmt.Println(\"Sample input:\", \"costs=[17,12,10,2,7,2,11,20,8], k=3, candidates=4\")\n\tfmt.Println(\"Expected output:\", \"11\")\n\tfmt.Println(\"Call Solve052(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 53,
@@ -4204,8 +4204,8 @@ export const problems = [
     ],
     "pythonFunction": "guess_number_higher_or_lower",
     "goFunction": "Solve053",
-    "pythonCode": "def guess_number_higher_or_lower(*args):\n    \"\"\"Reference kernel for 374. Guess Number Higher or Lower.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n",
-    "goCode": "// 374. Guess Number Higher or Lower\nfunc Solve053(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 374. Guess Number Higher or Lower.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nguess_number_higher_or_lower = solve\n\n\nif __name__ == \"__main__\":\n    print(\"374. Guess Number Higher or Lower\")\n    print('Sample input:', \"n=10, pick=6\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 374. Guess Number Higher or Lower\nfunc Solve053(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"374. Guess Number Higher or Lower\")\n\tfmt.Println(\"Sample input:\", \"n=10, pick=6\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve053(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 54,
@@ -4279,8 +4279,8 @@ export const problems = [
     ],
     "pythonFunction": "successful_pairs_of_spells_and_potions",
     "goFunction": "Solve054",
-    "pythonCode": "def successful_pairs_of_spells_and_potions(*args):\n    \"\"\"Reference kernel for 2300. Successful Pairs of Spells and Potions.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n",
-    "goCode": "// 2300. Successful Pairs of Spells and Potions\nfunc Solve054(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 2300. Successful Pairs of Spells and Potions.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nsuccessful_pairs_of_spells_and_potions = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2300. Successful Pairs of Spells and Potions\")\n    print('Sample input:', \"spells=[5,1,3], potions=[1,2,3,4,5], success=7\")\n    print('Expected output:', \"[4,0,3]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 2300. Successful Pairs of Spells and Potions\nfunc Solve054(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"2300. Successful Pairs of Spells and Potions\")\n\tfmt.Println(\"Sample input:\", \"spells=[5,1,3], potions=[1,2,3,4,5], success=7\")\n\tfmt.Println(\"Expected output:\", \"[4,0,3]\")\n\tfmt.Println(\"Call Solve054(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 55,
@@ -4355,8 +4355,8 @@ export const problems = [
     ],
     "pythonFunction": "find_peak_element",
     "goFunction": "Solve055",
-    "pythonCode": "def find_peak_element(*args):\n    \"\"\"Reference kernel for 162. Find Peak Element.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n",
-    "goCode": "// 162. Find Peak Element\nfunc Solve055(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 162. Find Peak Element.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nfind_peak_element = solve\n\n\nif __name__ == \"__main__\":\n    print(\"162. Find Peak Element\")\n    print('Sample input:', \"nums=[1,2,3,1]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 162. Find Peak Element\nfunc Solve055(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"162. Find Peak Element\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,3,1]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve055(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 56,
@@ -4430,8 +4430,8 @@ export const problems = [
     ],
     "pythonFunction": "koko_eating_bananas",
     "goFunction": "Solve056",
-    "pythonCode": "def koko_eating_bananas(*args):\n    \"\"\"Reference kernel for 875. Koko Eating Bananas.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n",
-    "goCode": "// 875. Koko Eating Bananas\nfunc Solve056(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 875. Koko Eating Bananas.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nkoko_eating_bananas = solve\n\n\nif __name__ == \"__main__\":\n    print(\"875. Koko Eating Bananas\")\n    print('Sample input:', \"piles=[3,6,7,11], h=8\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 875. Koko Eating Bananas\nfunc Solve056(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"875. Koko Eating Bananas\")\n\tfmt.Println(\"Sample input:\", \"piles=[3,6,7,11], h=8\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve056(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 57,
@@ -4510,8 +4510,8 @@ export const problems = [
     ],
     "pythonFunction": "letter_combinations_of_a_phone_number",
     "goFunction": "Solve057",
-    "pythonCode": "def letter_combinations_of_a_phone_number(*args):\n    \"\"\"Reference kernel for 17. Letter Combinations of a Phone Number.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 17. Letter Combinations of a Phone Number\nfunc Solve057(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 17. Letter Combinations of a Phone Number.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nletter_combinations_of_a_phone_number = solve\n\n\nif __name__ == \"__main__\":\n    print(\"17. Letter Combinations of a Phone Number\")\n    print('Sample input:', \"digits=\\\"23\\\"\")\n    print('Expected output:', \"[\\\"ad\\\",\\\"ae\\\",\\\"af\\\",\\\"bd\\\",\\\"be\\\",\\\"bf\\\",\\\"cd\\\",\\\"ce\\\",\\\"cf\\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 17. Letter Combinations of a Phone Number\nfunc Solve057(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"17. Letter Combinations of a Phone Number\")\n\tfmt.Println(\"Sample input:\", \"digits=\\\"23\\\"\")\n\tfmt.Println(\"Expected output:\", \"[\\\"ad\\\",\\\"ae\\\",\\\"af\\\",\\\"bd\\\",\\\"be\\\",\\\"bf\\\",\\\"cd\\\",\\\"ce\\\",\\\"cf\\\"]\")\n\tfmt.Println(\"Call Solve057(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 58,
@@ -4589,8 +4589,8 @@ export const problems = [
     ],
     "pythonFunction": "combination_sum_iii",
     "goFunction": "Solve058",
-    "pythonCode": "def combination_sum_iii(*args):\n    \"\"\"Reference kernel for 216. Combination Sum III.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 216. Combination Sum III\nfunc Solve058(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 216. Combination Sum III.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncombination_sum_iii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"216. Combination Sum III\")\n    print('Sample input:', \"k=3, n=7\")\n    print('Expected output:', \"[[1,2,4]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 216. Combination Sum III\nfunc Solve058(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"216. Combination Sum III\")\n\tfmt.Println(\"Sample input:\", \"k=3, n=7\")\n\tfmt.Println(\"Expected output:\", \"[[1,2,4]]\")\n\tfmt.Println(\"Call Solve058(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 59,
@@ -4668,8 +4668,8 @@ export const problems = [
     ],
     "pythonFunction": "n_th_tribonacci_number",
     "goFunction": "Solve059",
-    "pythonCode": "def n_th_tribonacci_number(*args):\n    \"\"\"Reference kernel for 1137. N-th Tribonacci Number.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n",
-    "goCode": "// 1137. N-th Tribonacci Number\nfunc Solve059(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1137. N-th Tribonacci Number.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nn_th_tribonacci_number = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1137. N-th Tribonacci Number\")\n    print('Sample input:', \"n=4\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1137. N-th Tribonacci Number\nfunc Solve059(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"1137. N-th Tribonacci Number\")\n\tfmt.Println(\"Sample input:\", \"n=4\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve059(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 60,
@@ -4747,8 +4747,8 @@ export const problems = [
     ],
     "pythonFunction": "min_cost_climbing_stairs",
     "goFunction": "Solve060",
-    "pythonCode": "def min_cost_climbing_stairs(*args):\n    \"\"\"Reference kernel for 746. Min Cost Climbing Stairs.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n",
-    "goCode": "// 746. Min Cost Climbing Stairs\nfunc Solve060(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 746. Min Cost Climbing Stairs.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nmin_cost_climbing_stairs = solve\n\n\nif __name__ == \"__main__\":\n    print(\"746. Min Cost Climbing Stairs\")\n    print('Sample input:', \"cost=[10,15,20]\")\n    print('Expected output:', \"15\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 746. Min Cost Climbing Stairs\nfunc Solve060(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"746. Min Cost Climbing Stairs\")\n\tfmt.Println(\"Sample input:\", \"cost=[10,15,20]\")\n\tfmt.Println(\"Expected output:\", \"15\")\n\tfmt.Println(\"Call Solve060(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 61,
@@ -4828,8 +4828,8 @@ export const problems = [
     ],
     "pythonFunction": "house_robber",
     "goFunction": "Solve061",
-    "pythonCode": "def house_robber(*args):\n    \"\"\"Reference kernel for 198. House Robber.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n",
-    "goCode": "// 198. House Robber\nfunc Solve061(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 198. House Robber.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nhouse_robber = solve\n\n\nif __name__ == \"__main__\":\n    print(\"198. House Robber\")\n    print('Sample input:', \"nums=[2,7,9,3,1]\")\n    print('Expected output:', \"12\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 198. House Robber\nfunc Solve061(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"198. House Robber\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,7,9,3,1]\")\n\tfmt.Println(\"Expected output:\", \"12\")\n\tfmt.Println(\"Call Solve061(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 62,
@@ -4907,8 +4907,8 @@ export const problems = [
     ],
     "pythonFunction": "domino_and_tromino_tiling",
     "goFunction": "Solve062",
-    "pythonCode": "def domino_and_tromino_tiling(*args):\n    \"\"\"Reference kernel for 790. Domino and Tromino Tiling.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n",
-    "goCode": "// 790. Domino and Tromino Tiling\nfunc Solve062(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 790. Domino and Tromino Tiling.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\ndomino_and_tromino_tiling = solve\n\n\nif __name__ == \"__main__\":\n    print(\"790. Domino and Tromino Tiling\")\n    print('Sample input:', \"n=3\")\n    print('Expected output:', \"5\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 790. Domino and Tromino Tiling\nfunc Solve062(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"790. Domino and Tromino Tiling\")\n\tfmt.Println(\"Sample input:\", \"n=3\")\n\tfmt.Println(\"Expected output:\", \"5\")\n\tfmt.Println(\"Call Solve062(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 63,
@@ -4981,8 +4981,8 @@ export const problems = [
     ],
     "pythonFunction": "unique_paths",
     "goFunction": "Solve063",
-    "pythonCode": "def unique_paths(*args):\n    \"\"\"Reference kernel for 62. Unique Paths.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 62. Unique Paths\nfunc Solve063(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 62. Unique Paths.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nunique_paths = solve\n\n\nif __name__ == \"__main__\":\n    print(\"62. Unique Paths\")\n    print('Sample input:', \"m=3, n=7\")\n    print('Expected output:', \"28\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 62. Unique Paths\nfunc Solve063(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"62. Unique Paths\")\n\tfmt.Println(\"Sample input:\", \"m=3, n=7\")\n\tfmt.Println(\"Expected output:\", \"28\")\n\tfmt.Println(\"Call Solve063(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 64,
@@ -5055,8 +5055,8 @@ export const problems = [
     ],
     "pythonFunction": "longest_common_subsequence",
     "goFunction": "Solve064",
-    "pythonCode": "def longest_common_subsequence(*args):\n    \"\"\"Reference kernel for 1143. Longest Common Subsequence.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 1143. Longest Common Subsequence\nfunc Solve064(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1143. Longest Common Subsequence.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlongest_common_subsequence = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1143. Longest Common Subsequence\")\n    print('Sample input:', \"text1=\\\"abcde\\\", text2=\\\"ace\\\"\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1143. Longest Common Subsequence\nfunc Solve064(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1143. Longest Common Subsequence\")\n\tfmt.Println(\"Sample input:\", \"text1=\\\"abcde\\\", text2=\\\"ace\\\"\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve064(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 65,
@@ -5128,8 +5128,8 @@ export const problems = [
     ],
     "pythonFunction": "best_time_to_buy_and_sell_stock_with_transaction_fee",
     "goFunction": "Solve065",
-    "pythonCode": "def best_time_to_buy_and_sell_stock_with_transaction_fee(*args):\n    \"\"\"Reference kernel for 714. Best Time to Buy and Sell Stock with Transaction Fee.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 714. Best Time to Buy and Sell Stock with Transaction Fee\nfunc Solve065(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 714. Best Time to Buy and Sell Stock with Transaction Fee.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbest_time_to_buy_and_sell_stock_with_transaction_fee = solve\n\n\nif __name__ == \"__main__\":\n    print(\"714. Best Time to Buy and Sell Stock with Transaction Fee\")\n    print('Sample input:', \"prices=[1,3,2,8,4,9], fee=2\")\n    print('Expected output:', \"8\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 714. Best Time to Buy and Sell Stock with Transaction Fee\nfunc Solve065(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"714. Best Time to Buy and Sell Stock with Transaction Fee\")\n\tfmt.Println(\"Sample input:\", \"prices=[1,3,2,8,4,9], fee=2\")\n\tfmt.Println(\"Expected output:\", \"8\")\n\tfmt.Println(\"Call Solve065(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 66,
@@ -5202,8 +5202,8 @@ export const problems = [
     ],
     "pythonFunction": "edit_distance",
     "goFunction": "Solve066",
-    "pythonCode": "def edit_distance(*args):\n    \"\"\"Reference kernel for 72. Edit Distance.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 72. Edit Distance\nfunc Solve066(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 72. Edit Distance.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nedit_distance = solve\n\n\nif __name__ == \"__main__\":\n    print(\"72. Edit Distance\")\n    print('Sample input:', \"word1=\\\"horse\\\", word2=\\\"ros\\\"\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 72. Edit Distance\nfunc Solve066(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"72. Edit Distance\")\n\tfmt.Println(\"Sample input:\", \"word1=\\\"horse\\\", word2=\\\"ros\\\"\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve066(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 67,
@@ -5285,8 +5285,8 @@ export const problems = [
     ],
     "pythonFunction": "counting_bits",
     "goFunction": "Solve067",
-    "pythonCode": "def counting_bits(*args):\n    \"\"\"Reference kernel for 338. Counting Bits.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 338. Counting Bits\nfunc Solve067(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 338. Counting Bits.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncounting_bits = solve\n\n\nif __name__ == \"__main__\":\n    print(\"338. Counting Bits\")\n    print('Sample input:', \"n=5\")\n    print('Expected output:', \"[0,1,1,2,1,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 338. Counting Bits\nfunc Solve067(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"338. Counting Bits\")\n\tfmt.Println(\"Sample input:\", \"n=5\")\n\tfmt.Println(\"Expected output:\", \"[0,1,1,2,1,2]\")\n\tfmt.Println(\"Call Solve067(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 68,
@@ -5368,8 +5368,8 @@ export const problems = [
     ],
     "pythonFunction": "single_number",
     "goFunction": "Solve068",
-    "pythonCode": "def single_number(*args):\n    \"\"\"Reference kernel for 136. Single Number.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 136. Single Number\nfunc Solve068(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 136. Single Number.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsingle_number = solve\n\n\nif __name__ == \"__main__\":\n    print(\"136. Single Number\")\n    print('Sample input:', \"nums=[4,1,2,1,2]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 136. Single Number\nfunc Solve068(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"136. Single Number\")\n\tfmt.Println(\"Sample input:\", \"nums=[4,1,2,1,2]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve068(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 69,
@@ -5450,8 +5450,8 @@ export const problems = [
     ],
     "pythonFunction": "minimum_flips_to_make_a_or_b_equal_to_c",
     "goFunction": "Solve069",
-    "pythonCode": "def minimum_flips_to_make_a_or_b_equal_to_c(*args):\n    \"\"\"Reference kernel for 1318. Minimum Flips to Make a OR b Equal to c.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 1318. Minimum Flips to Make a OR b Equal to c\nfunc Solve069(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1318. Minimum Flips to Make a OR b Equal to c.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nminimum_flips_to_make_a_or_b_equal_to_c = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1318. Minimum Flips to Make a OR b Equal to c\")\n    print('Sample input:', \"a=2, b=6, c=5\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1318. Minimum Flips to Make a OR b Equal to c\nfunc Solve069(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1318. Minimum Flips to Make a OR b Equal to c\")\n\tfmt.Println(\"Sample input:\", \"a=2, b=6, c=5\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve069(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 70,
@@ -5530,8 +5530,8 @@ export const problems = [
     ],
     "pythonFunction": "implement_trie_prefix_tree",
     "goFunction": "Solve070",
-    "pythonCode": "def implement_trie_prefix_tree(*args):\n    \"\"\"Reference kernel for 208. Implement Trie (Prefix Tree).\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 208. Implement Trie (Prefix Tree)\nfunc Solve070(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 208. Implement Trie (Prefix Tree).\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nimplement_trie_prefix_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"208. Implement Trie (Prefix Tree)\")\n    print('Sample input:', \"insert(\\\"apple\\\"), search(\\\"apple\\\"), startsWith(\\\"app\\\")\")\n    print('Expected output:', \"[null,true,true]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 208. Implement Trie (Prefix Tree)\nfunc Solve070(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"208. Implement Trie (Prefix Tree)\")\n\tfmt.Println(\"Sample input:\", \"insert(\\\"apple\\\"), search(\\\"apple\\\"), startsWith(\\\"app\\\")\")\n\tfmt.Println(\"Expected output:\", \"[null,true,true]\")\n\tfmt.Println(\"Call Solve070(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 71,
@@ -5608,8 +5608,8 @@ export const problems = [
     ],
     "pythonFunction": "search_suggestions_system",
     "goFunction": "Solve071",
-    "pythonCode": "def search_suggestions_system(*args):\n    \"\"\"Reference kernel for 1268. Search Suggestions System.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 1268. Search Suggestions System\nfunc Solve071(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1268. Search Suggestions System.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsearch_suggestions_system = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1268. Search Suggestions System\")\n    print('Sample input:', \"products=[\\\"mobile\\\",\\\"mouse\\\",\\\"moneypot\\\",\\\"monitor\\\",\\\"mousepad\\\"], searchWord=\\\"mouse\\\"\")\n    print('Expected output:', \"[[\\\"mobile\\\",\\\"moneypot\\\",\\\"monitor\\\"],[\\\"mobile\\\",\\\"moneypot\\\",\\\"monitor\\\"],[\\\"mouse\\\",\\\"mousepad\\\"],[\\\"mouse\\\",\\\"mousepad\\\"],[\\\"mouse\\\",\\\"mousepad\\\"]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1268. Search Suggestions System\nfunc Solve071(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1268. Search Suggestions System\")\n\tfmt.Println(\"Sample input:\", \"products=[\\\"mobile\\\",\\\"mouse\\\",\\\"moneypot\\\",\\\"monitor\\\",\\\"mousepad\\\"], searchWord=\\\"mouse\\\"\")\n\tfmt.Println(\"Expected output:\", \"[[\\\"mobile\\\",\\\"moneypot\\\",\\\"monitor\\\"],[\\\"mobile\\\",\\\"moneypot\\\",\\\"monitor\\\"],[\\\"mouse\\\",\\\"mousepad\\\"],[\\\"mouse\\\",\\\"mousepad\\\"],[\\\"mouse\\\",\\\"mousepad\\\"]]\")\n\tfmt.Println(\"Call Solve071(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 72,
@@ -5682,8 +5682,8 @@ export const problems = [
     ],
     "pythonFunction": "non_overlapping_intervals",
     "goFunction": "Solve072",
-    "pythonCode": "def non_overlapping_intervals(*args):\n    \"\"\"Reference kernel for 435. Non-overlapping Intervals.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 435. Non-overlapping Intervals\nfunc Solve072(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 435. Non-overlapping Intervals.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nnon_overlapping_intervals = solve\n\n\nif __name__ == \"__main__\":\n    print(\"435. Non-overlapping Intervals\")\n    print('Sample input:', \"intervals=[[1,2],[2,3],[3,4],[1,3]]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 435. Non-overlapping Intervals\nfunc Solve072(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"435. Non-overlapping Intervals\")\n\tfmt.Println(\"Sample input:\", \"intervals=[[1,2],[2,3],[3,4],[1,3]]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve072(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 73,
@@ -5756,8 +5756,8 @@ export const problems = [
     ],
     "pythonFunction": "minimum_number_of_arrows_to_burst_balloons",
     "goFunction": "Solve073",
-    "pythonCode": "def minimum_number_of_arrows_to_burst_balloons(*args):\n    \"\"\"Reference kernel for 452. Minimum Number of Arrows to Burst Balloons.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 452. Minimum Number of Arrows to Burst Balloons\nfunc Solve073(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 452. Minimum Number of Arrows to Burst Balloons.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nminimum_number_of_arrows_to_burst_balloons = solve\n\n\nif __name__ == \"__main__\":\n    print(\"452. Minimum Number of Arrows to Burst Balloons\")\n    print('Sample input:', \"points=[[10,16],[2,8],[1,6],[7,12]]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 452. Minimum Number of Arrows to Burst Balloons\nfunc Solve073(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"452. Minimum Number of Arrows to Burst Balloons\")\n\tfmt.Println(\"Sample input:\", \"points=[[10,16],[2,8],[1,6],[7,12]]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve073(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 74,
@@ -5833,8 +5833,8 @@ export const problems = [
     ],
     "pythonFunction": "daily_temperatures",
     "goFunction": "Solve074",
-    "pythonCode": "def daily_temperatures(*args):\n    \"\"\"Reference kernel for 739. Daily Temperatures.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 739. Daily Temperatures\nfunc Solve074(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 739. Daily Temperatures.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ndaily_temperatures = solve\n\n\nif __name__ == \"__main__\":\n    print(\"739. Daily Temperatures\")\n    print('Sample input:', \"temperatures=[73,74,75,71,69,72,76,73]\")\n    print('Expected output:', \"[1,1,4,2,1,1,0,0]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 739. Daily Temperatures\nfunc Solve074(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"739. Daily Temperatures\")\n\tfmt.Println(\"Sample input:\", \"temperatures=[73,74,75,71,69,72,76,73]\")\n\tfmt.Println(\"Expected output:\", \"[1,1,4,2,1,1,0,0]\")\n\tfmt.Println(\"Call Solve074(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 75,
@@ -5910,8 +5910,8 @@ export const problems = [
     ],
     "pythonFunction": "online_stock_span",
     "goFunction": "Solve075",
-    "pythonCode": "def online_stock_span(*args):\n    \"\"\"Reference kernel for 901. Online Stock Span.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 901. Online Stock Span\nfunc Solve075(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 901. Online Stock Span.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nonline_stock_span = solve\n\n\nif __name__ == \"__main__\":\n    print(\"901. Online Stock Span\")\n    print('Sample input:', \"prices=[100,80,60,70,60,75,85]\")\n    print('Expected output:', \"[1,1,1,2,1,4,6]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 901. Online Stock Span\nfunc Solve075(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"901. Online Stock Span\")\n\tfmt.Println(\"Sample input:\", \"prices=[100,80,60,70,60,75,85]\")\n\tfmt.Println(\"Expected output:\", \"[1,1,1,2,1,4,6]\")\n\tfmt.Println(\"Call Solve075(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 76,
@@ -5990,8 +5990,8 @@ export const problems = [
     ],
     "pythonFunction": "merge_sorted_array",
     "goFunction": "Solve076",
-    "pythonCode": "def merge_sorted_array(*args):\n    \"\"\"Reference kernel for 88. Merge Sorted Array.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 88. Merge Sorted Array\nfunc Solve076(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 88. Merge Sorted Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmerge_sorted_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"88. Merge Sorted Array\")\n    print('Sample input:', \"nums1=[1,2,3,0,0,0], m=3, nums2=[2,5,6], n=3\")\n    print('Expected output:', \"[1,2,2,3,5,6]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 88. Merge Sorted Array\nfunc Solve076(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"88. Merge Sorted Array\")\n\tfmt.Println(\"Sample input:\", \"nums1=[1,2,3,0,0,0], m=3, nums2=[2,5,6], n=3\")\n\tfmt.Println(\"Expected output:\", \"[1,2,2,3,5,6]\")\n\tfmt.Println(\"Call Solve076(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 77,
@@ -6070,8 +6070,8 @@ export const problems = [
     ],
     "pythonFunction": "remove_element",
     "goFunction": "Solve077",
-    "pythonCode": "def remove_element(*args):\n    \"\"\"Reference kernel for 27. Remove Element.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 27. Remove Element\nfunc Solve077(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 27. Remove Element.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nremove_element = solve\n\n\nif __name__ == \"__main__\":\n    print(\"27. Remove Element\")\n    print('Sample input:', \"nums=[3,2,2,3], val=3\")\n    print('Expected output:', \"k=2, first values [2,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 27. Remove Element\nfunc Solve077(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"27. Remove Element\")\n\tfmt.Println(\"Sample input:\", \"nums=[3,2,2,3], val=3\")\n\tfmt.Println(\"Expected output:\", \"k=2, first values [2,2]\")\n\tfmt.Println(\"Call Solve077(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 78,
@@ -6150,8 +6150,8 @@ export const problems = [
     ],
     "pythonFunction": "remove_duplicates_from_sorted_array",
     "goFunction": "Solve078",
-    "pythonCode": "def remove_duplicates_from_sorted_array(*args):\n    \"\"\"Reference kernel for 26. Remove Duplicates from Sorted Array.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 26. Remove Duplicates from Sorted Array\nfunc Solve078(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 26. Remove Duplicates from Sorted Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nremove_duplicates_from_sorted_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"26. Remove Duplicates from Sorted Array\")\n    print('Sample input:', \"nums=[1,1,2]\")\n    print('Expected output:', \"k=2, first values [1,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 26. Remove Duplicates from Sorted Array\nfunc Solve078(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"26. Remove Duplicates from Sorted Array\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,1,2]\")\n\tfmt.Println(\"Expected output:\", \"k=2, first values [1,2]\")\n\tfmt.Println(\"Call Solve078(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 79,
@@ -6230,8 +6230,8 @@ export const problems = [
     ],
     "pythonFunction": "remove_duplicates_from_sorted_array_ii",
     "goFunction": "Solve079",
-    "pythonCode": "def remove_duplicates_from_sorted_array_ii(*args):\n    \"\"\"Reference kernel for 80. Remove Duplicates from Sorted Array II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 80. Remove Duplicates from Sorted Array II\nfunc Solve079(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 80. Remove Duplicates from Sorted Array II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nremove_duplicates_from_sorted_array_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"80. Remove Duplicates from Sorted Array II\")\n    print('Sample input:', \"nums=[0,0,1,1,1,1,2]\")\n    print('Expected output:', \"k=5, first values [0,0,1,1,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 80. Remove Duplicates from Sorted Array II\nfunc Solve079(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"80. Remove Duplicates from Sorted Array II\")\n\tfmt.Println(\"Sample input:\", \"nums=[0,0,1,1,1,1,2]\")\n\tfmt.Println(\"Expected output:\", \"k=5, first values [0,0,1,1,2]\")\n\tfmt.Println(\"Call Solve079(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 80,
@@ -6310,8 +6310,8 @@ export const problems = [
     ],
     "pythonFunction": "majority_element",
     "goFunction": "Solve080",
-    "pythonCode": "def majority_element(*args):\n    \"\"\"Reference kernel for 169. Majority Element.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 169. Majority Element\nfunc Solve080(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 169. Majority Element.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmajority_element = solve\n\n\nif __name__ == \"__main__\":\n    print(\"169. Majority Element\")\n    print('Sample input:', \"nums=[2,2,1,1,1,2,2]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 169. Majority Element\nfunc Solve080(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"169. Majority Element\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,2,1,1,1,2,2]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve080(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 81,
@@ -6390,8 +6390,8 @@ export const problems = [
     ],
     "pythonFunction": "rotate_array",
     "goFunction": "Solve081",
-    "pythonCode": "def rotate_array(*args):\n    \"\"\"Reference kernel for 189. Rotate Array.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 189. Rotate Array\nfunc Solve081(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 189. Rotate Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nrotate_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"189. Rotate Array\")\n    print('Sample input:', \"nums=[1,2,3,4,5], k=2\")\n    print('Expected output:', \"[4,5,1,2,3]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 189. Rotate Array\nfunc Solve081(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"189. Rotate Array\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,3,4,5], k=2\")\n\tfmt.Println(\"Expected output:\", \"[4,5,1,2,3]\")\n\tfmt.Println(\"Call Solve081(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 82,
@@ -6466,8 +6466,8 @@ export const problems = [
     ],
     "pythonFunction": "best_time_to_buy_and_sell_stock",
     "goFunction": "Solve082",
-    "pythonCode": "def best_time_to_buy_and_sell_stock(*args):\n    \"\"\"Reference kernel for 121. Best Time to Buy and Sell Stock.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 121. Best Time to Buy and Sell Stock\nfunc Solve082(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 121. Best Time to Buy and Sell Stock.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbest_time_to_buy_and_sell_stock = solve\n\n\nif __name__ == \"__main__\":\n    print(\"121. Best Time to Buy and Sell Stock\")\n    print('Sample input:', \"prices=[7,1,5,3,6,4]\")\n    print('Expected output:', \"5\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 121. Best Time to Buy and Sell Stock\nfunc Solve082(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"121. Best Time to Buy and Sell Stock\")\n\tfmt.Println(\"Sample input:\", \"prices=[7,1,5,3,6,4]\")\n\tfmt.Println(\"Expected output:\", \"5\")\n\tfmt.Println(\"Call Solve082(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 83,
@@ -6541,8 +6541,8 @@ export const problems = [
     ],
     "pythonFunction": "best_time_to_buy_and_sell_stock_ii",
     "goFunction": "Solve083",
-    "pythonCode": "def best_time_to_buy_and_sell_stock_ii(*args):\n    \"\"\"Reference kernel for 122. Best Time to Buy and Sell Stock II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 122. Best Time to Buy and Sell Stock II\nfunc Solve083(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 122. Best Time to Buy and Sell Stock II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbest_time_to_buy_and_sell_stock_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"122. Best Time to Buy and Sell Stock II\")\n    print('Sample input:', \"prices=[7,1,5,3,6,4]\")\n    print('Expected output:', \"7\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 122. Best Time to Buy and Sell Stock II\nfunc Solve083(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"122. Best Time to Buy and Sell Stock II\")\n\tfmt.Println(\"Sample input:\", \"prices=[7,1,5,3,6,4]\")\n\tfmt.Println(\"Expected output:\", \"7\")\n\tfmt.Println(\"Call Solve083(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 84,
@@ -6617,8 +6617,8 @@ export const problems = [
     ],
     "pythonFunction": "jump_game",
     "goFunction": "Solve084",
-    "pythonCode": "def jump_game(*args):\n    \"\"\"Reference kernel for 55. Jump Game.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 55. Jump Game\nfunc Solve084(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 55. Jump Game.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\njump_game = solve\n\n\nif __name__ == \"__main__\":\n    print(\"55. Jump Game\")\n    print('Sample input:', \"nums=[2,3,1,1,4]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 55. Jump Game\nfunc Solve084(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"55. Jump Game\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,3,1,1,4]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve084(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 85,
@@ -6692,8 +6692,8 @@ export const problems = [
     ],
     "pythonFunction": "jump_game_ii",
     "goFunction": "Solve085",
-    "pythonCode": "def jump_game_ii(*args):\n    \"\"\"Reference kernel for 45. Jump Game II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 45. Jump Game II\nfunc Solve085(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 45. Jump Game II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\njump_game_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"45. Jump Game II\")\n    print('Sample input:', \"nums=[2,3,1,1,4]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 45. Jump Game II\nfunc Solve085(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"45. Jump Game II\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,3,1,1,4]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve085(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 86,
@@ -6772,8 +6772,8 @@ export const problems = [
     ],
     "pythonFunction": "h_index",
     "goFunction": "Solve086",
-    "pythonCode": "def h_index(*args):\n    \"\"\"Reference kernel for 274. H-Index.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 274. H-Index\nfunc Solve086(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 274. H-Index.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nh_index = solve\n\n\nif __name__ == \"__main__\":\n    print(\"274. H-Index\")\n    print('Sample input:', \"citations=[3,0,6,1,5]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 274. H-Index\nfunc Solve086(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"274. H-Index\")\n\tfmt.Println(\"Sample input:\", \"citations=[3,0,6,1,5]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve086(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 87,
@@ -6850,8 +6850,8 @@ export const problems = [
     ],
     "pythonFunction": "insert_delete_getrandom_o_1",
     "goFunction": "Solve087",
-    "pythonCode": "def insert_delete_getrandom_o_1(*args):\n    \"\"\"Reference kernel for 380. Insert Delete GetRandom O(1).\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 380. Insert Delete GetRandom O(1)\nfunc Solve087(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 380. Insert Delete GetRandom O(1).\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ninsert_delete_getrandom_o_1 = solve\n\n\nif __name__ == \"__main__\":\n    print(\"380. Insert Delete GetRandom O(1)\")\n    print('Sample input:', \"insert(1), remove(2), insert(2), getRandom(), remove(1), insert(2), getRandom()\")\n    print('Expected output:', \"[true,false,true,1 or 2,true,false,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 380. Insert Delete GetRandom O(1)\nfunc Solve087(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"380. Insert Delete GetRandom O(1)\")\n\tfmt.Println(\"Sample input:\", \"insert(1), remove(2), insert(2), getRandom(), remove(1), insert(2), getRandom()\")\n\tfmt.Println(\"Expected output:\", \"[true,false,true,1 or 2,true,false,2]\")\n\tfmt.Println(\"Call Solve087(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 88,
@@ -6930,8 +6930,8 @@ export const problems = [
     ],
     "pythonFunction": "gas_station",
     "goFunction": "Solve088",
-    "pythonCode": "def gas_station(*args):\n    \"\"\"Reference kernel for 134. Gas Station.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 134. Gas Station\nfunc Solve088(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 134. Gas Station.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ngas_station = solve\n\n\nif __name__ == \"__main__\":\n    print(\"134. Gas Station\")\n    print('Sample input:', \"gas=[1,2,3,4,5], cost=[3,4,5,1,2]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 134. Gas Station\nfunc Solve088(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"134. Gas Station\")\n\tfmt.Println(\"Sample input:\", \"gas=[1,2,3,4,5], cost=[3,4,5,1,2]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve088(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 89,
@@ -7010,8 +7010,8 @@ export const problems = [
     ],
     "pythonFunction": "candy",
     "goFunction": "Solve089",
-    "pythonCode": "def candy(*args):\n    \"\"\"Reference kernel for 135. Candy.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 135. Candy\nfunc Solve089(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 135. Candy.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncandy = solve\n\n\nif __name__ == \"__main__\":\n    print(\"135. Candy\")\n    print('Sample input:', \"ratings=[1,0,2]\")\n    print('Expected output:', \"5\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 135. Candy\nfunc Solve089(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"135. Candy\")\n\tfmt.Println(\"Sample input:\", \"ratings=[1,0,2]\")\n\tfmt.Println(\"Expected output:\", \"5\")\n\tfmt.Println(\"Call Solve089(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 90,
@@ -7090,8 +7090,8 @@ export const problems = [
     ],
     "pythonFunction": "trapping_rain_water",
     "goFunction": "Solve090",
-    "pythonCode": "def trapping_rain_water(*args):\n    \"\"\"Reference kernel for 42. Trapping Rain Water.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n",
-    "goCode": "// 42. Trapping Rain Water\nfunc Solve090(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 42. Trapping Rain Water.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\ntrapping_rain_water = solve\n\n\nif __name__ == \"__main__\":\n    print(\"42. Trapping Rain Water\")\n    print('Sample input:', \"height=[0,2,0,3,0,1]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 42. Trapping Rain Water\nfunc Solve090(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"42. Trapping Rain Water\")\n\tfmt.Println(\"Sample input:\", \"height=[0,2,0,3,0,1]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve090(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 91,
@@ -7170,8 +7170,8 @@ export const problems = [
     ],
     "pythonFunction": "roman_to_integer",
     "goFunction": "Solve091",
-    "pythonCode": "def roman_to_integer(*args):\n    \"\"\"Reference kernel for 13. Roman to Integer.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 13. Roman to Integer\nfunc Solve091(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 13. Roman to Integer.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nroman_to_integer = solve\n\n\nif __name__ == \"__main__\":\n    print(\"13. Roman to Integer\")\n    print('Sample input:', \"s=\\\"MCMXCIV\\\"\")\n    print('Expected output:', \"1994\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 13. Roman to Integer\nfunc Solve091(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"13. Roman to Integer\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"MCMXCIV\\\"\")\n\tfmt.Println(\"Expected output:\", \"1994\")\n\tfmt.Println(\"Call Solve091(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 92,
@@ -7250,8 +7250,8 @@ export const problems = [
     ],
     "pythonFunction": "integer_to_roman",
     "goFunction": "Solve092",
-    "pythonCode": "def integer_to_roman(*args):\n    \"\"\"Reference kernel for 12. Integer to Roman.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 12. Integer to Roman\nfunc Solve092(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 12. Integer to Roman.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ninteger_to_roman = solve\n\n\nif __name__ == \"__main__\":\n    print(\"12. Integer to Roman\")\n    print('Sample input:', \"num=58\")\n    print('Expected output:', \"\\\"LVIII\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 12. Integer to Roman\nfunc Solve092(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"12. Integer to Roman\")\n\tfmt.Println(\"Sample input:\", \"num=58\")\n\tfmt.Println(\"Expected output:\", \"\\\"LVIII\\\"\")\n\tfmt.Println(\"Call Solve092(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 93,
@@ -7330,8 +7330,8 @@ export const problems = [
     ],
     "pythonFunction": "length_of_last_word",
     "goFunction": "Solve093",
-    "pythonCode": "def length_of_last_word(*args):\n    \"\"\"Reference kernel for 58. Length of Last Word.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 58. Length of Last Word\nfunc Solve093(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 58. Length of Last Word.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlength_of_last_word = solve\n\n\nif __name__ == \"__main__\":\n    print(\"58. Length of Last Word\")\n    print('Sample input:', \"s=\\\"fly me to the moon\\\"\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 58. Length of Last Word\nfunc Solve093(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"58. Length of Last Word\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"fly me to the moon\\\"\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve093(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 94,
@@ -7410,8 +7410,8 @@ export const problems = [
     ],
     "pythonFunction": "longest_common_prefix",
     "goFunction": "Solve094",
-    "pythonCode": "def longest_common_prefix(*args):\n    \"\"\"Reference kernel for 14. Longest Common Prefix.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 14. Longest Common Prefix\nfunc Solve094(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 14. Longest Common Prefix.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlongest_common_prefix = solve\n\n\nif __name__ == \"__main__\":\n    print(\"14. Longest Common Prefix\")\n    print('Sample input:', \"strs=[\\\"flower\\\",\\\"flow\\\",\\\"flight\\\"]\")\n    print('Expected output:', \"\\\"fl\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 14. Longest Common Prefix\nfunc Solve094(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"14. Longest Common Prefix\")\n\tfmt.Println(\"Sample input:\", \"strs=[\\\"flower\\\",\\\"flow\\\",\\\"flight\\\"]\")\n\tfmt.Println(\"Expected output:\", \"\\\"fl\\\"\")\n\tfmt.Println(\"Call Solve094(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 95,
@@ -7490,8 +7490,8 @@ export const problems = [
     ],
     "pythonFunction": "zigzag_conversion",
     "goFunction": "Solve095",
-    "pythonCode": "def zigzag_conversion(*args):\n    \"\"\"Reference kernel for 6. Zigzag Conversion.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 6. Zigzag Conversion\nfunc Solve095(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 6. Zigzag Conversion.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nzigzag_conversion = solve\n\n\nif __name__ == \"__main__\":\n    print(\"6. Zigzag Conversion\")\n    print('Sample input:', \"s=\\\"ABCDE\\\", numRows=2\")\n    print('Expected output:', \"\\\"ACEBD\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 6. Zigzag Conversion\nfunc Solve095(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"6. Zigzag Conversion\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"ABCDE\\\", numRows=2\")\n\tfmt.Println(\"Expected output:\", \"\\\"ACEBD\\\"\")\n\tfmt.Println(\"Call Solve095(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 96,
@@ -7570,8 +7570,8 @@ export const problems = [
     ],
     "pythonFunction": "find_the_index_of_the_first_occurrence_in_a_string",
     "goFunction": "Solve096",
-    "pythonCode": "def find_the_index_of_the_first_occurrence_in_a_string(*args):\n    \"\"\"Reference kernel for 28. Find the Index of the First Occurrence in a String.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 28. Find the Index of the First Occurrence in a String\nfunc Solve096(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 28. Find the Index of the First Occurrence in a String.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nfind_the_index_of_the_first_occurrence_in_a_string = solve\n\n\nif __name__ == \"__main__\":\n    print(\"28. Find the Index of the First Occurrence in a String\")\n    print('Sample input:', \"haystack=\\\"sadbutsad\\\", needle=\\\"sad\\\"\")\n    print('Expected output:', \"0\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 28. Find the Index of the First Occurrence in a String\nfunc Solve096(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"28. Find the Index of the First Occurrence in a String\")\n\tfmt.Println(\"Sample input:\", \"haystack=\\\"sadbutsad\\\", needle=\\\"sad\\\"\")\n\tfmt.Println(\"Expected output:\", \"0\")\n\tfmt.Println(\"Call Solve096(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 97,
@@ -7650,8 +7650,8 @@ export const problems = [
     ],
     "pythonFunction": "text_justification",
     "goFunction": "Solve097",
-    "pythonCode": "def text_justification(*args):\n    \"\"\"Reference kernel for 68. Text Justification.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 68. Text Justification\nfunc Solve097(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 68. Text Justification.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ntext_justification = solve\n\n\nif __name__ == \"__main__\":\n    print(\"68. Text Justification\")\n    print('Sample input:', \"words=[\\\"This\\\",\\\"is\\\",\\\"an\\\",\\\"example\\\"], maxWidth=16\")\n    print('Expected output:', \"[\\\"This    is    an\\\",\\\"example         \\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 68. Text Justification\nfunc Solve097(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"68. Text Justification\")\n\tfmt.Println(\"Sample input:\", \"words=[\\\"This\\\",\\\"is\\\",\\\"an\\\",\\\"example\\\"], maxWidth=16\")\n\tfmt.Println(\"Expected output:\", \"[\\\"This    is    an\\\",\\\"example         \\\"]\")\n\tfmt.Println(\"Call Solve097(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 98,
@@ -7731,8 +7731,8 @@ export const problems = [
     ],
     "pythonFunction": "valid_palindrome",
     "goFunction": "Solve098",
-    "pythonCode": "def valid_palindrome(*args):\n    \"\"\"Reference kernel for 125. Valid Palindrome.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n",
-    "goCode": "// 125. Valid Palindrome\nfunc Solve098(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 125. Valid Palindrome.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nvalid_palindrome = solve\n\n\nif __name__ == \"__main__\":\n    print(\"125. Valid Palindrome\")\n    print('Sample input:', \"s=\\\"A man, a plan, a canal: Panama\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 125. Valid Palindrome\nfunc Solve098(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"125. Valid Palindrome\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"A man, a plan, a canal: Panama\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve098(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 99,
@@ -7811,8 +7811,8 @@ export const problems = [
     ],
     "pythonFunction": "two_sum_ii_input_array_is_sorted",
     "goFunction": "Solve099",
-    "pythonCode": "def two_sum_ii_input_array_is_sorted(*args):\n    \"\"\"Reference kernel for 167. Two Sum II - Input Array Is Sorted.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n",
-    "goCode": "// 167. Two Sum II - Input Array Is Sorted\nfunc Solve099(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 167. Two Sum II - Input Array Is Sorted.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\ntwo_sum_ii_input_array_is_sorted = solve\n\n\nif __name__ == \"__main__\":\n    print(\"167. Two Sum II - Input Array Is Sorted\")\n    print('Sample input:', \"numbers=[2,7,11,15], target=9\")\n    print('Expected output:', \"[1,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 167. Two Sum II - Input Array Is Sorted\nfunc Solve099(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"167. Two Sum II - Input Array Is Sorted\")\n\tfmt.Println(\"Sample input:\", \"numbers=[2,7,11,15], target=9\")\n\tfmt.Println(\"Expected output:\", \"[1,2]\")\n\tfmt.Println(\"Call Solve099(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 100,
@@ -7892,8 +7892,8 @@ export const problems = [
     ],
     "pythonFunction": "problem_3sum",
     "goFunction": "Solve100",
-    "pythonCode": "def problem_3sum(*args):\n    \"\"\"Reference kernel for 15. 3Sum.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n",
-    "goCode": "// 15. 3Sum\nfunc Solve100(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 15. 3Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nproblem_3sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"15. 3Sum\")\n    print('Sample input:', \"nums=[-1,0,1,2,-1,-4]\")\n    print('Expected output:', \"[[-1,-1,2],[-1,0,1]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 15. 3Sum\nfunc Solve100(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"15. 3Sum\")\n\tfmt.Println(\"Sample input:\", \"nums=[-1,0,1,2,-1,-4]\")\n\tfmt.Println(\"Expected output:\", \"[[-1,-1,2],[-1,0,1]]\")\n\tfmt.Println(\"Call Solve100(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 101,
@@ -7972,8 +7972,8 @@ export const problems = [
     ],
     "pythonFunction": "minimum_size_subarray_sum",
     "goFunction": "Solve101",
-    "pythonCode": "def minimum_size_subarray_sum(*args):\n    \"\"\"Reference kernel for 209. Minimum Size Subarray Sum.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n",
-    "goCode": "// 209. Minimum Size Subarray Sum\nfunc Solve101(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 209. Minimum Size Subarray Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nminimum_size_subarray_sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"209. Minimum Size Subarray Sum\")\n    print('Sample input:', \"target=7, nums=[2,3,1,2,4,3]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 209. Minimum Size Subarray Sum\nfunc Solve101(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"209. Minimum Size Subarray Sum\")\n\tfmt.Println(\"Sample input:\", \"target=7, nums=[2,3,1,2,4,3]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve101(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 102,
@@ -8053,8 +8053,8 @@ export const problems = [
     ],
     "pythonFunction": "longest_substring_without_repeating_characters",
     "goFunction": "Solve102",
-    "pythonCode": "def longest_substring_without_repeating_characters(*args):\n    \"\"\"Reference kernel for 3. Longest Substring Without Repeating Characters.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n",
-    "goCode": "// 3. Longest Substring Without Repeating Characters\nfunc Solve102(args ...any) any {\n\treturn len(args)\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 3. Longest Substring Without Repeating Characters.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nlongest_substring_without_repeating_characters = solve\n\n\nif __name__ == \"__main__\":\n    print(\"3. Longest Substring Without Repeating Characters\")\n    print('Sample input:', \"s=\\\"abcabcbb\\\"\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 3. Longest Substring Without Repeating Characters\nfunc Solve102(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"3. Longest Substring Without Repeating Characters\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"abcabcbb\\\"\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve102(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 103,
@@ -8133,8 +8133,8 @@ export const problems = [
     ],
     "pythonFunction": "substring_with_concatenation_of_all_words",
     "goFunction": "Solve103",
-    "pythonCode": "def substring_with_concatenation_of_all_words(*args):\n    \"\"\"Reference kernel for 30. Substring with Concatenation of All Words.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n",
-    "goCode": "// 30. Substring with Concatenation of All Words\nfunc Solve103(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 30. Substring with Concatenation of All Words.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nsubstring_with_concatenation_of_all_words = solve\n\n\nif __name__ == \"__main__\":\n    print(\"30. Substring with Concatenation of All Words\")\n    print('Sample input:', \"s=\\\"barfoothefoobarman\\\", words=[\\\"foo\\\",\\\"bar\\\"]\")\n    print('Expected output:', \"[0,9]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 30. Substring with Concatenation of All Words\nfunc Solve103(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"30. Substring with Concatenation of All Words\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"barfoothefoobarman\\\", words=[\\\"foo\\\",\\\"bar\\\"]\")\n\tfmt.Println(\"Expected output:\", \"[0,9]\")\n\tfmt.Println(\"Call Solve103(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 104,
@@ -8214,8 +8214,8 @@ export const problems = [
     ],
     "pythonFunction": "minimum_window_substring",
     "goFunction": "Solve104",
-    "pythonCode": "def minimum_window_substring(*args):\n    \"\"\"Reference kernel for 76. Minimum Window Substring.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n",
-    "goCode": "// 76. Minimum Window Substring\nfunc Solve104(args ...any) any {\n\treturn len(args)\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 76. Minimum Window Substring.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nminimum_window_substring = solve\n\n\nif __name__ == \"__main__\":\n    print(\"76. Minimum Window Substring\")\n    print('Sample input:', \"s=\\\"ADOBECODEBANC\\\", t=\\\"ABC\\\"\")\n    print('Expected output:', \"\\\"BANC\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 76. Minimum Window Substring\nfunc Solve104(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"76. Minimum Window Substring\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"ADOBECODEBANC\\\", t=\\\"ABC\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"BANC\\\"\")\n\tfmt.Println(\"Call Solve104(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 105,
@@ -8295,8 +8295,8 @@ export const problems = [
     ],
     "pythonFunction": "valid_sudoku",
     "goFunction": "Solve105",
-    "pythonCode": "def valid_sudoku(*args):\n    \"\"\"Reference kernel for 36. Valid Sudoku.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 36. Valid Sudoku\nfunc Solve105(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 36. Valid Sudoku.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nvalid_sudoku = solve\n\n\nif __name__ == \"__main__\":\n    print(\"36. Valid Sudoku\")\n    print('Sample input:', \"board=[\\\"53..7....\\\",\\\"6..195...\\\",\\\".98....6.\\\",\\\"8...6...3\\\",\\\"4..8.3..1\\\",\\\"7...2...6\\\",\\\".6....28.\\\",\\\"...419..5\\\",\\\"....8..79\\\"]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 36. Valid Sudoku\nfunc Solve105(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"36. Valid Sudoku\")\n\tfmt.Println(\"Sample input:\", \"board=[\\\"53..7....\\\",\\\"6..195...\\\",\\\".98....6.\\\",\\\"8...6...3\\\",\\\"4..8.3..1\\\",\\\"7...2...6\\\",\\\".6....28.\\\",\\\"...419..5\\\",\\\"....8..79\\\"]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve105(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 106,
@@ -8376,8 +8376,8 @@ export const problems = [
     ],
     "pythonFunction": "spiral_matrix",
     "goFunction": "Solve106",
-    "pythonCode": "def spiral_matrix(*args):\n    \"\"\"Reference kernel for 54. Spiral Matrix.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 54. Spiral Matrix\nfunc Solve106(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 54. Spiral Matrix.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nspiral_matrix = solve\n\n\nif __name__ == \"__main__\":\n    print(\"54. Spiral Matrix\")\n    print('Sample input:', \"matrix=[[1,2,3],[4,5,6],[7,8,9]]\")\n    print('Expected output:', \"[1,2,3,6,9,8,7,4,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 54. Spiral Matrix\nfunc Solve106(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"54. Spiral Matrix\")\n\tfmt.Println(\"Sample input:\", \"matrix=[[1,2,3],[4,5,6],[7,8,9]]\")\n\tfmt.Println(\"Expected output:\", \"[1,2,3,6,9,8,7,4,5]\")\n\tfmt.Println(\"Call Solve106(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 107,
@@ -8457,8 +8457,8 @@ export const problems = [
     ],
     "pythonFunction": "rotate_image",
     "goFunction": "Solve107",
-    "pythonCode": "def rotate_image(*args):\n    \"\"\"Reference kernel for 48. Rotate Image.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 48. Rotate Image\nfunc Solve107(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 48. Rotate Image.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nrotate_image = solve\n\n\nif __name__ == \"__main__\":\n    print(\"48. Rotate Image\")\n    print('Sample input:', \"matrix=[[1,2],[3,4]]\")\n    print('Expected output:', \"[[3,1],[4,2]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 48. Rotate Image\nfunc Solve107(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"48. Rotate Image\")\n\tfmt.Println(\"Sample input:\", \"matrix=[[1,2],[3,4]]\")\n\tfmt.Println(\"Expected output:\", \"[[3,1],[4,2]]\")\n\tfmt.Println(\"Call Solve107(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 108,
@@ -8538,8 +8538,8 @@ export const problems = [
     ],
     "pythonFunction": "set_matrix_zeroes",
     "goFunction": "Solve108",
-    "pythonCode": "def set_matrix_zeroes(*args):\n    \"\"\"Reference kernel for 73. Set Matrix Zeroes.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 73. Set Matrix Zeroes\nfunc Solve108(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 73. Set Matrix Zeroes.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nset_matrix_zeroes = solve\n\n\nif __name__ == \"__main__\":\n    print(\"73. Set Matrix Zeroes\")\n    print('Sample input:', \"matrix=[[1,1,1],[1,0,1],[1,1,1]]\")\n    print('Expected output:', \"[[1,0,1],[0,0,0],[1,0,1]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 73. Set Matrix Zeroes\nfunc Solve108(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"73. Set Matrix Zeroes\")\n\tfmt.Println(\"Sample input:\", \"matrix=[[1,1,1],[1,0,1],[1,1,1]]\")\n\tfmt.Println(\"Expected output:\", \"[[1,0,1],[0,0,0],[1,0,1]]\")\n\tfmt.Println(\"Call Solve108(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 109,
@@ -8613,8 +8613,8 @@ export const problems = [
     ],
     "pythonFunction": "game_of_life",
     "goFunction": "Solve109",
-    "pythonCode": "def game_of_life(*args):\n    \"\"\"Reference kernel for 289. Game of Life.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 289. Game of Life\nfunc Solve109(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 289. Game of Life.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ngame_of_life = solve\n\n\nif __name__ == \"__main__\":\n    print(\"289. Game of Life\")\n    print('Sample input:', \"board=[[0,1,0],[0,0,1],[1,1,1],[0,0,0]]\")\n    print('Expected output:', \"[[0,0,0],[1,0,1],[0,1,1],[0,1,0]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 289. Game of Life\nfunc Solve109(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"289. Game of Life\")\n\tfmt.Println(\"Sample input:\", \"board=[[0,1,0],[0,0,1],[1,1,1],[0,0,0]]\")\n\tfmt.Println(\"Expected output:\", \"[[0,0,0],[1,0,1],[0,1,1],[0,1,0]]\")\n\tfmt.Println(\"Call Solve109(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 110,
@@ -8693,8 +8693,8 @@ export const problems = [
     ],
     "pythonFunction": "ransom_note",
     "goFunction": "Solve110",
-    "pythonCode": "def ransom_note(*args):\n    \"\"\"Reference kernel for 383. Ransom Note.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 383. Ransom Note\nfunc Solve110(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 383. Ransom Note.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nransom_note = solve\n\n\nif __name__ == \"__main__\":\n    print(\"383. Ransom Note\")\n    print('Sample input:', \"ransomNote=\\\"aa\\\", magazine=\\\"aab\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 383. Ransom Note\nfunc Solve110(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"383. Ransom Note\")\n\tfmt.Println(\"Sample input:\", \"ransomNote=\\\"aa\\\", magazine=\\\"aab\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve110(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 111,
@@ -8774,8 +8774,8 @@ export const problems = [
     ],
     "pythonFunction": "isomorphic_strings",
     "goFunction": "Solve111",
-    "pythonCode": "def isomorphic_strings(*args):\n    \"\"\"Reference kernel for 205. Isomorphic Strings.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 205. Isomorphic Strings\nfunc Solve111(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 205. Isomorphic Strings.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nisomorphic_strings = solve\n\n\nif __name__ == \"__main__\":\n    print(\"205. Isomorphic Strings\")\n    print('Sample input:', \"s=\\\"egg\\\", t=\\\"add\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 205. Isomorphic Strings\nfunc Solve111(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"205. Isomorphic Strings\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"egg\\\", t=\\\"add\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve111(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 112,
@@ -8855,8 +8855,8 @@ export const problems = [
     ],
     "pythonFunction": "word_pattern",
     "goFunction": "Solve112",
-    "pythonCode": "def word_pattern(*args):\n    \"\"\"Reference kernel for 290. Word Pattern.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 290. Word Pattern\nfunc Solve112(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 290. Word Pattern.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nword_pattern = solve\n\n\nif __name__ == \"__main__\":\n    print(\"290. Word Pattern\")\n    print('Sample input:', \"pattern=\\\"abba\\\", s=\\\"dog cat cat dog\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 290. Word Pattern\nfunc Solve112(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"290. Word Pattern\")\n\tfmt.Println(\"Sample input:\", \"pattern=\\\"abba\\\", s=\\\"dog cat cat dog\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve112(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 113,
@@ -8937,8 +8937,8 @@ export const problems = [
     ],
     "pythonFunction": "valid_anagram",
     "goFunction": "Solve113",
-    "pythonCode": "def valid_anagram(*args):\n    \"\"\"Reference kernel for 242. Valid Anagram.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 242. Valid Anagram\nfunc Solve113(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 242. Valid Anagram.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nvalid_anagram = solve\n\n\nif __name__ == \"__main__\":\n    print(\"242. Valid Anagram\")\n    print('Sample input:', \"s=\\\"anagram\\\", t=\\\"nagaram\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 242. Valid Anagram\nfunc Solve113(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"242. Valid Anagram\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"anagram\\\", t=\\\"nagaram\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve113(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 114,
@@ -9019,8 +9019,8 @@ export const problems = [
     ],
     "pythonFunction": "group_anagrams",
     "goFunction": "Solve114",
-    "pythonCode": "def group_anagrams(*args):\n    \"\"\"Reference kernel for 49. Group Anagrams.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 49. Group Anagrams\nfunc Solve114(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 49. Group Anagrams.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\ngroup_anagrams = solve\n\n\nif __name__ == \"__main__\":\n    print(\"49. Group Anagrams\")\n    print('Sample input:', \"strs=[\\\"eat\\\",\\\"tea\\\",\\\"tan\\\",\\\"ate\\\",\\\"nat\\\",\\\"bat\\\"]\")\n    print('Expected output:', \"[[\\\"eat\\\",\\\"tea\\\",\\\"ate\\\"],[\\\"tan\\\",\\\"nat\\\"],[\\\"bat\\\"]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 49. Group Anagrams\nfunc Solve114(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"49. Group Anagrams\")\n\tfmt.Println(\"Sample input:\", \"strs=[\\\"eat\\\",\\\"tea\\\",\\\"tan\\\",\\\"ate\\\",\\\"nat\\\",\\\"bat\\\"]\")\n\tfmt.Println(\"Expected output:\", \"[[\\\"eat\\\",\\\"tea\\\",\\\"ate\\\"],[\\\"tan\\\",\\\"nat\\\"],[\\\"bat\\\"]]\")\n\tfmt.Println(\"Call Solve114(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 115,
@@ -9101,8 +9101,8 @@ export const problems = [
     ],
     "pythonFunction": "two_sum",
     "goFunction": "Solve115",
-    "pythonCode": "def two_sum(*args):\n    \"\"\"Reference kernel for 1. Two Sum.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 1. Two Sum\nfunc Solve115(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 1. Two Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\ntwo_sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1. Two Sum\")\n    print('Sample input:', \"nums=[2,7,11,15], target=9\")\n    print('Expected output:', \"[0,1]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 1. Two Sum\nfunc Solve115(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"1. Two Sum\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,7,11,15], target=9\")\n\tfmt.Println(\"Expected output:\", \"[0,1]\")\n\tfmt.Println(\"Call Solve115(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 116,
@@ -9182,8 +9182,8 @@ export const problems = [
     ],
     "pythonFunction": "happy_number",
     "goFunction": "Solve116",
-    "pythonCode": "def happy_number(*args):\n    \"\"\"Reference kernel for 202. Happy Number.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 202. Happy Number\nfunc Solve116(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 202. Happy Number.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nhappy_number = solve\n\n\nif __name__ == \"__main__\":\n    print(\"202. Happy Number\")\n    print('Sample input:', \"n=19\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 202. Happy Number\nfunc Solve116(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"202. Happy Number\")\n\tfmt.Println(\"Sample input:\", \"n=19\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve116(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 117,
@@ -9263,8 +9263,8 @@ export const problems = [
     ],
     "pythonFunction": "contains_duplicate_ii",
     "goFunction": "Solve117",
-    "pythonCode": "def contains_duplicate_ii(*args):\n    \"\"\"Reference kernel for 219. Contains Duplicate II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 219. Contains Duplicate II\nfunc Solve117(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 219. Contains Duplicate II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\ncontains_duplicate_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"219. Contains Duplicate II\")\n    print('Sample input:', \"nums=[1,2,3,1], k=3\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 219. Contains Duplicate II\nfunc Solve117(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"219. Contains Duplicate II\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,3,1], k=3\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve117(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 118,
@@ -9345,8 +9345,8 @@ export const problems = [
     ],
     "pythonFunction": "longest_consecutive_sequence",
     "goFunction": "Solve118",
-    "pythonCode": "def longest_consecutive_sequence(*args):\n    \"\"\"Reference kernel for 128. Longest Consecutive Sequence.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 128. Longest Consecutive Sequence\nfunc Solve118(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 128. Longest Consecutive Sequence.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nlongest_consecutive_sequence = solve\n\n\nif __name__ == \"__main__\":\n    print(\"128. Longest Consecutive Sequence\")\n    print('Sample input:', \"nums=[100,4,200,1,3,2]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 128. Longest Consecutive Sequence\nfunc Solve118(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"128. Longest Consecutive Sequence\")\n\tfmt.Println(\"Sample input:\", \"nums=[100,4,200,1,3,2]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve118(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 119,
@@ -9425,8 +9425,8 @@ export const problems = [
     ],
     "pythonFunction": "summary_ranges",
     "goFunction": "Solve119",
-    "pythonCode": "def summary_ranges(*args):\n    \"\"\"Reference kernel for 228. Summary Ranges.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 228. Summary Ranges\nfunc Solve119(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 228. Summary Ranges.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsummary_ranges = solve\n\n\nif __name__ == \"__main__\":\n    print(\"228. Summary Ranges\")\n    print('Sample input:', \"nums=[0,1,2,4,5,7]\")\n    print('Expected output:', \"[\\\"0->2\\\",\\\"4->5\\\",\\\"7\\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 228. Summary Ranges\nfunc Solve119(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"228. Summary Ranges\")\n\tfmt.Println(\"Sample input:\", \"nums=[0,1,2,4,5,7]\")\n\tfmt.Println(\"Expected output:\", \"[\\\"0->2\\\",\\\"4->5\\\",\\\"7\\\"]\")\n\tfmt.Println(\"Call Solve119(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 120,
@@ -9499,8 +9499,8 @@ export const problems = [
     ],
     "pythonFunction": "merge_intervals",
     "goFunction": "Solve120",
-    "pythonCode": "def merge_intervals(*args):\n    \"\"\"Reference kernel for 56. Merge Intervals.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 56. Merge Intervals\nfunc Solve120(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 56. Merge Intervals.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmerge_intervals = solve\n\n\nif __name__ == \"__main__\":\n    print(\"56. Merge Intervals\")\n    print('Sample input:', \"intervals=[[1,3],[2,6],[8,10]]\")\n    print('Expected output:', \"[[1,6],[8,10]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 56. Merge Intervals\nfunc Solve120(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"56. Merge Intervals\")\n\tfmt.Println(\"Sample input:\", \"intervals=[[1,3],[2,6],[8,10]]\")\n\tfmt.Println(\"Expected output:\", \"[[1,6],[8,10]]\")\n\tfmt.Println(\"Call Solve120(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 121,
@@ -9573,8 +9573,8 @@ export const problems = [
     ],
     "pythonFunction": "insert_interval",
     "goFunction": "Solve121",
-    "pythonCode": "def insert_interval(*args):\n    \"\"\"Reference kernel for 57. Insert Interval.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 57. Insert Interval\nfunc Solve121(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 57. Insert Interval.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ninsert_interval = solve\n\n\nif __name__ == \"__main__\":\n    print(\"57. Insert Interval\")\n    print('Sample input:', \"intervals=[[1,3],[6,9]], newInterval=[2,5]\")\n    print('Expected output:', \"[[1,5],[6,9]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 57. Insert Interval\nfunc Solve121(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"57. Insert Interval\")\n\tfmt.Println(\"Sample input:\", \"intervals=[[1,3],[6,9]], newInterval=[2,5]\")\n\tfmt.Println(\"Expected output:\", \"[[1,5],[6,9]]\")\n\tfmt.Println(\"Call Solve121(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 122,
@@ -9651,8 +9651,8 @@ export const problems = [
     ],
     "pythonFunction": "valid_parentheses",
     "goFunction": "Solve122",
-    "pythonCode": "def valid_parentheses(*args):\n    \"\"\"Reference kernel for 20. Valid Parentheses.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n",
-    "goCode": "// 20. Valid Parentheses\nfunc Solve122(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 20. Valid Parentheses.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nvalid_parentheses = solve\n\n\nif __name__ == \"__main__\":\n    print(\"20. Valid Parentheses\")\n    print('Sample input:', \"s=\\\"({[]})\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 20. Valid Parentheses\nfunc Solve122(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"20. Valid Parentheses\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"({[]})\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve122(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 123,
@@ -9728,8 +9728,8 @@ export const problems = [
     ],
     "pythonFunction": "simplify_path",
     "goFunction": "Solve123",
-    "pythonCode": "def simplify_path(*args):\n    \"\"\"Reference kernel for 71. Simplify Path.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n",
-    "goCode": "// 71. Simplify Path\nfunc Solve123(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 71. Simplify Path.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nsimplify_path = solve\n\n\nif __name__ == \"__main__\":\n    print(\"71. Simplify Path\")\n    print('Sample input:', \"path=\\\"/a//b/../c/\\\"\")\n    print('Expected output:', \"\\\"/a/c\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 71. Simplify Path\nfunc Solve123(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"71. Simplify Path\")\n\tfmt.Println(\"Sample input:\", \"path=\\\"/a//b/../c/\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"/a/c\\\"\")\n\tfmt.Println(\"Call Solve123(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 124,
@@ -9805,8 +9805,8 @@ export const problems = [
     ],
     "pythonFunction": "min_stack",
     "goFunction": "Solve124",
-    "pythonCode": "def min_stack(*args):\n    \"\"\"Reference kernel for 155. Min Stack.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n",
-    "goCode": "// 155. Min Stack\nfunc Solve124(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 155. Min Stack.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nmin_stack = solve\n\n\nif __name__ == \"__main__\":\n    print(\"155. Min Stack\")\n    print('Sample input:', \"push(-2),push(0),push(-3),getMin,pop,top,getMin\")\n    print('Expected output:', \"[null,null,null,-3,null,0,-2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 155. Min Stack\nfunc Solve124(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"155. Min Stack\")\n\tfmt.Println(\"Sample input:\", \"push(-2),push(0),push(-3),getMin,pop,top,getMin\")\n\tfmt.Println(\"Expected output:\", \"[null,null,null,-3,null,0,-2]\")\n\tfmt.Println(\"Call Solve124(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 125,
@@ -9882,8 +9882,8 @@ export const problems = [
     ],
     "pythonFunction": "evaluate_reverse_polish_notation",
     "goFunction": "Solve125",
-    "pythonCode": "def evaluate_reverse_polish_notation(*args):\n    \"\"\"Reference kernel for 150. Evaluate Reverse Polish Notation.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n",
-    "goCode": "// 150. Evaluate Reverse Polish Notation\nfunc Solve125(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 150. Evaluate Reverse Polish Notation.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nevaluate_reverse_polish_notation = solve\n\n\nif __name__ == \"__main__\":\n    print(\"150. Evaluate Reverse Polish Notation\")\n    print('Sample input:', \"tokens=[\\\"2\\\",\\\"1\\\",\\\"+\\\",\\\"3\\\",\\\"*\\\"]\")\n    print('Expected output:', \"9\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 150. Evaluate Reverse Polish Notation\nfunc Solve125(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"150. Evaluate Reverse Polish Notation\")\n\tfmt.Println(\"Sample input:\", \"tokens=[\\\"2\\\",\\\"1\\\",\\\"+\\\",\\\"3\\\",\\\"*\\\"]\")\n\tfmt.Println(\"Expected output:\", \"9\")\n\tfmt.Println(\"Call Solve125(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 126,
@@ -9959,8 +9959,8 @@ export const problems = [
     ],
     "pythonFunction": "basic_calculator",
     "goFunction": "Solve126",
-    "pythonCode": "def basic_calculator(*args):\n    \"\"\"Reference kernel for 224. Basic Calculator.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n",
-    "goCode": "// 224. Basic Calculator\nfunc Solve126(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 224. Basic Calculator.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nbasic_calculator = solve\n\n\nif __name__ == \"__main__\":\n    print(\"224. Basic Calculator\")\n    print('Sample input:', \"s=\\\"(1+(4+5+2)-3)+(6+8)\\\"\")\n    print('Expected output:', \"23\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 224. Basic Calculator\nfunc Solve126(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"224. Basic Calculator\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"(1+(4+5+2)-3)+(6+8)\\\"\")\n\tfmt.Println(\"Expected output:\", \"23\")\n\tfmt.Println(\"Call Solve126(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 127,
@@ -10036,8 +10036,8 @@ export const problems = [
     ],
     "pythonFunction": "linked_list_cycle",
     "goFunction": "Solve127",
-    "pythonCode": "def linked_list_cycle(*args):\n    \"\"\"Reference kernel for 141. Linked List Cycle.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 141. Linked List Cycle\nfunc Solve127(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 141. Linked List Cycle.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlinked_list_cycle = solve\n\n\nif __name__ == \"__main__\":\n    print(\"141. Linked List Cycle\")\n    print('Sample input:', \"head=[3,2,0,-4], tail connects to index 1\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 141. Linked List Cycle\nfunc Solve127(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"141. Linked List Cycle\")\n\tfmt.Println(\"Sample input:\", \"head=[3,2,0,-4], tail connects to index 1\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve127(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 128,
@@ -10112,8 +10112,8 @@ export const problems = [
     ],
     "pythonFunction": "add_two_numbers",
     "goFunction": "Solve128",
-    "pythonCode": "def add_two_numbers(*args):\n    \"\"\"Reference kernel for 2. Add Two Numbers.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 2. Add Two Numbers\nfunc Solve128(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 2. Add Two Numbers.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nadd_two_numbers = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2. Add Two Numbers\")\n    print('Sample input:', \"l1=[2,4,3], l2=[5,6,4]\")\n    print('Expected output:', \"[7,0,8]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 2. Add Two Numbers\nfunc Solve128(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"2. Add Two Numbers\")\n\tfmt.Println(\"Sample input:\", \"l1=[2,4,3], l2=[5,6,4]\")\n\tfmt.Println(\"Expected output:\", \"[7,0,8]\")\n\tfmt.Println(\"Call Solve128(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 129,
@@ -10189,8 +10189,8 @@ export const problems = [
     ],
     "pythonFunction": "merge_two_sorted_lists",
     "goFunction": "Solve129",
-    "pythonCode": "def merge_two_sorted_lists(*args):\n    \"\"\"Reference kernel for 21. Merge Two Sorted Lists.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 21. Merge Two Sorted Lists\nfunc Solve129(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 21. Merge Two Sorted Lists.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmerge_two_sorted_lists = solve\n\n\nif __name__ == \"__main__\":\n    print(\"21. Merge Two Sorted Lists\")\n    print('Sample input:', \"list1=[1,2,4], list2=[1,3,4]\")\n    print('Expected output:', \"[1,1,2,3,4,4]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 21. Merge Two Sorted Lists\nfunc Solve129(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"21. Merge Two Sorted Lists\")\n\tfmt.Println(\"Sample input:\", \"list1=[1,2,4], list2=[1,3,4]\")\n\tfmt.Println(\"Expected output:\", \"[1,1,2,3,4,4]\")\n\tfmt.Println(\"Call Solve129(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 130,
@@ -10265,8 +10265,8 @@ export const problems = [
     ],
     "pythonFunction": "copy_list_with_random_pointer",
     "goFunction": "Solve130",
-    "pythonCode": "def copy_list_with_random_pointer(*args):\n    \"\"\"Reference kernel for 138. Copy List with Random Pointer.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 138. Copy List with Random Pointer\nfunc Solve130(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 138. Copy List with Random Pointer.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncopy_list_with_random_pointer = solve\n\n\nif __name__ == \"__main__\":\n    print(\"138. Copy List with Random Pointer\")\n    print('Sample input:', \"nodes=[[7,null],[13,0],[11,0]]\")\n    print('Expected output:', \"deep copy with same values and random links\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 138. Copy List with Random Pointer\nfunc Solve130(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"138. Copy List with Random Pointer\")\n\tfmt.Println(\"Sample input:\", \"nodes=[[7,null],[13,0],[11,0]]\")\n\tfmt.Println(\"Expected output:\", \"deep copy with same values and random links\")\n\tfmt.Println(\"Call Solve130(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 131,
@@ -10341,8 +10341,8 @@ export const problems = [
     ],
     "pythonFunction": "reverse_linked_list_ii",
     "goFunction": "Solve131",
-    "pythonCode": "def reverse_linked_list_ii(*args):\n    \"\"\"Reference kernel for 92. Reverse Linked List II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 92. Reverse Linked List II\nfunc Solve131(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 92. Reverse Linked List II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreverse_linked_list_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"92. Reverse Linked List II\")\n    print('Sample input:', \"head=[1,2,3,4,5], left=2, right=4\")\n    print('Expected output:', \"[1,4,3,2,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 92. Reverse Linked List II\nfunc Solve131(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"92. Reverse Linked List II\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,4,5], left=2, right=4\")\n\tfmt.Println(\"Expected output:\", \"[1,4,3,2,5]\")\n\tfmt.Println(\"Call Solve131(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 132,
@@ -10417,8 +10417,8 @@ export const problems = [
     ],
     "pythonFunction": "reverse_nodes_in_k_group",
     "goFunction": "Solve132",
-    "pythonCode": "def reverse_nodes_in_k_group(*args):\n    \"\"\"Reference kernel for 25. Reverse Nodes in k-Group.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 25. Reverse Nodes in k-Group\nfunc Solve132(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 25. Reverse Nodes in k-Group.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreverse_nodes_in_k_group = solve\n\n\nif __name__ == \"__main__\":\n    print(\"25. Reverse Nodes in k-Group\")\n    print('Sample input:', \"head=[1,2,3,4,5], k=2\")\n    print('Expected output:', \"[2,1,4,3,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 25. Reverse Nodes in k-Group\nfunc Solve132(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"25. Reverse Nodes in k-Group\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,4,5], k=2\")\n\tfmt.Println(\"Expected output:\", \"[2,1,4,3,5]\")\n\tfmt.Println(\"Call Solve132(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 133,
@@ -10494,8 +10494,8 @@ export const problems = [
     ],
     "pythonFunction": "remove_nth_node_from_end_of_list",
     "goFunction": "Solve133",
-    "pythonCode": "def remove_nth_node_from_end_of_list(*args):\n    \"\"\"Reference kernel for 19. Remove Nth Node From End of List.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 19. Remove Nth Node From End of List\nfunc Solve133(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 19. Remove Nth Node From End of List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nremove_nth_node_from_end_of_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"19. Remove Nth Node From End of List\")\n    print('Sample input:', \"head=[1,2,3,4,5], n=2\")\n    print('Expected output:', \"[1,2,3,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 19. Remove Nth Node From End of List\nfunc Solve133(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"19. Remove Nth Node From End of List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,4,5], n=2\")\n\tfmt.Println(\"Expected output:\", \"[1,2,3,5]\")\n\tfmt.Println(\"Call Solve133(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 134,
@@ -10570,8 +10570,8 @@ export const problems = [
     ],
     "pythonFunction": "remove_duplicates_from_sorted_list_ii",
     "goFunction": "Solve134",
-    "pythonCode": "def remove_duplicates_from_sorted_list_ii(*args):\n    \"\"\"Reference kernel for 82. Remove Duplicates from Sorted List II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 82. Remove Duplicates from Sorted List II\nfunc Solve134(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 82. Remove Duplicates from Sorted List II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nremove_duplicates_from_sorted_list_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"82. Remove Duplicates from Sorted List II\")\n    print('Sample input:', \"head=[1,2,3,3,4,4,5]\")\n    print('Expected output:', \"[1,2,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 82. Remove Duplicates from Sorted List II\nfunc Solve134(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"82. Remove Duplicates from Sorted List II\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,3,4,4,5]\")\n\tfmt.Println(\"Expected output:\", \"[1,2,5]\")\n\tfmt.Println(\"Call Solve134(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 135,
@@ -10646,8 +10646,8 @@ export const problems = [
     ],
     "pythonFunction": "rotate_list",
     "goFunction": "Solve135",
-    "pythonCode": "def rotate_list(*args):\n    \"\"\"Reference kernel for 61. Rotate List.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 61. Rotate List\nfunc Solve135(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 61. Rotate List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nrotate_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"61. Rotate List\")\n    print('Sample input:', \"head=[1,2,3,4,5], k=2\")\n    print('Expected output:', \"[4,5,1,2,3]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 61. Rotate List\nfunc Solve135(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"61. Rotate List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,4,5], k=2\")\n\tfmt.Println(\"Expected output:\", \"[4,5,1,2,3]\")\n\tfmt.Println(\"Call Solve135(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 136,
@@ -10722,8 +10722,8 @@ export const problems = [
     ],
     "pythonFunction": "partition_list",
     "goFunction": "Solve136",
-    "pythonCode": "def partition_list(*args):\n    \"\"\"Reference kernel for 86. Partition List.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 86. Partition List\nfunc Solve136(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 86. Partition List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npartition_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"86. Partition List\")\n    print('Sample input:', \"head=[1,4,3,2,5,2], x=3\")\n    print('Expected output:', \"[1,2,2,4,3,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 86. Partition List\nfunc Solve136(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"86. Partition List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,4,3,2,5,2], x=3\")\n\tfmt.Println(\"Expected output:\", \"[1,2,2,4,3,5]\")\n\tfmt.Println(\"Call Solve136(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 137,
@@ -10798,8 +10798,8 @@ export const problems = [
     ],
     "pythonFunction": "lru_cache",
     "goFunction": "Solve137",
-    "pythonCode": "def lru_cache(*args):\n    \"\"\"Reference kernel for 146. LRU Cache.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 146. LRU Cache\nfunc Solve137(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 146. LRU Cache.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlru_cache = solve\n\n\nif __name__ == \"__main__\":\n    print(\"146. LRU Cache\")\n    print('Sample input:', \"capacity=2; put(1,1),put(2,2),get(1),put(3,3),get(2)\")\n    print('Expected output:', \"[null,null,1,null,-1]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 146. LRU Cache\nfunc Solve137(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"146. LRU Cache\")\n\tfmt.Println(\"Sample input:\", \"capacity=2; put(1,1),put(2,2),get(1),put(3,3),get(2)\")\n\tfmt.Println(\"Expected output:\", \"[null,null,1,null,-1]\")\n\tfmt.Println(\"Call Solve137(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 138,
@@ -10877,8 +10877,8 @@ export const problems = [
     ],
     "pythonFunction": "same_tree",
     "goFunction": "Solve138",
-    "pythonCode": "def same_tree(*args):\n    \"\"\"Reference kernel for 100. Same Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 100. Same Tree\nfunc Solve138(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 100. Same Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsame_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"100. Same Tree\")\n    print('Sample input:', \"p=[1,2,3], q=[1,2,3]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 100. Same Tree\nfunc Solve138(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"100. Same Tree\")\n\tfmt.Println(\"Sample input:\", \"p=[1,2,3], q=[1,2,3]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve138(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 139,
@@ -10956,8 +10956,8 @@ export const problems = [
     ],
     "pythonFunction": "invert_binary_tree",
     "goFunction": "Solve139",
-    "pythonCode": "def invert_binary_tree(*args):\n    \"\"\"Reference kernel for 226. Invert Binary Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 226. Invert Binary Tree\nfunc Solve139(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 226. Invert Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ninvert_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"226. Invert Binary Tree\")\n    print('Sample input:', \"root=[4,2,7,1,3,6,9]\")\n    print('Expected output:', \"[4,7,2,9,6,3,1]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 226. Invert Binary Tree\nfunc Solve139(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"226. Invert Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[4,2,7,1,3,6,9]\")\n\tfmt.Println(\"Expected output:\", \"[4,7,2,9,6,3,1]\")\n\tfmt.Println(\"Call Solve139(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 140,
@@ -11034,8 +11034,8 @@ export const problems = [
     ],
     "pythonFunction": "symmetric_tree",
     "goFunction": "Solve140",
-    "pythonCode": "def symmetric_tree(*args):\n    \"\"\"Reference kernel for 101. Symmetric Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 101. Symmetric Tree\nfunc Solve140(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 101. Symmetric Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsymmetric_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"101. Symmetric Tree\")\n    print('Sample input:', \"root=[1,2,2,3,4,4,3]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 101. Symmetric Tree\nfunc Solve140(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"101. Symmetric Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,2,3,4,4,3]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve140(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 141,
@@ -11113,8 +11113,8 @@ export const problems = [
     ],
     "pythonFunction": "construct_binary_tree_from_preorder_and_inorder_traversal",
     "goFunction": "Solve141",
-    "pythonCode": "def construct_binary_tree_from_preorder_and_inorder_traversal(*args):\n    \"\"\"Reference kernel for 105. Construct Binary Tree from Preorder and Inorder Traversal.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 105. Construct Binary Tree from Preorder and Inorder Traversal\nfunc Solve141(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 105. Construct Binary Tree from Preorder and Inorder Traversal.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nconstruct_binary_tree_from_preorder_and_inorder_traversal = solve\n\n\nif __name__ == \"__main__\":\n    print(\"105. Construct Binary Tree from Preorder and Inorder Traversal\")\n    print('Sample input:', \"preorder=[3,9,20,15,7], inorder=[9,3,15,20,7]\")\n    print('Expected output:', \"[3,9,20,null,null,15,7]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 105. Construct Binary Tree from Preorder and Inorder Traversal\nfunc Solve141(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"105. Construct Binary Tree from Preorder and Inorder Traversal\")\n\tfmt.Println(\"Sample input:\", \"preorder=[3,9,20,15,7], inorder=[9,3,15,20,7]\")\n\tfmt.Println(\"Expected output:\", \"[3,9,20,null,null,15,7]\")\n\tfmt.Println(\"Call Solve141(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 142,
@@ -11191,8 +11191,8 @@ export const problems = [
     ],
     "pythonFunction": "construct_binary_tree_from_inorder_and_postorder_traversal",
     "goFunction": "Solve142",
-    "pythonCode": "def construct_binary_tree_from_inorder_and_postorder_traversal(*args):\n    \"\"\"Reference kernel for 106. Construct Binary Tree from Inorder and Postorder Traversal.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 106. Construct Binary Tree from Inorder and Postorder Traversal\nfunc Solve142(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 106. Construct Binary Tree from Inorder and Postorder Traversal.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nconstruct_binary_tree_from_inorder_and_postorder_traversal = solve\n\n\nif __name__ == \"__main__\":\n    print(\"106. Construct Binary Tree from Inorder and Postorder Traversal\")\n    print('Sample input:', \"inorder=[9,3,15,20,7], postorder=[9,15,7,20,3]\")\n    print('Expected output:', \"[3,9,20,null,null,15,7]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 106. Construct Binary Tree from Inorder and Postorder Traversal\nfunc Solve142(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"106. Construct Binary Tree from Inorder and Postorder Traversal\")\n\tfmt.Println(\"Sample input:\", \"inorder=[9,3,15,20,7], postorder=[9,15,7,20,3]\")\n\tfmt.Println(\"Expected output:\", \"[3,9,20,null,null,15,7]\")\n\tfmt.Println(\"Call Solve142(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 143,
@@ -11269,8 +11269,8 @@ export const problems = [
     ],
     "pythonFunction": "populating_next_right_pointers_in_each_node_ii",
     "goFunction": "Solve143",
-    "pythonCode": "def populating_next_right_pointers_in_each_node_ii(*args):\n    \"\"\"Reference kernel for 117. Populating Next Right Pointers in Each Node II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 117. Populating Next Right Pointers in Each Node II\nfunc Solve143(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 117. Populating Next Right Pointers in Each Node II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npopulating_next_right_pointers_in_each_node_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"117. Populating Next Right Pointers in Each Node II\")\n    print('Sample input:', \"root=[1,2,3,4,5,null,7]\")\n    print('Expected output:', \"levels linked as 1->null, 2->3->null, 4->5->7->null\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 117. Populating Next Right Pointers in Each Node II\nfunc Solve143(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"117. Populating Next Right Pointers in Each Node II\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,3,4,5,null,7]\")\n\tfmt.Println(\"Expected output:\", \"levels linked as 1->null, 2->3->null, 4->5->7->null\")\n\tfmt.Println(\"Call Solve143(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 144,
@@ -11347,8 +11347,8 @@ export const problems = [
     ],
     "pythonFunction": "flatten_binary_tree_to_linked_list",
     "goFunction": "Solve144",
-    "pythonCode": "def flatten_binary_tree_to_linked_list(*args):\n    \"\"\"Reference kernel for 114. Flatten Binary Tree to Linked List.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 114. Flatten Binary Tree to Linked List\nfunc Solve144(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 114. Flatten Binary Tree to Linked List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nflatten_binary_tree_to_linked_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"114. Flatten Binary Tree to Linked List\")\n    print('Sample input:', \"root=[1,2,5,3,4,null,6]\")\n    print('Expected output:', \"[1,2,3,4,5,6]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 114. Flatten Binary Tree to Linked List\nfunc Solve144(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"114. Flatten Binary Tree to Linked List\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,5,3,4,null,6]\")\n\tfmt.Println(\"Expected output:\", \"[1,2,3,4,5,6]\")\n\tfmt.Println(\"Call Solve144(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 145,
@@ -11425,8 +11425,8 @@ export const problems = [
     ],
     "pythonFunction": "path_sum",
     "goFunction": "Solve145",
-    "pythonCode": "def path_sum(*args):\n    \"\"\"Reference kernel for 112. Path Sum.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 112. Path Sum\nfunc Solve145(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 112. Path Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npath_sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"112. Path Sum\")\n    print('Sample input:', \"root=[5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum=22\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 112. Path Sum\nfunc Solve145(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"112. Path Sum\")\n\tfmt.Println(\"Sample input:\", \"root=[5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum=22\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve145(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 146,
@@ -11503,8 +11503,8 @@ export const problems = [
     ],
     "pythonFunction": "sum_root_to_leaf_numbers",
     "goFunction": "Solve146",
-    "pythonCode": "def sum_root_to_leaf_numbers(*args):\n    \"\"\"Reference kernel for 129. Sum Root to Leaf Numbers.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 129. Sum Root to Leaf Numbers\nfunc Solve146(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 129. Sum Root to Leaf Numbers.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsum_root_to_leaf_numbers = solve\n\n\nif __name__ == \"__main__\":\n    print(\"129. Sum Root to Leaf Numbers\")\n    print('Sample input:', \"root=[1,2,3]\")\n    print('Expected output:', \"25\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 129. Sum Root to Leaf Numbers\nfunc Solve146(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"129. Sum Root to Leaf Numbers\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,3]\")\n\tfmt.Println(\"Expected output:\", \"25\")\n\tfmt.Println(\"Call Solve146(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 147,
@@ -11582,8 +11582,8 @@ export const problems = [
     ],
     "pythonFunction": "binary_tree_maximum_path_sum",
     "goFunction": "Solve147",
-    "pythonCode": "def binary_tree_maximum_path_sum(*args):\n    \"\"\"Reference kernel for 124. Binary Tree Maximum Path Sum.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 124. Binary Tree Maximum Path Sum\nfunc Solve147(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 124. Binary Tree Maximum Path Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbinary_tree_maximum_path_sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"124. Binary Tree Maximum Path Sum\")\n    print('Sample input:', \"root=[-10,9,20,null,null,15,7]\")\n    print('Expected output:', \"42\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 124. Binary Tree Maximum Path Sum\nfunc Solve147(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"124. Binary Tree Maximum Path Sum\")\n\tfmt.Println(\"Sample input:\", \"root=[-10,9,20,null,null,15,7]\")\n\tfmt.Println(\"Expected output:\", \"42\")\n\tfmt.Println(\"Call Solve147(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 148,
@@ -11660,8 +11660,8 @@ export const problems = [
     ],
     "pythonFunction": "binary_search_tree_iterator",
     "goFunction": "Solve148",
-    "pythonCode": "def binary_search_tree_iterator(*args):\n    \"\"\"Reference kernel for 173. Binary Search Tree Iterator.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 173. Binary Search Tree Iterator\nfunc Solve148(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 173. Binary Search Tree Iterator.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbinary_search_tree_iterator = solve\n\n\nif __name__ == \"__main__\":\n    print(\"173. Binary Search Tree Iterator\")\n    print('Sample input:', \"BST=[7,3,15,null,null,9,20], calls=next,next,hasNext\")\n    print('Expected output:', \"[3,7,true]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 173. Binary Search Tree Iterator\nfunc Solve148(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"173. Binary Search Tree Iterator\")\n\tfmt.Println(\"Sample input:\", \"BST=[7,3,15,null,null,9,20], calls=next,next,hasNext\")\n\tfmt.Println(\"Expected output:\", \"[3,7,true]\")\n\tfmt.Println(\"Call Solve148(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 149,
@@ -11738,8 +11738,8 @@ export const problems = [
     ],
     "pythonFunction": "count_complete_tree_nodes",
     "goFunction": "Solve149",
-    "pythonCode": "def count_complete_tree_nodes(*args):\n    \"\"\"Reference kernel for 222. Count Complete Tree Nodes.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 222. Count Complete Tree Nodes\nfunc Solve149(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 222. Count Complete Tree Nodes.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncount_complete_tree_nodes = solve\n\n\nif __name__ == \"__main__\":\n    print(\"222. Count Complete Tree Nodes\")\n    print('Sample input:', \"root=[1,2,3,4,5,6]\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 222. Count Complete Tree Nodes\nfunc Solve149(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"222. Count Complete Tree Nodes\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,3,4,5,6]\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve149(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 150,
@@ -11819,8 +11819,8 @@ export const problems = [
     ],
     "pythonFunction": "average_of_levels_in_binary_tree",
     "goFunction": "Solve150",
-    "pythonCode": "def average_of_levels_in_binary_tree(*args):\n    \"\"\"Reference kernel for 637. Average of Levels in Binary Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 637. Average of Levels in Binary Tree\nfunc Solve150(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 637. Average of Levels in Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\naverage_of_levels_in_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"637. Average of Levels in Binary Tree\")\n    print('Sample input:', \"root=[3,9,20,null,null,15,7]\")\n    print('Expected output:', \"[3,14.5,11]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 637. Average of Levels in Binary Tree\nfunc Solve150(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"637. Average of Levels in Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[3,9,20,null,null,15,7]\")\n\tfmt.Println(\"Expected output:\", \"[3,14.5,11]\")\n\tfmt.Println(\"Call Solve150(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 151,
@@ -11901,8 +11901,8 @@ export const problems = [
     ],
     "pythonFunction": "binary_tree_level_order_traversal",
     "goFunction": "Solve151",
-    "pythonCode": "def binary_tree_level_order_traversal(*args):\n    \"\"\"Reference kernel for 102. Binary Tree Level Order Traversal.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 102. Binary Tree Level Order Traversal\nfunc Solve151(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 102. Binary Tree Level Order Traversal.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbinary_tree_level_order_traversal = solve\n\n\nif __name__ == \"__main__\":\n    print(\"102. Binary Tree Level Order Traversal\")\n    print('Sample input:', \"root=[3,9,20,null,null,15,7]\")\n    print('Expected output:', \"[[3],[9,20],[15,7]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 102. Binary Tree Level Order Traversal\nfunc Solve151(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"102. Binary Tree Level Order Traversal\")\n\tfmt.Println(\"Sample input:\", \"root=[3,9,20,null,null,15,7]\")\n\tfmt.Println(\"Expected output:\", \"[[3],[9,20],[15,7]]\")\n\tfmt.Println(\"Call Solve151(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 152,
@@ -11982,8 +11982,8 @@ export const problems = [
     ],
     "pythonFunction": "binary_tree_zigzag_level_order_traversal",
     "goFunction": "Solve152",
-    "pythonCode": "def binary_tree_zigzag_level_order_traversal(*args):\n    \"\"\"Reference kernel for 103. Binary Tree Zigzag Level Order Traversal.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 103. Binary Tree Zigzag Level Order Traversal\nfunc Solve152(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 103. Binary Tree Zigzag Level Order Traversal.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbinary_tree_zigzag_level_order_traversal = solve\n\n\nif __name__ == \"__main__\":\n    print(\"103. Binary Tree Zigzag Level Order Traversal\")\n    print('Sample input:', \"root=[3,9,20,null,null,15,7]\")\n    print('Expected output:', \"[[3],[20,9],[15,7]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 103. Binary Tree Zigzag Level Order Traversal\nfunc Solve152(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"103. Binary Tree Zigzag Level Order Traversal\")\n\tfmt.Println(\"Sample input:\", \"root=[3,9,20,null,null,15,7]\")\n\tfmt.Println(\"Expected output:\", \"[[3],[20,9],[15,7]]\")\n\tfmt.Println(\"Call Solve152(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 153,
@@ -12060,8 +12060,8 @@ export const problems = [
     ],
     "pythonFunction": "minimum_absolute_difference_in_bst",
     "goFunction": "Solve153",
-    "pythonCode": "def minimum_absolute_difference_in_bst(*args):\n    \"\"\"Reference kernel for 530. Minimum Absolute Difference in BST.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 530. Minimum Absolute Difference in BST\nfunc Solve153(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 530. Minimum Absolute Difference in BST.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nminimum_absolute_difference_in_bst = solve\n\n\nif __name__ == \"__main__\":\n    print(\"530. Minimum Absolute Difference in BST\")\n    print('Sample input:', \"root=[4,2,6,1,3]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 530. Minimum Absolute Difference in BST\nfunc Solve153(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"530. Minimum Absolute Difference in BST\")\n\tfmt.Println(\"Sample input:\", \"root=[4,2,6,1,3]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve153(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 154,
@@ -12139,8 +12139,8 @@ export const problems = [
     ],
     "pythonFunction": "kth_smallest_element_in_a_bst",
     "goFunction": "Solve154",
-    "pythonCode": "def kth_smallest_element_in_a_bst(*args):\n    \"\"\"Reference kernel for 230. Kth Smallest Element in a BST.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 230. Kth Smallest Element in a BST\nfunc Solve154(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 230. Kth Smallest Element in a BST.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nkth_smallest_element_in_a_bst = solve\n\n\nif __name__ == \"__main__\":\n    print(\"230. Kth Smallest Element in a BST\")\n    print('Sample input:', \"root=[3,1,4,null,2], k=1\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 230. Kth Smallest Element in a BST\nfunc Solve154(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"230. Kth Smallest Element in a BST\")\n\tfmt.Println(\"Sample input:\", \"root=[3,1,4,null,2], k=1\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve154(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 155,
@@ -12218,8 +12218,8 @@ export const problems = [
     ],
     "pythonFunction": "validate_binary_search_tree",
     "goFunction": "Solve155",
-    "pythonCode": "def validate_binary_search_tree(*args):\n    \"\"\"Reference kernel for 98. Validate Binary Search Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 98. Validate Binary Search Tree\nfunc Solve155(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 98. Validate Binary Search Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nvalidate_binary_search_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"98. Validate Binary Search Tree\")\n    print('Sample input:', \"root=[2,1,3]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 98. Validate Binary Search Tree\nfunc Solve155(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"98. Validate Binary Search Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[2,1,3]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve155(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 156,
@@ -12296,8 +12296,8 @@ export const problems = [
     ],
     "pythonFunction": "number_of_islands",
     "goFunction": "Solve156",
-    "pythonCode": "def number_of_islands(*args):\n    \"\"\"Reference kernel for 200. Number of Islands.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 200. Number of Islands\nfunc Solve156(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 200. Number of Islands.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nnumber_of_islands = solve\n\n\nif __name__ == \"__main__\":\n    print(\"200. Number of Islands\")\n    print('Sample input:', \"grid=[[\\\"1\\\",\\\"1\\\",\\\"0\\\"],[\\\"0\\\",\\\"1\\\",\\\"0\\\"],[\\\"1\\\",\\\"0\\\",\\\"1\\\"]]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 200. Number of Islands\nfunc Solve156(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"200. Number of Islands\")\n\tfmt.Println(\"Sample input:\", \"grid=[[\\\"1\\\",\\\"1\\\",\\\"0\\\"],[\\\"0\\\",\\\"1\\\",\\\"0\\\"],[\\\"1\\\",\\\"0\\\",\\\"1\\\"]]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve156(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 157,
@@ -12373,8 +12373,8 @@ export const problems = [
     ],
     "pythonFunction": "surrounded_regions",
     "goFunction": "Solve157",
-    "pythonCode": "def surrounded_regions(*args):\n    \"\"\"Reference kernel for 130. Surrounded Regions.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 130. Surrounded Regions\nfunc Solve157(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 130. Surrounded Regions.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nsurrounded_regions = solve\n\n\nif __name__ == \"__main__\":\n    print(\"130. Surrounded Regions\")\n    print('Sample input:', \"board=[[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"O\\\",\\\"O\\\",\\\"X\\\"],[\\\"X\\\",\\\"X\\\",\\\"O\\\",\\\"X\\\"],[\\\"X\\\",\\\"O\\\",\\\"X\\\",\\\"X\\\"]]\")\n    print('Expected output:', \"[[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"O\\\",\\\"X\\\",\\\"X\\\"]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 130. Surrounded Regions\nfunc Solve157(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"130. Surrounded Regions\")\n\tfmt.Println(\"Sample input:\", \"board=[[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"O\\\",\\\"O\\\",\\\"X\\\"],[\\\"X\\\",\\\"X\\\",\\\"O\\\",\\\"X\\\"],[\\\"X\\\",\\\"O\\\",\\\"X\\\",\\\"X\\\"]]\")\n\tfmt.Println(\"Expected output:\", \"[[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"O\\\",\\\"X\\\",\\\"X\\\"]]\")\n\tfmt.Println(\"Call Solve157(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 158,
@@ -12451,8 +12451,8 @@ export const problems = [
     ],
     "pythonFunction": "clone_graph",
     "goFunction": "Solve158",
-    "pythonCode": "def clone_graph(*args):\n    \"\"\"Reference kernel for 133. Clone Graph.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 133. Clone Graph\nfunc Solve158(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 133. Clone Graph.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nclone_graph = solve\n\n\nif __name__ == \"__main__\":\n    print(\"133. Clone Graph\")\n    print('Sample input:', \"adjList=[[2,4],[1,3],[2,4],[1,3]]\")\n    print('Expected output:', \"deep copy with same adjacency\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 133. Clone Graph\nfunc Solve158(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"133. Clone Graph\")\n\tfmt.Println(\"Sample input:\", \"adjList=[[2,4],[1,3],[2,4],[1,3]]\")\n\tfmt.Println(\"Expected output:\", \"deep copy with same adjacency\")\n\tfmt.Println(\"Call Solve158(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 159,
@@ -12529,8 +12529,8 @@ export const problems = [
     ],
     "pythonFunction": "course_schedule",
     "goFunction": "Solve159",
-    "pythonCode": "def course_schedule(*args):\n    \"\"\"Reference kernel for 207. Course Schedule.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 207. Course Schedule\nfunc Solve159(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 207. Course Schedule.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\ncourse_schedule = solve\n\n\nif __name__ == \"__main__\":\n    print(\"207. Course Schedule\")\n    print('Sample input:', \"numCourses=2, prerequisites=[[1,0]]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 207. Course Schedule\nfunc Solve159(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"207. Course Schedule\")\n\tfmt.Println(\"Sample input:\", \"numCourses=2, prerequisites=[[1,0]]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve159(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 160,
@@ -12606,8 +12606,8 @@ export const problems = [
     ],
     "pythonFunction": "course_schedule_ii",
     "goFunction": "Solve160",
-    "pythonCode": "def course_schedule_ii(*args):\n    \"\"\"Reference kernel for 210. Course Schedule II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 210. Course Schedule II\nfunc Solve160(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 210. Course Schedule II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\ncourse_schedule_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"210. Course Schedule II\")\n    print('Sample input:', \"numCourses=2, prerequisites=[[1,0]]\")\n    print('Expected output:', \"[0,1]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 210. Course Schedule II\nfunc Solve160(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"210. Course Schedule II\")\n\tfmt.Println(\"Sample input:\", \"numCourses=2, prerequisites=[[1,0]]\")\n\tfmt.Println(\"Expected output:\", \"[0,1]\")\n\tfmt.Println(\"Call Solve160(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 161,
@@ -12683,8 +12683,8 @@ export const problems = [
     ],
     "pythonFunction": "snakes_and_ladders",
     "goFunction": "Solve161",
-    "pythonCode": "def snakes_and_ladders(*args):\n    \"\"\"Reference kernel for 909. Snakes and Ladders.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 909. Snakes and Ladders\nfunc Solve161(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 909. Snakes and Ladders.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nsnakes_and_ladders = solve\n\n\nif __name__ == \"__main__\":\n    print(\"909. Snakes and Ladders\")\n    print('Sample input:', \"board=[[-1,-1],[-1,-1]]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 909. Snakes and Ladders\nfunc Solve161(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"909. Snakes and Ladders\")\n\tfmt.Println(\"Sample input:\", \"board=[[-1,-1],[-1,-1]]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve161(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 162,
@@ -12760,8 +12760,8 @@ export const problems = [
     ],
     "pythonFunction": "minimum_genetic_mutation",
     "goFunction": "Solve162",
-    "pythonCode": "def minimum_genetic_mutation(*args):\n    \"\"\"Reference kernel for 433. Minimum Genetic Mutation.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 433. Minimum Genetic Mutation\nfunc Solve162(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 433. Minimum Genetic Mutation.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nminimum_genetic_mutation = solve\n\n\nif __name__ == \"__main__\":\n    print(\"433. Minimum Genetic Mutation\")\n    print('Sample input:', \"start=\\\"AACCGGTT\\\", end=\\\"AACCGGTA\\\", bank=[\\\"AACCGGTA\\\"]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 433. Minimum Genetic Mutation\nfunc Solve162(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"433. Minimum Genetic Mutation\")\n\tfmt.Println(\"Sample input:\", \"start=\\\"AACCGGTT\\\", end=\\\"AACCGGTA\\\", bank=[\\\"AACCGGTA\\\"]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve162(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 163,
@@ -12837,8 +12837,8 @@ export const problems = [
     ],
     "pythonFunction": "word_ladder",
     "goFunction": "Solve163",
-    "pythonCode": "def word_ladder(*args):\n    \"\"\"Reference kernel for 127. Word Ladder.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 127. Word Ladder\nfunc Solve163(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 127. Word Ladder.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nword_ladder = solve\n\n\nif __name__ == \"__main__\":\n    print(\"127. Word Ladder\")\n    print('Sample input:', \"beginWord=\\\"hit\\\", endWord=\\\"cog\\\", wordList=[\\\"hot\\\",\\\"dot\\\",\\\"dog\\\",\\\"lot\\\",\\\"log\\\",\\\"cog\\\"]\")\n    print('Expected output:', \"5\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 127. Word Ladder\nfunc Solve163(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"127. Word Ladder\")\n\tfmt.Println(\"Sample input:\", \"beginWord=\\\"hit\\\", endWord=\\\"cog\\\", wordList=[\\\"hot\\\",\\\"dot\\\",\\\"dog\\\",\\\"lot\\\",\\\"log\\\",\\\"cog\\\"]\")\n\tfmt.Println(\"Expected output:\", \"5\")\n\tfmt.Println(\"Call Solve163(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 164,
@@ -12916,8 +12916,8 @@ export const problems = [
     ],
     "pythonFunction": "design_add_and_search_words_data_structure",
     "goFunction": "Solve164",
-    "pythonCode": "def design_add_and_search_words_data_structure(*args):\n    \"\"\"Reference kernel for 211. Design Add and Search Words Data Structure.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 211. Design Add and Search Words Data Structure\nfunc Solve164(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 211. Design Add and Search Words Data Structure.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ndesign_add_and_search_words_data_structure = solve\n\n\nif __name__ == \"__main__\":\n    print(\"211. Design Add and Search Words Data Structure\")\n    print('Sample input:', \"add bad,dad,mad; search pad,bad,.ad,b..\")\n    print('Expected output:', \"[false,true,true,true]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 211. Design Add and Search Words Data Structure\nfunc Solve164(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"211. Design Add and Search Words Data Structure\")\n\tfmt.Println(\"Sample input:\", \"add bad,dad,mad; search pad,bad,.ad,b..\")\n\tfmt.Println(\"Expected output:\", \"[false,true,true,true]\")\n\tfmt.Println(\"Call Solve164(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 165,
@@ -12995,8 +12995,8 @@ export const problems = [
     ],
     "pythonFunction": "word_search_ii",
     "goFunction": "Solve165",
-    "pythonCode": "def word_search_ii(*args):\n    \"\"\"Reference kernel for 212. Word Search II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 212. Word Search II\nfunc Solve165(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 212. Word Search II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nword_search_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"212. Word Search II\")\n    print('Sample input:', \"board=[[\\\"o\\\",\\\"a\\\",\\\"a\\\",\\\"n\\\"],[\\\"e\\\",\\\"t\\\",\\\"a\\\",\\\"e\\\"],[\\\"i\\\",\\\"h\\\",\\\"k\\\",\\\"r\\\"],[\\\"i\\\",\\\"f\\\",\\\"l\\\",\\\"v\\\"]], words=[\\\"oath\\\",\\\"pea\\\",\\\"eat\\\",\\\"rain\\\"]\")\n    print('Expected output:', \"[\\\"eat\\\",\\\"oath\\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 212. Word Search II\nfunc Solve165(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"212. Word Search II\")\n\tfmt.Println(\"Sample input:\", \"board=[[\\\"o\\\",\\\"a\\\",\\\"a\\\",\\\"n\\\"],[\\\"e\\\",\\\"t\\\",\\\"a\\\",\\\"e\\\"],[\\\"i\\\",\\\"h\\\",\\\"k\\\",\\\"r\\\"],[\\\"i\\\",\\\"f\\\",\\\"l\\\",\\\"v\\\"]], words=[\\\"oath\\\",\\\"pea\\\",\\\"eat\\\",\\\"rain\\\"]\")\n\tfmt.Println(\"Expected output:\", \"[\\\"eat\\\",\\\"oath\\\"]\")\n\tfmt.Println(\"Call Solve165(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 166,
@@ -13074,8 +13074,8 @@ export const problems = [
     ],
     "pythonFunction": "combinations",
     "goFunction": "Solve166",
-    "pythonCode": "def combinations(*args):\n    \"\"\"Reference kernel for 77. Combinations.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 77. Combinations\nfunc Solve166(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 77. Combinations.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncombinations = solve\n\n\nif __name__ == \"__main__\":\n    print(\"77. Combinations\")\n    print('Sample input:', \"n=4, k=2\")\n    print('Expected output:', \"[[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 77. Combinations\nfunc Solve166(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"77. Combinations\")\n\tfmt.Println(\"Sample input:\", \"n=4, k=2\")\n\tfmt.Println(\"Expected output:\", \"[[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]\")\n\tfmt.Println(\"Call Solve166(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 167,
@@ -13153,8 +13153,8 @@ export const problems = [
     ],
     "pythonFunction": "permutations",
     "goFunction": "Solve167",
-    "pythonCode": "def permutations(*args):\n    \"\"\"Reference kernel for 46. Permutations.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 46. Permutations\nfunc Solve167(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 46. Permutations.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npermutations = solve\n\n\nif __name__ == \"__main__\":\n    print(\"46. Permutations\")\n    print('Sample input:', \"nums=[1,2,3]\")\n    print('Expected output:', \"6 permutations\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 46. Permutations\nfunc Solve167(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"46. Permutations\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,3]\")\n\tfmt.Println(\"Expected output:\", \"6 permutations\")\n\tfmt.Println(\"Call Solve167(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 168,
@@ -13233,8 +13233,8 @@ export const problems = [
     ],
     "pythonFunction": "combination_sum",
     "goFunction": "Solve168",
-    "pythonCode": "def combination_sum(*args):\n    \"\"\"Reference kernel for 39. Combination Sum.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 39. Combination Sum\nfunc Solve168(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 39. Combination Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncombination_sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"39. Combination Sum\")\n    print('Sample input:', \"candidates=[2,3,6,7], target=7\")\n    print('Expected output:', \"[[2,2,3],[7]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 39. Combination Sum\nfunc Solve168(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"39. Combination Sum\")\n\tfmt.Println(\"Sample input:\", \"candidates=[2,3,6,7], target=7\")\n\tfmt.Println(\"Expected output:\", \"[[2,2,3],[7]]\")\n\tfmt.Println(\"Call Solve168(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 169,
@@ -13312,8 +13312,8 @@ export const problems = [
     ],
     "pythonFunction": "n_queens_ii",
     "goFunction": "Solve169",
-    "pythonCode": "def n_queens_ii(*args):\n    \"\"\"Reference kernel for 52. N-Queens II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 52. N-Queens II\nfunc Solve169(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 52. N-Queens II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nn_queens_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"52. N-Queens II\")\n    print('Sample input:', \"n=4\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 52. N-Queens II\nfunc Solve169(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"52. N-Queens II\")\n\tfmt.Println(\"Sample input:\", \"n=4\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve169(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 170,
@@ -13391,8 +13391,8 @@ export const problems = [
     ],
     "pythonFunction": "generate_parentheses",
     "goFunction": "Solve170",
-    "pythonCode": "def generate_parentheses(*args):\n    \"\"\"Reference kernel for 22. Generate Parentheses.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 22. Generate Parentheses\nfunc Solve170(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 22. Generate Parentheses.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ngenerate_parentheses = solve\n\n\nif __name__ == \"__main__\":\n    print(\"22. Generate Parentheses\")\n    print('Sample input:', \"n=3\")\n    print('Expected output:', \"[\\\"((()))\\\",\\\"(()())\\\",\\\"(())()\\\",\\\"()(())\\\",\\\"()()()\\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 22. Generate Parentheses\nfunc Solve170(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"22. Generate Parentheses\")\n\tfmt.Println(\"Sample input:\", \"n=3\")\n\tfmt.Println(\"Expected output:\", \"[\\\"((()))\\\",\\\"(()())\\\",\\\"(())()\\\",\\\"()(())\\\",\\\"()()()\\\"]\")\n\tfmt.Println(\"Call Solve170(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 171,
@@ -13471,8 +13471,8 @@ export const problems = [
     ],
     "pythonFunction": "word_search",
     "goFunction": "Solve171",
-    "pythonCode": "def word_search(*args):\n    \"\"\"Reference kernel for 79. Word Search.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 79. Word Search\nfunc Solve171(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 79. Word Search.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nword_search = solve\n\n\nif __name__ == \"__main__\":\n    print(\"79. Word Search\")\n    print('Sample input:', \"board=[[\\\"A\\\",\\\"B\\\",\\\"C\\\",\\\"E\\\"],[\\\"S\\\",\\\"F\\\",\\\"C\\\",\\\"S\\\"],[\\\"A\\\",\\\"D\\\",\\\"E\\\",\\\"E\\\"]], word=\\\"ABCCED\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 79. Word Search\nfunc Solve171(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"79. Word Search\")\n\tfmt.Println(\"Sample input:\", \"board=[[\\\"A\\\",\\\"B\\\",\\\"C\\\",\\\"E\\\"],[\\\"S\\\",\\\"F\\\",\\\"C\\\",\\\"S\\\"],[\\\"A\\\",\\\"D\\\",\\\"E\\\",\\\"E\\\"]], word=\\\"ABCCED\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve171(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 172,
@@ -13549,8 +13549,8 @@ export const problems = [
     ],
     "pythonFunction": "convert_sorted_array_to_binary_search_tree",
     "goFunction": "Solve172",
-    "pythonCode": "def convert_sorted_array_to_binary_search_tree(*args):\n    \"\"\"Reference kernel for 108. Convert Sorted Array to Binary Search Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 108. Convert Sorted Array to Binary Search Tree\nfunc Solve172(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 108. Convert Sorted Array to Binary Search Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nconvert_sorted_array_to_binary_search_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"108. Convert Sorted Array to Binary Search Tree\")\n    print('Sample input:', \"nums=[-10,-3,0,5,9]\")\n    print('Expected output:', \"balanced BST such as [0,-3,9,-10,null,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 108. Convert Sorted Array to Binary Search Tree\nfunc Solve172(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"108. Convert Sorted Array to Binary Search Tree\")\n\tfmt.Println(\"Sample input:\", \"nums=[-10,-3,0,5,9]\")\n\tfmt.Println(\"Expected output:\", \"balanced BST such as [0,-3,9,-10,null,5]\")\n\tfmt.Println(\"Call Solve172(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 173,
@@ -13625,8 +13625,8 @@ export const problems = [
     ],
     "pythonFunction": "sort_list",
     "goFunction": "Solve173",
-    "pythonCode": "def sort_list(*args):\n    \"\"\"Reference kernel for 148. Sort List.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 148. Sort List\nfunc Solve173(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 148. Sort List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsort_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"148. Sort List\")\n    print('Sample input:', \"head=[4,2,1,3]\")\n    print('Expected output:', \"[1,2,3,4]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 148. Sort List\nfunc Solve173(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"148. Sort List\")\n\tfmt.Println(\"Sample input:\", \"head=[4,2,1,3]\")\n\tfmt.Println(\"Expected output:\", \"[1,2,3,4]\")\n\tfmt.Println(\"Call Solve173(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 174,
@@ -13700,8 +13700,8 @@ export const problems = [
     ],
     "pythonFunction": "construct_quad_tree",
     "goFunction": "Solve174",
-    "pythonCode": "def construct_quad_tree(*args):\n    \"\"\"Reference kernel for 427. Construct Quad Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 427. Construct Quad Tree\nfunc Solve174(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 427. Construct Quad Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nconstruct_quad_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"427. Construct Quad Tree\")\n    print('Sample input:', \"grid=[[1,1],[1,1]]\")\n    print('Expected output:', \"leaf node with val=true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 427. Construct Quad Tree\nfunc Solve174(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"427. Construct Quad Tree\")\n\tfmt.Println(\"Sample input:\", \"grid=[[1,1],[1,1]]\")\n\tfmt.Println(\"Expected output:\", \"leaf node with val=true\")\n\tfmt.Println(\"Call Solve174(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 175,
@@ -13779,8 +13779,8 @@ export const problems = [
     ],
     "pythonFunction": "merge_k_sorted_lists",
     "goFunction": "Solve175",
-    "pythonCode": "def merge_k_sorted_lists(*args):\n    \"\"\"Reference kernel for 23. Merge k Sorted Lists.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 23. Merge k Sorted Lists\nfunc Solve175(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 23. Merge k Sorted Lists.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmerge_k_sorted_lists = solve\n\n\nif __name__ == \"__main__\":\n    print(\"23. Merge k Sorted Lists\")\n    print('Sample input:', \"lists=[[1,4,5],[1,3,4],[2,6]]\")\n    print('Expected output:', \"[1,1,2,3,4,4,5,6]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 23. Merge k Sorted Lists\nfunc Solve175(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"23. Merge k Sorted Lists\")\n\tfmt.Println(\"Sample input:\", \"lists=[[1,4,5],[1,3,4],[2,6]]\")\n\tfmt.Println(\"Expected output:\", \"[1,1,2,3,4,4,5,6]\")\n\tfmt.Println(\"Call Solve175(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 176,
@@ -13853,8 +13853,8 @@ export const problems = [
     ],
     "pythonFunction": "maximum_subarray",
     "goFunction": "Solve176",
-    "pythonCode": "def maximum_subarray(*args):\n    \"\"\"Reference kernel for 53. Maximum Subarray.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 53. Maximum Subarray\nfunc Solve176(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 53. Maximum Subarray.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_subarray = solve\n\n\nif __name__ == \"__main__\":\n    print(\"53. Maximum Subarray\")\n    print('Sample input:', \"nums=[-2,1,-3,4,-1,2,1,-5,4]\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 53. Maximum Subarray\nfunc Solve176(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"53. Maximum Subarray\")\n\tfmt.Println(\"Sample input:\", \"nums=[-2,1,-3,4,-1,2,1,-5,4]\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve176(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 177,
@@ -13926,8 +13926,8 @@ export const problems = [
     ],
     "pythonFunction": "maximum_sum_circular_subarray",
     "goFunction": "Solve177",
-    "pythonCode": "def maximum_sum_circular_subarray(*args):\n    \"\"\"Reference kernel for 918. Maximum Sum Circular Subarray.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 918. Maximum Sum Circular Subarray\nfunc Solve177(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 918. Maximum Sum Circular Subarray.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_sum_circular_subarray = solve\n\n\nif __name__ == \"__main__\":\n    print(\"918. Maximum Sum Circular Subarray\")\n    print('Sample input:', \"nums=[5,-3,5]\")\n    print('Expected output:', \"10\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 918. Maximum Sum Circular Subarray\nfunc Solve177(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"918. Maximum Sum Circular Subarray\")\n\tfmt.Println(\"Sample input:\", \"nums=[5,-3,5]\")\n\tfmt.Println(\"Expected output:\", \"10\")\n\tfmt.Println(\"Call Solve177(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 178,
@@ -14001,8 +14001,8 @@ export const problems = [
     ],
     "pythonFunction": "search_insert_position",
     "goFunction": "Solve178",
-    "pythonCode": "def search_insert_position(*args):\n    \"\"\"Reference kernel for 35. Search Insert Position.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n",
-    "goCode": "// 35. Search Insert Position\nfunc Solve178(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 35. Search Insert Position.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nsearch_insert_position = solve\n\n\nif __name__ == \"__main__\":\n    print(\"35. Search Insert Position\")\n    print('Sample input:', \"nums=[1,3,5,6], target=2\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 35. Search Insert Position\nfunc Solve178(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"35. Search Insert Position\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,3,5,6], target=2\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve178(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 179,
@@ -14076,8 +14076,8 @@ export const problems = [
     ],
     "pythonFunction": "search_a_2d_matrix",
     "goFunction": "Solve179",
-    "pythonCode": "def search_a_2d_matrix(*args):\n    \"\"\"Reference kernel for 74. Search a 2D Matrix.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n",
-    "goCode": "// 74. Search a 2D Matrix\nfunc Solve179(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 74. Search a 2D Matrix.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nsearch_a_2d_matrix = solve\n\n\nif __name__ == \"__main__\":\n    print(\"74. Search a 2D Matrix\")\n    print('Sample input:', \"matrix=[[1,3,5],[7,9,11]], target=9\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 74. Search a 2D Matrix\nfunc Solve179(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"74. Search a 2D Matrix\")\n\tfmt.Println(\"Sample input:\", \"matrix=[[1,3,5],[7,9,11]], target=9\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve179(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 180,
@@ -14152,8 +14152,8 @@ export const problems = [
     ],
     "pythonFunction": "search_in_rotated_sorted_array",
     "goFunction": "Solve180",
-    "pythonCode": "def search_in_rotated_sorted_array(*args):\n    \"\"\"Reference kernel for 33. Search in Rotated Sorted Array.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n",
-    "goCode": "// 33. Search in Rotated Sorted Array\nfunc Solve180(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 33. Search in Rotated Sorted Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nsearch_in_rotated_sorted_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"33. Search in Rotated Sorted Array\")\n    print('Sample input:', \"nums=[4,5,6,7,0,1,2], target=0\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 33. Search in Rotated Sorted Array\nfunc Solve180(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"33. Search in Rotated Sorted Array\")\n\tfmt.Println(\"Sample input:\", \"nums=[4,5,6,7,0,1,2], target=0\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve180(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 181,
@@ -14227,8 +14227,8 @@ export const problems = [
     ],
     "pythonFunction": "find_first_and_last_position_of_element_in_sorted_array",
     "goFunction": "Solve181",
-    "pythonCode": "def find_first_and_last_position_of_element_in_sorted_array(*args):\n    \"\"\"Reference kernel for 34. Find First and Last Position of Element in Sorted Array.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n",
-    "goCode": "// 34. Find First and Last Position of Element in Sorted Array\nfunc Solve181(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 34. Find First and Last Position of Element in Sorted Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nfind_first_and_last_position_of_element_in_sorted_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"34. Find First and Last Position of Element in Sorted Array\")\n    print('Sample input:', \"nums=[5,7,7,8,8,10], target=8\")\n    print('Expected output:', \"[3,4]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 34. Find First and Last Position of Element in Sorted Array\nfunc Solve181(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"34. Find First and Last Position of Element in Sorted Array\")\n\tfmt.Println(\"Sample input:\", \"nums=[5,7,7,8,8,10], target=8\")\n\tfmt.Println(\"Expected output:\", \"[3,4]\")\n\tfmt.Println(\"Call Solve181(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 182,
@@ -14303,8 +14303,8 @@ export const problems = [
     ],
     "pythonFunction": "find_minimum_in_rotated_sorted_array",
     "goFunction": "Solve182",
-    "pythonCode": "def find_minimum_in_rotated_sorted_array(*args):\n    \"\"\"Reference kernel for 153. Find Minimum in Rotated Sorted Array.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n",
-    "goCode": "// 153. Find Minimum in Rotated Sorted Array\nfunc Solve182(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 153. Find Minimum in Rotated Sorted Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nfind_minimum_in_rotated_sorted_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"153. Find Minimum in Rotated Sorted Array\")\n    print('Sample input:', \"nums=[3,4,5,1,2]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 153. Find Minimum in Rotated Sorted Array\nfunc Solve182(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"153. Find Minimum in Rotated Sorted Array\")\n\tfmt.Println(\"Sample input:\", \"nums=[3,4,5,1,2]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve182(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 183,
@@ -14378,8 +14378,8 @@ export const problems = [
     ],
     "pythonFunction": "median_of_two_sorted_arrays",
     "goFunction": "Solve183",
-    "pythonCode": "def median_of_two_sorted_arrays(*args):\n    \"\"\"Reference kernel for 4. Median of Two Sorted Arrays.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n",
-    "goCode": "// 4. Median of Two Sorted Arrays\nfunc Solve183(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 4. Median of Two Sorted Arrays.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nmedian_of_two_sorted_arrays = solve\n\n\nif __name__ == \"__main__\":\n    print(\"4. Median of Two Sorted Arrays\")\n    print('Sample input:', \"nums1=[1,3], nums2=[2]\")\n    print('Expected output:', \"2.0\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 4. Median of Two Sorted Arrays\nfunc Solve183(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"4. Median of Two Sorted Arrays\")\n\tfmt.Println(\"Sample input:\", \"nums1=[1,3], nums2=[2]\")\n\tfmt.Println(\"Expected output:\", \"2.0\")\n\tfmt.Println(\"Call Solve183(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 184,
@@ -14456,8 +14456,8 @@ export const problems = [
     ],
     "pythonFunction": "ipo",
     "goFunction": "Solve184",
-    "pythonCode": "def ipo(*args):\n    \"\"\"Reference kernel for 502. IPO.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 502. IPO\nfunc Solve184(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 502. IPO.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nipo = solve\n\n\nif __name__ == \"__main__\":\n    print(\"502. IPO\")\n    print('Sample input:', \"k=2, w=0, profits=[1,2,3], capital=[0,1,1]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 502. IPO\nfunc Solve184(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"502. IPO\")\n\tfmt.Println(\"Sample input:\", \"k=2, w=0, profits=[1,2,3], capital=[0,1,1]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve184(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 185,
@@ -14534,8 +14534,8 @@ export const problems = [
     ],
     "pythonFunction": "find_k_pairs_with_smallest_sums",
     "goFunction": "Solve185",
-    "pythonCode": "def find_k_pairs_with_smallest_sums(*args):\n    \"\"\"Reference kernel for 373. Find K Pairs with Smallest Sums.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 373. Find K Pairs with Smallest Sums\nfunc Solve185(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 373. Find K Pairs with Smallest Sums.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nfind_k_pairs_with_smallest_sums = solve\n\n\nif __name__ == \"__main__\":\n    print(\"373. Find K Pairs with Smallest Sums\")\n    print('Sample input:', \"nums1=[1,7,11], nums2=[2,4,6], k=3\")\n    print('Expected output:', \"[[1,2],[1,4],[1,6]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 373. Find K Pairs with Smallest Sums\nfunc Solve185(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"373. Find K Pairs with Smallest Sums\")\n\tfmt.Println(\"Sample input:\", \"nums1=[1,7,11], nums2=[2,4,6], k=3\")\n\tfmt.Println(\"Expected output:\", \"[[1,2],[1,4],[1,6]]\")\n\tfmt.Println(\"Call Solve185(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 186,
@@ -14613,8 +14613,8 @@ export const problems = [
     ],
     "pythonFunction": "find_median_from_data_stream",
     "goFunction": "Solve186",
-    "pythonCode": "def find_median_from_data_stream(*args):\n    \"\"\"Reference kernel for 295. Find Median from Data Stream.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 295. Find Median from Data Stream\nfunc Solve186(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 295. Find Median from Data Stream.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nfind_median_from_data_stream = solve\n\n\nif __name__ == \"__main__\":\n    print(\"295. Find Median from Data Stream\")\n    print('Sample input:', \"add 1, add 2, find, add 3, find\")\n    print('Expected output:', \"[null,null,1.5,null,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 295. Find Median from Data Stream\nfunc Solve186(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"295. Find Median from Data Stream\")\n\tfmt.Println(\"Sample input:\", \"add 1, add 2, find, add 3, find\")\n\tfmt.Println(\"Expected output:\", \"[null,null,1.5,null,2]\")\n\tfmt.Println(\"Call Solve186(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 187,
@@ -14695,8 +14695,8 @@ export const problems = [
     ],
     "pythonFunction": "add_binary",
     "goFunction": "Solve187",
-    "pythonCode": "def add_binary(*args):\n    \"\"\"Reference kernel for 67. Add Binary.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 67. Add Binary\nfunc Solve187(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 67. Add Binary.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nadd_binary = solve\n\n\nif __name__ == \"__main__\":\n    print(\"67. Add Binary\")\n    print('Sample input:', \"a=\\\"1010\\\", b=\\\"1011\\\"\")\n    print('Expected output:', \"\\\"10101\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 67. Add Binary\nfunc Solve187(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"67. Add Binary\")\n\tfmt.Println(\"Sample input:\", \"a=\\\"1010\\\", b=\\\"1011\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"10101\\\"\")\n\tfmt.Println(\"Call Solve187(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 188,
@@ -14778,8 +14778,8 @@ export const problems = [
     ],
     "pythonFunction": "reverse_bits",
     "goFunction": "Solve188",
-    "pythonCode": "def reverse_bits(*args):\n    \"\"\"Reference kernel for 190. Reverse Bits.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 190. Reverse Bits\nfunc Solve188(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 190. Reverse Bits.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreverse_bits = solve\n\n\nif __name__ == \"__main__\":\n    print(\"190. Reverse Bits\")\n    print('Sample input:', \"n=43261596\")\n    print('Expected output:', \"964176192\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 190. Reverse Bits\nfunc Solve188(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"190. Reverse Bits\")\n\tfmt.Println(\"Sample input:\", \"n=43261596\")\n\tfmt.Println(\"Expected output:\", \"964176192\")\n\tfmt.Println(\"Call Solve188(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 189,
@@ -14861,8 +14861,8 @@ export const problems = [
     ],
     "pythonFunction": "number_of_1_bits",
     "goFunction": "Solve189",
-    "pythonCode": "def number_of_1_bits(*args):\n    \"\"\"Reference kernel for 191. Number of 1 Bits.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 191. Number of 1 Bits\nfunc Solve189(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 191. Number of 1 Bits.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nnumber_of_1_bits = solve\n\n\nif __name__ == \"__main__\":\n    print(\"191. Number of 1 Bits\")\n    print('Sample input:', \"n=11\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 191. Number of 1 Bits\nfunc Solve189(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"191. Number of 1 Bits\")\n\tfmt.Println(\"Sample input:\", \"n=11\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve189(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 190,
@@ -14943,8 +14943,8 @@ export const problems = [
     ],
     "pythonFunction": "single_number_ii",
     "goFunction": "Solve190",
-    "pythonCode": "def single_number_ii(*args):\n    \"\"\"Reference kernel for 137. Single Number II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 137. Single Number II\nfunc Solve190(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 137. Single Number II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsingle_number_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"137. Single Number II\")\n    print('Sample input:', \"nums=[2,2,3,2]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 137. Single Number II\nfunc Solve190(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"137. Single Number II\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,2,3,2]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve190(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 191,
@@ -15025,8 +15025,8 @@ export const problems = [
     ],
     "pythonFunction": "bitwise_and_of_numbers_range",
     "goFunction": "Solve191",
-    "pythonCode": "def bitwise_and_of_numbers_range(*args):\n    \"\"\"Reference kernel for 201. Bitwise AND of Numbers Range.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 201. Bitwise AND of Numbers Range\nfunc Solve191(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 201. Bitwise AND of Numbers Range.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbitwise_and_of_numbers_range = solve\n\n\nif __name__ == \"__main__\":\n    print(\"201. Bitwise AND of Numbers Range\")\n    print('Sample input:', \"left=5, right=7\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 201. Bitwise AND of Numbers Range\nfunc Solve191(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"201. Bitwise AND of Numbers Range\")\n\tfmt.Println(\"Sample input:\", \"left=5, right=7\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve191(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 192,
@@ -15100,8 +15100,8 @@ export const problems = [
     ],
     "pythonFunction": "palindrome_number",
     "goFunction": "Solve192",
-    "pythonCode": "def palindrome_number(*args):\n    \"\"\"Reference kernel for 9. Palindrome Number.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 9. Palindrome Number\nfunc Solve192(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 9. Palindrome Number.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npalindrome_number = solve\n\n\nif __name__ == \"__main__\":\n    print(\"9. Palindrome Number\")\n    print('Sample input:', \"x=121\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 9. Palindrome Number\nfunc Solve192(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"9. Palindrome Number\")\n\tfmt.Println(\"Sample input:\", \"x=121\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve192(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 193,
@@ -15175,8 +15175,8 @@ export const problems = [
     ],
     "pythonFunction": "plus_one",
     "goFunction": "Solve193",
-    "pythonCode": "def plus_one(*args):\n    \"\"\"Reference kernel for 66. Plus One.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 66. Plus One\nfunc Solve193(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 66. Plus One.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nplus_one = solve\n\n\nif __name__ == \"__main__\":\n    print(\"66. Plus One\")\n    print('Sample input:', \"digits=[9,9]\")\n    print('Expected output:', \"[1,0,0]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 66. Plus One\nfunc Solve193(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"66. Plus One\")\n\tfmt.Println(\"Sample input:\", \"digits=[9,9]\")\n\tfmt.Println(\"Expected output:\", \"[1,0,0]\")\n\tfmt.Println(\"Call Solve193(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 194,
@@ -15250,8 +15250,8 @@ export const problems = [
     ],
     "pythonFunction": "factorial_trailing_zeroes",
     "goFunction": "Solve194",
-    "pythonCode": "def factorial_trailing_zeroes(*args):\n    \"\"\"Reference kernel for 172. Factorial Trailing Zeroes.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 172. Factorial Trailing Zeroes\nfunc Solve194(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 172. Factorial Trailing Zeroes.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nfactorial_trailing_zeroes = solve\n\n\nif __name__ == \"__main__\":\n    print(\"172. Factorial Trailing Zeroes\")\n    print('Sample input:', \"n=25\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 172. Factorial Trailing Zeroes\nfunc Solve194(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"172. Factorial Trailing Zeroes\")\n\tfmt.Println(\"Sample input:\", \"n=25\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve194(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 195,
@@ -15325,8 +15325,8 @@ export const problems = [
     ],
     "pythonFunction": "sqrt_x",
     "goFunction": "Solve195",
-    "pythonCode": "def sqrt_x(*args):\n    \"\"\"Reference kernel for 69. Sqrt(x).\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n",
-    "goCode": "// 69. Sqrt(x)\nfunc Solve195(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 69. Sqrt(x).\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nsqrt_x = solve\n\n\nif __name__ == \"__main__\":\n    print(\"69. Sqrt(x)\")\n    print('Sample input:', \"x=8\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 69. Sqrt(x)\nfunc Solve195(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"69. Sqrt(x)\")\n\tfmt.Println(\"Sample input:\", \"x=8\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve195(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 196,
@@ -15400,8 +15400,8 @@ export const problems = [
     ],
     "pythonFunction": "pow_x_n",
     "goFunction": "Solve196",
-    "pythonCode": "def pow_x_n(*args):\n    \"\"\"Reference kernel for 50. Pow(x, n).\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 50. Pow(x, n)\nfunc Solve196(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 50. Pow(x, n).\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npow_x_n = solve\n\n\nif __name__ == \"__main__\":\n    print(\"50. Pow(x, n)\")\n    print('Sample input:', \"x=2.0, n=-2\")\n    print('Expected output:', \"0.25\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 50. Pow(x, n)\nfunc Solve196(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"50. Pow(x, n)\")\n\tfmt.Println(\"Sample input:\", \"x=2.0, n=-2\")\n\tfmt.Println(\"Expected output:\", \"0.25\")\n\tfmt.Println(\"Call Solve196(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 197,
@@ -15475,8 +15475,8 @@ export const problems = [
     ],
     "pythonFunction": "max_points_on_a_line",
     "goFunction": "Solve197",
-    "pythonCode": "def max_points_on_a_line(*args):\n    \"\"\"Reference kernel for 149. Max Points on a Line.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 149. Max Points on a Line\nfunc Solve197(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 149. Max Points on a Line.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmax_points_on_a_line = solve\n\n\nif __name__ == \"__main__\":\n    print(\"149. Max Points on a Line\")\n    print('Sample input:', \"points=[[1,1],[2,2],[3,3],[3,4]]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 149. Max Points on a Line\nfunc Solve197(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"149. Max Points on a Line\")\n\tfmt.Println(\"Sample input:\", \"points=[[1,1],[2,2],[3,3],[3,4]]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve197(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 198,
@@ -15555,8 +15555,8 @@ export const problems = [
     ],
     "pythonFunction": "climbing_stairs",
     "goFunction": "Solve198",
-    "pythonCode": "def climbing_stairs(*args):\n    \"\"\"Reference kernel for 70. Climbing Stairs.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n",
-    "goCode": "// 70. Climbing Stairs\nfunc Solve198(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 70. Climbing Stairs.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nclimbing_stairs = solve\n\n\nif __name__ == \"__main__\":\n    print(\"70. Climbing Stairs\")\n    print('Sample input:', \"n=3\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 70. Climbing Stairs\nfunc Solve198(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"70. Climbing Stairs\")\n\tfmt.Println(\"Sample input:\", \"n=3\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve198(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 199,
@@ -15635,8 +15635,8 @@ export const problems = [
     ],
     "pythonFunction": "word_break",
     "goFunction": "Solve199",
-    "pythonCode": "def word_break(*args):\n    \"\"\"Reference kernel for 139. Word Break.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n",
-    "goCode": "// 139. Word Break\nfunc Solve199(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 139. Word Break.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nword_break = solve\n\n\nif __name__ == \"__main__\":\n    print(\"139. Word Break\")\n    print('Sample input:', \"s=\\\"leetcode\\\", wordDict=[\\\"leet\\\",\\\"code\\\"]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 139. Word Break\nfunc Solve199(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"139. Word Break\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"leetcode\\\", wordDict=[\\\"leet\\\",\\\"code\\\"]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve199(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 200,
@@ -15715,8 +15715,8 @@ export const problems = [
     ],
     "pythonFunction": "coin_change",
     "goFunction": "Solve200",
-    "pythonCode": "def coin_change(*args):\n    \"\"\"Reference kernel for 322. Coin Change.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n",
-    "goCode": "// 322. Coin Change\nfunc Solve200(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 322. Coin Change.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\ncoin_change = solve\n\n\nif __name__ == \"__main__\":\n    print(\"322. Coin Change\")\n    print('Sample input:', \"coins=[1,2,5], amount=11\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 322. Coin Change\nfunc Solve200(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"322. Coin Change\")\n\tfmt.Println(\"Sample input:\", \"coins=[1,2,5], amount=11\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve200(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 201,
@@ -15795,8 +15795,8 @@ export const problems = [
     ],
     "pythonFunction": "longest_increasing_subsequence",
     "goFunction": "Solve201",
-    "pythonCode": "def longest_increasing_subsequence(*args):\n    \"\"\"Reference kernel for 300. Longest Increasing Subsequence.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n",
-    "goCode": "// 300. Longest Increasing Subsequence\nfunc Solve201(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 300. Longest Increasing Subsequence.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nlongest_increasing_subsequence = solve\n\n\nif __name__ == \"__main__\":\n    print(\"300. Longest Increasing Subsequence\")\n    print('Sample input:', \"nums=[10,9,2,5,3,7,101,18]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 300. Longest Increasing Subsequence\nfunc Solve201(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"300. Longest Increasing Subsequence\")\n\tfmt.Println(\"Sample input:\", \"nums=[10,9,2,5,3,7,101,18]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve201(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 202,
@@ -15868,8 +15868,8 @@ export const problems = [
     ],
     "pythonFunction": "triangle",
     "goFunction": "Solve202",
-    "pythonCode": "def triangle(*args):\n    \"\"\"Reference kernel for 120. Triangle.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 120. Triangle\nfunc Solve202(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 120. Triangle.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ntriangle = solve\n\n\nif __name__ == \"__main__\":\n    print(\"120. Triangle\")\n    print('Sample input:', \"triangle=[[2],[3,4],[6,5,7],[4,1,8,3]]\")\n    print('Expected output:', \"11\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 120. Triangle\nfunc Solve202(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"120. Triangle\")\n\tfmt.Println(\"Sample input:\", \"triangle=[[2],[3,4],[6,5,7],[4,1,8,3]]\")\n\tfmt.Println(\"Expected output:\", \"11\")\n\tfmt.Println(\"Call Solve202(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 203,
@@ -15941,8 +15941,8 @@ export const problems = [
     ],
     "pythonFunction": "minimum_path_sum",
     "goFunction": "Solve203",
-    "pythonCode": "def minimum_path_sum(*args):\n    \"\"\"Reference kernel for 64. Minimum Path Sum.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 64. Minimum Path Sum\nfunc Solve203(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 64. Minimum Path Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nminimum_path_sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"64. Minimum Path Sum\")\n    print('Sample input:', \"grid=[[1,3,1],[1,5,1],[4,2,1]]\")\n    print('Expected output:', \"7\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 64. Minimum Path Sum\nfunc Solve203(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"64. Minimum Path Sum\")\n\tfmt.Println(\"Sample input:\", \"grid=[[1,3,1],[1,5,1],[4,2,1]]\")\n\tfmt.Println(\"Expected output:\", \"7\")\n\tfmt.Println(\"Call Solve203(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 204,
@@ -16014,8 +16014,8 @@ export const problems = [
     ],
     "pythonFunction": "unique_paths_ii",
     "goFunction": "Solve204",
-    "pythonCode": "def unique_paths_ii(*args):\n    \"\"\"Reference kernel for 63. Unique Paths II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 63. Unique Paths II\nfunc Solve204(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 63. Unique Paths II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nunique_paths_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"63. Unique Paths II\")\n    print('Sample input:', \"obstacleGrid=[[0,0,0],[0,1,0],[0,0,0]]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 63. Unique Paths II\nfunc Solve204(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"63. Unique Paths II\")\n\tfmt.Println(\"Sample input:\", \"obstacleGrid=[[0,0,0],[0,1,0],[0,0,0]]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve204(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 205,
@@ -16088,8 +16088,8 @@ export const problems = [
     ],
     "pythonFunction": "longest_palindromic_substring",
     "goFunction": "Solve205",
-    "pythonCode": "def longest_palindromic_substring(*args):\n    \"\"\"Reference kernel for 5. Longest Palindromic Substring.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 5. Longest Palindromic Substring\nfunc Solve205(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 5. Longest Palindromic Substring.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlongest_palindromic_substring = solve\n\n\nif __name__ == \"__main__\":\n    print(\"5. Longest Palindromic Substring\")\n    print('Sample input:', \"s=\\\"babad\\\"\")\n    print('Expected output:', \"\\\"bab\\\" or \\\"aba\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 5. Longest Palindromic Substring\nfunc Solve205(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"5. Longest Palindromic Substring\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"babad\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"bab\\\" or \\\"aba\\\"\")\n\tfmt.Println(\"Call Solve205(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 206,
@@ -16161,8 +16161,8 @@ export const problems = [
     ],
     "pythonFunction": "interleaving_string",
     "goFunction": "Solve206",
-    "pythonCode": "def interleaving_string(*args):\n    \"\"\"Reference kernel for 97. Interleaving String.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 97. Interleaving String\nfunc Solve206(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 97. Interleaving String.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ninterleaving_string = solve\n\n\nif __name__ == \"__main__\":\n    print(\"97. Interleaving String\")\n    print('Sample input:', \"s1=\\\"aabcc\\\", s2=\\\"dbbca\\\", s3=\\\"aadbbcbcac\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 97. Interleaving String\nfunc Solve206(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"97. Interleaving String\")\n\tfmt.Println(\"Sample input:\", \"s1=\\\"aabcc\\\", s2=\\\"dbbca\\\", s3=\\\"aadbbcbcac\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve206(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 207,
@@ -16234,8 +16234,8 @@ export const problems = [
     ],
     "pythonFunction": "best_time_to_buy_and_sell_stock_iii",
     "goFunction": "Solve207",
-    "pythonCode": "def best_time_to_buy_and_sell_stock_iii(*args):\n    \"\"\"Reference kernel for 123. Best Time to Buy and Sell Stock III.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 123. Best Time to Buy and Sell Stock III\nfunc Solve207(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 123. Best Time to Buy and Sell Stock III.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbest_time_to_buy_and_sell_stock_iii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"123. Best Time to Buy and Sell Stock III\")\n    print('Sample input:', \"prices=[3,3,5,0,0,3,1,4]\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 123. Best Time to Buy and Sell Stock III\nfunc Solve207(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"123. Best Time to Buy and Sell Stock III\")\n\tfmt.Println(\"Sample input:\", \"prices=[3,3,5,0,0,3,1,4]\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve207(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 208,
@@ -16307,8 +16307,8 @@ export const problems = [
     ],
     "pythonFunction": "best_time_to_buy_and_sell_stock_iv",
     "goFunction": "Solve208",
-    "pythonCode": "def best_time_to_buy_and_sell_stock_iv(*args):\n    \"\"\"Reference kernel for 188. Best Time to Buy and Sell Stock IV.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 188. Best Time to Buy and Sell Stock IV\nfunc Solve208(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 188. Best Time to Buy and Sell Stock IV.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbest_time_to_buy_and_sell_stock_iv = solve\n\n\nif __name__ == \"__main__\":\n    print(\"188. Best Time to Buy and Sell Stock IV\")\n    print('Sample input:', \"k=2, prices=[2,4,1]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 188. Best Time to Buy and Sell Stock IV\nfunc Solve208(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"188. Best Time to Buy and Sell Stock IV\")\n\tfmt.Println(\"Sample input:\", \"k=2, prices=[2,4,1]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve208(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 209,
@@ -16380,8 +16380,8 @@ export const problems = [
     ],
     "pythonFunction": "maximal_square",
     "goFunction": "Solve209",
-    "pythonCode": "def maximal_square(*args):\n    \"\"\"Reference kernel for 221. Maximal Square.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 221. Maximal Square\nfunc Solve209(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 221. Maximal Square.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximal_square = solve\n\n\nif __name__ == \"__main__\":\n    print(\"221. Maximal Square\")\n    print('Sample input:', \"matrix=[[\\\"1\\\",\\\"0\\\",\\\"1\\\",\\\"0\\\"],[\\\"1\\\",\\\"0\\\",\\\"1\\\",\\\"1\\\"],[\\\"1\\\",\\\"1\\\",\\\"1\\\",\\\"1\\\"]]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 221. Maximal Square\nfunc Solve209(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"221. Maximal Square\")\n\tfmt.Println(\"Sample input:\", \"matrix=[[\\\"1\\\",\\\"0\\\",\\\"1\\\",\\\"0\\\"],[\\\"1\\\",\\\"0\\\",\\\"1\\\",\\\"1\\\"],[\\\"1\\\",\\\"1\\\",\\\"1\\\",\\\"1\\\"]]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve209(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 210,
@@ -16461,8 +16461,8 @@ export const problems = [
     ],
     "pythonFunction": "contains_duplicate",
     "goFunction": "Solve210",
-    "pythonCode": "def contains_duplicate(*args):\n    \"\"\"Reference kernel for 217. Contains Duplicate.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n",
-    "goCode": "// 217. Contains Duplicate\nfunc Solve210(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 217. Contains Duplicate.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\ncontains_duplicate = solve\n\n\nif __name__ == \"__main__\":\n    print(\"217. Contains Duplicate\")\n    print('Sample input:', \"nums=[1,2,3,1]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 217. Contains Duplicate\nfunc Solve210(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"217. Contains Duplicate\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,3,1]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve210(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 211,
@@ -16534,8 +16534,8 @@ export const problems = [
     ],
     "pythonFunction": "maximum_product_subarray",
     "goFunction": "Solve211",
-    "pythonCode": "def maximum_product_subarray(*args):\n    \"\"\"Reference kernel for 152. Maximum Product Subarray.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 152. Maximum Product Subarray\nfunc Solve211(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 152. Maximum Product Subarray.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_product_subarray = solve\n\n\nif __name__ == \"__main__\":\n    print(\"152. Maximum Product Subarray\")\n    print('Sample input:', \"nums=[2,3,-2,4]\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 152. Maximum Product Subarray\nfunc Solve211(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"152. Maximum Product Subarray\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,3,-2,4]\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve211(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 212,
@@ -16616,8 +16616,8 @@ export const problems = [
     ],
     "pythonFunction": "sum_of_two_integers",
     "goFunction": "Solve212",
-    "pythonCode": "def sum_of_two_integers(*args):\n    \"\"\"Reference kernel for 371. Sum of Two Integers.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 371. Sum of Two Integers\nfunc Solve212(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 371. Sum of Two Integers.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsum_of_two_integers = solve\n\n\nif __name__ == \"__main__\":\n    print(\"371. Sum of Two Integers\")\n    print('Sample input:', \"a=1, b=2\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 371. Sum of Two Integers\nfunc Solve212(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"371. Sum of Two Integers\")\n\tfmt.Println(\"Sample input:\", \"a=1, b=2\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve212(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 213,
@@ -16698,8 +16698,8 @@ export const problems = [
     ],
     "pythonFunction": "missing_number",
     "goFunction": "Solve213",
-    "pythonCode": "def missing_number(*args):\n    \"\"\"Reference kernel for 268. Missing Number.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 268. Missing Number\nfunc Solve213(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 268. Missing Number.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmissing_number = solve\n\n\nif __name__ == \"__main__\":\n    print(\"268. Missing Number\")\n    print('Sample input:', \"nums=[3,0,1]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 268. Missing Number\nfunc Solve213(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"268. Missing Number\")\n\tfmt.Println(\"Sample input:\", \"nums=[3,0,1]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve213(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 214,
@@ -16777,8 +16777,8 @@ export const problems = [
     ],
     "pythonFunction": "house_robber_ii",
     "goFunction": "Solve214",
-    "pythonCode": "def house_robber_ii(*args):\n    \"\"\"Reference kernel for 213. House Robber II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n",
-    "goCode": "// 213. House Robber II\nfunc Solve214(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 213. House Robber II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nhouse_robber_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"213. House Robber II\")\n    print('Sample input:', \"nums=[2,3,2]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 213. House Robber II\nfunc Solve214(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"213. House Robber II\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,3,2]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve214(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 215,
@@ -16856,8 +16856,8 @@ export const problems = [
     ],
     "pythonFunction": "decode_ways",
     "goFunction": "Solve215",
-    "pythonCode": "def decode_ways(*args):\n    \"\"\"Reference kernel for 91. Decode Ways.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n",
-    "goCode": "// 91. Decode Ways\nfunc Solve215(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 91. Decode Ways.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\ndecode_ways = solve\n\n\nif __name__ == \"__main__\":\n    print(\"91. Decode Ways\")\n    print('Sample input:', \"s=\\\"226\\\"\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 91. Decode Ways\nfunc Solve215(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"91. Decode Ways\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"226\\\"\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve215(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 216,
@@ -16933,8 +16933,8 @@ export const problems = [
     ],
     "pythonFunction": "pacific_atlantic_water_flow",
     "goFunction": "Solve216",
-    "pythonCode": "def pacific_atlantic_water_flow(*args):\n    \"\"\"Reference kernel for 417. Pacific Atlantic Water Flow.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 417. Pacific Atlantic Water Flow\nfunc Solve216(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 417. Pacific Atlantic Water Flow.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\npacific_atlantic_water_flow = solve\n\n\nif __name__ == \"__main__\":\n    print(\"417. Pacific Atlantic Water Flow\")\n    print('Sample input:', \"heights=[[1,2],[4,3]]\")\n    print('Expected output:', \"[[0,1],[1,0],[1,1]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 417. Pacific Atlantic Water Flow\nfunc Solve216(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"417. Pacific Atlantic Water Flow\")\n\tfmt.Println(\"Sample input:\", \"heights=[[1,2],[4,3]]\")\n\tfmt.Println(\"Expected output:\", \"[[0,1],[1,0],[1,1]]\")\n\tfmt.Println(\"Call Solve216(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 217,
@@ -17010,8 +17010,8 @@ export const problems = [
     ],
     "pythonFunction": "alien_dictionary",
     "goFunction": "Solve217",
-    "pythonCode": "def alien_dictionary(*args):\n    \"\"\"Reference kernel for 269. Alien Dictionary.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 269. Alien Dictionary\nfunc Solve217(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 269. Alien Dictionary.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nalien_dictionary = solve\n\n\nif __name__ == \"__main__\":\n    print(\"269. Alien Dictionary\")\n    print('Sample input:', \"words=[\\\"wrt\\\",\\\"wrf\\\",\\\"er\\\",\\\"ett\\\",\\\"rftt\\\"]\")\n    print('Expected output:', \"\\\"wertf\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 269. Alien Dictionary\nfunc Solve217(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"269. Alien Dictionary\")\n\tfmt.Println(\"Sample input:\", \"words=[\\\"wrt\\\",\\\"wrf\\\",\\\"er\\\",\\\"ett\\\",\\\"rftt\\\"]\")\n\tfmt.Println(\"Expected output:\", \"\\\"wertf\\\"\")\n\tfmt.Println(\"Call Solve217(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 218,
@@ -17087,8 +17087,8 @@ export const problems = [
     ],
     "pythonFunction": "graph_valid_tree",
     "goFunction": "Solve218",
-    "pythonCode": "def graph_valid_tree(*args):\n    \"\"\"Reference kernel for 261. Graph Valid Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 261. Graph Valid Tree\nfunc Solve218(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 261. Graph Valid Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\ngraph_valid_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"261. Graph Valid Tree\")\n    print('Sample input:', \"n=5, edges=[[0,1],[0,2],[0,3],[1,4]]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 261. Graph Valid Tree\nfunc Solve218(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"261. Graph Valid Tree\")\n\tfmt.Println(\"Sample input:\", \"n=5, edges=[[0,1],[0,2],[0,3],[1,4]]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve218(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 219,
@@ -17164,8 +17164,8 @@ export const problems = [
     ],
     "pythonFunction": "number_of_connected_components_in_an_undirected_graph",
     "goFunction": "Solve219",
-    "pythonCode": "def number_of_connected_components_in_an_undirected_graph(*args):\n    \"\"\"Reference kernel for 323. Number of Connected Components in an Undirected Graph.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n",
-    "goCode": "// 323. Number of Connected Components in an Undirected Graph\nfunc Solve219(args ...any) any {\n\treturn args\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 323. Number of Connected Components in an Undirected Graph.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nnumber_of_connected_components_in_an_undirected_graph = solve\n\n\nif __name__ == \"__main__\":\n    print(\"323. Number of Connected Components in an Undirected Graph\")\n    print('Sample input:', \"n=5, edges=[[0,1],[1,2],[3,4]]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 323. Number of Connected Components in an Undirected Graph\nfunc Solve219(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"323. Number of Connected Components in an Undirected Graph\")\n\tfmt.Println(\"Sample input:\", \"n=5, edges=[[0,1],[1,2],[3,4]]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve219(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 220,
@@ -17237,8 +17237,8 @@ export const problems = [
     ],
     "pythonFunction": "meeting_rooms",
     "goFunction": "Solve220",
-    "pythonCode": "def meeting_rooms(*args):\n    \"\"\"Reference kernel for 252. Meeting Rooms.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 252. Meeting Rooms\nfunc Solve220(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 252. Meeting Rooms.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmeeting_rooms = solve\n\n\nif __name__ == \"__main__\":\n    print(\"252. Meeting Rooms\")\n    print('Sample input:', \"intervals=[[0,30],[5,10],[15,20]]\")\n    print('Expected output:', \"false\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 252. Meeting Rooms\nfunc Solve220(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"252. Meeting Rooms\")\n\tfmt.Println(\"Sample input:\", \"intervals=[[0,30],[5,10],[15,20]]\")\n\tfmt.Println(\"Expected output:\", \"false\")\n\tfmt.Println(\"Call Solve220(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 221,
@@ -17310,8 +17310,8 @@ export const problems = [
     ],
     "pythonFunction": "meeting_rooms_ii",
     "goFunction": "Solve221",
-    "pythonCode": "def meeting_rooms_ii(*args):\n    \"\"\"Reference kernel for 253. Meeting Rooms II.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 253. Meeting Rooms II\nfunc Solve221(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 253. Meeting Rooms II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmeeting_rooms_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"253. Meeting Rooms II\")\n    print('Sample input:', \"intervals=[[0,30],[5,10],[15,20]]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 253. Meeting Rooms II\nfunc Solve221(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"253. Meeting Rooms II\")\n\tfmt.Println(\"Sample input:\", \"intervals=[[0,30],[5,10],[15,20]]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve221(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 222,
@@ -17386,8 +17386,8 @@ export const problems = [
     ],
     "pythonFunction": "reorder_list",
     "goFunction": "Solve222",
-    "pythonCode": "def reorder_list(*args):\n    \"\"\"Reference kernel for 143. Reorder List.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 143. Reorder List\nfunc Solve222(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 143. Reorder List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreorder_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"143. Reorder List\")\n    print('Sample input:', \"head=[1,2,3,4,5]\")\n    print('Expected output:', \"[1,5,2,4,3]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 143. Reorder List\nfunc Solve222(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"143. Reorder List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,4,5]\")\n\tfmt.Println(\"Expected output:\", \"[1,5,2,4,3]\")\n\tfmt.Println(\"Call Solve222(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 223,
@@ -17464,8 +17464,8 @@ export const problems = [
     ],
     "pythonFunction": "subtree_of_another_tree",
     "goFunction": "Solve223",
-    "pythonCode": "def subtree_of_another_tree(*args):\n    \"\"\"Reference kernel for 572. Subtree of Another Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 572. Subtree of Another Tree\nfunc Solve223(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 572. Subtree of Another Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsubtree_of_another_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"572. Subtree of Another Tree\")\n    print('Sample input:', \"root=[3,4,5,1,2], subRoot=[4,1,2]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 572. Subtree of Another Tree\nfunc Solve223(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"572. Subtree of Another Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[3,4,5,1,2], subRoot=[4,1,2]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve223(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 224,
@@ -17542,8 +17542,8 @@ export const problems = [
     ],
     "pythonFunction": "lowest_common_ancestor_of_a_binary_search_tree",
     "goFunction": "Solve224",
-    "pythonCode": "def lowest_common_ancestor_of_a_binary_search_tree(*args):\n    \"\"\"Reference kernel for 235. Lowest Common Ancestor of a Binary Search Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 235. Lowest Common Ancestor of a Binary Search Tree\nfunc Solve224(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 235. Lowest Common Ancestor of a Binary Search Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlowest_common_ancestor_of_a_binary_search_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"235. Lowest Common Ancestor of a Binary Search Tree\")\n    print('Sample input:', \"root=[6,2,8,0,4,7,9,null,null,3,5], p=2, q=8\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 235. Lowest Common Ancestor of a Binary Search Tree\nfunc Solve224(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"235. Lowest Common Ancestor of a Binary Search Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[6,2,8,0,4,7,9,null,null,3,5], p=2, q=8\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve224(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 225,
@@ -17620,8 +17620,8 @@ export const problems = [
     ],
     "pythonFunction": "serialize_and_deserialize_binary_tree",
     "goFunction": "Solve225",
-    "pythonCode": "def serialize_and_deserialize_binary_tree(*args):\n    \"\"\"Reference kernel for 297. Serialize and Deserialize Binary Tree.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 297. Serialize and Deserialize Binary Tree\nfunc Solve225(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 297. Serialize and Deserialize Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nserialize_and_deserialize_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"297. Serialize and Deserialize Binary Tree\")\n    print('Sample input:', \"root=[1,2,3,null,null,4,5]\")\n    print('Expected output:', \"deserialize(serialize(root)) equals the original tree\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 297. Serialize and Deserialize Binary Tree\nfunc Solve225(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"297. Serialize and Deserialize Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,3,null,null,4,5]\")\n\tfmt.Println(\"Expected output:\", \"deserialize(serialize(root)) equals the original tree\")\n\tfmt.Println(\"Call Solve225(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 226,
@@ -17698,8 +17698,8 @@ export const problems = [
     ],
     "pythonFunction": "top_k_frequent_elements",
     "goFunction": "Solve226",
-    "pythonCode": "def top_k_frequent_elements(*args):\n    \"\"\"Reference kernel for 347. Top K Frequent Elements.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 347. Top K Frequent Elements\nfunc Solve226(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 347. Top K Frequent Elements.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ntop_k_frequent_elements = solve\n\n\nif __name__ == \"__main__\":\n    print(\"347. Top K Frequent Elements\")\n    print('Sample input:', \"nums=[1,1,1,2,2,3], k=2\")\n    print('Expected output:', \"[1,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 347. Top K Frequent Elements\nfunc Solve226(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"347. Top K Frequent Elements\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,1,1,2,2,3], k=2\")\n\tfmt.Println(\"Expected output:\", \"[1,2]\")\n\tfmt.Println(\"Call Solve226(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 227,
@@ -17778,8 +17778,8 @@ export const problems = [
     ],
     "pythonFunction": "longest_repeating_character_replacement",
     "goFunction": "Solve227",
-    "pythonCode": "def longest_repeating_character_replacement(*args):\n    \"\"\"Reference kernel for 424. Longest Repeating Character Replacement.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n",
-    "goCode": "// 424. Longest Repeating Character Replacement\nfunc Solve227(args ...any) any {\n\treturn len(args)\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 424. Longest Repeating Character Replacement.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nlongest_repeating_character_replacement = solve\n\n\nif __name__ == \"__main__\":\n    print(\"424. Longest Repeating Character Replacement\")\n    print('Sample input:', \"s=\\\"AABABBA\\\", k=1\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 424. Longest Repeating Character Replacement\nfunc Solve227(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"424. Longest Repeating Character Replacement\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"AABABBA\\\", k=1\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve227(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 228,
@@ -17856,8 +17856,8 @@ export const problems = [
     ],
     "pythonFunction": "encode_and_decode_strings",
     "goFunction": "Solve228",
-    "pythonCode": "def encode_and_decode_strings(*args):\n    \"\"\"Reference kernel for 271. Encode and Decode Strings.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 271. Encode and Decode Strings\nfunc Solve228(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 271. Encode and Decode Strings.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nencode_and_decode_strings = solve\n\n\nif __name__ == \"__main__\":\n    print(\"271. Encode and Decode Strings\")\n    print('Sample input:', \"strs=[\\\"lint\\\",\\\"code\\\",\\\"love\\\"]\")\n    print('Expected output:', \"decode(encode(strs))=[\\\"lint\\\",\\\"code\\\",\\\"love\\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 271. Encode and Decode Strings\nfunc Solve228(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"271. Encode and Decode Strings\")\n\tfmt.Println(\"Sample input:\", \"strs=[\\\"lint\\\",\\\"code\\\",\\\"love\\\"]\")\n\tfmt.Println(\"Expected output:\", \"decode(encode(strs))=[\\\"lint\\\",\\\"code\\\",\\\"love\\\"]\")\n\tfmt.Println(\"Call Solve228(...) with parsed arguments for this problem.\")\n}\n"
   },
   {
     "id": 229,
@@ -17929,8 +17929,8 @@ export const problems = [
     ],
     "pythonFunction": "palindromic_substrings",
     "goFunction": "Solve229",
-    "pythonCode": "def palindromic_substrings(*args):\n    \"\"\"Reference kernel for 647. Palindromic Substrings.\n\n    The website explains the exact platform adaptation. This function is\n    intentionally small so tests can import every problem module.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
-    "goCode": "// 647. Palindromic Substrings\nfunc Solve229(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n"
+    "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable scaffold for 647. Palindromic Substrings.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npalindromic_substrings = solve\n\n\nif __name__ == \"__main__\":\n    print(\"647. Palindromic Substrings\")\n    print('Sample input:', \"s=\\\"aaa\\\"\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
+    "goCode": "package main\n\nimport \"fmt\"\n\n// 647. Palindromic Substrings\nfunc Solve229(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"647. Palindromic Substrings\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"aaa\\\"\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve229(...) with parsed arguments for this problem.\")\n}\n"
   }
 ] satisfies Problem[];
 
