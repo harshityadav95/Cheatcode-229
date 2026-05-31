@@ -1,0 +1,27 @@
+{
+  "total": 229,
+  "patterns": {
+    "Array / String": 27,
+    "BST": 7,
+    "Backtracking": 8,
+    "Binary Search": 11,
+    "Bit Manipulation": 10,
+    "DP 1D": 10,
+    "DP 2D / Kadane": 16,
+    "Graph": 18,
+    "Hash Map / Set": 14,
+    "Heap / Priority Queue": 10,
+    "Intervals": 6,
+    "Linked List": 17,
+    "Math / Greedy": 12,
+    "Monotonic Stack": 2,
+    "Prefix / Scan": 4,
+    "Queue / Simulation": 2,
+    "Sliding Window": 7,
+    "Stack": 8,
+    "Tree BFS": 5,
+    "Tree DFS": 20,
+    "Trie / Encoding": 5,
+    "Two Pointers": 10
+  }
+}
