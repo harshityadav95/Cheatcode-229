@@ -144,7 +144,8 @@ function App() {
   }
 
   const browseProblems = () => {
-    document.getElementById('catalog')?.scrollIntoView({ block: 'start' })
+    setShowLanding(false)
+    openProblem(activeProblem)
   }
 
   const openRandomProblem = () => {
@@ -251,184 +252,24 @@ function App() {
           />
         )}
 
-        <div id="catalog" className="mx-auto grid max-w-[1500px] scroll-mt-20 grid-cols-1 lg:grid-cols-[380px_minmax(0,1fr)]">
-          <aside className="hidden border-r border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950 lg:block">
-            <div className="sticky top-[65px] h-[calc(100vh-65px)]">
-              <ProblemBrowser
-                activeSlug={activeProblem.slug}
-                problems={filteredProblems}
-                query={query}
-                pattern={pattern}
-                difficulty={difficulty}
-                onQueryChange={setQuery}
-                onPatternChange={setPattern}
-                onDifficultyChange={setDifficulty}
-                onOpenProblem={openProblem}
-              />
-            </div>
-          </aside>
-
-          <section className="min-w-0 px-4 py-5 sm:px-6 lg:px-8">
-            <ProblemHeader
-              problem={activeProblem}
-              completion={completion}
-              previousProblem={previousProblem}
-              nextProblem={nextProblem}
-              onOpenProblem={openProblem}
-            />
-
-            <div className="mt-5 grid grid-cols-1 gap-5 xl:grid-cols-[minmax(0,1fr)_420px]">
-              <div className="space-y-5">
-                <Card className="rounded-lg border-slate-200 shadow-sm dark:border-slate-800">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-base">
-                      <BookOpen className="size-4 text-emerald-700 dark:text-emerald-300" />
-                      Problem Statement
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <p className="leading-7 text-slate-700 dark:text-slate-300">{activeProblem.prompt}</p>
-                    <ReferenceLinks problem={activeProblem} />
-                    <ExampleBlock problem={activeProblem} />
-                    <div className="grid gap-3 sm:grid-cols-2">
-                      <InfoPill label="Time" value={activeProblem.time} />
-                      <InfoPill label="Space" value={activeProblem.space} />
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="rounded-lg border-slate-200 shadow-sm dark:border-slate-800">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-base">
-                      <Sparkles className="size-4 text-amber-700 dark:text-amber-300" />
-                      Thinking and Logic
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <Accordion type="multiple" defaultValue={['intuition', 'optimized']} className="w-full">
-                      <AccordionItem value="intuition">
-                        <AccordionTrigger>Intuition</AccordionTrigger>
-                        <AccordionContent>{activeProblem.intuition}</AccordionContent>
-                      </AccordionItem>
-                      <AccordionItem value="brute">
-                        <AccordionTrigger>Brute force baseline</AccordionTrigger>
-                        <AccordionContent>{activeProblem.brute}</AccordionContent>
-                      </AccordionItem>
-                      <AccordionItem value="optimized">
-                        <AccordionTrigger>Optimized approach</AccordionTrigger>
-                        <AccordionContent>{activeProblem.optimized}</AccordionContent>
-                      </AccordionItem>
-                      <AccordionItem value="proof">
-                        <AccordionTrigger>Invariant and proof sketch</AccordionTrigger>
-                        <AccordionContent className="space-y-3">
-                          <p>{activeProblem.invariant}</p>
-                          <p>{activeProblem.proof}</p>
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
-                  </CardContent>
-                </Card>
-
-                <SolutionTabs problem={activeProblem} />
-                <NotesCard value={noteText} onChange={updateNote} />
-              </div>
-
-              <div className="space-y-5">
-                <Card className="rounded-lg border-slate-200 shadow-sm dark:border-slate-800">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-base">
-                      <Network className="size-4 text-cyan-700 dark:text-cyan-300" />
-                      Reference Diagram
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ConceptDiagram problem={activeProblem} />
-                  </CardContent>
-                </Card>
-
-                <Card className="rounded-lg border-slate-200 shadow-sm dark:border-slate-800">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2 text-base">
-                      <ListFilter className="size-4 text-violet-700 dark:text-violet-300" />
-                      Edge Checklist
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div>
-                      <h3 className="text-sm font-semibold">Clarify before coding</h3>
-                      <ul className="mt-2 space-y-2 text-sm text-slate-700 dark:text-slate-300">
-                        {activeProblem.clarify.map((item) => (
-                          <li key={item} className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2 dark:border-slate-800 dark:bg-slate-900">
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    {activeProblem.edgeChecklist && (
-                      <>
-                        <Separator />
-                        <div>
-                          <h3 className="text-sm font-semibold">Edge cases</h3>
-                          <div className="mt-2 flex flex-wrap gap-2">
-                            {activeProblem.edgeChecklist.split(';').map((item) => (
-                              <Badge key={item.trim()} variant="outline" className="bg-white dark:bg-slate-900">
-                                {item.trim()}
-                              </Badge>
-                            ))}
-                          </div>
-                        </div>
-                      </>
-                    )}
-                    <Separator />
-                    <div>
-                      <h3 className="text-sm font-semibold">Common mistakes</h3>
-                      <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700 dark:text-slate-300">
-                        {activeProblem.pitfalls.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    {activeProblem.implementationCheckpoints.length > 0 && (
-                      <>
-                        <Separator />
-                        <div>
-                          <h3 className="text-sm font-semibold">Implementation checkpoints</h3>
-                          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700 dark:text-slate-300">
-                            {activeProblem.implementationCheckpoints.map((item) => (
-                              <li key={item}>{item}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      </>
-                    )}
-                    <Separator />
-                    <div>
-                      <h3 className="text-sm font-semibold">Follow-up drills</h3>
-                      <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700 dark:text-slate-300">
-                        {activeProblem.drills.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    {activeProblem.followUps.length > 0 && (
-                      <>
-                        <Separator />
-                        <div>
-                          <h3 className="text-sm font-semibold">Follow-up questions</h3>
-                          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700 dark:text-slate-300">
-                            {activeProblem.followUps.map((item) => (
-                              <li key={item}>{item}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      </>
-                    )}
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </section>
-        </div>
+        {!showLanding && (
+          <ProblemWorkspace
+            activeProblem={activeProblem}
+            completion={completion}
+            previousProblem={previousProblem}
+            nextProblem={nextProblem}
+            filteredProblems={filteredProblems}
+            query={query}
+            pattern={pattern}
+            difficulty={difficulty}
+            noteText={noteText}
+            onQueryChange={setQuery}
+            onPatternChange={setPattern}
+            onDifficultyChange={setDifficulty}
+            onOpenProblem={openProblem}
+            onUpdateNote={updateNote}
+          />
+        )}
       </main>
     </TooltipProvider>
   )
@@ -501,6 +342,219 @@ function LandingHero({
         </div>
       </div>
     </section>
+  )
+}
+
+function ProblemWorkspace({
+  activeProblem,
+  completion,
+  previousProblem,
+  nextProblem,
+  filteredProblems,
+  query,
+  pattern,
+  difficulty,
+  noteText,
+  onQueryChange,
+  onPatternChange,
+  onDifficultyChange,
+  onOpenProblem,
+  onUpdateNote,
+}: {
+  activeProblem: Problem
+  completion: number
+  previousProblem: Problem
+  nextProblem: Problem
+  filteredProblems: Problem[]
+  query: string
+  pattern: string
+  difficulty: DifficultyFilter
+  noteText: string
+  onQueryChange: (value: string) => void
+  onPatternChange: (value: string) => void
+  onDifficultyChange: (value: DifficultyFilter) => void
+  onOpenProblem: (problem: Problem) => void
+  onUpdateNote: (value: string) => void
+}) {
+  return (
+    <div id="catalog" className="grid w-full grid-cols-1 lg:grid-cols-[360px_minmax(0,1fr)] 2xl:grid-cols-[380px_minmax(0,1fr)]">
+      <aside className="hidden border-r border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950 lg:block">
+        <div className="sticky top-[65px] h-[calc(100vh-65px)]">
+          <ProblemBrowser
+            activeSlug={activeProblem.slug}
+            problems={filteredProblems}
+            query={query}
+            pattern={pattern}
+            difficulty={difficulty}
+            onQueryChange={onQueryChange}
+            onPatternChange={onPatternChange}
+            onDifficultyChange={onDifficultyChange}
+            onOpenProblem={onOpenProblem}
+          />
+        </div>
+      </aside>
+
+      <section className="min-w-0 px-4 py-5 sm:px-6 lg:px-8">
+        <ProblemHeader
+          problem={activeProblem}
+          completion={completion}
+          previousProblem={previousProblem}
+          nextProblem={nextProblem}
+          onOpenProblem={onOpenProblem}
+        />
+
+        <div className="mt-5 grid grid-cols-1 gap-5">
+          <div className="space-y-5">
+            <Card className="rounded-lg border-slate-200 shadow-sm dark:border-slate-800">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-base">
+                  <BookOpen className="size-4 text-emerald-700 dark:text-emerald-300" />
+                  Problem Statement
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="leading-7 text-slate-700 dark:text-slate-300">{activeProblem.prompt}</p>
+                <ReferenceLinks problem={activeProblem} />
+                <ExampleBlock problem={activeProblem} />
+                <div className="grid gap-3 sm:grid-cols-2">
+                  <InfoPill label="Time" value={activeProblem.time} />
+                  <InfoPill label="Space" value={activeProblem.space} />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="rounded-lg border-slate-200 shadow-sm dark:border-slate-800">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-base">
+                  <Sparkles className="size-4 text-amber-700 dark:text-amber-300" />
+                  Thinking and Logic
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <Accordion type="multiple" defaultValue={['intuition', 'optimized']} className="w-full">
+                  <AccordionItem value="intuition">
+                    <AccordionTrigger>Intuition</AccordionTrigger>
+                    <AccordionContent>{activeProblem.intuition}</AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="brute">
+                    <AccordionTrigger>Brute force baseline</AccordionTrigger>
+                    <AccordionContent>{activeProblem.brute}</AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="optimized">
+                    <AccordionTrigger>Optimized approach</AccordionTrigger>
+                    <AccordionContent>{activeProblem.optimized}</AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="proof">
+                    <AccordionTrigger>Invariant and proof sketch</AccordionTrigger>
+                    <AccordionContent className="space-y-3">
+                      <p>{activeProblem.invariant}</p>
+                      <p>{activeProblem.proof}</p>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </CardContent>
+            </Card>
+
+            <SolutionTabs problem={activeProblem} />
+            <NotesCard value={noteText} onChange={onUpdateNote} />
+          </div>
+
+          <div className="space-y-5">
+            <Card className="rounded-lg border-slate-200 shadow-sm dark:border-slate-800">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-base">
+                  <Network className="size-4 text-cyan-700 dark:text-cyan-300" />
+                  Reference Diagram
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ConceptDiagram problem={activeProblem} />
+              </CardContent>
+            </Card>
+
+            <Card className="rounded-lg border-slate-200 shadow-sm dark:border-slate-800">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-base">
+                  <ListFilter className="size-4 text-violet-700 dark:text-violet-300" />
+                  Edge Checklist
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h3 className="text-sm font-semibold">Clarify before coding</h3>
+                  <ul className="mt-2 space-y-2 text-sm text-slate-700 dark:text-slate-300">
+                    {activeProblem.clarify.map((item) => (
+                      <li key={item} className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2 dark:border-slate-800 dark:bg-slate-900">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                {activeProblem.edgeChecklist && (
+                  <>
+                    <Separator />
+                    <div>
+                      <h3 className="text-sm font-semibold">Edge cases</h3>
+                      <div className="mt-2 flex flex-wrap gap-2">
+                        {activeProblem.edgeChecklist.split(';').map((item) => (
+                          <Badge key={item.trim()} variant="outline" className="bg-white dark:bg-slate-900">
+                            {item.trim()}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                )}
+                <Separator />
+                <div>
+                  <h3 className="text-sm font-semibold">Common mistakes</h3>
+                  <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700 dark:text-slate-300">
+                    {activeProblem.pitfalls.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                {activeProblem.implementationCheckpoints.length > 0 && (
+                  <>
+                    <Separator />
+                    <div>
+                      <h3 className="text-sm font-semibold">Implementation checkpoints</h3>
+                      <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700 dark:text-slate-300">
+                        {activeProblem.implementationCheckpoints.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </>
+                )}
+                <Separator />
+                <div>
+                  <h3 className="text-sm font-semibold">Follow-up drills</h3>
+                  <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700 dark:text-slate-300">
+                    {activeProblem.drills.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                {activeProblem.followUps.length > 0 && (
+                  <>
+                    <Separator />
+                    <div>
+                      <h3 className="text-sm font-semibold">Follow-up questions</h3>
+                      <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-700 dark:text-slate-300">
+                        {activeProblem.followUps.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </>
+                )}
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+    </div>
   )
 }
 
