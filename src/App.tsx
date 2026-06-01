@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import {
+  ArrowDown,
   BookOpen,
   ChevronLeft,
   ChevronRight,
@@ -14,6 +15,7 @@ import {
   NotebookPen,
   Search,
   Sparkles,
+  Shuffle,
   Sun,
 } from 'lucide-react'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
@@ -38,10 +40,15 @@ type ThemeMode = 'light' | 'dark'
 const difficulties: DifficultyFilter[] = ['All', 'Easy', 'Medium', 'Hard']
 const notesStoragePrefix = 'cheatcode-229:notes:'
 const themeStorageKey = 'cheatcode-229:theme'
+const problemHashPattern = /^#\/problems\/(.+)$/
 
 function hashSlug() {
-  const match = window.location.hash.match(/^#\/problems\/(.+)$/)
+  const match = window.location.hash.match(problemHashPattern)
   return match?.[1] ?? problems[0].slug
+}
+
+function hasProblemHash() {
+  return problemHashPattern.test(window.location.hash)
 }
 
 function loadStoredNotes() {
@@ -79,6 +86,7 @@ function loadStoredTheme(): ThemeMode {
 
 function App() {
   const [activeSlug, setActiveSlug] = useState(hashSlug)
+  const [showLanding, setShowLanding] = useState(() => !hasProblemHash())
   const [query, setQuery] = useState('')
   const [pattern, setPattern] = useState('All')
   const [difficulty, setDifficulty] = useState<DifficultyFilter>('All')
@@ -86,11 +94,11 @@ function App() {
   const [theme, setTheme] = useState<ThemeMode>(loadStoredTheme)
 
   useEffect(() => {
-    const onHashChange = () => setActiveSlug(hashSlug())
-    window.addEventListener('hashchange', onHashChange)
-    if (!window.location.hash) {
-      window.history.replaceState(null, '', `#/problems/${problems[0].slug}`)
+    const onHashChange = () => {
+      setActiveSlug(hashSlug())
+      setShowLanding(!hasProblemHash())
     }
+    window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
 
@@ -133,6 +141,16 @@ function App() {
 
   const openProblem = (problem: Problem) => {
     window.location.hash = `/problems/${problem.slug}`
+  }
+
+  const browseProblems = () => {
+    document.getElementById('catalog')?.scrollIntoView({ block: 'start' })
+  }
+
+  const openRandomProblem = () => {
+    const randomProblem = problems[Math.floor(Math.random() * problems.length)]
+    setShowLanding(false)
+    openProblem(randomProblem)
   }
 
   const toggleTheme = () => {
@@ -191,7 +209,7 @@ function App() {
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-2">
                 <Code2 className="size-5 text-cyan-700 dark:text-cyan-300" />
-                <h1 className="truncate text-lg font-semibold tracking-normal">Cheatcode 229</h1>
+                <div className="truncate text-lg font-semibold tracking-normal">Cheatcode 229</div>
                 <Badge variant="secondary" className="hidden sm:inline-flex">
                   DSA 2026
                 </Badge>
@@ -224,7 +242,16 @@ function App() {
           </div>
         </header>
 
-        <div className="mx-auto grid max-w-[1500px] grid-cols-1 lg:grid-cols-[380px_minmax(0,1fr)]">
+        {showLanding && (
+          <LandingHero
+            problemCount={problems.length}
+            patternCount={patterns.length}
+            onBrowse={browseProblems}
+            onRandomProblem={openRandomProblem}
+          />
+        )}
+
+        <div id="catalog" className="mx-auto grid max-w-[1500px] scroll-mt-20 grid-cols-1 lg:grid-cols-[380px_minmax(0,1fr)]">
           <aside className="hidden border-r border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950 lg:block">
             <div className="sticky top-[65px] h-[calc(100vh-65px)]">
               <ProblemBrowser
@@ -404,6 +431,76 @@ function App() {
         </div>
       </main>
     </TooltipProvider>
+  )
+}
+
+function LandingHero({
+  problemCount,
+  patternCount,
+  onBrowse,
+  onRandomProblem,
+}: {
+  problemCount: number
+  patternCount: number
+  onBrowse: () => void
+  onRandomProblem: () => void
+}) {
+  return (
+    <section className="landing-hero relative isolate overflow-hidden bg-slate-950 text-white">
+      <img
+        src="/cheatcode-hero.png"
+        alt=""
+        className="absolute inset-0 -z-20 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 -z-10 bg-slate-950/65" />
+      <div className="mx-auto flex h-full max-w-[1500px] items-center px-4 py-10 sm:px-6 lg:px-8">
+        <div className="max-w-3xl space-y-6">
+          <Badge className="border border-cyan-300/40 bg-cyan-300/15 text-cyan-50">
+            DSA 2026
+          </Badge>
+          <div className="space-y-4">
+            <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-normal text-white sm:text-5xl lg:text-6xl">
+              Cheatcode 229
+            </h1>
+            <p className="max-w-2xl text-base leading-7 text-slate-100 sm:text-lg">
+              A focused interview workspace for problem statements, proof sketches, diagrams, and Python/Go solution files.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <Button
+              type="button"
+              size="lg"
+              className="h-10 bg-white text-slate-950 hover:bg-cyan-50"
+              onClick={onBrowse}
+            >
+              <ArrowDown className="size-4" />
+              Browse problems
+            </Button>
+            <Button
+              type="button"
+              variant="outline"
+              size="lg"
+              className="h-10 border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white"
+              onClick={onRandomProblem}
+            >
+              <Shuffle className="size-4" />
+              Random problem
+            </Button>
+          </div>
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-200">
+            <span>
+              <strong className="text-white">{problemCount}</strong> problems
+            </span>
+            <span>
+              <strong className="text-white">{patternCount}</strong> patterns
+            </span>
+            <span>
+              <strong className="text-white">Python + Go</strong> files
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 

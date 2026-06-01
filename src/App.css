@@ -2,6 +2,10 @@
   min-height: 100vh;
 }
 
+.landing-hero {
+  min-height: min(640px, calc(100svh - 116px));
+}
+
 :root {
   --diagram-panel: #ffffff;
   --diagram-border: #cbd5e1;
