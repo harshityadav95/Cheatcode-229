@@ -1,6 +1,6 @@
 # 039. Binary Tree Right Side View
 
-- LeetCode: 199
+- LeetCode: [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
 - Pattern: Tree BFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the values visible when viewing a binary tree from the right side, top to bottom.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/binary-tree-right-side-view/)
+- [LeetCode community solutions](https://leetcode.com/problems/binary-tree-right-side-view/solutions/)
+- [Breadth-first search topic](https://leetcode.com/tag/breadth-first-search/)
 
 ## Example
 

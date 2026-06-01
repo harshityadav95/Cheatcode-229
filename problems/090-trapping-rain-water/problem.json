@@ -75,6 +75,24 @@
   ],
   "pythonFunction": "trapping_rain_water",
   "goFunction": "Solve090",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/trapping-rain-water/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/trapping-rain-water/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Two pointers topic",
+      "url": "https://leetcode.com/tag/two-pointers/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

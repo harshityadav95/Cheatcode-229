@@ -1,6 +1,6 @@
 # 054. Successful Pairs of Spells and Potions
 
-- LeetCode: 2300
+- LeetCode: [2300. Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/)
 - Pattern: Binary Search
 - Difficulty: Medium
 - Time: O(log n) or O(n log R)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 For each spell, count potions such that spell*potion is at least success.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/)
+- [LeetCode community solutions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/solutions/)
+- [Binary search topic](https://leetcode.com/tag/binary-search/)
 
 ## Example
 

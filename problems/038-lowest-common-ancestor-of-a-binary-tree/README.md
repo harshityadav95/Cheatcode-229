@@ -1,6 +1,6 @@
 # 038. Lowest Common Ancestor of a Binary Tree
 
-- LeetCode: 236
+- LeetCode: [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the lowest node in a binary tree that has both p and q as descendants, where a node can be its own descendant.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

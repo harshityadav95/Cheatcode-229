@@ -1,6 +1,6 @@
 # 148. Binary Search Tree Iterator
 
-- LeetCode: 173
+- LeetCode: [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
 - Pattern: BST
 - Difficulty: Medium
 - Time: O(h) to O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Implement a BST iterator with next returning the next smallest value and hasNext reporting availability.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/binary-search-tree-iterator/)
+- [LeetCode community solutions](https://leetcode.com/problems/binary-search-tree-iterator/solutions/)
+- [Binary search tree topic](https://leetcode.com/tag/binary-search-tree/)
 
 ## Example
 

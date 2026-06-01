@@ -1,6 +1,6 @@
 # 212. Sum of Two Integers
 
-- LeetCode: 371
+- LeetCode: [371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
 - Pattern: Bit Manipulation
 - Difficulty: Easy
 - Time: O(n) or O(bits)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the sum of two integers without using the plus or minus operators.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/sum-of-two-integers/)
+- [LeetCode community solutions](https://leetcode.com/problems/sum-of-two-integers/solutions/)
+- [Bit manipulation topic](https://leetcode.com/tag/bit-manipulation/)
 
 ## Example
 

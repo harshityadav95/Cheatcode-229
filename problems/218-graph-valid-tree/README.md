@@ -1,6 +1,6 @@
 # 218. Graph Valid Tree
 
-- LeetCode: 261
+- LeetCode: [261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether an undirected graph with n nodes is a valid tree: connected and acyclic.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/graph-valid-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/graph-valid-tree/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

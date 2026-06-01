@@ -1,6 +1,6 @@
 # 142. Construct Binary Tree from Inorder and Postorder Traversal
 
-- LeetCode: 106
+- LeetCode: [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Build a binary tree from inorder and postorder traversal arrays with unique values.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
+- [LeetCode community solutions](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

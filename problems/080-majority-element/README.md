@@ -1,6 +1,6 @@
 # 080. Majority Element
 
-- LeetCode: 169
+- LeetCode: [169. Majority Element](https://leetcode.com/problems/majority-element/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the majority element that appears more than floor(n/2) times.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/majority-element/)
+- [LeetCode community solutions](https://leetcode.com/problems/majority-element/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

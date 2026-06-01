@@ -1,6 +1,6 @@
 # 073. Minimum Number of Arrows to Burst Balloons
 
-- LeetCode: 452
+- LeetCode: [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
 - Pattern: Intervals
 - Difficulty: Medium
 - Time: O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Each balloon is an interval on the x-axis. Return the fewest arrows needed to burst all balloons, where one arrow hits all intervals containing its x.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
+- [LeetCode community solutions](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/solutions/)
+- [Sorting topic](https://leetcode.com/tag/sorting/)
 
 ## Example
 

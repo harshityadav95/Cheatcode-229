@@ -1,6 +1,6 @@
 # 084. Jump Game
 
-- LeetCode: 55
+- LeetCode: [55. Jump Game](https://leetcode.com/problems/jump-game/)
 - Pattern: Math / Greedy
 - Difficulty: Medium
 - Time: O(n) or O(log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given maximum jump lengths at each index, return whether the last index is reachable from index 0.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/jump-game/)
+- [LeetCode community solutions](https://leetcode.com/problems/jump-game/solutions/)
+- [Greedy topic](https://leetcode.com/tag/greedy/)
 
 ## Example
 

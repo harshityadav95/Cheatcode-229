@@ -1,6 +1,6 @@
 # 011. Is Subsequence
 
-- LeetCode: 392
+- LeetCode: [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)
 - Pattern: Two Pointers
 - Difficulty: Medium
 - Time: O(n) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Determine whether s can be obtained by deleting characters from t without reordering the remaining characters.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/is-subsequence/)
+- [LeetCode community solutions](https://leetcode.com/problems/is-subsequence/solutions/)
+- [Two pointers topic](https://leetcode.com/tag/two-pointers/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 177. Maximum Sum Circular Subarray
 
-- LeetCode: 918
+- LeetCode: [918. Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the maximum non-empty subarray sum in a circular array.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/maximum-sum-circular-subarray/)
+- [LeetCode community solutions](https://leetcode.com/problems/maximum-sum-circular-subarray/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

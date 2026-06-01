@@ -1,6 +1,6 @@
 # 102. Longest Substring Without Repeating Characters
 
-- LeetCode: 3
+- LeetCode: [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 - Pattern: Sliding Window
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the length of the longest substring without repeated characters.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- [LeetCode community solutions](https://leetcode.com/problems/longest-substring-without-repeating-characters/solutions/)
+- [Sliding window topic](https://leetcode.com/tag/sliding-window/)
 
 ## Example
 

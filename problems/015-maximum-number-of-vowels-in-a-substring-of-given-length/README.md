@@ -1,6 +1,6 @@
 # 015. Maximum Number of Vowels in a Substring of Given Length
 
-- LeetCode: 1456
+- LeetCode: [1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
 - Pattern: Sliding Window
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the largest number of vowels in any substring of length k.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
+- [LeetCode community solutions](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/solutions/)
+- [Sliding window topic](https://leetcode.com/tag/sliding-window/)
 
 ## Example
 

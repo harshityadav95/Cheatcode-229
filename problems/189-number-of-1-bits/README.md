@@ -1,6 +1,6 @@
 # 189. Number of 1 Bits
 
-- LeetCode: 191
+- LeetCode: [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - Pattern: Bit Manipulation
 - Difficulty: Easy
 - Time: O(n) or O(bits)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the number of 1 bits in an unsigned integer.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/number-of-1-bits/)
+- [LeetCode community solutions](https://leetcode.com/problems/number-of-1-bits/solutions/)
+- [Bit manipulation topic](https://leetcode.com/tag/bit-manipulation/)
 
 ## Example
 

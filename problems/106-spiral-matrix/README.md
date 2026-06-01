@@ -1,6 +1,6 @@
 # 106. Spiral Matrix
 
-- LeetCode: 54
+- LeetCode: [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return all matrix elements in clockwise spiral order.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/spiral-matrix/)
+- [LeetCode community solutions](https://leetcode.com/problems/spiral-matrix/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

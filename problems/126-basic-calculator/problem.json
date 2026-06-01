@@ -72,6 +72,24 @@
   ],
   "pythonFunction": "basic_calculator",
   "goFunction": "Solve126",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/basic-calculator/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/basic-calculator/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Stack topic",
+      "url": "https://leetcode.com/tag/stack/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

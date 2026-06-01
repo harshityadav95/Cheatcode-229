@@ -1,6 +1,6 @@
 # 019. Find Pivot Index
 
-- LeetCode: 724
+- LeetCode: [724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
 - Pattern: Prefix / Scan
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return an index where the sum of elements to its left equals the sum to its right, or -1 if none exists.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/find-pivot-index/)
+- [LeetCode community solutions](https://leetcode.com/problems/find-pivot-index/solutions/)
+- [Prefix sum topic](https://leetcode.com/tag/prefix-sum/)
 
 ## Example
 

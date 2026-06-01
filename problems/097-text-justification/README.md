@@ -1,6 +1,6 @@
 # 097. Text Justification
 
-- LeetCode: 68
+- LeetCode: [68. Text Justification](https://leetcode.com/problems/text-justification/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Pack words into lines of maxWidth with spaces distributed as evenly as possible; last line is left-justified.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/text-justification/)
+- [LeetCode community solutions](https://leetcode.com/problems/text-justification/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

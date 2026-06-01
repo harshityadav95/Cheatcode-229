@@ -1,6 +1,6 @@
 # 089. Candy
 
-- LeetCode: 135
+- LeetCode: [135. Candy](https://leetcode.com/problems/candy/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Distribute candies so every child gets at least one and higher-rated children than neighbors get more; minimize total.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/candy/)
+- [LeetCode community solutions](https://leetcode.com/problems/candy/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

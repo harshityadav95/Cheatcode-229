@@ -68,6 +68,24 @@
   ],
   "pythonFunction": "maximum_sum_circular_subarray",
   "goFunction": "Solve177",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/maximum-sum-circular-subarray/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/maximum-sum-circular-subarray/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Dynamic programming topic",
+      "url": "https://leetcode.com/tag/dynamic-programming/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

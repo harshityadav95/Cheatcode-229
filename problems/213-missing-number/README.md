@@ -1,6 +1,6 @@
 # 213. Missing Number
 
-- LeetCode: 268
+- LeetCode: [268. Missing Number](https://leetcode.com/problems/missing-number/)
 - Pattern: Bit Manipulation
 - Difficulty: Easy
 - Time: O(n) or O(bits)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 An array contains n distinct numbers from 0..n with one missing; return the missing number.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/missing-number/)
+- [LeetCode community solutions](https://leetcode.com/problems/missing-number/solutions/)
+- [Bit manipulation topic](https://leetcode.com/tag/bit-manipulation/)
 
 ## Example
 

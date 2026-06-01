@@ -73,6 +73,24 @@
   ],
   "pythonFunction": "flatten_binary_tree_to_linked_list",
   "goFunction": "Solve144",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Tree topic",
+      "url": "https://leetcode.com/tag/tree/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

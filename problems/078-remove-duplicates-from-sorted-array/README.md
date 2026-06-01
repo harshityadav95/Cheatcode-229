@@ -1,6 +1,6 @@
 # 078. Remove Duplicates from Sorted Array
 
-- LeetCode: 26
+- LeetCode: [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Remove duplicates from a sorted array in-place so each value appears once; return the count of kept values.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+- [LeetCode community solutions](https://leetcode.com/problems/remove-duplicates-from-sorted-array/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

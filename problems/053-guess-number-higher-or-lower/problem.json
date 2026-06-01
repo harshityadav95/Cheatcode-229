@@ -70,6 +70,24 @@
   ],
   "pythonFunction": "guess_number_higher_or_lower",
   "goFunction": "Solve053",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/guess-number-higher-or-lower/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/guess-number-higher-or-lower/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Binary search topic",
+      "url": "https://leetcode.com/tag/binary-search/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -74,6 +74,24 @@
   ],
   "pythonFunction": "construct_binary_tree_from_preorder_and_inorder_traversal",
   "goFunction": "Solve141",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Tree topic",
+      "url": "https://leetcode.com/tag/tree/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

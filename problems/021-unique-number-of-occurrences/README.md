@@ -1,6 +1,6 @@
 # 021. Unique Number of Occurrences
 
-- LeetCode: 1207
+- LeetCode: [1207. Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return true if every distinct value in the array has a distinct occurrence count.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/unique-number-of-occurrences/)
+- [LeetCode community solutions](https://leetcode.com/problems/unique-number-of-occurrences/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 150. Average of Levels in Binary Tree
 
-- LeetCode: 637
+- LeetCode: [637. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)
 - Pattern: Tree BFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the average node value at each binary-tree level.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/average-of-levels-in-binary-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/average-of-levels-in-binary-tree/solutions/)
+- [Breadth-first search topic](https://leetcode.com/tag/breadth-first-search/)
 
 ## Example
 

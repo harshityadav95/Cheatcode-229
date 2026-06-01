@@ -1,6 +1,6 @@
 # 215. Decode Ways
 
-- LeetCode: 91
+- LeetCode: [91. Decode Ways](https://leetcode.com/problems/decode-ways/)
 - Pattern: DP 1D
 - Difficulty: Medium
 - Time: O(n * state)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the number of ways to decode a digit string where 1->A through 26->Z.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/decode-ways/)
+- [LeetCode community solutions](https://leetcode.com/problems/decode-ways/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

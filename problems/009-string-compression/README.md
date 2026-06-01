@@ -1,6 +1,6 @@
 # 009. String Compression
 
-- LeetCode: 443
+- LeetCode: [443. String Compression](https://leetcode.com/problems/string-compression/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Compress a character array in-place by replacing repeated groups with the character followed by its count digits; return the new length.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/string-compression/)
+- [LeetCode community solutions](https://leetcode.com/problems/string-compression/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

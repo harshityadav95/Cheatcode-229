@@ -70,6 +70,24 @@
   ],
   "pythonFunction": "successful_pairs_of_spells_and_potions",
   "goFunction": "Solve054",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Binary search topic",
+      "url": "https://leetcode.com/tag/binary-search/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

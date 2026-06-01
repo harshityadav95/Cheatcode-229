@@ -1,6 +1,6 @@
 # 099. Two Sum II - Input Array Is Sorted
 
-- LeetCode: 167
+- LeetCode: [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 - Pattern: Two Pointers
 - Difficulty: Medium
 - Time: O(n) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 In a 1-indexed sorted array, return the two indices whose values sum to target.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+- [LeetCode community solutions](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/solutions/)
+- [Two pointers topic](https://leetcode.com/tag/two-pointers/)
 
 ## Example
 

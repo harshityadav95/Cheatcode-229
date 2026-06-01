@@ -72,6 +72,24 @@
   ],
   "pythonFunction": "merge_two_sorted_lists",
   "goFunction": "Solve129",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/merge-two-sorted-lists/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Linked list topic",
+      "url": "https://leetcode.com/tag/linked-list/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

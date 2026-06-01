@@ -1,6 +1,6 @@
 # 164. Design Add and Search Words Data Structure
 
-- LeetCode: 211
+- LeetCode: [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
 - Pattern: Trie / Encoding
 - Difficulty: Hard
 - Time: O(total characters)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Design a word dictionary with addWord and search, where '.' in search matches any single character.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
+- [LeetCode community solutions](https://leetcode.com/problems/design-add-and-search-words-data-structure/solutions/)
+- [Trie topic](https://leetcode.com/tag/trie/)
 
 ## Example
 

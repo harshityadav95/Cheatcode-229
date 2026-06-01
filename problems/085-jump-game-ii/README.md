@@ -1,6 +1,6 @@
 # 085. Jump Game II
 
-- LeetCode: 45
+- LeetCode: [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/)
 - Pattern: Math / Greedy
 - Difficulty: Medium
 - Time: O(n) or O(log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the minimum jumps needed to reach the last index, assuming it is reachable.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/jump-game-ii/)
+- [LeetCode community solutions](https://leetcode.com/problems/jump-game-ii/solutions/)
+- [Greedy topic](https://leetcode.com/tag/greedy/)
 
 ## Example
 

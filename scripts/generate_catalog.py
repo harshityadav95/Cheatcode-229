@@ -555,6 +555,40 @@ DIFFICULTY = {
 }
 
 
+LEETCODE_SLUG_OVERRIDES = {
+    69: "sqrtx",
+    50: "powx-n",
+    380: "insert-delete-getrandom-o1",
+    1493: "longest-subarray-of-1s-after-deleting-one-element",
+}
+
+
+PATTERN_REFERENCE_TAGS = {
+    "Array / String": ("Array and string topic", "array"),
+    "Two Pointers": ("Two pointers topic", "two-pointers"),
+    "Sliding Window": ("Sliding window topic", "sliding-window"),
+    "Prefix / Scan": ("Prefix sum topic", "prefix-sum"),
+    "Hash Map / Set": ("Hash table topic", "hash-table"),
+    "Stack": ("Stack topic", "stack"),
+    "Monotonic Stack": ("Monotonic stack topic", "monotonic-stack"),
+    "Queue / Simulation": ("Queue topic", "queue"),
+    "Linked List": ("Linked list topic", "linked-list"),
+    "Tree DFS": ("Tree topic", "tree"),
+    "Tree BFS": ("Breadth-first search topic", "breadth-first-search"),
+    "BST": ("Binary search tree topic", "binary-search-tree"),
+    "Graph": ("Graph topic", "graph"),
+    "Heap / Priority Queue": ("Heap priority queue topic", "heap-priority-queue"),
+    "Binary Search": ("Binary search topic", "binary-search"),
+    "Backtracking": ("Backtracking topic", "backtracking"),
+    "DP 1D": ("Dynamic programming topic", "dynamic-programming"),
+    "DP 2D / Kadane": ("Dynamic programming topic", "dynamic-programming"),
+    "Bit Manipulation": ("Bit manipulation topic", "bit-manipulation"),
+    "Math / Greedy": ("Greedy topic", "greedy"),
+    "Trie / Encoding": ("Trie topic", "trie"),
+    "Intervals": ("Sorting topic", "sorting"),
+}
+
+
 PY_PATTERN_SNIPPETS = {
     "Array / String": "    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n",
     "Two Pointers": "    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n",
@@ -589,6 +623,40 @@ def snake(value: str) -> str:
     if name[0].isdigit():
         name = f"problem_{name}"
     return name
+
+
+def leetcode_slug(problem: dict) -> str:
+    return LEETCODE_SLUG_OVERRIDES.get(problem["leetcode"], slugify(problem["title"]))
+
+
+def leetcode_url(problem: dict) -> str:
+    return f"https://leetcode.com/problems/{leetcode_slug(problem)}/"
+
+
+def problem_references(problem: dict) -> list[dict[str, object]]:
+    problem_url = leetcode_url(problem)
+    topic_label, topic_slug = PATTERN_REFERENCE_TAGS.get(
+        problem["pattern"],
+        ("LeetCode topic reference", "algorithms"),
+    )
+    return [
+        {
+            "label": "LeetCode problem statement",
+            "url": problem_url,
+            "kind": "problem",
+            "required": True,
+        },
+        {
+            "label": "LeetCode community solutions",
+            "url": f"{problem_url}solutions/",
+            "kind": "solutions",
+        },
+        {
+            "label": topic_label,
+            "url": f"https://leetcode.com/tag/{topic_slug}/",
+            "kind": "topic",
+        },
+    ]
 
 
 def go_name(index: int) -> str:
@@ -906,8 +974,14 @@ def parse_fallback_problems() -> list[dict]:
 def parse_problems() -> list[dict]:
     pdf_path = ROOT / PDF_NAME
     if pdf_path.exists():
-        return parse_pdf_problems(pdf_path)
-    return parse_fallback_problems()
+        problems = parse_pdf_problems(pdf_path)
+    else:
+        problems = parse_fallback_problems()
+
+    for problem in problems:
+        problem["references"] = problem_references(problem)
+
+    return problems
 
 
 def python_kernel_code(problem: dict) -> str:
@@ -982,10 +1056,15 @@ def problem_readme(problem: dict) -> str:
     checkpoints = "\n".join(f"- {item}" for item in problem["implementationCheckpoints"])
     drills = "\n".join(f"- {item}" for item in problem["drills"])
     follow_ups = "\n".join(f"- {item}" for item in problem["followUps"])
+    references = "\n".join(
+        f"- [{reference['label']}]({reference['url']})"
+        for reference in problem["references"]
+    )
+    leetcode_problem = problem["references"][0]
 
     return f"""# {problem['id']:03d}. {problem['title']}
 
-- LeetCode: {problem['leetcode']}
+- LeetCode: [{problem['leetcode']}. {problem['title']}]({leetcode_problem['url']})
 - Pattern: {problem['pattern']}
 - Difficulty: {problem['difficulty']}
 - Time: {problem['time']}
@@ -996,6 +1075,10 @@ def problem_readme(problem: dict) -> str:
 ## Problem Statement
 
 {problem['prompt']}
+
+## References
+
+{references}
 
 ## Example
 
@@ -1081,6 +1164,13 @@ def main() -> None:
 
     type_defs = """export type DiagramType = "array" | "pointers" | "window" | "prefix" | "hash" | "stack" | "queue" | "list" | "tree" | "graph" | "heap" | "binary" | "backtracking" | "dp" | "bits" | "greedy" | "trie" | "intervals";
 
+export interface ProblemReference {
+  label: string;
+  url: string;
+  kind: "problem" | "solutions" | "topic";
+  required?: boolean;
+}
+
 export interface Problem {
   id: number;
   leetcode: number;
@@ -1089,6 +1179,7 @@ export interface Problem {
   pattern: string;
   difficulty: "Easy" | "Medium" | "Hard";
   sources: string[];
+  references: ProblemReference[];
   companies: string[];
   time: string;
   space: string;
@@ -1127,6 +1218,7 @@ export interface Problem {
             "pattern": p["pattern"],
             "pythonFunction": p["pythonFunction"],
             "goFunction": p["goFunction"],
+            "leetcodeUrl": p["references"][0]["url"],
             "sampleInput": p["example"]["input"],
             "sampleOutput": p["example"]["output"],
         }

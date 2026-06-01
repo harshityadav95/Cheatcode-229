@@ -74,6 +74,24 @@
   ],
   "pythonFunction": "domino_and_tromino_tiling",
   "goFunction": "Solve062",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/domino-and-tromino-tiling/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/domino-and-tromino-tiling/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Dynamic programming topic",
+      "url": "https://leetcode.com/tag/dynamic-programming/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

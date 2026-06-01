@@ -1,6 +1,6 @@
 # 108. Set Matrix Zeroes
 
-- LeetCode: 73
+- LeetCode: [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 If any matrix cell is zero, set its entire row and column to zero in-place.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/set-matrix-zeroes/)
+- [LeetCode community solutions](https://leetcode.com/problems/set-matrix-zeroes/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

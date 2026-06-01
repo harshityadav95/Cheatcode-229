@@ -72,6 +72,24 @@
   ],
   "pythonFunction": "course_schedule_ii",
   "goFunction": "Solve160",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/course-schedule-ii/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/course-schedule-ii/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Graph topic",
+      "url": "https://leetcode.com/tag/graph/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

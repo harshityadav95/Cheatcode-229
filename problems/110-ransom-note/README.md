@@ -1,6 +1,6 @@
 # 110. Ransom Note
 
-- LeetCode: 383
+- LeetCode: [383. Ransom Note](https://leetcode.com/problems/ransom-note/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether ransomNote can be built using each character from magazine at most once.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/ransom-note/)
+- [LeetCode community solutions](https://leetcode.com/problems/ransom-note/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

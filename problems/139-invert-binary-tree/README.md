@@ -1,6 +1,6 @@
 # 139. Invert Binary Tree
 
-- LeetCode: 226
+- LeetCode: [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Invert a binary tree by swapping every node's left and right children.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/invert-binary-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/invert-binary-tree/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

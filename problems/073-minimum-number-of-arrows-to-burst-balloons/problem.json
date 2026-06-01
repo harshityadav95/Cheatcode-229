@@ -69,6 +69,24 @@
   ],
   "pythonFunction": "minimum_number_of_arrows_to_burst_balloons",
   "goFunction": "Solve073",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Sorting topic",
+      "url": "https://leetcode.com/tag/sorting/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

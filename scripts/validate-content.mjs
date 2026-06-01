@@ -21,16 +21,27 @@ if (ids.size !== manifest.length) fail('Problem ids must be unique')
 if (leetcodeIds.size !== manifest.length) fail('LeetCode ids must be unique')
 
 for (const problem of manifest) {
-  const required = ['id', 'leetcode', 'title', 'slug', 'pattern', 'pythonFunction', 'goFunction', 'sampleInput', 'sampleOutput']
+  const required = ['id', 'leetcode', 'title', 'slug', 'pattern', 'pythonFunction', 'goFunction', 'leetcodeUrl', 'sampleInput', 'sampleOutput']
   for (const field of required) {
     if (!problem[field]) fail(`Problem ${problem.id} is missing ${field}`)
   }
+  if (!problem.leetcodeUrl.startsWith('https://leetcode.com/problems/')) {
+    fail(`Problem ${problem.id} has invalid LeetCode URL: ${problem.leetcodeUrl}`)
+  }
   if (!problemsTs.includes(`"slug": "${problem.slug}"`)) {
     fail(`Problem ${problem.id} is missing from src/data/problems.ts`)
+  }
+  if (!problemsTs.includes(`"url": "${problem.leetcodeUrl}"`)) {
+    fail(`Problem ${problem.id} is missing its LeetCode reference URL from src/data/problems.ts`)
   }
 }
 
 const diagramCount = (problemsTs.match(/"diagram":/g) ?? []).length
 if (diagramCount !== 229) {
   fail(`Expected 229 diagram specs, found ${diagramCount}`)
+}
+
+const leetcodeReferenceCount = (problemsTs.match(/"label": "LeetCode problem statement"/g) ?? []).length
+if (leetcodeReferenceCount !== 229) {
+  fail(`Expected 229 mandatory LeetCode references, found ${leetcodeReferenceCount}`)
 }

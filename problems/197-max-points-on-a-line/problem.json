@@ -70,6 +70,24 @@
   ],
   "pythonFunction": "max_points_on_a_line",
   "goFunction": "Solve197",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/max-points-on-a-line/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/max-points-on-a-line/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Greedy topic",
+      "url": "https://leetcode.com/tag/greedy/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

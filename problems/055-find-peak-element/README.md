@@ -1,6 +1,6 @@
 # 055. Find Peak Element
 
-- LeetCode: 162
+- LeetCode: [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)
 - Pattern: Binary Search
 - Difficulty: Medium
 - Time: O(log n) or O(n log R)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return any index i such that nums[i] is greater than its neighbors; outside the array counts as negative infinity.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/find-peak-element/)
+- [LeetCode community solutions](https://leetcode.com/problems/find-peak-element/solutions/)
+- [Binary search topic](https://leetcode.com/tag/binary-search/)
 
 ## Example
 

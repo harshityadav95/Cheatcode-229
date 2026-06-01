@@ -72,6 +72,24 @@
   ],
   "pythonFunction": "daily_temperatures",
   "goFunction": "Solve074",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/daily-temperatures/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/daily-temperatures/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Monotonic stack topic",
+      "url": "https://leetcode.com/tag/monotonic-stack/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

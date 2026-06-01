@@ -75,6 +75,24 @@
   ],
   "pythonFunction": "minimum_size_subarray_sum",
   "goFunction": "Solve101",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/minimum-size-subarray-sum/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/minimum-size-subarray-sum/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Two pointers topic",
+      "url": "https://leetcode.com/tag/two-pointers/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

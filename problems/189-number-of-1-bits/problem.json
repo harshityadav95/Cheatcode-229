@@ -78,6 +78,24 @@
   ],
   "pythonFunction": "number_of_1_bits",
   "goFunction": "Solve189",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/number-of-1-bits/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/number-of-1-bits/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Bit manipulation topic",
+      "url": "https://leetcode.com/tag/bit-manipulation/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

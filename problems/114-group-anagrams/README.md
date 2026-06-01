@@ -1,6 +1,6 @@
 # 114. Group Anagrams
 
-- LeetCode: 49
+- LeetCode: [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Group strings that are anagrams of each other.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/group-anagrams/)
+- [LeetCode community solutions](https://leetcode.com/problems/group-anagrams/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 066. Edit Distance
 
-- LeetCode: 72
+- LeetCode: [72. Edit Distance](https://leetcode.com/problems/edit-distance/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the minimum number of insertions, deletions, or replacements needed to transform word1 into word2.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/edit-distance/)
+- [LeetCode community solutions](https://leetcode.com/problems/edit-distance/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

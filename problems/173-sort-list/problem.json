@@ -71,6 +71,24 @@
   ],
   "pythonFunction": "sort_list",
   "goFunction": "Solve173",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/sort-list/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/sort-list/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Linked list topic",
+      "url": "https://leetcode.com/tag/linked-list/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

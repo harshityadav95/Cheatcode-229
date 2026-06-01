@@ -72,6 +72,24 @@
   ],
   "pythonFunction": "rotting_oranges",
   "goFunction": "Solve048",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/rotting-oranges/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/rotting-oranges/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Graph topic",
+      "url": "https://leetcode.com/tag/graph/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

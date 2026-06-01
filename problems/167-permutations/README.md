@@ -1,6 +1,6 @@
 # 167. Permutations
 
-- LeetCode: 46
+- LeetCode: [46. Permutations](https://leetcode.com/problems/permutations/)
 - Pattern: Backtracking
 - Difficulty: Medium
 - Time: O(branch^depth)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return all permutations of distinct input numbers.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/permutations/)
+- [LeetCode community solutions](https://leetcode.com/problems/permutations/solutions/)
+- [Backtracking topic](https://leetcode.com/tag/backtracking/)
 
 ## Example
 

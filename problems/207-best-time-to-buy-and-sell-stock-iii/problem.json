@@ -68,6 +68,24 @@
   ],
   "pythonFunction": "best_time_to_buy_and_sell_stock_iii",
   "goFunction": "Solve207",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Dynamic programming topic",
+      "url": "https://leetcode.com/tag/dynamic-programming/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

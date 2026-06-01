@@ -69,6 +69,24 @@
   ],
   "pythonFunction": "insert_interval",
   "goFunction": "Solve121",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/insert-interval/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/insert-interval/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Sorting topic",
+      "url": "https://leetcode.com/tag/sorting/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

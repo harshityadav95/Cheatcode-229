@@ -76,6 +76,24 @@
   ],
   "pythonFunction": "binary_tree_zigzag_level_order_traversal",
   "goFunction": "Solve152",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Breadth-first search topic",
+      "url": "https://leetcode.com/tag/breadth-first-search/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -1,6 +1,6 @@
 # 076. Merge Sorted Array
 
-- LeetCode: 88
+- LeetCode: [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Merge sorted nums2 into sorted nums1 in-place, where nums1 has trailing space for all elements.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/merge-sorted-array/)
+- [LeetCode community solutions](https://leetcode.com/problems/merge-sorted-array/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

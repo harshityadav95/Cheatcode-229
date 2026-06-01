@@ -1,6 +1,6 @@
 # 156. Number of Islands
 
-- LeetCode: 200
+- LeetCode: [200. Number of Islands](https://leetcode.com/problems/number-of-islands/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Count connected groups of '1' cells in a grid, connected horizontally or vertically.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/number-of-islands/)
+- [LeetCode community solutions](https://leetcode.com/problems/number-of-islands/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

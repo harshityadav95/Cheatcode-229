@@ -1,6 +1,6 @@
 # 122. Valid Parentheses
 
-- LeetCode: 20
+- LeetCode: [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 - Pattern: Stack
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether a bracket string is valid: each opening bracket is closed by the same type in correct order.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/valid-parentheses/)
+- [LeetCode community solutions](https://leetcode.com/problems/valid-parentheses/solutions/)
+- [Stack topic](https://leetcode.com/tag/stack/)
 
 ## Example
 

@@ -73,6 +73,24 @@
   ],
   "pythonFunction": "path_sum_iii",
   "goFunction": "Solve036",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/path-sum-iii/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/path-sum-iii/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Tree topic",
+      "url": "https://leetcode.com/tag/tree/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

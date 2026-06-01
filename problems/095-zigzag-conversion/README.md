@@ -1,6 +1,6 @@
 # 095. Zigzag Conversion
 
-- LeetCode: 6
+- LeetCode: [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Write characters in a zigzag over numRows rows, then read row by row.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/zigzag-conversion/)
+- [LeetCode community solutions](https://leetcode.com/problems/zigzag-conversion/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

@@ -75,6 +75,24 @@
   ],
   "pythonFunction": "greatest_common_divisor_of_strings",
   "goFunction": "Solve002",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/greatest-common-divisor-of-strings/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/greatest-common-divisor-of-strings/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Array and string topic",
+      "url": "https://leetcode.com/tag/array/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

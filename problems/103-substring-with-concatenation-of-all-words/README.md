@@ -1,6 +1,6 @@
 # 103. Substring with Concatenation of All Words
 
-- LeetCode: 30
+- LeetCode: [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
 - Pattern: Two Pointers
 - Difficulty: Medium
 - Time: O(n) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Find all start indices where a substring is the concatenation of each word exactly once, with no gaps.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
+- [LeetCode community solutions](https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/)
+- [Two pointers topic](https://leetcode.com/tag/two-pointers/)
 
 ## Example
 

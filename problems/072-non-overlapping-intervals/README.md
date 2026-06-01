@@ -1,6 +1,6 @@
 # 072. Non-overlapping Intervals
 
-- LeetCode: 435
+- LeetCode: [435. Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
 - Pattern: Intervals
 - Difficulty: Medium
 - Time: O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the minimum number of intervals to remove so the remaining intervals are non-overlapping.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/non-overlapping-intervals/)
+- [LeetCode community solutions](https://leetcode.com/problems/non-overlapping-intervals/solutions/)
+- [Sorting topic](https://leetcode.com/tag/sorting/)
 
 ## Example
 

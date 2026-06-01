@@ -1,6 +1,6 @@
 # 104. Minimum Window Substring
 
-- LeetCode: 76
+- LeetCode: [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 - Pattern: Sliding Window
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the smallest substring of s that contains every character of t with required multiplicity.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/minimum-window-substring/)
+- [LeetCode community solutions](https://leetcode.com/problems/minimum-window-substring/solutions/)
+- [Sliding window topic](https://leetcode.com/tag/sliding-window/)
 
 ## Example
 

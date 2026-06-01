@@ -1,6 +1,6 @@
 # 146. Sum Root to Leaf Numbers
 
-- LeetCode: 129
+- LeetCode: [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Each root-to-leaf path forms a number by concatenating digits; return the sum of all such numbers.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
+- [LeetCode community solutions](https://leetcode.com/problems/sum-root-to-leaf-numbers/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

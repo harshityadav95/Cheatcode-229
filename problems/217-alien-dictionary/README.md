@@ -1,6 +1,6 @@
 # 217. Alien Dictionary
 
-- LeetCode: 269
+- LeetCode: [269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given words sorted by an unknown alphabet, return one valid character order, or empty string if impossible.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/alien-dictionary/)
+- [LeetCode community solutions](https://leetcode.com/problems/alien-dictionary/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

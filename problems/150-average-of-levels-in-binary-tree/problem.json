@@ -76,6 +76,24 @@
   ],
   "pythonFunction": "average_of_levels_in_binary_tree",
   "goFunction": "Solve150",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/average-of-levels-in-binary-tree/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/average-of-levels-in-binary-tree/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Breadth-first search topic",
+      "url": "https://leetcode.com/tag/breadth-first-search/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

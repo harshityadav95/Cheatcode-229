@@ -1,6 +1,6 @@
 # 191. Bitwise AND of Numbers Range
 
-- LeetCode: 201
+- LeetCode: [201. Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)
 - Pattern: Bit Manipulation
 - Difficulty: Easy
 - Time: O(n) or O(bits)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the bitwise AND of every integer in the inclusive range [left,right].
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/bitwise-and-of-numbers-range/)
+- [LeetCode community solutions](https://leetcode.com/problems/bitwise-and-of-numbers-range/solutions/)
+- [Bit manipulation topic](https://leetcode.com/tag/bit-manipulation/)
 
 ## Example
 

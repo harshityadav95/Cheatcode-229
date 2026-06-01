@@ -1,6 +1,6 @@
 # 185. Find K Pairs with Smallest Sums
 
-- LeetCode: 373
+- LeetCode: [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)
 - Pattern: Heap / Priority Queue
 - Difficulty: Medium
 - Time: O(n log k) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the k pairs (one from each sorted array) with the smallest sums.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)
+- [LeetCode community solutions](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/solutions/)
+- [Heap priority queue topic](https://leetcode.com/tag/heap-priority-queue/)
 
 ## Example
 

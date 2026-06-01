@@ -1,6 +1,6 @@
 # 221. Meeting Rooms II
 
-- LeetCode: 253
+- LeetCode: [253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)
 - Pattern: Intervals
 - Difficulty: Medium
 - Time: O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the minimum number of meeting rooms required for all intervals.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/meeting-rooms-ii/)
+- [LeetCode community solutions](https://leetcode.com/problems/meeting-rooms-ii/solutions/)
+- [Sorting topic](https://leetcode.com/tag/sorting/)
 
 ## Example
 

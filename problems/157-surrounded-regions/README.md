@@ -1,6 +1,6 @@
 # 157. Surrounded Regions
 
-- LeetCode: 130
+- LeetCode: [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Capture all 'O' regions fully surrounded by 'X'; border-connected 'O' cells remain unchanged.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/surrounded-regions/)
+- [LeetCode community solutions](https://leetcode.com/problems/surrounded-regions/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

@@ -74,6 +74,24 @@
   ],
   "pythonFunction": "house_robber_ii",
   "goFunction": "Solve214",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/house-robber-ii/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/house-robber-ii/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Dynamic programming topic",
+      "url": "https://leetcode.com/tag/dynamic-programming/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

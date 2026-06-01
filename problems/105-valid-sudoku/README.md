@@ -1,6 +1,6 @@
 # 105. Valid Sudoku
 
-- LeetCode: 36
+- LeetCode: [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether a partially filled 9x9 Sudoku board has no repeated digit in any row, column, or 3x3 box.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/valid-sudoku/)
+- [LeetCode community solutions](https://leetcode.com/problems/valid-sudoku/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 060. Min Cost Climbing Stairs
 
-- LeetCode: 746
+- LeetCode: [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
 - Pattern: DP 1D
 - Difficulty: Medium
 - Time: O(n * state)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given cost per stair, return the minimum cost to reach just beyond the last stair, starting from step 0 or 1.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/min-cost-climbing-stairs/)
+- [LeetCode community solutions](https://leetcode.com/problems/min-cost-climbing-stairs/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

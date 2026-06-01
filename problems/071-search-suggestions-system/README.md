@@ -1,6 +1,6 @@
 # 071. Search Suggestions System
 
-- LeetCode: 1268
+- LeetCode: [1268. Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/)
 - Pattern: Trie / Encoding
 - Difficulty: Hard
 - Time: O(total characters)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 After each typed prefix of searchWord, return up to three lexicographically smallest products starting with that prefix.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/search-suggestions-system/)
+- [LeetCode community solutions](https://leetcode.com/problems/search-suggestions-system/solutions/)
+- [Trie topic](https://leetcode.com/tag/trie/)
 
 ## Example
 

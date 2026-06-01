@@ -1,6 +1,6 @@
 # 056. Koko Eating Bananas
 
-- LeetCode: 875
+- LeetCode: [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)
 - Pattern: Binary Search
 - Difficulty: Medium
 - Time: O(log n) or O(n log R)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Find the minimum integer banana-eating speed k so all piles are eaten within h hours.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/koko-eating-bananas/)
+- [LeetCode community solutions](https://leetcode.com/problems/koko-eating-bananas/solutions/)
+- [Binary search topic](https://leetcode.com/tag/binary-search/)
 
 ## Example
 

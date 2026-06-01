@@ -1,6 +1,6 @@
 # 180. Search in Rotated Sorted Array
 
-- LeetCode: 33
+- LeetCode: [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 - Pattern: Binary Search
 - Difficulty: Medium
 - Time: O(log n) or O(n log R)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Search a target in a rotated sorted array with distinct values; return its index or -1.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+- [LeetCode community solutions](https://leetcode.com/problems/search-in-rotated-sorted-array/solutions/)
+- [Binary search topic](https://leetcode.com/tag/binary-search/)
 
 ## Example
 

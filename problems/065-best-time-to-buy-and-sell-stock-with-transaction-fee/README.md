@@ -1,6 +1,6 @@
 # 065. Best Time to Buy and Sell Stock with Transaction Fee
 
-- LeetCode: 714
+- LeetCode: [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Maximize stock profit with unlimited transactions, paying a fixed fee for each completed sale.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
+- [LeetCode community solutions](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

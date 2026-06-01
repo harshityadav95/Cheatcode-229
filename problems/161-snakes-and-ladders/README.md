@@ -1,6 +1,6 @@
 # 161. Snakes and Ladders
 
-- LeetCode: 909
+- LeetCode: [909. Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 On a snakes-and-ladders board labeled boustrophedon from 1 to n^2, return minimum dice throws to reach n^2.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/snakes-and-ladders/)
+- [LeetCode community solutions](https://leetcode.com/problems/snakes-and-ladders/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

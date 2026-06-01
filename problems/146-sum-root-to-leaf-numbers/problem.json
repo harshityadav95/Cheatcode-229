@@ -73,6 +73,24 @@
   ],
   "pythonFunction": "sum_root_to_leaf_numbers",
   "goFunction": "Solve146",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/sum-root-to-leaf-numbers/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/sum-root-to-leaf-numbers/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Tree topic",
+      "url": "https://leetcode.com/tag/tree/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

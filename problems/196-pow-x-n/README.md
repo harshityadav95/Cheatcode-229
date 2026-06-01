@@ -1,6 +1,6 @@
 # 196. Pow(x, n)
 
-- LeetCode: 50
+- LeetCode: [50. Pow(x, n)](https://leetcode.com/problems/powx-n/)
 - Pattern: Math / Greedy
 - Difficulty: Medium
 - Time: O(n) or O(log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Compute x raised to integer power n.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/powx-n/)
+- [LeetCode community solutions](https://leetcode.com/problems/powx-n/solutions/)
+- [Greedy topic](https://leetcode.com/tag/greedy/)
 
 ## Example
 

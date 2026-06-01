@@ -1,6 +1,6 @@
 # 064. Longest Common Subsequence
 
-- LeetCode: 1143
+- LeetCode: [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the length of the longest sequence that appears in both strings in the same relative order.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/longest-common-subsequence/)
+- [LeetCode community solutions](https://leetcode.com/problems/longest-common-subsequence/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

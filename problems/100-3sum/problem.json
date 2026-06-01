@@ -76,6 +76,24 @@
   ],
   "pythonFunction": "problem_3sum",
   "goFunction": "Solve100",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/3sum/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/3sum/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Two pointers topic",
+      "url": "https://leetcode.com/tag/two-pointers/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -73,6 +73,24 @@
   ],
   "pythonFunction": "minimum_absolute_difference_in_bst",
   "goFunction": "Solve153",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/minimum-absolute-difference-in-bst/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/minimum-absolute-difference-in-bst/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Binary search tree topic",
+      "url": "https://leetcode.com/tag/binary-search-tree/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

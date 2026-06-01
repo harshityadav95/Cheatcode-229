@@ -1,6 +1,6 @@
 # 051. Maximum Subsequence Score
 
-- LeetCode: 2542
+- LeetCode: [2542. Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score/)
 - Pattern: Heap / Priority Queue
 - Difficulty: Medium
 - Time: O(n log k) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Choose k indices to maximize sum(nums1 chosen) multiplied by the minimum nums2 among the chosen indices.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/maximum-subsequence-score/)
+- [LeetCode community solutions](https://leetcode.com/problems/maximum-subsequence-score/solutions/)
+- [Heap priority queue topic](https://leetcode.com/tag/heap-priority-queue/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 163. Word Ladder
 
-- LeetCode: 127
+- LeetCode: [127. Word Ladder](https://leetcode.com/problems/word-ladder/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the length of the shortest word transformation from beginWord to endWord, changing one letter at a time and using only wordList words.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/word-ladder/)
+- [LeetCode community solutions](https://leetcode.com/problems/word-ladder/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

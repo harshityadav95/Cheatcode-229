@@ -1,6 +1,6 @@
 # 131. Reverse Linked List II
 
-- LeetCode: 92
+- LeetCode: [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Reverse nodes from position left to right in one linked list pass if possible.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/reverse-linked-list-ii/)
+- [LeetCode community solutions](https://leetcode.com/problems/reverse-linked-list-ii/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

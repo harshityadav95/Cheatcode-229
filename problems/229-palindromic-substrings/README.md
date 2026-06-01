@@ -1,6 +1,6 @@
 # 229. Palindromic Substrings
 
-- LeetCode: 647
+- LeetCode: [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the number of palindromic substrings in s.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/palindromic-substrings/)
+- [LeetCode community solutions](https://leetcode.com/problems/palindromic-substrings/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 077. Remove Element
 
-- LeetCode: 27
+- LeetCode: [27. Remove Element](https://leetcode.com/problems/remove-element/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Remove all occurrences of val from nums in-place and return the new length; order of remaining values may change.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/remove-element/)
+- [LeetCode community solutions](https://leetcode.com/problems/remove-element/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

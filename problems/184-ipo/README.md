@@ -1,6 +1,6 @@
 # 184. IPO
 
-- LeetCode: 502
+- LeetCode: [502. IPO](https://leetcode.com/problems/ipo/)
 - Pattern: Heap / Priority Queue
 - Difficulty: Medium
 - Time: O(n log k) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 With starting capital w, choose at most k projects whose capital requirement is met to maximize final capital.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/ipo/)
+- [LeetCode community solutions](https://leetcode.com/problems/ipo/solutions/)
+- [Heap priority queue topic](https://leetcode.com/tag/heap-priority-queue/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 219. Number of Connected Components in an Undirected Graph
 
-- LeetCode: 323
+- LeetCode: [323. Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the number of connected components in an undirected graph.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
+- [LeetCode community solutions](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

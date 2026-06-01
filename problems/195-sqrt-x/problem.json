@@ -70,6 +70,24 @@
   ],
   "pythonFunction": "sqrt_x",
   "goFunction": "Solve195",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/sqrtx/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/sqrtx/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Binary search topic",
+      "url": "https://leetcode.com/tag/binary-search/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

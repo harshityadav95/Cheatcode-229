@@ -1,6 +1,6 @@
 # 074. Daily Temperatures
 
-- LeetCode: 739
+- LeetCode: [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
 - Pattern: Monotonic Stack
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 For each day, return how many days until a warmer temperature; use 0 when none occurs.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/daily-temperatures/)
+- [LeetCode community solutions](https://leetcode.com/problems/daily-temperatures/solutions/)
+- [Monotonic stack topic](https://leetcode.com/tag/monotonic-stack/)
 
 ## Example
 

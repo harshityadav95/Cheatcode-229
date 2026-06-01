@@ -1,6 +1,6 @@
 # 225. Serialize and Deserialize Binary Tree
 
-- LeetCode: 297
+- LeetCode: [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Design serialize and deserialize methods for a binary tree so the original structure and values are recoverable.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

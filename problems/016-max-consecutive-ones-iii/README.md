@@ -1,6 +1,6 @@
 # 016. Max Consecutive Ones III
 
-- LeetCode: 1004
+- LeetCode: [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)
 - Pattern: Sliding Window
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given a binary array, return the longest subarray containing only 1s after flipping at most k zeros.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/max-consecutive-ones-iii/)
+- [LeetCode community solutions](https://leetcode.com/problems/max-consecutive-ones-iii/solutions/)
+- [Sliding window topic](https://leetcode.com/tag/sliding-window/)
 
 ## Example
 

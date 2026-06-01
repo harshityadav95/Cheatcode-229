@@ -70,6 +70,24 @@
   ],
   "pythonFunction": "search_a_2d_matrix",
   "goFunction": "Solve179",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/search-a-2d-matrix/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/search-a-2d-matrix/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Binary search topic",
+      "url": "https://leetcode.com/tag/binary-search/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

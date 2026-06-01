@@ -71,6 +71,24 @@
   ],
   "pythonFunction": "remove_duplicates_from_sorted_list_ii",
   "goFunction": "Solve134",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Linked list topic",
+      "url": "https://leetcode.com/tag/linked-list/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

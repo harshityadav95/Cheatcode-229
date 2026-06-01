@@ -1,6 +1,6 @@
 # 035. Count Good Nodes in Binary Tree
 
-- LeetCode: 1448
+- LeetCode: [1448. Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Count nodes whose value is at least every value on the path from the root to that node.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/count-good-nodes-in-binary-tree/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

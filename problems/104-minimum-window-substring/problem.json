@@ -76,6 +76,24 @@
   ],
   "pythonFunction": "minimum_window_substring",
   "goFunction": "Solve104",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/minimum-window-substring/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/minimum-window-substring/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Sliding window topic",
+      "url": "https://leetcode.com/tag/sliding-window/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -1,6 +1,6 @@
 # 165. Word Search II
 
-- LeetCode: 212
+- LeetCode: [212. Word Search II](https://leetcode.com/problems/word-search-ii/)
 - Pattern: Trie / Encoding
 - Difficulty: Hard
 - Time: O(total characters)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Find all words from a list that can be formed in a board by adjacent horizontal or vertical cells without reusing a cell.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/word-search-ii/)
+- [LeetCode community solutions](https://leetcode.com/problems/word-search-ii/solutions/)
+- [Trie topic](https://leetcode.com/tag/trie/)
 
 ## Example
 

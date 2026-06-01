@@ -1,6 +1,6 @@
 # 115. Two Sum
 
-- LeetCode: 1
+- LeetCode: [1. Two Sum](https://leetcode.com/problems/two-sum/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return indices of the two numbers that add to target; assume exactly one answer and do not reuse an element.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/two-sum/)
+- [LeetCode community solutions](https://leetcode.com/problems/two-sum/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

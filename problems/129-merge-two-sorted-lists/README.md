@@ -1,6 +1,6 @@
 # 129. Merge Two Sorted Lists
 
-- LeetCode: 21
+- LeetCode: [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Merge two sorted linked lists into one sorted linked list.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/merge-two-sorted-lists/)
+- [LeetCode community solutions](https://leetcode.com/problems/merge-two-sorted-lists/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

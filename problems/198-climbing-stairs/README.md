@@ -1,6 +1,6 @@
 # 198. Climbing Stairs
 
-- LeetCode: 70
+- LeetCode: [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 - Pattern: DP 1D
 - Difficulty: Medium
 - Time: O(n * state)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Count distinct ways to climb n stairs taking 1 or 2 steps at a time.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/climbing-stairs/)
+- [LeetCode community solutions](https://leetcode.com/problems/climbing-stairs/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

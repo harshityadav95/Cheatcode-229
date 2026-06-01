@@ -1,6 +1,6 @@
 # 195. Sqrt(x)
 
-- LeetCode: 69
+- LeetCode: [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
 - Pattern: Binary Search
 - Difficulty: Medium
 - Time: O(log n) or O(n log R)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return floor(sqrt(x)) for a nonnegative integer x.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/sqrtx/)
+- [LeetCode community solutions](https://leetcode.com/problems/sqrtx/solutions/)
+- [Binary search topic](https://leetcode.com/tag/binary-search/)
 
 ## Example
 

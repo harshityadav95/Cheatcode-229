@@ -1,6 +1,6 @@
 # 186. Find Median from Data Stream
 
-- LeetCode: 295
+- LeetCode: [295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
 - Pattern: Heap / Priority Queue
 - Difficulty: Medium
 - Time: O(n log k) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Design a data structure supporting addNum and findMedian for a stream of numbers.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/find-median-from-data-stream/)
+- [LeetCode community solutions](https://leetcode.com/problems/find-median-from-data-stream/solutions/)
+- [Heap priority queue topic](https://leetcode.com/tag/heap-priority-queue/)
 
 ## Example
 

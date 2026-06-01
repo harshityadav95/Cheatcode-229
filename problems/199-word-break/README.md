@@ -1,6 +1,6 @@
 # 199. Word Break
 
-- LeetCode: 139
+- LeetCode: [139. Word Break](https://leetcode.com/problems/word-break/)
 - Pattern: DP 1D
 - Difficulty: Medium
 - Time: O(n * state)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether s can be segmented into a sequence of dictionary words.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/word-break/)
+- [LeetCode community solutions](https://leetcode.com/problems/word-break/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

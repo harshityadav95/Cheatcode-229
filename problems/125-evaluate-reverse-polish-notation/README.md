@@ -1,6 +1,6 @@
 # 125. Evaluate Reverse Polish Notation
 
-- LeetCode: 150
+- LeetCode: [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 - Pattern: Stack
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Evaluate an arithmetic expression in Reverse Polish Notation with integer division truncating toward zero.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
+- [LeetCode community solutions](https://leetcode.com/problems/evaluate-reverse-polish-notation/solutions/)
+- [Stack topic](https://leetcode.com/tag/stack/)
 
 ## Example
 

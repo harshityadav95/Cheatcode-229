@@ -1,6 +1,6 @@
 # 087. Insert Delete GetRandom O(1)
 
-- LeetCode: 380
+- LeetCode: [380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)
 - Pattern: Heap / Priority Queue
 - Difficulty: Medium
 - Time: O(n log k) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Design a set supporting insert, remove, and getRandom in average O(1) time.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/insert-delete-getrandom-o1/)
+- [LeetCode community solutions](https://leetcode.com/problems/insert-delete-getrandom-o1/solutions/)
+- [Heap priority queue topic](https://leetcode.com/tag/heap-priority-queue/)
 
 ## Example
 

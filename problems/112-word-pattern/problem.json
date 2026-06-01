@@ -76,6 +76,24 @@
   ],
   "pythonFunction": "word_pattern",
   "goFunction": "Solve112",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/word-pattern/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/word-pattern/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Hash table topic",
+      "url": "https://leetcode.com/tag/hash-table/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

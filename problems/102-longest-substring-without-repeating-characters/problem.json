@@ -76,6 +76,24 @@
   ],
   "pythonFunction": "longest_substring_without_repeating_characters",
   "goFunction": "Solve102",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Sliding window topic",
+      "url": "https://leetcode.com/tag/sliding-window/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

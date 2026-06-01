@@ -71,6 +71,24 @@
   ],
   "pythonFunction": "number_of_recent_calls",
   "goFunction": "Solve027",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/number-of-recent-calls/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/number-of-recent-calls/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Queue topic",
+      "url": "https://leetcode.com/tag/queue/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

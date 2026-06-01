@@ -1,6 +1,6 @@
 # 147. Binary Tree Maximum Path Sum
 
-- LeetCode: 124
+- LeetCode: [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the maximum path sum in a binary tree; a path may start and end at any nodes but must be connected.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+- [LeetCode community solutions](https://leetcode.com/problems/binary-tree-maximum-path-sum/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

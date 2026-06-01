@@ -72,6 +72,24 @@
   ],
   "pythonFunction": "reverse_linked_list",
   "goFunction": "Solve031",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/reverse-linked-list/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/reverse-linked-list/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Linked list topic",
+      "url": "https://leetcode.com/tag/linked-list/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

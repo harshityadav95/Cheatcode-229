@@ -1,6 +1,6 @@
 # 101. Minimum Size Subarray Sum
 
-- LeetCode: 209
+- LeetCode: [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 - Pattern: Two Pointers
 - Difficulty: Medium
 - Time: O(n) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the minimum length of a contiguous subarray with sum at least target, or 0 if none exists.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/minimum-size-subarray-sum/)
+- [LeetCode community solutions](https://leetcode.com/problems/minimum-size-subarray-sum/solutions/)
+- [Two pointers topic](https://leetcode.com/tag/two-pointers/)
 
 ## Example
 

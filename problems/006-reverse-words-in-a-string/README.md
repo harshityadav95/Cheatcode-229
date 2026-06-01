@@ -1,6 +1,6 @@
 # 006. Reverse Words in a String
 
-- LeetCode: 151
+- LeetCode: [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the words of a string in reverse order, trimming outer spaces and reducing multiple spaces between words to one.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/reverse-words-in-a-string/)
+- [LeetCode community solutions](https://leetcode.com/problems/reverse-words-in-a-string/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

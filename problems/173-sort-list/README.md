@@ -1,6 +1,6 @@
 # 173. Sort List
 
-- LeetCode: 148
+- LeetCode: [148. Sort List](https://leetcode.com/problems/sort-list/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Sort a linked list in ascending order.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/sort-list/)
+- [LeetCode community solutions](https://leetcode.com/problems/sort-list/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

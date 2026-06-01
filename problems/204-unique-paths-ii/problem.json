@@ -68,6 +68,24 @@
   ],
   "pythonFunction": "unique_paths_ii",
   "goFunction": "Solve204",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/unique-paths-ii/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/unique-paths-ii/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Dynamic programming topic",
+      "url": "https://leetcode.com/tag/dynamic-programming/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

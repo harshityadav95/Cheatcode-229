@@ -1,6 +1,6 @@
 # 145. Path Sum
 
-- LeetCode: 112
+- LeetCode: [112. Path Sum](https://leetcode.com/problems/path-sum/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return true if a root-to-leaf path has node values summing to targetSum.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/path-sum/)
+- [LeetCode community solutions](https://leetcode.com/problems/path-sum/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

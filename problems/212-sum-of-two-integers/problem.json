@@ -77,6 +77,24 @@
   ],
   "pythonFunction": "sum_of_two_integers",
   "goFunction": "Solve212",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/sum-of-two-integers/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/sum-of-two-integers/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Bit manipulation topic",
+      "url": "https://leetcode.com/tag/bit-manipulation/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

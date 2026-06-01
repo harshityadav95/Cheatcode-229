@@ -74,6 +74,24 @@
   ],
   "pythonFunction": "find_median_from_data_stream",
   "goFunction": "Solve186",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/find-median-from-data-stream/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/find-median-from-data-stream/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Heap priority queue topic",
+      "url": "https://leetcode.com/tag/heap-priority-queue/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

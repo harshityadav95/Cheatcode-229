@@ -74,6 +74,24 @@
   ],
   "pythonFunction": "design_add_and_search_words_data_structure",
   "goFunction": "Solve164",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Trie topic",
+      "url": "https://leetcode.com/tag/trie/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

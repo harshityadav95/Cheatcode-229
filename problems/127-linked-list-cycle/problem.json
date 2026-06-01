@@ -72,6 +72,24 @@
   ],
   "pythonFunction": "linked_list_cycle",
   "goFunction": "Solve127",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/linked-list-cycle/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/linked-list-cycle/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Linked list topic",
+      "url": "https://leetcode.com/tag/linked-list/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

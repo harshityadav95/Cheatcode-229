@@ -1,6 +1,6 @@
 # 224. Lowest Common Ancestor of a Binary Search Tree
 
-- LeetCode: 235
+- LeetCode: [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 In a BST, return the lowest common ancestor of nodes p and q.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

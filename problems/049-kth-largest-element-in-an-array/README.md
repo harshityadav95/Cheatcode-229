@@ -1,6 +1,6 @@
 # 049. Kth Largest Element in an Array
 
-- LeetCode: 215
+- LeetCode: [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 - Pattern: Heap / Priority Queue
 - Difficulty: Medium
 - Time: O(n log k) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the k-th largest element in an unsorted array, not the k-th distinct largest.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+- [LeetCode community solutions](https://leetcode.com/problems/kth-largest-element-in-an-array/solutions/)
+- [Heap priority queue topic](https://leetcode.com/tag/heap-priority-queue/)
 
 ## Example
 

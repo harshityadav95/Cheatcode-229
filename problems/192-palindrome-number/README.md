@@ -1,6 +1,6 @@
 # 192. Palindrome Number
 
-- LeetCode: 9
+- LeetCode: [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)
 - Pattern: Math / Greedy
 - Difficulty: Medium
 - Time: O(n) or O(log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether an integer reads the same forward and backward without converting if possible.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/palindrome-number/)
+- [LeetCode community solutions](https://leetcode.com/problems/palindrome-number/solutions/)
+- [Greedy topic](https://leetcode.com/tag/greedy/)
 
 ## Example
 

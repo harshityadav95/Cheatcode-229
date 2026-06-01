@@ -1,6 +1,6 @@
 # 034. Leaf-Similar Trees
 
-- LeetCode: 872
+- LeetCode: [872. Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return true if two binary trees have the same leaf values in left-to-right order.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/leaf-similar-trees/)
+- [LeetCode community solutions](https://leetcode.com/problems/leaf-similar-trees/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 116. Happy Number
 
-- LeetCode: 202
+- LeetCode: [202. Happy Number](https://leetcode.com/problems/happy-number/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Repeatedly replace n by the sum of squares of its digits; return true if the process reaches 1.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/happy-number/)
+- [LeetCode community solutions](https://leetcode.com/problems/happy-number/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

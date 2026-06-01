@@ -1,6 +1,6 @@
 # 086. H-Index
 
-- LeetCode: 274
+- LeetCode: [274. H-Index](https://leetcode.com/problems/h-index/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given citation counts, return the largest h such that at least h papers have at least h citations.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/h-index/)
+- [LeetCode community solutions](https://leetcode.com/problems/h-index/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

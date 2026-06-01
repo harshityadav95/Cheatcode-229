@@ -78,6 +78,24 @@
   ],
   "pythonFunction": "counting_bits",
   "goFunction": "Solve067",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/counting-bits/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/counting-bits/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Bit manipulation topic",
+      "url": "https://leetcode.com/tag/bit-manipulation/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

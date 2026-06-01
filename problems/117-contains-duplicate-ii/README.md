@@ -1,6 +1,6 @@
 # 117. Contains Duplicate II
 
-- LeetCode: 219
+- LeetCode: [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return true if the same value appears at two indices whose distance is at most k.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/contains-duplicate-ii/)
+- [LeetCode community solutions](https://leetcode.com/problems/contains-duplicate-ii/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

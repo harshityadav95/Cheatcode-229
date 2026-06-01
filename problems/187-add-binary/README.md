@@ -1,6 +1,6 @@
 # 187. Add Binary
 
-- LeetCode: 67
+- LeetCode: [67. Add Binary](https://leetcode.com/problems/add-binary/)
 - Pattern: Bit Manipulation
 - Difficulty: Easy
 - Time: O(n) or O(bits)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Add two binary strings and return the binary sum as a string.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/add-binary/)
+- [LeetCode community solutions](https://leetcode.com/problems/add-binary/solutions/)
+- [Bit manipulation topic](https://leetcode.com/tag/bit-manipulation/)
 
 ## Example
 

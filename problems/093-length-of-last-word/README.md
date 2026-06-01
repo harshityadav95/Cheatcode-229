@@ -1,6 +1,6 @@
 # 093. Length of Last Word
 
-- LeetCode: 58
+- LeetCode: [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the length of the last word in a string, ignoring trailing spaces.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/length-of-last-word/)
+- [LeetCode community solutions](https://leetcode.com/problems/length-of-last-word/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

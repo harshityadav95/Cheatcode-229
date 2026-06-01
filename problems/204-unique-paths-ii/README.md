@@ -1,6 +1,6 @@
 # 204. Unique Paths II
 
-- LeetCode: 63
+- LeetCode: [63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Count unique paths in a grid with obstacles, moving only right or down.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/unique-paths-ii/)
+- [LeetCode community solutions](https://leetcode.com/problems/unique-paths-ii/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

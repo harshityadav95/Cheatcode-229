@@ -1,6 +1,6 @@
 # 152. Binary Tree Zigzag Level Order Traversal
 
-- LeetCode: 103
+- LeetCode: [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
 - Pattern: Tree BFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return binary-tree levels alternating left-to-right then right-to-left.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
+- [LeetCode community solutions](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/solutions/)
+- [Breadth-first search topic](https://leetcode.com/tag/breadth-first-search/)
 
 ## Example
 

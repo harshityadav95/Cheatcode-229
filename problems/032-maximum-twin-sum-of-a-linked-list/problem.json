@@ -71,6 +71,24 @@
   ],
   "pythonFunction": "maximum_twin_sum_of_a_linked_list",
   "goFunction": "Solve032",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Linked list topic",
+      "url": "https://leetcode.com/tag/linked-list/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

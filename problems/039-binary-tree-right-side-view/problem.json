@@ -77,6 +77,24 @@
   ],
   "pythonFunction": "binary_tree_right_side_view",
   "goFunction": "Solve039",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/binary-tree-right-side-view/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/binary-tree-right-side-view/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Breadth-first search topic",
+      "url": "https://leetcode.com/tag/breadth-first-search/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

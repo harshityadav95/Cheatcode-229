@@ -1,6 +1,6 @@
 # 153. Minimum Absolute Difference in BST
 
-- LeetCode: 530
+- LeetCode: [530. Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)
 - Pattern: BST
 - Difficulty: Medium
 - Time: O(h) to O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 In a BST, return the minimum absolute difference between values of any two nodes.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)
+- [LeetCode community solutions](https://leetcode.com/problems/minimum-absolute-difference-in-bst/solutions/)
+- [Binary search tree topic](https://leetcode.com/tag/binary-search-tree/)
 
 ## Example
 

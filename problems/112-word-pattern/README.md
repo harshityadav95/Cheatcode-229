@@ -1,6 +1,6 @@
 # 112. Word Pattern
 
-- LeetCode: 290
+- LeetCode: [290. Word Pattern](https://leetcode.com/problems/word-pattern/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether a pattern's characters map one-to-one to words in the string.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/word-pattern/)
+- [LeetCode community solutions](https://leetcode.com/problems/word-pattern/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

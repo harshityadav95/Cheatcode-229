@@ -75,6 +75,24 @@
   ],
   "pythonFunction": "maximum_depth_of_binary_tree",
   "goFunction": "Solve033",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Tree topic",
+      "url": "https://leetcode.com/tag/tree/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

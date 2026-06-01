@@ -77,6 +77,24 @@
   ],
   "pythonFunction": "product_of_array_except_self",
   "goFunction": "Solve007",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/product-of-array-except-self/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/product-of-array-except-self/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Prefix sum topic",
+      "url": "https://leetcode.com/tag/prefix-sum/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

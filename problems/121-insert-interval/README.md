@@ -1,6 +1,6 @@
 # 121. Insert Interval
 
-- LeetCode: 57
+- LeetCode: [57. Insert Interval](https://leetcode.com/problems/insert-interval/)
 - Pattern: Intervals
 - Difficulty: Medium
 - Time: O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Insert a new interval into sorted non-overlapping intervals and merge if needed.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/insert-interval/)
+- [LeetCode community solutions](https://leetcode.com/problems/insert-interval/solutions/)
+- [Sorting topic](https://leetcode.com/tag/sorting/)
 
 ## Example
 

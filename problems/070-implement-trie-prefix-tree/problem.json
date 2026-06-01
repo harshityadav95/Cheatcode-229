@@ -75,6 +75,24 @@
   ],
   "pythonFunction": "implement_trie_prefix_tree",
   "goFunction": "Solve070",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/implement-trie-prefix-tree/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Trie topic",
+      "url": "https://leetcode.com/tag/trie/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

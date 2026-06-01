@@ -1,6 +1,6 @@
 # 209. Maximal Square
 
-- LeetCode: 221
+- LeetCode: [221. Maximal Square](https://leetcode.com/problems/maximal-square/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 In a binary matrix, return the area of the largest square containing only 1s.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/maximal-square/)
+- [LeetCode community solutions](https://leetcode.com/problems/maximal-square/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

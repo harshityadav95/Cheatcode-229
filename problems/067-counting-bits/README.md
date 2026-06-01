@@ -1,6 +1,6 @@
 # 067. Counting Bits
 
-- LeetCode: 338
+- LeetCode: [338. Counting Bits](https://leetcode.com/problems/counting-bits/)
 - Pattern: Bit Manipulation
 - Difficulty: Easy
 - Time: O(n) or O(bits)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 For every integer from 0 to n, return the number of 1 bits in its binary representation.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/counting-bits/)
+- [LeetCode community solutions](https://leetcode.com/problems/counting-bits/solutions/)
+- [Bit manipulation topic](https://leetcode.com/tag/bit-manipulation/)
 
 ## Example
 

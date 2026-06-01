@@ -1,6 +1,6 @@
 # 025. Asteroid Collision
 
-- LeetCode: 735
+- LeetCode: [735. Asteroid Collision](https://leetcode.com/problems/asteroid-collision/)
 - Pattern: Stack
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Simulate asteroid collisions: positive moves right, negative moves left, and smaller colliding asteroids explode.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/asteroid-collision/)
+- [LeetCode community solutions](https://leetcode.com/problems/asteroid-collision/solutions/)
+- [Stack topic](https://leetcode.com/tag/stack/)
 
 ## Example
 

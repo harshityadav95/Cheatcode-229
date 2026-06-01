@@ -1,6 +1,6 @@
 # 206. Interleaving String
 
-- LeetCode: 97
+- LeetCode: [97. Interleaving String](https://leetcode.com/problems/interleaving-string/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether s3 is formed by interleaving s1 and s2 while preserving the order within each string.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/interleaving-string/)
+- [LeetCode community solutions](https://leetcode.com/problems/interleaving-string/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

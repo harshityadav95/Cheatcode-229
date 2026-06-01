@@ -1,6 +1,6 @@
 # 123. Simplify Path
 
-- LeetCode: 71
+- LeetCode: [71. Simplify Path](https://leetcode.com/problems/simplify-path/)
 - Pattern: Stack
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Simplify an absolute Unix path using '.', '..', and repeated slashes.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/simplify-path/)
+- [LeetCode community solutions](https://leetcode.com/problems/simplify-path/solutions/)
+- [Stack topic](https://leetcode.com/tag/stack/)
 
 ## Example
 

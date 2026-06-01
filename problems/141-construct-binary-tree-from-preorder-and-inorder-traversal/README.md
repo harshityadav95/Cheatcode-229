@@ -1,6 +1,6 @@
 # 141. Construct Binary Tree from Preorder and Inorder Traversal
 
-- LeetCode: 105
+- LeetCode: [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Build a binary tree from preorder and inorder traversal arrays with unique values.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+- [LeetCode community solutions](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

@@ -76,6 +76,24 @@
   ],
   "pythonFunction": "reverse_words_in_a_string",
   "goFunction": "Solve006",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/reverse-words-in-a-string/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/reverse-words-in-a-string/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Array and string topic",
+      "url": "https://leetcode.com/tag/array/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

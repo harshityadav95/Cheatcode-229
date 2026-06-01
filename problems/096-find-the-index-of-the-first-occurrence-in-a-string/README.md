@@ -1,6 +1,6 @@
 # 096. Find the Index of the First Occurrence in a String
 
-- LeetCode: 28
+- LeetCode: [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the index of the first occurrence of needle in haystack, or -1 if absent.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
+- [LeetCode community solutions](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

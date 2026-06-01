@@ -1,6 +1,6 @@
 # 172. Convert Sorted Array to Binary Search Tree
 
-- LeetCode: 108
+- LeetCode: [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 - Pattern: BST
 - Difficulty: Medium
 - Time: O(h) to O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Convert a sorted array into a height-balanced binary search tree.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/solutions/)
+- [Binary search tree topic](https://leetcode.com/tag/binary-search-tree/)
 
 ## Example
 

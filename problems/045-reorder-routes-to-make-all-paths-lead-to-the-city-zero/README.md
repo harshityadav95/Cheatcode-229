@@ -1,6 +1,6 @@
 # 045. Reorder Routes to Make All Paths Lead to the City Zero
 
-- LeetCode: 1466
+- LeetCode: [1466. Reorder Routes to Make All Paths Lead to the City Zero](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Directed roads form a tree. Count the minimum roads to reverse so every city can reach city 0.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)
+- [LeetCode community solutions](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

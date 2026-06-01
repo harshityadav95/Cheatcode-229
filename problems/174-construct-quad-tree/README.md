@@ -1,6 +1,6 @@
 # 174. Construct Quad Tree
 
-- LeetCode: 427
+- LeetCode: [427. Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree/)
 - Pattern: Math / Greedy
 - Difficulty: Medium
 - Time: O(n) or O(log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Construct a quad tree from a square binary grid, merging uniform regions into leaf nodes.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/construct-quad-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/construct-quad-tree/solutions/)
+- [Greedy topic](https://leetcode.com/tag/greedy/)
 
 ## Example
 

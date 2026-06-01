@@ -1,6 +1,6 @@
 # 058. Combination Sum III
 
-- LeetCode: 216
+- LeetCode: [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
 - Pattern: Backtracking
 - Difficulty: Medium
 - Time: O(branch^depth)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return all combinations of k distinct numbers from 1..9 that sum to n; each number used at most once.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/combination-sum-iii/)
+- [LeetCode community solutions](https://leetcode.com/problems/combination-sum-iii/solutions/)
+- [Backtracking topic](https://leetcode.com/tag/backtracking/)
 
 ## Example
 

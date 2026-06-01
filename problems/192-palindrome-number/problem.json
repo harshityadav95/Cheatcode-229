@@ -70,6 +70,24 @@
   ],
   "pythonFunction": "palindrome_number",
   "goFunction": "Solve192",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/palindrome-number/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/palindrome-number/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Greedy topic",
+      "url": "https://leetcode.com/tag/greedy/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

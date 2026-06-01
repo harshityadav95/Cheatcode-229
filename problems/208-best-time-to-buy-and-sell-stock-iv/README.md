@@ -1,6 +1,6 @@
 # 208. Best Time to Buy and Sell Stock IV
 
-- LeetCode: 188
+- LeetCode: [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Maximize stock profit with at most k transactions.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
+- [LeetCode community solutions](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

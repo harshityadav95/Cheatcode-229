@@ -75,6 +75,24 @@
   ],
   "pythonFunction": "longest_repeating_character_replacement",
   "goFunction": "Solve227",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/longest-repeating-character-replacement/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Sliding window topic",
+      "url": "https://leetcode.com/tag/sliding-window/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

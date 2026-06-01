@@ -1,6 +1,6 @@
 # 143. Populating Next Right Pointers in Each Node II
 
-- LeetCode: 117
+- LeetCode: [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Populate each node's next pointer to its neighbor on the same level, or null if none, in any binary tree.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
+- [LeetCode community solutions](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

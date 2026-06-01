@@ -1,6 +1,6 @@
 # 012. Container With Most Water
 
-- LeetCode: 11
+- LeetCode: [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 - Pattern: Two Pointers
 - Difficulty: Medium
 - Time: O(n) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Choose two vertical lines so the water container area, width times shorter height, is maximized.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/container-with-most-water/)
+- [LeetCode community solutions](https://leetcode.com/problems/container-with-most-water/solutions/)
+- [Two pointers topic](https://leetcode.com/tag/two-pointers/)
 
 ## Example
 

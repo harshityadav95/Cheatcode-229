@@ -74,6 +74,24 @@
   ],
   "pythonFunction": "permutations",
   "goFunction": "Solve167",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/permutations/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/permutations/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Backtracking topic",
+      "url": "https://leetcode.com/tag/backtracking/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -1,6 +1,6 @@
 # 002. Greatest Common Divisor of Strings
 
-- LeetCode: 1071
+- LeetCode: [1071. Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Find the longest non-empty string that can be repeated some number of times to build both input strings; return empty if none exists.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
+- [LeetCode community solutions](https://leetcode.com/problems/greatest-common-divisor-of-strings/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

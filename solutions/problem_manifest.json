@@ -7,6 +7,7 @@
     "pattern": "Array / String",
     "pythonFunction": "merge_strings_alternately",
     "goFunction": "Solve001",
+    "leetcodeUrl": "https://leetcode.com/problems/merge-strings-alternately/",
     "sampleInput": "word1=\"abc\", word2=\"pq\"",
     "sampleOutput": "\"apbqc\""
   },
@@ -18,6 +19,7 @@
     "pattern": "Array / String",
     "pythonFunction": "greatest_common_divisor_of_strings",
     "goFunction": "Solve002",
+    "leetcodeUrl": "https://leetcode.com/problems/greatest-common-divisor-of-strings/",
     "sampleInput": "str1=\"ABABAB\", str2=\"ABAB\"",
     "sampleOutput": "\"AB\""
   },
@@ -29,6 +31,7 @@
     "pattern": "Array / String",
     "pythonFunction": "kids_with_the_greatest_number_of_candies",
     "goFunction": "Solve003",
+    "leetcodeUrl": "https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/",
     "sampleInput": "candies=[2,8,4], extraCandies=3",
     "sampleOutput": "[false,true,false]"
   },
@@ -40,6 +43,7 @@
     "pattern": "Array / String",
     "pythonFunction": "can_place_flowers",
     "goFunction": "Solve004",
+    "leetcodeUrl": "https://leetcode.com/problems/can-place-flowers/",
     "sampleInput": "flowerbed=[1,0,0,0,1], n=1",
     "sampleOutput": "true"
   },
@@ -51,6 +55,7 @@
     "pattern": "Array / String",
     "pythonFunction": "reverse_vowels_of_a_string",
     "goFunction": "Solve005",
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-vowels-of-a-string/",
     "sampleInput": "s=\"leetcode\"",
     "sampleOutput": "\"leotcede\""
   },
@@ -62,6 +67,7 @@
     "pattern": "Array / String",
     "pythonFunction": "reverse_words_in_a_string",
     "goFunction": "Solve006",
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-words-in-a-string/",
     "sampleInput": "s=\"  blue  sky  \"",
     "sampleOutput": "\"sky blue\""
   },
@@ -73,6 +79,7 @@
     "pattern": "Prefix / Scan",
     "pythonFunction": "product_of_array_except_self",
     "goFunction": "Solve007",
+    "leetcodeUrl": "https://leetcode.com/problems/product-of-array-except-self/",
     "sampleInput": "nums=[2,3,4]",
     "sampleOutput": "[12,8,6]"
   },
@@ -84,6 +91,7 @@
     "pattern": "Math / Greedy",
     "pythonFunction": "increasing_triplet_subsequence",
     "goFunction": "Solve008",
+    "leetcodeUrl": "https://leetcode.com/problems/increasing-triplet-subsequence/",
     "sampleInput": "nums=[5,1,6,2,3]",
     "sampleOutput": "true"
   },
@@ -95,6 +103,7 @@
     "pattern": "Array / String",
     "pythonFunction": "string_compression",
     "goFunction": "Solve009",
+    "leetcodeUrl": "https://leetcode.com/problems/string-compression/",
     "sampleInput": "chars=[\"a\",\"a\",\"b\"]",
     "sampleOutput": "length=3, chars starts [\"a\",\"2\",\"b\"]"
   },
@@ -106,6 +115,7 @@
     "pattern": "Two Pointers",
     "pythonFunction": "move_zeroes",
     "goFunction": "Solve010",
+    "leetcodeUrl": "https://leetcode.com/problems/move-zeroes/",
     "sampleInput": "nums=[0,1,0,3]",
     "sampleOutput": "[1,3,0,0]"
   },
@@ -117,6 +127,7 @@
     "pattern": "Two Pointers",
     "pythonFunction": "is_subsequence",
     "goFunction": "Solve011",
+    "leetcodeUrl": "https://leetcode.com/problems/is-subsequence/",
     "sampleInput": "s=\"ace\", t=\"abcde\"",
     "sampleOutput": "true"
   },
@@ -128,6 +139,7 @@
     "pattern": "Two Pointers",
     "pythonFunction": "container_with_most_water",
     "goFunction": "Solve012",
+    "leetcodeUrl": "https://leetcode.com/problems/container-with-most-water/",
     "sampleInput": "height=[1,7,2,5,4,7,3,6]",
     "sampleOutput": "36"
   },
@@ -139,6 +151,7 @@
     "pattern": "Two Pointers",
     "pythonFunction": "max_number_of_k_sum_pairs",
     "goFunction": "Solve013",
+    "leetcodeUrl": "https://leetcode.com/problems/max-number-of-k-sum-pairs/",
     "sampleInput": "nums=[1,2,3,4], k=5",
     "sampleOutput": "2"
   },
@@ -150,6 +163,7 @@
     "pattern": "Sliding Window",
     "pythonFunction": "maximum_average_subarray_i",
     "goFunction": "Solve014",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-average-subarray-i/",
     "sampleInput": "nums=[1,12,-5,-6,50,3], k=4",
     "sampleOutput": "12.75"
   },
@@ -161,6 +175,7 @@
     "pattern": "Sliding Window",
     "pythonFunction": "maximum_number_of_vowels_in_a_substring_of_given_length",
     "goFunction": "Solve015",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/",
     "sampleInput": "s=\"abciiidef\", k=3",
     "sampleOutput": "3"
   },
@@ -172,6 +187,7 @@
     "pattern": "Sliding Window",
     "pythonFunction": "max_consecutive_ones_iii",
     "goFunction": "Solve016",
+    "leetcodeUrl": "https://leetcode.com/problems/max-consecutive-ones-iii/",
     "sampleInput": "nums=[1,0,1,1,0,1], k=1",
     "sampleOutput": "4"
   },
@@ -183,6 +199,7 @@
     "pattern": "Sliding Window",
     "pythonFunction": "longest_subarray_of_1_s_after_deleting_one_element",
     "goFunction": "Solve017",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/",
     "sampleInput": "nums=[1,1,0,1]",
     "sampleOutput": "3"
   },
@@ -194,6 +211,7 @@
     "pattern": "Prefix / Scan",
     "pythonFunction": "find_the_highest_altitude",
     "goFunction": "Solve018",
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-highest-altitude/",
     "sampleInput": "gain=[-5,1,5]",
     "sampleOutput": "1"
   },
@@ -205,6 +223,7 @@
     "pattern": "Prefix / Scan",
     "pythonFunction": "find_pivot_index",
     "goFunction": "Solve019",
+    "leetcodeUrl": "https://leetcode.com/problems/find-pivot-index/",
     "sampleInput": "nums=[1,7,3,6,5,6]",
     "sampleOutput": "3"
   },
@@ -216,6 +235,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "find_the_difference_of_two_arrays",
     "goFunction": "Solve020",
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-difference-of-two-arrays/",
     "sampleInput": "nums1=[1,2,3], nums2=[2,4]",
     "sampleOutput": "[[1,3],[4]]"
   },
@@ -227,6 +247,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "unique_number_of_occurrences",
     "goFunction": "Solve021",
+    "leetcodeUrl": "https://leetcode.com/problems/unique-number-of-occurrences/",
     "sampleInput": "nums=[1,2,2,3,3,3]",
     "sampleOutput": "true"
   },
@@ -238,6 +259,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "determine_if_two_strings_are_close",
     "goFunction": "Solve022",
+    "leetcodeUrl": "https://leetcode.com/problems/determine-if-two-strings-are-close/",
     "sampleInput": "word1=\"abbzzca\", word2=\"babzzcz\"",
     "sampleOutput": "true"
   },
@@ -249,6 +271,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "equal_row_and_column_pairs",
     "goFunction": "Solve023",
+    "leetcodeUrl": "https://leetcode.com/problems/equal-row-and-column-pairs/",
     "sampleInput": "grid=[[3,1,2],[1,7,6],[2,6,7]]",
     "sampleOutput": "1"
   },
@@ -260,6 +283,7 @@
     "pattern": "Stack",
     "pythonFunction": "removing_stars_from_a_string",
     "goFunction": "Solve024",
+    "leetcodeUrl": "https://leetcode.com/problems/removing-stars-from-a-string/",
     "sampleInput": "s=\"leet**cod*e\"",
     "sampleOutput": "\"lecoe\""
   },
@@ -271,6 +295,7 @@
     "pattern": "Stack",
     "pythonFunction": "asteroid_collision",
     "goFunction": "Solve025",
+    "leetcodeUrl": "https://leetcode.com/problems/asteroid-collision/",
     "sampleInput": "asteroids=[5,10,-5]",
     "sampleOutput": "[5,10]"
   },
@@ -282,6 +307,7 @@
     "pattern": "Stack",
     "pythonFunction": "decode_string",
     "goFunction": "Solve026",
+    "leetcodeUrl": "https://leetcode.com/problems/decode-string/",
     "sampleInput": "s=\"3[a2[c]]\"",
     "sampleOutput": "\"accaccacc\""
   },
@@ -293,6 +319,7 @@
     "pattern": "Queue / Simulation",
     "pythonFunction": "number_of_recent_calls",
     "goFunction": "Solve027",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-recent-calls/",
     "sampleInput": "pings=[1,100,3001,3002]",
     "sampleOutput": "[1,2,3,3]"
   },
@@ -304,6 +331,7 @@
     "pattern": "Queue / Simulation",
     "pythonFunction": "dota2_senate",
     "goFunction": "Solve028",
+    "leetcodeUrl": "https://leetcode.com/problems/dota2-senate/",
     "sampleInput": "senate=\"RDD\"",
     "sampleOutput": "\"Dire\""
   },
@@ -315,6 +343,7 @@
     "pattern": "Linked List",
     "pythonFunction": "delete_the_middle_node_of_a_linked_list",
     "goFunction": "Solve029",
+    "leetcodeUrl": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/",
     "sampleInput": "head=[1,3,4,7,1,2,6]",
     "sampleOutput": "[1,3,4,1,2,6]"
   },
@@ -326,6 +355,7 @@
     "pattern": "Linked List",
     "pythonFunction": "odd_even_linked_list",
     "goFunction": "Solve030",
+    "leetcodeUrl": "https://leetcode.com/problems/odd-even-linked-list/",
     "sampleInput": "head=[1,2,3,4,5]",
     "sampleOutput": "[1,3,5,2,4]"
   },
@@ -337,6 +367,7 @@
     "pattern": "Linked List",
     "pythonFunction": "reverse_linked_list",
     "goFunction": "Solve031",
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list/",
     "sampleInput": "head=[1,2,3]",
     "sampleOutput": "[3,2,1]"
   },
@@ -348,6 +379,7 @@
     "pattern": "Linked List",
     "pythonFunction": "maximum_twin_sum_of_a_linked_list",
     "goFunction": "Solve032",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/",
     "sampleInput": "head=[5,4,2,1]",
     "sampleOutput": "6"
   },
@@ -359,6 +391,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "maximum_depth_of_binary_tree",
     "goFunction": "Solve033",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
     "sampleInput": "root=[3,9,20,null,null,15,7]",
     "sampleOutput": "3"
   },
@@ -370,6 +403,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "leaf_similar_trees",
     "goFunction": "Solve034",
+    "leetcodeUrl": "https://leetcode.com/problems/leaf-similar-trees/",
     "sampleInput": "root1=[1,2,3], root2=[7,2,3]",
     "sampleOutput": "true"
   },
@@ -381,6 +415,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "count_good_nodes_in_binary_tree",
     "goFunction": "Solve035",
+    "leetcodeUrl": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
     "sampleInput": "root=[3,1,4,3,null,1,5]",
     "sampleOutput": "4"
   },
@@ -392,6 +427,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "path_sum_iii",
     "goFunction": "Solve036",
+    "leetcodeUrl": "https://leetcode.com/problems/path-sum-iii/",
     "sampleInput": "root=[10,5,-3,3,2,null,11,3,-2,null,1], targetSum=8",
     "sampleOutput": "3"
   },
@@ -403,6 +439,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "longest_zigzag_path_in_a_binary_tree",
     "goFunction": "Solve037",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/",
     "sampleInput": "path 1->right 2->left 3->right 4",
     "sampleOutput": "3"
   },
@@ -414,6 +451,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "lowest_common_ancestor_of_a_binary_tree",
     "goFunction": "Solve038",
+    "leetcodeUrl": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
     "sampleInput": "root=[3,5,1,6,2,0,8,null,null,7,4], p=5, q=1",
     "sampleOutput": "3"
   },
@@ -425,6 +463,7 @@
     "pattern": "Tree BFS",
     "pythonFunction": "binary_tree_right_side_view",
     "goFunction": "Solve039",
+    "leetcodeUrl": "https://leetcode.com/problems/binary-tree-right-side-view/",
     "sampleInput": "root=[1,2,3,null,5,null,4]",
     "sampleOutput": "[1,3,4]"
   },
@@ -436,6 +475,7 @@
     "pattern": "Tree BFS",
     "pythonFunction": "maximum_level_sum_of_a_binary_tree",
     "goFunction": "Solve040",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/",
     "sampleInput": "root=[1,7,0,7,-8,null,null]",
     "sampleOutput": "2"
   },
@@ -447,6 +487,7 @@
     "pattern": "BST",
     "pythonFunction": "search_in_a_binary_search_tree",
     "goFunction": "Solve041",
+    "leetcodeUrl": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
     "sampleInput": "root=[4,2,7,1,3], val=2",
     "sampleOutput": "[2,1,3]"
   },
@@ -458,6 +499,7 @@
     "pattern": "BST",
     "pythonFunction": "delete_node_in_a_bst",
     "goFunction": "Solve042",
+    "leetcodeUrl": "https://leetcode.com/problems/delete-node-in-a-bst/",
     "sampleInput": "root=[5,3,6,2,4,null,7], key=3",
     "sampleOutput": "[5,4,6,2,null,null,7]"
   },
@@ -469,6 +511,7 @@
     "pattern": "Graph",
     "pythonFunction": "keys_and_rooms",
     "goFunction": "Solve043",
+    "leetcodeUrl": "https://leetcode.com/problems/keys-and-rooms/",
     "sampleInput": "rooms=[[1],[2],[3],[]]",
     "sampleOutput": "true"
   },
@@ -480,6 +523,7 @@
     "pattern": "Graph",
     "pythonFunction": "number_of_provinces",
     "goFunction": "Solve044",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-provinces/",
     "sampleInput": "isConnected=[[1,1,0],[1,1,0],[0,0,1]]",
     "sampleOutput": "2"
   },
@@ -491,6 +535,7 @@
     "pattern": "Graph",
     "pythonFunction": "reorder_routes_to_make_all_paths_lead_to_the_city_zero",
     "goFunction": "Solve045",
+    "leetcodeUrl": "https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/",
     "sampleInput": "n=3, connections=[[1,0],[1,2]]",
     "sampleOutput": "1"
   },
@@ -502,6 +547,7 @@
     "pattern": "Graph",
     "pythonFunction": "evaluate_division",
     "goFunction": "Solve046",
+    "leetcodeUrl": "https://leetcode.com/problems/evaluate-division/",
     "sampleInput": "equations=[[\"a\",\"b\"],[\"b\",\"c\"]], values=[2,3], queries=[[\"a\",\"c\"],[\"c\",\"a\"],[\"x\",\"y\"]]",
     "sampleOutput": "[6.0,0.16667,-1.0]"
   },
@@ -513,6 +559,7 @@
     "pattern": "Graph",
     "pythonFunction": "nearest_exit_from_entrance_in_maze",
     "goFunction": "Solve047",
+    "leetcodeUrl": "https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/",
     "sampleInput": "maze=[[\"+\",\"+\",\".\"],[\".\",\".\",\".\"],[\"+\",\"+\",\"+\"]], entrance=[1,0]",
     "sampleOutput": "2"
   },
@@ -524,6 +571,7 @@
     "pattern": "Graph",
     "pythonFunction": "rotting_oranges",
     "goFunction": "Solve048",
+    "leetcodeUrl": "https://leetcode.com/problems/rotting-oranges/",
     "sampleInput": "grid=[[2,1,1],[1,1,0],[0,1,1]]",
     "sampleOutput": "4"
   },
@@ -535,6 +583,7 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "kth_largest_element_in_an_array",
     "goFunction": "Solve049",
+    "leetcodeUrl": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
     "sampleInput": "nums=[3,2,1,5,6,4], k=2",
     "sampleOutput": "5"
   },
@@ -546,6 +595,7 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "smallest_number_in_infinite_set",
     "goFunction": "Solve050",
+    "leetcodeUrl": "https://leetcode.com/problems/smallest-number-in-infinite-set/",
     "sampleInput": "operations=pop,pop,addBack(1),pop",
     "sampleOutput": "[1,2,null,1]"
   },
@@ -557,6 +607,7 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "maximum_subsequence_score",
     "goFunction": "Solve051",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-subsequence-score/",
     "sampleInput": "nums1=[1,3,3,2], nums2=[2,1,3,4], k=3",
     "sampleOutput": "12"
   },
@@ -568,6 +619,7 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "total_cost_to_hire_k_workers",
     "goFunction": "Solve052",
+    "leetcodeUrl": "https://leetcode.com/problems/total-cost-to-hire-k-workers/",
     "sampleInput": "costs=[17,12,10,2,7,2,11,20,8], k=3, candidates=4",
     "sampleOutput": "11"
   },
@@ -579,6 +631,7 @@
     "pattern": "Binary Search",
     "pythonFunction": "guess_number_higher_or_lower",
     "goFunction": "Solve053",
+    "leetcodeUrl": "https://leetcode.com/problems/guess-number-higher-or-lower/",
     "sampleInput": "n=10, pick=6",
     "sampleOutput": "6"
   },
@@ -590,6 +643,7 @@
     "pattern": "Binary Search",
     "pythonFunction": "successful_pairs_of_spells_and_potions",
     "goFunction": "Solve054",
+    "leetcodeUrl": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/",
     "sampleInput": "spells=[5,1,3], potions=[1,2,3,4,5], success=7",
     "sampleOutput": "[4,0,3]"
   },
@@ -601,6 +655,7 @@
     "pattern": "Binary Search",
     "pythonFunction": "find_peak_element",
     "goFunction": "Solve055",
+    "leetcodeUrl": "https://leetcode.com/problems/find-peak-element/",
     "sampleInput": "nums=[1,2,3,1]",
     "sampleOutput": "2"
   },
@@ -612,6 +667,7 @@
     "pattern": "Binary Search",
     "pythonFunction": "koko_eating_bananas",
     "goFunction": "Solve056",
+    "leetcodeUrl": "https://leetcode.com/problems/koko-eating-bananas/",
     "sampleInput": "piles=[3,6,7,11], h=8",
     "sampleOutput": "4"
   },
@@ -623,6 +679,7 @@
     "pattern": "Backtracking",
     "pythonFunction": "letter_combinations_of_a_phone_number",
     "goFunction": "Solve057",
+    "leetcodeUrl": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
     "sampleInput": "digits=\"23\"",
     "sampleOutput": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]"
   },
@@ -634,6 +691,7 @@
     "pattern": "Backtracking",
     "pythonFunction": "combination_sum_iii",
     "goFunction": "Solve058",
+    "leetcodeUrl": "https://leetcode.com/problems/combination-sum-iii/",
     "sampleInput": "k=3, n=7",
     "sampleOutput": "[[1,2,4]]"
   },
@@ -645,6 +703,7 @@
     "pattern": "DP 1D",
     "pythonFunction": "n_th_tribonacci_number",
     "goFunction": "Solve059",
+    "leetcodeUrl": "https://leetcode.com/problems/n-th-tribonacci-number/",
     "sampleInput": "n=4",
     "sampleOutput": "4"
   },
@@ -656,6 +715,7 @@
     "pattern": "DP 1D",
     "pythonFunction": "min_cost_climbing_stairs",
     "goFunction": "Solve060",
+    "leetcodeUrl": "https://leetcode.com/problems/min-cost-climbing-stairs/",
     "sampleInput": "cost=[10,15,20]",
     "sampleOutput": "15"
   },
@@ -667,6 +727,7 @@
     "pattern": "DP 1D",
     "pythonFunction": "house_robber",
     "goFunction": "Solve061",
+    "leetcodeUrl": "https://leetcode.com/problems/house-robber/",
     "sampleInput": "nums=[2,7,9,3,1]",
     "sampleOutput": "12"
   },
@@ -678,6 +739,7 @@
     "pattern": "DP 1D",
     "pythonFunction": "domino_and_tromino_tiling",
     "goFunction": "Solve062",
+    "leetcodeUrl": "https://leetcode.com/problems/domino-and-tromino-tiling/",
     "sampleInput": "n=3",
     "sampleOutput": "5"
   },
@@ -689,6 +751,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "unique_paths",
     "goFunction": "Solve063",
+    "leetcodeUrl": "https://leetcode.com/problems/unique-paths/",
     "sampleInput": "m=3, n=7",
     "sampleOutput": "28"
   },
@@ -700,6 +763,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "longest_common_subsequence",
     "goFunction": "Solve064",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-common-subsequence/",
     "sampleInput": "text1=\"abcde\", text2=\"ace\"",
     "sampleOutput": "3"
   },
@@ -711,6 +775,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "best_time_to_buy_and_sell_stock_with_transaction_fee",
     "goFunction": "Solve065",
+    "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/",
     "sampleInput": "prices=[1,3,2,8,4,9], fee=2",
     "sampleOutput": "8"
   },
@@ -722,6 +787,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "edit_distance",
     "goFunction": "Solve066",
+    "leetcodeUrl": "https://leetcode.com/problems/edit-distance/",
     "sampleInput": "word1=\"horse\", word2=\"ros\"",
     "sampleOutput": "3"
   },
@@ -733,6 +799,7 @@
     "pattern": "Bit Manipulation",
     "pythonFunction": "counting_bits",
     "goFunction": "Solve067",
+    "leetcodeUrl": "https://leetcode.com/problems/counting-bits/",
     "sampleInput": "n=5",
     "sampleOutput": "[0,1,1,2,1,2]"
   },
@@ -744,6 +811,7 @@
     "pattern": "Bit Manipulation",
     "pythonFunction": "single_number",
     "goFunction": "Solve068",
+    "leetcodeUrl": "https://leetcode.com/problems/single-number/",
     "sampleInput": "nums=[4,1,2,1,2]",
     "sampleOutput": "4"
   },
@@ -755,6 +823,7 @@
     "pattern": "Bit Manipulation",
     "pythonFunction": "minimum_flips_to_make_a_or_b_equal_to_c",
     "goFunction": "Solve069",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/",
     "sampleInput": "a=2, b=6, c=5",
     "sampleOutput": "3"
   },
@@ -766,6 +835,7 @@
     "pattern": "Trie / Encoding",
     "pythonFunction": "implement_trie_prefix_tree",
     "goFunction": "Solve070",
+    "leetcodeUrl": "https://leetcode.com/problems/implement-trie-prefix-tree/",
     "sampleInput": "insert(\"apple\"), search(\"apple\"), startsWith(\"app\")",
     "sampleOutput": "[null,true,true]"
   },
@@ -777,6 +847,7 @@
     "pattern": "Trie / Encoding",
     "pythonFunction": "search_suggestions_system",
     "goFunction": "Solve071",
+    "leetcodeUrl": "https://leetcode.com/problems/search-suggestions-system/",
     "sampleInput": "products=[\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"], searchWord=\"mouse\"",
     "sampleOutput": "[[\"mobile\",\"moneypot\",\"monitor\"],[\"mobile\",\"moneypot\",\"monitor\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"]]"
   },
@@ -788,6 +859,7 @@
     "pattern": "Intervals",
     "pythonFunction": "non_overlapping_intervals",
     "goFunction": "Solve072",
+    "leetcodeUrl": "https://leetcode.com/problems/non-overlapping-intervals/",
     "sampleInput": "intervals=[[1,2],[2,3],[3,4],[1,3]]",
     "sampleOutput": "1"
   },
@@ -799,6 +871,7 @@
     "pattern": "Intervals",
     "pythonFunction": "minimum_number_of_arrows_to_burst_balloons",
     "goFunction": "Solve073",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/",
     "sampleInput": "points=[[10,16],[2,8],[1,6],[7,12]]",
     "sampleOutput": "2"
   },
@@ -810,6 +883,7 @@
     "pattern": "Monotonic Stack",
     "pythonFunction": "daily_temperatures",
     "goFunction": "Solve074",
+    "leetcodeUrl": "https://leetcode.com/problems/daily-temperatures/",
     "sampleInput": "temperatures=[73,74,75,71,69,72,76,73]",
     "sampleOutput": "[1,1,4,2,1,1,0,0]"
   },
@@ -821,6 +895,7 @@
     "pattern": "Monotonic Stack",
     "pythonFunction": "online_stock_span",
     "goFunction": "Solve075",
+    "leetcodeUrl": "https://leetcode.com/problems/online-stock-span/",
     "sampleInput": "prices=[100,80,60,70,60,75,85]",
     "sampleOutput": "[1,1,1,2,1,4,6]"
   },
@@ -832,6 +907,7 @@
     "pattern": "Array / String",
     "pythonFunction": "merge_sorted_array",
     "goFunction": "Solve076",
+    "leetcodeUrl": "https://leetcode.com/problems/merge-sorted-array/",
     "sampleInput": "nums1=[1,2,3,0,0,0], m=3, nums2=[2,5,6], n=3",
     "sampleOutput": "[1,2,2,3,5,6]"
   },
@@ -843,6 +919,7 @@
     "pattern": "Array / String",
     "pythonFunction": "remove_element",
     "goFunction": "Solve077",
+    "leetcodeUrl": "https://leetcode.com/problems/remove-element/",
     "sampleInput": "nums=[3,2,2,3], val=3",
     "sampleOutput": "k=2, first values [2,2]"
   },
@@ -854,6 +931,7 @@
     "pattern": "Array / String",
     "pythonFunction": "remove_duplicates_from_sorted_array",
     "goFunction": "Solve078",
+    "leetcodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
     "sampleInput": "nums=[1,1,2]",
     "sampleOutput": "k=2, first values [1,2]"
   },
@@ -865,6 +943,7 @@
     "pattern": "Array / String",
     "pythonFunction": "remove_duplicates_from_sorted_array_ii",
     "goFunction": "Solve079",
+    "leetcodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/",
     "sampleInput": "nums=[0,0,1,1,1,1,2]",
     "sampleOutput": "k=5, first values [0,0,1,1,2]"
   },
@@ -876,6 +955,7 @@
     "pattern": "Array / String",
     "pythonFunction": "majority_element",
     "goFunction": "Solve080",
+    "leetcodeUrl": "https://leetcode.com/problems/majority-element/",
     "sampleInput": "nums=[2,2,1,1,1,2,2]",
     "sampleOutput": "2"
   },
@@ -887,6 +967,7 @@
     "pattern": "Array / String",
     "pythonFunction": "rotate_array",
     "goFunction": "Solve081",
+    "leetcodeUrl": "https://leetcode.com/problems/rotate-array/",
     "sampleInput": "nums=[1,2,3,4,5], k=2",
     "sampleOutput": "[4,5,1,2,3]"
   },
@@ -898,6 +979,7 @@
     "pattern": "Math / Greedy",
     "pythonFunction": "best_time_to_buy_and_sell_stock",
     "goFunction": "Solve082",
+    "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
     "sampleInput": "prices=[7,1,5,3,6,4]",
     "sampleOutput": "5"
   },
@@ -909,6 +991,7 @@
     "pattern": "Math / Greedy",
     "pythonFunction": "best_time_to_buy_and_sell_stock_ii",
     "goFunction": "Solve083",
+    "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
     "sampleInput": "prices=[7,1,5,3,6,4]",
     "sampleOutput": "7"
   },
@@ -920,6 +1003,7 @@
     "pattern": "Math / Greedy",
     "pythonFunction": "jump_game",
     "goFunction": "Solve084",
+    "leetcodeUrl": "https://leetcode.com/problems/jump-game/",
     "sampleInput": "nums=[2,3,1,1,4]",
     "sampleOutput": "true"
   },
@@ -931,6 +1015,7 @@
     "pattern": "Math / Greedy",
     "pythonFunction": "jump_game_ii",
     "goFunction": "Solve085",
+    "leetcodeUrl": "https://leetcode.com/problems/jump-game-ii/",
     "sampleInput": "nums=[2,3,1,1,4]",
     "sampleOutput": "2"
   },
@@ -942,6 +1027,7 @@
     "pattern": "Array / String",
     "pythonFunction": "h_index",
     "goFunction": "Solve086",
+    "leetcodeUrl": "https://leetcode.com/problems/h-index/",
     "sampleInput": "citations=[3,0,6,1,5]",
     "sampleOutput": "3"
   },
@@ -953,6 +1039,7 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "insert_delete_getrandom_o_1",
     "goFunction": "Solve087",
+    "leetcodeUrl": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
     "sampleInput": "insert(1), remove(2), insert(2), getRandom(), remove(1), insert(2), getRandom()",
     "sampleOutput": "[true,false,true,1 or 2,true,false,2]"
   },
@@ -964,6 +1051,7 @@
     "pattern": "Array / String",
     "pythonFunction": "gas_station",
     "goFunction": "Solve088",
+    "leetcodeUrl": "https://leetcode.com/problems/gas-station/",
     "sampleInput": "gas=[1,2,3,4,5], cost=[3,4,5,1,2]",
     "sampleOutput": "3"
   },
@@ -975,6 +1063,7 @@
     "pattern": "Array / String",
     "pythonFunction": "candy",
     "goFunction": "Solve089",
+    "leetcodeUrl": "https://leetcode.com/problems/candy/",
     "sampleInput": "ratings=[1,0,2]",
     "sampleOutput": "5"
   },
@@ -986,6 +1075,7 @@
     "pattern": "Two Pointers",
     "pythonFunction": "trapping_rain_water",
     "goFunction": "Solve090",
+    "leetcodeUrl": "https://leetcode.com/problems/trapping-rain-water/",
     "sampleInput": "height=[0,2,0,3,0,1]",
     "sampleOutput": "3"
   },
@@ -997,6 +1087,7 @@
     "pattern": "Array / String",
     "pythonFunction": "roman_to_integer",
     "goFunction": "Solve091",
+    "leetcodeUrl": "https://leetcode.com/problems/roman-to-integer/",
     "sampleInput": "s=\"MCMXCIV\"",
     "sampleOutput": "1994"
   },
@@ -1008,6 +1099,7 @@
     "pattern": "Array / String",
     "pythonFunction": "integer_to_roman",
     "goFunction": "Solve092",
+    "leetcodeUrl": "https://leetcode.com/problems/integer-to-roman/",
     "sampleInput": "num=58",
     "sampleOutput": "\"LVIII\""
   },
@@ -1019,6 +1111,7 @@
     "pattern": "Array / String",
     "pythonFunction": "length_of_last_word",
     "goFunction": "Solve093",
+    "leetcodeUrl": "https://leetcode.com/problems/length-of-last-word/",
     "sampleInput": "s=\"fly me to the moon\"",
     "sampleOutput": "4"
   },
@@ -1030,6 +1123,7 @@
     "pattern": "Array / String",
     "pythonFunction": "longest_common_prefix",
     "goFunction": "Solve094",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-common-prefix/",
     "sampleInput": "strs=[\"flower\",\"flow\",\"flight\"]",
     "sampleOutput": "\"fl\""
   },
@@ -1041,6 +1135,7 @@
     "pattern": "Array / String",
     "pythonFunction": "zigzag_conversion",
     "goFunction": "Solve095",
+    "leetcodeUrl": "https://leetcode.com/problems/zigzag-conversion/",
     "sampleInput": "s=\"ABCDE\", numRows=2",
     "sampleOutput": "\"ACEBD\""
   },
@@ -1052,6 +1147,7 @@
     "pattern": "Array / String",
     "pythonFunction": "find_the_index_of_the_first_occurrence_in_a_string",
     "goFunction": "Solve096",
+    "leetcodeUrl": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
     "sampleInput": "haystack=\"sadbutsad\", needle=\"sad\"",
     "sampleOutput": "0"
   },
@@ -1063,6 +1159,7 @@
     "pattern": "Array / String",
     "pythonFunction": "text_justification",
     "goFunction": "Solve097",
+    "leetcodeUrl": "https://leetcode.com/problems/text-justification/",
     "sampleInput": "words=[\"This\",\"is\",\"an\",\"example\"], maxWidth=16",
     "sampleOutput": "[\"This    is    an\",\"example         \"]"
   },
@@ -1074,6 +1171,7 @@
     "pattern": "Two Pointers",
     "pythonFunction": "valid_palindrome",
     "goFunction": "Solve098",
+    "leetcodeUrl": "https://leetcode.com/problems/valid-palindrome/",
     "sampleInput": "s=\"A man, a plan, a canal: Panama\"",
     "sampleOutput": "true"
   },
@@ -1085,6 +1183,7 @@
     "pattern": "Two Pointers",
     "pythonFunction": "two_sum_ii_input_array_is_sorted",
     "goFunction": "Solve099",
+    "leetcodeUrl": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
     "sampleInput": "numbers=[2,7,11,15], target=9",
     "sampleOutput": "[1,2]"
   },
@@ -1096,6 +1195,7 @@
     "pattern": "Two Pointers",
     "pythonFunction": "problem_3sum",
     "goFunction": "Solve100",
+    "leetcodeUrl": "https://leetcode.com/problems/3sum/",
     "sampleInput": "nums=[-1,0,1,2,-1,-4]",
     "sampleOutput": "[[-1,-1,2],[-1,0,1]]"
   },
@@ -1107,6 +1207,7 @@
     "pattern": "Two Pointers",
     "pythonFunction": "minimum_size_subarray_sum",
     "goFunction": "Solve101",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-size-subarray-sum/",
     "sampleInput": "target=7, nums=[2,3,1,2,4,3]",
     "sampleOutput": "2"
   },
@@ -1118,6 +1219,7 @@
     "pattern": "Sliding Window",
     "pythonFunction": "longest_substring_without_repeating_characters",
     "goFunction": "Solve102",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
     "sampleInput": "s=\"abcabcbb\"",
     "sampleOutput": "3"
   },
@@ -1129,6 +1231,7 @@
     "pattern": "Two Pointers",
     "pythonFunction": "substring_with_concatenation_of_all_words",
     "goFunction": "Solve103",
+    "leetcodeUrl": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
     "sampleInput": "s=\"barfoothefoobarman\", words=[\"foo\",\"bar\"]",
     "sampleOutput": "[0,9]"
   },
@@ -1140,6 +1243,7 @@
     "pattern": "Sliding Window",
     "pythonFunction": "minimum_window_substring",
     "goFunction": "Solve104",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-window-substring/",
     "sampleInput": "s=\"ADOBECODEBANC\", t=\"ABC\"",
     "sampleOutput": "\"BANC\""
   },
@@ -1151,6 +1255,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "valid_sudoku",
     "goFunction": "Solve105",
+    "leetcodeUrl": "https://leetcode.com/problems/valid-sudoku/",
     "sampleInput": "board=[\"53..7....\",\"6..195...\",\".98....6.\",\"8...6...3\",\"4..8.3..1\",\"7...2...6\",\".6....28.\",\"...419..5\",\"....8..79\"]",
     "sampleOutput": "true"
   },
@@ -1162,6 +1267,7 @@
     "pattern": "Array / String",
     "pythonFunction": "spiral_matrix",
     "goFunction": "Solve106",
+    "leetcodeUrl": "https://leetcode.com/problems/spiral-matrix/",
     "sampleInput": "matrix=[[1,2,3],[4,5,6],[7,8,9]]",
     "sampleOutput": "[1,2,3,6,9,8,7,4,5]"
   },
@@ -1173,6 +1279,7 @@
     "pattern": "Array / String",
     "pythonFunction": "rotate_image",
     "goFunction": "Solve107",
+    "leetcodeUrl": "https://leetcode.com/problems/rotate-image/",
     "sampleInput": "matrix=[[1,2],[3,4]]",
     "sampleOutput": "[[3,1],[4,2]]"
   },
@@ -1184,6 +1291,7 @@
     "pattern": "Array / String",
     "pythonFunction": "set_matrix_zeroes",
     "goFunction": "Solve108",
+    "leetcodeUrl": "https://leetcode.com/problems/set-matrix-zeroes/",
     "sampleInput": "matrix=[[1,1,1],[1,0,1],[1,1,1]]",
     "sampleOutput": "[[1,0,1],[0,0,0],[1,0,1]]"
   },
@@ -1195,6 +1303,7 @@
     "pattern": "Math / Greedy",
     "pythonFunction": "game_of_life",
     "goFunction": "Solve109",
+    "leetcodeUrl": "https://leetcode.com/problems/game-of-life/",
     "sampleInput": "board=[[0,1,0],[0,0,1],[1,1,1],[0,0,0]]",
     "sampleOutput": "[[0,0,0],[1,0,1],[0,1,1],[0,1,0]]"
   },
@@ -1206,6 +1315,7 @@
     "pattern": "Array / String",
     "pythonFunction": "ransom_note",
     "goFunction": "Solve110",
+    "leetcodeUrl": "https://leetcode.com/problems/ransom-note/",
     "sampleInput": "ransomNote=\"aa\", magazine=\"aab\"",
     "sampleOutput": "true"
   },
@@ -1217,6 +1327,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "isomorphic_strings",
     "goFunction": "Solve111",
+    "leetcodeUrl": "https://leetcode.com/problems/isomorphic-strings/",
     "sampleInput": "s=\"egg\", t=\"add\"",
     "sampleOutput": "true"
   },
@@ -1228,6 +1339,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "word_pattern",
     "goFunction": "Solve112",
+    "leetcodeUrl": "https://leetcode.com/problems/word-pattern/",
     "sampleInput": "pattern=\"abba\", s=\"dog cat cat dog\"",
     "sampleOutput": "true"
   },
@@ -1239,6 +1351,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "valid_anagram",
     "goFunction": "Solve113",
+    "leetcodeUrl": "https://leetcode.com/problems/valid-anagram/",
     "sampleInput": "s=\"anagram\", t=\"nagaram\"",
     "sampleOutput": "true"
   },
@@ -1250,6 +1363,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "group_anagrams",
     "goFunction": "Solve114",
+    "leetcodeUrl": "https://leetcode.com/problems/group-anagrams/",
     "sampleInput": "strs=[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
     "sampleOutput": "[[\"eat\",\"tea\",\"ate\"],[\"tan\",\"nat\"],[\"bat\"]]"
   },
@@ -1261,6 +1375,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "two_sum",
     "goFunction": "Solve115",
+    "leetcodeUrl": "https://leetcode.com/problems/two-sum/",
     "sampleInput": "nums=[2,7,11,15], target=9",
     "sampleOutput": "[0,1]"
   },
@@ -1272,6 +1387,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "happy_number",
     "goFunction": "Solve116",
+    "leetcodeUrl": "https://leetcode.com/problems/happy-number/",
     "sampleInput": "n=19",
     "sampleOutput": "true"
   },
@@ -1283,6 +1399,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "contains_duplicate_ii",
     "goFunction": "Solve117",
+    "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate-ii/",
     "sampleInput": "nums=[1,2,3,1], k=3",
     "sampleOutput": "true"
   },
@@ -1294,6 +1411,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "longest_consecutive_sequence",
     "goFunction": "Solve118",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-consecutive-sequence/",
     "sampleInput": "nums=[100,4,200,1,3,2]",
     "sampleOutput": "4"
   },
@@ -1305,6 +1423,7 @@
     "pattern": "Prefix / Scan",
     "pythonFunction": "summary_ranges",
     "goFunction": "Solve119",
+    "leetcodeUrl": "https://leetcode.com/problems/summary-ranges/",
     "sampleInput": "nums=[0,1,2,4,5,7]",
     "sampleOutput": "[\"0->2\",\"4->5\",\"7\"]"
   },
@@ -1316,6 +1435,7 @@
     "pattern": "Intervals",
     "pythonFunction": "merge_intervals",
     "goFunction": "Solve120",
+    "leetcodeUrl": "https://leetcode.com/problems/merge-intervals/",
     "sampleInput": "intervals=[[1,3],[2,6],[8,10]]",
     "sampleOutput": "[[1,6],[8,10]]"
   },
@@ -1327,6 +1447,7 @@
     "pattern": "Intervals",
     "pythonFunction": "insert_interval",
     "goFunction": "Solve121",
+    "leetcodeUrl": "https://leetcode.com/problems/insert-interval/",
     "sampleInput": "intervals=[[1,3],[6,9]], newInterval=[2,5]",
     "sampleOutput": "[[1,5],[6,9]]"
   },
@@ -1338,6 +1459,7 @@
     "pattern": "Stack",
     "pythonFunction": "valid_parentheses",
     "goFunction": "Solve122",
+    "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/",
     "sampleInput": "s=\"({[]})\"",
     "sampleOutput": "true"
   },
@@ -1349,6 +1471,7 @@
     "pattern": "Stack",
     "pythonFunction": "simplify_path",
     "goFunction": "Solve123",
+    "leetcodeUrl": "https://leetcode.com/problems/simplify-path/",
     "sampleInput": "path=\"/a//b/../c/\"",
     "sampleOutput": "\"/a/c\""
   },
@@ -1360,6 +1483,7 @@
     "pattern": "Stack",
     "pythonFunction": "min_stack",
     "goFunction": "Solve124",
+    "leetcodeUrl": "https://leetcode.com/problems/min-stack/",
     "sampleInput": "push(-2),push(0),push(-3),getMin,pop,top,getMin",
     "sampleOutput": "[null,null,null,-3,null,0,-2]"
   },
@@ -1371,6 +1495,7 @@
     "pattern": "Stack",
     "pythonFunction": "evaluate_reverse_polish_notation",
     "goFunction": "Solve125",
+    "leetcodeUrl": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
     "sampleInput": "tokens=[\"2\",\"1\",\"+\",\"3\",\"*\"]",
     "sampleOutput": "9"
   },
@@ -1382,6 +1507,7 @@
     "pattern": "Stack",
     "pythonFunction": "basic_calculator",
     "goFunction": "Solve126",
+    "leetcodeUrl": "https://leetcode.com/problems/basic-calculator/",
     "sampleInput": "s=\"(1+(4+5+2)-3)+(6+8)\"",
     "sampleOutput": "23"
   },
@@ -1393,6 +1519,7 @@
     "pattern": "Linked List",
     "pythonFunction": "linked_list_cycle",
     "goFunction": "Solve127",
+    "leetcodeUrl": "https://leetcode.com/problems/linked-list-cycle/",
     "sampleInput": "head=[3,2,0,-4], tail connects to index 1",
     "sampleOutput": "true"
   },
@@ -1404,6 +1531,7 @@
     "pattern": "Linked List",
     "pythonFunction": "add_two_numbers",
     "goFunction": "Solve128",
+    "leetcodeUrl": "https://leetcode.com/problems/add-two-numbers/",
     "sampleInput": "l1=[2,4,3], l2=[5,6,4]",
     "sampleOutput": "[7,0,8]"
   },
@@ -1415,6 +1543,7 @@
     "pattern": "Linked List",
     "pythonFunction": "merge_two_sorted_lists",
     "goFunction": "Solve129",
+    "leetcodeUrl": "https://leetcode.com/problems/merge-two-sorted-lists/",
     "sampleInput": "list1=[1,2,4], list2=[1,3,4]",
     "sampleOutput": "[1,1,2,3,4,4]"
   },
@@ -1426,6 +1555,7 @@
     "pattern": "Linked List",
     "pythonFunction": "copy_list_with_random_pointer",
     "goFunction": "Solve130",
+    "leetcodeUrl": "https://leetcode.com/problems/copy-list-with-random-pointer/",
     "sampleInput": "nodes=[[7,null],[13,0],[11,0]]",
     "sampleOutput": "deep copy with same values and random links"
   },
@@ -1437,6 +1567,7 @@
     "pattern": "Linked List",
     "pythonFunction": "reverse_linked_list_ii",
     "goFunction": "Solve131",
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list-ii/",
     "sampleInput": "head=[1,2,3,4,5], left=2, right=4",
     "sampleOutput": "[1,4,3,2,5]"
   },
@@ -1448,6 +1579,7 @@
     "pattern": "Linked List",
     "pythonFunction": "reverse_nodes_in_k_group",
     "goFunction": "Solve132",
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
     "sampleInput": "head=[1,2,3,4,5], k=2",
     "sampleOutput": "[2,1,4,3,5]"
   },
@@ -1459,6 +1591,7 @@
     "pattern": "Linked List",
     "pythonFunction": "remove_nth_node_from_end_of_list",
     "goFunction": "Solve133",
+    "leetcodeUrl": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
     "sampleInput": "head=[1,2,3,4,5], n=2",
     "sampleOutput": "[1,2,3,5]"
   },
@@ -1470,6 +1603,7 @@
     "pattern": "Linked List",
     "pythonFunction": "remove_duplicates_from_sorted_list_ii",
     "goFunction": "Solve134",
+    "leetcodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/",
     "sampleInput": "head=[1,2,3,3,4,4,5]",
     "sampleOutput": "[1,2,5]"
   },
@@ -1481,6 +1615,7 @@
     "pattern": "Linked List",
     "pythonFunction": "rotate_list",
     "goFunction": "Solve135",
+    "leetcodeUrl": "https://leetcode.com/problems/rotate-list/",
     "sampleInput": "head=[1,2,3,4,5], k=2",
     "sampleOutput": "[4,5,1,2,3]"
   },
@@ -1492,6 +1627,7 @@
     "pattern": "Linked List",
     "pythonFunction": "partition_list",
     "goFunction": "Solve136",
+    "leetcodeUrl": "https://leetcode.com/problems/partition-list/",
     "sampleInput": "head=[1,4,3,2,5,2], x=3",
     "sampleOutput": "[1,2,2,4,3,5]"
   },
@@ -1503,6 +1639,7 @@
     "pattern": "Linked List",
     "pythonFunction": "lru_cache",
     "goFunction": "Solve137",
+    "leetcodeUrl": "https://leetcode.com/problems/lru-cache/",
     "sampleInput": "capacity=2; put(1,1),put(2,2),get(1),put(3,3),get(2)",
     "sampleOutput": "[null,null,1,null,-1]"
   },
@@ -1514,6 +1651,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "same_tree",
     "goFunction": "Solve138",
+    "leetcodeUrl": "https://leetcode.com/problems/same-tree/",
     "sampleInput": "p=[1,2,3], q=[1,2,3]",
     "sampleOutput": "true"
   },
@@ -1525,6 +1663,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "invert_binary_tree",
     "goFunction": "Solve139",
+    "leetcodeUrl": "https://leetcode.com/problems/invert-binary-tree/",
     "sampleInput": "root=[4,2,7,1,3,6,9]",
     "sampleOutput": "[4,7,2,9,6,3,1]"
   },
@@ -1536,6 +1675,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "symmetric_tree",
     "goFunction": "Solve140",
+    "leetcodeUrl": "https://leetcode.com/problems/symmetric-tree/",
     "sampleInput": "root=[1,2,2,3,4,4,3]",
     "sampleOutput": "true"
   },
@@ -1547,6 +1687,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "construct_binary_tree_from_preorder_and_inorder_traversal",
     "goFunction": "Solve141",
+    "leetcodeUrl": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
     "sampleInput": "preorder=[3,9,20,15,7], inorder=[9,3,15,20,7]",
     "sampleOutput": "[3,9,20,null,null,15,7]"
   },
@@ -1558,6 +1699,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "construct_binary_tree_from_inorder_and_postorder_traversal",
     "goFunction": "Solve142",
+    "leetcodeUrl": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/",
     "sampleInput": "inorder=[9,3,15,20,7], postorder=[9,15,7,20,3]",
     "sampleOutput": "[3,9,20,null,null,15,7]"
   },
@@ -1569,6 +1711,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "populating_next_right_pointers_in_each_node_ii",
     "goFunction": "Solve143",
+    "leetcodeUrl": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/",
     "sampleInput": "root=[1,2,3,4,5,null,7]",
     "sampleOutput": "levels linked as 1->null, 2->3->null, 4->5->7->null"
   },
@@ -1580,6 +1723,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "flatten_binary_tree_to_linked_list",
     "goFunction": "Solve144",
+    "leetcodeUrl": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
     "sampleInput": "root=[1,2,5,3,4,null,6]",
     "sampleOutput": "[1,2,3,4,5,6]"
   },
@@ -1591,6 +1735,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "path_sum",
     "goFunction": "Solve145",
+    "leetcodeUrl": "https://leetcode.com/problems/path-sum/",
     "sampleInput": "root=[5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum=22",
     "sampleOutput": "true"
   },
@@ -1602,6 +1747,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "sum_root_to_leaf_numbers",
     "goFunction": "Solve146",
+    "leetcodeUrl": "https://leetcode.com/problems/sum-root-to-leaf-numbers/",
     "sampleInput": "root=[1,2,3]",
     "sampleOutput": "25"
   },
@@ -1613,6 +1759,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "binary_tree_maximum_path_sum",
     "goFunction": "Solve147",
+    "leetcodeUrl": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
     "sampleInput": "root=[-10,9,20,null,null,15,7]",
     "sampleOutput": "42"
   },
@@ -1624,6 +1771,7 @@
     "pattern": "BST",
     "pythonFunction": "binary_search_tree_iterator",
     "goFunction": "Solve148",
+    "leetcodeUrl": "https://leetcode.com/problems/binary-search-tree-iterator/",
     "sampleInput": "BST=[7,3,15,null,null,9,20], calls=next,next,hasNext",
     "sampleOutput": "[3,7,true]"
   },
@@ -1635,6 +1783,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "count_complete_tree_nodes",
     "goFunction": "Solve149",
+    "leetcodeUrl": "https://leetcode.com/problems/count-complete-tree-nodes/",
     "sampleInput": "root=[1,2,3,4,5,6]",
     "sampleOutput": "6"
   },
@@ -1646,6 +1795,7 @@
     "pattern": "Tree BFS",
     "pythonFunction": "average_of_levels_in_binary_tree",
     "goFunction": "Solve150",
+    "leetcodeUrl": "https://leetcode.com/problems/average-of-levels-in-binary-tree/",
     "sampleInput": "root=[3,9,20,null,null,15,7]",
     "sampleOutput": "[3,14.5,11]"
   },
@@ -1657,6 +1807,7 @@
     "pattern": "Tree BFS",
     "pythonFunction": "binary_tree_level_order_traversal",
     "goFunction": "Solve151",
+    "leetcodeUrl": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
     "sampleInput": "root=[3,9,20,null,null,15,7]",
     "sampleOutput": "[[3],[9,20],[15,7]]"
   },
@@ -1668,6 +1819,7 @@
     "pattern": "Tree BFS",
     "pythonFunction": "binary_tree_zigzag_level_order_traversal",
     "goFunction": "Solve152",
+    "leetcodeUrl": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
     "sampleInput": "root=[3,9,20,null,null,15,7]",
     "sampleOutput": "[[3],[20,9],[15,7]]"
   },
@@ -1679,6 +1831,7 @@
     "pattern": "BST",
     "pythonFunction": "minimum_absolute_difference_in_bst",
     "goFunction": "Solve153",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-absolute-difference-in-bst/",
     "sampleInput": "root=[4,2,6,1,3]",
     "sampleOutput": "1"
   },
@@ -1690,6 +1843,7 @@
     "pattern": "BST",
     "pythonFunction": "kth_smallest_element_in_a_bst",
     "goFunction": "Solve154",
+    "leetcodeUrl": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
     "sampleInput": "root=[3,1,4,null,2], k=1",
     "sampleOutput": "1"
   },
@@ -1701,6 +1855,7 @@
     "pattern": "BST",
     "pythonFunction": "validate_binary_search_tree",
     "goFunction": "Solve155",
+    "leetcodeUrl": "https://leetcode.com/problems/validate-binary-search-tree/",
     "sampleInput": "root=[2,1,3]",
     "sampleOutput": "true"
   },
@@ -1712,6 +1867,7 @@
     "pattern": "Graph",
     "pythonFunction": "number_of_islands",
     "goFunction": "Solve156",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-islands/",
     "sampleInput": "grid=[[\"1\",\"1\",\"0\"],[\"0\",\"1\",\"0\"],[\"1\",\"0\",\"1\"]]",
     "sampleOutput": "3"
   },
@@ -1723,6 +1879,7 @@
     "pattern": "Graph",
     "pythonFunction": "surrounded_regions",
     "goFunction": "Solve157",
+    "leetcodeUrl": "https://leetcode.com/problems/surrounded-regions/",
     "sampleInput": "board=[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]",
     "sampleOutput": "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]"
   },
@@ -1734,6 +1891,7 @@
     "pattern": "Graph",
     "pythonFunction": "clone_graph",
     "goFunction": "Solve158",
+    "leetcodeUrl": "https://leetcode.com/problems/clone-graph/",
     "sampleInput": "adjList=[[2,4],[1,3],[2,4],[1,3]]",
     "sampleOutput": "deep copy with same adjacency"
   },
@@ -1745,6 +1903,7 @@
     "pattern": "Graph",
     "pythonFunction": "course_schedule",
     "goFunction": "Solve159",
+    "leetcodeUrl": "https://leetcode.com/problems/course-schedule/",
     "sampleInput": "numCourses=2, prerequisites=[[1,0]]",
     "sampleOutput": "true"
   },
@@ -1756,6 +1915,7 @@
     "pattern": "Graph",
     "pythonFunction": "course_schedule_ii",
     "goFunction": "Solve160",
+    "leetcodeUrl": "https://leetcode.com/problems/course-schedule-ii/",
     "sampleInput": "numCourses=2, prerequisites=[[1,0]]",
     "sampleOutput": "[0,1]"
   },
@@ -1767,6 +1927,7 @@
     "pattern": "Graph",
     "pythonFunction": "snakes_and_ladders",
     "goFunction": "Solve161",
+    "leetcodeUrl": "https://leetcode.com/problems/snakes-and-ladders/",
     "sampleInput": "board=[[-1,-1],[-1,-1]]",
     "sampleOutput": "1"
   },
@@ -1778,6 +1939,7 @@
     "pattern": "Graph",
     "pythonFunction": "minimum_genetic_mutation",
     "goFunction": "Solve162",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-genetic-mutation/",
     "sampleInput": "start=\"AACCGGTT\", end=\"AACCGGTA\", bank=[\"AACCGGTA\"]",
     "sampleOutput": "1"
   },
@@ -1789,6 +1951,7 @@
     "pattern": "Graph",
     "pythonFunction": "word_ladder",
     "goFunction": "Solve163",
+    "leetcodeUrl": "https://leetcode.com/problems/word-ladder/",
     "sampleInput": "beginWord=\"hit\", endWord=\"cog\", wordList=[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
     "sampleOutput": "5"
   },
@@ -1800,6 +1963,7 @@
     "pattern": "Trie / Encoding",
     "pythonFunction": "design_add_and_search_words_data_structure",
     "goFunction": "Solve164",
+    "leetcodeUrl": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
     "sampleInput": "add bad,dad,mad; search pad,bad,.ad,b..",
     "sampleOutput": "[false,true,true,true]"
   },
@@ -1811,6 +1975,7 @@
     "pattern": "Trie / Encoding",
     "pythonFunction": "word_search_ii",
     "goFunction": "Solve165",
+    "leetcodeUrl": "https://leetcode.com/problems/word-search-ii/",
     "sampleInput": "board=[[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]], words=[\"oath\",\"pea\",\"eat\",\"rain\"]",
     "sampleOutput": "[\"eat\",\"oath\"]"
   },
@@ -1822,6 +1987,7 @@
     "pattern": "Backtracking",
     "pythonFunction": "combinations",
     "goFunction": "Solve166",
+    "leetcodeUrl": "https://leetcode.com/problems/combinations/",
     "sampleInput": "n=4, k=2",
     "sampleOutput": "[[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]"
   },
@@ -1833,6 +1999,7 @@
     "pattern": "Backtracking",
     "pythonFunction": "permutations",
     "goFunction": "Solve167",
+    "leetcodeUrl": "https://leetcode.com/problems/permutations/",
     "sampleInput": "nums=[1,2,3]",
     "sampleOutput": "6 permutations"
   },
@@ -1844,6 +2011,7 @@
     "pattern": "Backtracking",
     "pythonFunction": "combination_sum",
     "goFunction": "Solve168",
+    "leetcodeUrl": "https://leetcode.com/problems/combination-sum/",
     "sampleInput": "candidates=[2,3,6,7], target=7",
     "sampleOutput": "[[2,2,3],[7]]"
   },
@@ -1855,6 +2023,7 @@
     "pattern": "Backtracking",
     "pythonFunction": "n_queens_ii",
     "goFunction": "Solve169",
+    "leetcodeUrl": "https://leetcode.com/problems/n-queens-ii/",
     "sampleInput": "n=4",
     "sampleOutput": "2"
   },
@@ -1866,6 +2035,7 @@
     "pattern": "Backtracking",
     "pythonFunction": "generate_parentheses",
     "goFunction": "Solve170",
+    "leetcodeUrl": "https://leetcode.com/problems/generate-parentheses/",
     "sampleInput": "n=3",
     "sampleOutput": "[\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]"
   },
@@ -1877,6 +2047,7 @@
     "pattern": "Backtracking",
     "pythonFunction": "word_search",
     "goFunction": "Solve171",
+    "leetcodeUrl": "https://leetcode.com/problems/word-search/",
     "sampleInput": "board=[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word=\"ABCCED\"",
     "sampleOutput": "true"
   },
@@ -1888,6 +2059,7 @@
     "pattern": "BST",
     "pythonFunction": "convert_sorted_array_to_binary_search_tree",
     "goFunction": "Solve172",
+    "leetcodeUrl": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
     "sampleInput": "nums=[-10,-3,0,5,9]",
     "sampleOutput": "balanced BST such as [0,-3,9,-10,null,5]"
   },
@@ -1899,6 +2071,7 @@
     "pattern": "Linked List",
     "pythonFunction": "sort_list",
     "goFunction": "Solve173",
+    "leetcodeUrl": "https://leetcode.com/problems/sort-list/",
     "sampleInput": "head=[4,2,1,3]",
     "sampleOutput": "[1,2,3,4]"
   },
@@ -1910,6 +2083,7 @@
     "pattern": "Math / Greedy",
     "pythonFunction": "construct_quad_tree",
     "goFunction": "Solve174",
+    "leetcodeUrl": "https://leetcode.com/problems/construct-quad-tree/",
     "sampleInput": "grid=[[1,1],[1,1]]",
     "sampleOutput": "leaf node with val=true"
   },
@@ -1921,6 +2095,7 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "merge_k_sorted_lists",
     "goFunction": "Solve175",
+    "leetcodeUrl": "https://leetcode.com/problems/merge-k-sorted-lists/",
     "sampleInput": "lists=[[1,4,5],[1,3,4],[2,6]]",
     "sampleOutput": "[1,1,2,3,4,4,5,6]"
   },
@@ -1932,6 +2107,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "maximum_subarray",
     "goFunction": "Solve176",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-subarray/",
     "sampleInput": "nums=[-2,1,-3,4,-1,2,1,-5,4]",
     "sampleOutput": "6"
   },
@@ -1943,6 +2119,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "maximum_sum_circular_subarray",
     "goFunction": "Solve177",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-sum-circular-subarray/",
     "sampleInput": "nums=[5,-3,5]",
     "sampleOutput": "10"
   },
@@ -1954,6 +2131,7 @@
     "pattern": "Binary Search",
     "pythonFunction": "search_insert_position",
     "goFunction": "Solve178",
+    "leetcodeUrl": "https://leetcode.com/problems/search-insert-position/",
     "sampleInput": "nums=[1,3,5,6], target=2",
     "sampleOutput": "1"
   },
@@ -1965,6 +2143,7 @@
     "pattern": "Binary Search",
     "pythonFunction": "search_a_2d_matrix",
     "goFunction": "Solve179",
+    "leetcodeUrl": "https://leetcode.com/problems/search-a-2d-matrix/",
     "sampleInput": "matrix=[[1,3,5],[7,9,11]], target=9",
     "sampleOutput": "true"
   },
@@ -1976,6 +2155,7 @@
     "pattern": "Binary Search",
     "pythonFunction": "search_in_rotated_sorted_array",
     "goFunction": "Solve180",
+    "leetcodeUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
     "sampleInput": "nums=[4,5,6,7,0,1,2], target=0",
     "sampleOutput": "4"
   },
@@ -1987,6 +2167,7 @@
     "pattern": "Binary Search",
     "pythonFunction": "find_first_and_last_position_of_element_in_sorted_array",
     "goFunction": "Solve181",
+    "leetcodeUrl": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
     "sampleInput": "nums=[5,7,7,8,8,10], target=8",
     "sampleOutput": "[3,4]"
   },
@@ -1998,6 +2179,7 @@
     "pattern": "Binary Search",
     "pythonFunction": "find_minimum_in_rotated_sorted_array",
     "goFunction": "Solve182",
+    "leetcodeUrl": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
     "sampleInput": "nums=[3,4,5,1,2]",
     "sampleOutput": "1"
   },
@@ -2009,6 +2191,7 @@
     "pattern": "Binary Search",
     "pythonFunction": "median_of_two_sorted_arrays",
     "goFunction": "Solve183",
+    "leetcodeUrl": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
     "sampleInput": "nums1=[1,3], nums2=[2]",
     "sampleOutput": "2.0"
   },
@@ -2020,6 +2203,7 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "ipo",
     "goFunction": "Solve184",
+    "leetcodeUrl": "https://leetcode.com/problems/ipo/",
     "sampleInput": "k=2, w=0, profits=[1,2,3], capital=[0,1,1]",
     "sampleOutput": "4"
   },
@@ -2031,6 +2215,7 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "find_k_pairs_with_smallest_sums",
     "goFunction": "Solve185",
+    "leetcodeUrl": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/",
     "sampleInput": "nums1=[1,7,11], nums2=[2,4,6], k=3",
     "sampleOutput": "[[1,2],[1,4],[1,6]]"
   },
@@ -2042,6 +2227,7 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "find_median_from_data_stream",
     "goFunction": "Solve186",
+    "leetcodeUrl": "https://leetcode.com/problems/find-median-from-data-stream/",
     "sampleInput": "add 1, add 2, find, add 3, find",
     "sampleOutput": "[null,null,1.5,null,2]"
   },
@@ -2053,6 +2239,7 @@
     "pattern": "Bit Manipulation",
     "pythonFunction": "add_binary",
     "goFunction": "Solve187",
+    "leetcodeUrl": "https://leetcode.com/problems/add-binary/",
     "sampleInput": "a=\"1010\", b=\"1011\"",
     "sampleOutput": "\"10101\""
   },
@@ -2064,6 +2251,7 @@
     "pattern": "Bit Manipulation",
     "pythonFunction": "reverse_bits",
     "goFunction": "Solve188",
+    "leetcodeUrl": "https://leetcode.com/problems/reverse-bits/",
     "sampleInput": "n=43261596",
     "sampleOutput": "964176192"
   },
@@ -2075,6 +2263,7 @@
     "pattern": "Bit Manipulation",
     "pythonFunction": "number_of_1_bits",
     "goFunction": "Solve189",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-1-bits/",
     "sampleInput": "n=11",
     "sampleOutput": "3"
   },
@@ -2086,6 +2275,7 @@
     "pattern": "Bit Manipulation",
     "pythonFunction": "single_number_ii",
     "goFunction": "Solve190",
+    "leetcodeUrl": "https://leetcode.com/problems/single-number-ii/",
     "sampleInput": "nums=[2,2,3,2]",
     "sampleOutput": "3"
   },
@@ -2097,6 +2287,7 @@
     "pattern": "Bit Manipulation",
     "pythonFunction": "bitwise_and_of_numbers_range",
     "goFunction": "Solve191",
+    "leetcodeUrl": "https://leetcode.com/problems/bitwise-and-of-numbers-range/",
     "sampleInput": "left=5, right=7",
     "sampleOutput": "4"
   },
@@ -2108,6 +2299,7 @@
     "pattern": "Math / Greedy",
     "pythonFunction": "palindrome_number",
     "goFunction": "Solve192",
+    "leetcodeUrl": "https://leetcode.com/problems/palindrome-number/",
     "sampleInput": "x=121",
     "sampleOutput": "true"
   },
@@ -2119,6 +2311,7 @@
     "pattern": "Math / Greedy",
     "pythonFunction": "plus_one",
     "goFunction": "Solve193",
+    "leetcodeUrl": "https://leetcode.com/problems/plus-one/",
     "sampleInput": "digits=[9,9]",
     "sampleOutput": "[1,0,0]"
   },
@@ -2130,6 +2323,7 @@
     "pattern": "Math / Greedy",
     "pythonFunction": "factorial_trailing_zeroes",
     "goFunction": "Solve194",
+    "leetcodeUrl": "https://leetcode.com/problems/factorial-trailing-zeroes/",
     "sampleInput": "n=25",
     "sampleOutput": "6"
   },
@@ -2141,6 +2335,7 @@
     "pattern": "Binary Search",
     "pythonFunction": "sqrt_x",
     "goFunction": "Solve195",
+    "leetcodeUrl": "https://leetcode.com/problems/sqrtx/",
     "sampleInput": "x=8",
     "sampleOutput": "2"
   },
@@ -2152,6 +2347,7 @@
     "pattern": "Math / Greedy",
     "pythonFunction": "pow_x_n",
     "goFunction": "Solve196",
+    "leetcodeUrl": "https://leetcode.com/problems/powx-n/",
     "sampleInput": "x=2.0, n=-2",
     "sampleOutput": "0.25"
   },
@@ -2163,6 +2359,7 @@
     "pattern": "Math / Greedy",
     "pythonFunction": "max_points_on_a_line",
     "goFunction": "Solve197",
+    "leetcodeUrl": "https://leetcode.com/problems/max-points-on-a-line/",
     "sampleInput": "points=[[1,1],[2,2],[3,3],[3,4]]",
     "sampleOutput": "3"
   },
@@ -2174,6 +2371,7 @@
     "pattern": "DP 1D",
     "pythonFunction": "climbing_stairs",
     "goFunction": "Solve198",
+    "leetcodeUrl": "https://leetcode.com/problems/climbing-stairs/",
     "sampleInput": "n=3",
     "sampleOutput": "3"
   },
@@ -2185,6 +2383,7 @@
     "pattern": "DP 1D",
     "pythonFunction": "word_break",
     "goFunction": "Solve199",
+    "leetcodeUrl": "https://leetcode.com/problems/word-break/",
     "sampleInput": "s=\"leetcode\", wordDict=[\"leet\",\"code\"]",
     "sampleOutput": "true"
   },
@@ -2196,6 +2395,7 @@
     "pattern": "DP 1D",
     "pythonFunction": "coin_change",
     "goFunction": "Solve200",
+    "leetcodeUrl": "https://leetcode.com/problems/coin-change/",
     "sampleInput": "coins=[1,2,5], amount=11",
     "sampleOutput": "3"
   },
@@ -2207,6 +2407,7 @@
     "pattern": "DP 1D",
     "pythonFunction": "longest_increasing_subsequence",
     "goFunction": "Solve201",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-increasing-subsequence/",
     "sampleInput": "nums=[10,9,2,5,3,7,101,18]",
     "sampleOutput": "4"
   },
@@ -2218,6 +2419,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "triangle",
     "goFunction": "Solve202",
+    "leetcodeUrl": "https://leetcode.com/problems/triangle/",
     "sampleInput": "triangle=[[2],[3,4],[6,5,7],[4,1,8,3]]",
     "sampleOutput": "11"
   },
@@ -2229,6 +2431,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "minimum_path_sum",
     "goFunction": "Solve203",
+    "leetcodeUrl": "https://leetcode.com/problems/minimum-path-sum/",
     "sampleInput": "grid=[[1,3,1],[1,5,1],[4,2,1]]",
     "sampleOutput": "7"
   },
@@ -2240,6 +2443,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "unique_paths_ii",
     "goFunction": "Solve204",
+    "leetcodeUrl": "https://leetcode.com/problems/unique-paths-ii/",
     "sampleInput": "obstacleGrid=[[0,0,0],[0,1,0],[0,0,0]]",
     "sampleOutput": "2"
   },
@@ -2251,6 +2455,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "longest_palindromic_substring",
     "goFunction": "Solve205",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-palindromic-substring/",
     "sampleInput": "s=\"babad\"",
     "sampleOutput": "\"bab\" or \"aba\""
   },
@@ -2262,6 +2467,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "interleaving_string",
     "goFunction": "Solve206",
+    "leetcodeUrl": "https://leetcode.com/problems/interleaving-string/",
     "sampleInput": "s1=\"aabcc\", s2=\"dbbca\", s3=\"aadbbcbcac\"",
     "sampleOutput": "true"
   },
@@ -2273,6 +2479,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "best_time_to_buy_and_sell_stock_iii",
     "goFunction": "Solve207",
+    "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
     "sampleInput": "prices=[3,3,5,0,0,3,1,4]",
     "sampleOutput": "6"
   },
@@ -2284,6 +2491,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "best_time_to_buy_and_sell_stock_iv",
     "goFunction": "Solve208",
+    "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
     "sampleInput": "k=2, prices=[2,4,1]",
     "sampleOutput": "2"
   },
@@ -2295,6 +2503,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "maximal_square",
     "goFunction": "Solve209",
+    "leetcodeUrl": "https://leetcode.com/problems/maximal-square/",
     "sampleInput": "matrix=[[\"1\",\"0\",\"1\",\"0\"],[\"1\",\"0\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\"]]",
     "sampleOutput": "4"
   },
@@ -2306,6 +2515,7 @@
     "pattern": "Hash Map / Set",
     "pythonFunction": "contains_duplicate",
     "goFunction": "Solve210",
+    "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate/",
     "sampleInput": "nums=[1,2,3,1]",
     "sampleOutput": "true"
   },
@@ -2317,6 +2527,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "maximum_product_subarray",
     "goFunction": "Solve211",
+    "leetcodeUrl": "https://leetcode.com/problems/maximum-product-subarray/",
     "sampleInput": "nums=[2,3,-2,4]",
     "sampleOutput": "6"
   },
@@ -2328,6 +2539,7 @@
     "pattern": "Bit Manipulation",
     "pythonFunction": "sum_of_two_integers",
     "goFunction": "Solve212",
+    "leetcodeUrl": "https://leetcode.com/problems/sum-of-two-integers/",
     "sampleInput": "a=1, b=2",
     "sampleOutput": "3"
   },
@@ -2339,6 +2551,7 @@
     "pattern": "Bit Manipulation",
     "pythonFunction": "missing_number",
     "goFunction": "Solve213",
+    "leetcodeUrl": "https://leetcode.com/problems/missing-number/",
     "sampleInput": "nums=[3,0,1]",
     "sampleOutput": "2"
   },
@@ -2350,6 +2563,7 @@
     "pattern": "DP 1D",
     "pythonFunction": "house_robber_ii",
     "goFunction": "Solve214",
+    "leetcodeUrl": "https://leetcode.com/problems/house-robber-ii/",
     "sampleInput": "nums=[2,3,2]",
     "sampleOutput": "3"
   },
@@ -2361,6 +2575,7 @@
     "pattern": "DP 1D",
     "pythonFunction": "decode_ways",
     "goFunction": "Solve215",
+    "leetcodeUrl": "https://leetcode.com/problems/decode-ways/",
     "sampleInput": "s=\"226\"",
     "sampleOutput": "3"
   },
@@ -2372,6 +2587,7 @@
     "pattern": "Graph",
     "pythonFunction": "pacific_atlantic_water_flow",
     "goFunction": "Solve216",
+    "leetcodeUrl": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
     "sampleInput": "heights=[[1,2],[4,3]]",
     "sampleOutput": "[[0,1],[1,0],[1,1]]"
   },
@@ -2383,6 +2599,7 @@
     "pattern": "Graph",
     "pythonFunction": "alien_dictionary",
     "goFunction": "Solve217",
+    "leetcodeUrl": "https://leetcode.com/problems/alien-dictionary/",
     "sampleInput": "words=[\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"]",
     "sampleOutput": "\"wertf\""
   },
@@ -2394,6 +2611,7 @@
     "pattern": "Graph",
     "pythonFunction": "graph_valid_tree",
     "goFunction": "Solve218",
+    "leetcodeUrl": "https://leetcode.com/problems/graph-valid-tree/",
     "sampleInput": "n=5, edges=[[0,1],[0,2],[0,3],[1,4]]",
     "sampleOutput": "true"
   },
@@ -2405,6 +2623,7 @@
     "pattern": "Graph",
     "pythonFunction": "number_of_connected_components_in_an_undirected_graph",
     "goFunction": "Solve219",
+    "leetcodeUrl": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
     "sampleInput": "n=5, edges=[[0,1],[1,2],[3,4]]",
     "sampleOutput": "2"
   },
@@ -2416,6 +2635,7 @@
     "pattern": "Intervals",
     "pythonFunction": "meeting_rooms",
     "goFunction": "Solve220",
+    "leetcodeUrl": "https://leetcode.com/problems/meeting-rooms/",
     "sampleInput": "intervals=[[0,30],[5,10],[15,20]]",
     "sampleOutput": "false"
   },
@@ -2427,6 +2647,7 @@
     "pattern": "Intervals",
     "pythonFunction": "meeting_rooms_ii",
     "goFunction": "Solve221",
+    "leetcodeUrl": "https://leetcode.com/problems/meeting-rooms-ii/",
     "sampleInput": "intervals=[[0,30],[5,10],[15,20]]",
     "sampleOutput": "2"
   },
@@ -2438,6 +2659,7 @@
     "pattern": "Linked List",
     "pythonFunction": "reorder_list",
     "goFunction": "Solve222",
+    "leetcodeUrl": "https://leetcode.com/problems/reorder-list/",
     "sampleInput": "head=[1,2,3,4,5]",
     "sampleOutput": "[1,5,2,4,3]"
   },
@@ -2449,6 +2671,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "subtree_of_another_tree",
     "goFunction": "Solve223",
+    "leetcodeUrl": "https://leetcode.com/problems/subtree-of-another-tree/",
     "sampleInput": "root=[3,4,5,1,2], subRoot=[4,1,2]",
     "sampleOutput": "true"
   },
@@ -2460,6 +2683,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "lowest_common_ancestor_of_a_binary_search_tree",
     "goFunction": "Solve224",
+    "leetcodeUrl": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
     "sampleInput": "root=[6,2,8,0,4,7,9,null,null,3,5], p=2, q=8",
     "sampleOutput": "6"
   },
@@ -2471,6 +2695,7 @@
     "pattern": "Tree DFS",
     "pythonFunction": "serialize_and_deserialize_binary_tree",
     "goFunction": "Solve225",
+    "leetcodeUrl": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
     "sampleInput": "root=[1,2,3,null,null,4,5]",
     "sampleOutput": "deserialize(serialize(root)) equals the original tree"
   },
@@ -2482,6 +2707,7 @@
     "pattern": "Heap / Priority Queue",
     "pythonFunction": "top_k_frequent_elements",
     "goFunction": "Solve226",
+    "leetcodeUrl": "https://leetcode.com/problems/top-k-frequent-elements/",
     "sampleInput": "nums=[1,1,1,2,2,3], k=2",
     "sampleOutput": "[1,2]"
   },
@@ -2493,6 +2719,7 @@
     "pattern": "Sliding Window",
     "pythonFunction": "longest_repeating_character_replacement",
     "goFunction": "Solve227",
+    "leetcodeUrl": "https://leetcode.com/problems/longest-repeating-character-replacement/",
     "sampleInput": "s=\"AABABBA\", k=1",
     "sampleOutput": "4"
   },
@@ -2504,6 +2731,7 @@
     "pattern": "Trie / Encoding",
     "pythonFunction": "encode_and_decode_strings",
     "goFunction": "Solve228",
+    "leetcodeUrl": "https://leetcode.com/problems/encode-and-decode-strings/",
     "sampleInput": "strs=[\"lint\",\"code\",\"love\"]",
     "sampleOutput": "decode(encode(strs))=[\"lint\",\"code\",\"love\"]"
   },
@@ -2515,6 +2743,7 @@
     "pattern": "DP 2D / Kadane",
     "pythonFunction": "palindromic_substrings",
     "goFunction": "Solve229",
+    "leetcodeUrl": "https://leetcode.com/problems/palindromic-substrings/",
     "sampleInput": "s=\"aaa\"",
     "sampleOutput": "6"
   }

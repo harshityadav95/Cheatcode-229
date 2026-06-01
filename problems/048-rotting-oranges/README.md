@@ -1,6 +1,6 @@
 # 048. Rotting Oranges
 
-- LeetCode: 994
+- LeetCode: [994. Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Each minute, rotten oranges make adjacent fresh oranges rotten. Return minutes until all fresh rot, or -1 if impossible.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/rotting-oranges/)
+- [LeetCode community solutions](https://leetcode.com/problems/rotting-oranges/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

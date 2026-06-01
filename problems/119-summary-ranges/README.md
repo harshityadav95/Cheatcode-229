@@ -1,6 +1,6 @@
 # 119. Summary Ranges
 
-- LeetCode: 228
+- LeetCode: [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/)
 - Pattern: Prefix / Scan
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Summarize sorted unique integers into minimal ranges.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/summary-ranges/)
+- [LeetCode community solutions](https://leetcode.com/problems/summary-ranges/solutions/)
+- [Prefix sum topic](https://leetcode.com/tag/prefix-sum/)
 
 ## Example
 

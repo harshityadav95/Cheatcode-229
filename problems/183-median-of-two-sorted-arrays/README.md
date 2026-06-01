@@ -1,6 +1,6 @@
 # 183. Median of Two Sorted Arrays
 
-- LeetCode: 4
+- LeetCode: [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 - Pattern: Binary Search
 - Difficulty: Medium
 - Time: O(log n) or O(n log R)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the median of two sorted arrays in O(log(m+n)) time.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+- [LeetCode community solutions](https://leetcode.com/problems/median-of-two-sorted-arrays/solutions/)
+- [Binary search topic](https://leetcode.com/tag/binary-search/)
 
 ## Example
 

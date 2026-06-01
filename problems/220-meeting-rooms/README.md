@@ -1,6 +1,6 @@
 # 220. Meeting Rooms
 
-- LeetCode: 252
+- LeetCode: [252. Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)
 - Pattern: Intervals
 - Difficulty: Medium
 - Time: O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given meeting time intervals, return whether one person can attend all meetings.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/meeting-rooms/)
+- [LeetCode community solutions](https://leetcode.com/problems/meeting-rooms/solutions/)
+- [Sorting topic](https://leetcode.com/tag/sorting/)
 
 ## Example
 

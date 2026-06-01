@@ -1,6 +1,6 @@
 # 008. Increasing Triplet Subsequence
 
-- LeetCode: 334
+- LeetCode: [334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)
 - Pattern: Math / Greedy
 - Difficulty: Medium
 - Time: O(n) or O(log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return true if there exist indices i<j<k with nums[i]<nums[j]<nums[k].
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/increasing-triplet-subsequence/)
+- [LeetCode community solutions](https://leetcode.com/problems/increasing-triplet-subsequence/solutions/)
+- [Greedy topic](https://leetcode.com/tag/greedy/)
 
 ## Example
 

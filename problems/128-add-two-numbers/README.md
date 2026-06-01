@@ -1,6 +1,6 @@
 # 128. Add Two Numbers
 
-- LeetCode: 2
+- LeetCode: [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Add two nonnegative integers represented by reversed linked-list digits and return the sum in the same format.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/add-two-numbers/)
+- [LeetCode community solutions](https://leetcode.com/problems/add-two-numbers/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

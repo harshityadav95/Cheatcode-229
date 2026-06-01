@@ -1,6 +1,6 @@
 # 193. Plus One
 
-- LeetCode: 66
+- LeetCode: [66. Plus One](https://leetcode.com/problems/plus-one/)
 - Pattern: Math / Greedy
 - Difficulty: Medium
 - Time: O(n) or O(log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Add one to a nonnegative integer represented as an array of decimal digits.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/plus-one/)
+- [LeetCode community solutions](https://leetcode.com/problems/plus-one/solutions/)
+- [Greedy topic](https://leetcode.com/tag/greedy/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 194. Factorial Trailing Zeroes
 
-- LeetCode: 172
+- LeetCode: [172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/)
 - Pattern: Math / Greedy
 - Difficulty: Medium
 - Time: O(n) or O(log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the number of trailing zeroes in n factorial.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/factorial-trailing-zeroes/)
+- [LeetCode community solutions](https://leetcode.com/problems/factorial-trailing-zeroes/solutions/)
+- [Greedy topic](https://leetcode.com/tag/greedy/)
 
 ## Example
 

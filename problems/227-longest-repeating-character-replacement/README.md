@@ -1,6 +1,6 @@
 # 227. Longest Repeating Character Replacement
 
-- LeetCode: 424
+- LeetCode: [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 - Pattern: Sliding Window
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the longest substring length that can be made of one repeated character by replacing at most k characters.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/longest-repeating-character-replacement/)
+- [LeetCode community solutions](https://leetcode.com/problems/longest-repeating-character-replacement/solutions/)
+- [Sliding window topic](https://leetcode.com/tag/sliding-window/)
 
 ## Example
 

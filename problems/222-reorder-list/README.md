@@ -1,6 +1,6 @@
 # 222. Reorder List
 
-- LeetCode: 143
+- LeetCode: [143. Reorder List](https://leetcode.com/problems/reorder-list/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Reorder a linked list as L0, Ln, L1, Ln-1, and so on in-place.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/reorder-list/)
+- [LeetCode community solutions](https://leetcode.com/problems/reorder-list/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

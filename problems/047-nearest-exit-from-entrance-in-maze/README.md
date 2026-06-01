@@ -1,6 +1,6 @@
 # 047. Nearest Exit from Entrance in Maze
 
-- LeetCode: 1926
+- LeetCode: [1926. Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 In a maze of walls plus and open dots, return the shortest steps from entrance to any boundary exit not equal to entrance.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)
+- [LeetCode community solutions](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

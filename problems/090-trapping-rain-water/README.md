@@ -1,6 +1,6 @@
 # 090. Trapping Rain Water
 
-- LeetCode: 42
+- LeetCode: [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
 - Pattern: Two Pointers
 - Difficulty: Medium
 - Time: O(n) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given bar heights, compute total rain water trapped between bars.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/trapping-rain-water/)
+- [LeetCode community solutions](https://leetcode.com/problems/trapping-rain-water/solutions/)
+- [Two pointers topic](https://leetcode.com/tag/two-pointers/)
 
 ## Example
 

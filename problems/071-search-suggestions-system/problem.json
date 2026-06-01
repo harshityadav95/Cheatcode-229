@@ -73,6 +73,24 @@
   ],
   "pythonFunction": "search_suggestions_system",
   "goFunction": "Solve071",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/search-suggestions-system/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/search-suggestions-system/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Trie topic",
+      "url": "https://leetcode.com/tag/trie/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

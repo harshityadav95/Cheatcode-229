@@ -75,6 +75,24 @@
   ],
   "pythonFunction": "find_the_index_of_the_first_occurrence_in_a_string",
   "goFunction": "Solve096",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Array and string topic",
+      "url": "https://leetcode.com/tag/array/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

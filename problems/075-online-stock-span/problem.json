@@ -72,6 +72,24 @@
   ],
   "pythonFunction": "online_stock_span",
   "goFunction": "Solve075",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/online-stock-span/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/online-stock-span/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Monotonic stack topic",
+      "url": "https://leetcode.com/tag/monotonic-stack/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

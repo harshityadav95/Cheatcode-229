@@ -70,6 +70,24 @@
   ],
   "pythonFunction": "koko_eating_bananas",
   "goFunction": "Solve056",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/koko-eating-bananas/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/koko-eating-bananas/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Binary search topic",
+      "url": "https://leetcode.com/tag/binary-search/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

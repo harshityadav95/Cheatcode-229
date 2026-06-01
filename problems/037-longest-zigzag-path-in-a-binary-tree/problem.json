@@ -73,6 +73,24 @@
   ],
   "pythonFunction": "longest_zigzag_path_in_a_binary_tree",
   "goFunction": "Solve037",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Tree topic",
+      "url": "https://leetcode.com/tag/tree/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

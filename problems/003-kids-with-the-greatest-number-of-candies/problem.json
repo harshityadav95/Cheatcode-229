@@ -75,6 +75,24 @@
   ],
   "pythonFunction": "kids_with_the_greatest_number_of_candies",
   "goFunction": "Solve003",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Array and string topic",
+      "url": "https://leetcode.com/tag/array/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

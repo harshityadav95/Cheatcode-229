@@ -1,6 +1,6 @@
 # 216. Pacific Atlantic Water Flow
 
-- LeetCode: 417
+- LeetCode: [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return coordinates that can flow to both the Pacific top/left edges and Atlantic bottom/right edges, moving from high to low or equal height.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+- [LeetCode community solutions](https://leetcode.com/problems/pacific-atlantic-water-flow/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

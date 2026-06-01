@@ -75,6 +75,24 @@
   ],
   "pythonFunction": "maximum_number_of_vowels_in_a_substring_of_given_length",
   "goFunction": "Solve015",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Sliding window topic",
+      "url": "https://leetcode.com/tag/sliding-window/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

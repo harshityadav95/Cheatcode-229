@@ -1,6 +1,6 @@
 # 159. Course Schedule
 
-- LeetCode: 207
+- LeetCode: [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given prerequisite pairs, return whether all courses can be finished.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/course-schedule/)
+- [LeetCode community solutions](https://leetcode.com/problems/course-schedule/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

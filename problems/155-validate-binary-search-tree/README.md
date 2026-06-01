@@ -1,6 +1,6 @@
 # 155. Validate Binary Search Tree
 
-- LeetCode: 98
+- LeetCode: [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 - Pattern: BST
 - Difficulty: Medium
 - Time: O(h) to O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether a binary tree satisfies the BST property with strict lower and upper bounds at every node.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/validate-binary-search-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/validate-binary-search-tree/solutions/)
+- [Binary search tree topic](https://leetcode.com/tag/binary-search-tree/)
 
 ## Example
 

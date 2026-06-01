@@ -1,6 +1,6 @@
 # 124. Min Stack
 
-- LeetCode: 155
+- LeetCode: [155. Min Stack](https://leetcode.com/problems/min-stack/)
 - Pattern: Stack
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Design a stack supporting push, pop, top, and getMin, all in O(1) time.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/min-stack/)
+- [LeetCode community solutions](https://leetcode.com/problems/min-stack/solutions/)
+- [Stack topic](https://leetcode.com/tag/stack/)
 
 ## Example
 

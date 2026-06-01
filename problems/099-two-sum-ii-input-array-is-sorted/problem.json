@@ -75,6 +75,24 @@
   ],
   "pythonFunction": "two_sum_ii_input_array_is_sorted",
   "goFunction": "Solve099",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Two pointers topic",
+      "url": "https://leetcode.com/tag/two-pointers/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

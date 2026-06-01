@@ -1,6 +1,6 @@
 # 088. Gas Station
 
-- LeetCode: 134
+- LeetCode: [134. Gas Station](https://leetcode.com/problems/gas-station/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given gas gained and travel cost at each station on a circle, return the start index that completes the circuit, or -1.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/gas-station/)
+- [LeetCode community solutions](https://leetcode.com/problems/gas-station/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 091. Roman to Integer
 
-- LeetCode: 13
+- LeetCode: [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Convert a valid Roman numeral to its integer value.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/roman-to-integer/)
+- [LeetCode community solutions](https://leetcode.com/problems/roman-to-integer/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

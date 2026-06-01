@@ -1,6 +1,6 @@
 # 158. Clone Graph
 
-- LeetCode: 133
+- LeetCode: [133. Clone Graph](https://leetcode.com/problems/clone-graph/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Deep-copy an undirected connected graph where each node stores a value and neighbor list.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/clone-graph/)
+- [LeetCode community solutions](https://leetcode.com/problems/clone-graph/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

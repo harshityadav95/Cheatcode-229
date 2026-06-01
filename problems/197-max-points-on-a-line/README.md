@@ -1,6 +1,6 @@
 # 197. Max Points on a Line
 
-- LeetCode: 149
+- LeetCode: [149. Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/)
 - Pattern: Math / Greedy
 - Difficulty: Medium
 - Time: O(n) or O(log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given points in the plane, return the maximum number that lie on the same straight line.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/max-points-on-a-line/)
+- [LeetCode community solutions](https://leetcode.com/problems/max-points-on-a-line/solutions/)
+- [Greedy topic](https://leetcode.com/tag/greedy/)
 
 ## Example
 

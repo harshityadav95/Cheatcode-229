@@ -1,6 +1,6 @@
 # 069. Minimum Flips to Make a OR b Equal to c
 
-- LeetCode: 1318
+- LeetCode: [1318. Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/)
 - Pattern: Bit Manipulation
 - Difficulty: Easy
 - Time: O(n) or O(bits)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the minimum bit flips in a and b needed so the bitwise OR of a and b equals c.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/)
+- [LeetCode community solutions](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/solutions/)
+- [Bit manipulation topic](https://leetcode.com/tag/bit-manipulation/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 169. N-Queens II
 
-- LeetCode: 52
+- LeetCode: [52. N-Queens II](https://leetcode.com/problems/n-queens-ii/)
 - Pattern: Backtracking
 - Difficulty: Medium
 - Time: O(branch^depth)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the number of ways to place n queens on an n by n board so no two attack.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/n-queens-ii/)
+- [LeetCode community solutions](https://leetcode.com/problems/n-queens-ii/solutions/)
+- [Backtracking topic](https://leetcode.com/tag/backtracking/)
 
 ## Example
 

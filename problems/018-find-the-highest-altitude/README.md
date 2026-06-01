@@ -1,6 +1,6 @@
 # 018. Find the Highest Altitude
 
-- LeetCode: 1732
+- LeetCode: [1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
 - Pattern: Prefix / Scan
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Starting altitude is 0. Given net gains between points, return the highest altitude reached.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/find-the-highest-altitude/)
+- [LeetCode community solutions](https://leetcode.com/problems/find-the-highest-altitude/solutions/)
+- [Prefix sum topic](https://leetcode.com/tag/prefix-sum/)
 
 ## Example
 

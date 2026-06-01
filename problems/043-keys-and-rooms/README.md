@@ -1,6 +1,6 @@
 # 043. Keys and Rooms
 
-- LeetCode: 841
+- LeetCode: [841. Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Each room may contain keys to other rooms. Starting in room 0, return whether all rooms can be visited.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/keys-and-rooms/)
+- [LeetCode community solutions](https://leetcode.com/problems/keys-and-rooms/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

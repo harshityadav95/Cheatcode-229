@@ -1,6 +1,6 @@
 # 144. Flatten Binary Tree to Linked List
 
-- LeetCode: 114
+- LeetCode: [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Flatten a binary tree to a right-child-only linked list following preorder traversal.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
+- [LeetCode community solutions](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

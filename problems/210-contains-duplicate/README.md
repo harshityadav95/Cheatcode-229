@@ -1,6 +1,6 @@
 # 210. Contains Duplicate
 
-- LeetCode: 217
+- LeetCode: [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return true if any value appears at least twice in the array.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/contains-duplicate/)
+- [LeetCode community solutions](https://leetcode.com/problems/contains-duplicate/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

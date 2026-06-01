@@ -73,6 +73,24 @@
   ],
   "pythonFunction": "top_k_frequent_elements",
   "goFunction": "Solve226",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/top-k-frequent-elements/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/top-k-frequent-elements/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Heap priority queue topic",
+      "url": "https://leetcode.com/tag/heap-priority-queue/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

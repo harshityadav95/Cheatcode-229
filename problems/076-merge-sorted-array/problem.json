@@ -75,6 +75,24 @@
   ],
   "pythonFunction": "merge_sorted_array",
   "goFunction": "Solve076",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/merge-sorted-array/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/merge-sorted-array/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Array and string topic",
+      "url": "https://leetcode.com/tag/array/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

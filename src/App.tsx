@@ -5,6 +5,7 @@ import {
   ChevronRight,
   Code2,
   Copy,
+  ExternalLink,
   GitBranch,
   ListFilter,
   Menu,
@@ -260,6 +261,7 @@ function App() {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <p className="leading-7 text-slate-700 dark:text-slate-300">{activeProblem.prompt}</p>
+                    <ReferenceLinks problem={activeProblem} />
                     <ExampleBlock problem={activeProblem} />
                     <div className="grid gap-3 sm:grid-cols-2">
                       <InfoPill label="Time" value={activeProblem.time} />
@@ -600,6 +602,28 @@ function ExampleBlock({ problem }: { problem: Problem }) {
         </pre>
       </div>
       <p className="text-sm leading-6 text-slate-600 dark:text-slate-300 sm:col-span-2">{problem.example.why}</p>
+    </div>
+  )
+}
+
+function ReferenceLinks({ problem }: { problem: Problem }) {
+  return (
+    <div className="rounded-lg border border-slate-200 bg-slate-50 p-3 dark:border-slate-800 dark:bg-slate-900">
+      <p className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">References</p>
+      <div className="mt-2 flex flex-wrap gap-2">
+        {problem.references.map((reference) => (
+          <a
+            key={reference.url}
+            href={reference.url}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex min-h-8 items-center gap-1.5 rounded-md border border-slate-200 bg-white px-2.5 py-1 text-sm font-medium text-slate-700 transition hover:border-cyan-300 hover:text-cyan-700 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-200 dark:hover:border-cyan-500 dark:hover:text-cyan-300"
+          >
+            <ExternalLink className="size-3.5" />
+            {reference.label}
+          </a>
+        ))}
+      </div>
     </div>
   )
 }

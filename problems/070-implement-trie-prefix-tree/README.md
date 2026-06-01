@@ -1,6 +1,6 @@
 # 070. Implement Trie (Prefix Tree)
 
-- LeetCode: 208
+- LeetCode: [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
 - Pattern: Trie / Encoding
 - Difficulty: Hard
 - Time: O(total characters)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Implement a trie with insert, search for whole word, and startsWith for prefixes.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/implement-trie-prefix-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/implement-trie-prefix-tree/solutions/)
+- [Trie topic](https://leetcode.com/tag/trie/)
 
 ## Example
 

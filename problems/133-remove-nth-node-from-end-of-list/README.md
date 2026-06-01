@@ -1,6 +1,6 @@
 # 133. Remove Nth Node From End of List
 
-- LeetCode: 19
+- LeetCode: [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Remove the n-th node from the end of a linked list and return the head.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+- [LeetCode community solutions](https://leetcode.com/problems/remove-nth-node-from-end-of-list/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

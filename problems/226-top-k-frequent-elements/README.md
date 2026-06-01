@@ -1,6 +1,6 @@
 # 226. Top K Frequent Elements
 
-- LeetCode: 347
+- LeetCode: [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
 - Pattern: Heap / Priority Queue
 - Difficulty: Medium
 - Time: O(n log k) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the k most frequent elements from the array.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/top-k-frequent-elements/)
+- [LeetCode community solutions](https://leetcode.com/problems/top-k-frequent-elements/solutions/)
+- [Heap priority queue topic](https://leetcode.com/tag/heap-priority-queue/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 176. Maximum Subarray
 
-- LeetCode: 53
+- LeetCode: [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the maximum possible sum of a non-empty contiguous subarray.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/maximum-subarray/)
+- [LeetCode community solutions](https://leetcode.com/problems/maximum-subarray/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

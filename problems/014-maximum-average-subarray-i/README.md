@@ -1,6 +1,6 @@
 # 014. Maximum Average Subarray I
 
-- LeetCode: 643
+- LeetCode: [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
 - Pattern: Sliding Window
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Find the maximum average value among all contiguous subarrays of length k.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/maximum-average-subarray-i/)
+- [LeetCode community solutions](https://leetcode.com/problems/maximum-average-subarray-i/solutions/)
+- [Sliding window topic](https://leetcode.com/tag/sliding-window/)
 
 ## Example
 

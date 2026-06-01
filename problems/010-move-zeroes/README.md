@@ -1,6 +1,6 @@
 # 010. Move Zeroes
 
-- LeetCode: 283
+- LeetCode: [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
 - Pattern: Two Pointers
 - Difficulty: Medium
 - Time: O(n) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Move all zero values to the end of the array in-place while preserving the order of nonzero values.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/move-zeroes/)
+- [LeetCode community solutions](https://leetcode.com/problems/move-zeroes/solutions/)
+- [Two pointers topic](https://leetcode.com/tag/two-pointers/)
 
 ## Example
 

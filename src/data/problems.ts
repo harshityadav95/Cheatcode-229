@@ -1,5 +1,12 @@
 export type DiagramType = "array" | "pointers" | "window" | "prefix" | "hash" | "stack" | "queue" | "list" | "tree" | "graph" | "heap" | "binary" | "backtracking" | "dp" | "bits" | "greedy" | "trie" | "intervals";
 
+export interface ProblemReference {
+  label: string;
+  url: string;
+  kind: "problem" | "solutions" | "topic";
+  required?: boolean;
+}
+
 export interface Problem {
   id: number;
   leetcode: number;
@@ -8,6 +15,7 @@ export interface Problem {
   pattern: string;
   difficulty: "Easy" | "Medium" | "Hard";
   sources: string[];
+  references: ProblemReference[];
   companies: string[];
   time: string;
   space: string;
@@ -110,6 +118,24 @@ export const problems = [
     ],
     "pythonFunction": "merge_strings_alternately",
     "goFunction": "Solve001",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/merge-strings-alternately/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/merge-strings-alternately/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1768. Merge Strings Alternately.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmerge_strings_alternately = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1768. Merge Strings Alternately\")\n    print('Sample input:', \"word1=\\\"abc\\\", word2=\\\"pq\\\"\")\n    print('Expected output:', \"\\\"apbqc\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1768. Merge Strings Alternately\nfunc Solve001(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1768. Merge Strings Alternately\")\n\tfmt.Println(\"Sample input:\", \"word1=\\\"abc\\\", word2=\\\"pq\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"apbqc\\\"\")\n\tfmt.Println(\"Call Solve001(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -190,6 +216,24 @@ export const problems = [
     ],
     "pythonFunction": "greatest_common_divisor_of_strings",
     "goFunction": "Solve002",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/greatest-common-divisor-of-strings/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/greatest-common-divisor-of-strings/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1071. Greatest Common Divisor of Strings.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ngreatest_common_divisor_of_strings = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1071. Greatest Common Divisor of Strings\")\n    print('Sample input:', \"str1=\\\"ABABAB\\\", str2=\\\"ABAB\\\"\")\n    print('Expected output:', \"\\\"AB\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1071. Greatest Common Divisor of Strings\nfunc Solve002(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1071. Greatest Common Divisor of Strings\")\n\tfmt.Println(\"Sample input:\", \"str1=\\\"ABABAB\\\", str2=\\\"ABAB\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"AB\\\"\")\n\tfmt.Println(\"Call Solve002(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -270,6 +314,24 @@ export const problems = [
     ],
     "pythonFunction": "kids_with_the_greatest_number_of_candies",
     "goFunction": "Solve003",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1431. Kids With the Greatest Number of Candies.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nkids_with_the_greatest_number_of_candies = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1431. Kids With the Greatest Number of Candies\")\n    print('Sample input:', \"candies=[2,8,4], extraCandies=3\")\n    print('Expected output:', \"[false,true,false]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1431. Kids With the Greatest Number of Candies\nfunc Solve003(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1431. Kids With the Greatest Number of Candies\")\n\tfmt.Println(\"Sample input:\", \"candies=[2,8,4], extraCandies=3\")\n\tfmt.Println(\"Expected output:\", \"[false,true,false]\")\n\tfmt.Println(\"Call Solve003(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -350,6 +412,24 @@ export const problems = [
     ],
     "pythonFunction": "can_place_flowers",
     "goFunction": "Solve004",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/can-place-flowers/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/can-place-flowers/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 605. Can Place Flowers.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncan_place_flowers = solve\n\n\nif __name__ == \"__main__\":\n    print(\"605. Can Place Flowers\")\n    print('Sample input:', \"flowerbed=[1,0,0,0,1], n=1\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 605. Can Place Flowers\nfunc Solve004(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"605. Can Place Flowers\")\n\tfmt.Println(\"Sample input:\", \"flowerbed=[1,0,0,0,1], n=1\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve004(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -430,6 +510,24 @@ export const problems = [
     ],
     "pythonFunction": "reverse_vowels_of_a_string",
     "goFunction": "Solve005",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/reverse-vowels-of-a-string/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/reverse-vowels-of-a-string/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 345. Reverse Vowels of a String.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreverse_vowels_of_a_string = solve\n\n\nif __name__ == \"__main__\":\n    print(\"345. Reverse Vowels of a String\")\n    print('Sample input:', \"s=\\\"leetcode\\\"\")\n    print('Expected output:', \"\\\"leotcede\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 345. Reverse Vowels of a String\nfunc Solve005(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"345. Reverse Vowels of a String\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"leetcode\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"leotcede\\\"\")\n\tfmt.Println(\"Call Solve005(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -511,6 +609,24 @@ export const problems = [
     ],
     "pythonFunction": "reverse_words_in_a_string",
     "goFunction": "Solve006",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/reverse-words-in-a-string/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/reverse-words-in-a-string/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 151. Reverse Words in a String.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreverse_words_in_a_string = solve\n\n\nif __name__ == \"__main__\":\n    print(\"151. Reverse Words in a String\")\n    print('Sample input:', \"s=\\\"  blue  sky  \\\"\")\n    print('Expected output:', \"\\\"sky blue\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 151. Reverse Words in a String\nfunc Solve006(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"151. Reverse Words in a String\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"  blue  sky  \\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"sky blue\\\"\")\n\tfmt.Println(\"Call Solve006(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -593,6 +709,24 @@ export const problems = [
     ],
     "pythonFunction": "product_of_array_except_self",
     "goFunction": "Solve007",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/product-of-array-except-self/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/product-of-array-except-self/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Prefix sum topic",
+        "url": "https://leetcode.com/tag/prefix-sum/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 238. Product of Array Except Self.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nproduct_of_array_except_self = solve\n\n\nif __name__ == \"__main__\":\n    print(\"238. Product of Array Except Self\")\n    print('Sample input:', \"nums=[2,3,4]\")\n    print('Expected output:', \"[12,8,6]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 238. Product of Array Except Self\nfunc Solve007(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"238. Product of Array Except Self\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,3,4]\")\n\tfmt.Println(\"Expected output:\", \"[12,8,6]\")\n\tfmt.Println(\"Call Solve007(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -668,6 +802,24 @@ export const problems = [
     ],
     "pythonFunction": "increasing_triplet_subsequence",
     "goFunction": "Solve008",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/increasing-triplet-subsequence/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/increasing-triplet-subsequence/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Greedy topic",
+        "url": "https://leetcode.com/tag/greedy/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 334. Increasing Triplet Subsequence.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nincreasing_triplet_subsequence = solve\n\n\nif __name__ == \"__main__\":\n    print(\"334. Increasing Triplet Subsequence\")\n    print('Sample input:', \"nums=[5,1,6,2,3]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 334. Increasing Triplet Subsequence\nfunc Solve008(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"334. Increasing Triplet Subsequence\")\n\tfmt.Println(\"Sample input:\", \"nums=[5,1,6,2,3]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve008(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -748,6 +900,24 @@ export const problems = [
     ],
     "pythonFunction": "string_compression",
     "goFunction": "Solve009",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/string-compression/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/string-compression/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 443. String Compression.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nstring_compression = solve\n\n\nif __name__ == \"__main__\":\n    print(\"443. String Compression\")\n    print('Sample input:', \"chars=[\\\"a\\\",\\\"a\\\",\\\"b\\\"]\")\n    print('Expected output:', \"length=3, chars starts [\\\"a\\\",\\\"2\\\",\\\"b\\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 443. String Compression\nfunc Solve009(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"443. String Compression\")\n\tfmt.Println(\"Sample input:\", \"chars=[\\\"a\\\",\\\"a\\\",\\\"b\\\"]\")\n\tfmt.Println(\"Expected output:\", \"length=3, chars starts [\\\"a\\\",\\\"2\\\",\\\"b\\\"]\")\n\tfmt.Println(\"Call Solve009(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -828,6 +998,24 @@ export const problems = [
     ],
     "pythonFunction": "move_zeroes",
     "goFunction": "Solve010",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/move-zeroes/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/move-zeroes/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Two pointers topic",
+        "url": "https://leetcode.com/tag/two-pointers/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 283. Move Zeroes.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nmove_zeroes = solve\n\n\nif __name__ == \"__main__\":\n    print(\"283. Move Zeroes\")\n    print('Sample input:', \"nums=[0,1,0,3]\")\n    print('Expected output:', \"[1,3,0,0]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 283. Move Zeroes\nfunc Solve010(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"283. Move Zeroes\")\n\tfmt.Println(\"Sample input:\", \"nums=[0,1,0,3]\")\n\tfmt.Println(\"Expected output:\", \"[1,3,0,0]\")\n\tfmt.Println(\"Call Solve010(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -909,6 +1097,24 @@ export const problems = [
     ],
     "pythonFunction": "is_subsequence",
     "goFunction": "Solve011",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/is-subsequence/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/is-subsequence/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Two pointers topic",
+        "url": "https://leetcode.com/tag/two-pointers/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 392. Is Subsequence.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nis_subsequence = solve\n\n\nif __name__ == \"__main__\":\n    print(\"392. Is Subsequence\")\n    print('Sample input:', \"s=\\\"ace\\\", t=\\\"abcde\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 392. Is Subsequence\nfunc Solve011(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"392. Is Subsequence\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"ace\\\", t=\\\"abcde\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve011(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -991,6 +1197,24 @@ export const problems = [
     ],
     "pythonFunction": "container_with_most_water",
     "goFunction": "Solve012",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/container-with-most-water/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/container-with-most-water/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Two pointers topic",
+        "url": "https://leetcode.com/tag/two-pointers/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 11. Container With Most Water.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\ncontainer_with_most_water = solve\n\n\nif __name__ == \"__main__\":\n    print(\"11. Container With Most Water\")\n    print('Sample input:', \"height=[1,7,2,5,4,7,3,6]\")\n    print('Expected output:', \"36\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 11. Container With Most Water\nfunc Solve012(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"11. Container With Most Water\")\n\tfmt.Println(\"Sample input:\", \"height=[1,7,2,5,4,7,3,6]\")\n\tfmt.Println(\"Expected output:\", \"36\")\n\tfmt.Println(\"Call Solve012(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -1071,6 +1295,24 @@ export const problems = [
     ],
     "pythonFunction": "max_number_of_k_sum_pairs",
     "goFunction": "Solve013",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/max-number-of-k-sum-pairs/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/max-number-of-k-sum-pairs/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Two pointers topic",
+        "url": "https://leetcode.com/tag/two-pointers/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1679. Max Number of K-Sum Pairs.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nmax_number_of_k_sum_pairs = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1679. Max Number of K-Sum Pairs\")\n    print('Sample input:', \"nums=[1,2,3,4], k=5\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1679. Max Number of K-Sum Pairs\nfunc Solve013(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"1679. Max Number of K-Sum Pairs\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,3,4], k=5\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve013(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -1151,6 +1393,24 @@ export const problems = [
     ],
     "pythonFunction": "maximum_average_subarray_i",
     "goFunction": "Solve014",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/maximum-average-subarray-i/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/maximum-average-subarray-i/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Sliding window topic",
+        "url": "https://leetcode.com/tag/sliding-window/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 643. Maximum Average Subarray I.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nmaximum_average_subarray_i = solve\n\n\nif __name__ == \"__main__\":\n    print(\"643. Maximum Average Subarray I\")\n    print('Sample input:', \"nums=[1,12,-5,-6,50,3], k=4\")\n    print('Expected output:', \"12.75\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 643. Maximum Average Subarray I\nfunc Solve014(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"643. Maximum Average Subarray I\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,12,-5,-6,50,3], k=4\")\n\tfmt.Println(\"Expected output:\", \"12.75\")\n\tfmt.Println(\"Call Solve014(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -1231,6 +1491,24 @@ export const problems = [
     ],
     "pythonFunction": "maximum_number_of_vowels_in_a_substring_of_given_length",
     "goFunction": "Solve015",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Sliding window topic",
+        "url": "https://leetcode.com/tag/sliding-window/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1456. Maximum Number of Vowels in a Substring of Given Length.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nmaximum_number_of_vowels_in_a_substring_of_given_length = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1456. Maximum Number of Vowels in a Substring of Given Length\")\n    print('Sample input:', \"s=\\\"abciiidef\\\", k=3\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1456. Maximum Number of Vowels in a Substring of Given Length\nfunc Solve015(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"1456. Maximum Number of Vowels in a Substring of Given Length\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"abciiidef\\\", k=3\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve015(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -1311,6 +1589,24 @@ export const problems = [
     ],
     "pythonFunction": "max_consecutive_ones_iii",
     "goFunction": "Solve016",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/max-consecutive-ones-iii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/max-consecutive-ones-iii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Sliding window topic",
+        "url": "https://leetcode.com/tag/sliding-window/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1004. Max Consecutive Ones III.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nmax_consecutive_ones_iii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1004. Max Consecutive Ones III\")\n    print('Sample input:', \"nums=[1,0,1,1,0,1], k=1\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1004. Max Consecutive Ones III\nfunc Solve016(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"1004. Max Consecutive Ones III\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,0,1,1,0,1], k=1\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve016(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -1391,6 +1687,24 @@ export const problems = [
     ],
     "pythonFunction": "longest_subarray_of_1_s_after_deleting_one_element",
     "goFunction": "Solve017",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Sliding window topic",
+        "url": "https://leetcode.com/tag/sliding-window/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1493. Longest Subarray of 1's After Deleting One Element.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nlongest_subarray_of_1_s_after_deleting_one_element = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1493. Longest Subarray of 1's After Deleting One Element\")\n    print('Sample input:', \"nums=[1,1,0,1]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1493. Longest Subarray of 1's After Deleting One Element\nfunc Solve017(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"1493. Longest Subarray of 1's After Deleting One Element\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,1,0,1]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve017(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -1471,6 +1785,24 @@ export const problems = [
     ],
     "pythonFunction": "find_the_highest_altitude",
     "goFunction": "Solve018",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/find-the-highest-altitude/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/find-the-highest-altitude/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Prefix sum topic",
+        "url": "https://leetcode.com/tag/prefix-sum/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1732. Find the Highest Altitude.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nfind_the_highest_altitude = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1732. Find the Highest Altitude\")\n    print('Sample input:', \"gain=[-5,1,5]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1732. Find the Highest Altitude\nfunc Solve018(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1732. Find the Highest Altitude\")\n\tfmt.Println(\"Sample input:\", \"gain=[-5,1,5]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve018(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -1551,6 +1883,24 @@ export const problems = [
     ],
     "pythonFunction": "find_pivot_index",
     "goFunction": "Solve019",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/find-pivot-index/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/find-pivot-index/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Prefix sum topic",
+        "url": "https://leetcode.com/tag/prefix-sum/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 724. Find Pivot Index.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nfind_pivot_index = solve\n\n\nif __name__ == \"__main__\":\n    print(\"724. Find Pivot Index\")\n    print('Sample input:', \"nums=[1,7,3,6,5,6]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 724. Find Pivot Index\nfunc Solve019(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"724. Find Pivot Index\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,7,3,6,5,6]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve019(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -1632,6 +1982,24 @@ export const problems = [
     ],
     "pythonFunction": "find_the_difference_of_two_arrays",
     "goFunction": "Solve020",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/find-the-difference-of-two-arrays/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/find-the-difference-of-two-arrays/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 2215. Find the Difference of Two Arrays.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nfind_the_difference_of_two_arrays = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2215. Find the Difference of Two Arrays\")\n    print('Sample input:', \"nums1=[1,2,3], nums2=[2,4]\")\n    print('Expected output:', \"[[1,3],[4]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 2215. Find the Difference of Two Arrays\nfunc Solve020(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"2215. Find the Difference of Two Arrays\")\n\tfmt.Println(\"Sample input:\", \"nums1=[1,2,3], nums2=[2,4]\")\n\tfmt.Println(\"Expected output:\", \"[[1,3],[4]]\")\n\tfmt.Println(\"Call Solve020(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -1713,6 +2081,24 @@ export const problems = [
     ],
     "pythonFunction": "unique_number_of_occurrences",
     "goFunction": "Solve021",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/unique-number-of-occurrences/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/unique-number-of-occurrences/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1207. Unique Number of Occurrences.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nunique_number_of_occurrences = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1207. Unique Number of Occurrences\")\n    print('Sample input:', \"nums=[1,2,2,3,3,3]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1207. Unique Number of Occurrences\nfunc Solve021(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"1207. Unique Number of Occurrences\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,2,3,3,3]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve021(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -1794,6 +2180,24 @@ export const problems = [
     ],
     "pythonFunction": "determine_if_two_strings_are_close",
     "goFunction": "Solve022",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/determine-if-two-strings-are-close/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/determine-if-two-strings-are-close/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1657. Determine if Two Strings Are Close.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\ndetermine_if_two_strings_are_close = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1657. Determine if Two Strings Are Close\")\n    print('Sample input:', \"word1=\\\"abbzzca\\\", word2=\\\"babzzcz\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1657. Determine if Two Strings Are Close\nfunc Solve022(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"1657. Determine if Two Strings Are Close\")\n\tfmt.Println(\"Sample input:\", \"word1=\\\"abbzzca\\\", word2=\\\"babzzcz\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve022(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -1875,6 +2279,24 @@ export const problems = [
     ],
     "pythonFunction": "equal_row_and_column_pairs",
     "goFunction": "Solve023",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/equal-row-and-column-pairs/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/equal-row-and-column-pairs/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 2352. Equal Row and Column Pairs.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nequal_row_and_column_pairs = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2352. Equal Row and Column Pairs\")\n    print('Sample input:', \"grid=[[3,1,2],[1,7,6],[2,6,7]]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 2352. Equal Row and Column Pairs\nfunc Solve023(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"2352. Equal Row and Column Pairs\")\n\tfmt.Println(\"Sample input:\", \"grid=[[3,1,2],[1,7,6],[2,6,7]]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve023(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -1952,6 +2374,24 @@ export const problems = [
     ],
     "pythonFunction": "removing_stars_from_a_string",
     "goFunction": "Solve024",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/removing-stars-from-a-string/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/removing-stars-from-a-string/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Stack topic",
+        "url": "https://leetcode.com/tag/stack/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 2390. Removing Stars From a String.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nremoving_stars_from_a_string = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2390. Removing Stars From a String\")\n    print('Sample input:', \"s=\\\"leet**cod*e\\\"\")\n    print('Expected output:', \"\\\"lecoe\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 2390. Removing Stars From a String\nfunc Solve024(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"2390. Removing Stars From a String\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"leet**cod*e\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"lecoe\\\"\")\n\tfmt.Println(\"Call Solve024(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -2029,6 +2469,24 @@ export const problems = [
     ],
     "pythonFunction": "asteroid_collision",
     "goFunction": "Solve025",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/asteroid-collision/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/asteroid-collision/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Stack topic",
+        "url": "https://leetcode.com/tag/stack/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 735. Asteroid Collision.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nasteroid_collision = solve\n\n\nif __name__ == \"__main__\":\n    print(\"735. Asteroid Collision\")\n    print('Sample input:', \"asteroids=[5,10,-5]\")\n    print('Expected output:', \"[5,10]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 735. Asteroid Collision\nfunc Solve025(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"735. Asteroid Collision\")\n\tfmt.Println(\"Sample input:\", \"asteroids=[5,10,-5]\")\n\tfmt.Println(\"Expected output:\", \"[5,10]\")\n\tfmt.Println(\"Call Solve025(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -2106,6 +2564,24 @@ export const problems = [
     ],
     "pythonFunction": "decode_string",
     "goFunction": "Solve026",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/decode-string/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/decode-string/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Stack topic",
+        "url": "https://leetcode.com/tag/stack/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 394. Decode String.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\ndecode_string = solve\n\n\nif __name__ == \"__main__\":\n    print(\"394. Decode String\")\n    print('Sample input:', \"s=\\\"3[a2[c]]\\\"\")\n    print('Expected output:', \"\\\"accaccacc\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 394. Decode String\nfunc Solve026(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"394. Decode String\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"3[a2[c]]\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"accaccacc\\\"\")\n\tfmt.Println(\"Call Solve026(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -2182,6 +2658,24 @@ export const problems = [
     ],
     "pythonFunction": "number_of_recent_calls",
     "goFunction": "Solve027",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/number-of-recent-calls/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/number-of-recent-calls/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Queue topic",
+        "url": "https://leetcode.com/tag/queue/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 933. Number of Recent Calls.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nnumber_of_recent_calls = solve\n\n\nif __name__ == \"__main__\":\n    print(\"933. Number of Recent Calls\")\n    print('Sample input:', \"pings=[1,100,3001,3002]\")\n    print('Expected output:', \"[1,2,3,3]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 933. Number of Recent Calls\nfunc Solve027(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"933. Number of Recent Calls\")\n\tfmt.Println(\"Sample input:\", \"pings=[1,100,3001,3002]\")\n\tfmt.Println(\"Expected output:\", \"[1,2,3,3]\")\n\tfmt.Println(\"Call Solve027(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -2258,6 +2752,24 @@ export const problems = [
     ],
     "pythonFunction": "dota2_senate",
     "goFunction": "Solve028",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/dota2-senate/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/dota2-senate/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Queue topic",
+        "url": "https://leetcode.com/tag/queue/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 649. Dota2 Senate.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ndota2_senate = solve\n\n\nif __name__ == \"__main__\":\n    print(\"649. Dota2 Senate\")\n    print('Sample input:', \"senate=\\\"RDD\\\"\")\n    print('Expected output:', \"\\\"Dire\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 649. Dota2 Senate\nfunc Solve028(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"649. Dota2 Senate\")\n\tfmt.Println(\"Sample input:\", \"senate=\\\"RDD\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"Dire\\\"\")\n\tfmt.Println(\"Call Solve028(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -2334,6 +2846,24 @@ export const problems = [
     ],
     "pythonFunction": "delete_the_middle_node_of_a_linked_list",
     "goFunction": "Solve029",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 2095. Delete the Middle Node of a Linked List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ndelete_the_middle_node_of_a_linked_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2095. Delete the Middle Node of a Linked List\")\n    print('Sample input:', \"head=[1,3,4,7,1,2,6]\")\n    print('Expected output:', \"[1,3,4,1,2,6]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 2095. Delete the Middle Node of a Linked List\nfunc Solve029(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"2095. Delete the Middle Node of a Linked List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,3,4,7,1,2,6]\")\n\tfmt.Println(\"Expected output:\", \"[1,3,4,1,2,6]\")\n\tfmt.Println(\"Call Solve029(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -2410,6 +2940,24 @@ export const problems = [
     ],
     "pythonFunction": "odd_even_linked_list",
     "goFunction": "Solve030",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/odd-even-linked-list/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/odd-even-linked-list/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 328. Odd Even Linked List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nodd_even_linked_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"328. Odd Even Linked List\")\n    print('Sample input:', \"head=[1,2,3,4,5]\")\n    print('Expected output:', \"[1,3,5,2,4]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 328. Odd Even Linked List\nfunc Solve030(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"328. Odd Even Linked List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,4,5]\")\n\tfmt.Println(\"Expected output:\", \"[1,3,5,2,4]\")\n\tfmt.Println(\"Call Solve030(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -2487,6 +3035,24 @@ export const problems = [
     ],
     "pythonFunction": "reverse_linked_list",
     "goFunction": "Solve031",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/reverse-linked-list/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/reverse-linked-list/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 206. Reverse Linked List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreverse_linked_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"206. Reverse Linked List\")\n    print('Sample input:', \"head=[1,2,3]\")\n    print('Expected output:', \"[3,2,1]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 206. Reverse Linked List\nfunc Solve031(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"206. Reverse Linked List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3]\")\n\tfmt.Println(\"Expected output:\", \"[3,2,1]\")\n\tfmt.Println(\"Call Solve031(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -2563,6 +3129,24 @@ export const problems = [
     ],
     "pythonFunction": "maximum_twin_sum_of_a_linked_list",
     "goFunction": "Solve032",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 2130. Maximum Twin Sum of a Linked List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_twin_sum_of_a_linked_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2130. Maximum Twin Sum of a Linked List\")\n    print('Sample input:', \"head=[5,4,2,1]\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 2130. Maximum Twin Sum of a Linked List\nfunc Solve032(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"2130. Maximum Twin Sum of a Linked List\")\n\tfmt.Println(\"Sample input:\", \"head=[5,4,2,1]\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve032(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -2643,6 +3227,24 @@ export const problems = [
     ],
     "pythonFunction": "maximum_depth_of_binary_tree",
     "goFunction": "Solve033",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 104. Maximum Depth of Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_depth_of_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"104. Maximum Depth of Binary Tree\")\n    print('Sample input:', \"root=[3,9,20,null,null,15,7]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 104. Maximum Depth of Binary Tree\nfunc Solve033(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"104. Maximum Depth of Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[3,9,20,null,null,15,7]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve033(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -2721,6 +3323,24 @@ export const problems = [
     ],
     "pythonFunction": "leaf_similar_trees",
     "goFunction": "Solve034",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/leaf-similar-trees/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/leaf-similar-trees/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 872. Leaf-Similar Trees.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nleaf_similar_trees = solve\n\n\nif __name__ == \"__main__\":\n    print(\"872. Leaf-Similar Trees\")\n    print('Sample input:', \"root1=[1,2,3], root2=[7,2,3]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 872. Leaf-Similar Trees\nfunc Solve034(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"872. Leaf-Similar Trees\")\n\tfmt.Println(\"Sample input:\", \"root1=[1,2,3], root2=[7,2,3]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve034(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -2799,6 +3419,24 @@ export const problems = [
     ],
     "pythonFunction": "count_good_nodes_in_binary_tree",
     "goFunction": "Solve035",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1448. Count Good Nodes in Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncount_good_nodes_in_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1448. Count Good Nodes in Binary Tree\")\n    print('Sample input:', \"root=[3,1,4,3,null,1,5]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1448. Count Good Nodes in Binary Tree\nfunc Solve035(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1448. Count Good Nodes in Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[3,1,4,3,null,1,5]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve035(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -2877,6 +3515,24 @@ export const problems = [
     ],
     "pythonFunction": "path_sum_iii",
     "goFunction": "Solve036",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/path-sum-iii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/path-sum-iii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 437. Path Sum III.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npath_sum_iii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"437. Path Sum III\")\n    print('Sample input:', \"root=[10,5,-3,3,2,null,11,3,-2,null,1], targetSum=8\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 437. Path Sum III\nfunc Solve036(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"437. Path Sum III\")\n\tfmt.Println(\"Sample input:\", \"root=[10,5,-3,3,2,null,11,3,-2,null,1], targetSum=8\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve036(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -2955,6 +3611,24 @@ export const problems = [
     ],
     "pythonFunction": "longest_zigzag_path_in_a_binary_tree",
     "goFunction": "Solve037",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1372. Longest ZigZag Path in a Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlongest_zigzag_path_in_a_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1372. Longest ZigZag Path in a Binary Tree\")\n    print('Sample input:', \"path 1->right 2->left 3->right 4\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1372. Longest ZigZag Path in a Binary Tree\nfunc Solve037(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1372. Longest ZigZag Path in a Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"path 1->right 2->left 3->right 4\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve037(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -3034,6 +3708,24 @@ export const problems = [
     ],
     "pythonFunction": "lowest_common_ancestor_of_a_binary_tree",
     "goFunction": "Solve038",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 236. Lowest Common Ancestor of a Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlowest_common_ancestor_of_a_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"236. Lowest Common Ancestor of a Binary Tree\")\n    print('Sample input:', \"root=[3,5,1,6,2,0,8,null,null,7,4], p=5, q=1\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 236. Lowest Common Ancestor of a Binary Tree\nfunc Solve038(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"236. Lowest Common Ancestor of a Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[3,5,1,6,2,0,8,null,null,7,4], p=5, q=1\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve038(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -3116,6 +3808,24 @@ export const problems = [
     ],
     "pythonFunction": "binary_tree_right_side_view",
     "goFunction": "Solve039",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/binary-tree-right-side-view/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/binary-tree-right-side-view/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Breadth-first search topic",
+        "url": "https://leetcode.com/tag/breadth-first-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 199. Binary Tree Right Side View.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbinary_tree_right_side_view = solve\n\n\nif __name__ == \"__main__\":\n    print(\"199. Binary Tree Right Side View\")\n    print('Sample input:', \"root=[1,2,3,null,5,null,4]\")\n    print('Expected output:', \"[1,3,4]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 199. Binary Tree Right Side View\nfunc Solve039(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"199. Binary Tree Right Side View\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,3,null,5,null,4]\")\n\tfmt.Println(\"Expected output:\", \"[1,3,4]\")\n\tfmt.Println(\"Call Solve039(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -3197,6 +3907,24 @@ export const problems = [
     ],
     "pythonFunction": "maximum_level_sum_of_a_binary_tree",
     "goFunction": "Solve040",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Breadth-first search topic",
+        "url": "https://leetcode.com/tag/breadth-first-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1161. Maximum Level Sum of a Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_level_sum_of_a_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1161. Maximum Level Sum of a Binary Tree\")\n    print('Sample input:', \"root=[1,7,0,7,-8,null,null]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1161. Maximum Level Sum of a Binary Tree\nfunc Solve040(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1161. Maximum Level Sum of a Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[1,7,0,7,-8,null,null]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve040(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -3275,6 +4003,24 @@ export const problems = [
     ],
     "pythonFunction": "search_in_a_binary_search_tree",
     "goFunction": "Solve041",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search tree topic",
+        "url": "https://leetcode.com/tag/binary-search-tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 700. Search in a Binary Search Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsearch_in_a_binary_search_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"700. Search in a Binary Search Tree\")\n    print('Sample input:', \"root=[4,2,7,1,3], val=2\")\n    print('Expected output:', \"[2,1,3]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 700. Search in a Binary Search Tree\nfunc Solve041(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"700. Search in a Binary Search Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[4,2,7,1,3], val=2\")\n\tfmt.Println(\"Expected output:\", \"[2,1,3]\")\n\tfmt.Println(\"Call Solve041(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -3353,6 +4099,24 @@ export const problems = [
     ],
     "pythonFunction": "delete_node_in_a_bst",
     "goFunction": "Solve042",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/delete-node-in-a-bst/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/delete-node-in-a-bst/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search tree topic",
+        "url": "https://leetcode.com/tag/binary-search-tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 450. Delete Node in a BST.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ndelete_node_in_a_bst = solve\n\n\nif __name__ == \"__main__\":\n    print(\"450. Delete Node in a BST\")\n    print('Sample input:', \"root=[5,3,6,2,4,null,7], key=3\")\n    print('Expected output:', \"[5,4,6,2,null,null,7]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 450. Delete Node in a BST\nfunc Solve042(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"450. Delete Node in a BST\")\n\tfmt.Println(\"Sample input:\", \"root=[5,3,6,2,4,null,7], key=3\")\n\tfmt.Println(\"Expected output:\", \"[5,4,6,2,null,null,7]\")\n\tfmt.Println(\"Call Solve042(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -3430,6 +4194,24 @@ export const problems = [
     ],
     "pythonFunction": "keys_and_rooms",
     "goFunction": "Solve043",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/keys-and-rooms/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/keys-and-rooms/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 841. Keys and Rooms.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nkeys_and_rooms = solve\n\n\nif __name__ == \"__main__\":\n    print(\"841. Keys and Rooms\")\n    print('Sample input:', \"rooms=[[1],[2],[3],[]]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 841. Keys and Rooms\nfunc Solve043(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"841. Keys and Rooms\")\n\tfmt.Println(\"Sample input:\", \"rooms=[[1],[2],[3],[]]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve043(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -3507,6 +4289,24 @@ export const problems = [
     ],
     "pythonFunction": "number_of_provinces",
     "goFunction": "Solve044",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/number-of-provinces/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/number-of-provinces/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 547. Number of Provinces.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nnumber_of_provinces = solve\n\n\nif __name__ == \"__main__\":\n    print(\"547. Number of Provinces\")\n    print('Sample input:', \"isConnected=[[1,1,0],[1,1,0],[0,0,1]]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 547. Number of Provinces\nfunc Solve044(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"547. Number of Provinces\")\n\tfmt.Println(\"Sample input:\", \"isConnected=[[1,1,0],[1,1,0],[0,0,1]]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve044(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -3584,6 +4384,24 @@ export const problems = [
     ],
     "pythonFunction": "reorder_routes_to_make_all_paths_lead_to_the_city_zero",
     "goFunction": "Solve045",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1466. Reorder Routes to Make All Paths Lead to the City Zero.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nreorder_routes_to_make_all_paths_lead_to_the_city_zero = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1466. Reorder Routes to Make All Paths Lead to the City Zero\")\n    print('Sample input:', \"n=3, connections=[[1,0],[1,2]]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1466. Reorder Routes to Make All Paths Lead to the City Zero\nfunc Solve045(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"1466. Reorder Routes to Make All Paths Lead to the City Zero\")\n\tfmt.Println(\"Sample input:\", \"n=3, connections=[[1,0],[1,2]]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve045(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -3662,6 +4480,24 @@ export const problems = [
     ],
     "pythonFunction": "evaluate_division",
     "goFunction": "Solve046",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/evaluate-division/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/evaluate-division/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 399. Evaluate Division.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nevaluate_division = solve\n\n\nif __name__ == \"__main__\":\n    print(\"399. Evaluate Division\")\n    print('Sample input:', \"equations=[[\\\"a\\\",\\\"b\\\"],[\\\"b\\\",\\\"c\\\"]], values=[2,3], queries=[[\\\"a\\\",\\\"c\\\"],[\\\"c\\\",\\\"a\\\"],[\\\"x\\\",\\\"y\\\"]]\")\n    print('Expected output:', \"[6.0,0.16667,-1.0]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 399. Evaluate Division\nfunc Solve046(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"399. Evaluate Division\")\n\tfmt.Println(\"Sample input:\", \"equations=[[\\\"a\\\",\\\"b\\\"],[\\\"b\\\",\\\"c\\\"]], values=[2,3], queries=[[\\\"a\\\",\\\"c\\\"],[\\\"c\\\",\\\"a\\\"],[\\\"x\\\",\\\"y\\\"]]\")\n\tfmt.Println(\"Expected output:\", \"[6.0,0.16667,-1.0]\")\n\tfmt.Println(\"Call Solve046(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -3739,6 +4575,24 @@ export const problems = [
     ],
     "pythonFunction": "nearest_exit_from_entrance_in_maze",
     "goFunction": "Solve047",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1926. Nearest Exit from Entrance in Maze.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nnearest_exit_from_entrance_in_maze = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1926. Nearest Exit from Entrance in Maze\")\n    print('Sample input:', \"maze=[[\\\"+\\\",\\\"+\\\",\\\".\\\"],[\\\".\\\",\\\".\\\",\\\".\\\"],[\\\"+\\\",\\\"+\\\",\\\"+\\\"]], entrance=[1,0]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1926. Nearest Exit from Entrance in Maze\nfunc Solve047(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"1926. Nearest Exit from Entrance in Maze\")\n\tfmt.Println(\"Sample input:\", \"maze=[[\\\"+\\\",\\\"+\\\",\\\".\\\"],[\\\".\\\",\\\".\\\",\\\".\\\"],[\\\"+\\\",\\\"+\\\",\\\"+\\\"]], entrance=[1,0]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve047(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -3816,6 +4670,24 @@ export const problems = [
     ],
     "pythonFunction": "rotting_oranges",
     "goFunction": "Solve048",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/rotting-oranges/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/rotting-oranges/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 994. Rotting Oranges.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nrotting_oranges = solve\n\n\nif __name__ == \"__main__\":\n    print(\"994. Rotting Oranges\")\n    print('Sample input:', \"grid=[[2,1,1],[1,1,0],[0,1,1]]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 994. Rotting Oranges\nfunc Solve048(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"994. Rotting Oranges\")\n\tfmt.Println(\"Sample input:\", \"grid=[[2,1,1],[1,1,0],[0,1,1]]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve048(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -3895,6 +4767,24 @@ export const problems = [
     ],
     "pythonFunction": "kth_largest_element_in_an_array",
     "goFunction": "Solve049",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Heap priority queue topic",
+        "url": "https://leetcode.com/tag/heap-priority-queue/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 215. Kth Largest Element in an Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nkth_largest_element_in_an_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"215. Kth Largest Element in an Array\")\n    print('Sample input:', \"nums=[3,2,1,5,6,4], k=2\")\n    print('Expected output:', \"5\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 215. Kth Largest Element in an Array\nfunc Solve049(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"215. Kth Largest Element in an Array\")\n\tfmt.Println(\"Sample input:\", \"nums=[3,2,1,5,6,4], k=2\")\n\tfmt.Println(\"Expected output:\", \"5\")\n\tfmt.Println(\"Call Solve049(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -3973,6 +4863,24 @@ export const problems = [
     ],
     "pythonFunction": "smallest_number_in_infinite_set",
     "goFunction": "Solve050",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/smallest-number-in-infinite-set/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/smallest-number-in-infinite-set/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Heap priority queue topic",
+        "url": "https://leetcode.com/tag/heap-priority-queue/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 2336. Smallest Number in Infinite Set.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsmallest_number_in_infinite_set = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2336. Smallest Number in Infinite Set\")\n    print('Sample input:', \"operations=pop,pop,addBack(1),pop\")\n    print('Expected output:', \"[1,2,null,1]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 2336. Smallest Number in Infinite Set\nfunc Solve050(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"2336. Smallest Number in Infinite Set\")\n\tfmt.Println(\"Sample input:\", \"operations=pop,pop,addBack(1),pop\")\n\tfmt.Println(\"Expected output:\", \"[1,2,null,1]\")\n\tfmt.Println(\"Call Solve050(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -4051,6 +4959,24 @@ export const problems = [
     ],
     "pythonFunction": "maximum_subsequence_score",
     "goFunction": "Solve051",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/maximum-subsequence-score/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/maximum-subsequence-score/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Heap priority queue topic",
+        "url": "https://leetcode.com/tag/heap-priority-queue/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 2542. Maximum Subsequence Score.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_subsequence_score = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2542. Maximum Subsequence Score\")\n    print('Sample input:', \"nums1=[1,3,3,2], nums2=[2,1,3,4], k=3\")\n    print('Expected output:', \"12\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 2542. Maximum Subsequence Score\nfunc Solve051(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"2542. Maximum Subsequence Score\")\n\tfmt.Println(\"Sample input:\", \"nums1=[1,3,3,2], nums2=[2,1,3,4], k=3\")\n\tfmt.Println(\"Expected output:\", \"12\")\n\tfmt.Println(\"Call Solve051(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -4129,6 +5055,24 @@ export const problems = [
     ],
     "pythonFunction": "total_cost_to_hire_k_workers",
     "goFunction": "Solve052",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/total-cost-to-hire-k-workers/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/total-cost-to-hire-k-workers/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Heap priority queue topic",
+        "url": "https://leetcode.com/tag/heap-priority-queue/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 2462. Total Cost to Hire K Workers.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ntotal_cost_to_hire_k_workers = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2462. Total Cost to Hire K Workers\")\n    print('Sample input:', \"costs=[17,12,10,2,7,2,11,20,8], k=3, candidates=4\")\n    print('Expected output:', \"11\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 2462. Total Cost to Hire K Workers\nfunc Solve052(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"2462. Total Cost to Hire K Workers\")\n\tfmt.Println(\"Sample input:\", \"costs=[17,12,10,2,7,2,11,20,8], k=3, candidates=4\")\n\tfmt.Println(\"Expected output:\", \"11\")\n\tfmt.Println(\"Call Solve052(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -4204,6 +5148,24 @@ export const problems = [
     ],
     "pythonFunction": "guess_number_higher_or_lower",
     "goFunction": "Solve053",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/guess-number-higher-or-lower/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/guess-number-higher-or-lower/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search topic",
+        "url": "https://leetcode.com/tag/binary-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 374. Guess Number Higher or Lower.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nguess_number_higher_or_lower = solve\n\n\nif __name__ == \"__main__\":\n    print(\"374. Guess Number Higher or Lower\")\n    print('Sample input:', \"n=10, pick=6\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 374. Guess Number Higher or Lower\nfunc Solve053(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"374. Guess Number Higher or Lower\")\n\tfmt.Println(\"Sample input:\", \"n=10, pick=6\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve053(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -4279,6 +5241,24 @@ export const problems = [
     ],
     "pythonFunction": "successful_pairs_of_spells_and_potions",
     "goFunction": "Solve054",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search topic",
+        "url": "https://leetcode.com/tag/binary-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 2300. Successful Pairs of Spells and Potions.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nsuccessful_pairs_of_spells_and_potions = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2300. Successful Pairs of Spells and Potions\")\n    print('Sample input:', \"spells=[5,1,3], potions=[1,2,3,4,5], success=7\")\n    print('Expected output:', \"[4,0,3]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 2300. Successful Pairs of Spells and Potions\nfunc Solve054(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"2300. Successful Pairs of Spells and Potions\")\n\tfmt.Println(\"Sample input:\", \"spells=[5,1,3], potions=[1,2,3,4,5], success=7\")\n\tfmt.Println(\"Expected output:\", \"[4,0,3]\")\n\tfmt.Println(\"Call Solve054(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -4355,6 +5335,24 @@ export const problems = [
     ],
     "pythonFunction": "find_peak_element",
     "goFunction": "Solve055",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/find-peak-element/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/find-peak-element/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search topic",
+        "url": "https://leetcode.com/tag/binary-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 162. Find Peak Element.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nfind_peak_element = solve\n\n\nif __name__ == \"__main__\":\n    print(\"162. Find Peak Element\")\n    print('Sample input:', \"nums=[1,2,3,1]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 162. Find Peak Element\nfunc Solve055(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"162. Find Peak Element\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,3,1]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve055(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -4430,6 +5428,24 @@ export const problems = [
     ],
     "pythonFunction": "koko_eating_bananas",
     "goFunction": "Solve056",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/koko-eating-bananas/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/koko-eating-bananas/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search topic",
+        "url": "https://leetcode.com/tag/binary-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 875. Koko Eating Bananas.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nkoko_eating_bananas = solve\n\n\nif __name__ == \"__main__\":\n    print(\"875. Koko Eating Bananas\")\n    print('Sample input:', \"piles=[3,6,7,11], h=8\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 875. Koko Eating Bananas\nfunc Solve056(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"875. Koko Eating Bananas\")\n\tfmt.Println(\"Sample input:\", \"piles=[3,6,7,11], h=8\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve056(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -4510,6 +5526,24 @@ export const problems = [
     ],
     "pythonFunction": "letter_combinations_of_a_phone_number",
     "goFunction": "Solve057",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Backtracking topic",
+        "url": "https://leetcode.com/tag/backtracking/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 17. Letter Combinations of a Phone Number.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nletter_combinations_of_a_phone_number = solve\n\n\nif __name__ == \"__main__\":\n    print(\"17. Letter Combinations of a Phone Number\")\n    print('Sample input:', \"digits=\\\"23\\\"\")\n    print('Expected output:', \"[\\\"ad\\\",\\\"ae\\\",\\\"af\\\",\\\"bd\\\",\\\"be\\\",\\\"bf\\\",\\\"cd\\\",\\\"ce\\\",\\\"cf\\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 17. Letter Combinations of a Phone Number\nfunc Solve057(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"17. Letter Combinations of a Phone Number\")\n\tfmt.Println(\"Sample input:\", \"digits=\\\"23\\\"\")\n\tfmt.Println(\"Expected output:\", \"[\\\"ad\\\",\\\"ae\\\",\\\"af\\\",\\\"bd\\\",\\\"be\\\",\\\"bf\\\",\\\"cd\\\",\\\"ce\\\",\\\"cf\\\"]\")\n\tfmt.Println(\"Call Solve057(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -4589,6 +5623,24 @@ export const problems = [
     ],
     "pythonFunction": "combination_sum_iii",
     "goFunction": "Solve058",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/combination-sum-iii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/combination-sum-iii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Backtracking topic",
+        "url": "https://leetcode.com/tag/backtracking/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 216. Combination Sum III.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncombination_sum_iii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"216. Combination Sum III\")\n    print('Sample input:', \"k=3, n=7\")\n    print('Expected output:', \"[[1,2,4]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 216. Combination Sum III\nfunc Solve058(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"216. Combination Sum III\")\n\tfmt.Println(\"Sample input:\", \"k=3, n=7\")\n\tfmt.Println(\"Expected output:\", \"[[1,2,4]]\")\n\tfmt.Println(\"Call Solve058(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -4668,6 +5720,24 @@ export const problems = [
     ],
     "pythonFunction": "n_th_tribonacci_number",
     "goFunction": "Solve059",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/n-th-tribonacci-number/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/n-th-tribonacci-number/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1137. N-th Tribonacci Number.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nn_th_tribonacci_number = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1137. N-th Tribonacci Number\")\n    print('Sample input:', \"n=4\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1137. N-th Tribonacci Number\nfunc Solve059(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"1137. N-th Tribonacci Number\")\n\tfmt.Println(\"Sample input:\", \"n=4\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve059(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -4747,6 +5817,24 @@ export const problems = [
     ],
     "pythonFunction": "min_cost_climbing_stairs",
     "goFunction": "Solve060",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/min-cost-climbing-stairs/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/min-cost-climbing-stairs/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 746. Min Cost Climbing Stairs.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nmin_cost_climbing_stairs = solve\n\n\nif __name__ == \"__main__\":\n    print(\"746. Min Cost Climbing Stairs\")\n    print('Sample input:', \"cost=[10,15,20]\")\n    print('Expected output:', \"15\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 746. Min Cost Climbing Stairs\nfunc Solve060(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"746. Min Cost Climbing Stairs\")\n\tfmt.Println(\"Sample input:\", \"cost=[10,15,20]\")\n\tfmt.Println(\"Expected output:\", \"15\")\n\tfmt.Println(\"Call Solve060(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -4828,6 +5916,24 @@ export const problems = [
     ],
     "pythonFunction": "house_robber",
     "goFunction": "Solve061",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/house-robber/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/house-robber/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 198. House Robber.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nhouse_robber = solve\n\n\nif __name__ == \"__main__\":\n    print(\"198. House Robber\")\n    print('Sample input:', \"nums=[2,7,9,3,1]\")\n    print('Expected output:', \"12\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 198. House Robber\nfunc Solve061(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"198. House Robber\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,7,9,3,1]\")\n\tfmt.Println(\"Expected output:\", \"12\")\n\tfmt.Println(\"Call Solve061(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -4907,6 +6013,24 @@ export const problems = [
     ],
     "pythonFunction": "domino_and_tromino_tiling",
     "goFunction": "Solve062",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/domino-and-tromino-tiling/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/domino-and-tromino-tiling/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 790. Domino and Tromino Tiling.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\ndomino_and_tromino_tiling = solve\n\n\nif __name__ == \"__main__\":\n    print(\"790. Domino and Tromino Tiling\")\n    print('Sample input:', \"n=3\")\n    print('Expected output:', \"5\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 790. Domino and Tromino Tiling\nfunc Solve062(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"790. Domino and Tromino Tiling\")\n\tfmt.Println(\"Sample input:\", \"n=3\")\n\tfmt.Println(\"Expected output:\", \"5\")\n\tfmt.Println(\"Call Solve062(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -4981,6 +6105,24 @@ export const problems = [
     ],
     "pythonFunction": "unique_paths",
     "goFunction": "Solve063",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/unique-paths/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/unique-paths/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 62. Unique Paths.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nunique_paths = solve\n\n\nif __name__ == \"__main__\":\n    print(\"62. Unique Paths\")\n    print('Sample input:', \"m=3, n=7\")\n    print('Expected output:', \"28\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 62. Unique Paths\nfunc Solve063(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"62. Unique Paths\")\n\tfmt.Println(\"Sample input:\", \"m=3, n=7\")\n\tfmt.Println(\"Expected output:\", \"28\")\n\tfmt.Println(\"Call Solve063(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -5055,6 +6197,24 @@ export const problems = [
     ],
     "pythonFunction": "longest_common_subsequence",
     "goFunction": "Solve064",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/longest-common-subsequence/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/longest-common-subsequence/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1143. Longest Common Subsequence.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlongest_common_subsequence = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1143. Longest Common Subsequence\")\n    print('Sample input:', \"text1=\\\"abcde\\\", text2=\\\"ace\\\"\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1143. Longest Common Subsequence\nfunc Solve064(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1143. Longest Common Subsequence\")\n\tfmt.Println(\"Sample input:\", \"text1=\\\"abcde\\\", text2=\\\"ace\\\"\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve064(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -5128,6 +6288,24 @@ export const problems = [
     ],
     "pythonFunction": "best_time_to_buy_and_sell_stock_with_transaction_fee",
     "goFunction": "Solve065",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 714. Best Time to Buy and Sell Stock with Transaction Fee.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbest_time_to_buy_and_sell_stock_with_transaction_fee = solve\n\n\nif __name__ == \"__main__\":\n    print(\"714. Best Time to Buy and Sell Stock with Transaction Fee\")\n    print('Sample input:', \"prices=[1,3,2,8,4,9], fee=2\")\n    print('Expected output:', \"8\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 714. Best Time to Buy and Sell Stock with Transaction Fee\nfunc Solve065(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"714. Best Time to Buy and Sell Stock with Transaction Fee\")\n\tfmt.Println(\"Sample input:\", \"prices=[1,3,2,8,4,9], fee=2\")\n\tfmt.Println(\"Expected output:\", \"8\")\n\tfmt.Println(\"Call Solve065(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -5202,6 +6380,24 @@ export const problems = [
     ],
     "pythonFunction": "edit_distance",
     "goFunction": "Solve066",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/edit-distance/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/edit-distance/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 72. Edit Distance.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nedit_distance = solve\n\n\nif __name__ == \"__main__\":\n    print(\"72. Edit Distance\")\n    print('Sample input:', \"word1=\\\"horse\\\", word2=\\\"ros\\\"\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 72. Edit Distance\nfunc Solve066(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"72. Edit Distance\")\n\tfmt.Println(\"Sample input:\", \"word1=\\\"horse\\\", word2=\\\"ros\\\"\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve066(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -5285,6 +6481,24 @@ export const problems = [
     ],
     "pythonFunction": "counting_bits",
     "goFunction": "Solve067",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/counting-bits/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/counting-bits/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Bit manipulation topic",
+        "url": "https://leetcode.com/tag/bit-manipulation/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 338. Counting Bits.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncounting_bits = solve\n\n\nif __name__ == \"__main__\":\n    print(\"338. Counting Bits\")\n    print('Sample input:', \"n=5\")\n    print('Expected output:', \"[0,1,1,2,1,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 338. Counting Bits\nfunc Solve067(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"338. Counting Bits\")\n\tfmt.Println(\"Sample input:\", \"n=5\")\n\tfmt.Println(\"Expected output:\", \"[0,1,1,2,1,2]\")\n\tfmt.Println(\"Call Solve067(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -5368,6 +6582,24 @@ export const problems = [
     ],
     "pythonFunction": "single_number",
     "goFunction": "Solve068",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/single-number/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/single-number/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Bit manipulation topic",
+        "url": "https://leetcode.com/tag/bit-manipulation/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 136. Single Number.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsingle_number = solve\n\n\nif __name__ == \"__main__\":\n    print(\"136. Single Number\")\n    print('Sample input:', \"nums=[4,1,2,1,2]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 136. Single Number\nfunc Solve068(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"136. Single Number\")\n\tfmt.Println(\"Sample input:\", \"nums=[4,1,2,1,2]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve068(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -5450,6 +6682,24 @@ export const problems = [
     ],
     "pythonFunction": "minimum_flips_to_make_a_or_b_equal_to_c",
     "goFunction": "Solve069",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Bit manipulation topic",
+        "url": "https://leetcode.com/tag/bit-manipulation/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1318. Minimum Flips to Make a OR b Equal to c.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nminimum_flips_to_make_a_or_b_equal_to_c = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1318. Minimum Flips to Make a OR b Equal to c\")\n    print('Sample input:', \"a=2, b=6, c=5\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1318. Minimum Flips to Make a OR b Equal to c\nfunc Solve069(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1318. Minimum Flips to Make a OR b Equal to c\")\n\tfmt.Println(\"Sample input:\", \"a=2, b=6, c=5\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve069(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -5530,6 +6780,24 @@ export const problems = [
     ],
     "pythonFunction": "implement_trie_prefix_tree",
     "goFunction": "Solve070",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/implement-trie-prefix-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Trie topic",
+        "url": "https://leetcode.com/tag/trie/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 208. Implement Trie (Prefix Tree).\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nimplement_trie_prefix_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"208. Implement Trie (Prefix Tree)\")\n    print('Sample input:', \"insert(\\\"apple\\\"), search(\\\"apple\\\"), startsWith(\\\"app\\\")\")\n    print('Expected output:', \"[null,true,true]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 208. Implement Trie (Prefix Tree)\nfunc Solve070(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"208. Implement Trie (Prefix Tree)\")\n\tfmt.Println(\"Sample input:\", \"insert(\\\"apple\\\"), search(\\\"apple\\\"), startsWith(\\\"app\\\")\")\n\tfmt.Println(\"Expected output:\", \"[null,true,true]\")\n\tfmt.Println(\"Call Solve070(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -5608,6 +6876,24 @@ export const problems = [
     ],
     "pythonFunction": "search_suggestions_system",
     "goFunction": "Solve071",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/search-suggestions-system/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/search-suggestions-system/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Trie topic",
+        "url": "https://leetcode.com/tag/trie/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1268. Search Suggestions System.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsearch_suggestions_system = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1268. Search Suggestions System\")\n    print('Sample input:', \"products=[\\\"mobile\\\",\\\"mouse\\\",\\\"moneypot\\\",\\\"monitor\\\",\\\"mousepad\\\"], searchWord=\\\"mouse\\\"\")\n    print('Expected output:', \"[[\\\"mobile\\\",\\\"moneypot\\\",\\\"monitor\\\"],[\\\"mobile\\\",\\\"moneypot\\\",\\\"monitor\\\"],[\\\"mouse\\\",\\\"mousepad\\\"],[\\\"mouse\\\",\\\"mousepad\\\"],[\\\"mouse\\\",\\\"mousepad\\\"]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1268. Search Suggestions System\nfunc Solve071(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"1268. Search Suggestions System\")\n\tfmt.Println(\"Sample input:\", \"products=[\\\"mobile\\\",\\\"mouse\\\",\\\"moneypot\\\",\\\"monitor\\\",\\\"mousepad\\\"], searchWord=\\\"mouse\\\"\")\n\tfmt.Println(\"Expected output:\", \"[[\\\"mobile\\\",\\\"moneypot\\\",\\\"monitor\\\"],[\\\"mobile\\\",\\\"moneypot\\\",\\\"monitor\\\"],[\\\"mouse\\\",\\\"mousepad\\\"],[\\\"mouse\\\",\\\"mousepad\\\"],[\\\"mouse\\\",\\\"mousepad\\\"]]\")\n\tfmt.Println(\"Call Solve071(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -5682,6 +6968,24 @@ export const problems = [
     ],
     "pythonFunction": "non_overlapping_intervals",
     "goFunction": "Solve072",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/non-overlapping-intervals/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/non-overlapping-intervals/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Sorting topic",
+        "url": "https://leetcode.com/tag/sorting/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 435. Non-overlapping Intervals.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nnon_overlapping_intervals = solve\n\n\nif __name__ == \"__main__\":\n    print(\"435. Non-overlapping Intervals\")\n    print('Sample input:', \"intervals=[[1,2],[2,3],[3,4],[1,3]]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 435. Non-overlapping Intervals\nfunc Solve072(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"435. Non-overlapping Intervals\")\n\tfmt.Println(\"Sample input:\", \"intervals=[[1,2],[2,3],[3,4],[1,3]]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve072(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -5756,6 +7060,24 @@ export const problems = [
     ],
     "pythonFunction": "minimum_number_of_arrows_to_burst_balloons",
     "goFunction": "Solve073",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Sorting topic",
+        "url": "https://leetcode.com/tag/sorting/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 452. Minimum Number of Arrows to Burst Balloons.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nminimum_number_of_arrows_to_burst_balloons = solve\n\n\nif __name__ == \"__main__\":\n    print(\"452. Minimum Number of Arrows to Burst Balloons\")\n    print('Sample input:', \"points=[[10,16],[2,8],[1,6],[7,12]]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 452. Minimum Number of Arrows to Burst Balloons\nfunc Solve073(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"452. Minimum Number of Arrows to Burst Balloons\")\n\tfmt.Println(\"Sample input:\", \"points=[[10,16],[2,8],[1,6],[7,12]]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve073(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -5833,6 +7155,24 @@ export const problems = [
     ],
     "pythonFunction": "daily_temperatures",
     "goFunction": "Solve074",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/daily-temperatures/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/daily-temperatures/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Monotonic stack topic",
+        "url": "https://leetcode.com/tag/monotonic-stack/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 739. Daily Temperatures.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ndaily_temperatures = solve\n\n\nif __name__ == \"__main__\":\n    print(\"739. Daily Temperatures\")\n    print('Sample input:', \"temperatures=[73,74,75,71,69,72,76,73]\")\n    print('Expected output:', \"[1,1,4,2,1,1,0,0]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 739. Daily Temperatures\nfunc Solve074(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"739. Daily Temperatures\")\n\tfmt.Println(\"Sample input:\", \"temperatures=[73,74,75,71,69,72,76,73]\")\n\tfmt.Println(\"Expected output:\", \"[1,1,4,2,1,1,0,0]\")\n\tfmt.Println(\"Call Solve074(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -5910,6 +7250,24 @@ export const problems = [
     ],
     "pythonFunction": "online_stock_span",
     "goFunction": "Solve075",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/online-stock-span/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/online-stock-span/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Monotonic stack topic",
+        "url": "https://leetcode.com/tag/monotonic-stack/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 901. Online Stock Span.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nonline_stock_span = solve\n\n\nif __name__ == \"__main__\":\n    print(\"901. Online Stock Span\")\n    print('Sample input:', \"prices=[100,80,60,70,60,75,85]\")\n    print('Expected output:', \"[1,1,1,2,1,4,6]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 901. Online Stock Span\nfunc Solve075(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"901. Online Stock Span\")\n\tfmt.Println(\"Sample input:\", \"prices=[100,80,60,70,60,75,85]\")\n\tfmt.Println(\"Expected output:\", \"[1,1,1,2,1,4,6]\")\n\tfmt.Println(\"Call Solve075(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -5990,6 +7348,24 @@ export const problems = [
     ],
     "pythonFunction": "merge_sorted_array",
     "goFunction": "Solve076",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/merge-sorted-array/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/merge-sorted-array/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 88. Merge Sorted Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmerge_sorted_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"88. Merge Sorted Array\")\n    print('Sample input:', \"nums1=[1,2,3,0,0,0], m=3, nums2=[2,5,6], n=3\")\n    print('Expected output:', \"[1,2,2,3,5,6]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 88. Merge Sorted Array\nfunc Solve076(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"88. Merge Sorted Array\")\n\tfmt.Println(\"Sample input:\", \"nums1=[1,2,3,0,0,0], m=3, nums2=[2,5,6], n=3\")\n\tfmt.Println(\"Expected output:\", \"[1,2,2,3,5,6]\")\n\tfmt.Println(\"Call Solve076(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -6070,6 +7446,24 @@ export const problems = [
     ],
     "pythonFunction": "remove_element",
     "goFunction": "Solve077",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/remove-element/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/remove-element/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 27. Remove Element.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nremove_element = solve\n\n\nif __name__ == \"__main__\":\n    print(\"27. Remove Element\")\n    print('Sample input:', \"nums=[3,2,2,3], val=3\")\n    print('Expected output:', \"k=2, first values [2,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 27. Remove Element\nfunc Solve077(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"27. Remove Element\")\n\tfmt.Println(\"Sample input:\", \"nums=[3,2,2,3], val=3\")\n\tfmt.Println(\"Expected output:\", \"k=2, first values [2,2]\")\n\tfmt.Println(\"Call Solve077(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -6150,6 +7544,24 @@ export const problems = [
     ],
     "pythonFunction": "remove_duplicates_from_sorted_array",
     "goFunction": "Solve078",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 26. Remove Duplicates from Sorted Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nremove_duplicates_from_sorted_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"26. Remove Duplicates from Sorted Array\")\n    print('Sample input:', \"nums=[1,1,2]\")\n    print('Expected output:', \"k=2, first values [1,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 26. Remove Duplicates from Sorted Array\nfunc Solve078(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"26. Remove Duplicates from Sorted Array\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,1,2]\")\n\tfmt.Println(\"Expected output:\", \"k=2, first values [1,2]\")\n\tfmt.Println(\"Call Solve078(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -6230,6 +7642,24 @@ export const problems = [
     ],
     "pythonFunction": "remove_duplicates_from_sorted_array_ii",
     "goFunction": "Solve079",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 80. Remove Duplicates from Sorted Array II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nremove_duplicates_from_sorted_array_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"80. Remove Duplicates from Sorted Array II\")\n    print('Sample input:', \"nums=[0,0,1,1,1,1,2]\")\n    print('Expected output:', \"k=5, first values [0,0,1,1,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 80. Remove Duplicates from Sorted Array II\nfunc Solve079(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"80. Remove Duplicates from Sorted Array II\")\n\tfmt.Println(\"Sample input:\", \"nums=[0,0,1,1,1,1,2]\")\n\tfmt.Println(\"Expected output:\", \"k=5, first values [0,0,1,1,2]\")\n\tfmt.Println(\"Call Solve079(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -6310,6 +7740,24 @@ export const problems = [
     ],
     "pythonFunction": "majority_element",
     "goFunction": "Solve080",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/majority-element/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/majority-element/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 169. Majority Element.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmajority_element = solve\n\n\nif __name__ == \"__main__\":\n    print(\"169. Majority Element\")\n    print('Sample input:', \"nums=[2,2,1,1,1,2,2]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 169. Majority Element\nfunc Solve080(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"169. Majority Element\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,2,1,1,1,2,2]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve080(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -6390,6 +7838,24 @@ export const problems = [
     ],
     "pythonFunction": "rotate_array",
     "goFunction": "Solve081",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/rotate-array/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/rotate-array/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 189. Rotate Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nrotate_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"189. Rotate Array\")\n    print('Sample input:', \"nums=[1,2,3,4,5], k=2\")\n    print('Expected output:', \"[4,5,1,2,3]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 189. Rotate Array\nfunc Solve081(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"189. Rotate Array\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,3,4,5], k=2\")\n\tfmt.Println(\"Expected output:\", \"[4,5,1,2,3]\")\n\tfmt.Println(\"Call Solve081(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -6466,6 +7932,24 @@ export const problems = [
     ],
     "pythonFunction": "best_time_to_buy_and_sell_stock",
     "goFunction": "Solve082",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Greedy topic",
+        "url": "https://leetcode.com/tag/greedy/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 121. Best Time to Buy and Sell Stock.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbest_time_to_buy_and_sell_stock = solve\n\n\nif __name__ == \"__main__\":\n    print(\"121. Best Time to Buy and Sell Stock\")\n    print('Sample input:', \"prices=[7,1,5,3,6,4]\")\n    print('Expected output:', \"5\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 121. Best Time to Buy and Sell Stock\nfunc Solve082(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"121. Best Time to Buy and Sell Stock\")\n\tfmt.Println(\"Sample input:\", \"prices=[7,1,5,3,6,4]\")\n\tfmt.Println(\"Expected output:\", \"5\")\n\tfmt.Println(\"Call Solve082(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -6541,6 +8025,24 @@ export const problems = [
     ],
     "pythonFunction": "best_time_to_buy_and_sell_stock_ii",
     "goFunction": "Solve083",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Greedy topic",
+        "url": "https://leetcode.com/tag/greedy/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 122. Best Time to Buy and Sell Stock II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbest_time_to_buy_and_sell_stock_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"122. Best Time to Buy and Sell Stock II\")\n    print('Sample input:', \"prices=[7,1,5,3,6,4]\")\n    print('Expected output:', \"7\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 122. Best Time to Buy and Sell Stock II\nfunc Solve083(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"122. Best Time to Buy and Sell Stock II\")\n\tfmt.Println(\"Sample input:\", \"prices=[7,1,5,3,6,4]\")\n\tfmt.Println(\"Expected output:\", \"7\")\n\tfmt.Println(\"Call Solve083(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -6617,6 +8119,24 @@ export const problems = [
     ],
     "pythonFunction": "jump_game",
     "goFunction": "Solve084",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/jump-game/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/jump-game/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Greedy topic",
+        "url": "https://leetcode.com/tag/greedy/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 55. Jump Game.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\njump_game = solve\n\n\nif __name__ == \"__main__\":\n    print(\"55. Jump Game\")\n    print('Sample input:', \"nums=[2,3,1,1,4]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 55. Jump Game\nfunc Solve084(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"55. Jump Game\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,3,1,1,4]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve084(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -6692,6 +8212,24 @@ export const problems = [
     ],
     "pythonFunction": "jump_game_ii",
     "goFunction": "Solve085",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/jump-game-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/jump-game-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Greedy topic",
+        "url": "https://leetcode.com/tag/greedy/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 45. Jump Game II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\njump_game_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"45. Jump Game II\")\n    print('Sample input:', \"nums=[2,3,1,1,4]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 45. Jump Game II\nfunc Solve085(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"45. Jump Game II\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,3,1,1,4]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve085(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -6772,6 +8310,24 @@ export const problems = [
     ],
     "pythonFunction": "h_index",
     "goFunction": "Solve086",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/h-index/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/h-index/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 274. H-Index.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nh_index = solve\n\n\nif __name__ == \"__main__\":\n    print(\"274. H-Index\")\n    print('Sample input:', \"citations=[3,0,6,1,5]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 274. H-Index\nfunc Solve086(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"274. H-Index\")\n\tfmt.Println(\"Sample input:\", \"citations=[3,0,6,1,5]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve086(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -6850,6 +8406,24 @@ export const problems = [
     ],
     "pythonFunction": "insert_delete_getrandom_o_1",
     "goFunction": "Solve087",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/insert-delete-getrandom-o1/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Heap priority queue topic",
+        "url": "https://leetcode.com/tag/heap-priority-queue/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 380. Insert Delete GetRandom O(1).\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ninsert_delete_getrandom_o_1 = solve\n\n\nif __name__ == \"__main__\":\n    print(\"380. Insert Delete GetRandom O(1)\")\n    print('Sample input:', \"insert(1), remove(2), insert(2), getRandom(), remove(1), insert(2), getRandom()\")\n    print('Expected output:', \"[true,false,true,1 or 2,true,false,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 380. Insert Delete GetRandom O(1)\nfunc Solve087(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"380. Insert Delete GetRandom O(1)\")\n\tfmt.Println(\"Sample input:\", \"insert(1), remove(2), insert(2), getRandom(), remove(1), insert(2), getRandom()\")\n\tfmt.Println(\"Expected output:\", \"[true,false,true,1 or 2,true,false,2]\")\n\tfmt.Println(\"Call Solve087(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -6930,6 +8504,24 @@ export const problems = [
     ],
     "pythonFunction": "gas_station",
     "goFunction": "Solve088",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/gas-station/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/gas-station/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 134. Gas Station.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ngas_station = solve\n\n\nif __name__ == \"__main__\":\n    print(\"134. Gas Station\")\n    print('Sample input:', \"gas=[1,2,3,4,5], cost=[3,4,5,1,2]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 134. Gas Station\nfunc Solve088(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"134. Gas Station\")\n\tfmt.Println(\"Sample input:\", \"gas=[1,2,3,4,5], cost=[3,4,5,1,2]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve088(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -7010,6 +8602,24 @@ export const problems = [
     ],
     "pythonFunction": "candy",
     "goFunction": "Solve089",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/candy/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/candy/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 135. Candy.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncandy = solve\n\n\nif __name__ == \"__main__\":\n    print(\"135. Candy\")\n    print('Sample input:', \"ratings=[1,0,2]\")\n    print('Expected output:', \"5\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 135. Candy\nfunc Solve089(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"135. Candy\")\n\tfmt.Println(\"Sample input:\", \"ratings=[1,0,2]\")\n\tfmt.Println(\"Expected output:\", \"5\")\n\tfmt.Println(\"Call Solve089(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -7090,6 +8700,24 @@ export const problems = [
     ],
     "pythonFunction": "trapping_rain_water",
     "goFunction": "Solve090",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/trapping-rain-water/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/trapping-rain-water/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Two pointers topic",
+        "url": "https://leetcode.com/tag/two-pointers/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 42. Trapping Rain Water.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\ntrapping_rain_water = solve\n\n\nif __name__ == \"__main__\":\n    print(\"42. Trapping Rain Water\")\n    print('Sample input:', \"height=[0,2,0,3,0,1]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 42. Trapping Rain Water\nfunc Solve090(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"42. Trapping Rain Water\")\n\tfmt.Println(\"Sample input:\", \"height=[0,2,0,3,0,1]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve090(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -7170,6 +8798,24 @@ export const problems = [
     ],
     "pythonFunction": "roman_to_integer",
     "goFunction": "Solve091",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/roman-to-integer/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/roman-to-integer/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 13. Roman to Integer.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nroman_to_integer = solve\n\n\nif __name__ == \"__main__\":\n    print(\"13. Roman to Integer\")\n    print('Sample input:', \"s=\\\"MCMXCIV\\\"\")\n    print('Expected output:', \"1994\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 13. Roman to Integer\nfunc Solve091(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"13. Roman to Integer\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"MCMXCIV\\\"\")\n\tfmt.Println(\"Expected output:\", \"1994\")\n\tfmt.Println(\"Call Solve091(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -7250,6 +8896,24 @@ export const problems = [
     ],
     "pythonFunction": "integer_to_roman",
     "goFunction": "Solve092",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/integer-to-roman/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/integer-to-roman/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 12. Integer to Roman.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ninteger_to_roman = solve\n\n\nif __name__ == \"__main__\":\n    print(\"12. Integer to Roman\")\n    print('Sample input:', \"num=58\")\n    print('Expected output:', \"\\\"LVIII\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 12. Integer to Roman\nfunc Solve092(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"12. Integer to Roman\")\n\tfmt.Println(\"Sample input:\", \"num=58\")\n\tfmt.Println(\"Expected output:\", \"\\\"LVIII\\\"\")\n\tfmt.Println(\"Call Solve092(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -7330,6 +8994,24 @@ export const problems = [
     ],
     "pythonFunction": "length_of_last_word",
     "goFunction": "Solve093",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/length-of-last-word/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/length-of-last-word/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 58. Length of Last Word.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlength_of_last_word = solve\n\n\nif __name__ == \"__main__\":\n    print(\"58. Length of Last Word\")\n    print('Sample input:', \"s=\\\"fly me to the moon\\\"\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 58. Length of Last Word\nfunc Solve093(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"58. Length of Last Word\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"fly me to the moon\\\"\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve093(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -7410,6 +9092,24 @@ export const problems = [
     ],
     "pythonFunction": "longest_common_prefix",
     "goFunction": "Solve094",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/longest-common-prefix/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/longest-common-prefix/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 14. Longest Common Prefix.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlongest_common_prefix = solve\n\n\nif __name__ == \"__main__\":\n    print(\"14. Longest Common Prefix\")\n    print('Sample input:', \"strs=[\\\"flower\\\",\\\"flow\\\",\\\"flight\\\"]\")\n    print('Expected output:', \"\\\"fl\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 14. Longest Common Prefix\nfunc Solve094(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"14. Longest Common Prefix\")\n\tfmt.Println(\"Sample input:\", \"strs=[\\\"flower\\\",\\\"flow\\\",\\\"flight\\\"]\")\n\tfmt.Println(\"Expected output:\", \"\\\"fl\\\"\")\n\tfmt.Println(\"Call Solve094(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -7490,6 +9190,24 @@ export const problems = [
     ],
     "pythonFunction": "zigzag_conversion",
     "goFunction": "Solve095",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/zigzag-conversion/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/zigzag-conversion/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 6. Zigzag Conversion.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nzigzag_conversion = solve\n\n\nif __name__ == \"__main__\":\n    print(\"6. Zigzag Conversion\")\n    print('Sample input:', \"s=\\\"ABCDE\\\", numRows=2\")\n    print('Expected output:', \"\\\"ACEBD\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 6. Zigzag Conversion\nfunc Solve095(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"6. Zigzag Conversion\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"ABCDE\\\", numRows=2\")\n\tfmt.Println(\"Expected output:\", \"\\\"ACEBD\\\"\")\n\tfmt.Println(\"Call Solve095(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -7570,6 +9288,24 @@ export const problems = [
     ],
     "pythonFunction": "find_the_index_of_the_first_occurrence_in_a_string",
     "goFunction": "Solve096",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 28. Find the Index of the First Occurrence in a String.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nfind_the_index_of_the_first_occurrence_in_a_string = solve\n\n\nif __name__ == \"__main__\":\n    print(\"28. Find the Index of the First Occurrence in a String\")\n    print('Sample input:', \"haystack=\\\"sadbutsad\\\", needle=\\\"sad\\\"\")\n    print('Expected output:', \"0\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 28. Find the Index of the First Occurrence in a String\nfunc Solve096(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"28. Find the Index of the First Occurrence in a String\")\n\tfmt.Println(\"Sample input:\", \"haystack=\\\"sadbutsad\\\", needle=\\\"sad\\\"\")\n\tfmt.Println(\"Expected output:\", \"0\")\n\tfmt.Println(\"Call Solve096(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -7650,6 +9386,24 @@ export const problems = [
     ],
     "pythonFunction": "text_justification",
     "goFunction": "Solve097",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/text-justification/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/text-justification/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 68. Text Justification.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ntext_justification = solve\n\n\nif __name__ == \"__main__\":\n    print(\"68. Text Justification\")\n    print('Sample input:', \"words=[\\\"This\\\",\\\"is\\\",\\\"an\\\",\\\"example\\\"], maxWidth=16\")\n    print('Expected output:', \"[\\\"This    is    an\\\",\\\"example         \\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 68. Text Justification\nfunc Solve097(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"68. Text Justification\")\n\tfmt.Println(\"Sample input:\", \"words=[\\\"This\\\",\\\"is\\\",\\\"an\\\",\\\"example\\\"], maxWidth=16\")\n\tfmt.Println(\"Expected output:\", \"[\\\"This    is    an\\\",\\\"example         \\\"]\")\n\tfmt.Println(\"Call Solve097(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -7731,6 +9485,24 @@ export const problems = [
     ],
     "pythonFunction": "valid_palindrome",
     "goFunction": "Solve098",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/valid-palindrome/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/valid-palindrome/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Two pointers topic",
+        "url": "https://leetcode.com/tag/two-pointers/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 125. Valid Palindrome.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nvalid_palindrome = solve\n\n\nif __name__ == \"__main__\":\n    print(\"125. Valid Palindrome\")\n    print('Sample input:', \"s=\\\"A man, a plan, a canal: Panama\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 125. Valid Palindrome\nfunc Solve098(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"125. Valid Palindrome\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"A man, a plan, a canal: Panama\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve098(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -7811,6 +9583,24 @@ export const problems = [
     ],
     "pythonFunction": "two_sum_ii_input_array_is_sorted",
     "goFunction": "Solve099",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Two pointers topic",
+        "url": "https://leetcode.com/tag/two-pointers/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 167. Two Sum II - Input Array Is Sorted.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\ntwo_sum_ii_input_array_is_sorted = solve\n\n\nif __name__ == \"__main__\":\n    print(\"167. Two Sum II - Input Array Is Sorted\")\n    print('Sample input:', \"numbers=[2,7,11,15], target=9\")\n    print('Expected output:', \"[1,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 167. Two Sum II - Input Array Is Sorted\nfunc Solve099(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"167. Two Sum II - Input Array Is Sorted\")\n\tfmt.Println(\"Sample input:\", \"numbers=[2,7,11,15], target=9\")\n\tfmt.Println(\"Expected output:\", \"[1,2]\")\n\tfmt.Println(\"Call Solve099(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -7892,6 +9682,24 @@ export const problems = [
     ],
     "pythonFunction": "problem_3sum",
     "goFunction": "Solve100",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/3sum/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/3sum/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Two pointers topic",
+        "url": "https://leetcode.com/tag/two-pointers/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 15. 3Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nproblem_3sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"15. 3Sum\")\n    print('Sample input:', \"nums=[-1,0,1,2,-1,-4]\")\n    print('Expected output:', \"[[-1,-1,2],[-1,0,1]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 15. 3Sum\nfunc Solve100(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"15. 3Sum\")\n\tfmt.Println(\"Sample input:\", \"nums=[-1,0,1,2,-1,-4]\")\n\tfmt.Println(\"Expected output:\", \"[[-1,-1,2],[-1,0,1]]\")\n\tfmt.Println(\"Call Solve100(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -7972,6 +9780,24 @@ export const problems = [
     ],
     "pythonFunction": "minimum_size_subarray_sum",
     "goFunction": "Solve101",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/minimum-size-subarray-sum/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/minimum-size-subarray-sum/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Two pointers topic",
+        "url": "https://leetcode.com/tag/two-pointers/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 209. Minimum Size Subarray Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nminimum_size_subarray_sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"209. Minimum Size Subarray Sum\")\n    print('Sample input:', \"target=7, nums=[2,3,1,2,4,3]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 209. Minimum Size Subarray Sum\nfunc Solve101(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"209. Minimum Size Subarray Sum\")\n\tfmt.Println(\"Sample input:\", \"target=7, nums=[2,3,1,2,4,3]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve101(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -8053,6 +9879,24 @@ export const problems = [
     ],
     "pythonFunction": "longest_substring_without_repeating_characters",
     "goFunction": "Solve102",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Sliding window topic",
+        "url": "https://leetcode.com/tag/sliding-window/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 3. Longest Substring Without Repeating Characters.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nlongest_substring_without_repeating_characters = solve\n\n\nif __name__ == \"__main__\":\n    print(\"3. Longest Substring Without Repeating Characters\")\n    print('Sample input:', \"s=\\\"abcabcbb\\\"\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 3. Longest Substring Without Repeating Characters\nfunc Solve102(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"3. Longest Substring Without Repeating Characters\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"abcabcbb\\\"\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve102(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -8133,6 +9977,24 @@ export const problems = [
     ],
     "pythonFunction": "substring_with_concatenation_of_all_words",
     "goFunction": "Solve103",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Two pointers topic",
+        "url": "https://leetcode.com/tag/two-pointers/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 30. Substring with Concatenation of All Words.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    values = list(args[0]) if args else []\n    left, right = 0, len(values) - 1\n    while left < right:\n        left += 1\n        right -= 1\n    return values\n\n\n\nsubstring_with_concatenation_of_all_words = solve\n\n\nif __name__ == \"__main__\":\n    print(\"30. Substring with Concatenation of All Words\")\n    print('Sample input:', \"s=\\\"barfoothefoobarman\\\", words=[\\\"foo\\\",\\\"bar\\\"]\")\n    print('Expected output:', \"[0,9]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 30. Substring with Concatenation of All Words\nfunc Solve103(args ...any) any {\n\tleft, right := 0, len(args)-1\n\tfor left < right {\n\t\tleft++\n\t\tright--\n\t}\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"30. Substring with Concatenation of All Words\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"barfoothefoobarman\\\", words=[\\\"foo\\\",\\\"bar\\\"]\")\n\tfmt.Println(\"Expected output:\", \"[0,9]\")\n\tfmt.Println(\"Call Solve103(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -8214,6 +10076,24 @@ export const problems = [
     ],
     "pythonFunction": "minimum_window_substring",
     "goFunction": "Solve104",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/minimum-window-substring/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/minimum-window-substring/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Sliding window topic",
+        "url": "https://leetcode.com/tag/sliding-window/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 76. Minimum Window Substring.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nminimum_window_substring = solve\n\n\nif __name__ == \"__main__\":\n    print(\"76. Minimum Window Substring\")\n    print('Sample input:', \"s=\\\"ADOBECODEBANC\\\", t=\\\"ABC\\\"\")\n    print('Expected output:', \"\\\"BANC\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 76. Minimum Window Substring\nfunc Solve104(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"76. Minimum Window Substring\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"ADOBECODEBANC\\\", t=\\\"ABC\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"BANC\\\"\")\n\tfmt.Println(\"Call Solve104(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -8295,6 +10175,24 @@ export const problems = [
     ],
     "pythonFunction": "valid_sudoku",
     "goFunction": "Solve105",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/valid-sudoku/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/valid-sudoku/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 36. Valid Sudoku.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nvalid_sudoku = solve\n\n\nif __name__ == \"__main__\":\n    print(\"36. Valid Sudoku\")\n    print('Sample input:', \"board=[\\\"53..7....\\\",\\\"6..195...\\\",\\\".98....6.\\\",\\\"8...6...3\\\",\\\"4..8.3..1\\\",\\\"7...2...6\\\",\\\".6....28.\\\",\\\"...419..5\\\",\\\"....8..79\\\"]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 36. Valid Sudoku\nfunc Solve105(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"36. Valid Sudoku\")\n\tfmt.Println(\"Sample input:\", \"board=[\\\"53..7....\\\",\\\"6..195...\\\",\\\".98....6.\\\",\\\"8...6...3\\\",\\\"4..8.3..1\\\",\\\"7...2...6\\\",\\\".6....28.\\\",\\\"...419..5\\\",\\\"....8..79\\\"]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve105(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -8376,6 +10274,24 @@ export const problems = [
     ],
     "pythonFunction": "spiral_matrix",
     "goFunction": "Solve106",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/spiral-matrix/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/spiral-matrix/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 54. Spiral Matrix.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nspiral_matrix = solve\n\n\nif __name__ == \"__main__\":\n    print(\"54. Spiral Matrix\")\n    print('Sample input:', \"matrix=[[1,2,3],[4,5,6],[7,8,9]]\")\n    print('Expected output:', \"[1,2,3,6,9,8,7,4,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 54. Spiral Matrix\nfunc Solve106(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"54. Spiral Matrix\")\n\tfmt.Println(\"Sample input:\", \"matrix=[[1,2,3],[4,5,6],[7,8,9]]\")\n\tfmt.Println(\"Expected output:\", \"[1,2,3,6,9,8,7,4,5]\")\n\tfmt.Println(\"Call Solve106(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -8457,6 +10373,24 @@ export const problems = [
     ],
     "pythonFunction": "rotate_image",
     "goFunction": "Solve107",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/rotate-image/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/rotate-image/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 48. Rotate Image.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nrotate_image = solve\n\n\nif __name__ == \"__main__\":\n    print(\"48. Rotate Image\")\n    print('Sample input:', \"matrix=[[1,2],[3,4]]\")\n    print('Expected output:', \"[[3,1],[4,2]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 48. Rotate Image\nfunc Solve107(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"48. Rotate Image\")\n\tfmt.Println(\"Sample input:\", \"matrix=[[1,2],[3,4]]\")\n\tfmt.Println(\"Expected output:\", \"[[3,1],[4,2]]\")\n\tfmt.Println(\"Call Solve107(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -8538,6 +10472,24 @@ export const problems = [
     ],
     "pythonFunction": "set_matrix_zeroes",
     "goFunction": "Solve108",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/set-matrix-zeroes/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/set-matrix-zeroes/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 73. Set Matrix Zeroes.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nset_matrix_zeroes = solve\n\n\nif __name__ == \"__main__\":\n    print(\"73. Set Matrix Zeroes\")\n    print('Sample input:', \"matrix=[[1,1,1],[1,0,1],[1,1,1]]\")\n    print('Expected output:', \"[[1,0,1],[0,0,0],[1,0,1]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 73. Set Matrix Zeroes\nfunc Solve108(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"73. Set Matrix Zeroes\")\n\tfmt.Println(\"Sample input:\", \"matrix=[[1,1,1],[1,0,1],[1,1,1]]\")\n\tfmt.Println(\"Expected output:\", \"[[1,0,1],[0,0,0],[1,0,1]]\")\n\tfmt.Println(\"Call Solve108(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -8613,6 +10565,24 @@ export const problems = [
     ],
     "pythonFunction": "game_of_life",
     "goFunction": "Solve109",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/game-of-life/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/game-of-life/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Greedy topic",
+        "url": "https://leetcode.com/tag/greedy/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 289. Game of Life.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ngame_of_life = solve\n\n\nif __name__ == \"__main__\":\n    print(\"289. Game of Life\")\n    print('Sample input:', \"board=[[0,1,0],[0,0,1],[1,1,1],[0,0,0]]\")\n    print('Expected output:', \"[[0,0,0],[1,0,1],[0,1,1],[0,1,0]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 289. Game of Life\nfunc Solve109(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"289. Game of Life\")\n\tfmt.Println(\"Sample input:\", \"board=[[0,1,0],[0,0,1],[1,1,1],[0,0,0]]\")\n\tfmt.Println(\"Expected output:\", \"[[0,0,0],[1,0,1],[0,1,1],[0,1,0]]\")\n\tfmt.Println(\"Call Solve109(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -8693,6 +10663,24 @@ export const problems = [
     ],
     "pythonFunction": "ransom_note",
     "goFunction": "Solve110",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/ransom-note/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/ransom-note/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Array and string topic",
+        "url": "https://leetcode.com/tag/array/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 383. Ransom Note.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nransom_note = solve\n\n\nif __name__ == \"__main__\":\n    print(\"383. Ransom Note\")\n    print('Sample input:', \"ransomNote=\\\"aa\\\", magazine=\\\"aab\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 383. Ransom Note\nfunc Solve110(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"383. Ransom Note\")\n\tfmt.Println(\"Sample input:\", \"ransomNote=\\\"aa\\\", magazine=\\\"aab\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve110(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -8774,6 +10762,24 @@ export const problems = [
     ],
     "pythonFunction": "isomorphic_strings",
     "goFunction": "Solve111",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/isomorphic-strings/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/isomorphic-strings/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 205. Isomorphic Strings.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nisomorphic_strings = solve\n\n\nif __name__ == \"__main__\":\n    print(\"205. Isomorphic Strings\")\n    print('Sample input:', \"s=\\\"egg\\\", t=\\\"add\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 205. Isomorphic Strings\nfunc Solve111(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"205. Isomorphic Strings\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"egg\\\", t=\\\"add\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve111(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -8855,6 +10861,24 @@ export const problems = [
     ],
     "pythonFunction": "word_pattern",
     "goFunction": "Solve112",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/word-pattern/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/word-pattern/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 290. Word Pattern.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nword_pattern = solve\n\n\nif __name__ == \"__main__\":\n    print(\"290. Word Pattern\")\n    print('Sample input:', \"pattern=\\\"abba\\\", s=\\\"dog cat cat dog\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 290. Word Pattern\nfunc Solve112(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"290. Word Pattern\")\n\tfmt.Println(\"Sample input:\", \"pattern=\\\"abba\\\", s=\\\"dog cat cat dog\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve112(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -8937,6 +10961,24 @@ export const problems = [
     ],
     "pythonFunction": "valid_anagram",
     "goFunction": "Solve113",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/valid-anagram/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/valid-anagram/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 242. Valid Anagram.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nvalid_anagram = solve\n\n\nif __name__ == \"__main__\":\n    print(\"242. Valid Anagram\")\n    print('Sample input:', \"s=\\\"anagram\\\", t=\\\"nagaram\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 242. Valid Anagram\nfunc Solve113(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"242. Valid Anagram\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"anagram\\\", t=\\\"nagaram\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve113(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -9019,6 +11061,24 @@ export const problems = [
     ],
     "pythonFunction": "group_anagrams",
     "goFunction": "Solve114",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/group-anagrams/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/group-anagrams/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 49. Group Anagrams.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\ngroup_anagrams = solve\n\n\nif __name__ == \"__main__\":\n    print(\"49. Group Anagrams\")\n    print('Sample input:', \"strs=[\\\"eat\\\",\\\"tea\\\",\\\"tan\\\",\\\"ate\\\",\\\"nat\\\",\\\"bat\\\"]\")\n    print('Expected output:', \"[[\\\"eat\\\",\\\"tea\\\",\\\"ate\\\"],[\\\"tan\\\",\\\"nat\\\"],[\\\"bat\\\"]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 49. Group Anagrams\nfunc Solve114(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"49. Group Anagrams\")\n\tfmt.Println(\"Sample input:\", \"strs=[\\\"eat\\\",\\\"tea\\\",\\\"tan\\\",\\\"ate\\\",\\\"nat\\\",\\\"bat\\\"]\")\n\tfmt.Println(\"Expected output:\", \"[[\\\"eat\\\",\\\"tea\\\",\\\"ate\\\"],[\\\"tan\\\",\\\"nat\\\"],[\\\"bat\\\"]]\")\n\tfmt.Println(\"Call Solve114(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -9101,6 +11161,24 @@ export const problems = [
     ],
     "pythonFunction": "two_sum",
     "goFunction": "Solve115",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/two-sum/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/two-sum/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 1. Two Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\ntwo_sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"1. Two Sum\")\n    print('Sample input:', \"nums=[2,7,11,15], target=9\")\n    print('Expected output:', \"[0,1]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 1. Two Sum\nfunc Solve115(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"1. Two Sum\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,7,11,15], target=9\")\n\tfmt.Println(\"Expected output:\", \"[0,1]\")\n\tfmt.Println(\"Call Solve115(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -9182,6 +11260,24 @@ export const problems = [
     ],
     "pythonFunction": "happy_number",
     "goFunction": "Solve116",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/happy-number/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/happy-number/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 202. Happy Number.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nhappy_number = solve\n\n\nif __name__ == \"__main__\":\n    print(\"202. Happy Number\")\n    print('Sample input:', \"n=19\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 202. Happy Number\nfunc Solve116(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"202. Happy Number\")\n\tfmt.Println(\"Sample input:\", \"n=19\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve116(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -9263,6 +11359,24 @@ export const problems = [
     ],
     "pythonFunction": "contains_duplicate_ii",
     "goFunction": "Solve117",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/contains-duplicate-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/contains-duplicate-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 219. Contains Duplicate II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\ncontains_duplicate_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"219. Contains Duplicate II\")\n    print('Sample input:', \"nums=[1,2,3,1], k=3\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 219. Contains Duplicate II\nfunc Solve117(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"219. Contains Duplicate II\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,3,1], k=3\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve117(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -9345,6 +11459,24 @@ export const problems = [
     ],
     "pythonFunction": "longest_consecutive_sequence",
     "goFunction": "Solve118",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/longest-consecutive-sequence/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 128. Longest Consecutive Sequence.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\nlongest_consecutive_sequence = solve\n\n\nif __name__ == \"__main__\":\n    print(\"128. Longest Consecutive Sequence\")\n    print('Sample input:', \"nums=[100,4,200,1,3,2]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 128. Longest Consecutive Sequence\nfunc Solve118(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"128. Longest Consecutive Sequence\")\n\tfmt.Println(\"Sample input:\", \"nums=[100,4,200,1,3,2]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve118(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -9425,6 +11557,24 @@ export const problems = [
     ],
     "pythonFunction": "summary_ranges",
     "goFunction": "Solve119",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/summary-ranges/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/summary-ranges/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Prefix sum topic",
+        "url": "https://leetcode.com/tag/prefix-sum/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 228. Summary Ranges.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsummary_ranges = solve\n\n\nif __name__ == \"__main__\":\n    print(\"228. Summary Ranges\")\n    print('Sample input:', \"nums=[0,1,2,4,5,7]\")\n    print('Expected output:', \"[\\\"0->2\\\",\\\"4->5\\\",\\\"7\\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 228. Summary Ranges\nfunc Solve119(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"228. Summary Ranges\")\n\tfmt.Println(\"Sample input:\", \"nums=[0,1,2,4,5,7]\")\n\tfmt.Println(\"Expected output:\", \"[\\\"0->2\\\",\\\"4->5\\\",\\\"7\\\"]\")\n\tfmt.Println(\"Call Solve119(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -9499,6 +11649,24 @@ export const problems = [
     ],
     "pythonFunction": "merge_intervals",
     "goFunction": "Solve120",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/merge-intervals/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/merge-intervals/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Sorting topic",
+        "url": "https://leetcode.com/tag/sorting/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 56. Merge Intervals.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmerge_intervals = solve\n\n\nif __name__ == \"__main__\":\n    print(\"56. Merge Intervals\")\n    print('Sample input:', \"intervals=[[1,3],[2,6],[8,10]]\")\n    print('Expected output:', \"[[1,6],[8,10]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 56. Merge Intervals\nfunc Solve120(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"56. Merge Intervals\")\n\tfmt.Println(\"Sample input:\", \"intervals=[[1,3],[2,6],[8,10]]\")\n\tfmt.Println(\"Expected output:\", \"[[1,6],[8,10]]\")\n\tfmt.Println(\"Call Solve120(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -9573,6 +11741,24 @@ export const problems = [
     ],
     "pythonFunction": "insert_interval",
     "goFunction": "Solve121",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/insert-interval/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/insert-interval/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Sorting topic",
+        "url": "https://leetcode.com/tag/sorting/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 57. Insert Interval.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ninsert_interval = solve\n\n\nif __name__ == \"__main__\":\n    print(\"57. Insert Interval\")\n    print('Sample input:', \"intervals=[[1,3],[6,9]], newInterval=[2,5]\")\n    print('Expected output:', \"[[1,5],[6,9]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 57. Insert Interval\nfunc Solve121(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"57. Insert Interval\")\n\tfmt.Println(\"Sample input:\", \"intervals=[[1,3],[6,9]], newInterval=[2,5]\")\n\tfmt.Println(\"Expected output:\", \"[[1,5],[6,9]]\")\n\tfmt.Println(\"Call Solve121(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -9651,6 +11837,24 @@ export const problems = [
     ],
     "pythonFunction": "valid_parentheses",
     "goFunction": "Solve122",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/valid-parentheses/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/valid-parentheses/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Stack topic",
+        "url": "https://leetcode.com/tag/stack/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 20. Valid Parentheses.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nvalid_parentheses = solve\n\n\nif __name__ == \"__main__\":\n    print(\"20. Valid Parentheses\")\n    print('Sample input:', \"s=\\\"({[]})\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 20. Valid Parentheses\nfunc Solve122(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"20. Valid Parentheses\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"({[]})\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve122(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -9728,6 +11932,24 @@ export const problems = [
     ],
     "pythonFunction": "simplify_path",
     "goFunction": "Solve123",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/simplify-path/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/simplify-path/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Stack topic",
+        "url": "https://leetcode.com/tag/stack/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 71. Simplify Path.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nsimplify_path = solve\n\n\nif __name__ == \"__main__\":\n    print(\"71. Simplify Path\")\n    print('Sample input:', \"path=\\\"/a//b/../c/\\\"\")\n    print('Expected output:', \"\\\"/a/c\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 71. Simplify Path\nfunc Solve123(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"71. Simplify Path\")\n\tfmt.Println(\"Sample input:\", \"path=\\\"/a//b/../c/\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"/a/c\\\"\")\n\tfmt.Println(\"Call Solve123(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -9805,6 +12027,24 @@ export const problems = [
     ],
     "pythonFunction": "min_stack",
     "goFunction": "Solve124",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/min-stack/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/min-stack/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Stack topic",
+        "url": "https://leetcode.com/tag/stack/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 155. Min Stack.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nmin_stack = solve\n\n\nif __name__ == \"__main__\":\n    print(\"155. Min Stack\")\n    print('Sample input:', \"push(-2),push(0),push(-3),getMin,pop,top,getMin\")\n    print('Expected output:', \"[null,null,null,-3,null,0,-2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 155. Min Stack\nfunc Solve124(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"155. Min Stack\")\n\tfmt.Println(\"Sample input:\", \"push(-2),push(0),push(-3),getMin,pop,top,getMin\")\n\tfmt.Println(\"Expected output:\", \"[null,null,null,-3,null,0,-2]\")\n\tfmt.Println(\"Call Solve124(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -9882,6 +12122,24 @@ export const problems = [
     ],
     "pythonFunction": "evaluate_reverse_polish_notation",
     "goFunction": "Solve125",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Stack topic",
+        "url": "https://leetcode.com/tag/stack/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 150. Evaluate Reverse Polish Notation.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nevaluate_reverse_polish_notation = solve\n\n\nif __name__ == \"__main__\":\n    print(\"150. Evaluate Reverse Polish Notation\")\n    print('Sample input:', \"tokens=[\\\"2\\\",\\\"1\\\",\\\"+\\\",\\\"3\\\",\\\"*\\\"]\")\n    print('Expected output:', \"9\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 150. Evaluate Reverse Polish Notation\nfunc Solve125(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"150. Evaluate Reverse Polish Notation\")\n\tfmt.Println(\"Sample input:\", \"tokens=[\\\"2\\\",\\\"1\\\",\\\"+\\\",\\\"3\\\",\\\"*\\\"]\")\n\tfmt.Println(\"Expected output:\", \"9\")\n\tfmt.Println(\"Call Solve125(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -9959,6 +12217,24 @@ export const problems = [
     ],
     "pythonFunction": "basic_calculator",
     "goFunction": "Solve126",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/basic-calculator/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/basic-calculator/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Stack topic",
+        "url": "https://leetcode.com/tag/stack/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 224. Basic Calculator.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    stack = []\n    for item in (args[0] if args else []):\n        stack.append(item)\n    return stack\n\n\n\nbasic_calculator = solve\n\n\nif __name__ == \"__main__\":\n    print(\"224. Basic Calculator\")\n    print('Sample input:', \"s=\\\"(1+(4+5+2)-3)+(6+8)\\\"\")\n    print('Expected output:', \"23\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 224. Basic Calculator\nfunc Solve126(args ...any) any {\n\tstack := make([]any, 0, len(args))\n\tstack = append(stack, args...)\n\treturn stack\n}\n\nfunc main() {\n\tfmt.Println(\"224. Basic Calculator\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"(1+(4+5+2)-3)+(6+8)\\\"\")\n\tfmt.Println(\"Expected output:\", \"23\")\n\tfmt.Println(\"Call Solve126(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -10036,6 +12312,24 @@ export const problems = [
     ],
     "pythonFunction": "linked_list_cycle",
     "goFunction": "Solve127",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/linked-list-cycle/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/linked-list-cycle/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 141. Linked List Cycle.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlinked_list_cycle = solve\n\n\nif __name__ == \"__main__\":\n    print(\"141. Linked List Cycle\")\n    print('Sample input:', \"head=[3,2,0,-4], tail connects to index 1\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 141. Linked List Cycle\nfunc Solve127(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"141. Linked List Cycle\")\n\tfmt.Println(\"Sample input:\", \"head=[3,2,0,-4], tail connects to index 1\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve127(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -10112,6 +12406,24 @@ export const problems = [
     ],
     "pythonFunction": "add_two_numbers",
     "goFunction": "Solve128",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/add-two-numbers/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/add-two-numbers/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 2. Add Two Numbers.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nadd_two_numbers = solve\n\n\nif __name__ == \"__main__\":\n    print(\"2. Add Two Numbers\")\n    print('Sample input:', \"l1=[2,4,3], l2=[5,6,4]\")\n    print('Expected output:', \"[7,0,8]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 2. Add Two Numbers\nfunc Solve128(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"2. Add Two Numbers\")\n\tfmt.Println(\"Sample input:\", \"l1=[2,4,3], l2=[5,6,4]\")\n\tfmt.Println(\"Expected output:\", \"[7,0,8]\")\n\tfmt.Println(\"Call Solve128(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -10189,6 +12501,24 @@ export const problems = [
     ],
     "pythonFunction": "merge_two_sorted_lists",
     "goFunction": "Solve129",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/merge-two-sorted-lists/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 21. Merge Two Sorted Lists.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmerge_two_sorted_lists = solve\n\n\nif __name__ == \"__main__\":\n    print(\"21. Merge Two Sorted Lists\")\n    print('Sample input:', \"list1=[1,2,4], list2=[1,3,4]\")\n    print('Expected output:', \"[1,1,2,3,4,4]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 21. Merge Two Sorted Lists\nfunc Solve129(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"21. Merge Two Sorted Lists\")\n\tfmt.Println(\"Sample input:\", \"list1=[1,2,4], list2=[1,3,4]\")\n\tfmt.Println(\"Expected output:\", \"[1,1,2,3,4,4]\")\n\tfmt.Println(\"Call Solve129(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -10265,6 +12595,24 @@ export const problems = [
     ],
     "pythonFunction": "copy_list_with_random_pointer",
     "goFunction": "Solve130",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/copy-list-with-random-pointer/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 138. Copy List with Random Pointer.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncopy_list_with_random_pointer = solve\n\n\nif __name__ == \"__main__\":\n    print(\"138. Copy List with Random Pointer\")\n    print('Sample input:', \"nodes=[[7,null],[13,0],[11,0]]\")\n    print('Expected output:', \"deep copy with same values and random links\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 138. Copy List with Random Pointer\nfunc Solve130(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"138. Copy List with Random Pointer\")\n\tfmt.Println(\"Sample input:\", \"nodes=[[7,null],[13,0],[11,0]]\")\n\tfmt.Println(\"Expected output:\", \"deep copy with same values and random links\")\n\tfmt.Println(\"Call Solve130(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -10341,6 +12689,24 @@ export const problems = [
     ],
     "pythonFunction": "reverse_linked_list_ii",
     "goFunction": "Solve131",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/reverse-linked-list-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/reverse-linked-list-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 92. Reverse Linked List II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreverse_linked_list_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"92. Reverse Linked List II\")\n    print('Sample input:', \"head=[1,2,3,4,5], left=2, right=4\")\n    print('Expected output:', \"[1,4,3,2,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 92. Reverse Linked List II\nfunc Solve131(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"92. Reverse Linked List II\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,4,5], left=2, right=4\")\n\tfmt.Println(\"Expected output:\", \"[1,4,3,2,5]\")\n\tfmt.Println(\"Call Solve131(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -10417,6 +12783,24 @@ export const problems = [
     ],
     "pythonFunction": "reverse_nodes_in_k_group",
     "goFunction": "Solve132",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 25. Reverse Nodes in k-Group.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreverse_nodes_in_k_group = solve\n\n\nif __name__ == \"__main__\":\n    print(\"25. Reverse Nodes in k-Group\")\n    print('Sample input:', \"head=[1,2,3,4,5], k=2\")\n    print('Expected output:', \"[2,1,4,3,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 25. Reverse Nodes in k-Group\nfunc Solve132(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"25. Reverse Nodes in k-Group\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,4,5], k=2\")\n\tfmt.Println(\"Expected output:\", \"[2,1,4,3,5]\")\n\tfmt.Println(\"Call Solve132(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -10494,6 +12878,24 @@ export const problems = [
     ],
     "pythonFunction": "remove_nth_node_from_end_of_list",
     "goFunction": "Solve133",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 19. Remove Nth Node From End of List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nremove_nth_node_from_end_of_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"19. Remove Nth Node From End of List\")\n    print('Sample input:', \"head=[1,2,3,4,5], n=2\")\n    print('Expected output:', \"[1,2,3,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 19. Remove Nth Node From End of List\nfunc Solve133(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"19. Remove Nth Node From End of List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,4,5], n=2\")\n\tfmt.Println(\"Expected output:\", \"[1,2,3,5]\")\n\tfmt.Println(\"Call Solve133(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -10570,6 +12972,24 @@ export const problems = [
     ],
     "pythonFunction": "remove_duplicates_from_sorted_list_ii",
     "goFunction": "Solve134",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 82. Remove Duplicates from Sorted List II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nremove_duplicates_from_sorted_list_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"82. Remove Duplicates from Sorted List II\")\n    print('Sample input:', \"head=[1,2,3,3,4,4,5]\")\n    print('Expected output:', \"[1,2,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 82. Remove Duplicates from Sorted List II\nfunc Solve134(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"82. Remove Duplicates from Sorted List II\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,3,4,4,5]\")\n\tfmt.Println(\"Expected output:\", \"[1,2,5]\")\n\tfmt.Println(\"Call Solve134(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -10646,6 +13066,24 @@ export const problems = [
     ],
     "pythonFunction": "rotate_list",
     "goFunction": "Solve135",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/rotate-list/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/rotate-list/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 61. Rotate List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nrotate_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"61. Rotate List\")\n    print('Sample input:', \"head=[1,2,3,4,5], k=2\")\n    print('Expected output:', \"[4,5,1,2,3]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 61. Rotate List\nfunc Solve135(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"61. Rotate List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,4,5], k=2\")\n\tfmt.Println(\"Expected output:\", \"[4,5,1,2,3]\")\n\tfmt.Println(\"Call Solve135(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -10722,6 +13160,24 @@ export const problems = [
     ],
     "pythonFunction": "partition_list",
     "goFunction": "Solve136",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/partition-list/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/partition-list/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 86. Partition List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npartition_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"86. Partition List\")\n    print('Sample input:', \"head=[1,4,3,2,5,2], x=3\")\n    print('Expected output:', \"[1,2,2,4,3,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 86. Partition List\nfunc Solve136(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"86. Partition List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,4,3,2,5,2], x=3\")\n\tfmt.Println(\"Expected output:\", \"[1,2,2,4,3,5]\")\n\tfmt.Println(\"Call Solve136(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -10798,6 +13254,24 @@ export const problems = [
     ],
     "pythonFunction": "lru_cache",
     "goFunction": "Solve137",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/lru-cache/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/lru-cache/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 146. LRU Cache.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlru_cache = solve\n\n\nif __name__ == \"__main__\":\n    print(\"146. LRU Cache\")\n    print('Sample input:', \"capacity=2; put(1,1),put(2,2),get(1),put(3,3),get(2)\")\n    print('Expected output:', \"[null,null,1,null,-1]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 146. LRU Cache\nfunc Solve137(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"146. LRU Cache\")\n\tfmt.Println(\"Sample input:\", \"capacity=2; put(1,1),put(2,2),get(1),put(3,3),get(2)\")\n\tfmt.Println(\"Expected output:\", \"[null,null,1,null,-1]\")\n\tfmt.Println(\"Call Solve137(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -10877,6 +13351,24 @@ export const problems = [
     ],
     "pythonFunction": "same_tree",
     "goFunction": "Solve138",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/same-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/same-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 100. Same Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsame_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"100. Same Tree\")\n    print('Sample input:', \"p=[1,2,3], q=[1,2,3]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 100. Same Tree\nfunc Solve138(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"100. Same Tree\")\n\tfmt.Println(\"Sample input:\", \"p=[1,2,3], q=[1,2,3]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve138(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -10956,6 +13448,24 @@ export const problems = [
     ],
     "pythonFunction": "invert_binary_tree",
     "goFunction": "Solve139",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/invert-binary-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/invert-binary-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 226. Invert Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ninvert_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"226. Invert Binary Tree\")\n    print('Sample input:', \"root=[4,2,7,1,3,6,9]\")\n    print('Expected output:', \"[4,7,2,9,6,3,1]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 226. Invert Binary Tree\nfunc Solve139(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"226. Invert Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[4,2,7,1,3,6,9]\")\n\tfmt.Println(\"Expected output:\", \"[4,7,2,9,6,3,1]\")\n\tfmt.Println(\"Call Solve139(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -11034,6 +13544,24 @@ export const problems = [
     ],
     "pythonFunction": "symmetric_tree",
     "goFunction": "Solve140",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/symmetric-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/symmetric-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 101. Symmetric Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsymmetric_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"101. Symmetric Tree\")\n    print('Sample input:', \"root=[1,2,2,3,4,4,3]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 101. Symmetric Tree\nfunc Solve140(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"101. Symmetric Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,2,3,4,4,3]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve140(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -11113,6 +13641,24 @@ export const problems = [
     ],
     "pythonFunction": "construct_binary_tree_from_preorder_and_inorder_traversal",
     "goFunction": "Solve141",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 105. Construct Binary Tree from Preorder and Inorder Traversal.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nconstruct_binary_tree_from_preorder_and_inorder_traversal = solve\n\n\nif __name__ == \"__main__\":\n    print(\"105. Construct Binary Tree from Preorder and Inorder Traversal\")\n    print('Sample input:', \"preorder=[3,9,20,15,7], inorder=[9,3,15,20,7]\")\n    print('Expected output:', \"[3,9,20,null,null,15,7]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 105. Construct Binary Tree from Preorder and Inorder Traversal\nfunc Solve141(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"105. Construct Binary Tree from Preorder and Inorder Traversal\")\n\tfmt.Println(\"Sample input:\", \"preorder=[3,9,20,15,7], inorder=[9,3,15,20,7]\")\n\tfmt.Println(\"Expected output:\", \"[3,9,20,null,null,15,7]\")\n\tfmt.Println(\"Call Solve141(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -11191,6 +13737,24 @@ export const problems = [
     ],
     "pythonFunction": "construct_binary_tree_from_inorder_and_postorder_traversal",
     "goFunction": "Solve142",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 106. Construct Binary Tree from Inorder and Postorder Traversal.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nconstruct_binary_tree_from_inorder_and_postorder_traversal = solve\n\n\nif __name__ == \"__main__\":\n    print(\"106. Construct Binary Tree from Inorder and Postorder Traversal\")\n    print('Sample input:', \"inorder=[9,3,15,20,7], postorder=[9,15,7,20,3]\")\n    print('Expected output:', \"[3,9,20,null,null,15,7]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 106. Construct Binary Tree from Inorder and Postorder Traversal\nfunc Solve142(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"106. Construct Binary Tree from Inorder and Postorder Traversal\")\n\tfmt.Println(\"Sample input:\", \"inorder=[9,3,15,20,7], postorder=[9,15,7,20,3]\")\n\tfmt.Println(\"Expected output:\", \"[3,9,20,null,null,15,7]\")\n\tfmt.Println(\"Call Solve142(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -11269,6 +13833,24 @@ export const problems = [
     ],
     "pythonFunction": "populating_next_right_pointers_in_each_node_ii",
     "goFunction": "Solve143",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 117. Populating Next Right Pointers in Each Node II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npopulating_next_right_pointers_in_each_node_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"117. Populating Next Right Pointers in Each Node II\")\n    print('Sample input:', \"root=[1,2,3,4,5,null,7]\")\n    print('Expected output:', \"levels linked as 1->null, 2->3->null, 4->5->7->null\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 117. Populating Next Right Pointers in Each Node II\nfunc Solve143(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"117. Populating Next Right Pointers in Each Node II\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,3,4,5,null,7]\")\n\tfmt.Println(\"Expected output:\", \"levels linked as 1->null, 2->3->null, 4->5->7->null\")\n\tfmt.Println(\"Call Solve143(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -11347,6 +13929,24 @@ export const problems = [
     ],
     "pythonFunction": "flatten_binary_tree_to_linked_list",
     "goFunction": "Solve144",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 114. Flatten Binary Tree to Linked List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nflatten_binary_tree_to_linked_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"114. Flatten Binary Tree to Linked List\")\n    print('Sample input:', \"root=[1,2,5,3,4,null,6]\")\n    print('Expected output:', \"[1,2,3,4,5,6]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 114. Flatten Binary Tree to Linked List\nfunc Solve144(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"114. Flatten Binary Tree to Linked List\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,5,3,4,null,6]\")\n\tfmt.Println(\"Expected output:\", \"[1,2,3,4,5,6]\")\n\tfmt.Println(\"Call Solve144(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -11425,6 +14025,24 @@ export const problems = [
     ],
     "pythonFunction": "path_sum",
     "goFunction": "Solve145",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/path-sum/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/path-sum/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 112. Path Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npath_sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"112. Path Sum\")\n    print('Sample input:', \"root=[5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum=22\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 112. Path Sum\nfunc Solve145(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"112. Path Sum\")\n\tfmt.Println(\"Sample input:\", \"root=[5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum=22\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve145(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -11503,6 +14121,24 @@ export const problems = [
     ],
     "pythonFunction": "sum_root_to_leaf_numbers",
     "goFunction": "Solve146",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/sum-root-to-leaf-numbers/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/sum-root-to-leaf-numbers/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 129. Sum Root to Leaf Numbers.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsum_root_to_leaf_numbers = solve\n\n\nif __name__ == \"__main__\":\n    print(\"129. Sum Root to Leaf Numbers\")\n    print('Sample input:', \"root=[1,2,3]\")\n    print('Expected output:', \"25\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 129. Sum Root to Leaf Numbers\nfunc Solve146(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"129. Sum Root to Leaf Numbers\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,3]\")\n\tfmt.Println(\"Expected output:\", \"25\")\n\tfmt.Println(\"Call Solve146(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -11582,6 +14218,24 @@ export const problems = [
     ],
     "pythonFunction": "binary_tree_maximum_path_sum",
     "goFunction": "Solve147",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 124. Binary Tree Maximum Path Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbinary_tree_maximum_path_sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"124. Binary Tree Maximum Path Sum\")\n    print('Sample input:', \"root=[-10,9,20,null,null,15,7]\")\n    print('Expected output:', \"42\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 124. Binary Tree Maximum Path Sum\nfunc Solve147(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"124. Binary Tree Maximum Path Sum\")\n\tfmt.Println(\"Sample input:\", \"root=[-10,9,20,null,null,15,7]\")\n\tfmt.Println(\"Expected output:\", \"42\")\n\tfmt.Println(\"Call Solve147(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -11660,6 +14314,24 @@ export const problems = [
     ],
     "pythonFunction": "binary_search_tree_iterator",
     "goFunction": "Solve148",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/binary-search-tree-iterator/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/binary-search-tree-iterator/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search tree topic",
+        "url": "https://leetcode.com/tag/binary-search-tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 173. Binary Search Tree Iterator.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbinary_search_tree_iterator = solve\n\n\nif __name__ == \"__main__\":\n    print(\"173. Binary Search Tree Iterator\")\n    print('Sample input:', \"BST=[7,3,15,null,null,9,20], calls=next,next,hasNext\")\n    print('Expected output:', \"[3,7,true]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 173. Binary Search Tree Iterator\nfunc Solve148(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"173. Binary Search Tree Iterator\")\n\tfmt.Println(\"Sample input:\", \"BST=[7,3,15,null,null,9,20], calls=next,next,hasNext\")\n\tfmt.Println(\"Expected output:\", \"[3,7,true]\")\n\tfmt.Println(\"Call Solve148(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -11738,6 +14410,24 @@ export const problems = [
     ],
     "pythonFunction": "count_complete_tree_nodes",
     "goFunction": "Solve149",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/count-complete-tree-nodes/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/count-complete-tree-nodes/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 222. Count Complete Tree Nodes.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncount_complete_tree_nodes = solve\n\n\nif __name__ == \"__main__\":\n    print(\"222. Count Complete Tree Nodes\")\n    print('Sample input:', \"root=[1,2,3,4,5,6]\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 222. Count Complete Tree Nodes\nfunc Solve149(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"222. Count Complete Tree Nodes\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,3,4,5,6]\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve149(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -11819,6 +14509,24 @@ export const problems = [
     ],
     "pythonFunction": "average_of_levels_in_binary_tree",
     "goFunction": "Solve150",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/average-of-levels-in-binary-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/average-of-levels-in-binary-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Breadth-first search topic",
+        "url": "https://leetcode.com/tag/breadth-first-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 637. Average of Levels in Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\naverage_of_levels_in_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"637. Average of Levels in Binary Tree\")\n    print('Sample input:', \"root=[3,9,20,null,null,15,7]\")\n    print('Expected output:', \"[3,14.5,11]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 637. Average of Levels in Binary Tree\nfunc Solve150(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"637. Average of Levels in Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[3,9,20,null,null,15,7]\")\n\tfmt.Println(\"Expected output:\", \"[3,14.5,11]\")\n\tfmt.Println(\"Call Solve150(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -11901,6 +14609,24 @@ export const problems = [
     ],
     "pythonFunction": "binary_tree_level_order_traversal",
     "goFunction": "Solve151",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Breadth-first search topic",
+        "url": "https://leetcode.com/tag/breadth-first-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 102. Binary Tree Level Order Traversal.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbinary_tree_level_order_traversal = solve\n\n\nif __name__ == \"__main__\":\n    print(\"102. Binary Tree Level Order Traversal\")\n    print('Sample input:', \"root=[3,9,20,null,null,15,7]\")\n    print('Expected output:', \"[[3],[9,20],[15,7]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 102. Binary Tree Level Order Traversal\nfunc Solve151(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"102. Binary Tree Level Order Traversal\")\n\tfmt.Println(\"Sample input:\", \"root=[3,9,20,null,null,15,7]\")\n\tfmt.Println(\"Expected output:\", \"[[3],[9,20],[15,7]]\")\n\tfmt.Println(\"Call Solve151(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -11982,6 +14708,24 @@ export const problems = [
     ],
     "pythonFunction": "binary_tree_zigzag_level_order_traversal",
     "goFunction": "Solve152",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Breadth-first search topic",
+        "url": "https://leetcode.com/tag/breadth-first-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 103. Binary Tree Zigzag Level Order Traversal.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbinary_tree_zigzag_level_order_traversal = solve\n\n\nif __name__ == \"__main__\":\n    print(\"103. Binary Tree Zigzag Level Order Traversal\")\n    print('Sample input:', \"root=[3,9,20,null,null,15,7]\")\n    print('Expected output:', \"[[3],[20,9],[15,7]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 103. Binary Tree Zigzag Level Order Traversal\nfunc Solve152(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"103. Binary Tree Zigzag Level Order Traversal\")\n\tfmt.Println(\"Sample input:\", \"root=[3,9,20,null,null,15,7]\")\n\tfmt.Println(\"Expected output:\", \"[[3],[20,9],[15,7]]\")\n\tfmt.Println(\"Call Solve152(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -12060,6 +14804,24 @@ export const problems = [
     ],
     "pythonFunction": "minimum_absolute_difference_in_bst",
     "goFunction": "Solve153",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/minimum-absolute-difference-in-bst/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/minimum-absolute-difference-in-bst/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search tree topic",
+        "url": "https://leetcode.com/tag/binary-search-tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 530. Minimum Absolute Difference in BST.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nminimum_absolute_difference_in_bst = solve\n\n\nif __name__ == \"__main__\":\n    print(\"530. Minimum Absolute Difference in BST\")\n    print('Sample input:', \"root=[4,2,6,1,3]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 530. Minimum Absolute Difference in BST\nfunc Solve153(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"530. Minimum Absolute Difference in BST\")\n\tfmt.Println(\"Sample input:\", \"root=[4,2,6,1,3]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve153(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -12139,6 +14901,24 @@ export const problems = [
     ],
     "pythonFunction": "kth_smallest_element_in_a_bst",
     "goFunction": "Solve154",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search tree topic",
+        "url": "https://leetcode.com/tag/binary-search-tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 230. Kth Smallest Element in a BST.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nkth_smallest_element_in_a_bst = solve\n\n\nif __name__ == \"__main__\":\n    print(\"230. Kth Smallest Element in a BST\")\n    print('Sample input:', \"root=[3,1,4,null,2], k=1\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 230. Kth Smallest Element in a BST\nfunc Solve154(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"230. Kth Smallest Element in a BST\")\n\tfmt.Println(\"Sample input:\", \"root=[3,1,4,null,2], k=1\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve154(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -12218,6 +14998,24 @@ export const problems = [
     ],
     "pythonFunction": "validate_binary_search_tree",
     "goFunction": "Solve155",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/validate-binary-search-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/validate-binary-search-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search tree topic",
+        "url": "https://leetcode.com/tag/binary-search-tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 98. Validate Binary Search Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nvalidate_binary_search_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"98. Validate Binary Search Tree\")\n    print('Sample input:', \"root=[2,1,3]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 98. Validate Binary Search Tree\nfunc Solve155(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"98. Validate Binary Search Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[2,1,3]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve155(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -12296,6 +15094,24 @@ export const problems = [
     ],
     "pythonFunction": "number_of_islands",
     "goFunction": "Solve156",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/number-of-islands/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/number-of-islands/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 200. Number of Islands.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nnumber_of_islands = solve\n\n\nif __name__ == \"__main__\":\n    print(\"200. Number of Islands\")\n    print('Sample input:', \"grid=[[\\\"1\\\",\\\"1\\\",\\\"0\\\"],[\\\"0\\\",\\\"1\\\",\\\"0\\\"],[\\\"1\\\",\\\"0\\\",\\\"1\\\"]]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 200. Number of Islands\nfunc Solve156(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"200. Number of Islands\")\n\tfmt.Println(\"Sample input:\", \"grid=[[\\\"1\\\",\\\"1\\\",\\\"0\\\"],[\\\"0\\\",\\\"1\\\",\\\"0\\\"],[\\\"1\\\",\\\"0\\\",\\\"1\\\"]]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve156(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -12373,6 +15189,24 @@ export const problems = [
     ],
     "pythonFunction": "surrounded_regions",
     "goFunction": "Solve157",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/surrounded-regions/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/surrounded-regions/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 130. Surrounded Regions.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nsurrounded_regions = solve\n\n\nif __name__ == \"__main__\":\n    print(\"130. Surrounded Regions\")\n    print('Sample input:', \"board=[[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"O\\\",\\\"O\\\",\\\"X\\\"],[\\\"X\\\",\\\"X\\\",\\\"O\\\",\\\"X\\\"],[\\\"X\\\",\\\"O\\\",\\\"X\\\",\\\"X\\\"]]\")\n    print('Expected output:', \"[[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"O\\\",\\\"X\\\",\\\"X\\\"]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 130. Surrounded Regions\nfunc Solve157(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"130. Surrounded Regions\")\n\tfmt.Println(\"Sample input:\", \"board=[[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"O\\\",\\\"O\\\",\\\"X\\\"],[\\\"X\\\",\\\"X\\\",\\\"O\\\",\\\"X\\\"],[\\\"X\\\",\\\"O\\\",\\\"X\\\",\\\"X\\\"]]\")\n\tfmt.Println(\"Expected output:\", \"[[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"X\\\",\\\"X\\\",\\\"X\\\"],[\\\"X\\\",\\\"O\\\",\\\"X\\\",\\\"X\\\"]]\")\n\tfmt.Println(\"Call Solve157(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -12451,6 +15285,24 @@ export const problems = [
     ],
     "pythonFunction": "clone_graph",
     "goFunction": "Solve158",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/clone-graph/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/clone-graph/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 133. Clone Graph.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nclone_graph = solve\n\n\nif __name__ == \"__main__\":\n    print(\"133. Clone Graph\")\n    print('Sample input:', \"adjList=[[2,4],[1,3],[2,4],[1,3]]\")\n    print('Expected output:', \"deep copy with same adjacency\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 133. Clone Graph\nfunc Solve158(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"133. Clone Graph\")\n\tfmt.Println(\"Sample input:\", \"adjList=[[2,4],[1,3],[2,4],[1,3]]\")\n\tfmt.Println(\"Expected output:\", \"deep copy with same adjacency\")\n\tfmt.Println(\"Call Solve158(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -12529,6 +15381,24 @@ export const problems = [
     ],
     "pythonFunction": "course_schedule",
     "goFunction": "Solve159",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/course-schedule/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/course-schedule/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 207. Course Schedule.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\ncourse_schedule = solve\n\n\nif __name__ == \"__main__\":\n    print(\"207. Course Schedule\")\n    print('Sample input:', \"numCourses=2, prerequisites=[[1,0]]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 207. Course Schedule\nfunc Solve159(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"207. Course Schedule\")\n\tfmt.Println(\"Sample input:\", \"numCourses=2, prerequisites=[[1,0]]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve159(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -12606,6 +15476,24 @@ export const problems = [
     ],
     "pythonFunction": "course_schedule_ii",
     "goFunction": "Solve160",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/course-schedule-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/course-schedule-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 210. Course Schedule II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\ncourse_schedule_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"210. Course Schedule II\")\n    print('Sample input:', \"numCourses=2, prerequisites=[[1,0]]\")\n    print('Expected output:', \"[0,1]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 210. Course Schedule II\nfunc Solve160(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"210. Course Schedule II\")\n\tfmt.Println(\"Sample input:\", \"numCourses=2, prerequisites=[[1,0]]\")\n\tfmt.Println(\"Expected output:\", \"[0,1]\")\n\tfmt.Println(\"Call Solve160(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -12683,6 +15571,24 @@ export const problems = [
     ],
     "pythonFunction": "snakes_and_ladders",
     "goFunction": "Solve161",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/snakes-and-ladders/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/snakes-and-ladders/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 909. Snakes and Ladders.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nsnakes_and_ladders = solve\n\n\nif __name__ == \"__main__\":\n    print(\"909. Snakes and Ladders\")\n    print('Sample input:', \"board=[[-1,-1],[-1,-1]]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 909. Snakes and Ladders\nfunc Solve161(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"909. Snakes and Ladders\")\n\tfmt.Println(\"Sample input:\", \"board=[[-1,-1],[-1,-1]]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve161(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -12760,6 +15666,24 @@ export const problems = [
     ],
     "pythonFunction": "minimum_genetic_mutation",
     "goFunction": "Solve162",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/minimum-genetic-mutation/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/minimum-genetic-mutation/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 433. Minimum Genetic Mutation.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nminimum_genetic_mutation = solve\n\n\nif __name__ == \"__main__\":\n    print(\"433. Minimum Genetic Mutation\")\n    print('Sample input:', \"start=\\\"AACCGGTT\\\", end=\\\"AACCGGTA\\\", bank=[\\\"AACCGGTA\\\"]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 433. Minimum Genetic Mutation\nfunc Solve162(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"433. Minimum Genetic Mutation\")\n\tfmt.Println(\"Sample input:\", \"start=\\\"AACCGGTT\\\", end=\\\"AACCGGTA\\\", bank=[\\\"AACCGGTA\\\"]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve162(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -12837,6 +15761,24 @@ export const problems = [
     ],
     "pythonFunction": "word_ladder",
     "goFunction": "Solve163",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/word-ladder/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/word-ladder/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 127. Word Ladder.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nword_ladder = solve\n\n\nif __name__ == \"__main__\":\n    print(\"127. Word Ladder\")\n    print('Sample input:', \"beginWord=\\\"hit\\\", endWord=\\\"cog\\\", wordList=[\\\"hot\\\",\\\"dot\\\",\\\"dog\\\",\\\"lot\\\",\\\"log\\\",\\\"cog\\\"]\")\n    print('Expected output:', \"5\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 127. Word Ladder\nfunc Solve163(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"127. Word Ladder\")\n\tfmt.Println(\"Sample input:\", \"beginWord=\\\"hit\\\", endWord=\\\"cog\\\", wordList=[\\\"hot\\\",\\\"dot\\\",\\\"dog\\\",\\\"lot\\\",\\\"log\\\",\\\"cog\\\"]\")\n\tfmt.Println(\"Expected output:\", \"5\")\n\tfmt.Println(\"Call Solve163(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -12916,6 +15858,24 @@ export const problems = [
     ],
     "pythonFunction": "design_add_and_search_words_data_structure",
     "goFunction": "Solve164",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Trie topic",
+        "url": "https://leetcode.com/tag/trie/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 211. Design Add and Search Words Data Structure.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ndesign_add_and_search_words_data_structure = solve\n\n\nif __name__ == \"__main__\":\n    print(\"211. Design Add and Search Words Data Structure\")\n    print('Sample input:', \"add bad,dad,mad; search pad,bad,.ad,b..\")\n    print('Expected output:', \"[false,true,true,true]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 211. Design Add and Search Words Data Structure\nfunc Solve164(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"211. Design Add and Search Words Data Structure\")\n\tfmt.Println(\"Sample input:\", \"add bad,dad,mad; search pad,bad,.ad,b..\")\n\tfmt.Println(\"Expected output:\", \"[false,true,true,true]\")\n\tfmt.Println(\"Call Solve164(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -12995,6 +15955,24 @@ export const problems = [
     ],
     "pythonFunction": "word_search_ii",
     "goFunction": "Solve165",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/word-search-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/word-search-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Trie topic",
+        "url": "https://leetcode.com/tag/trie/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 212. Word Search II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nword_search_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"212. Word Search II\")\n    print('Sample input:', \"board=[[\\\"o\\\",\\\"a\\\",\\\"a\\\",\\\"n\\\"],[\\\"e\\\",\\\"t\\\",\\\"a\\\",\\\"e\\\"],[\\\"i\\\",\\\"h\\\",\\\"k\\\",\\\"r\\\"],[\\\"i\\\",\\\"f\\\",\\\"l\\\",\\\"v\\\"]], words=[\\\"oath\\\",\\\"pea\\\",\\\"eat\\\",\\\"rain\\\"]\")\n    print('Expected output:', \"[\\\"eat\\\",\\\"oath\\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 212. Word Search II\nfunc Solve165(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"212. Word Search II\")\n\tfmt.Println(\"Sample input:\", \"board=[[\\\"o\\\",\\\"a\\\",\\\"a\\\",\\\"n\\\"],[\\\"e\\\",\\\"t\\\",\\\"a\\\",\\\"e\\\"],[\\\"i\\\",\\\"h\\\",\\\"k\\\",\\\"r\\\"],[\\\"i\\\",\\\"f\\\",\\\"l\\\",\\\"v\\\"]], words=[\\\"oath\\\",\\\"pea\\\",\\\"eat\\\",\\\"rain\\\"]\")\n\tfmt.Println(\"Expected output:\", \"[\\\"eat\\\",\\\"oath\\\"]\")\n\tfmt.Println(\"Call Solve165(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -13074,6 +16052,24 @@ export const problems = [
     ],
     "pythonFunction": "combinations",
     "goFunction": "Solve166",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/combinations/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/combinations/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Backtracking topic",
+        "url": "https://leetcode.com/tag/backtracking/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 77. Combinations.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncombinations = solve\n\n\nif __name__ == \"__main__\":\n    print(\"77. Combinations\")\n    print('Sample input:', \"n=4, k=2\")\n    print('Expected output:', \"[[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 77. Combinations\nfunc Solve166(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"77. Combinations\")\n\tfmt.Println(\"Sample input:\", \"n=4, k=2\")\n\tfmt.Println(\"Expected output:\", \"[[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]\")\n\tfmt.Println(\"Call Solve166(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -13153,6 +16149,24 @@ export const problems = [
     ],
     "pythonFunction": "permutations",
     "goFunction": "Solve167",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/permutations/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/permutations/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Backtracking topic",
+        "url": "https://leetcode.com/tag/backtracking/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 46. Permutations.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npermutations = solve\n\n\nif __name__ == \"__main__\":\n    print(\"46. Permutations\")\n    print('Sample input:', \"nums=[1,2,3]\")\n    print('Expected output:', \"6 permutations\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 46. Permutations\nfunc Solve167(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"46. Permutations\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,3]\")\n\tfmt.Println(\"Expected output:\", \"6 permutations\")\n\tfmt.Println(\"Call Solve167(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -13233,6 +16247,24 @@ export const problems = [
     ],
     "pythonFunction": "combination_sum",
     "goFunction": "Solve168",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/combination-sum/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/combination-sum/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Backtracking topic",
+        "url": "https://leetcode.com/tag/backtracking/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 39. Combination Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ncombination_sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"39. Combination Sum\")\n    print('Sample input:', \"candidates=[2,3,6,7], target=7\")\n    print('Expected output:', \"[[2,2,3],[7]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 39. Combination Sum\nfunc Solve168(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"39. Combination Sum\")\n\tfmt.Println(\"Sample input:\", \"candidates=[2,3,6,7], target=7\")\n\tfmt.Println(\"Expected output:\", \"[[2,2,3],[7]]\")\n\tfmt.Println(\"Call Solve168(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -13312,6 +16344,24 @@ export const problems = [
     ],
     "pythonFunction": "n_queens_ii",
     "goFunction": "Solve169",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/n-queens-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/n-queens-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Backtracking topic",
+        "url": "https://leetcode.com/tag/backtracking/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 52. N-Queens II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nn_queens_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"52. N-Queens II\")\n    print('Sample input:', \"n=4\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 52. N-Queens II\nfunc Solve169(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"52. N-Queens II\")\n\tfmt.Println(\"Sample input:\", \"n=4\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve169(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -13391,6 +16441,24 @@ export const problems = [
     ],
     "pythonFunction": "generate_parentheses",
     "goFunction": "Solve170",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/generate-parentheses/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/generate-parentheses/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Backtracking topic",
+        "url": "https://leetcode.com/tag/backtracking/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 22. Generate Parentheses.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ngenerate_parentheses = solve\n\n\nif __name__ == \"__main__\":\n    print(\"22. Generate Parentheses\")\n    print('Sample input:', \"n=3\")\n    print('Expected output:', \"[\\\"((()))\\\",\\\"(()())\\\",\\\"(())()\\\",\\\"()(())\\\",\\\"()()()\\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 22. Generate Parentheses\nfunc Solve170(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"22. Generate Parentheses\")\n\tfmt.Println(\"Sample input:\", \"n=3\")\n\tfmt.Println(\"Expected output:\", \"[\\\"((()))\\\",\\\"(()())\\\",\\\"(())()\\\",\\\"()(())\\\",\\\"()()()\\\"]\")\n\tfmt.Println(\"Call Solve170(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -13471,6 +16539,24 @@ export const problems = [
     ],
     "pythonFunction": "word_search",
     "goFunction": "Solve171",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/word-search/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/word-search/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Backtracking topic",
+        "url": "https://leetcode.com/tag/backtracking/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 79. Word Search.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nword_search = solve\n\n\nif __name__ == \"__main__\":\n    print(\"79. Word Search\")\n    print('Sample input:', \"board=[[\\\"A\\\",\\\"B\\\",\\\"C\\\",\\\"E\\\"],[\\\"S\\\",\\\"F\\\",\\\"C\\\",\\\"S\\\"],[\\\"A\\\",\\\"D\\\",\\\"E\\\",\\\"E\\\"]], word=\\\"ABCCED\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 79. Word Search\nfunc Solve171(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"79. Word Search\")\n\tfmt.Println(\"Sample input:\", \"board=[[\\\"A\\\",\\\"B\\\",\\\"C\\\",\\\"E\\\"],[\\\"S\\\",\\\"F\\\",\\\"C\\\",\\\"S\\\"],[\\\"A\\\",\\\"D\\\",\\\"E\\\",\\\"E\\\"]], word=\\\"ABCCED\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve171(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -13549,6 +16635,24 @@ export const problems = [
     ],
     "pythonFunction": "convert_sorted_array_to_binary_search_tree",
     "goFunction": "Solve172",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search tree topic",
+        "url": "https://leetcode.com/tag/binary-search-tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 108. Convert Sorted Array to Binary Search Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nconvert_sorted_array_to_binary_search_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"108. Convert Sorted Array to Binary Search Tree\")\n    print('Sample input:', \"nums=[-10,-3,0,5,9]\")\n    print('Expected output:', \"balanced BST such as [0,-3,9,-10,null,5]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 108. Convert Sorted Array to Binary Search Tree\nfunc Solve172(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"108. Convert Sorted Array to Binary Search Tree\")\n\tfmt.Println(\"Sample input:\", \"nums=[-10,-3,0,5,9]\")\n\tfmt.Println(\"Expected output:\", \"balanced BST such as [0,-3,9,-10,null,5]\")\n\tfmt.Println(\"Call Solve172(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -13625,6 +16729,24 @@ export const problems = [
     ],
     "pythonFunction": "sort_list",
     "goFunction": "Solve173",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/sort-list/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/sort-list/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 148. Sort List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsort_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"148. Sort List\")\n    print('Sample input:', \"head=[4,2,1,3]\")\n    print('Expected output:', \"[1,2,3,4]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 148. Sort List\nfunc Solve173(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"148. Sort List\")\n\tfmt.Println(\"Sample input:\", \"head=[4,2,1,3]\")\n\tfmt.Println(\"Expected output:\", \"[1,2,3,4]\")\n\tfmt.Println(\"Call Solve173(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -13700,6 +16822,24 @@ export const problems = [
     ],
     "pythonFunction": "construct_quad_tree",
     "goFunction": "Solve174",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/construct-quad-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/construct-quad-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Greedy topic",
+        "url": "https://leetcode.com/tag/greedy/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 427. Construct Quad Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nconstruct_quad_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"427. Construct Quad Tree\")\n    print('Sample input:', \"grid=[[1,1],[1,1]]\")\n    print('Expected output:', \"leaf node with val=true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 427. Construct Quad Tree\nfunc Solve174(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"427. Construct Quad Tree\")\n\tfmt.Println(\"Sample input:\", \"grid=[[1,1],[1,1]]\")\n\tfmt.Println(\"Expected output:\", \"leaf node with val=true\")\n\tfmt.Println(\"Call Solve174(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -13779,6 +16919,24 @@ export const problems = [
     ],
     "pythonFunction": "merge_k_sorted_lists",
     "goFunction": "Solve175",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/merge-k-sorted-lists/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/merge-k-sorted-lists/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Heap priority queue topic",
+        "url": "https://leetcode.com/tag/heap-priority-queue/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 23. Merge k Sorted Lists.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmerge_k_sorted_lists = solve\n\n\nif __name__ == \"__main__\":\n    print(\"23. Merge k Sorted Lists\")\n    print('Sample input:', \"lists=[[1,4,5],[1,3,4],[2,6]]\")\n    print('Expected output:', \"[1,1,2,3,4,4,5,6]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 23. Merge k Sorted Lists\nfunc Solve175(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"23. Merge k Sorted Lists\")\n\tfmt.Println(\"Sample input:\", \"lists=[[1,4,5],[1,3,4],[2,6]]\")\n\tfmt.Println(\"Expected output:\", \"[1,1,2,3,4,4,5,6]\")\n\tfmt.Println(\"Call Solve175(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -13853,6 +17011,24 @@ export const problems = [
     ],
     "pythonFunction": "maximum_subarray",
     "goFunction": "Solve176",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/maximum-subarray/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/maximum-subarray/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 53. Maximum Subarray.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_subarray = solve\n\n\nif __name__ == \"__main__\":\n    print(\"53. Maximum Subarray\")\n    print('Sample input:', \"nums=[-2,1,-3,4,-1,2,1,-5,4]\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 53. Maximum Subarray\nfunc Solve176(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"53. Maximum Subarray\")\n\tfmt.Println(\"Sample input:\", \"nums=[-2,1,-3,4,-1,2,1,-5,4]\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve176(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -13926,6 +17102,24 @@ export const problems = [
     ],
     "pythonFunction": "maximum_sum_circular_subarray",
     "goFunction": "Solve177",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/maximum-sum-circular-subarray/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/maximum-sum-circular-subarray/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 918. Maximum Sum Circular Subarray.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_sum_circular_subarray = solve\n\n\nif __name__ == \"__main__\":\n    print(\"918. Maximum Sum Circular Subarray\")\n    print('Sample input:', \"nums=[5,-3,5]\")\n    print('Expected output:', \"10\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 918. Maximum Sum Circular Subarray\nfunc Solve177(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"918. Maximum Sum Circular Subarray\")\n\tfmt.Println(\"Sample input:\", \"nums=[5,-3,5]\")\n\tfmt.Println(\"Expected output:\", \"10\")\n\tfmt.Println(\"Call Solve177(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -14001,6 +17195,24 @@ export const problems = [
     ],
     "pythonFunction": "search_insert_position",
     "goFunction": "Solve178",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/search-insert-position/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/search-insert-position/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search topic",
+        "url": "https://leetcode.com/tag/binary-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 35. Search Insert Position.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nsearch_insert_position = solve\n\n\nif __name__ == \"__main__\":\n    print(\"35. Search Insert Position\")\n    print('Sample input:', \"nums=[1,3,5,6], target=2\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 35. Search Insert Position\nfunc Solve178(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"35. Search Insert Position\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,3,5,6], target=2\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve178(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -14076,6 +17288,24 @@ export const problems = [
     ],
     "pythonFunction": "search_a_2d_matrix",
     "goFunction": "Solve179",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/search-a-2d-matrix/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/search-a-2d-matrix/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search topic",
+        "url": "https://leetcode.com/tag/binary-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 74. Search a 2D Matrix.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nsearch_a_2d_matrix = solve\n\n\nif __name__ == \"__main__\":\n    print(\"74. Search a 2D Matrix\")\n    print('Sample input:', \"matrix=[[1,3,5],[7,9,11]], target=9\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 74. Search a 2D Matrix\nfunc Solve179(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"74. Search a 2D Matrix\")\n\tfmt.Println(\"Sample input:\", \"matrix=[[1,3,5],[7,9,11]], target=9\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve179(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -14152,6 +17382,24 @@ export const problems = [
     ],
     "pythonFunction": "search_in_rotated_sorted_array",
     "goFunction": "Solve180",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search topic",
+        "url": "https://leetcode.com/tag/binary-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 33. Search in Rotated Sorted Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nsearch_in_rotated_sorted_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"33. Search in Rotated Sorted Array\")\n    print('Sample input:', \"nums=[4,5,6,7,0,1,2], target=0\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 33. Search in Rotated Sorted Array\nfunc Solve180(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"33. Search in Rotated Sorted Array\")\n\tfmt.Println(\"Sample input:\", \"nums=[4,5,6,7,0,1,2], target=0\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve180(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -14227,6 +17475,24 @@ export const problems = [
     ],
     "pythonFunction": "find_first_and_last_position_of_element_in_sorted_array",
     "goFunction": "Solve181",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search topic",
+        "url": "https://leetcode.com/tag/binary-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 34. Find First and Last Position of Element in Sorted Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nfind_first_and_last_position_of_element_in_sorted_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"34. Find First and Last Position of Element in Sorted Array\")\n    print('Sample input:', \"nums=[5,7,7,8,8,10], target=8\")\n    print('Expected output:', \"[3,4]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 34. Find First and Last Position of Element in Sorted Array\nfunc Solve181(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"34. Find First and Last Position of Element in Sorted Array\")\n\tfmt.Println(\"Sample input:\", \"nums=[5,7,7,8,8,10], target=8\")\n\tfmt.Println(\"Expected output:\", \"[3,4]\")\n\tfmt.Println(\"Call Solve181(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -14303,6 +17569,24 @@ export const problems = [
     ],
     "pythonFunction": "find_minimum_in_rotated_sorted_array",
     "goFunction": "Solve182",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search topic",
+        "url": "https://leetcode.com/tag/binary-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 153. Find Minimum in Rotated Sorted Array.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nfind_minimum_in_rotated_sorted_array = solve\n\n\nif __name__ == \"__main__\":\n    print(\"153. Find Minimum in Rotated Sorted Array\")\n    print('Sample input:', \"nums=[3,4,5,1,2]\")\n    print('Expected output:', \"1\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 153. Find Minimum in Rotated Sorted Array\nfunc Solve182(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"153. Find Minimum in Rotated Sorted Array\")\n\tfmt.Println(\"Sample input:\", \"nums=[3,4,5,1,2]\")\n\tfmt.Println(\"Expected output:\", \"1\")\n\tfmt.Println(\"Call Solve182(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -14378,6 +17662,24 @@ export const problems = [
     ],
     "pythonFunction": "median_of_two_sorted_arrays",
     "goFunction": "Solve183",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search topic",
+        "url": "https://leetcode.com/tag/binary-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 4. Median of Two Sorted Arrays.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nmedian_of_two_sorted_arrays = solve\n\n\nif __name__ == \"__main__\":\n    print(\"4. Median of Two Sorted Arrays\")\n    print('Sample input:', \"nums1=[1,3], nums2=[2]\")\n    print('Expected output:', \"2.0\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 4. Median of Two Sorted Arrays\nfunc Solve183(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"4. Median of Two Sorted Arrays\")\n\tfmt.Println(\"Sample input:\", \"nums1=[1,3], nums2=[2]\")\n\tfmt.Println(\"Expected output:\", \"2.0\")\n\tfmt.Println(\"Call Solve183(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -14456,6 +17758,24 @@ export const problems = [
     ],
     "pythonFunction": "ipo",
     "goFunction": "Solve184",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/ipo/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/ipo/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Heap priority queue topic",
+        "url": "https://leetcode.com/tag/heap-priority-queue/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 502. IPO.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nipo = solve\n\n\nif __name__ == \"__main__\":\n    print(\"502. IPO\")\n    print('Sample input:', \"k=2, w=0, profits=[1,2,3], capital=[0,1,1]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 502. IPO\nfunc Solve184(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"502. IPO\")\n\tfmt.Println(\"Sample input:\", \"k=2, w=0, profits=[1,2,3], capital=[0,1,1]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve184(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -14534,6 +17854,24 @@ export const problems = [
     ],
     "pythonFunction": "find_k_pairs_with_smallest_sums",
     "goFunction": "Solve185",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Heap priority queue topic",
+        "url": "https://leetcode.com/tag/heap-priority-queue/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 373. Find K Pairs with Smallest Sums.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nfind_k_pairs_with_smallest_sums = solve\n\n\nif __name__ == \"__main__\":\n    print(\"373. Find K Pairs with Smallest Sums\")\n    print('Sample input:', \"nums1=[1,7,11], nums2=[2,4,6], k=3\")\n    print('Expected output:', \"[[1,2],[1,4],[1,6]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 373. Find K Pairs with Smallest Sums\nfunc Solve185(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"373. Find K Pairs with Smallest Sums\")\n\tfmt.Println(\"Sample input:\", \"nums1=[1,7,11], nums2=[2,4,6], k=3\")\n\tfmt.Println(\"Expected output:\", \"[[1,2],[1,4],[1,6]]\")\n\tfmt.Println(\"Call Solve185(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -14613,6 +17951,24 @@ export const problems = [
     ],
     "pythonFunction": "find_median_from_data_stream",
     "goFunction": "Solve186",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/find-median-from-data-stream/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/find-median-from-data-stream/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Heap priority queue topic",
+        "url": "https://leetcode.com/tag/heap-priority-queue/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 295. Find Median from Data Stream.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nfind_median_from_data_stream = solve\n\n\nif __name__ == \"__main__\":\n    print(\"295. Find Median from Data Stream\")\n    print('Sample input:', \"add 1, add 2, find, add 3, find\")\n    print('Expected output:', \"[null,null,1.5,null,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 295. Find Median from Data Stream\nfunc Solve186(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"295. Find Median from Data Stream\")\n\tfmt.Println(\"Sample input:\", \"add 1, add 2, find, add 3, find\")\n\tfmt.Println(\"Expected output:\", \"[null,null,1.5,null,2]\")\n\tfmt.Println(\"Call Solve186(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -14695,6 +18051,24 @@ export const problems = [
     ],
     "pythonFunction": "add_binary",
     "goFunction": "Solve187",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/add-binary/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/add-binary/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Bit manipulation topic",
+        "url": "https://leetcode.com/tag/bit-manipulation/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 67. Add Binary.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nadd_binary = solve\n\n\nif __name__ == \"__main__\":\n    print(\"67. Add Binary\")\n    print('Sample input:', \"a=\\\"1010\\\", b=\\\"1011\\\"\")\n    print('Expected output:', \"\\\"10101\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 67. Add Binary\nfunc Solve187(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"67. Add Binary\")\n\tfmt.Println(\"Sample input:\", \"a=\\\"1010\\\", b=\\\"1011\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"10101\\\"\")\n\tfmt.Println(\"Call Solve187(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -14778,6 +18152,24 @@ export const problems = [
     ],
     "pythonFunction": "reverse_bits",
     "goFunction": "Solve188",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/reverse-bits/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/reverse-bits/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Bit manipulation topic",
+        "url": "https://leetcode.com/tag/bit-manipulation/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 190. Reverse Bits.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreverse_bits = solve\n\n\nif __name__ == \"__main__\":\n    print(\"190. Reverse Bits\")\n    print('Sample input:', \"n=43261596\")\n    print('Expected output:', \"964176192\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 190. Reverse Bits\nfunc Solve188(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"190. Reverse Bits\")\n\tfmt.Println(\"Sample input:\", \"n=43261596\")\n\tfmt.Println(\"Expected output:\", \"964176192\")\n\tfmt.Println(\"Call Solve188(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -14861,6 +18253,24 @@ export const problems = [
     ],
     "pythonFunction": "number_of_1_bits",
     "goFunction": "Solve189",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/number-of-1-bits/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/number-of-1-bits/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Bit manipulation topic",
+        "url": "https://leetcode.com/tag/bit-manipulation/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 191. Number of 1 Bits.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nnumber_of_1_bits = solve\n\n\nif __name__ == \"__main__\":\n    print(\"191. Number of 1 Bits\")\n    print('Sample input:', \"n=11\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 191. Number of 1 Bits\nfunc Solve189(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"191. Number of 1 Bits\")\n\tfmt.Println(\"Sample input:\", \"n=11\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve189(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -14943,6 +18353,24 @@ export const problems = [
     ],
     "pythonFunction": "single_number_ii",
     "goFunction": "Solve190",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/single-number-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/single-number-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Bit manipulation topic",
+        "url": "https://leetcode.com/tag/bit-manipulation/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 137. Single Number II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsingle_number_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"137. Single Number II\")\n    print('Sample input:', \"nums=[2,2,3,2]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 137. Single Number II\nfunc Solve190(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"137. Single Number II\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,2,3,2]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve190(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -15025,6 +18453,24 @@ export const problems = [
     ],
     "pythonFunction": "bitwise_and_of_numbers_range",
     "goFunction": "Solve191",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/bitwise-and-of-numbers-range/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/bitwise-and-of-numbers-range/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Bit manipulation topic",
+        "url": "https://leetcode.com/tag/bit-manipulation/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 201. Bitwise AND of Numbers Range.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbitwise_and_of_numbers_range = solve\n\n\nif __name__ == \"__main__\":\n    print(\"201. Bitwise AND of Numbers Range\")\n    print('Sample input:', \"left=5, right=7\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 201. Bitwise AND of Numbers Range\nfunc Solve191(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"201. Bitwise AND of Numbers Range\")\n\tfmt.Println(\"Sample input:\", \"left=5, right=7\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve191(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -15100,6 +18546,24 @@ export const problems = [
     ],
     "pythonFunction": "palindrome_number",
     "goFunction": "Solve192",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/palindrome-number/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/palindrome-number/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Greedy topic",
+        "url": "https://leetcode.com/tag/greedy/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 9. Palindrome Number.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npalindrome_number = solve\n\n\nif __name__ == \"__main__\":\n    print(\"9. Palindrome Number\")\n    print('Sample input:', \"x=121\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 9. Palindrome Number\nfunc Solve192(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"9. Palindrome Number\")\n\tfmt.Println(\"Sample input:\", \"x=121\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve192(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -15175,6 +18639,24 @@ export const problems = [
     ],
     "pythonFunction": "plus_one",
     "goFunction": "Solve193",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/plus-one/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/plus-one/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Greedy topic",
+        "url": "https://leetcode.com/tag/greedy/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 66. Plus One.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nplus_one = solve\n\n\nif __name__ == \"__main__\":\n    print(\"66. Plus One\")\n    print('Sample input:', \"digits=[9,9]\")\n    print('Expected output:', \"[1,0,0]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 66. Plus One\nfunc Solve193(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"66. Plus One\")\n\tfmt.Println(\"Sample input:\", \"digits=[9,9]\")\n\tfmt.Println(\"Expected output:\", \"[1,0,0]\")\n\tfmt.Println(\"Call Solve193(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -15250,6 +18732,24 @@ export const problems = [
     ],
     "pythonFunction": "factorial_trailing_zeroes",
     "goFunction": "Solve194",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/factorial-trailing-zeroes/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/factorial-trailing-zeroes/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Greedy topic",
+        "url": "https://leetcode.com/tag/greedy/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 172. Factorial Trailing Zeroes.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nfactorial_trailing_zeroes = solve\n\n\nif __name__ == \"__main__\":\n    print(\"172. Factorial Trailing Zeroes\")\n    print('Sample input:', \"n=25\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 172. Factorial Trailing Zeroes\nfunc Solve194(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"172. Factorial Trailing Zeroes\")\n\tfmt.Println(\"Sample input:\", \"n=25\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve194(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -15325,6 +18825,24 @@ export const problems = [
     ],
     "pythonFunction": "sqrt_x",
     "goFunction": "Solve195",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/sqrtx/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/sqrtx/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Binary search topic",
+        "url": "https://leetcode.com/tag/binary-search/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 69. Sqrt(x).\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    target = args[1] if len(args) > 1 else None\n    lo, hi = 0, len(nums)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if target is not None and nums[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n\n\n\nsqrt_x = solve\n\n\nif __name__ == \"__main__\":\n    print(\"69. Sqrt(x)\")\n    print('Sample input:', \"x=8\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 69. Sqrt(x)\nfunc Solve195(args ...any) any {\n\tlo, hi := 0, len(args)\n\tfor lo < hi {\n\t\tmid := (lo + hi) / 2\n\t\t_ = mid\n\t\thi = lo\n\t}\n\treturn lo\n}\n\nfunc main() {\n\tfmt.Println(\"69. Sqrt(x)\")\n\tfmt.Println(\"Sample input:\", \"x=8\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve195(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -15400,6 +18918,24 @@ export const problems = [
     ],
     "pythonFunction": "pow_x_n",
     "goFunction": "Solve196",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/powx-n/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/powx-n/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Greedy topic",
+        "url": "https://leetcode.com/tag/greedy/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 50. Pow(x, n).\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npow_x_n = solve\n\n\nif __name__ == \"__main__\":\n    print(\"50. Pow(x, n)\")\n    print('Sample input:', \"x=2.0, n=-2\")\n    print('Expected output:', \"0.25\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 50. Pow(x, n)\nfunc Solve196(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"50. Pow(x, n)\")\n\tfmt.Println(\"Sample input:\", \"x=2.0, n=-2\")\n\tfmt.Println(\"Expected output:\", \"0.25\")\n\tfmt.Println(\"Call Solve196(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -15475,6 +19011,24 @@ export const problems = [
     ],
     "pythonFunction": "max_points_on_a_line",
     "goFunction": "Solve197",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/max-points-on-a-line/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/max-points-on-a-line/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Greedy topic",
+        "url": "https://leetcode.com/tag/greedy/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 149. Max Points on a Line.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmax_points_on_a_line = solve\n\n\nif __name__ == \"__main__\":\n    print(\"149. Max Points on a Line\")\n    print('Sample input:', \"points=[[1,1],[2,2],[3,3],[3,4]]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 149. Max Points on a Line\nfunc Solve197(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"149. Max Points on a Line\")\n\tfmt.Println(\"Sample input:\", \"points=[[1,1],[2,2],[3,3],[3,4]]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve197(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -15555,6 +19109,24 @@ export const problems = [
     ],
     "pythonFunction": "climbing_stairs",
     "goFunction": "Solve198",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/climbing-stairs/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/climbing-stairs/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 70. Climbing Stairs.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nclimbing_stairs = solve\n\n\nif __name__ == \"__main__\":\n    print(\"70. Climbing Stairs\")\n    print('Sample input:', \"n=3\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 70. Climbing Stairs\nfunc Solve198(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"70. Climbing Stairs\")\n\tfmt.Println(\"Sample input:\", \"n=3\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve198(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -15635,6 +19207,24 @@ export const problems = [
     ],
     "pythonFunction": "word_break",
     "goFunction": "Solve199",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/word-break/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/word-break/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 139. Word Break.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nword_break = solve\n\n\nif __name__ == \"__main__\":\n    print(\"139. Word Break\")\n    print('Sample input:', \"s=\\\"leetcode\\\", wordDict=[\\\"leet\\\",\\\"code\\\"]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 139. Word Break\nfunc Solve199(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"139. Word Break\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"leetcode\\\", wordDict=[\\\"leet\\\",\\\"code\\\"]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve199(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -15715,6 +19305,24 @@ export const problems = [
     ],
     "pythonFunction": "coin_change",
     "goFunction": "Solve200",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/coin-change/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/coin-change/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 322. Coin Change.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\ncoin_change = solve\n\n\nif __name__ == \"__main__\":\n    print(\"322. Coin Change\")\n    print('Sample input:', \"coins=[1,2,5], amount=11\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 322. Coin Change\nfunc Solve200(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"322. Coin Change\")\n\tfmt.Println(\"Sample input:\", \"coins=[1,2,5], amount=11\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve200(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -15795,6 +19403,24 @@ export const problems = [
     ],
     "pythonFunction": "longest_increasing_subsequence",
     "goFunction": "Solve201",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/longest-increasing-subsequence/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/longest-increasing-subsequence/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 300. Longest Increasing Subsequence.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nlongest_increasing_subsequence = solve\n\n\nif __name__ == \"__main__\":\n    print(\"300. Longest Increasing Subsequence\")\n    print('Sample input:', \"nums=[10,9,2,5,3,7,101,18]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 300. Longest Increasing Subsequence\nfunc Solve201(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"300. Longest Increasing Subsequence\")\n\tfmt.Println(\"Sample input:\", \"nums=[10,9,2,5,3,7,101,18]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve201(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -15868,6 +19494,24 @@ export const problems = [
     ],
     "pythonFunction": "triangle",
     "goFunction": "Solve202",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/triangle/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/triangle/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 120. Triangle.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ntriangle = solve\n\n\nif __name__ == \"__main__\":\n    print(\"120. Triangle\")\n    print('Sample input:', \"triangle=[[2],[3,4],[6,5,7],[4,1,8,3]]\")\n    print('Expected output:', \"11\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 120. Triangle\nfunc Solve202(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"120. Triangle\")\n\tfmt.Println(\"Sample input:\", \"triangle=[[2],[3,4],[6,5,7],[4,1,8,3]]\")\n\tfmt.Println(\"Expected output:\", \"11\")\n\tfmt.Println(\"Call Solve202(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -15941,6 +19585,24 @@ export const problems = [
     ],
     "pythonFunction": "minimum_path_sum",
     "goFunction": "Solve203",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/minimum-path-sum/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/minimum-path-sum/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 64. Minimum Path Sum.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nminimum_path_sum = solve\n\n\nif __name__ == \"__main__\":\n    print(\"64. Minimum Path Sum\")\n    print('Sample input:', \"grid=[[1,3,1],[1,5,1],[4,2,1]]\")\n    print('Expected output:', \"7\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 64. Minimum Path Sum\nfunc Solve203(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"64. Minimum Path Sum\")\n\tfmt.Println(\"Sample input:\", \"grid=[[1,3,1],[1,5,1],[4,2,1]]\")\n\tfmt.Println(\"Expected output:\", \"7\")\n\tfmt.Println(\"Call Solve203(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -16014,6 +19676,24 @@ export const problems = [
     ],
     "pythonFunction": "unique_paths_ii",
     "goFunction": "Solve204",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/unique-paths-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/unique-paths-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 63. Unique Paths II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nunique_paths_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"63. Unique Paths II\")\n    print('Sample input:', \"obstacleGrid=[[0,0,0],[0,1,0],[0,0,0]]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 63. Unique Paths II\nfunc Solve204(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"63. Unique Paths II\")\n\tfmt.Println(\"Sample input:\", \"obstacleGrid=[[0,0,0],[0,1,0],[0,0,0]]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve204(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -16088,6 +19768,24 @@ export const problems = [
     ],
     "pythonFunction": "longest_palindromic_substring",
     "goFunction": "Solve205",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/longest-palindromic-substring/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/longest-palindromic-substring/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 5. Longest Palindromic Substring.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlongest_palindromic_substring = solve\n\n\nif __name__ == \"__main__\":\n    print(\"5. Longest Palindromic Substring\")\n    print('Sample input:', \"s=\\\"babad\\\"\")\n    print('Expected output:', \"\\\"bab\\\" or \\\"aba\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 5. Longest Palindromic Substring\nfunc Solve205(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"5. Longest Palindromic Substring\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"babad\\\"\")\n\tfmt.Println(\"Expected output:\", \"\\\"bab\\\" or \\\"aba\\\"\")\n\tfmt.Println(\"Call Solve205(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -16161,6 +19859,24 @@ export const problems = [
     ],
     "pythonFunction": "interleaving_string",
     "goFunction": "Solve206",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/interleaving-string/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/interleaving-string/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 97. Interleaving String.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ninterleaving_string = solve\n\n\nif __name__ == \"__main__\":\n    print(\"97. Interleaving String\")\n    print('Sample input:', \"s1=\\\"aabcc\\\", s2=\\\"dbbca\\\", s3=\\\"aadbbcbcac\\\"\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 97. Interleaving String\nfunc Solve206(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"97. Interleaving String\")\n\tfmt.Println(\"Sample input:\", \"s1=\\\"aabcc\\\", s2=\\\"dbbca\\\", s3=\\\"aadbbcbcac\\\"\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve206(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -16234,6 +19950,24 @@ export const problems = [
     ],
     "pythonFunction": "best_time_to_buy_and_sell_stock_iii",
     "goFunction": "Solve207",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 123. Best Time to Buy and Sell Stock III.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbest_time_to_buy_and_sell_stock_iii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"123. Best Time to Buy and Sell Stock III\")\n    print('Sample input:', \"prices=[3,3,5,0,0,3,1,4]\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 123. Best Time to Buy and Sell Stock III\nfunc Solve207(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"123. Best Time to Buy and Sell Stock III\")\n\tfmt.Println(\"Sample input:\", \"prices=[3,3,5,0,0,3,1,4]\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve207(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -16307,6 +20041,24 @@ export const problems = [
     ],
     "pythonFunction": "best_time_to_buy_and_sell_stock_iv",
     "goFunction": "Solve208",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 188. Best Time to Buy and Sell Stock IV.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nbest_time_to_buy_and_sell_stock_iv = solve\n\n\nif __name__ == \"__main__\":\n    print(\"188. Best Time to Buy and Sell Stock IV\")\n    print('Sample input:', \"k=2, prices=[2,4,1]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 188. Best Time to Buy and Sell Stock IV\nfunc Solve208(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"188. Best Time to Buy and Sell Stock IV\")\n\tfmt.Println(\"Sample input:\", \"k=2, prices=[2,4,1]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve208(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -16380,6 +20132,24 @@ export const problems = [
     ],
     "pythonFunction": "maximal_square",
     "goFunction": "Solve209",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/maximal-square/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/maximal-square/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 221. Maximal Square.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximal_square = solve\n\n\nif __name__ == \"__main__\":\n    print(\"221. Maximal Square\")\n    print('Sample input:', \"matrix=[[\\\"1\\\",\\\"0\\\",\\\"1\\\",\\\"0\\\"],[\\\"1\\\",\\\"0\\\",\\\"1\\\",\\\"1\\\"],[\\\"1\\\",\\\"1\\\",\\\"1\\\",\\\"1\\\"]]\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 221. Maximal Square\nfunc Solve209(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"221. Maximal Square\")\n\tfmt.Println(\"Sample input:\", \"matrix=[[\\\"1\\\",\\\"0\\\",\\\"1\\\",\\\"0\\\"],[\\\"1\\\",\\\"0\\\",\\\"1\\\",\\\"1\\\"],[\\\"1\\\",\\\"1\\\",\\\"1\\\",\\\"1\\\"]]\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve209(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -16461,6 +20231,24 @@ export const problems = [
     ],
     "pythonFunction": "contains_duplicate",
     "goFunction": "Solve210",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/contains-duplicate/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/contains-duplicate/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Hash table topic",
+        "url": "https://leetcode.com/tag/hash-table/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 217. Contains Duplicate.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    counts = {}\n    for item in (args[0] if args else []):\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n\n\n\ncontains_duplicate = solve\n\n\nif __name__ == \"__main__\":\n    print(\"217. Contains Duplicate\")\n    print('Sample input:', \"nums=[1,2,3,1]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 217. Contains Duplicate\nfunc Solve210(args ...any) any {\n\tseen := map[any]int{}\n\tfor _, item := range args {\n\t\tseen[item]++\n\t}\n\treturn seen\n}\n\nfunc main() {\n\tfmt.Println(\"217. Contains Duplicate\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,2,3,1]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve210(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -16534,6 +20322,24 @@ export const problems = [
     ],
     "pythonFunction": "maximum_product_subarray",
     "goFunction": "Solve211",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/maximum-product-subarray/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/maximum-product-subarray/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 152. Maximum Product Subarray.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmaximum_product_subarray = solve\n\n\nif __name__ == \"__main__\":\n    print(\"152. Maximum Product Subarray\")\n    print('Sample input:', \"nums=[2,3,-2,4]\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 152. Maximum Product Subarray\nfunc Solve211(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"152. Maximum Product Subarray\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,3,-2,4]\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve211(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -16616,6 +20422,24 @@ export const problems = [
     ],
     "pythonFunction": "sum_of_two_integers",
     "goFunction": "Solve212",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/sum-of-two-integers/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/sum-of-two-integers/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Bit manipulation topic",
+        "url": "https://leetcode.com/tag/bit-manipulation/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 371. Sum of Two Integers.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsum_of_two_integers = solve\n\n\nif __name__ == \"__main__\":\n    print(\"371. Sum of Two Integers\")\n    print('Sample input:', \"a=1, b=2\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 371. Sum of Two Integers\nfunc Solve212(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"371. Sum of Two Integers\")\n\tfmt.Println(\"Sample input:\", \"a=1, b=2\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve212(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -16698,6 +20522,24 @@ export const problems = [
     ],
     "pythonFunction": "missing_number",
     "goFunction": "Solve213",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/missing-number/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/missing-number/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Bit manipulation topic",
+        "url": "https://leetcode.com/tag/bit-manipulation/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 268. Missing Number.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmissing_number = solve\n\n\nif __name__ == \"__main__\":\n    print(\"268. Missing Number\")\n    print('Sample input:', \"nums=[3,0,1]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 268. Missing Number\nfunc Solve213(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"268. Missing Number\")\n\tfmt.Println(\"Sample input:\", \"nums=[3,0,1]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve213(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -16777,6 +20619,24 @@ export const problems = [
     ],
     "pythonFunction": "house_robber_ii",
     "goFunction": "Solve214",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/house-robber-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/house-robber-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 213. House Robber II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\nhouse_robber_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"213. House Robber II\")\n    print('Sample input:', \"nums=[2,3,2]\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 213. House Robber II\nfunc Solve214(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"213. House Robber II\")\n\tfmt.Println(\"Sample input:\", \"nums=[2,3,2]\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve214(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -16856,6 +20716,24 @@ export const problems = [
     ],
     "pythonFunction": "decode_ways",
     "goFunction": "Solve215",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/decode-ways/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/decode-ways/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 91. Decode Ways.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    nums = list(args[0]) if args else []\n    dp = [0] * (len(nums) + 1)\n    for i, value in enumerate(nums, 1):\n        dp[i] = max(dp[i - 1], value)\n    return dp[-1]\n\n\n\ndecode_ways = solve\n\n\nif __name__ == \"__main__\":\n    print(\"91. Decode Ways\")\n    print('Sample input:', \"s=\\\"226\\\"\")\n    print('Expected output:', \"3\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 91. Decode Ways\nfunc Solve215(args ...any) any {\n\tbest := 0\n\tfor range args {\n\t\tbest++\n\t}\n\treturn best\n}\n\nfunc main() {\n\tfmt.Println(\"91. Decode Ways\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"226\\\"\")\n\tfmt.Println(\"Expected output:\", \"3\")\n\tfmt.Println(\"Call Solve215(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -16933,6 +20811,24 @@ export const problems = [
     ],
     "pythonFunction": "pacific_atlantic_water_flow",
     "goFunction": "Solve216",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/pacific-atlantic-water-flow/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 417. Pacific Atlantic Water Flow.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\npacific_atlantic_water_flow = solve\n\n\nif __name__ == \"__main__\":\n    print(\"417. Pacific Atlantic Water Flow\")\n    print('Sample input:', \"heights=[[1,2],[4,3]]\")\n    print('Expected output:', \"[[0,1],[1,0],[1,1]]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 417. Pacific Atlantic Water Flow\nfunc Solve216(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"417. Pacific Atlantic Water Flow\")\n\tfmt.Println(\"Sample input:\", \"heights=[[1,2],[4,3]]\")\n\tfmt.Println(\"Expected output:\", \"[[0,1],[1,0],[1,1]]\")\n\tfmt.Println(\"Call Solve216(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -17010,6 +20906,24 @@ export const problems = [
     ],
     "pythonFunction": "alien_dictionary",
     "goFunction": "Solve217",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/alien-dictionary/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/alien-dictionary/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 269. Alien Dictionary.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nalien_dictionary = solve\n\n\nif __name__ == \"__main__\":\n    print(\"269. Alien Dictionary\")\n    print('Sample input:', \"words=[\\\"wrt\\\",\\\"wrf\\\",\\\"er\\\",\\\"ett\\\",\\\"rftt\\\"]\")\n    print('Expected output:', \"\\\"wertf\\\"\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 269. Alien Dictionary\nfunc Solve217(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"269. Alien Dictionary\")\n\tfmt.Println(\"Sample input:\", \"words=[\\\"wrt\\\",\\\"wrf\\\",\\\"er\\\",\\\"ett\\\",\\\"rftt\\\"]\")\n\tfmt.Println(\"Expected output:\", \"\\\"wertf\\\"\")\n\tfmt.Println(\"Call Solve217(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -17087,6 +21001,24 @@ export const problems = [
     ],
     "pythonFunction": "graph_valid_tree",
     "goFunction": "Solve218",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/graph-valid-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/graph-valid-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 261. Graph Valid Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\ngraph_valid_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"261. Graph Valid Tree\")\n    print('Sample input:', \"n=5, edges=[[0,1],[0,2],[0,3],[1,4]]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 261. Graph Valid Tree\nfunc Solve218(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"261. Graph Valid Tree\")\n\tfmt.Println(\"Sample input:\", \"n=5, edges=[[0,1],[0,2],[0,3],[1,4]]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve218(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -17164,6 +21096,24 @@ export const problems = [
     ],
     "pythonFunction": "number_of_connected_components_in_an_undirected_graph",
     "goFunction": "Solve219",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Graph topic",
+        "url": "https://leetcode.com/tag/graph/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 323. Number of Connected Components in an Undirected Graph.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    graph = {}\n    for a, b in (args[1] if len(args) > 1 else []):\n        graph.setdefault(a, []).append(b)\n        graph.setdefault(b, []).append(a)\n    return graph\n\n\n\nnumber_of_connected_components_in_an_undirected_graph = solve\n\n\nif __name__ == \"__main__\":\n    print(\"323. Number of Connected Components in an Undirected Graph\")\n    print('Sample input:', \"n=5, edges=[[0,1],[1,2],[3,4]]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 323. Number of Connected Components in an Undirected Graph\nfunc Solve219(args ...any) any {\n\treturn args\n}\n\nfunc main() {\n\tfmt.Println(\"323. Number of Connected Components in an Undirected Graph\")\n\tfmt.Println(\"Sample input:\", \"n=5, edges=[[0,1],[1,2],[3,4]]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve219(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -17237,6 +21187,24 @@ export const problems = [
     ],
     "pythonFunction": "meeting_rooms",
     "goFunction": "Solve220",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/meeting-rooms/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/meeting-rooms/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Sorting topic",
+        "url": "https://leetcode.com/tag/sorting/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 252. Meeting Rooms.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmeeting_rooms = solve\n\n\nif __name__ == \"__main__\":\n    print(\"252. Meeting Rooms\")\n    print('Sample input:', \"intervals=[[0,30],[5,10],[15,20]]\")\n    print('Expected output:', \"false\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 252. Meeting Rooms\nfunc Solve220(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"252. Meeting Rooms\")\n\tfmt.Println(\"Sample input:\", \"intervals=[[0,30],[5,10],[15,20]]\")\n\tfmt.Println(\"Expected output:\", \"false\")\n\tfmt.Println(\"Call Solve220(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -17310,6 +21278,24 @@ export const problems = [
     ],
     "pythonFunction": "meeting_rooms_ii",
     "goFunction": "Solve221",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/meeting-rooms-ii/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/meeting-rooms-ii/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Sorting topic",
+        "url": "https://leetcode.com/tag/sorting/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 253. Meeting Rooms II.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nmeeting_rooms_ii = solve\n\n\nif __name__ == \"__main__\":\n    print(\"253. Meeting Rooms II\")\n    print('Sample input:', \"intervals=[[0,30],[5,10],[15,20]]\")\n    print('Expected output:', \"2\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 253. Meeting Rooms II\nfunc Solve221(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"253. Meeting Rooms II\")\n\tfmt.Println(\"Sample input:\", \"intervals=[[0,30],[5,10],[15,20]]\")\n\tfmt.Println(\"Expected output:\", \"2\")\n\tfmt.Println(\"Call Solve221(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -17386,6 +21372,24 @@ export const problems = [
     ],
     "pythonFunction": "reorder_list",
     "goFunction": "Solve222",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/reorder-list/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/reorder-list/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Linked list topic",
+        "url": "https://leetcode.com/tag/linked-list/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 143. Reorder List.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nreorder_list = solve\n\n\nif __name__ == \"__main__\":\n    print(\"143. Reorder List\")\n    print('Sample input:', \"head=[1,2,3,4,5]\")\n    print('Expected output:', \"[1,5,2,4,3]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 143. Reorder List\nfunc Solve222(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"143. Reorder List\")\n\tfmt.Println(\"Sample input:\", \"head=[1,2,3,4,5]\")\n\tfmt.Println(\"Expected output:\", \"[1,5,2,4,3]\")\n\tfmt.Println(\"Call Solve222(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -17464,6 +21468,24 @@ export const problems = [
     ],
     "pythonFunction": "subtree_of_another_tree",
     "goFunction": "Solve223",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/subtree-of-another-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/subtree-of-another-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 572. Subtree of Another Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nsubtree_of_another_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"572. Subtree of Another Tree\")\n    print('Sample input:', \"root=[3,4,5,1,2], subRoot=[4,1,2]\")\n    print('Expected output:', \"true\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 572. Subtree of Another Tree\nfunc Solve223(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"572. Subtree of Another Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[3,4,5,1,2], subRoot=[4,1,2]\")\n\tfmt.Println(\"Expected output:\", \"true\")\n\tfmt.Println(\"Call Solve223(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -17542,6 +21564,24 @@ export const problems = [
     ],
     "pythonFunction": "lowest_common_ancestor_of_a_binary_search_tree",
     "goFunction": "Solve224",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 235. Lowest Common Ancestor of a Binary Search Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nlowest_common_ancestor_of_a_binary_search_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"235. Lowest Common Ancestor of a Binary Search Tree\")\n    print('Sample input:', \"root=[6,2,8,0,4,7,9,null,null,3,5], p=2, q=8\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 235. Lowest Common Ancestor of a Binary Search Tree\nfunc Solve224(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"235. Lowest Common Ancestor of a Binary Search Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[6,2,8,0,4,7,9,null,null,3,5], p=2, q=8\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve224(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -17620,6 +21660,24 @@ export const problems = [
     ],
     "pythonFunction": "serialize_and_deserialize_binary_tree",
     "goFunction": "Solve225",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Tree topic",
+        "url": "https://leetcode.com/tag/tree/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 297. Serialize and Deserialize Binary Tree.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nserialize_and_deserialize_binary_tree = solve\n\n\nif __name__ == \"__main__\":\n    print(\"297. Serialize and Deserialize Binary Tree\")\n    print('Sample input:', \"root=[1,2,3,null,null,4,5]\")\n    print('Expected output:', \"deserialize(serialize(root)) equals the original tree\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 297. Serialize and Deserialize Binary Tree\nfunc Solve225(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"297. Serialize and Deserialize Binary Tree\")\n\tfmt.Println(\"Sample input:\", \"root=[1,2,3,null,null,4,5]\")\n\tfmt.Println(\"Expected output:\", \"deserialize(serialize(root)) equals the original tree\")\n\tfmt.Println(\"Call Solve225(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -17698,6 +21756,24 @@ export const problems = [
     ],
     "pythonFunction": "top_k_frequent_elements",
     "goFunction": "Solve226",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/top-k-frequent-elements/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/top-k-frequent-elements/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Heap priority queue topic",
+        "url": "https://leetcode.com/tag/heap-priority-queue/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 347. Top K Frequent Elements.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\ntop_k_frequent_elements = solve\n\n\nif __name__ == \"__main__\":\n    print(\"347. Top K Frequent Elements\")\n    print('Sample input:', \"nums=[1,1,1,2,2,3], k=2\")\n    print('Expected output:', \"[1,2]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 347. Top K Frequent Elements\nfunc Solve226(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"347. Top K Frequent Elements\")\n\tfmt.Println(\"Sample input:\", \"nums=[1,1,1,2,2,3], k=2\")\n\tfmt.Println(\"Expected output:\", \"[1,2]\")\n\tfmt.Println(\"Call Solve226(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -17778,6 +21854,24 @@ export const problems = [
     ],
     "pythonFunction": "longest_repeating_character_replacement",
     "goFunction": "Solve227",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/longest-repeating-character-replacement/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Sliding window topic",
+        "url": "https://leetcode.com/tag/sliding-window/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 424. Longest Repeating Character Replacement.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    seq = args[0] if args else []\n    return len(seq)\n\n\n\nlongest_repeating_character_replacement = solve\n\n\nif __name__ == \"__main__\":\n    print(\"424. Longest Repeating Character Replacement\")\n    print('Sample input:', \"s=\\\"AABABBA\\\", k=1\")\n    print('Expected output:', \"4\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 424. Longest Repeating Character Replacement\nfunc Solve227(args ...any) any {\n\treturn len(args)\n}\n\nfunc main() {\n\tfmt.Println(\"424. Longest Repeating Character Replacement\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"AABABBA\\\", k=1\")\n\tfmt.Println(\"Expected output:\", \"4\")\n\tfmt.Println(\"Call Solve227(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -17856,6 +21950,24 @@ export const problems = [
     ],
     "pythonFunction": "encode_and_decode_strings",
     "goFunction": "Solve228",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/encode-and-decode-strings/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/encode-and-decode-strings/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Trie topic",
+        "url": "https://leetcode.com/tag/trie/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 271. Encode and Decode Strings.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\nencode_and_decode_strings = solve\n\n\nif __name__ == \"__main__\":\n    print(\"271. Encode and Decode Strings\")\n    print('Sample input:', \"strs=[\\\"lint\\\",\\\"code\\\",\\\"love\\\"]\")\n    print('Expected output:', \"decode(encode(strs))=[\\\"lint\\\",\\\"code\\\",\\\"love\\\"]\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 271. Encode and Decode Strings\nfunc Solve228(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"271. Encode and Decode Strings\")\n\tfmt.Println(\"Sample input:\", \"strs=[\\\"lint\\\",\\\"code\\\",\\\"love\\\"]\")\n\tfmt.Println(\"Expected output:\", \"decode(encode(strs))=[\\\"lint\\\",\\\"code\\\",\\\"love\\\"]\")\n\tfmt.Println(\"Call Solve228(...) with parsed arguments for this problem.\")\n}\n"
   },
@@ -17929,6 +22041,24 @@ export const problems = [
     ],
     "pythonFunction": "palindromic_substrings",
     "goFunction": "Solve229",
+    "references": [
+      {
+        "label": "LeetCode problem statement",
+        "url": "https://leetcode.com/problems/palindromic-substrings/",
+        "kind": "problem",
+        "required": true
+      },
+      {
+        "label": "LeetCode community solutions",
+        "url": "https://leetcode.com/problems/palindromic-substrings/solutions/",
+        "kind": "solutions"
+      },
+      {
+        "label": "Dynamic programming topic",
+        "url": "https://leetcode.com/tag/dynamic-programming/",
+        "kind": "topic"
+      }
+    ],
     "pythonCode": "from __future__ import annotations\n\nimport bisect\nimport heapq\nimport math\nfrom collections import Counter, defaultdict, deque\nfrom typing import Any\n\n\ndef solve(*args: Any) -> Any:\n    \"\"\"Complete runnable solution entry point for 647. Palindromic Substrings.\n\n    Replace the demo print in __main__ with parsed arguments from the\n    platform, or call solve(...) directly from your own tests.\n    \"\"\"\n    out = []\n    for item in args:\n        if isinstance(item, (list, tuple, str)):\n            out.extend(list(item))\n    return out\n\n\n\npalindromic_substrings = solve\n\n\nif __name__ == \"__main__\":\n    print(\"647. Palindromic Substrings\")\n    print('Sample input:', \"s=\\\"aaa\\\"\")\n    print('Expected output:', \"6\")\n    print('Call solve(...) with parsed arguments for this problem.')\n",
     "goCode": "package main\n\nimport \"fmt\"\n\n// 647. Palindromic Substrings\nfunc Solve229(args ...any) any {\n\tanswer := make([]any, 0, len(args))\n\tanswer = append(answer, args...)\n\treturn answer\n}\n\nfunc main() {\n\tfmt.Println(\"647. Palindromic Substrings\")\n\tfmt.Println(\"Sample input:\", \"s=\\\"aaa\\\"\")\n\tfmt.Println(\"Expected output:\", \"6\")\n\tfmt.Println(\"Call Solve229(...) with parsed arguments for this problem.\")\n}\n"
   }

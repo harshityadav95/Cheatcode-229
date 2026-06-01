@@ -1,6 +1,6 @@
 # 132. Reverse Nodes in k-Group
 
-- LeetCode: 25
+- LeetCode: [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Reverse every consecutive group of k nodes; leave the final smaller group unchanged.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+- [LeetCode community solutions](https://leetcode.com/problems/reverse-nodes-in-k-group/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

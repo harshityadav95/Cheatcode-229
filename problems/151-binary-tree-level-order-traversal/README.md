@@ -1,6 +1,6 @@
 # 151. Binary Tree Level Order Traversal
 
-- LeetCode: 102
+- LeetCode: [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
 - Pattern: Tree BFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the level-order traversal of a binary tree as lists per level.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+- [LeetCode community solutions](https://leetcode.com/problems/binary-tree-level-order-traversal/solutions/)
+- [Breadth-first search topic](https://leetcode.com/tag/breadth-first-search/)
 
 ## Example
 

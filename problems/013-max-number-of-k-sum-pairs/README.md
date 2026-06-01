@@ -1,6 +1,6 @@
 # 013. Max Number of K-Sum Pairs
 
-- LeetCode: 1679
+- LeetCode: [1679. Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)
 - Pattern: Two Pointers
 - Difficulty: Medium
 - Time: O(n) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the maximum number of disjoint pairs whose values sum to k.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/max-number-of-k-sum-pairs/)
+- [LeetCode community solutions](https://leetcode.com/problems/max-number-of-k-sum-pairs/solutions/)
+- [Two pointers topic](https://leetcode.com/tag/two-pointers/)
 
 ## Example
 

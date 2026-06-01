@@ -1,6 +1,6 @@
 # 024. Removing Stars From a String
 
-- LeetCode: 2390
+- LeetCode: [2390. Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/)
 - Pattern: Stack
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Process a string where each star deletes itself and the closest remaining character to its left.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/removing-stars-from-a-string/)
+- [LeetCode community solutions](https://leetcode.com/problems/removing-stars-from-a-string/solutions/)
+- [Stack topic](https://leetcode.com/tag/stack/)
 
 ## Example
 

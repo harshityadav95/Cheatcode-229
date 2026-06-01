@@ -1,6 +1,6 @@
 # 026. Decode String
 
-- LeetCode: 394
+- LeetCode: [394. Decode String](https://leetcode.com/problems/decode-string/)
 - Pattern: Stack
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Decode a string with patterns k[encoded], including nested patterns, by repeating encoded exactly k times.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/decode-string/)
+- [LeetCode community solutions](https://leetcode.com/problems/decode-string/solutions/)
+- [Stack topic](https://leetcode.com/tag/stack/)
 
 ## Example
 

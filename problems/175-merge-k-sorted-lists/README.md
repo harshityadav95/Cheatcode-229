@@ -1,6 +1,6 @@
 # 175. Merge k Sorted Lists
 
-- LeetCode: 23
+- LeetCode: [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
 - Pattern: Heap / Priority Queue
 - Difficulty: Medium
 - Time: O(n log k) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Merge k sorted linked lists into one sorted linked list.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/merge-k-sorted-lists/)
+- [LeetCode community solutions](https://leetcode.com/problems/merge-k-sorted-lists/solutions/)
+- [Heap priority queue topic](https://leetcode.com/tag/heap-priority-queue/)
 
 ## Example
 

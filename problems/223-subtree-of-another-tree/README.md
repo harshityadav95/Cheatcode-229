@@ -1,6 +1,6 @@
 # 223. Subtree of Another Tree
 
-- LeetCode: 572
+- LeetCode: [572. Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether subRoot is a subtree of root with identical structure and values.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/subtree-of-another-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/subtree-of-another-tree/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

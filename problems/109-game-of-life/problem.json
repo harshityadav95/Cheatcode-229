@@ -70,6 +70,24 @@
   ],
   "pythonFunction": "game_of_life",
   "goFunction": "Solve109",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/game-of-life/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/game-of-life/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Greedy topic",
+      "url": "https://leetcode.com/tag/greedy/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

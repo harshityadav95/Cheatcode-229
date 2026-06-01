@@ -1,6 +1,6 @@
 # 136. Partition List
 
-- LeetCode: 86
+- LeetCode: [86. Partition List](https://leetcode.com/problems/partition-list/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Partition a linked list so nodes less than x come before nodes greater than or equal to x, preserving relative order.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/partition-list/)
+- [LeetCode community solutions](https://leetcode.com/problems/partition-list/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

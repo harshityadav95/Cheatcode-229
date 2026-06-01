@@ -1,6 +1,6 @@
 # 140. Symmetric Tree
 
-- LeetCode: 101
+- LeetCode: [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether a binary tree is a mirror of itself around its center.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/symmetric-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/symmetric-tree/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 211. Maximum Product Subarray
 
-- LeetCode: 152
+- LeetCode: [152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the maximum product of a non-empty contiguous subarray.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/maximum-product-subarray/)
+- [LeetCode community solutions](https://leetcode.com/problems/maximum-product-subarray/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

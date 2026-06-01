@@ -1,6 +1,6 @@
 # 166. Combinations
 
-- LeetCode: 77
+- LeetCode: [77. Combinations](https://leetcode.com/problems/combinations/)
 - Pattern: Backtracking
 - Difficulty: Medium
 - Time: O(branch^depth)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return all combinations of k numbers chosen from 1..n.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/combinations/)
+- [LeetCode community solutions](https://leetcode.com/problems/combinations/solutions/)
+- [Backtracking topic](https://leetcode.com/tag/backtracking/)
 
 ## Example
 

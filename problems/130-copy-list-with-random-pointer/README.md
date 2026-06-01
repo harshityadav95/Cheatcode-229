@@ -1,6 +1,6 @@
 # 130. Copy List with Random Pointer
 
-- LeetCode: 138
+- LeetCode: [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Deep-copy a linked list where each node has next and random pointers.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/copy-list-with-random-pointer/)
+- [LeetCode community solutions](https://leetcode.com/problems/copy-list-with-random-pointer/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

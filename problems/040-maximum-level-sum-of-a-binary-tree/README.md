@@ -1,6 +1,6 @@
 # 040. Maximum Level Sum of a Binary Tree
 
-- LeetCode: 1161
+- LeetCode: [1161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)
 - Pattern: Tree BFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the 1-indexed level of a binary tree with the maximum sum of node values.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/solutions/)
+- [Breadth-first search topic](https://leetcode.com/tag/breadth-first-search/)
 
 ## Example
 

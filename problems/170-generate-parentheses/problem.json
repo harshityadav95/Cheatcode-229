@@ -74,6 +74,24 @@
   ],
   "pythonFunction": "generate_parentheses",
   "goFunction": "Solve170",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/generate-parentheses/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/generate-parentheses/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Backtracking topic",
+      "url": "https://leetcode.com/tag/backtracking/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

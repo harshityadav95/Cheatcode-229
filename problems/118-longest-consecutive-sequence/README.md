@@ -1,6 +1,6 @@
 # 118. Longest Consecutive Sequence
 
-- LeetCode: 128
+- LeetCode: [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the length of the longest consecutive integer sequence in an unsorted array.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/longest-consecutive-sequence/)
+- [LeetCode community solutions](https://leetcode.com/problems/longest-consecutive-sequence/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

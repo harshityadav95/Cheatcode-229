@@ -1,6 +1,6 @@
 # 135. Rotate List
 
-- LeetCode: 61
+- LeetCode: [61. Rotate List](https://leetcode.com/problems/rotate-list/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Rotate a linked list right by k places.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/rotate-list/)
+- [LeetCode community solutions](https://leetcode.com/problems/rotate-list/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

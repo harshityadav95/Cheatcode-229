@@ -1,6 +1,6 @@
 # 081. Rotate Array
 
-- LeetCode: 189
+- LeetCode: [189. Rotate Array](https://leetcode.com/problems/rotate-array/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Rotate an array to the right by k steps in-place.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/rotate-array/)
+- [LeetCode community solutions](https://leetcode.com/problems/rotate-array/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

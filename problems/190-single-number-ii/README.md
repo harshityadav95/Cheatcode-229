@@ -1,6 +1,6 @@
 # 190. Single Number II
 
-- LeetCode: 137
+- LeetCode: [137. Single Number II](https://leetcode.com/problems/single-number-ii/)
 - Pattern: Bit Manipulation
 - Difficulty: Easy
 - Time: O(n) or O(bits)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Every value appears three times except one value that appears once; return the single value.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/single-number-ii/)
+- [LeetCode community solutions](https://leetcode.com/problems/single-number-ii/solutions/)
+- [Bit manipulation topic](https://leetcode.com/tag/bit-manipulation/)
 
 ## Example
 

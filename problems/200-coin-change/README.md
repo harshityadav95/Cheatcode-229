@@ -1,6 +1,6 @@
 # 200. Coin Change
 
-- LeetCode: 322
+- LeetCode: [322. Coin Change](https://leetcode.com/problems/coin-change/)
 - Pattern: DP 1D
 - Difficulty: Medium
 - Time: O(n * state)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the fewest coins needed to make amount using unlimited coins, or -1 if impossible.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/coin-change/)
+- [LeetCode community solutions](https://leetcode.com/problems/coin-change/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

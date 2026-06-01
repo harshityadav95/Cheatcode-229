@@ -1,6 +1,6 @@
 # 050. Smallest Number in Infinite Set
 
-- LeetCode: 2336
+- LeetCode: [2336. Smallest Number in Infinite Set](https://leetcode.com/problems/smallest-number-in-infinite-set/)
 - Pattern: Heap / Priority Queue
 - Difficulty: Medium
 - Time: O(n log k) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Design a set initially containing all positive integers, supporting popSmallest and addBack.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/smallest-number-in-infinite-set/)
+- [LeetCode community solutions](https://leetcode.com/problems/smallest-number-in-infinite-set/solutions/)
+- [Heap priority queue topic](https://leetcode.com/tag/heap-priority-queue/)
 
 ## Example
 

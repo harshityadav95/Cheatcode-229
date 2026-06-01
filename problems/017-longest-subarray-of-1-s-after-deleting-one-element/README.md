@@ -1,6 +1,6 @@
 # 017. Longest Subarray of 1's After Deleting One Element
 
-- LeetCode: 1493
+- LeetCode: [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)
 - Pattern: Sliding Window
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Delete exactly one element from a binary array and return the longest remaining contiguous run of 1s.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)
+- [LeetCode community solutions](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/solutions/)
+- [Sliding window topic](https://leetcode.com/tag/sliding-window/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 100. 3Sum
 
-- LeetCode: 15
+- LeetCode: [15. 3Sum](https://leetcode.com/problems/3sum/)
 - Pattern: Two Pointers
 - Difficulty: Medium
 - Time: O(n) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return all unique triplets whose sum is zero.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/3sum/)
+- [LeetCode community solutions](https://leetcode.com/problems/3sum/solutions/)
+- [Two pointers topic](https://leetcode.com/tag/two-pointers/)
 
 ## Example
 

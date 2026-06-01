@@ -1,6 +1,6 @@
 # 202. Triangle
 
-- LeetCode: 120
+- LeetCode: [120. Triangle](https://leetcode.com/problems/triangle/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given a triangle of numbers, return the minimum path sum from top to bottom moving to adjacent positions.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/triangle/)
+- [LeetCode community solutions](https://leetcode.com/problems/triangle/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

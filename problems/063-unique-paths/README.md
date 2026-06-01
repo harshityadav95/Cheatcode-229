@@ -1,6 +1,6 @@
 # 063. Unique Paths
 
-- LeetCode: 62
+- LeetCode: [62. Unique Paths](https://leetcode.com/problems/unique-paths/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Count unique paths from top-left to bottom-right of an m by n grid using only right and down moves.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/unique-paths/)
+- [LeetCode community solutions](https://leetcode.com/problems/unique-paths/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

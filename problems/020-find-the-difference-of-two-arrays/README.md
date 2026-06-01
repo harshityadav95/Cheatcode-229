@@ -1,6 +1,6 @@
 # 020. Find the Difference of Two Arrays
 
-- LeetCode: 2215
+- LeetCode: [2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return two lists: values present in nums1 but not nums2, and values present in nums2 but not nums1.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
+- [LeetCode community solutions](https://leetcode.com/problems/find-the-difference-of-two-arrays/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

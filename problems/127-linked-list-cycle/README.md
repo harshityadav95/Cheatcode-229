@@ -1,6 +1,6 @@
 # 127. Linked List Cycle
 
-- LeetCode: 141
+- LeetCode: [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether a singly linked list contains a cycle.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/linked-list-cycle/)
+- [LeetCode community solutions](https://leetcode.com/problems/linked-list-cycle/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

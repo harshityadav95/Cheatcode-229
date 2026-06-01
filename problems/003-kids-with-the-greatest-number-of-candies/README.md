@@ -1,6 +1,6 @@
 # 003. Kids With the Greatest Number of Candies
 
-- LeetCode: 1431
+- LeetCode: [1431. Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 For each child, decide whether giving them all extraCandies would make their candy count at least the current maximum.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
+- [LeetCode community solutions](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

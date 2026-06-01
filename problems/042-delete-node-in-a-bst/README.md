@@ -1,6 +1,6 @@
 # 042. Delete Node in a BST
 
-- LeetCode: 450
+- LeetCode: [450. Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)
 - Pattern: BST
 - Difficulty: Medium
 - Time: O(h) to O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Delete a key from a binary search tree and return a valid BST root after deletion.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/delete-node-in-a-bst/)
+- [LeetCode community solutions](https://leetcode.com/problems/delete-node-in-a-bst/solutions/)
+- [Binary search tree topic](https://leetcode.com/tag/binary-search-tree/)
 
 ## Example
 

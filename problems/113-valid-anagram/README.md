@@ -1,6 +1,6 @@
 # 113. Valid Anagram
 
-- LeetCode: 242
+- LeetCode: [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether two strings contain exactly the same character counts.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/valid-anagram/)
+- [LeetCode community solutions](https://leetcode.com/problems/valid-anagram/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

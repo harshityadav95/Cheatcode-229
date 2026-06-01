@@ -1,6 +1,6 @@
 # 027. Number of Recent Calls
 
-- LeetCode: 933
+- LeetCode: [933. Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)
 - Pattern: Queue / Simulation
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Implement RecentCounter.ping(t), returning how many ping times are in the inclusive range [t-3000,t].
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/number-of-recent-calls/)
+- [LeetCode community solutions](https://leetcode.com/problems/number-of-recent-calls/solutions/)
+- [Queue topic](https://leetcode.com/tag/queue/)
 
 ## Example
 

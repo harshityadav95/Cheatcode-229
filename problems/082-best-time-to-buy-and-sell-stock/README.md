@@ -1,6 +1,6 @@
 # 082. Best Time to Buy and Sell Stock
 
-- LeetCode: 121
+- LeetCode: [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 - Pattern: Math / Greedy
 - Difficulty: Medium
 - Time: O(n) or O(log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Choose one buy day and one later sell day to maximize stock profit; return 0 if no profit is possible.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+- [LeetCode community solutions](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/solutions/)
+- [Greedy topic](https://leetcode.com/tag/greedy/)
 
 ## Example
 

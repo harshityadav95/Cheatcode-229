@@ -1,6 +1,6 @@
 # 041. Search in a Binary Search Tree
 
-- LeetCode: 700
+- LeetCode: [700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)
 - Pattern: BST
 - Difficulty: Medium
 - Time: O(h) to O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Search a binary search tree for val and return the subtree rooted at that node, or null if absent.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/search-in-a-binary-search-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/search-in-a-binary-search-tree/solutions/)
+- [Binary search tree topic](https://leetcode.com/tag/binary-search-tree/)
 
 ## Example
 

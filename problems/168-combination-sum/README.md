@@ -1,6 +1,6 @@
 # 168. Combination Sum
 
-- LeetCode: 39
+- LeetCode: [39. Combination Sum](https://leetcode.com/problems/combination-sum/)
 - Pattern: Backtracking
 - Difficulty: Medium
 - Time: O(branch^depth)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return all unique combinations where candidates may be reused unlimited times and the sum equals target.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/combination-sum/)
+- [LeetCode community solutions](https://leetcode.com/problems/combination-sum/solutions/)
+- [Backtracking topic](https://leetcode.com/tag/backtracking/)
 
 ## Example
 

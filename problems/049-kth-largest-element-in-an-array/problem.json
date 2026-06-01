@@ -74,6 +74,24 @@
   ],
   "pythonFunction": "kth_largest_element_in_an_array",
   "goFunction": "Solve049",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Heap priority queue topic",
+      "url": "https://leetcode.com/tag/heap-priority-queue/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

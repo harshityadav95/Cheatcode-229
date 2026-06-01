@@ -1,6 +1,6 @@
 # 178. Search Insert Position
 
-- LeetCode: 35
+- LeetCode: [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 - Pattern: Binary Search
 - Difficulty: Medium
 - Time: O(log n) or O(n log R)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the index of target in a sorted array, or the index where it should be inserted to maintain order.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/search-insert-position/)
+- [LeetCode community solutions](https://leetcode.com/problems/search-insert-position/solutions/)
+- [Binary search topic](https://leetcode.com/tag/binary-search/)
 
 ## Example
 

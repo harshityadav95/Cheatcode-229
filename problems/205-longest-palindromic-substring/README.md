@@ -1,6 +1,6 @@
 # 205. Longest Palindromic Substring
 
-- LeetCode: 5
+- LeetCode: [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return any longest palindromic substring of s.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/longest-palindromic-substring/)
+- [LeetCode community solutions](https://leetcode.com/problems/longest-palindromic-substring/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

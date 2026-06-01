@@ -1,6 +1,6 @@
 # 092. Integer to Roman
 
-- LeetCode: 12
+- LeetCode: [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Convert an integer to a Roman numeral using standard subtractive notation.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/integer-to-roman/)
+- [LeetCode community solutions](https://leetcode.com/problems/integer-to-roman/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 188. Reverse Bits
 
-- LeetCode: 190
+- LeetCode: [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/)
 - Pattern: Bit Manipulation
 - Difficulty: Easy
 - Time: O(n) or O(bits)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Reverse the bits of a 32-bit unsigned integer.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/reverse-bits/)
+- [LeetCode community solutions](https://leetcode.com/problems/reverse-bits/solutions/)
+- [Bit manipulation topic](https://leetcode.com/tag/bit-manipulation/)
 
 ## Example
 

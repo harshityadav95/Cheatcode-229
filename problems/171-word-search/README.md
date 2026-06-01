@@ -1,6 +1,6 @@
 # 171. Word Search
 
-- LeetCode: 79
+- LeetCode: [79. Word Search](https://leetcode.com/problems/word-search/)
 - Pattern: Backtracking
 - Difficulty: Medium
 - Time: O(branch^depth)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether word exists in a board by moving horizontally or vertically without reusing cells.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/word-search/)
+- [LeetCode community solutions](https://leetcode.com/problems/word-search/solutions/)
+- [Backtracking topic](https://leetcode.com/tag/backtracking/)
 
 ## Example
 

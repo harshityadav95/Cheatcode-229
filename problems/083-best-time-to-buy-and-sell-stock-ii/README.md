@@ -1,6 +1,6 @@
 # 083. Best Time to Buy and Sell Stock II
 
-- LeetCode: 122
+- LeetCode: [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
 - Pattern: Math / Greedy
 - Difficulty: Medium
 - Time: O(n) or O(log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Maximize stock profit with as many buy-sell transactions as desired, but hold at most one share at a time.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
+- [LeetCode community solutions](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/solutions/)
+- [Greedy topic](https://leetcode.com/tag/greedy/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 005. Reverse Vowels of a String
 
-- LeetCode: 345
+- LeetCode: [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Reverse only the vowels in a string while leaving all consonants and positions of non-vowels unchanged.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/reverse-vowels-of-a-string/)
+- [LeetCode community solutions](https://leetcode.com/problems/reverse-vowels-of-a-string/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

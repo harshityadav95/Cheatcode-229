@@ -1,6 +1,6 @@
 # 037. Longest ZigZag Path in a Binary Tree
 
-- LeetCode: 1372
+- LeetCode: [1372. Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the maximum number of edges in a path that alternates left and right child moves at each step.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

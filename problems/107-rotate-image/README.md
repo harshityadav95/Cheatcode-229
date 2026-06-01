@@ -1,6 +1,6 @@
 # 107. Rotate Image
 
-- LeetCode: 48
+- LeetCode: [48. Rotate Image](https://leetcode.com/problems/rotate-image/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Rotate an n by n matrix 90 degrees clockwise in-place.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/rotate-image/)
+- [LeetCode community solutions](https://leetcode.com/problems/rotate-image/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 033. Maximum Depth of Binary Tree
 
-- LeetCode: 104
+- LeetCode: [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the maximum number of nodes on any root-to-leaf path in a binary tree.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/maximum-depth-of-binary-tree/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

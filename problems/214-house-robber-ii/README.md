@@ -1,6 +1,6 @@
 # 214. House Robber II
 
-- LeetCode: 213
+- LeetCode: [213. House Robber II](https://leetcode.com/problems/house-robber-ii/)
 - Pattern: DP 1D
 - Difficulty: Medium
 - Time: O(n * state)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Maximize robbery in a circular row of houses where first and last houses are adjacent.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/house-robber-ii/)
+- [LeetCode community solutions](https://leetcode.com/problems/house-robber-ii/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

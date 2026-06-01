@@ -1,6 +1,6 @@
 # 201. Longest Increasing Subsequence
 
-- LeetCode: 300
+- LeetCode: [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 - Pattern: DP 1D
 - Difficulty: Medium
 - Time: O(n * state)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the length of the longest strictly increasing subsequence.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/longest-increasing-subsequence/)
+- [LeetCode community solutions](https://leetcode.com/problems/longest-increasing-subsequence/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

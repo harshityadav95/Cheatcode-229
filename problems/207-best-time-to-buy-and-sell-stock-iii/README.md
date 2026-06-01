@@ -1,6 +1,6 @@
 # 207. Best Time to Buy and Sell Stock III
 
-- LeetCode: 123
+- LeetCode: [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Maximize stock profit with at most two transactions.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)
+- [LeetCode community solutions](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

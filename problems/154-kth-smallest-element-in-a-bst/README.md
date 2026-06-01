@@ -1,6 +1,6 @@
 # 154. Kth Smallest Element in a BST
 
-- LeetCode: 230
+- LeetCode: [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 - Pattern: BST
 - Difficulty: Medium
 - Time: O(h) to O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the k-th smallest value in a BST.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+- [LeetCode community solutions](https://leetcode.com/problems/kth-smallest-element-in-a-bst/solutions/)
+- [Binary search tree topic](https://leetcode.com/tag/binary-search-tree/)
 
 ## Example
 

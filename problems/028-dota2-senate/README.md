@@ -1,6 +1,6 @@
 # 028. Dota2 Senate
 
-- LeetCode: 649
+- LeetCode: [649. Dota2 Senate](https://leetcode.com/problems/dota2-senate/)
 - Pattern: Queue / Simulation
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given a string of R and D senators, simulate bans in order until only one party can act.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/dota2-senate/)
+- [LeetCode community solutions](https://leetcode.com/problems/dota2-senate/solutions/)
+- [Queue topic](https://leetcode.com/tag/queue/)
 
 ## Example
 

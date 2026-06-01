@@ -77,10 +77,20 @@ for (const problem of manifest) {
       fail(`Problem ${problem.id} metadata mismatch for ${field}`)
     }
   }
+  const leetcodeReference = metadata.references?.find((reference) => reference.label === 'LeetCode problem statement')
+  if (!leetcodeReference?.required || leetcodeReference.url !== problem.leetcodeUrl) {
+    fail(`Problem ${problem.id} is missing the mandatory LeetCode reference`)
+  }
+  if (!metadata.references?.some((reference) => reference.kind === 'solutions')) {
+    fail(`Problem ${problem.id} is missing a same-problem solutions reference`)
+  }
 
   const readme = readFileSync(readmePath, 'utf8')
   if (!readme.includes(problem.title) || !readme.includes('## Problem Statement')) {
     fail(`Problem ${problem.id} README is missing required problem information`)
+  }
+  if (!readme.includes('## References') || !readme.includes(problem.leetcodeUrl)) {
+    fail(`Problem ${problem.id} README is missing its mandatory LeetCode reference`)
   }
 
   const pythonCode = readFileSync(pythonPath, 'utf8')

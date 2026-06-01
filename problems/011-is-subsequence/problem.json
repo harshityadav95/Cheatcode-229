@@ -76,6 +76,24 @@
   ],
   "pythonFunction": "is_subsequence",
   "goFunction": "Solve011",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/is-subsequence/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/is-subsequence/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Two pointers topic",
+      "url": "https://leetcode.com/tag/two-pointers/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

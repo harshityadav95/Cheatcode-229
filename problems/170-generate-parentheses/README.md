@@ -1,6 +1,6 @@
 # 170. Generate Parentheses
 
-- LeetCode: 22
+- LeetCode: [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
 - Pattern: Backtracking
 - Difficulty: Medium
 - Time: O(branch^depth)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Generate all valid parentheses strings containing n pairs.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/generate-parentheses/)
+- [LeetCode community solutions](https://leetcode.com/problems/generate-parentheses/solutions/)
+- [Backtracking topic](https://leetcode.com/tag/backtracking/)
 
 ## Example
 

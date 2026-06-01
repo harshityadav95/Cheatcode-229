@@ -1,6 +1,6 @@
 # 120. Merge Intervals
 
-- LeetCode: 56
+- LeetCode: [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 - Pattern: Intervals
 - Difficulty: Medium
 - Time: O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Merge all overlapping intervals and return the merged intervals.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/merge-intervals/)
+- [LeetCode community solutions](https://leetcode.com/problems/merge-intervals/solutions/)
+- [Sorting topic](https://leetcode.com/tag/sorting/)
 
 ## Example
 

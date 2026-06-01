@@ -1,6 +1,6 @@
 # 062. Domino and Tromino Tiling
 
-- LeetCode: 790
+- LeetCode: [790. Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/)
 - Pattern: DP 1D
 - Difficulty: Medium
 - Time: O(n * state)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Count ways to tile a 2 by n board using dominoes and trominoes; return the count modulo 1e9+7.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/domino-and-tromino-tiling/)
+- [LeetCode community solutions](https://leetcode.com/problems/domino-and-tromino-tiling/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

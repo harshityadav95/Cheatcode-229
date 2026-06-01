@@ -1,6 +1,6 @@
 # 160. Course Schedule II
 
-- LeetCode: 210
+- LeetCode: [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return any valid course order satisfying prerequisites, or empty list if impossible.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/course-schedule-ii/)
+- [LeetCode community solutions](https://leetcode.com/problems/course-schedule-ii/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

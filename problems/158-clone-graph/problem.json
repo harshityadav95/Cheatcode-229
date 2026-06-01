@@ -73,6 +73,24 @@
   ],
   "pythonFunction": "clone_graph",
   "goFunction": "Solve158",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/clone-graph/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/clone-graph/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Graph topic",
+      "url": "https://leetcode.com/tag/graph/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

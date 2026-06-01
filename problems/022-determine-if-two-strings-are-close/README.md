@@ -1,6 +1,6 @@
 # 022. Determine if Two Strings Are Close
 
-- LeetCode: 1657
+- LeetCode: [1657. Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Two strings are close if one can be transformed into the other by swapping positions and globally renaming existing characters.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/determine-if-two-strings-are-close/)
+- [LeetCode community solutions](https://leetcode.com/problems/determine-if-two-strings-are-close/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

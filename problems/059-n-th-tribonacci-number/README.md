@@ -1,6 +1,6 @@
 # 059. N-th Tribonacci Number
 
-- LeetCode: 1137
+- LeetCode: [1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)
 - Pattern: DP 1D
 - Difficulty: Medium
 - Time: O(n * state)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Compute the n-th Tribonacci number with T0=0, T1=1, T2=1, and Tn=Tn-1+Tn-2+Tn-3.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/n-th-tribonacci-number/)
+- [LeetCode community solutions](https://leetcode.com/problems/n-th-tribonacci-number/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

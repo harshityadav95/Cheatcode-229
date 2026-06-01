@@ -1,6 +1,6 @@
 # 149. Count Complete Tree Nodes
 
-- LeetCode: 222
+- LeetCode: [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Count the nodes in a complete binary tree.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/count-complete-tree-nodes/)
+- [LeetCode community solutions](https://leetcode.com/problems/count-complete-tree-nodes/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

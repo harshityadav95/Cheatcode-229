@@ -1,6 +1,6 @@
 # 068. Single Number
 
-- LeetCode: 136
+- LeetCode: [136. Single Number](https://leetcode.com/problems/single-number/)
 - Pattern: Bit Manipulation
 - Difficulty: Easy
 - Time: O(n) or O(bits)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Every value appears twice except one value that appears once; return the single value.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/single-number/)
+- [LeetCode community solutions](https://leetcode.com/problems/single-number/solutions/)
+- [Bit manipulation topic](https://leetcode.com/tag/bit-manipulation/)
 
 ## Example
 

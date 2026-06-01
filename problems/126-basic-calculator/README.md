@@ -1,6 +1,6 @@
 # 126. Basic Calculator
 
-- LeetCode: 224
+- LeetCode: [224. Basic Calculator](https://leetcode.com/problems/basic-calculator/)
 - Pattern: Stack
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Evaluate a string expression containing nonnegative integers, plus, minus, parentheses, and spaces.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/basic-calculator/)
+- [LeetCode community solutions](https://leetcode.com/problems/basic-calculator/solutions/)
+- [Stack topic](https://leetcode.com/tag/stack/)
 
 ## Example
 

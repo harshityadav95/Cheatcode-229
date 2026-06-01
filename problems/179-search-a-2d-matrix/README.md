@@ -1,6 +1,6 @@
 # 179. Search a 2D Matrix
 
-- LeetCode: 74
+- LeetCode: [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
 - Pattern: Binary Search
 - Difficulty: Medium
 - Time: O(log n) or O(n log R)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Search a matrix where each row is sorted and the first value of each row is greater than the previous row's last value.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/search-a-2d-matrix/)
+- [LeetCode community solutions](https://leetcode.com/problems/search-a-2d-matrix/solutions/)
+- [Binary search topic](https://leetcode.com/tag/binary-search/)
 
 ## Example
 

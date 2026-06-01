@@ -1,6 +1,6 @@
 # 098. Valid Palindrome
 
-- LeetCode: 125
+- LeetCode: [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - Pattern: Two Pointers
 - Difficulty: Medium
 - Time: O(n) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether a string is a palindrome after removing non-alphanumeric characters and ignoring case.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/valid-palindrome/)
+- [LeetCode community solutions](https://leetcode.com/problems/valid-palindrome/solutions/)
+- [Two pointers topic](https://leetcode.com/tag/two-pointers/)
 
 ## Example
 

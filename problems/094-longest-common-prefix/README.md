@@ -1,6 +1,6 @@
 # 094. Longest Common Prefix
 
-- LeetCode: 14
+- LeetCode: [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the longest common prefix string among all input strings.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/longest-common-prefix/)
+- [LeetCode community solutions](https://leetcode.com/problems/longest-common-prefix/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

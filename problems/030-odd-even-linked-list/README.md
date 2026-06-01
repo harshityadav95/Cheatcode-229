@@ -1,6 +1,6 @@
 # 030. Odd Even Linked List
 
-- LeetCode: 328
+- LeetCode: [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Group nodes at odd positions first, then nodes at even positions, preserving relative order within each group.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/odd-even-linked-list/)
+- [LeetCode community solutions](https://leetcode.com/problems/odd-even-linked-list/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

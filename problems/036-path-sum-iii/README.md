@@ -1,6 +1,6 @@
 # 036. Path Sum III
 
-- LeetCode: 437
+- LeetCode: [437. Path Sum III](https://leetcode.com/problems/path-sum-iii/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Count all downward paths whose node values sum to targetSum; a path may start and end anywhere but must go parent to child.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/path-sum-iii/)
+- [LeetCode community solutions](https://leetcode.com/problems/path-sum-iii/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

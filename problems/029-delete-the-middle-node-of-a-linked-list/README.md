@@ -1,6 +1,6 @@
 # 029. Delete the Middle Node of a Linked List
 
-- LeetCode: 2095
+- LeetCode: [2095. Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Delete the middle node of a singly linked list, where middle index is floor(n/2), and return the head.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)
+- [LeetCode community solutions](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

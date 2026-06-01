@@ -1,6 +1,6 @@
 # 001. Merge Strings Alternately
 
-- LeetCode: 1768
+- LeetCode: [1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Merge characters by alternating from word1 and word2, appending any leftover characters after one word ends.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/merge-strings-alternately/)
+- [LeetCode community solutions](https://leetcode.com/problems/merge-strings-alternately/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

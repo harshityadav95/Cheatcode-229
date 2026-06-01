@@ -1,6 +1,6 @@
 # 111. Isomorphic Strings
 
-- LeetCode: 205
+- LeetCode: [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether characters in s can be replaced one-to-one to create t, preserving order.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/isomorphic-strings/)
+- [LeetCode community solutions](https://leetcode.com/problems/isomorphic-strings/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 228. Encode and Decode Strings
 
-- LeetCode: 271
+- LeetCode: [271. Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)
 - Pattern: Trie / Encoding
 - Difficulty: Hard
 - Time: O(total characters)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Design encode and decode for a list of strings so any characters, including delimiters, are recoverable.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/encode-and-decode-strings/)
+- [LeetCode community solutions](https://leetcode.com/problems/encode-and-decode-strings/solutions/)
+- [Trie topic](https://leetcode.com/tag/trie/)
 
 ## Example
 

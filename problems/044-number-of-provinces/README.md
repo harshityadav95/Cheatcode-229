@@ -1,6 +1,6 @@
 # 044. Number of Provinces
 
-- LeetCode: 547
+- LeetCode: [547. Number of Provinces](https://leetcode.com/problems/number-of-provinces/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given an adjacency matrix of directly connected cities, return the number of connected components.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/number-of-provinces/)
+- [LeetCode community solutions](https://leetcode.com/problems/number-of-provinces/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

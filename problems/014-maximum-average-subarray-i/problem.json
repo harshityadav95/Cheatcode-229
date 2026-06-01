@@ -75,6 +75,24 @@
   ],
   "pythonFunction": "maximum_average_subarray_i",
   "goFunction": "Solve014",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/maximum-average-subarray-i/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/maximum-average-subarray-i/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Sliding window topic",
+      "url": "https://leetcode.com/tag/sliding-window/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

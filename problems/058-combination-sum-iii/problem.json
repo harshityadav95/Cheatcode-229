@@ -74,6 +74,24 @@
   ],
   "pythonFunction": "combination_sum_iii",
   "goFunction": "Solve058",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/combination-sum-iii/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/combination-sum-iii/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Backtracking topic",
+      "url": "https://leetcode.com/tag/backtracking/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -72,6 +72,24 @@
   ],
   "pythonFunction": "removing_stars_from_a_string",
   "goFunction": "Solve024",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/removing-stars-from-a-string/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/removing-stars-from-a-string/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Stack topic",
+      "url": "https://leetcode.com/tag/stack/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -1,6 +1,6 @@
 # 138. Same Tree
 
-- LeetCode: 100
+- LeetCode: [100. Same Tree](https://leetcode.com/problems/same-tree/)
 - Pattern: Tree DFS
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return whether two binary trees are structurally identical and have equal node values.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/same-tree/)
+- [LeetCode community solutions](https://leetcode.com/problems/same-tree/solutions/)
+- [Tree topic](https://leetcode.com/tag/tree/)
 
 ## Example
 

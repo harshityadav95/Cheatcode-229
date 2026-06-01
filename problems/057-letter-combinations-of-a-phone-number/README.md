@@ -1,6 +1,6 @@
 # 057. Letter Combinations of a Phone Number
 
-- LeetCode: 17
+- LeetCode: [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
 - Pattern: Backtracking
 - Difficulty: Medium
 - Time: O(branch^depth)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Map phone digits 2-9 to letters and return all possible letter strings in digit order.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+- [LeetCode community solutions](https://leetcode.com/problems/letter-combinations-of-a-phone-number/solutions/)
+- [Backtracking topic](https://leetcode.com/tag/backtracking/)
 
 ## Example
 

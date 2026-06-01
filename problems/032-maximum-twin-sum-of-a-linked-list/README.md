@@ -1,6 +1,6 @@
 # 032. Maximum Twin Sum of a Linked List
 
-- LeetCode: 2130
+- LeetCode: [2130. Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 For an even-length linked list, pair the i-th node with the symmetric node from the end and return the maximum twin sum.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)
+- [LeetCode community solutions](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

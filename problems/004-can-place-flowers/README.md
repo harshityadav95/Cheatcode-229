@@ -1,6 +1,6 @@
 # 004. Can Place Flowers
 
-- LeetCode: 605
+- LeetCode: [605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
 - Pattern: Array / String
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given a flowerbed of 0/1 slots, decide whether n new flowers can be planted without adjacent flowers.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/can-place-flowers/)
+- [LeetCode community solutions](https://leetcode.com/problems/can-place-flowers/solutions/)
+- [Array and string topic](https://leetcode.com/tag/array/)
 
 ## Example
 

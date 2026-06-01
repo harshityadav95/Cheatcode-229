@@ -1,6 +1,6 @@
 # 053. Guess Number Higher or Lower
 
-- LeetCode: 374
+- LeetCode: [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
 - Pattern: Binary Search
 - Difficulty: Medium
 - Time: O(log n) or O(n log R)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Using the guess API that says lower, higher, or correct, find the hidden number between 1 and n.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/guess-number-higher-or-lower/)
+- [LeetCode community solutions](https://leetcode.com/problems/guess-number-higher-or-lower/solutions/)
+- [Binary search topic](https://leetcode.com/tag/binary-search/)
 
 ## Example
 

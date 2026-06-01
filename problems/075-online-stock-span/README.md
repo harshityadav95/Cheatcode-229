@@ -1,6 +1,6 @@
 # 075. Online Stock Span
 
-- LeetCode: 901
+- LeetCode: [901. Online Stock Span](https://leetcode.com/problems/online-stock-span/)
 - Pattern: Monotonic Stack
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Design StockSpanner.next(price), returning consecutive days ending today with price less than or equal to today's price.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/online-stock-span/)
+- [LeetCode community solutions](https://leetcode.com/problems/online-stock-span/solutions/)
+- [Monotonic stack topic](https://leetcode.com/tag/monotonic-stack/)
 
 ## Example
 

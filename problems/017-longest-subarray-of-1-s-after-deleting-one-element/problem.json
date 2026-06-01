@@ -75,6 +75,24 @@
   ],
   "pythonFunction": "longest_subarray_of_1_s_after_deleting_one_element",
   "goFunction": "Solve017",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Sliding window topic",
+      "url": "https://leetcode.com/tag/sliding-window/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

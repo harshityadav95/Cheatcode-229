@@ -69,6 +69,24 @@
   ],
   "pythonFunction": "non_overlapping_intervals",
   "goFunction": "Solve072",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/non-overlapping-intervals/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/non-overlapping-intervals/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Sorting topic",
+      "url": "https://leetcode.com/tag/sorting/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

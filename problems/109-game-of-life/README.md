@@ -1,6 +1,6 @@
 # 109. Game of Life
 
-- LeetCode: 289
+- LeetCode: [289. Game of Life](https://leetcode.com/problems/game-of-life/)
 - Pattern: Math / Greedy
 - Difficulty: Medium
 - Time: O(n) or O(log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Update the Game of Life board one step in-place using the eight-neighbor rules for birth, survival, and death.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/game-of-life/)
+- [LeetCode community solutions](https://leetcode.com/problems/game-of-life/solutions/)
+- [Greedy topic](https://leetcode.com/tag/greedy/)
 
 ## Example
 

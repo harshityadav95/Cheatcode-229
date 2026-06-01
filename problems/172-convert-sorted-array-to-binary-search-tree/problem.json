@@ -73,6 +73,24 @@
   ],
   "pythonFunction": "convert_sorted_array_to_binary_search_tree",
   "goFunction": "Solve172",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Binary search tree topic",
+      "url": "https://leetcode.com/tag/binary-search-tree/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -74,6 +74,24 @@
   ],
   "pythonFunction": "combinations",
   "goFunction": "Solve166",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/combinations/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/combinations/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Backtracking topic",
+      "url": "https://leetcode.com/tag/backtracking/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

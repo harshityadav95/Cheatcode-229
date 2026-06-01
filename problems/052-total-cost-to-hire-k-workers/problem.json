@@ -73,6 +73,24 @@
   ],
   "pythonFunction": "total_cost_to_hire_k_workers",
   "goFunction": "Solve052",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/total-cost-to-hire-k-workers/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/total-cost-to-hire-k-workers/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Heap priority queue topic",
+      "url": "https://leetcode.com/tag/heap-priority-queue/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

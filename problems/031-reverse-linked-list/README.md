@@ -1,6 +1,6 @@
 # 031. Reverse Linked List
 
-- LeetCode: 206
+- LeetCode: [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Reverse a singly linked list and return the new head.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/reverse-linked-list/)
+- [LeetCode community solutions](https://leetcode.com/problems/reverse-linked-list/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

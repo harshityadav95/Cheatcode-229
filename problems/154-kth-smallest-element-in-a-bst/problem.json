@@ -74,6 +74,24 @@
   ],
   "pythonFunction": "kth_smallest_element_in_a_bst",
   "goFunction": "Solve154",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Binary search tree topic",
+      "url": "https://leetcode.com/tag/binary-search-tree/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

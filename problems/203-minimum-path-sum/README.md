@@ -1,6 +1,6 @@
 # 203. Minimum Path Sum
 
-- LeetCode: 64
+- LeetCode: [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
 - Pattern: DP 2D / Kadane
 - Difficulty: Hard
 - Time: O(n*m) or O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the minimum path sum from top-left to bottom-right moving only right or down.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/minimum-path-sum/)
+- [LeetCode community solutions](https://leetcode.com/problems/minimum-path-sum/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

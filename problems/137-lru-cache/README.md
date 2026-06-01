@@ -1,6 +1,6 @@
 # 137. LRU Cache
 
-- LeetCode: 146
+- LeetCode: [146. LRU Cache](https://leetcode.com/problems/lru-cache/)
 - Pattern: Linked List
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Design an LRU cache with get and put in O(1); when capacity is exceeded, evict the least recently used key.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/lru-cache/)
+- [LeetCode community solutions](https://leetcode.com/problems/lru-cache/solutions/)
+- [Linked list topic](https://leetcode.com/tag/linked-list/)
 
 ## Example
 

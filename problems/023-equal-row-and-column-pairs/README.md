@@ -1,6 +1,6 @@
 # 023. Equal Row and Column Pairs
 
-- LeetCode: 2352
+- LeetCode: [2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/)
 - Pattern: Hash Map / Set
 - Difficulty: Medium
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Count pairs (row i, column j) where the row values exactly equal the column values.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/equal-row-and-column-pairs/)
+- [LeetCode community solutions](https://leetcode.com/problems/equal-row-and-column-pairs/solutions/)
+- [Hash table topic](https://leetcode.com/tag/hash-table/)
 
 ## Example
 

@@ -1,6 +1,6 @@
 # 046. Evaluate Division
 
-- LeetCode: 399
+- LeetCode: [399. Evaluate Division](https://leetcode.com/problems/evaluate-division/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Given equations a/b=value, answer division queries or -1.0 when variables are disconnected or unknown.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/evaluate-division/)
+- [LeetCode community solutions](https://leetcode.com/problems/evaluate-division/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

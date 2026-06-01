@@ -1,6 +1,6 @@
 # 061. House Robber
 
-- LeetCode: 198
+- LeetCode: [198. House Robber](https://leetcode.com/problems/house-robber/)
 - Pattern: DP 1D
 - Difficulty: Medium
 - Time: O(n * state)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Maximize money robbed from houses in a line without robbing adjacent houses.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/house-robber/)
+- [LeetCode community solutions](https://leetcode.com/problems/house-robber/solutions/)
+- [Dynamic programming topic](https://leetcode.com/tag/dynamic-programming/)
 
 ## Example
 

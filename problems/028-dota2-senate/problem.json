@@ -71,6 +71,24 @@
   ],
   "pythonFunction": "dota2_senate",
   "goFunction": "Solve028",
+  "references": [
+    {
+      "label": "LeetCode problem statement",
+      "url": "https://leetcode.com/problems/dota2-senate/",
+      "kind": "problem",
+      "required": true
+    },
+    {
+      "label": "LeetCode community solutions",
+      "url": "https://leetcode.com/problems/dota2-senate/solutions/",
+      "kind": "solutions"
+    },
+    {
+      "label": "Queue topic",
+      "url": "https://leetcode.com/tag/queue/",
+      "kind": "topic"
+    }
+  ],
   "files": {
     "python": "code.py",
     "go": "code.go"

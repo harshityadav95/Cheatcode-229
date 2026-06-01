@@ -1,6 +1,6 @@
 # 007. Product of Array Except Self
 
-- LeetCode: 238
+- LeetCode: [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 - Pattern: Prefix / Scan
 - Difficulty: Easy
 - Time: O(n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 For each index, return the product of all array elements except nums[i], without using division.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/product-of-array-except-self/)
+- [LeetCode community solutions](https://leetcode.com/problems/product-of-array-except-self/solutions/)
+- [Prefix sum topic](https://leetcode.com/tag/prefix-sum/)
 
 ## Example
 

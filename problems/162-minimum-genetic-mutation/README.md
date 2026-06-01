@@ -1,6 +1,6 @@
 # 162. Minimum Genetic Mutation
 
-- LeetCode: 433
+- LeetCode: [433. Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/)
 - Pattern: Graph
 - Difficulty: Medium
 - Time: O(V+E)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Return the minimum one-character gene mutations from startGene to endGene, with every intermediate gene in bank.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/minimum-genetic-mutation/)
+- [LeetCode community solutions](https://leetcode.com/problems/minimum-genetic-mutation/solutions/)
+- [Graph topic](https://leetcode.com/tag/graph/)
 
 ## Example
 

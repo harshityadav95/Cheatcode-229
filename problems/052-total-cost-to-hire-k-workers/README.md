@@ -1,6 +1,6 @@
 # 052. Total Cost to Hire K Workers
 
-- LeetCode: 2462
+- LeetCode: [2462. Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/)
 - Pattern: Heap / Priority Queue
 - Difficulty: Medium
 - Time: O(n log k) or O(n log n)
@@ -11,6 +11,12 @@
 ## Problem Statement
 
 Hire exactly k workers. Each round choose the cheapest worker from the first candidates or last candidates available, breaking ties by index.
+
+## References
+
+- [LeetCode problem statement](https://leetcode.com/problems/total-cost-to-hire-k-workers/)
+- [LeetCode community solutions](https://leetcode.com/problems/total-cost-to-hire-k-workers/solutions/)
+- [Heap priority queue topic](https://leetcode.com/tag/heap-priority-queue/)
 
 ## Example
 
