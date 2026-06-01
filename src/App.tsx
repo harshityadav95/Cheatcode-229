@@ -526,6 +526,8 @@ function ProblemHeader({
   nextProblem: Problem
   onOpenProblem: (problem: Problem) => void
 }) {
+  const leetcodeReference = getLeetCodeReference(problem)
+
   return (
     <Card className="rounded-lg border-slate-200 shadow-sm dark:border-slate-800">
       <CardContent className="p-4 sm:p-5">
@@ -546,7 +548,18 @@ function ProblemHeader({
               </p>
             </div>
           </div>
-          <div className="flex shrink-0 items-center gap-2">
+          <div className="flex shrink-0 flex-wrap items-center gap-2">
+            <Button variant="default" size="sm" asChild>
+              <a
+                href={leetcodeReference.url}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Open ${problem.leetcode}. ${problem.title} on LeetCode`}
+              >
+                <ExternalLink className="size-4" />
+                Open LC {problem.leetcode}
+              </a>
+            </Button>
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button
@@ -586,6 +599,10 @@ function ProblemHeader({
   )
 }
 
+function getLeetCodeReference(problem: Problem) {
+  return problem.references.find((reference) => reference.kind === 'problem') ?? problem.references[0]
+}
+
 function ExampleBlock({ problem }: { problem: Problem }) {
   return (
     <div className="grid gap-3 rounded-lg border border-slate-200 bg-white p-3 dark:border-slate-800 dark:bg-slate-900 sm:grid-cols-2">
@@ -620,7 +637,7 @@ function ReferenceLinks({ problem }: { problem: Problem }) {
             className="inline-flex min-h-8 items-center gap-1.5 rounded-md border border-slate-200 bg-white px-2.5 py-1 text-sm font-medium text-slate-700 transition hover:border-cyan-300 hover:text-cyan-700 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-200 dark:hover:border-cyan-500 dark:hover:text-cyan-300"
           >
             <ExternalLink className="size-3.5" />
-            {reference.label}
+            {reference.kind === 'problem' ? `${problem.leetcode}. ${problem.title} on LeetCode` : reference.label}
           </a>
         ))}
       </div>
