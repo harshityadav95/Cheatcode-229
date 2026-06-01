@@ -1,0 +1,75 @@
+{
+  "id": 221,
+  "leetcode": 253,
+  "title": "Meeting Rooms II",
+  "slug": "221-meeting-rooms-ii",
+  "pattern": "Intervals",
+  "difficulty": "Medium",
+  "sources": [
+    "NC75"
+  ],
+  "companies": [
+    "Google",
+    "Meta",
+    "Amazon",
+    "Bloomberg"
+  ],
+  "time": "O(n log n)",
+  "space": "O(n)",
+  "diagram": {
+    "type": "intervals",
+    "seed": 185
+  },
+  "diagramNotes": [
+    "sort by start",
+    "merge overlaps",
+    "After sorting, only compare the next interval with the active merged range."
+  ],
+  "example": {
+    "input": "intervals=[[0,30],[5,10],[15,20]]",
+    "output": "2",
+    "why": "At most two meetings overlap at once."
+  },
+  "prompt": "Return the minimum number of meeting rooms required for all intervals.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "merge overlaps After sorting, only compare the next interval with the active merged range.",
+  "brute": "Compare every interval pair repeatedly. O(n^2).",
+  "optimized": "Sort once, then maintain the active end or merged interval while scanning. Alternative: Sweep line with events is useful for counting overlaps/rooms.",
+  "invariant": "All intervals before current have been merged or counted consistently with the chosen end boundary.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Sorting dominates at O(n log n); the scan is O(n). Space is O(1) to O(n).",
+  "pitfalls": [
+    "Sorting by wrong key; not merging touching intervals when required.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "touching endpoints; inclusive vs exclusive; empty list; sorting tie-breakers; nested intervals.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Distinguish touching endpoints from overlapping endpoints.",
+    "Return removed intervals as well as the merged result.",
+    "Process online insertions into an existing schedule."
+  ],
+  "followUps": [
+    "Can you process intervals online?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "meeting_rooms_ii",
+  "goFunction": "Solve221",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

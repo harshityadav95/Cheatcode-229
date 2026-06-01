@@ -1,0 +1,79 @@
+{
+  "id": 125,
+  "leetcode": 150,
+  "title": "Evaluate Reverse Polish Notation",
+  "slug": "125-evaluate-reverse-polish-notation",
+  "pattern": "Stack",
+  "difficulty": "Medium",
+  "sources": [
+    "Top150"
+  ],
+  "companies": [
+    "Amazon",
+    "Bloomberg",
+    "Meta",
+    "Microsoft"
+  ],
+  "time": "O(n)",
+  "space": "O(n)",
+  "diagram": {
+    "type": "stack",
+    "seed": 443
+  },
+  "diagramNotes": [
+    "A",
+    "B",
+    "C",
+    "top",
+    "current",
+    "push unresolved; pop when resolved",
+    "The stack is the processed prefix after all forced reductions/resolutions."
+  ],
+  "example": {
+    "input": "tokens=[\"2\",\"1\",\"+\",\"3\",\"*\"]",
+    "output": "9",
+    "why": "(2+1)*3=9."
+  },
+  "prompt": "Evaluate an arithmetic expression in Reverse Polish Notation with integer division truncating toward zero.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "push unresolved; pop when resolved The stack is the processed prefix after all forced reductions/resolutions.",
+  "brute": "Repeatedly scan and delete/merge adjacent conflicts until stable; can become O(n^2).",
+  "optimized": "Use a stack to keep unresolved items. The current item only interacts with the top until stable. Alternative: For arithmetic parsing, keep operator/context stacks or fold high-precedence operations immediately.",
+  "invariant": "The stack is exactly the processed prefix after all forced reductions have been applied.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Each item is pushed and popped at most once, so O(n) time and O(n) space.",
+  "pitfalls": [
+    "Popping empty stack; forgetting to flush remaining stack entries.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "empty stack; nested brackets; negative numbers; multi-digit tokens; final flush after scan.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Also return the position of the unmatched item.",
+    "Handle nested operators or multiple bracket types.",
+    "Convert next-greater logic into previous-greater logic."
+  ],
+  "followUps": [
+    "Can the stack be compressed to store counts or indices only?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "evaluate_reverse_polish_notation",
+  "goFunction": "Solve125",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

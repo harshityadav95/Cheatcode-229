@@ -1,0 +1,80 @@
+{
+  "id": 148,
+  "leetcode": 173,
+  "title": "Binary Search Tree Iterator",
+  "slug": "148-binary-search-tree-iterator",
+  "pattern": "BST",
+  "difficulty": "Medium",
+  "sources": [
+    "Top150"
+  ],
+  "companies": [
+    "Google",
+    "Amazon",
+    "Microsoft",
+    "Bloomberg"
+  ],
+  "time": "O(h) to O(n)",
+  "space": "O(h)",
+  "diagram": {
+    "type": "tree",
+    "seed": 550
+  },
+  "diagramNotes": [
+    "8",
+    "4",
+    "12",
+    "2",
+    "6",
+    "14",
+    "< target: go left/right by comparison",
+    "BST order prunes whole subtrees; inorder streams sorted values."
+  ],
+  "example": {
+    "input": "BST=[7,3,15,null,null,9,20], calls=next,next,hasNext",
+    "output": "[3,7,true]",
+    "why": "Inorder traversal yields sorted values."
+  },
+  "prompt": "Implement a BST iterator with next returning the next smallest value and hasNext reporting availability.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "< target: go left/right by comparison BST order prunes whole subtrees; inorder streams sorted values.",
+  "brute": "Traverse the full tree and filter/sort values. Correct but ignores BST ordering.",
+  "optimized": "Use the BST invariant to prune a side or stream values in sorted order with inorder. Alternative: Iterative inorder gives O(h) memory and supports lazy iterators.",
+  "invariant": "Every recursive call receives a valid range or search interval for that subtree.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Balanced operations are O(h)=O(log n); worst-case skewed tree is O(n).",
+  "pitfalls": [
+    "Using <= bounds incorrectly; not preserving lower and upper constraints.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "duplicates policy; min/max int bounds; nil child; deleting root; successor/predecessor replacement.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Support duplicate values with a clear side policy.",
+    "Convert to an iterative bounded search.",
+    "Return predecessor/successor around a target."
+  ],
+  "followUps": [
+    "Can you solve it with inorder iteration and O(h) memory?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "binary_search_tree_iterator",
+  "goFunction": "Solve148",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

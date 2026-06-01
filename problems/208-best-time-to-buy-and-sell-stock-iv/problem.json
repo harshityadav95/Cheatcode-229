@@ -1,0 +1,75 @@
+{
+  "id": 208,
+  "leetcode": 188,
+  "title": "Best Time to Buy and Sell Stock IV",
+  "slug": "208-best-time-to-buy-and-sell-stock-iv",
+  "pattern": "DP 2D / Kadane",
+  "difficulty": "Hard",
+  "sources": [
+    "Top150"
+  ],
+  "companies": [
+    "Google",
+    "Meta",
+    "Amazon",
+    "Microsoft"
+  ],
+  "time": "O(n*m) or O(n)",
+  "space": "O(n*m) or O(1)",
+  "diagram": {
+    "type": "dp",
+    "seed": 671
+  },
+  "diagramNotes": [
+    "rolling best",
+    "dp cell uses prior ...",
+    "Grid DP fills by dependency order; Kadane keeps best ending here."
+  ],
+  "example": {
+    "input": "k=2, prices=[2,4,1]",
+    "output": "2",
+    "why": "Buy at 2 and sell at 4."
+  },
+  "prompt": "Maximize stock profit with at most k transactions.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "dp cell uses prior ... Grid DP fills by dependency order; Kadane keeps best ending here.",
+  "brute": "Enumerate every substring/path/subproblem and recompute its score.",
+  "optimized": "Pick a state that removes repeated work, then fill in dependency order. For subarrays, keep rolling best. Alternative: Space-compress rows/columns when only the previous row/column is needed.",
+  "invariant": "Each filled state stores the optimal answer for exactly its subproblem.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: O(number of states * transition cost), commonly O(n*m) or O(n).",
+  "pitfalls": [
+    "Bad initialization; mixing row/column dependencies.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "empty dimensions; first row/column; negative-only arrays; diagonal dependencies; memory size.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Return the actual subarray/subsequence.",
+    "Reduce 2D memory to rolling rows where safe.",
+    "Handle all-negative values or empty inputs explicitly."
+  ],
+  "followUps": [
+    "Can the DP be space compressed safely?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "best_time_to_buy_and_sell_stock_iv",
+  "goFunction": "Solve208",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

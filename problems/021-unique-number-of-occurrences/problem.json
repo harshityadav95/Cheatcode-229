@@ -1,0 +1,83 @@
+{
+  "id": 21,
+  "leetcode": 1207,
+  "title": "Unique Number of Occurrences",
+  "slug": "021-unique-number-of-occurrences",
+  "pattern": "Hash Map / Set",
+  "difficulty": "Medium",
+  "sources": [
+    "LC75"
+  ],
+  "companies": [
+    "Amazon",
+    "Google",
+    "Meta",
+    "Bloomberg"
+  ],
+  "time": "O(n)",
+  "space": "O(n)",
+  "diagram": {
+    "type": "hash",
+    "seed": 233
+  },
+  "diagramNotes": [
+    "x",
+    "map / set",
+    "n",
+    "key -> fact",
+    "answer",
+    "n",
+    "updates",
+    "seen",
+    "count",
+    "index",
+    "Store the exact fact future items need: membership, count, index, or signature."
+  ],
+  "example": {
+    "input": "nums=[1,2,2,3,3,3]",
+    "output": "true",
+    "why": "Counts are 1,2,3, all unique."
+  },
+  "prompt": "Return true if every distinct value in the array has a distinct occurrence count.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "index Store the exact fact future items need: membership, count, index, or signature.",
+  "brute": "Nested scans compare every item with every other item. Usually O(n^2).",
+  "optimized": "Store exactly the fact needed for future lookups: index, count, membership, or normalized signature. Alternative: Sorting can reduce memory and expose groups but may lose original index order.",
+  "invariant": "The map contains all and only facts from the processed prefix needed by future elements.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Expected O(n) lookups/inserts. Space is O(k), where k is distinct keys or signatures.",
+  "pitfalls": [
+    "Counting after checking in the wrong order; ignoring duplicates.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "duplicates; missing keys; decrement-to-zero cleanup; hashable signature construction; order dependence.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Return all matching groups instead of a boolean/count.",
+    "Support incremental updates while queries arrive.",
+    "Handle case-insensitive or normalized keys."
+  ],
+  "followUps": [
+    "How would memory limits change the approach?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "unique_number_of_occurrences",
+  "goFunction": "Solve021",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

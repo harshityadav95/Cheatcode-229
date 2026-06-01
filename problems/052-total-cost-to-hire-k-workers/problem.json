@@ -1,0 +1,80 @@
+{
+  "id": 52,
+  "leetcode": 2462,
+  "title": "Total Cost to Hire K Workers",
+  "slug": "052-total-cost-to-hire-k-workers",
+  "pattern": "Heap / Priority Queue",
+  "difficulty": "Medium",
+  "sources": [
+    "LC75"
+  ],
+  "companies": [
+    "Amazon",
+    "Bloomberg",
+    "Google",
+    "Meta"
+  ],
+  "time": "O(n log k) or O(n log n)",
+  "space": "O(k) to O(n)",
+  "diagram": {
+    "type": "heap",
+    "seed": 595
+  },
+  "diagramNotes": [
+    "top",
+    "a",
+    "b",
+    "c",
+    "d",
+    "pop best",
+    "push new",
+    "Heap top is the next best candidate; discard stale entries after pop."
+  ],
+  "example": {
+    "input": "costs=[17,12,10,2,7,2,11,20,8], k=3, candidates=4",
+    "output": "11",
+    "why": "Pick costs 2,2,7."
+  },
+  "prompt": "Hire exactly k workers. Each round choose the cheapest worker from the first candidates or last candidates available, breaking ties by index.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "push new Heap top is the next best candidate; discard stale entries after pop.",
+  "brute": "Repeatedly sort or scan all candidates for each selection: O(k*n) or worse.",
+  "optimized": "Use a min/max heap to access the next best candidate in O(log n). Alternative: Quickselect works for one kth statistic; heap is better for streaming or repeated picks.",
+  "invariant": "The heap contains all eligible candidates not yet chosen, ordered by the needed priority.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Heap operations cost O(log n); total time depends on pushes/pops, often O(n log k).",
+  "pitfalls": [
+    "Using min-heap/max-heap sign incorrectly; heap grows beyond k.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "stale entries; tie-breakers; min vs max heap in Go; pushing duplicates; empty heap.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Return top-k in sorted order after using the heap.",
+    "Handle ties with a secondary key.",
+    "Support streaming insertions and deletions."
+  ],
+  "followUps": [
+    "Can you reduce memory from O(n) to O(k)?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "total_cost_to_hire_k_workers",
+  "goFunction": "Solve052",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

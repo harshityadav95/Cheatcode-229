@@ -1,0 +1,84 @@
+{
+  "id": 190,
+  "leetcode": 137,
+  "title": "Single Number II",
+  "slug": "190-single-number-ii",
+  "pattern": "Bit Manipulation",
+  "difficulty": "Easy",
+  "sources": [
+    "Top150"
+  ],
+  "companies": [
+    "Google",
+    "Amazon",
+    "Microsoft",
+    "Apple"
+  ],
+  "time": "O(n) or O(bits)",
+  "space": "O(1)",
+  "diagram": {
+    "type": "bits",
+    "seed": 243
+  },
+  "diagramNotes": [
+    "1",
+    "0",
+    "1",
+    "1",
+    "0",
+    "1",
+    "mask 1<<b",
+    "&",
+    "|",
+    "^",
+    ">>",
+    "Each bit can often be reasoned about independently with masks and XOR."
+  ],
+  "example": {
+    "input": "nums=[2,2,3,2]",
+    "output": "3",
+    "why": "Bit counts modulo 3 isolate 3."
+  },
+  "prompt": "Every value appears three times except one value that appears once; return the single value.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": ">> Each bit can often be reasoned about independently with masks and XOR.",
+  "brute": "Convert to strings or simulate arithmetic slowly; simpler but less direct.",
+  "optimized": "Use XOR cancellation, bit counts, masks, and shift loops to isolate independent bit decisions. Alternative: Math identities sometimes replace bit loops, but bit reasoning is more robust.",
+  "invariant": "Each processed bit contributes independently or the mask preserves exactly the needed prefix/suffix.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Often O(n) for arrays or O(1) over fixed 32 bits. Space is O(1).",
+  "pitfalls": [
+    "Signed shifts and negative numbers; forgetting mask width.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "signed shifts; 32-bit vs 64-bit; negative numbers; overflow; clearing lowest set bit.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Generalize from one missing/unique value to two.",
+    "Use fixed 32-bit signed behavior.",
+    "Count set bits across a range instead of one value."
+  ],
+  "followUps": [
+    "How do you handle signed 32-bit behavior?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "single_number_ii",
+  "goFunction": "Solve190",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

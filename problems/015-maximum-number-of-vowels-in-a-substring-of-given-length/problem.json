@@ -1,0 +1,82 @@
+{
+  "id": 15,
+  "leetcode": 1456,
+  "title": "Maximum Number of Vowels in a Substring of Given Length",
+  "slug": "015-maximum-number-of-vowels-in-a-substring-of-given-length",
+  "pattern": "Sliding Window",
+  "difficulty": "Medium",
+  "sources": [
+    "LC75"
+  ],
+  "companies": [
+    "Google",
+    "Meta",
+    "Amazon",
+    "Uber"
+  ],
+  "time": "O(n)",
+  "space": "O(k) to O(n)",
+  "diagram": {
+    "type": "window",
+    "seed": 292
+  },
+  "diagramNotes": [
+    "s0",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "valid window",
+    "counts",
+    "best length",
+    "Expand right; while invalid, shrink left; record only a valid window."
+  ],
+  "example": {
+    "input": "s=\"abciiidef\", k=3",
+    "output": "3",
+    "why": "Substring \"iii\" has three vowels."
+  },
+  "prompt": "Return the largest number of vowels in any substring of length k.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "best length Expand right; while invalid, shrink left; record only a valid window.",
+  "brute": "Enumerate every substring/subarray and test validity from scratch: O(n^2) to O(n^3).",
+  "optimized": "Expand right once, update counts, shrink left until the invariant is valid, then record the answer. Alternative: Fixed-size windows skip the while loop; variable-size windows need a validity predicate.",
+  "invariant": "At record time, the window satisfies the prompt condition and is minimal/maximal as required.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Left and right each move forward at most n times, so O(n). Map space depends on alphabet size.",
+  "pitfalls": [
+    "Shrinking only once when a while loop is needed; stale max/count variables.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "k=0; empty string; repeated chars; removing counts at left; off-by-one length right-left+1.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Switch from at-most-k to exactly-k constraints.",
+    "Return the smallest valid window instead of the largest.",
+    "Support multiple character/value constraints at once."
+  ],
+  "followUps": [
+    "Can you return the actual window, not only its length/count?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "maximum_number_of_vowels_in_a_substring_of_given_length",
+  "goFunction": "Solve015",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

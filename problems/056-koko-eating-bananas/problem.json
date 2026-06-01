@@ -1,0 +1,77 @@
+{
+  "id": 56,
+  "leetcode": 875,
+  "title": "Koko Eating Bananas",
+  "slug": "056-koko-eating-bananas",
+  "pattern": "Binary Search",
+  "difficulty": "Medium",
+  "sources": [
+    "LC75"
+  ],
+  "companies": [
+    "Google",
+    "Amazon",
+    "Microsoft",
+    "Meta"
+  ],
+  "time": "O(log n) or O(n log R)",
+  "space": "O(1)",
+  "diagram": {
+    "type": "binary",
+    "seed": 659
+  },
+  "diagramNotes": [
+    "lo",
+    "mid",
+    "hi",
+    "keep feasible half",
+    "Invariant: the answer remains inside [lo, hi] until the boundary is found."
+  ],
+  "example": {
+    "input": "piles=[3,6,7,11], h=8",
+    "output": "4",
+    "why": "Speed 4 finishes in 8 hours."
+  },
+  "prompt": "Find the minimum integer banana-eating speed k so all piles are eaten within h hours.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "keep feasible half Invariant: the answer remains inside [lo, hi] until the boundary is found.",
+  "brute": "Scan every possible index/value. Works only when range is small.",
+  "optimized": "Exploit sorted order or monotonic feasibility. Narrow [lo, hi] until the boundary is found. Alternative: Use lower_bound/upper_bound variants for first true, last true, or exact match.",
+  "invariant": "The answer, if it exists, remains inside the current search interval.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: O(log n) iterations for index search; O(n log R) for binary search on answer with O(n) feasibility.",
+  "pitfalls": [
+    "Infinite loop from mid/lo/hi update; predicate not monotonic.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "overflow mid; infinite loops; duplicates; rotated arrays; choosing < vs <= correctly.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Find first true vs last true boundary.",
+    "Binary-search the answer value instead of an index.",
+    "Handle duplicates and missing target gracefully."
+  ],
+  "followUps": [
+    "What is the exact monotonic predicate?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "koko_eating_bananas",
+  "goFunction": "Solve056",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

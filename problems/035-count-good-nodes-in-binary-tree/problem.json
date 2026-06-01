@@ -1,0 +1,80 @@
+{
+  "id": 35,
+  "leetcode": 1448,
+  "title": "Count Good Nodes in Binary Tree",
+  "slug": "035-count-good-nodes-in-binary-tree",
+  "pattern": "Tree DFS",
+  "difficulty": "Medium",
+  "sources": [
+    "LC75"
+  ],
+  "companies": [
+    "Amazon",
+    "Google",
+    "Meta",
+    "Microsoft"
+  ],
+  "time": "O(n)",
+  "space": "O(h)",
+  "diagram": {
+    "type": "tree",
+    "seed": 776
+  },
+  "diagramNotes": [
+    "node",
+    "L",
+    "R",
+    "2",
+    "6",
+    "14",
+    "return subtree fact...",
+    "When dfs returns, that subtree fact is final."
+  ],
+  "example": {
+    "input": "root=[3,1,4,3,null,1,5]",
+    "output": "4",
+    "why": "Values 3,3,4,5 are good nodes."
+  },
+  "prompt": "Count nodes whose value is at least every value on the path from the root to that node.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "return subtree fact... When dfs returns, that subtree fact is final.",
+  "brute": "For each node, recompute subtree facts from scratch; can become O(n^2).",
+  "optimized": "Postorder or preorder DFS carries exactly the state needed by children/parent. Alternative: Iterative stack avoids recursion depth; BFS works when level order matters.",
+  "invariant": "When dfs returns from a node, its subtree answer/fact is final.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Each node is visited once: O(n) time. Recursion stack is O(h).",
+  "pitfalls": [
+    "Returning answer instead of path contribution; wrong null base case.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "nil root; skewed tree recursion depth; negative values; duplicate values; global vs returned answer.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Return the nodes on the path, not just a count/value.",
+    "Make the tree contain negative values or duplicate values.",
+    "Convert recursive DFS to iterative stack DFS."
+  ],
+  "followUps": [
+    "Can you write iterative DFS? What value does each call return?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "count_good_nodes_in_binary_tree",
+  "goFunction": "Solve035",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

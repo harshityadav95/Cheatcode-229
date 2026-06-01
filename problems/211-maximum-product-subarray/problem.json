@@ -1,0 +1,75 @@
+{
+  "id": 211,
+  "leetcode": 152,
+  "title": "Maximum Product Subarray",
+  "slug": "211-maximum-product-subarray",
+  "pattern": "DP 2D / Kadane",
+  "difficulty": "Hard",
+  "sources": [
+    "NC75"
+  ],
+  "companies": [
+    "Google",
+    "Meta",
+    "Amazon",
+    "Microsoft"
+  ],
+  "time": "O(n*m) or O(n)",
+  "space": "O(n*m) or O(1)",
+  "diagram": {
+    "type": "dp",
+    "seed": 152
+  },
+  "diagramNotes": [
+    "rolling best",
+    "dp cell uses prior ...",
+    "Grid DP fills by dependency order; Kadane keeps best ending here."
+  ],
+  "example": {
+    "input": "nums=[2,3,-2,4]",
+    "output": "6",
+    "why": "Subarray [2,3] has product 6."
+  },
+  "prompt": "Return the maximum product of a non-empty contiguous subarray.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "dp cell uses prior ... Grid DP fills by dependency order; Kadane keeps best ending here.",
+  "brute": "Enumerate every substring/path/subproblem and recompute its score.",
+  "optimized": "Pick a state that removes repeated work, then fill in dependency order. For subarrays, keep rolling best. Alternative: Space-compress rows/columns when only the previous row/column is needed.",
+  "invariant": "Each filled state stores the optimal answer for exactly its subproblem.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: O(number of states * transition cost), commonly O(n*m) or O(n).",
+  "pitfalls": [
+    "Bad initialization; mixing row/column dependencies.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "empty dimensions; first row/column; negative-only arrays; diagonal dependencies; memory size.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Return the actual subarray/subsequence.",
+    "Reduce 2D memory to rolling rows where safe.",
+    "Handle all-negative values or empty inputs explicitly."
+  ],
+  "followUps": [
+    "Can the DP be space compressed safely?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "maximum_product_subarray",
+  "goFunction": "Solve211",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

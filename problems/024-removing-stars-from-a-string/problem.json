@@ -1,0 +1,79 @@
+{
+  "id": 24,
+  "leetcode": 2390,
+  "title": "Removing Stars From a String",
+  "slug": "024-removing-stars-from-a-string",
+  "pattern": "Stack",
+  "difficulty": "Medium",
+  "sources": [
+    "LC75"
+  ],
+  "companies": [
+    "Amazon",
+    "Bloomberg",
+    "Meta",
+    "Microsoft"
+  ],
+  "time": "O(n)",
+  "space": "O(n)",
+  "diagram": {
+    "type": "stack",
+    "seed": 497
+  },
+  "diagramNotes": [
+    "A",
+    "B",
+    "C",
+    "top",
+    "current",
+    "push unresolved; pop when resolved",
+    "The stack is the processed prefix after all forced reductions/resolutions."
+  ],
+  "example": {
+    "input": "s=\"leet**cod*e\"",
+    "output": "\"lecoe\"",
+    "why": "Each star removes one previous character."
+  },
+  "prompt": "Process a string where each star deletes itself and the closest remaining character to its left.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "push unresolved; pop when resolved The stack is the processed prefix after all forced reductions/resolutions.",
+  "brute": "Repeatedly scan and delete/merge adjacent conflicts until stable; can become O(n^2).",
+  "optimized": "Use a stack to keep unresolved items. The current item only interacts with the top until stable. Alternative: For arithmetic parsing, keep operator/context stacks or fold high-precedence operations immediately.",
+  "invariant": "The stack is exactly the processed prefix after all forced reductions have been applied.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Each item is pushed and popped at most once, so O(n) time and O(n) space.",
+  "pitfalls": [
+    "Popping empty stack; forgetting to flush remaining stack entries.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "empty stack; nested brackets; negative numbers; multi-digit tokens; final flush after scan.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Also return the position of the unmatched item.",
+    "Handle nested operators or multiple bracket types.",
+    "Convert next-greater logic into previous-greater logic."
+  ],
+  "followUps": [
+    "Can the stack be compressed to store counts or indices only?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "removing_stars_from_a_string",
+  "goFunction": "Solve024",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

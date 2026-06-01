@@ -1,0 +1,77 @@
+{
+  "id": 85,
+  "leetcode": 45,
+  "title": "Jump Game II",
+  "slug": "085-jump-game-ii",
+  "pattern": "Math / Greedy",
+  "difficulty": "Medium",
+  "sources": [
+    "Top150"
+  ],
+  "companies": [
+    "Amazon",
+    "Google",
+    "Microsoft",
+    "Bloomberg"
+  ],
+  "time": "O(n) or O(log n)",
+  "space": "O(1)",
+  "diagram": {
+    "type": "greedy",
+    "seed": 409
+  },
+  "diagramNotes": [
+    "local choice",
+    "dominant state",
+    "best answer",
+    "discard dominated a...",
+    "A safe greedy step keeps a state that is never worse for any future suffix."
+  ],
+  "example": {
+    "input": "nums=[2,3,1,1,4]",
+    "output": "2",
+    "why": "Jump 0->1->4."
+  },
+  "prompt": "Return the minimum jumps needed to reach the last index, assuming it is reachable.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "discard dominated a... A safe greedy step keeps a state that is never worse for any future suffix.",
+  "brute": "Try all choices recursively or simulate every path. Correct but exponential or quadratic.",
+  "optimized": "Identify the state that dominates future decisions, then greedily update it while scanning once. Alternative: Some greedy tasks can also be solved by DP first; convert to greedy after finding the redundant state.",
+  "invariant": "The maintained state is at least as good as any alternative state with the same processed prefix.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Usually O(n) or O(n log n) if sorting is needed. Space is often O(1).",
+  "pitfalls": [
+    "Assuming local greedy without proof; integer division edge cases.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "ties; impossible states; negative values; very large values; integer overflow; proof of local choice.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Prove the greedy choice with an exchange argument.",
+    "Return the chosen sequence of actions.",
+    "Handle overflow and impossible cases explicitly."
+  ],
+  "followUps": [
+    "What invariant proves the greedy choice is safe?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "jump_game_ii",
+  "goFunction": "Solve085",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

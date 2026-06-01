@@ -1,0 +1,82 @@
+{
+  "id": 19,
+  "leetcode": 724,
+  "title": "Find Pivot Index",
+  "slug": "019-find-pivot-index",
+  "pattern": "Prefix / Scan",
+  "difficulty": "Easy",
+  "sources": [
+    "LC75"
+  ],
+  "companies": [
+    "Amazon",
+    "Google",
+    "Meta",
+    "Microsoft"
+  ],
+  "time": "O(n)",
+  "space": "O(1) to O(n)",
+  "diagram": {
+    "type": "prefix",
+    "seed": 933
+  },
+  "diagramNotes": [
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "prefix",
+    "suffix later",
+    "running sum",
+    "answer",
+    "Use aggregates before/after the index; update after using the current item."
+  ],
+  "example": {
+    "input": "nums=[1,7,3,6,5,6]",
+    "output": "3",
+    "why": "Left sum and right sum are both 11."
+  },
+  "prompt": "Return an index where the sum of elements to its left equals the sum to its right, or -1 if none exists.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "answer Use aggregates before/after the index; update after using the current item.",
+  "brute": "Recompute every left/right sum or product per index. This repeats work and often becomes O(n^2).",
+  "optimized": "Carry a running prefix/suffix value. Update answer at the exact point where left and right states are both known. Alternative: Two passes are simplest; one pass works when the equation can be rearranged.",
+  "invariant": "Before index i, prefix equals the aggregate of all elements strictly left of i.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Each element is added/multiplied a constant number of times, so time is O(n); space is O(1) or O(n) for output arrays.",
+  "pitfalls": [
+    "Using updated prefix too early; not handling index 0.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "zeros; negative numbers; overflow in Go int; empty arrays; inclusive/exclusive index boundary.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Answer many range queries after one preprocessing pass.",
+    "Handle zeros/negative numbers without division.",
+    "Return both value and index where the best prefix occurs."
+  ],
+  "followUps": [
+    "Can you answer many range queries after preprocessing?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "find_pivot_index",
+  "goFunction": "Solve019",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

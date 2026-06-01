@@ -1,0 +1,81 @@
+{
+  "id": 164,
+  "leetcode": 211,
+  "title": "Design Add and Search Words Data Structure",
+  "slug": "164-design-add-and-search-words-data-structure",
+  "pattern": "Trie / Encoding",
+  "difficulty": "Hard",
+  "sources": [
+    "Top150",
+    "NC75"
+  ],
+  "companies": [
+    "Google",
+    "Amazon",
+    "Bloomberg",
+    "Microsoft"
+  ],
+  "time": "O(total characters)",
+  "space": "O(total characters)",
+  "diagram": {
+    "type": "trie",
+    "seed": 695
+  },
+  "diagramNotes": [
+    "root",
+    "c",
+    "a",
+    "t*",
+    "r*",
+    "len#word",
+    "shared prefix",
+    "Trie stores shared prefixes; encoding uses length + delimiter to decode safely."
+  ],
+  "example": {
+    "input": "add bad,dad,mad; search pad,bad,.ad,b..",
+    "output": "[false,true,true,true]",
+    "why": "Dot wildcards match any character."
+  },
+  "prompt": "Design a word dictionary with addWord and search, where '.' in search matches any single character.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "shared prefix Trie stores shared prefixes; encoding uses length + delimiter to decode safely.",
+  "brute": "Compare every string with every query or split by ambiguous delimiters.",
+  "optimized": "Store characters in a trie for prefix search, or encode lengths so decoding is unambiguous. Alternative: Hash maps can replace trie when only whole-word lookup is needed.",
+  "invariant": "Every path from root represents exactly one prefix; terminal marks complete words.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: O(total characters) to build; query cost is O(length of query/prefix).",
+  "pitfalls": [
+    "Terminal marker missing; ambiguous delimiter.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "empty strings; delimiter appearing in input; duplicate words; memory blowup; lexicographic ordering.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Support delete/update operations.",
+    "Return top-k suggestions with lexicographic ties.",
+    "Use length-prefix encoding when delimiter may appear in input."
+  ],
+  "followUps": [
+    "Can the trie support delete or wildcard search?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "design_add_and_search_words_data_structure",
+  "goFunction": "Solve164",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

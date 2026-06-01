@@ -1,0 +1,79 @@
+{
+  "id": 129,
+  "leetcode": 21,
+  "title": "Merge Two Sorted Lists",
+  "slug": "129-merge-two-sorted-lists",
+  "pattern": "Linked List",
+  "difficulty": "Medium",
+  "sources": [
+    "Top150",
+    "NC75"
+  ],
+  "companies": [
+    "Amazon",
+    "Microsoft",
+    "Meta",
+    "Apple"
+  ],
+  "time": "O(n)",
+  "space": "O(1) unless recursion/map",
+  "diagram": {
+    "type": "list",
+    "seed": 368
+  },
+  "diagramNotes": [
+    "prev",
+    "curr",
+    "next",
+    "relink after saving...",
+    "dummy",
+    "Always save next before overwriting a pointer; dummy handles head changes."
+  ],
+  "example": {
+    "input": "list1=[1,2,4], list2=[1,3,4]",
+    "output": "[1,1,2,3,4,4]",
+    "why": "Choose the smaller current node each time."
+  },
+  "prompt": "Merge two sorted linked lists into one sorted linked list.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "dummy Always save next before overwriting a pointer; dummy handles head changes.",
+  "brute": "Copy values into an array, solve there, then rebuild. Simple but extra O(n) space.",
+  "optimized": "Use pointer rewiring, dummy nodes, fast/slow pointers, and careful next preservation. Alternative: Recursive list solutions are shorter but can use O(n) call stack.",
+  "invariant": "The processed prefix is already correctly linked and no unprocessed node is lost.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Most list pointer solutions are one or two passes: O(n) time, O(1) extra space.",
+  "pitfalls": [
+    "Losing next pointer before rewiring; missing dummy head edge cases.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "empty head; one node; removing head; cycles; preserving next before overwriting pointers.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Do the operation recursively and compare stack use.",
+    "Handle cycle/random pointers in the same structure.",
+    "Perform the change for every k-sized group."
+  ],
+  "followUps": [
+    "Can you solve it with O(1) extra memory and one pass?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "merge_two_sorted_lists",
+  "goFunction": "Solve129",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

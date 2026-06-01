@@ -1,0 +1,84 @@
+{
+  "id": 12,
+  "leetcode": 11,
+  "title": "Container With Most Water",
+  "slug": "012-container-with-most-water",
+  "pattern": "Two Pointers",
+  "difficulty": "Medium",
+  "sources": [
+    "LC75",
+    "Top150",
+    "NC75"
+  ],
+  "companies": [
+    "Amazon",
+    "Meta",
+    "Apple",
+    "Microsoft"
+  ],
+  "time": "O(n) or O(n log n)",
+  "space": "O(1) to O(n)",
+  "diagram": {
+    "type": "pointers",
+    "seed": 559
+  },
+  "diagramNotes": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "L",
+    "R",
+    "move only safe side",
+    "Discarded outer ranges have been proved impossible or dominated."
+  ],
+  "example": {
+    "input": "height=[1,7,2,5,4,7,3,6]",
+    "output": "36",
+    "why": "Lines at heights 7 and 6 with width 6 give area 36."
+  },
+  "prompt": "Choose two vertical lines so the water container area, width times shorter height, is maximized.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "move only safe side Discarded outer ranges have been proved impossible or dominated.",
+  "brute": "Check all pairs/subarrays. This is clear but O(n^2) or worse.",
+  "optimized": "Maintain two indices. Move only the side that cannot produce a better result if kept fixed. Alternative: Sort first for unordered inputs; use fast/slow pointers for linked lists or cycle questions.",
+  "invariant": "All discarded pairs are provably dominated or already evaluated.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Each pointer moves monotonically at most n times, giving O(n) after any required sort.",
+  "pitfalls": [
+    "Moving both pointers when only one should move; duplicate skipping before recording answer.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "duplicates; crossing pointers; arrays of length 0/1; sorted vs unsorted; inclusive loop conditions.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Return the actual pair/window, not only the score.",
+    "Handle duplicates and ask for all unique answers.",
+    "Work after sorting while preserving original indices."
+  ],
+  "followUps": [
+    "What changes if input is unsorted or has duplicates?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "container_with_most_water",
+  "goFunction": "Solve012",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

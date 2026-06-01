@@ -1,0 +1,82 @@
+{
+  "id": 171,
+  "leetcode": 79,
+  "title": "Word Search",
+  "slug": "171-word-search",
+  "pattern": "Backtracking",
+  "difficulty": "Medium",
+  "sources": [
+    "Top150",
+    "NC75"
+  ],
+  "companies": [
+    "Google",
+    "Meta",
+    "Amazon",
+    "Microsoft"
+  ],
+  "time": "O(branch^depth)",
+  "space": "O(depth + output)",
+  "diagram": {
+    "type": "backtracking",
+    "seed": 662
+  },
+  "diagramNotes": [
+    "path",
+    "choose",
+    "choose",
+    "undo",
+    "undo",
+    "undo",
+    "undo",
+    "choose -> recurse -...",
+    "Path is always a valid prefix; copy it only when complete."
+  ],
+  "example": {
+    "input": "board=[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word=\"ABCCED\"",
+    "output": "true",
+    "why": "The word can be traced through adjacent cells."
+  },
+  "prompt": "Return whether word exists in a board by moving horizontally or vertically without reusing cells.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "choose -> recurse -... Path is always a valid prefix; copy it only when complete.",
+  "brute": "Generate all raw permutations/subsets and filter after completion; wastes branches.",
+  "optimized": "Build only valid prefixes, prune by remaining capacity/constraints, and undo choices exactly. Alternative: Bitmasks can replace used arrays for small n.",
+  "invariant": "The path is always a valid prefix that can still be extended to a solution.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Exponential by output size; pruning lowers constants but not worst-case class.",
+  "pitfalls": [
+    "Not undoing choice; duplicate outputs from unsorted inputs.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "duplicate choices; forgetting undo; shallow copy path before appending; pruning too aggressively.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Return count only instead of all paths.",
+    "Skip duplicate candidates after sorting.",
+    "Add a max-length or lexicographic-order constraint."
+  ],
+  "followUps": [
+    "How do you prune or avoid duplicates?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "word_search",
+  "goFunction": "Solve171",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

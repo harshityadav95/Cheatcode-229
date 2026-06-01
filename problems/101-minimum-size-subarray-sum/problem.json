@@ -1,0 +1,82 @@
+{
+  "id": 101,
+  "leetcode": 209,
+  "title": "Minimum Size Subarray Sum",
+  "slug": "101-minimum-size-subarray-sum",
+  "pattern": "Two Pointers",
+  "difficulty": "Medium",
+  "sources": [
+    "Top150"
+  ],
+  "companies": [
+    "Amazon",
+    "Meta",
+    "Apple",
+    "Microsoft"
+  ],
+  "time": "O(n) or O(n log n)",
+  "space": "O(1) to O(n)",
+  "diagram": {
+    "type": "pointers",
+    "seed": 702
+  },
+  "diagramNotes": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "L",
+    "R",
+    "move only safe side",
+    "Discarded outer ranges have been proved impossible or dominated."
+  ],
+  "example": {
+    "input": "target=7, nums=[2,3,1,2,4,3]",
+    "output": "2",
+    "why": "Subarray [4,3] reaches 7."
+  },
+  "prompt": "Return the minimum length of a contiguous subarray with sum at least target, or 0 if none exists.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "move only safe side Discarded outer ranges have been proved impossible or dominated.",
+  "brute": "Check all pairs/subarrays. This is clear but O(n^2) or worse.",
+  "optimized": "Maintain two indices. Move only the side that cannot produce a better result if kept fixed. Alternative: Sort first for unordered inputs; use fast/slow pointers for linked lists or cycle questions.",
+  "invariant": "All discarded pairs are provably dominated or already evaluated.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Each pointer moves monotonically at most n times, giving O(n) after any required sort.",
+  "pitfalls": [
+    "Moving both pointers when only one should move; duplicate skipping before recording answer.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "duplicates; crossing pointers; arrays of length 0/1; sorted vs unsorted; inclusive loop conditions.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Return the actual pair/window, not only the score.",
+    "Handle duplicates and ask for all unique answers.",
+    "Work after sorting while preserving original indices."
+  ],
+  "followUps": [
+    "What changes if input is unsorted or has duplicates?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "minimum_size_subarray_sum",
+  "goFunction": "Solve101",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

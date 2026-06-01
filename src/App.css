@@ -2,6 +2,36 @@
   min-height: 100vh;
 }
 
+:root {
+  --diagram-panel: #ffffff;
+  --diagram-border: #cbd5e1;
+  --diagram-line: #64748b;
+  --diagram-soft-line: #94a3b8;
+  --diagram-text: #0f172a;
+  --diagram-muted-text: #64748b;
+  --diagram-cell: #f8fafc;
+  --diagram-cell-active: #e0f2fe;
+  --diagram-tree-active: #cffafe;
+  --diagram-graph-active: #dcfce7;
+  --diagram-dp-active: #fef3c7;
+  --diagram-heap-active: #ede9fe;
+}
+
+.dark {
+  --diagram-panel: #0f172a;
+  --diagram-border: #334155;
+  --diagram-line: #64748b;
+  --diagram-soft-line: #475569;
+  --diagram-text: #e2e8f0;
+  --diagram-muted-text: #94a3b8;
+  --diagram-cell: #1e293b;
+  --diagram-cell-active: #164e63;
+  --diagram-tree-active: #155e75;
+  --diagram-graph-active: #14532d;
+  --diagram-dp-active: #713f12;
+  --diagram-heap-active: #4c1d95;
+}
+
 pre,
 code {
   font-family:

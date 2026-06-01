@@ -1,0 +1,80 @@
+{
+  "id": 226,
+  "leetcode": 347,
+  "title": "Top K Frequent Elements",
+  "slug": "226-top-k-frequent-elements",
+  "pattern": "Heap / Priority Queue",
+  "difficulty": "Medium",
+  "sources": [
+    "NC75"
+  ],
+  "companies": [
+    "Amazon",
+    "Bloomberg",
+    "Google",
+    "Meta"
+  ],
+  "time": "O(n log k) or O(n log n)",
+  "space": "O(k) to O(n)",
+  "diagram": {
+    "type": "heap",
+    "seed": 941
+  },
+  "diagramNotes": [
+    "top",
+    "a",
+    "b",
+    "c",
+    "d",
+    "pop best",
+    "push new",
+    "Heap top is the next best candidate; discard stale entries after pop."
+  ],
+  "example": {
+    "input": "nums=[1,1,1,2,2,3], k=2",
+    "output": "[1,2]",
+    "why": "1 and 2 have the highest frequencies."
+  },
+  "prompt": "Return the k most frequent elements from the array.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "push new Heap top is the next best candidate; discard stale entries after pop.",
+  "brute": "Repeatedly sort or scan all candidates for each selection: O(k*n) or worse.",
+  "optimized": "Use a min/max heap to access the next best candidate in O(log n). Alternative: Quickselect works for one kth statistic; heap is better for streaming or repeated picks.",
+  "invariant": "The heap contains all eligible candidates not yet chosen, ordered by the needed priority.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Heap operations cost O(log n); total time depends on pushes/pops, often O(n log k).",
+  "pitfalls": [
+    "Using min-heap/max-heap sign incorrectly; heap grows beyond k.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "stale entries; tie-breakers; min vs max heap in Go; pushing duplicates; empty heap.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Return top-k in sorted order after using the heap.",
+    "Handle ties with a secondary key.",
+    "Support streaming insertions and deletions."
+  ],
+  "followUps": [
+    "Can you reduce memory from O(n) to O(k)?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "top_k_frequent_elements",
+  "goFunction": "Solve226",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

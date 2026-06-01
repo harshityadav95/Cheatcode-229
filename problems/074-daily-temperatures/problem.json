@@ -1,0 +1,79 @@
+{
+  "id": 74,
+  "leetcode": 739,
+  "title": "Daily Temperatures",
+  "slug": "074-daily-temperatures",
+  "pattern": "Monotonic Stack",
+  "difficulty": "Medium",
+  "sources": [
+    "LC75"
+  ],
+  "companies": [
+    "Amazon",
+    "Google",
+    "Bloomberg",
+    "Meta"
+  ],
+  "time": "O(n)",
+  "space": "O(n)",
+  "diagram": {
+    "type": "stack",
+    "seed": 899
+  },
+  "diagramNotes": [
+    "9",
+    "7",
+    "4",
+    "top",
+    "current",
+    "pop while order breaks",
+    "The stack is the processed prefix after all forced reductions/resolutions."
+  ],
+  "example": {
+    "input": "temperatures=[73,74,75,71,69,72,76,73]",
+    "output": "[1,1,4,2,1,1,0,0]",
+    "why": "Next warmer positions determine distances."
+  },
+  "prompt": "For each day, return how many days until a warmer temperature; use 0 when none occurs.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "pop while order breaks The stack is the processed prefix after all forced reductions/resolutions.",
+  "brute": "For each index, scan forward/backward to find the next greater/smaller item. O(n^2).",
+  "optimized": "Maintain a stack of unresolved indices in monotonic order; resolve them when a stronger value appears. Alternative: Use decreasing stack for next greater, increasing stack for next smaller, or scan from the opposite side.",
+  "invariant": "Stack indices have not found their answer and their values remain monotonic.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Each index enters and leaves the stack once: O(n) time, O(n) space.",
+  "pitfalls": [
+    "Using < instead of <=; storing values when indices are needed.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "equal values; direction of scan; circular arrays; storing values vs indices.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Find previous instead of next warmer/greater item.",
+    "Use circular-array behavior.",
+    "Return spans/counts rather than target index."
+  ],
+  "followUps": [
+    "Do you need next greater value, index, or distance?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "daily_temperatures",
+  "goFunction": "Solve074",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}

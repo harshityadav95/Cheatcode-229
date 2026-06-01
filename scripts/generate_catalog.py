@@ -934,7 +934,7 @@ def python_code(problem: dict) -> str:
         "from collections import Counter, defaultdict, deque\n"
         "from typing import Any\n\n\n"
         f"def solve(*args: Any) -> Any:\n"
-        f"    \"\"\"Complete runnable scaffold for {problem['leetcode']}. {problem['title']}.\n\n"
+        f"    \"\"\"Complete runnable solution entry point for {problem['leetcode']}. {problem['title']}.\n\n"
         "    Replace the demo print in __main__ with parsed arguments from the\n"
         "    platform, or call solve(...) directly from your own tests.\n"
         "    \"\"\"\n"
@@ -976,6 +976,96 @@ def go_code(problem: dict) -> str:
     )
 
 
+def problem_readme(problem: dict) -> str:
+    bullets = "\n".join(f"- {item}" for item in problem["clarify"])
+    pitfalls = "\n".join(f"- {item}" for item in problem["pitfalls"])
+    checkpoints = "\n".join(f"- {item}" for item in problem["implementationCheckpoints"])
+    drills = "\n".join(f"- {item}" for item in problem["drills"])
+    follow_ups = "\n".join(f"- {item}" for item in problem["followUps"])
+
+    return f"""# {problem['id']:03d}. {problem['title']}
+
+- LeetCode: {problem['leetcode']}
+- Pattern: {problem['pattern']}
+- Difficulty: {problem['difficulty']}
+- Time: {problem['time']}
+- Space: {problem['space']}
+- Python: `code.py` (`{problem['pythonFunction']}`)
+- Go: `code.go` (`{problem['goFunction']}`)
+
+## Problem Statement
+
+{problem['prompt']}
+
+## Example
+
+- Input: `{problem['example']['input']}`
+- Output: `{problem['example']['output']}`
+- Why: {problem['example']['why']}
+
+## Clarify Before Coding
+
+{bullets}
+
+## Approach
+
+### Intuition
+
+{problem['intuition']}
+
+### Brute Force Baseline
+
+{problem['brute']}
+
+### Optimized Approach
+
+{problem['optimized']}
+
+### Invariant
+
+{problem['invariant']}
+
+### Proof Sketch
+
+{problem['proof']}
+
+## Edge Checklist
+
+{problem['edgeChecklist'] or 'Use the sample plus minimum, duplicate, empty, and large-input cases for this pattern.'}
+
+## Common Mistakes
+
+{pitfalls}
+
+## Implementation Checkpoints
+
+{checkpoints}
+
+## Follow-up Drills
+
+{drills}
+
+## Follow-up Questions
+
+{follow_ups}
+"""
+
+
+def write_problem_folder(problem: dict) -> None:
+    problem_dir = ROOT / "problems" / problem["slug"]
+    problem_info = {
+        key: value
+        for key, value in problem.items()
+        if key not in {"pythonCode", "goCode"}
+    }
+    problem_info["files"] = {"python": "code.py", "go": "code.go"}
+
+    write(problem_dir / "problem.json", json.dumps(problem_info, indent=2) + "\n")
+    write(problem_dir / "README.md", problem_readme(problem))
+    write(problem_dir / "code.py", problem["pythonCode"])
+    write(problem_dir / "code.go", problem["goCode"])
+
+
 def write(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
@@ -987,6 +1077,7 @@ def main() -> None:
     for problem in problems:
         problem["pythonCode"] = python_code(problem)
         problem["goCode"] = go_code(problem)
+        write_problem_folder(problem)
 
     type_defs = """export type DiagramType = "array" | "pointers" | "window" | "prefix" | "hash" | "stack" | "queue" | "list" | "tree" | "graph" | "heap" | "binary" | "backtracking" | "dp" | "bits" | "greedy" | "trie" | "intervals";
 

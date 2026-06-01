@@ -11,9 +11,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test:content": "node scripts/validate-content.mjs",
+    "test:problem-files": "node scripts/validate-problem-files.mjs",
     "test:python": "PYTHONPATH=. python3 -m unittest discover -s solutions/python",
     "test:go": "cd solutions/go && go test ./...",
-    "test": "pnpm run test:content && pnpm run test:python && pnpm run test:go"
+    "test": "pnpm run test:content && pnpm run test:problem-files && pnpm run test:python && pnpm run test:go"
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.2.9",

@@ -1,0 +1,78 @@
+{
+  "id": 28,
+  "leetcode": 649,
+  "title": "Dota2 Senate",
+  "slug": "028-dota2-senate",
+  "pattern": "Queue / Simulation",
+  "difficulty": "Medium",
+  "sources": [
+    "LC75"
+  ],
+  "companies": [
+    "Amazon",
+    "Google",
+    "Bloomberg"
+  ],
+  "time": "O(n)",
+  "space": "O(n)",
+  "diagram": {
+    "type": "queue",
+    "seed": 934
+  },
+  "diagramNotes": [
+    "front",
+    "e2",
+    "e3",
+    "back",
+    "process",
+    "append next",
+    "Process events in chronological order; skip stale events when needed."
+  ],
+  "example": {
+    "input": "senate=\"RDD\"",
+    "output": "\"Dire\"",
+    "why": "Dire senators eventually ban the remaining Radiant senator."
+  },
+  "prompt": "Given a string of R and D senators, simulate bans in order until only one party can act.",
+  "clarify": [
+    "Empty or singleton input?",
+    "Mutate input or build output?",
+    "Duplicate/tie behavior?",
+    "int vs int64 in Go?",
+    "Exact return shape?"
+  ],
+  "intuition": "append next Process events in chronological order; skip stale events when needed.",
+  "brute": "Simulate with repeated full scans of all active entities; too slow when many rounds occur.",
+  "optimized": "Use a queue/deque so each event is processed in the order it becomes eligible. Alternative: Use two queues when entities belong to two groups competing over time.",
+  "invariant": "The queue contains pending events in exact chronological order.",
+  "proof": "Initialize state so the invariant is true. Each update preserves it using finalized information only. At the end, every candidate was considered or safely discarded. Complexity reason: Each event is enqueued/dequeued a bounded number of times, usually O(n).",
+  "pitfalls": [
+    "Mixing one round with the next; not updating queue length per layer.",
+    "Updating state before saving the next pointer/index.",
+    "Recording an answer while the window/state is invalid.",
+    "Forgetting nil/empty/base cases."
+  ],
+  "edgeChecklist": "empty queue; stale events; repeated timestamps; stopping condition; modulo/cyclic turns.",
+  "implementationCheckpoints": [
+    "Define the exact state before coding.",
+    "Update state in one place.",
+    "Dry run the sample before typing loops.",
+    "Say why discarded candidates cannot later win."
+  ],
+  "drills": [
+    "Add timestamps and expire old events.",
+    "Process simultaneous events in stable order.",
+    "Return intermediate states after each round."
+  ],
+  "followUps": [
+    "What if events are timestamped or arrive online?",
+    "What changes if constraints are 10x larger?",
+    "Which line would you unit-test first and why?"
+  ],
+  "pythonFunction": "dota2_senate",
+  "goFunction": "Solve028",
+  "files": {
+    "python": "code.py",
+    "go": "code.go"
+  }
+}
