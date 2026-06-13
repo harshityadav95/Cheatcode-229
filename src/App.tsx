@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
 import {
-  ArrowDown,
   BookOpen,
   ChevronLeft,
   ChevronRight,
@@ -15,7 +14,6 @@ import {
   NotebookPen,
   Search,
   Sparkles,
-  Shuffle,
   Sun,
 } from 'lucide-react'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
@@ -32,6 +30,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Textarea } from '@/components/ui/textarea'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { patterns, problems, type Problem } from '@/data/problems'
+import { LandingPage } from '@/components/LandingPage'
 import './App.css'
 
 type DifficultyFilter = Problem['difficulty'] | 'All'
@@ -181,6 +180,15 @@ function App() {
     }
   }
 
+  const handleSelectPattern = (patternName: string) => {
+    setPattern(patternName)
+    setShowLanding(false)
+    const firstProb = problems.find((p) => p.pattern === patternName)
+    if (firstProb) {
+      openProblem(firstProb)
+    }
+  }
+
   return (
     <TooltipProvider>
       <main className="min-h-screen bg-white text-slate-950 dark:bg-slate-950 dark:text-slate-100">
@@ -244,11 +252,16 @@ function App() {
         </header>
 
         {showLanding && (
-          <LandingHero
-            problemCount={problems.length}
-            patternCount={patterns.length}
-            onBrowse={browseProblems}
+          <LandingPage
+            problems={problems}
+            patterns={patterns}
+            onSelectPattern={handleSelectPattern}
+            onBrowseAll={browseProblems}
             onRandomProblem={openRandomProblem}
+            onOpenProblem={(p) => {
+              setShowLanding(false)
+              openProblem(p)
+            }}
           />
         )}
 
@@ -272,76 +285,6 @@ function App() {
         )}
       </main>
     </TooltipProvider>
-  )
-}
-
-function LandingHero({
-  problemCount,
-  patternCount,
-  onBrowse,
-  onRandomProblem,
-}: {
-  problemCount: number
-  patternCount: number
-  onBrowse: () => void
-  onRandomProblem: () => void
-}) {
-  return (
-    <section className="landing-hero relative isolate overflow-hidden bg-slate-950 text-white">
-      <img
-        src="/cheatcode-hero.png"
-        alt=""
-        className="absolute inset-0 -z-20 h-full w-full object-cover"
-      />
-      <div className="absolute inset-0 -z-10 bg-slate-950/65" />
-      <div className="mx-auto flex h-full max-w-[1500px] items-center px-4 py-10 sm:px-6 lg:px-8">
-        <div className="max-w-3xl space-y-6">
-          <Badge className="border border-cyan-300/40 bg-cyan-300/15 text-cyan-50">
-            DSA 2026
-          </Badge>
-          <div className="space-y-4">
-            <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-normal text-white sm:text-5xl lg:text-6xl">
-              Cheatcode 229
-            </h1>
-            <p className="max-w-2xl text-base leading-7 text-slate-100 sm:text-lg">
-              A focused interview workspace for problem statements, proof sketches, diagrams, and Python/Go solution files.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            <Button
-              type="button"
-              size="lg"
-              className="h-10 bg-white text-slate-950 hover:bg-cyan-50"
-              onClick={onBrowse}
-            >
-              <ArrowDown className="size-4" />
-              Browse problems
-            </Button>
-            <Button
-              type="button"
-              variant="outline"
-              size="lg"
-              className="h-10 border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white"
-              onClick={onRandomProblem}
-            >
-              <Shuffle className="size-4" />
-              Random problem
-            </Button>
-          </div>
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-200">
-            <span>
-              <strong className="text-white">{problemCount}</strong> problems
-            </span>
-            <span>
-              <strong className="text-white">{patternCount}</strong> patterns
-            </span>
-            <span>
-              <strong className="text-white">Python + Go</strong> files
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
   )
 }
 

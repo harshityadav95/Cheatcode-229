@@ -17,6 +17,7 @@ Merge characters by alternating from word1 and word2, appending any leftover cha
 - [LeetCode problem statement](https://leetcode.com/problems/merge-strings-alternately/)
 - [LeetCode community solutions](https://leetcode.com/problems/merge-strings-alternately/solutions/)
 - [Array and string topic](https://leetcode.com/tag/array/)
+- [Doocs LeetCode reference](https://github.com/doocs/leetcode/blob/main/solution/1700-1799/1768.Merge%20Strings%20Alternately/README_EN.md)
 
 ## Example
 
