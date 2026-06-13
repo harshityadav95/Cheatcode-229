@@ -10,11 +10,15 @@ def merge_strings_alternately(*args):
     The website explains the exact platform adaptation. This function is
     intentionally small so tests can import every problem module.
     """
-    out = []
-    for item in args:
-        if isinstance(item, (list, tuple, str)):
-            out.extend(list(item))
-    return out
+    from itertools import zip_longest
+    class Solution:
+        def mergeAlternately(self, word1: str, word2: str) -> str:
+            return ''.join(a + b for a, b in zip_longest(word1, word2, fillvalue=''))
+    if not args:
+        return ''
+    word1 = args[0]
+    word2 = args[1] if len(args) > 1 else ''
+    return Solution().mergeAlternately(word1, word2)
 
 
 def greatest_common_divisor_of_strings(*args):

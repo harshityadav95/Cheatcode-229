@@ -5,6 +5,12 @@ import heapq
 import math
 from collections import Counter, defaultdict, deque
 from typing import Any
+from itertools import zip_longest
+
+
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        return ''.join(a + b for a, b in zip_longest(word1, word2, fillvalue=''))
 
 
 def solve(*args: Any) -> Any:
@@ -13,12 +19,11 @@ def solve(*args: Any) -> Any:
     Replace the demo print in __main__ with parsed arguments from the
     platform, or call solve(...) directly from your own tests.
     """
-    out = []
-    for item in args:
-        if isinstance(item, (list, tuple, str)):
-            out.extend(list(item))
-    return out
-
+    if not args:
+        return ''
+    word1 = args[0]
+    word2 = args[1] if len(args) > 1 else ''
+    return Solution().mergeAlternately(word1, word2)
 
 
 merge_strings_alternately = solve
