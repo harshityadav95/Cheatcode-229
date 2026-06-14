@@ -7,6 +7,7 @@
 - Space: O(1) unless recursion/map
 - Python: `code.py` (`lru_cache`)
 - Go: `code.go` (`Solve137`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+146+LRU+Cache+solution)
 
 ## Problem Statement
 

@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`single_number_ii`)
 - Go: `code.go` (`Solve190`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+137+Single+Number+II+solution)
 
 ## Problem Statement
 

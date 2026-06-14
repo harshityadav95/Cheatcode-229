@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+643+Maximum+Average+Subarray+I+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0600-0699/0643.Maximum Average Subarray I",
+  "sourcePythonCode": "class Solution:\n    def findMaxAverage(self, nums: List[int], k: int) -> float:\n        ans = s = sum(nums[:k])\n        for i in range(k, len(nums)):\n            s += nums[i] - nums[i - k]\n            ans = max(ans, s)\n        return ans / k",
+  "sourceGoCode": "func findMaxAverage(nums []int, k int) float64 {\n\ts := 0\n\tfor _, x := range nums[:k] {\n\t\ts += x\n\t}\n\tans := s\n\tfor i := k; i < len(nums); i++ {\n\t\ts += nums[i] - nums[i-k]\n\t\tans = max(ans, s)\n\t}\n\treturn float64(ans) / float64(k)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

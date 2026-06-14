@@ -87,6 +87,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+452+Minimum+Number+of+Arrows+to+Burst+Balloons+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0400-0499/0452.Minimum Number of Arrows to Burst Balloons",
+  "sourcePythonCode": "class Solution:\n    def findMinArrowShots(self, points: List[List[int]]) -> int:\n        ans, last = 0, -inf\n        for a, b in sorted(points, key=lambda x: x[1]):\n            if a > last:\n                ans += 1\n                last = b\n        return ans",
+  "sourceGoCode": "func findMinArrowShots(points [][]int) (ans int) {\n\tsort.Slice(points, func(i, j int) bool { return points[i][1] < points[j][1] })\n\tlast := -(1 << 60)\n\tfor _, p := range points {\n\t\ta, b := p[0], p[1]\n\t\tif a > last {\n\t\t\tans++\n\t\t\tlast = b\n\t\t}\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

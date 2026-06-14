@@ -95,6 +95,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+49+Group+Anagrams+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0049.Group Anagrams",
+  "sourcePythonCode": "class Solution:\n    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:\n        d = defaultdict(list)\n        for s in strs:\n            k = ''.join(sorted(s))\n            d[k].append(s)\n        return list(d.values())",
+  "sourceGoCode": "func groupAnagrams(strs []string) (ans [][]string) {\n\td := map[string][]string{}\n\tfor _, s := range strs {\n\t\tt := []byte(s)\n\t\tsort.Slice(t, func(i, j int) bool { return t[i] < t[j] })\n\t\tk := string(t)\n\t\td[k] = append(d[k], s)\n\t}\n\tfor _, v := range d {\n\t\tans = append(ans, v)\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

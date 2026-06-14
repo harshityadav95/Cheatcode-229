@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`longest_repeating_character_replacement`)
 - Go: `code.go` (`Solve227`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+424+Longest+Repeating+Character+Replacement+solution)
 
 ## Problem Statement
 

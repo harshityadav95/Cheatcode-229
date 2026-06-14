@@ -86,6 +86,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+123+Best+Time+to+Buy+and+Sell+Stock+III+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0123.Best Time to Buy and Sell Stock III",
+  "sourcePythonCode": "class Solution:\n    def maxProfit(self, prices: List[int]) -> int:\n        # \u7b2c\u4e00\u6b21\u4e70\u5165\uff0c\u7b2c\u4e00\u6b21\u5356\u51fa\uff0c\u7b2c\u4e8c\u6b21\u4e70\u5165\uff0c\u7b2c\u4e8c\u6b21\u5356\u51fa\n        f1, f2, f3, f4 = -prices[0], 0, -prices[0], 0\n        for price in prices[1:]:\n            f1 = max(f1, -price)\n            f2 = max(f2, f1 + price)\n            f3 = max(f3, f2 - price)\n            f4 = max(f4, f3 + price)\n        return f4",
+  "sourceGoCode": "func maxProfit(prices []int) int {\n\tf1, f2, f3, f4 := -prices[0], 0, -prices[0], 0\n\tfor i := 1; i < len(prices); i++ {\n\t\tf1 = max(f1, -prices[i])\n\t\tf2 = max(f2, f1+prices[i])\n\t\tf3 = max(f3, f2-prices[i])\n\t\tf4 = max(f4, f3+prices[i])\n\t}\n\treturn f4\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

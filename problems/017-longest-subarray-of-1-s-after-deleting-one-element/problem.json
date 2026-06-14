@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1493+Longest+Subarray+of+1%27s+After+Deleting+One+Element+solution",
+  "leetcodeMainPath": "leetcode-main/solution/1400-1499/1493.Longest Subarray of 1's After Deleting One Element",
+  "sourcePythonCode": "class Solution:\n    def longestSubarray(self, nums: List[int]) -> int:\n        n = len(nums)\n        left = [0] * (n + 1)\n        right = [0] * (n + 1)\n        for i, x in enumerate(nums, 1):\n            if x:\n                left[i] = left[i - 1] + 1\n        for i in range(n - 1, -1, -1):\n            if nums[i]:\n                right[i] = right[i + 1] + 1\n        return max(left[i] + right[i + 1] for i in range(n))",
+  "sourceGoCode": "func longestSubarray(nums []int) (ans int) {\n\tn := len(nums)\n\tleft := make([]int, n+1)\n\tright := make([]int, n+1)\n\tfor i := 1; i <= n; i++ {\n\t\tif nums[i-1] == 1 {\n\t\t\tleft[i] = left[i-1] + 1\n\t\t}\n\t}\n\tfor i := n - 1; i >= 0; i-- {\n\t\tif nums[i] == 1 {\n\t\t\tright[i] = right[i+1] + 1\n\t\t}\n\t}\n\tfor i := 0; i < n; i++ {\n\t\tans = max(ans, left[i]+right[i+1])\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+443+String+Compression+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0400-0499/0443.String Compression",
+  "sourcePythonCode": "class Solution:\n    def compress(self, chars: List[str]) -> int:\n        i, k, n = 0, 0, len(chars)\n        while i < n:\n            j = i + 1\n            while j < n and chars[j] == chars[i]:\n                j += 1\n            chars[k] = chars[i]\n            k += 1\n            if j - i > 1:\n                cnt = str(j - i)\n                for c in cnt:\n                    chars[k] = c\n                    k += 1\n            i = j\n        return k",
+  "sourceGoCode": "func compress(chars []byte) int {\n\ti, k, n := 0, 0, len(chars)\n\tfor i < n {\n\t\tj := i + 1\n\t\tfor j < n && chars[j] == chars[i] {\n\t\t\tj++\n\t\t}\n\t\tchars[k] = chars[i]\n\t\tk++\n\t\tif j-i > 1 {\n\t\t\tcnt := strconv.Itoa(j - i)\n\t\t\tfor _, c := range cnt {\n\t\t\t\tchars[k] = byte(c)\n\t\t\t\tk++\n\t\t\t}\n\t\t}\n\t\ti = j\n\t}\n\treturn k\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+73+Set+Matrix+Zeroes+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0073.Set Matrix Zeroes",
+  "sourcePythonCode": "class Solution:\n    def setZeroes(self, matrix: List[List[int]]) -> None:\n        m, n = len(matrix), len(matrix[0])\n        row = [False] * m\n        col = [False] * n\n        for i in range(m):\n            for j in range(n):\n                if matrix[i][j] == 0:\n                    row[i] = col[j] = True\n        for i in range(m):\n            for j in range(n):\n                if row[i] or col[j]:\n                    matrix[i][j] = 0",
+  "sourceGoCode": "func setZeroes(matrix [][]int) {\n\trow := make([]bool, len(matrix))\n\tcol := make([]bool, len(matrix[0]))\n\tfor i := range matrix {\n\t\tfor j, x := range matrix[i] {\n\t\t\tif x == 0 {\n\t\t\t\trow[i] = true\n\t\t\t\tcol[j] = true\n\t\t\t}\n\t\t}\n\t}\n\tfor i := range matrix {\n\t\tfor j := range matrix[i] {\n\t\t\tif row[i] || col[j] {\n\t\t\t\tmatrix[i][j] = 0\n\t\t\t}\n\t\t}\n\t}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

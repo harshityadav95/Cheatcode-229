@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`path_sum`)
 - Go: `code.go` (`Solve145`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+112+Path+Sum+solution)
 
 ## Problem Statement
 

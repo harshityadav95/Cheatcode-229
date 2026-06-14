@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+12+Integer+to+Roman+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0012.Integer to Roman",
+  "sourcePythonCode": "class Solution:\n    def intToRoman(self, num: int) -> str:\n        cs = ('M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I')\n        vs = (1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1)\n        ans = []\n        for c, v in zip(cs, vs):\n            while num >= v:\n                num -= v\n                ans.append(c)\n        return ''.join(ans)",
+  "sourceGoCode": "func intToRoman(num int) string {\n\tcs := []string{\"M\", \"CM\", \"D\", \"CD\", \"C\", \"XC\", \"L\", \"XL\", \"X\", \"IX\", \"V\", \"IV\", \"I\"}\n\tvs := []int{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1}\n\tans := &strings.Builder{}\n\tfor i, v := range vs {\n\t\tfor num >= v {\n\t\t\tnum -= v\n\t\t\tans.WriteString(cs[i])\n\t\t}\n\t}\n\treturn ans.String()\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

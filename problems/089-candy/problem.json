@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+135+Candy+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0135.Candy",
+  "sourcePythonCode": "class Solution:\n    def candy(self, ratings: List[int]) -> int:\n        n = len(ratings)\n        left = [1] * n\n        right = [1] * n\n        for i in range(1, n):\n            if ratings[i] > ratings[i - 1]:\n                left[i] = left[i - 1] + 1\n        for i in range(n - 2, -1, -1):\n            if ratings[i] > ratings[i + 1]:\n                right[i] = right[i + 1] + 1\n        return sum(max(a, b) for a, b in zip(left, right))",
+  "sourceGoCode": "func candy(ratings []int) int {\n\tn := len(ratings)\n\tleft := make([]int, n)\n\tright := make([]int, n)\n\tfor i := range left {\n\t\tleft[i] = 1\n\t\tright[i] = 1\n\t}\n\tfor i := 1; i < n; i++ {\n\t\tif ratings[i] > ratings[i-1] {\n\t\t\tleft[i] = left[i-1] + 1\n\t\t}\n\t}\n\tfor i := n - 2; i >= 0; i-- {\n\t\tif ratings[i] > ratings[i+1] {\n\t\t\tright[i] = right[i+1] + 1\n\t\t}\n\t}\n\tans := 0\n\tfor i, a := range left {\n\t\tb := right[i]\n\t\tans += max(a, b)\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+226+Invert+Binary+Tree+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0226.Invert Binary Tree",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:\n        if root is None:\n            return None\n        l, r = self.invertTree(root.left), self.invertTree(root.right)\n        root.left, root.right = r, l\n        return root",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc invertTree(root *TreeNode) *TreeNode {\n\tif root == nil {\n\t\treturn root\n\t}\n\tl, r := invertTree(root.Left), invertTree(root.Right)\n\troot.Left, root.Right = r, l\n\treturn root\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

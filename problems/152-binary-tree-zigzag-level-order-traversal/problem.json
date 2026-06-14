@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+103+Binary+Tree+Zigzag+Level+Order+Traversal+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0103.Binary Tree Zigzag Level Order Traversal",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:\n        ans = []\n        if root is None:\n            return ans\n        q = deque([root])\n        ans = []\n        left = 1\n        while q:\n            t = []\n            for _ in range(len(q)):\n                node = q.popleft()\n                t.append(node.val)\n                if node.left:\n                    q.append(node.left)\n                if node.right:\n                    q.append(node.right)\n            ans.append(t if left else t[::-1])\n            left ^= 1\n        return ans",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc zigzagLevelOrder(root *TreeNode) (ans [][]int) {\n\tif root == nil {\n\t\treturn\n\t}\n\tq := []*TreeNode{root}\n\tleft := true\n\tfor len(q) > 0 {\n\t\tt := []int{}\n\t\tfor n := len(q); n > 0; n-- {\n\t\t\tnode := q[0]\n\t\t\tq = q[1:]\n\t\t\tt = append(t, node.Val)\n\t\t\tif node.Left != nil {\n\t\t\t\tq = append(q, node.Left)\n\t\t\t}\n\t\t\tif node.Right != nil {\n\t\t\t\tq = append(q, node.Right)\n\t\t\t}\n\t\t}\n\t\tif !left {\n\t\t\tfor i, j := 0, len(t)-1; i < j; i, j = i+1, j-1 {\n\t\t\t\tt[i], t[j] = t[j], t[i]\n\t\t\t}\n\t\t}\n\t\tans = append(ans, t)\n\t\tleft = !left\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

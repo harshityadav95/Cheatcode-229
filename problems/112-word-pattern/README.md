@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`word_pattern`)
 - Go: `code.go` (`Solve112`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+290+Word+Pattern+solution)
 
 ## Problem Statement
 

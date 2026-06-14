@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`find_median_from_data_stream`)
 - Go: `code.go` (`Solve186`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+295+Find+Median+from+Data+Stream+solution)
 
 ## Problem Statement
 

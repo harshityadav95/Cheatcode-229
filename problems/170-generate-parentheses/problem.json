@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+22+Generate+Parentheses+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0022.Generate Parentheses",
+  "sourcePythonCode": "class Solution:\n    def generateParenthesis(self, n: int) -> List[str]:\n        def dfs(l: int, r: int, t: str):\n            if l > n or r > n or l < r:\n                return\n            if l == n and r == n:\n                ans.append(t)\n                return\n            dfs(l + 1, r, t + \"(\")\n            dfs(l, r + 1, t + \")\")\n\n        ans = []\n        dfs(0, 0, \"\")\n        return ans",
+  "sourceGoCode": "func generateParenthesis(n int) (ans []string) {\n\tvar dfs func(int, int, string)\n\tdfs = func(l, r int, t string) {\n\t\tif l > n || r > n || l < r {\n\t\t\treturn\n\t\t}\n\t\tif l == n && r == n {\n\t\t\tans = append(ans, t)\n\t\t\treturn\n\t\t}\n\t\tdfs(l+1, r, t+\"(\")\n\t\tdfs(l, r+1, t+\")\")\n\t}\n\tdfs(0, 0, \"\")\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

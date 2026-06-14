@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`group_anagrams`)
 - Go: `code.go` (`Solve114`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+49+Group+Anagrams+solution)
 
 ## Problem Statement
 

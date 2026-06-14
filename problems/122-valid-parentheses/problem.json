@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+20+Valid+Parentheses+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0020.Valid Parentheses",
+  "sourcePythonCode": "class Solution:\n    def isValid(self, s: str) -> bool:\n        stk = []\n        d = {'()', '[]', '{}'}\n        for c in s:\n            if c in '({[':\n                stk.append(c)\n            elif not stk or stk.pop() + c not in d:\n                return False\n        return not stk",
+  "sourceGoCode": "func isValid(s string) bool {\n\tstk := []rune{}\n\tfor _, c := range s {\n\t\tif c == '(' || c == '{' || c == '[' {\n\t\t\tstk = append(stk, c)\n\t\t} else if len(stk) == 0 || !match(stk[len(stk)-1], c) {\n\t\t\treturn false\n\t\t} else {\n\t\t\tstk = stk[:len(stk)-1]\n\t\t}\n\t}\n\treturn len(stk) == 0\n}\n\nfunc match(l, r rune) bool {\n\treturn (l == '(' && r == ')') || (l == '[' && r == ']') || (l == '{' && r == '}')\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

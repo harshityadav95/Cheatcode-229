@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`construct_quad_tree`)
 - Go: `code.go` (`Solve174`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+427+Construct+Quad+Tree+solution)
 
 ## Problem Statement
 

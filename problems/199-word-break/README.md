@@ -7,6 +7,7 @@
 - Space: O(state)
 - Python: `code.py` (`word_break`)
 - Go: `code.go` (`Solve199`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+139+Word+Break+solution)
 
 ## Problem Statement
 

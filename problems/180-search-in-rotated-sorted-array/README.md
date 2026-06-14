@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`search_in_rotated_sorted_array`)
 - Go: `code.go` (`Solve180`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+33+Search+in+Rotated+Sorted+Array+solution)
 
 ## Problem Statement
 

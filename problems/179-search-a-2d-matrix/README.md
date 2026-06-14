@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`search_a_2d_matrix`)
 - Go: `code.go` (`Solve179`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+74+Search+a+2D+Matrix+solution)
 
 ## Problem Statement
 

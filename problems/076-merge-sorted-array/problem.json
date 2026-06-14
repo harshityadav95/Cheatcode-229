@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+88+Merge+Sorted+Array+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0088.Merge Sorted Array",
+  "sourcePythonCode": "class Solution:\n    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:\n        k = m + n - 1\n        i, j = m - 1, n - 1\n        while j >= 0:\n            if i >= 0 and nums1[i] > nums2[j]:\n                nums1[k] = nums1[i]\n                i -= 1\n            else:\n                nums1[k] = nums2[j]\n                j -= 1\n            k -= 1",
+  "sourceGoCode": "func merge(nums1 []int, m int, nums2 []int, n int) {\n\tfor i, j, k := m-1, n-1, m+n-1; j >= 0; k-- {\n\t\tif i >= 0 && nums1[i] > nums2[j] {\n\t\t\tnums1[k] = nums1[i]\n\t\t\ti--\n\t\t} else {\n\t\t\tnums1[k] = nums2[j]\n\t\t\tj--\n\t\t}\n\t}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

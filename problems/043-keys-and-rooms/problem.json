@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+841+Keys+and+Rooms+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0800-0899/0841.Keys and Rooms",
+  "sourcePythonCode": "class Solution:\n    def canVisitAllRooms(self, rooms: List[List[int]]) -> bool:\n        def dfs(i: int):\n            if i in vis:\n                return\n            vis.add(i)\n            for j in rooms[i]:\n                dfs(j)\n\n        vis = set()\n        dfs(0)\n        return len(vis) == len(rooms)",
+  "sourceGoCode": "func canVisitAllRooms(rooms [][]int) bool {\n\tn := len(rooms)\n\tcnt := 0\n\tvis := make([]bool, n)\n\tvar dfs func(int)\n\tdfs = func(i int) {\n\t\tif vis[i] {\n\t\t\treturn\n\t\t}\n\t\tvis[i] = true\n\t\tcnt++\n\t\tfor _, j := range rooms[i] {\n\t\t\tdfs(j)\n\t\t}\n\t}\n\tdfs(0)\n\treturn cnt == n\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

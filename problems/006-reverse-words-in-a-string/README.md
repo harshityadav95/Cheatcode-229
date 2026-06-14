@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`reverse_words_in_a_string`)
 - Go: `code.go` (`Solve006`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+151+Reverse+Words+in+a+String+solution)
 
 ## Problem Statement
 

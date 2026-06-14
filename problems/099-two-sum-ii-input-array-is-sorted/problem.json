@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+167+Two+Sum+II+-+Input+Array+Is+Sorted+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0167.Two Sum II - Input Array Is Sorted",
+  "sourcePythonCode": "class Solution:\n    def twoSum(self, numbers: List[int], target: int) -> List[int]:\n        n = len(numbers)\n        for i in range(n - 1):\n            x = target - numbers[i]\n            j = bisect_left(numbers, x, lo=i + 1)\n            if j < n and numbers[j] == x:\n                return [i + 1, j + 1]",
+  "sourceGoCode": "func twoSum(numbers []int, target int) []int {\n\tfor i, n := 0, len(numbers); ; i++ {\n\t\tx := target - numbers[i]\n\t\tj := sort.SearchInts(numbers[i+1:], x) + i + 1\n\t\tif j < n && numbers[j] == x {\n\t\t\treturn []int{i + 1, j + 1}\n\t\t}\n\t}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

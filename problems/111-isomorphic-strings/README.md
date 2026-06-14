@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`isomorphic_strings`)
 - Go: `code.go` (`Solve111`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+205+Isomorphic+Strings+solution)
 
 ## Problem Statement
 

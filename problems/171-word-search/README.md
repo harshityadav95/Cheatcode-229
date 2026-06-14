@@ -7,6 +7,7 @@
 - Space: O(depth + output)
 - Python: `code.py` (`word_search`)
 - Go: `code.go` (`Solve171`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+79+Word+Search+solution)
 
 ## Problem Statement
 

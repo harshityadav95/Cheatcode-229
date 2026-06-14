@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`merge_k_sorted_lists`)
 - Go: `code.go` (`Solve175`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+23+Merge+k+Sorted+Lists+solution)
 
 ## Problem Statement
 

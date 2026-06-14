@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+21+Merge+Two+Sorted+Lists+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0021.Merge Two Sorted Lists",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def mergeTwoLists(\n        self, list1: Optional[ListNode], list2: Optional[ListNode]\n    ) -> Optional[ListNode]:\n        if list1 is None or list2 is None:\n            return list1 or list2\n        if list1.val <= list2.val:\n            list1.next = self.mergeTwoLists(list1.next, list2)\n            return list1\n        else:\n            list2.next = self.mergeTwoLists(list1, list2.next)\n            return list2",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {\n\tif list1 == nil {\n\t\treturn list2\n\t}\n\tif list2 == nil {\n\t\treturn list1\n\t}\n\tif list1.Val <= list2.Val {\n\t\tlist1.Next = mergeTwoLists(list1.Next, list2)\n\t\treturn list1\n\t} else {\n\t\tlist2.Next = mergeTwoLists(list1, list2.Next)\n\t\treturn list2\n\t}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

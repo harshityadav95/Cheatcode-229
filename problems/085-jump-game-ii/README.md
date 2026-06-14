@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`jump_game_ii`)
 - Go: `code.go` (`Solve085`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+45+Jump+Game+II+solution)
 
 ## Problem Statement
 

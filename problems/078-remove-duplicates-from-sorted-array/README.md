@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`remove_duplicates_from_sorted_array`)
 - Go: `code.go` (`Solve078`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+26+Remove+Duplicates+from+Sorted+Array+solution)
 
 ## Problem Statement
 

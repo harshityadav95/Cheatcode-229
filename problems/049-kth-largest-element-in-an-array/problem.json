@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+215+Kth+Largest+Element+in+an+Array+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0215.Kth Largest Element in an Array",
+  "sourcePythonCode": "class Solution:\n    def findKthLargest(self, nums: List[int], k: int) -> int:\n        def quick_sort(l: int, r: int) -> int:\n            if l == r:\n                return nums[l]\n            i, j = l - 1, r + 1\n            x = nums[(l + r) >> 1]\n            while i < j:\n                while 1:\n                    i += 1\n                    if nums[i] >= x:\n                        break\n                while 1:\n                    j -= 1\n                    if nums[j] <= x:\n                        break\n                if i < j:\n                    nums[i], nums[j] = nums[j], nums[i]\n            if j < k:\n                return quick_sort(j + 1, r)\n            return quick_sort(l, j)\n\n        n = len(nums)\n        k = n - k\n        return quick_sort(0, n - 1)",
+  "sourceGoCode": "func findKthLargest(nums []int, k int) int {\n\tk = len(nums) - k\n\tvar quickSort func(l, r int) int\n\tquickSort = func(l, r int) int {\n\t\tif l == r {\n\t\t\treturn nums[l]\n\t\t}\n\t\ti, j := l-1, r+1\n\t\tx := nums[(l+r)>>1]\n\t\tfor i < j {\n\t\t\tfor {\n\t\t\t\ti++\n\t\t\t\tif nums[i] >= x {\n\t\t\t\t\tbreak\n\t\t\t\t}\n\t\t\t}\n\t\t\tfor {\n\t\t\t\tj--\n\t\t\t\tif nums[j] <= x {\n\t\t\t\t\tbreak\n\t\t\t\t}\n\t\t\t}\n\t\t\tif i < j {\n\t\t\t\tnums[i], nums[j] = nums[j], nums[i]\n\t\t\t}\n\t\t}\n\t\tif j < k {\n\t\t\treturn quickSort(j+1, r)\n\t\t}\n\t\treturn quickSort(l, j)\n\t}\n\treturn quickSort(0, len(nums)-1)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

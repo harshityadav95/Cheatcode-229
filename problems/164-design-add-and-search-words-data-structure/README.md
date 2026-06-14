@@ -7,6 +7,7 @@
 - Space: O(total characters)
 - Python: `code.py` (`design_add_and_search_words_data_structure`)
 - Go: `code.go` (`Solve164`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+211+Design+Add+and+Search+Words+Data+Structure+solution)
 
 ## Problem Statement
 

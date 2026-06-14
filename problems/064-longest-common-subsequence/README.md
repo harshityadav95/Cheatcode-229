@@ -7,6 +7,7 @@
 - Space: O(n*m) or O(1)
 - Python: `code.py` (`longest_common_subsequence`)
 - Go: `code.go` (`Solve064`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1143+Longest+Common+Subsequence+solution)
 
 ## Problem Statement
 

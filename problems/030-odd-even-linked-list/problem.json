@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+328+Odd+Even+Linked+List+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0300-0399/0328.Odd Even Linked List",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:\n        if head is None:\n            return None\n        a = head\n        b = c = head.next\n        while b and b.next:\n            a.next = b.next\n            a = a.next\n            b.next = a.next\n            b = b.next\n        a.next = c\n        return head",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc oddEvenList(head *ListNode) *ListNode {\n\tif head == nil {\n\t\treturn nil\n\t}\n\ta := head\n\tb, c := head.Next, head.Next\n\tfor b != nil && b.Next != nil {\n\t\ta.Next = b.Next\n\t\ta = a.Next\n\t\tb.Next = a.Next\n\t\tb = b.Next\n\t}\n\ta.Next = c\n\treturn head\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

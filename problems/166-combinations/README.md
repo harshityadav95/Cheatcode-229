@@ -7,6 +7,7 @@
 - Space: O(depth + output)
 - Python: `code.py` (`combinations`)
 - Go: `code.go` (`Solve166`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+77+Combinations+solution)
 
 ## Problem Statement
 

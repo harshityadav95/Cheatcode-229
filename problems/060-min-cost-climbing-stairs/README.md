@@ -7,6 +7,7 @@
 - Space: O(state)
 - Python: `code.py` (`min_cost_climbing_stairs`)
 - Go: `code.go` (`Solve060`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+746+Min+Cost+Climbing+Stairs+solution)
 
 ## Problem Statement
 

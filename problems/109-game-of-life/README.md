@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`game_of_life`)
 - Go: `code.go` (`Solve109`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+289+Game+of+Life+solution)
 
 ## Problem Statement
 

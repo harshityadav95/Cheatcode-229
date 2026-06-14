@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+104+Maximum+Depth+of+Binary+Tree+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0104.Maximum Depth of Binary Tree",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def maxDepth(self, root: TreeNode) -> int:\n        if root is None:\n            return 0\n        l, r = self.maxDepth(root.left), self.maxDepth(root.right)\n        return 1 + max(l, r)",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc maxDepth(root *TreeNode) int {\n\tif root == nil {\n\t\treturn 0\n\t}\n\tl, r := maxDepth(root.Left), maxDepth(root.Right)\n\treturn 1 + max(l, r)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

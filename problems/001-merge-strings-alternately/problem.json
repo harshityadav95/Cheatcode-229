@@ -98,6 +98,10 @@
       "kind": "solutions"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1768+Merge+Strings+Alternately+solution",
+  "leetcodeMainPath": "leetcode-main/solution/1700-1799/1768.Merge Strings Alternately",
+  "sourcePythonCode": "class Solution:\n    def mergeAlternately(self, word1: str, word2: str) -> str:\n        return ''.join(a + b for a, b in zip_longest(word1, word2, fillvalue=''))",
+  "sourceGoCode": "func mergeAlternately(word1 string, word2 string) string {\n\tm, n := len(word1), len(word2)\n\tans := make([]byte, 0, m+n)\n\tfor i := 0; i < m || i < n; i++ {\n\t\tif i < m {\n\t\t\tans = append(ans, word1[i])\n\t\t}\n\t\tif i < n {\n\t\t\tans = append(ans, word2[i])\n\t\t}\n\t}\n\treturn string(ans)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

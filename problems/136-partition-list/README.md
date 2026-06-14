@@ -7,6 +7,7 @@
 - Space: O(1) unless recursion/map
 - Python: `code.py` (`partition_list`)
 - Go: `code.go` (`Solve136`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+86+Partition+List+solution)
 
 ## Problem Statement
 

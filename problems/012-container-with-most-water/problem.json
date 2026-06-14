@@ -95,6 +95,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+11+Container+With+Most+Water+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0011.Container With Most Water",
+  "sourcePythonCode": "class Solution:\n    def maxArea(self, height: List[int]) -> int:\n        l, r = 0, len(height) - 1\n        ans = 0\n        while l < r:\n            t = min(height[l], height[r]) * (r - l)\n            ans = max(ans, t)\n            if height[l] < height[r]:\n                l += 1\n            else:\n                r -= 1\n        return ans",
+  "sourceGoCode": "func maxArea(height []int) (ans int) {\n\tl, r := 0, len(height)-1\n\tfor l < r {\n\t\tt := min(height[l], height[r]) * (r - l)\n\t\tans = max(ans, t)\n\t\tif height[l] < height[r] {\n\t\t\tl++\n\t\t} else {\n\t\t\tr--\n\t\t}\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

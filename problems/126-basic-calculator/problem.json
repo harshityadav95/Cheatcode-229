@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+224+Basic+Calculator+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0224.Basic Calculator",
+  "sourcePythonCode": "class Solution:\n    def calculate(self, s: str) -> int:\n        stk = []\n        ans, sign = 0, 1\n        i, n = 0, len(s)\n        while i < n:\n            if s[i].isdigit():\n                x = 0\n                j = i\n                while j < n and s[j].isdigit():\n                    x = x * 10 + int(s[j])\n                    j += 1\n                ans += sign * x\n                i = j - 1\n            elif s[i] == \"+\":\n                sign = 1\n            elif s[i] == \"-\":\n                sign = -1\n            elif s[i] == \"(\":\n                stk.append(ans)\n                stk.append(sign)\n                ans, sign = 0, 1\n            elif s[i] == \")\":\n                ans = stk.pop() * ans + stk.pop()\n            i += 1\n        return ans",
+  "sourceGoCode": "func calculate(s string) (ans int) {\n\tstk := []int{}\n\tsign := 1\n\tn := len(s)\n\tfor i := 0; i < n; i++ {\n\t\tswitch s[i] {\n\t\tcase ' ':\n\t\tcase '+':\n\t\t\tsign = 1\n\t\tcase '-':\n\t\t\tsign = -1\n\t\tcase '(':\n\t\t\tstk = append(stk, ans)\n\t\t\tstk = append(stk, sign)\n\t\t\tans, sign = 0, 1\n\t\tcase ')':\n\t\t\tans *= stk[len(stk)-1]\n\t\t\tstk = stk[:len(stk)-1]\n\t\t\tans += stk[len(stk)-1]\n\t\t\tstk = stk[:len(stk)-1]\n\t\tdefault:\n\t\t\tx := 0\n\t\t\tj := i\n\t\t\tfor ; j < n && '0' <= s[j] && s[j] <= '9'; j++ {\n\t\t\t\tx = x*10 + int(s[j]-'0')\n\t\t\t}\n\t\t\tans += sign * x\n\t\t\ti = j - 1\n\t\t}\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

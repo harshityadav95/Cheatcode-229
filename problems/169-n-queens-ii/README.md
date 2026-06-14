@@ -7,6 +7,7 @@
 - Space: O(depth + output)
 - Python: `code.py` (`n_queens_ii`)
 - Go: `code.go` (`Solve169`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+52+N-Queens+II+solution)
 
 ## Problem Statement
 

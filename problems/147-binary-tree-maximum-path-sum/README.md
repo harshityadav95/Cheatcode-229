@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`binary_tree_maximum_path_sum`)
 - Go: `code.go` (`Solve147`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+124+Binary+Tree+Maximum+Path+Sum+solution)
 
 ## Problem Statement
 

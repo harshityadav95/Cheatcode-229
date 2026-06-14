@@ -95,6 +95,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1+Two+Sum+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0001.Two Sum",
+  "sourcePythonCode": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        d = {}\n        for i, x in enumerate(nums):\n            if (y := target - x) in d:\n                return [d[y], i]\n            d[x] = i",
+  "sourceGoCode": "func twoSum(nums []int, target int) []int {\n\td := map[int]int{}\n\tfor i := 0; ; i++ {\n\t\tx := nums[i]\n\t\ty := target - x\n\t\tif j, ok := d[y]; ok {\n\t\t\treturn []int{j, i}\n\t\t}\n\t\td[x] = i\n\t}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

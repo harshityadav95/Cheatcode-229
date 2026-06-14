@@ -88,6 +88,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+34+Find+First+and+Last+Position+of+Element+in+Sorted+Array+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0034.Find First and Last Position of Element in Sorted Array",
+  "sourcePythonCode": "class Solution:\n    def searchRange(self, nums: List[int], target: int) -> List[int]:\n        l = bisect_left(nums, target)\n        r = bisect_left(nums, target + 1)\n        return [-1, -1] if l == r else [l, r - 1]",
+  "sourceGoCode": "func searchRange(nums []int, target int) []int {\n\tl := sort.SearchInts(nums, target)\n\tr := sort.SearchInts(nums, target+1)\n\tif l == r {\n\t\treturn []int{-1, -1}\n\t}\n\treturn []int{l, r - 1}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

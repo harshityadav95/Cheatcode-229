@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+433+Minimum+Genetic+Mutation+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0400-0499/0433.Minimum Genetic Mutation",
+  "sourcePythonCode": "class Solution:\n    def minMutation(self, startGene: str, endGene: str, bank: List[str]) -> int:\n        q = deque([(startGene, 0)])\n        vis = {startGene}\n        while q:\n            gene, depth = q.popleft()\n            if gene == endGene:\n                return depth\n            for nxt in bank:\n                diff = sum(a != b for a, b in zip(gene, nxt))\n                if diff == 1 and nxt not in vis:\n                    q.append((nxt, depth + 1))\n                    vis.add(nxt)\n        return -1",
+  "sourceGoCode": "func minMutation(startGene string, endGene string, bank []string) int {\n\ttype pair struct {\n\t\ts     string\n\t\tdepth int\n\t}\n\tq := []pair{pair{startGene, 0}}\n\tvis := map[string]bool{startGene: true}\n\tfor len(q) > 0 {\n\t\tp := q[0]\n\t\tq = q[1:]\n\t\tif p.s == endGene {\n\t\t\treturn p.depth\n\t\t}\n\t\tfor _, next := range bank {\n\t\t\tdiff := 0\n\t\t\tfor i := 0; i < len(startGene); i++ {\n\t\t\t\tif p.s[i] != next[i] {\n\t\t\t\t\tdiff++\n\t\t\t\t}\n\t\t\t}\n\t\t\tif diff == 1 && !vis[next] {\n\t\t\t\tvis[next] = true\n\t\t\t\tq = append(q, pair{next, p.depth + 1})\n\t\t\t}\n\t\t}\n\t}\n\treturn -1\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -7,6 +7,7 @@
 - Space: O(V+E)
 - Python: `code.py` (`alien_dictionary`)
 - Go: `code.go` (`Solve217`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+269+Alien+Dictionary+solution)
 
 ## Problem Statement
 

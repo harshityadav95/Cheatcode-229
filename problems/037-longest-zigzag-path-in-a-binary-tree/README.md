@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`longest_zigzag_path_in_a_binary_tree`)
 - Go: `code.go` (`Solve037`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1372+Longest+ZigZag+Path+in+a+Binary+Tree+solution)
 
 ## Problem Statement
 

@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+27+Remove+Element+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0027.Remove Element",
+  "sourcePythonCode": "class Solution:\n    def removeElement(self, nums: List[int], val: int) -> int:\n        k = 0\n        for x in nums:\n            if x != val:\n                nums[k] = x\n                k += 1\n        return k",
+  "sourceGoCode": "func removeElement(nums []int, val int) int {\n\tk := 0\n\tfor _, x := range nums {\n\t\tif x != val {\n\t\t\tnums[k] = x\n\t\t\tk++\n\t\t}\n\t}\n\treturn k\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

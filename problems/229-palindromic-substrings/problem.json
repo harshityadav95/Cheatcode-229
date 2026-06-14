@@ -86,6 +86,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+647+Palindromic+Substrings+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0600-0699/0647.Palindromic Substrings",
+  "sourcePythonCode": "class Solution:\n    def countSubstrings(self, s: str) -> int:\n        ans, n = 0, len(s)\n        for k in range(n * 2 - 1):\n            i, j = k // 2, (k + 1) // 2\n            while ~i and j < n and s[i] == s[j]:\n                ans += 1\n                i, j = i - 1, j + 1\n        return ans",
+  "sourceGoCode": "func countSubstrings(s string) int {\n\tans, n := 0, len(s)\n\tfor k := 0; k < n*2-1; k++ {\n\t\ti, j := k/2, (k+1)/2\n\t\tfor i >= 0 && j < n && s[i] == s[j] {\n\t\t\tans++\n\t\t\ti, j = i-1, j+1\n\t\t}\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

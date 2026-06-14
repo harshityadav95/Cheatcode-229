@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`unique_number_of_occurrences`)
 - Go: `code.go` (`Solve021`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1207+Unique+Number+of+Occurrences+solution)
 
 ## Problem Statement
 

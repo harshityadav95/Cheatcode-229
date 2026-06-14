@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`minimum_absolute_difference_in_bst`)
 - Go: `code.go` (`Solve153`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+530+Minimum+Absolute+Difference+in+BST+solution)
 
 ## Problem Statement
 

@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`kth_smallest_element_in_a_bst`)
 - Go: `code.go` (`Solve154`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+230+Kth+Smallest+Element+in+a+BST+solution)
 
 ## Problem Statement
 

@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+143+Reorder+List+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0143.Reorder List",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def reorderList(self, head: Optional[ListNode]) -> None:\n        fast = slow = head\n        while fast.next and fast.next.next:\n            slow = slow.next\n            fast = fast.next.next\n\n        cur = slow.next\n        slow.next = None\n\n        pre = None\n        while cur:\n            t = cur.next\n            cur.next = pre\n            pre, cur = cur, t\n        cur = head\n\n        while pre:\n            t = pre.next\n            pre.next = cur.next\n            cur.next = pre\n            cur, pre = pre.next, t",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc reorderList(head *ListNode) {\n\tfast, slow := head, head\n\tfor fast.Next != nil && fast.Next.Next != nil {\n\t\tslow, fast = slow.Next, fast.Next.Next\n\t}\n\n\tcur := slow.Next\n\tslow.Next = nil\n\n\tvar pre *ListNode\n\tfor cur != nil {\n\t\tt := cur.Next\n\t\tcur.Next = pre\n\t\tpre, cur = cur, t\n\t}\n\tcur = head\n\n\tfor pre != nil {\n\t\tt := pre.Next\n\t\tpre.Next = cur.Next\n\t\tcur.Next = pre\n\t\tcur, pre = pre.Next, t\n\t}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

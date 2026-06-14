@@ -95,6 +95,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+371+Sum+of+Two+Integers+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0300-0399/0371.Sum of Two Integers",
+  "sourcePythonCode": "class Solution:\n    def getSum(self, a: int, b: int) -> int:\n        a, b = a & 0xFFFFFFFF, b & 0xFFFFFFFF\n        while b:\n            carry = ((a & b) << 1) & 0xFFFFFFFF\n            a, b = a ^ b, carry\n        return a if a < 0x80000000 else ~(a ^ 0xFFFFFFFF)",
+  "sourceGoCode": "func getSum(a int, b int) int {\n\tfor b != 0 {\n\t\ts := a ^ b\n\t\tb = (a & b) << 1\n\t\ta = s\n\t}\n\treturn a\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

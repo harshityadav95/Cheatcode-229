@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`increasing_triplet_subsequence`)
 - Go: `code.go` (`Solve008`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+334+Increasing+Triplet+Subsequence+solution)
 
 ## Problem Statement
 

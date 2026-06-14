@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`candy`)
 - Go: `code.go` (`Solve089`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+135+Candy+solution)
 
 ## Problem Statement
 

@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`reverse_vowels_of_a_string`)
 - Go: `code.go` (`Solve005`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+345+Reverse+Vowels+of+a+String+solution)
 
 ## Problem Statement
 

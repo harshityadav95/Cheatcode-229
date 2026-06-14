@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+271+Encode+and+Decode+Strings+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0271.Encode and Decode Strings",
+  "sourcePythonCode": "class Codec:\n    def encode(self, strs: List[str]) -> str:\n        \"\"\"Encodes a list of strings to a single string.\"\"\"\n        ans = []\n        for s in strs:\n            ans.append(\"{:4}\".format(len(s)) + s)\n        return \"\".join(ans)\n\n    def decode(self, s: str) -> List[str]:\n        \"\"\"Decodes a single string to a list of strings.\"\"\"\n        ans = []\n        i, n = 0, len(s)\n        while i < n:\n            size = int(s[i : i + 4])\n            i += 4\n            ans.append(s[i : i + size])\n            i += size\n        return ans\n\n\n# Your Codec object will be instantiated and called as such:\n# codec = Codec()\n# codec.decode(codec.encode(strs))",
+  "sourceGoCode": "type Codec struct {\n}\n\n// Encodes a list of strings to a single string.\nfunc (codec *Codec) Encode(strs []string) string {\n\tans := &bytes.Buffer{}\n\tfor _, s := range strs {\n\t\tt := fmt.Sprintf(\"%04d\", len(s))\n\t\tans.WriteString(t)\n\t\tans.WriteString(s)\n\t}\n\treturn ans.String()\n}\n\n// Decodes a single string to a list of strings.\nfunc (codec *Codec) Decode(strs string) []string {\n\tans := []string{}\n\ti, n := 0, len(strs)\n\tfor i < n {\n\t\tt := strs[i : i+4]\n\t\ti += 4\n\t\tsize, _ := strconv.Atoi(t)\n\t\tans = append(ans, strs[i:i+size])\n\t\ti += size\n\t}\n\treturn ans\n}\n\n// Your Codec object will be instantiated and called as such:\n// var codec Codec\n// codec.Decode(codec.Encode(strs));",
   "files": {
     "python": "code.py",
     "go": "code.go"

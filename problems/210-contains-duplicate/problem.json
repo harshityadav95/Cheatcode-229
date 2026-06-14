@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+217+Contains+Duplicate+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0217.Contains Duplicate",
+  "sourcePythonCode": "class Solution:\n    def containsDuplicate(self, nums: List[int]) -> bool:\n        return any(a == b for a, b in pairwise(sorted(nums)))",
+  "sourceGoCode": "func containsDuplicate(nums []int) bool {\n\tsort.Ints(nums)\n\tfor i, v := range nums[1:] {\n\t\tif v == nums[i] {\n\t\t\treturn true\n\t\t}\n\t}\n\treturn false\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+724+Find+Pivot+Index+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0700-0799/0724.Find Pivot Index",
+  "sourcePythonCode": "class Solution:\n    def pivotIndex(self, nums: List[int]) -> int:\n        left, right = 0, sum(nums)\n        for i, x in enumerate(nums):\n            right -= x\n            if left == right:\n                return i\n            left += x\n        return -1",
+  "sourceGoCode": "func pivotIndex(nums []int) int {\n\tvar left, right int\n\tfor _, x := range nums {\n\t\tright += x\n\t}\n\tfor i, x := range nums {\n\t\tright -= x\n\t\tif left == right {\n\t\t\treturn i\n\t\t}\n\t\tleft += x\n\t}\n\treturn -1\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

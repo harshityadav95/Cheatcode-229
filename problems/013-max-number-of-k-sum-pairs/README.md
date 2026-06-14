@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`max_number_of_k_sum_pairs`)
 - Go: `code.go` (`Solve013`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1679+Max+Number+of+K-Sum+Pairs+solution)
 
 ## Problem Statement
 

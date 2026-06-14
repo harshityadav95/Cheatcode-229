@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`find_the_index_of_the_first_occurrence_in_a_string`)
 - Go: `code.go` (`Solve096`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+28+Find+the+Index+of+the+First+Occurrence+in+a+String+solution)
 
 ## Problem Statement
 

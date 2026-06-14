@@ -7,6 +7,7 @@
 - Space: O(w)
 - Python: `code.py` (`binary_tree_zigzag_level_order_traversal`)
 - Go: `code.go` (`Solve152`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+103+Binary+Tree+Zigzag+Level+Order+Traversal+solution)
 
 ## Problem Statement
 

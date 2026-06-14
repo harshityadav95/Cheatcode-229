@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`insert_interval`)
 - Go: `code.go` (`Solve121`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+57+Insert+Interval+solution)
 
 ## Problem Statement
 

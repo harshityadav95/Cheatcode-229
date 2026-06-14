@@ -7,6 +7,7 @@
 - Space: O(V+E)
 - Python: `code.py` (`keys_and_rooms`)
 - Go: `code.go` (`Solve043`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+841+Keys+and+Rooms+solution)
 
 ## Problem Statement
 

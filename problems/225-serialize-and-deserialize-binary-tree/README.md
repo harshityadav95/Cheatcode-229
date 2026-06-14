@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`serialize_and_deserialize_binary_tree`)
 - Go: `code.go` (`Solve225`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+297+Serialize+and+Deserialize+Binary+Tree+solution)
 
 ## Problem Statement
 

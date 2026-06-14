@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+205+Isomorphic+Strings+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0205.Isomorphic Strings",
+  "sourcePythonCode": "class Solution:\n    def isIsomorphic(self, s: str, t: str) -> bool:\n        d1 = {}\n        d2 = {}\n        for a, b in zip(s, t):\n            if (a in d1 and d1[a] != b) or (b in d2 and d2[b] != a):\n                return False\n            d1[a] = b\n            d2[b] = a\n        return True",
+  "sourceGoCode": "func isIsomorphic(s string, t string) bool {\n\td1 := [256]int{}\n\td2 := [256]int{}\n\tfor i := range s {\n\t\tif d1[s[i]] != d2[t[i]] {\n\t\t\treturn false\n\t\t}\n\t\td1[s[i]] = i + 1\n\t\td2[t[i]] = i + 1\n\t}\n\treturn true\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

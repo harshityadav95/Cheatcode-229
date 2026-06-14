@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+2095+Delete+the+Middle+Node+of+a+Linked+List+solution",
+  "leetcodeMainPath": "leetcode-main/solution/2000-2099/2095.Delete the Middle Node of a Linked List",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:\n        dummy = ListNode(next=head)\n        slow, fast = dummy, head\n        while fast and fast.next:\n            slow = slow.next\n            fast = fast.next.next\n        slow.next = slow.next.next\n        return dummy.next",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc deleteMiddle(head *ListNode) *ListNode {\n\tdummy := &ListNode{Val: 0, Next: head}\n\tslow, fast := dummy, dummy.Next\n\tfor fast != nil && fast.Next != nil {\n\t\tslow, fast = slow.Next, fast.Next.Next\n\t}\n\tslow.Next = slow.Next.Next\n\treturn dummy.Next\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

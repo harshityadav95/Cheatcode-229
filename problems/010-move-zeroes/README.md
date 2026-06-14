@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`move_zeroes`)
 - Go: `code.go` (`Solve010`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+283+Move+Zeroes+solution)
 
 ## Problem Statement
 

@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+323+Number+of+Connected+Components+in+an+Undirected+Graph+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0300-0399/0323.Number of Connected Components in an Undirected Graph",
+  "sourcePythonCode": "class Solution:\n    def countComponents(self, n: int, edges: List[List[int]]) -> int:\n        def dfs(i: int) -> int:\n            if i in vis:\n                return 0\n            vis.add(i)\n            for j in g[i]:\n                dfs(j)\n            return 1\n\n        g = [[] for _ in range(n)]\n        for a, b in edges:\n            g[a].append(b)\n            g[b].append(a)\n        vis = set()\n        return sum(dfs(i) for i in range(n))",
+  "sourceGoCode": "func countComponents(n int, edges [][]int) (ans int) {\n\tg := make([][]int, n)\n\tfor _, e := range edges {\n\t\ta, b := e[0], e[1]\n\t\tg[a] = append(g[a], b)\n\t\tg[b] = append(g[b], a)\n\t}\n\tvis := make([]bool, n)\n\tvar dfs func(int) int\n\tdfs = func(i int) int {\n\t\tif vis[i] {\n\t\t\treturn 0\n\t\t}\n\t\tvis[i] = true\n\t\tfor _, j := range g[i] {\n\t\t\tdfs(j)\n\t\t}\n\t\treturn 1\n\t}\n\tfor i := range g {\n\t\tans += dfs(i)\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

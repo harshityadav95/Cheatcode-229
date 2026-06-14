@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`minimum_window_substring`)
 - Go: `code.go` (`Solve104`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+76+Minimum+Window+Substring+solution)
 
 ## Problem Statement
 

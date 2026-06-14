@@ -88,6 +88,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+289+Game+of+Life+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0289.Game of Life",
+  "sourcePythonCode": "class Solution:\n    def gameOfLife(self, board: List[List[int]]) -> None:\n        m, n = len(board), len(board[0])\n        for i in range(m):\n            for j in range(n):\n                live = -board[i][j]\n                for x in range(i - 1, i + 2):\n                    for y in range(j - 1, j + 2):\n                        if 0 <= x < m and 0 <= y < n and board[x][y] > 0:\n                            live += 1\n                if board[i][j] and (live < 2 or live > 3):\n                    board[i][j] = 2\n                if board[i][j] == 0 and live == 3:\n                    board[i][j] = -1\n        for i in range(m):\n            for j in range(n):\n                if board[i][j] == 2:\n                    board[i][j] = 0\n                elif board[i][j] == -1:\n                    board[i][j] = 1",
+  "sourceGoCode": "func gameOfLife(board [][]int) {\n\tm, n := len(board), len(board[0])\n\tfor i := 0; i < m; i++ {\n\t\tfor j, v := range board[i] {\n\t\t\tlive := -v\n\t\t\tfor x := i - 1; x <= i+1; x++ {\n\t\t\t\tfor y := j - 1; y <= j+1; y++ {\n\t\t\t\t\tif x >= 0 && x < m && y >= 0 && y < n && board[x][y] > 0 {\n\t\t\t\t\t\tlive++\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\tif v == 1 && (live < 2 || live > 3) {\n\t\t\t\tboard[i][j] = 2\n\t\t\t}\n\t\t\tif v == 0 && live == 3 {\n\t\t\t\tboard[i][j] = -1\n\t\t\t}\n\t\t}\n\t}\n\tfor i := 0; i < m; i++ {\n\t\tfor j, v := range board[i] {\n\t\t\tif v == 2 {\n\t\t\t\tboard[i][j] = 0\n\t\t\t}\n\t\t\tif v == -1 {\n\t\t\t\tboard[i][j] = 1\n\t\t\t}\n\t\t}\n\t}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

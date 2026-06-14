@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+36+Valid+Sudoku+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0036.Valid Sudoku",
+  "sourcePythonCode": "class Solution:\n    def isValidSudoku(self, board: List[List[str]]) -> bool:\n        row = [[False] * 9 for _ in range(9)]\n        col = [[False] * 9 for _ in range(9)]\n        sub = [[False] * 9 for _ in range(9)]\n        for i in range(9):\n            for j in range(9):\n                c = board[i][j]\n                if c == '.':\n                    continue\n                num = int(c) - 1\n                k = i // 3 * 3 + j // 3\n                if row[i][num] or col[j][num] or sub[k][num]:\n                    return False\n                row[i][num] = True\n                col[j][num] = True\n                sub[k][num] = True\n        return True",
+  "sourceGoCode": "func isValidSudoku(board [][]byte) bool {\n\trow, col, sub := [9][9]bool{}, [9][9]bool{}, [9][9]bool{}\n\tfor i := 0; i < 9; i++ {\n\t\tfor j := 0; j < 9; j++ {\n\t\t\tnum := board[i][j] - byte('1')\n\t\t\tif num < 0 || num > 9 {\n\t\t\t\tcontinue\n\t\t\t}\n\t\t\tk := i/3*3 + j/3\n\t\t\tif row[i][num] || col[j][num] || sub[k][num] {\n\t\t\t\treturn false\n\t\t\t}\n\t\t\trow[i][num] = true\n\t\t\tcol[j][num] = true\n\t\t\tsub[k][num] = true\n\t\t}\n\t}\n\treturn true\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`counting_bits`)
 - Go: `code.go` (`Solve067`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+338+Counting+Bits+solution)
 
 ## Problem Statement
 

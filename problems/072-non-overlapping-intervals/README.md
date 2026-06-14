@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`non_overlapping_intervals`)
 - Go: `code.go` (`Solve072`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+435+Non-overlapping+Intervals+solution)
 
 ## Problem Statement
 

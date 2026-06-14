@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`merge_strings_alternately`)
 - Go: `code.go` (`Solve001`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1768+Merge+Strings+Alternately+solution)
 
 ## Problem Statement
 

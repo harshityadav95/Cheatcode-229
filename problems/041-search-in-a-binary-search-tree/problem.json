@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+700+Search+in+a+Binary+Search+Tree+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0700-0799/0700.Search in a Binary Search Tree",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:\n        if root is None or root.val == val:\n            return root\n        return (\n            self.searchBST(root.left, val)\n            if root.val > val\n            else self.searchBST(root.right, val)\n        )",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\n func searchBST(root *TreeNode, val int) *TreeNode {\n    if root == nil || root.Val == val {\n        return root\n    }\n    if root.Val > val {\n        return searchBST(root.Left, val)\n    }\n    return searchBST(root.Right, val)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`contains_duplicate`)
 - Go: `code.go` (`Solve210`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+217+Contains+Duplicate+solution)
 
 ## Problem Statement
 

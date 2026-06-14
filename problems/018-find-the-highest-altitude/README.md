@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`find_the_highest_altitude`)
 - Go: `code.go` (`Solve018`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1732+Find+the+Highest+Altitude+solution)
 
 ## Problem Statement
 

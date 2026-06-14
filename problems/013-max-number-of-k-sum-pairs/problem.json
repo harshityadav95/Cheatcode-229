@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1679+Max+Number+of+K-Sum+Pairs+solution",
+  "leetcodeMainPath": "leetcode-main/solution/1600-1699/1679.Max Number of K-Sum Pairs",
+  "sourcePythonCode": "class Solution:\n    def maxOperations(self, nums: List[int], k: int) -> int:\n        nums.sort()\n        l, r, ans = 0, len(nums) - 1, 0\n        while l < r:\n            s = nums[l] + nums[r]\n            if s == k:\n                ans += 1\n                l, r = l + 1, r - 1\n            elif s > k:\n                r -= 1\n            else:\n                l += 1\n        return ans",
+  "sourceGoCode": "func maxOperations(nums []int, k int) int {\n\tsort.Ints(nums)\n\tl, r, ans := 0, len(nums)-1, 0\n\tfor l < r {\n\t\ts := nums[l] + nums[r]\n\t\tif s == k {\n\t\t\tans++\n\t\t\tl++\n\t\t\tr--\n\t\t} else if s > k {\n\t\t\tr--\n\t\t} else {\n\t\t\tl++\n\t\t}\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

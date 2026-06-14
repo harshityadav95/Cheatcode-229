@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`total_cost_to_hire_k_workers`)
 - Go: `code.go` (`Solve052`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+2462+Total+Cost+to+Hire+K+Workers+solution)
 
 ## Problem Statement
 

@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`maximum_number_of_vowels_in_a_substring_of_given_length`)
 - Go: `code.go` (`Solve015`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1456+Maximum+Number+of+Vowels+in+a+Substring+of+Given+Length+solution)
 
 ## Problem Statement
 

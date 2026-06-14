@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+134+Gas+Station+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0134.Gas Station",
+  "sourcePythonCode": "class Solution:\n    def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:\n        n = len(gas)\n        i = j = n - 1\n        cnt = s = 0\n        while cnt < n:\n            s += gas[j] - cost[j]\n            cnt += 1\n            j = (j + 1) % n\n            while s < 0 and cnt < n:\n                i -= 1\n                s += gas[i] - cost[i]\n                cnt += 1\n        return -1 if s < 0 else i",
+  "sourceGoCode": "func canCompleteCircuit(gas []int, cost []int) int {\n\tn := len(gas)\n\ti, j := n-1, n-1\n\tcnt, s := 0, 0\n\tfor cnt < n {\n\t\ts += gas[j] - cost[j]\n\t\tcnt++\n\t\tj = (j + 1) % n\n\t\tfor s < 0 && cnt < n {\n\t\t\ti--\n\t\t\ts += gas[i] - cost[i]\n\t\t\tcnt++\n\t\t}\n\t}\n\tif s < 0 {\n\t\treturn -1\n\t}\n\treturn i\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

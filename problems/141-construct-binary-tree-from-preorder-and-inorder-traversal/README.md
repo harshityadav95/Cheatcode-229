@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`construct_binary_tree_from_preorder_and_inorder_traversal`)
 - Go: `code.go` (`Solve141`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+105+Construct+Binary+Tree+from+Preorder+and+Inorder+Traversal+solution)
 
 ## Problem Statement
 

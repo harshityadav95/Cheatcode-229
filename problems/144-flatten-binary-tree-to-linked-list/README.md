@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`flatten_binary_tree_to_linked_list`)
 - Go: `code.go` (`Solve144`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+114+Flatten+Binary+Tree+to+Linked+List+solution)
 
 ## Problem Statement
 

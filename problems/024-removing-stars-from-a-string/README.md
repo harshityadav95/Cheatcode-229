@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`removing_stars_from_a_string`)
 - Go: `code.go` (`Solve024`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+2390+Removing+Stars+From+a+String+solution)
 
 ## Problem Statement
 

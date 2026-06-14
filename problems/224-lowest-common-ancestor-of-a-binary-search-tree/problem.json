@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+235+Lowest+Common+Ancestor+of+a+Binary+Search+Tree+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0235.Lowest Common Ancestor of a Binary Search Tree",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\n\nclass Solution:\n    def lowestCommonAncestor(\n        self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode'\n    ) -> 'TreeNode':\n        while 1:\n            if root.val < min(p.val, q.val):\n                root = root.right\n            elif root.val > max(p.val, q.val):\n                root = root.left\n            else:\n                return root",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val   int\n *     Left  *TreeNode\n *     Right *TreeNode\n * }\n */\n\nfunc lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {\n\tfor {\n\t\tif root.Val < min(p.Val, q.Val) {\n\t\t\troot = root.Right\n\t\t} else if root.Val > max(p.Val, q.Val) {\n\t\t\troot = root.Left\n\t\t} else {\n\t\t\treturn root\n\t\t}\n\t}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

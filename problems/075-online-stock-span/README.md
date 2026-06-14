@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`online_stock_span`)
 - Go: `code.go` (`Solve075`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+901+Online+Stock+Span+solution)
 
 ## Problem Statement
 

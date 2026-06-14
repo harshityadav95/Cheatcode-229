@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+202+Happy+Number+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0202.Happy Number",
+  "sourcePythonCode": "class Solution:\n    def isHappy(self, n: int) -> bool:\n        vis = set()\n        while n != 1 and n not in vis:\n            vis.add(n)\n            x = 0\n            while n:\n                n, v = divmod(n, 10)\n                x += v * v\n            n = x\n        return n == 1",
+  "sourceGoCode": "func isHappy(n int) bool {\n\tvis := map[int]bool{}\n\tfor n != 1 && !vis[n] {\n\t\tvis[n] = true\n\t\tx := 0\n\t\tfor ; n > 0; n /= 10 {\n\t\t\tx += (n % 10) * (n % 10)\n\t\t}\n\t\tn = x\n\t}\n\treturn n == 1\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

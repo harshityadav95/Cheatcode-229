@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+530+Minimum+Absolute+Difference+in+BST+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0500-0599/0530.Minimum Absolute Difference in BST",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def getMinimumDifference(self, root: Optional[TreeNode]) -> int:\n        def dfs(root: Optional[TreeNode]):\n            if root is None:\n                return\n            dfs(root.left)\n            nonlocal pre, ans\n            ans = min(ans, root.val - pre)\n            pre = root.val\n            dfs(root.right)\n\n        pre = -inf\n        ans = inf\n        dfs(root)\n        return ans",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc getMinimumDifference(root *TreeNode) int {\n\tconst inf int = 1 << 30\n\tans, pre := inf, -inf\n\tvar dfs func(*TreeNode)\n\tdfs = func(root *TreeNode) {\n\t\tif root == nil {\n\t\t\treturn\n\t\t}\n\t\tdfs(root.Left)\n\t\tans = min(ans, root.Val-pre)\n\t\tpre = root.Val\n\t\tdfs(root.Right)\n\t}\n\tdfs(root)\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

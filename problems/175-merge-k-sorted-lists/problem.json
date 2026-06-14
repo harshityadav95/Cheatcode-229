@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+23+Merge+k+Sorted+Lists+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0023.Merge k Sorted Lists",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:\n        setattr(ListNode, \"__lt__\", lambda a, b: a.val < b.val)\n        pq = [head for head in lists if head]\n        heapify(pq)\n        dummy = cur = ListNode()\n        while pq:\n            node = heappop(pq)\n            if node.next:\n                heappush(pq, node.next)\n            cur.next = node\n            cur = cur.next\n        return dummy.next",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc mergeKLists(lists []*ListNode) *ListNode {\n\tpq := hp{}\n\tfor _, head := range lists {\n\t\tif head != nil {\n\t\t\tpq = append(pq, head)\n\t\t}\n\t}\n\theap.Init(&pq)\n\tdummy := &ListNode{}\n\tcur := dummy\n\tfor len(pq) > 0 {\n\t\tcur.Next = heap.Pop(&pq).(*ListNode)\n\t\tcur = cur.Next\n\t\tif cur.Next != nil {\n\t\t\theap.Push(&pq, cur.Next)\n\t\t}\n\t}\n\treturn dummy.Next\n}\n\ntype hp []*ListNode\n\nfunc (h hp) Len() int           { return len(h) }\nfunc (h hp) Less(i, j int) bool { return h[i].Val < h[j].Val }\nfunc (h hp) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }\nfunc (h *hp) Push(v any)        { *h = append(*h, v.(*ListNode)) }\nfunc (h *hp) Pop() any          { a := *h; v := a[len(a)-1]; *h = a[:len(a)-1]; return v }",
   "files": {
     "python": "code.py",
     "go": "code.go"

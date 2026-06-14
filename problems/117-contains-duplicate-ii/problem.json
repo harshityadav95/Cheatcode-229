@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+219+Contains+Duplicate+II+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0219.Contains Duplicate II",
+  "sourcePythonCode": "class Solution:\n    def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:\n        d = {}\n        for i, x in enumerate(nums):\n            if x in d and i - d[x] <= k:\n                return True\n            d[x] = i\n        return False",
+  "sourceGoCode": "func containsNearbyDuplicate(nums []int, k int) bool {\n\td := map[int]int{}\n\tfor i, x := range nums {\n\t\tif j, ok := d[x]; ok && i-j <= k {\n\t\t\treturn true\n\t\t}\n\t\td[x] = i\n\t}\n\treturn false\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

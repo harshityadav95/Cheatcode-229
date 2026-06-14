@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+17+Letter+Combinations+of+a+Phone+Number+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0017.Letter Combinations of a Phone Number",
+  "sourcePythonCode": "class Solution:\n    def letterCombinations(self, digits: str) -> List[str]:\n        if not digits:\n            return []\n        d = [\"abc\", \"def\", \"ghi\", \"jkl\", \"mno\", \"pqrs\", \"tuv\", \"wxyz\"]\n        ans = [\"\"]\n        for i in digits:\n            s = d[int(i) - 2]\n            ans = [a + b for a in ans for b in s]\n        return ans",
+  "sourceGoCode": "func letterCombinations(digits string) []string {\n\tans := []string{}\n\tif len(digits) == 0 {\n\t\treturn ans\n\t}\n\tans = append(ans, \"\")\n\td := []string{\"abc\", \"def\", \"ghi\", \"jkl\", \"mno\", \"pqrs\", \"tuv\", \"wxyz\"}\n\tfor _, i := range digits {\n\t\ts := d[i-'2']\n\t\tt := []string{}\n\t\tfor _, a := range ans {\n\t\t\tfor _, b := range s {\n\t\t\t\tt = append(t, a+string(b))\n\t\t\t}\n\t\t}\n\t\tans = t\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -7,6 +7,7 @@
 - Space: O(V+E)
 - Python: `code.py` (`graph_valid_tree`)
 - Go: `code.go` (`Solve218`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+261+Graph+Valid+Tree+solution)
 
 ## Problem Statement
 

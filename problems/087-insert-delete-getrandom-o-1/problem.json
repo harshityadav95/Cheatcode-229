@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+380+Insert+Delete+GetRandom+O%281%29+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0300-0399/0380.Insert Delete GetRandom O(1)",
+  "sourcePythonCode": "class RandomizedSet:\n    def __init__(self):\n        self.d = {}\n        self.q = []\n\n    def insert(self, val: int) -> bool:\n        if val in self.d:\n            return False\n        self.d[val] = len(self.q)\n        self.q.append(val)\n        return True\n\n    def remove(self, val: int) -> bool:\n        if val not in self.d:\n            return False\n        i = self.d[val]\n        self.d[self.q[-1]] = i\n        self.q[i] = self.q[-1]\n        self.q.pop()\n        self.d.pop(val)\n        return True\n\n    def getRandom(self) -> int:\n        return choice(self.q)\n\n\n# Your RandomizedSet object will be instantiated and called as such:\n# obj = RandomizedSet()\n# param_1 = obj.insert(val)\n# param_2 = obj.remove(val)\n# param_3 = obj.getRandom()",
+  "sourceGoCode": "type RandomizedSet struct {\n\td map[int]int\n\tq []int\n}\n\nfunc Constructor() RandomizedSet {\n\treturn RandomizedSet{map[int]int{}, []int{}}\n}\n\nfunc (this *RandomizedSet) Insert(val int) bool {\n\tif _, ok := this.d[val]; ok {\n\t\treturn false\n\t}\n\tthis.d[val] = len(this.q)\n\tthis.q = append(this.q, val)\n\treturn true\n}\n\nfunc (this *RandomizedSet) Remove(val int) bool {\n\tif _, ok := this.d[val]; !ok {\n\t\treturn false\n\t}\n\ti := this.d[val]\n\tthis.d[this.q[len(this.q)-1]] = i\n\tthis.q[i] = this.q[len(this.q)-1]\n\tthis.q = this.q[:len(this.q)-1]\n\tdelete(this.d, val)\n\treturn true\n}\n\nfunc (this *RandomizedSet) GetRandom() int {\n\treturn this.q[rand.Intn(len(this.q))]\n}\n\n/**\n * Your RandomizedSet object will be instantiated and called as such:\n * obj := Constructor();\n * param_1 := obj.Insert(val);\n * param_2 := obj.Remove(val);\n * param_3 := obj.GetRandom();\n */",
   "files": {
     "python": "code.py",
     "go": "code.go"

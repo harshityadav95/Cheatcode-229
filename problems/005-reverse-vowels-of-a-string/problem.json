@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+345+Reverse+Vowels+of+a+String+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0300-0399/0345.Reverse Vowels of a String",
+  "sourcePythonCode": "class Solution:\n    def reverseVowels(self, s: str) -> str:\n        vowels = \"aeiouAEIOU\"\n        i, j = 0, len(s) - 1\n        cs = list(s)\n        while i < j:\n            while i < j and cs[i] not in vowels:\n                i += 1\n            while i < j and cs[j] not in vowels:\n                j -= 1\n            if i < j:\n                cs[i], cs[j] = cs[j], cs[i]\n                i, j = i + 1, j - 1\n        return \"\".join(cs)",
+  "sourceGoCode": "func reverseVowels(s string) string {\n\tvowels := [128]bool{}\n\tfor _, c := range \"aeiouAEIOU\" {\n\t\tvowels[c] = true\n\t}\n\tcs := []byte(s)\n\ti, j := 0, len(cs)-1\n\tfor i < j {\n\t\tfor i < j && !vowels[cs[i]] {\n\t\t\ti++\n\t\t}\n\t\tfor i < j && !vowels[cs[j]] {\n\t\t\tj--\n\t\t}\n\t\tif i < j {\n\t\t\tcs[i], cs[j] = cs[j], cs[i]\n\t\t\ti, j = i+1, j-1\n\t\t}\n\t}\n\treturn string(cs)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

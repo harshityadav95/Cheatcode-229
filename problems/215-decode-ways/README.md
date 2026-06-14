@@ -7,6 +7,7 @@
 - Space: O(state)
 - Python: `code.py` (`decode_ways`)
 - Go: `code.go` (`Solve215`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+91+Decode+Ways+solution)
 
 ## Problem Statement
 

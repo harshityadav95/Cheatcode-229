@@ -7,6 +7,7 @@
 - Space: O(n*m) or O(1)
 - Python: `code.py` (`palindromic_substrings`)
 - Go: `code.go` (`Solve229`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+647+Palindromic+Substrings+solution)
 
 ## Problem Statement
 

@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`set_matrix_zeroes`)
 - Go: `code.go` (`Solve108`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+73+Set+Matrix+Zeroes+solution)
 
 ## Problem Statement
 

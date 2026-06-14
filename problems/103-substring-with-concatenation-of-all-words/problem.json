@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+30+Substring+with+Concatenation+of+All+Words+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0030.Substring with Concatenation of All Words",
+  "sourcePythonCode": "class Solution:\n    def findSubstring(self, s: str, words: List[str]) -> List[int]:\n        cnt = Counter(words)\n        m, n = len(s), len(words)\n        k = len(words[0])\n        ans = []\n        for i in range(k):\n            l = r = i\n            cnt1 = Counter()\n            while r + k <= m:\n                t = s[r : r + k]\n                r += k\n                if cnt[t] == 0:\n                    l = r\n                    cnt1.clear()\n                    continue\n                cnt1[t] += 1\n                while cnt1[t] > cnt[t]:\n                    rem = s[l : l + k]\n                    l += k\n                    cnt1[rem] -= 1\n                if r - l == n * k:\n                    ans.append(l)\n        return ans",
+  "sourceGoCode": "func findSubstring(s string, words []string) (ans []int) {\n\tcnt := make(map[string]int)\n\tfor _, w := range words {\n\t\tcnt[w]++\n\t}\n\tm, n, k := len(s), len(words), len(words[0])\n\tfor i := 0; i < k; i++ {\n\t\tl, r := i, i\n\t\tcnt1 := make(map[string]int)\n\t\tfor r+k <= m {\n\t\t\tt := s[r : r+k]\n\t\t\tr += k\n\n\t\t\tif _, exists := cnt[t]; !exists {\n\t\t\t\tcnt1 = make(map[string]int)\n\t\t\t\tl = r\n\t\t\t\tcontinue\n\t\t\t}\n\t\t\tcnt1[t]++\n\t\t\tfor cnt1[t] > cnt[t] {\n\t\t\t\tw := s[l : l+k]\n\t\t\t\tcnt1[w]--\n\t\t\t\tif cnt1[w] == 0 {\n\t\t\t\t\tdelete(cnt1, w)\n\t\t\t\t}\n\t\t\t\tl += k\n\t\t\t}\n\t\t\tif r-l == n*k {\n\t\t\t\tans = append(ans, l)\n\t\t\t}\n\t\t}\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

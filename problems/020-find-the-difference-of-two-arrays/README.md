@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`find_the_difference_of_two_arrays`)
 - Go: `code.go` (`Solve020`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+2215+Find+the+Difference+of+Two+Arrays+solution)
 
 ## Problem Statement
 

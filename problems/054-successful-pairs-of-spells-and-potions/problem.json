@@ -88,6 +88,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+2300+Successful+Pairs+of+Spells+and+Potions+solution",
+  "leetcodeMainPath": "leetcode-main/solution/2300-2399/2300.Successful Pairs of Spells and Potions",
+  "sourcePythonCode": "class Solution:\n    def successfulPairs(\n        self, spells: List[int], potions: List[int], success: int\n    ) -> List[int]:\n        potions.sort()\n        m = len(potions)\n        return [m - bisect_left(potions, success / v) for v in spells]",
+  "sourceGoCode": "func successfulPairs(spells []int, potions []int, success int64) (ans []int) {\n\tsort.Ints(potions)\n\tm := len(potions)\n\tfor _, v := range spells {\n\t\ti := sort.Search(m, func(i int) bool { return int64(potions[i]*v) >= success })\n\t\tans = append(ans, m-i)\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`factorial_trailing_zeroes`)
 - Go: `code.go` (`Solve194`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+172+Factorial+Trailing+Zeroes+solution)
 
 ## Problem Statement
 

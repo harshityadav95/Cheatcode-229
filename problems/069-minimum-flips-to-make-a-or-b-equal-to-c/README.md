@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`minimum_flips_to_make_a_or_b_equal_to_c`)
 - Go: `code.go` (`Solve069`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1318+Minimum+Flips+to+Make+a+OR+b+Equal+to+c+solution)
 
 ## Problem Statement
 

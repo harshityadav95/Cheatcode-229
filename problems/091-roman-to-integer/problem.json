@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+13+Roman+to+Integer+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0013.Roman to Integer",
+  "sourcePythonCode": "class Solution:\n    def romanToInt(self, s: str) -> int:\n        d = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}\n        return sum((-1 if d[a] < d[b] else 1) * d[a] for a, b in pairwise(s)) + d[s[-1]]",
+  "sourceGoCode": "func romanToInt(s string) (ans int) {\n\td := map[byte]int{'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}\n\tfor i := 0; i < len(s)-1; i++ {\n\t\tif d[s[i]] < d[s[i+1]] {\n\t\t\tans -= d[s[i]]\n\t\t} else {\n\t\t\tans += d[s[i]]\n\t\t}\n\t}\n\tans += d[s[len(s)-1]]\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -88,6 +88,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+74+Search+a+2D+Matrix+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0074.Search a 2D Matrix",
+  "sourcePythonCode": "class Solution:\n    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:\n        m, n = len(matrix), len(matrix[0])\n        left, right = 0, m * n - 1\n        while left < right:\n            mid = (left + right) >> 1\n            x, y = divmod(mid, n)\n            if matrix[x][y] >= target:\n                right = mid\n            else:\n                left = mid + 1\n        return matrix[left // n][left % n] == target",
+  "sourceGoCode": "func searchMatrix(matrix [][]int, target int) bool {\n\tm, n := len(matrix), len(matrix[0])\n\tleft, right := 0, m*n-1\n\tfor left < right {\n\t\tmid := (left + right) >> 1\n\t\tx, y := mid/n, mid%n\n\t\tif matrix[x][y] >= target {\n\t\t\tright = mid\n\t\t} else {\n\t\t\tleft = mid + 1\n\t\t}\n\t}\n\treturn matrix[left/n][left%n] == target\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

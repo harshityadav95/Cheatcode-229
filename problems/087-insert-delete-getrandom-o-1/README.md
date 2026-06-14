@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`insert_delete_getrandom_o_1`)
 - Go: `code.go` (`Solve087`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+380+Insert+Delete+GetRandom+O%281%29+solution)
 
 ## Problem Statement
 

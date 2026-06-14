@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+6+Zigzag+Conversion+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0006.Zigzag Conversion",
+  "sourcePythonCode": "class Solution:\n    def convert(self, s: str, numRows: int) -> str:\n        if numRows == 1:\n            return s\n        g = [[] for _ in range(numRows)]\n        i, k = 0, -1\n        for c in s:\n            g[i].append(c)\n            if i == 0 or i == numRows - 1:\n                k = -k\n            i += k\n        return ''.join(chain(*g))",
+  "sourceGoCode": "func convert(s string, numRows int) string {\n\tif numRows == 1 {\n\t\treturn s\n\t}\n\tg := make([][]byte, numRows)\n\ti, k := 0, -1\n\tfor _, c := range s {\n\t\tg[i] = append(g[i], byte(c))\n\t\tif i == 0 || i == numRows-1 {\n\t\t\tk = -k\n\t\t}\n\t\ti += k\n\t}\n\treturn string(bytes.Join(g, nil))\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+739+Daily+Temperatures+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0700-0799/0739.Daily Temperatures",
+  "sourcePythonCode": "class Solution:\n    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:\n        stk = []\n        n = len(temperatures)\n        ans = [0] * n\n        for i in range(n - 1, -1, -1):\n            while stk and temperatures[stk[-1]] <= temperatures[i]:\n                stk.pop()\n            if stk:\n                ans[i] = stk[-1] - i\n            stk.append(i)\n        return ans",
+  "sourceGoCode": "func dailyTemperatures(temperatures []int) []int {\n\tn := len(temperatures)\n\tans := make([]int, n)\n\tstk := []int{}\n\tfor i := n - 1; i >= 0; i-- {\n\t\tfor len(stk) > 0 && temperatures[stk[len(stk)-1]] <= temperatures[i] {\n\t\t\tstk = stk[:len(stk)-1]\n\t\t}\n\t\tif len(stk) > 0 {\n\t\t\tans[i] = stk[len(stk)-1] - i\n\t\t}\n\t\tstk = append(stk, i)\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

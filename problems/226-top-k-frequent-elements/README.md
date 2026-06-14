@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`top_k_frequent_elements`)
 - Go: `code.go` (`Solve226`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+347+Top+K+Frequent+Elements+solution)
 
 ## Problem Statement
 

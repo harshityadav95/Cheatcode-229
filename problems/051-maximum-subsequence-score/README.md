@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`maximum_subsequence_score`)
 - Go: `code.go` (`Solve051`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+2542+Maximum+Subsequence+Score+solution)
 
 ## Problem Statement
 

@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`plus_one`)
 - Go: `code.go` (`Solve193`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+66+Plus+One+solution)
 
 ## Problem Statement
 

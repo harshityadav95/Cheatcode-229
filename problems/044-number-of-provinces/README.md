@@ -7,6 +7,7 @@
 - Space: O(V+E)
 - Python: `code.py` (`number_of_provinces`)
 - Go: `code.go` (`Solve044`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+547+Number+of+Provinces+solution)
 
 ## Problem Statement
 

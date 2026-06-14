@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+383+Ransom+Note+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0300-0399/0383.Ransom Note",
+  "sourcePythonCode": "class Solution:\n    def canConstruct(self, ransomNote: str, magazine: str) -> bool:\n        cnt = Counter(magazine)\n        for c in ransomNote:\n            cnt[c] -= 1\n            if cnt[c] < 0:\n                return False\n        return True",
+  "sourceGoCode": "func canConstruct(ransomNote string, magazine string) bool {\n\tcnt := [26]int{}\n\tfor _, c := range magazine {\n\t\tcnt[c-'a']++\n\t}\n\tfor _, c := range ransomNote {\n\t\tcnt[c-'a']--\n\t\tif cnt[c-'a'] < 0 {\n\t\t\treturn false\n\t\t}\n\t}\n\treturn true\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

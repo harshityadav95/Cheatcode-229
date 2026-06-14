@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`max_consecutive_ones_iii`)
 - Go: `code.go` (`Solve016`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1004+Max+Consecutive+Ones+III+solution)
 
 ## Problem Statement
 

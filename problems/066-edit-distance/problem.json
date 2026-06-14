@@ -87,6 +87,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+72+Edit+Distance+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0072.Edit Distance",
+  "sourcePythonCode": "class Solution:\n    def minDistance(self, word1: str, word2: str) -> int:\n        m, n = len(word1), len(word2)\n        f = [[0] * (n + 1) for _ in range(m + 1)]\n        for j in range(1, n + 1):\n            f[0][j] = j\n        for i, a in enumerate(word1, 1):\n            f[i][0] = i\n            for j, b in enumerate(word2, 1):\n                if a == b:\n                    f[i][j] = f[i - 1][j - 1]\n                else:\n                    f[i][j] = min(f[i - 1][j], f[i][j - 1], f[i - 1][j - 1]) + 1\n        return f[m][n]",
+  "sourceGoCode": "func minDistance(word1 string, word2 string) int {\n\tm, n := len(word1), len(word2)\n\tf := make([][]int, m+1)\n\tfor i := range f {\n\t\tf[i] = make([]int, n+1)\n\t}\n\tfor j := 1; j <= n; j++ {\n\t\tf[0][j] = j\n\t}\n\tfor i := 1; i <= m; i++ {\n\t\tf[i][0] = i\n\t\tfor j := 1; j <= n; j++ {\n\t\t\tif word1[i-1] == word2[j-1] {\n\t\t\t\tf[i][j] = f[i-1][j-1]\n\t\t\t} else {\n\t\t\t\tf[i][j] = min(f[i-1][j], min(f[i][j-1], f[i-1][j-1])) + 1\n\t\t\t}\n\t\t}\n\t}\n\treturn f[m][n]\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

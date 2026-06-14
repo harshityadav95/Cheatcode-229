@@ -7,6 +7,7 @@
 - Space: O(n*m) or O(1)
 - Python: `code.py` (`longest_palindromic_substring`)
 - Go: `code.go` (`Solve205`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+5+Longest+Palindromic+Substring+solution)
 
 ## Problem Statement
 

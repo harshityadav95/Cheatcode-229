@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+141+Linked+List+Cycle+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0141.Linked List Cycle",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.next = None\n\n\nclass Solution:\n    def hasCycle(self, head: Optional[ListNode]) -> bool:\n        s = set()\n        while head:\n            if head in s:\n                return True\n            s.add(head)\n            head = head.next\n        return False",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc hasCycle(head *ListNode) bool {\n\ts := map[*ListNode]bool{}\n\tfor ; head != nil; head = head.Next {\n\t\tif s[head] {\n\t\t\treturn true\n\t\t}\n\t\ts[head] = true\n\t}\n\treturn false\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

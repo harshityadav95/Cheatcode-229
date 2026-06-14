@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+19+Remove+Nth+Node+From+End+of+List+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0019.Remove Nth Node From End of List",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:\n        dummy = ListNode(next=head)\n        fast = slow = dummy\n        for _ in range(n):\n            fast = fast.next\n        while fast.next:\n            slow, fast = slow.next, fast.next\n        slow.next = slow.next.next\n        return dummy.next",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc removeNthFromEnd(head *ListNode, n int) *ListNode {\n\tdummy := &ListNode{0, head}\n\tfast, slow := dummy, dummy\n\tfor ; n > 0; n-- {\n\t\tfast = fast.Next\n\t}\n\tfor fast.Next != nil {\n\t\tslow, fast = slow.Next, fast.Next\n\t}\n\tslow.Next = slow.Next.Next\n\treturn dummy.Next\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

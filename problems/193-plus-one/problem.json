@@ -88,6 +88,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+66+Plus+One+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0066.Plus One",
+  "sourcePythonCode": "class Solution:\n    def plusOne(self, digits: List[int]) -> List[int]:\n        n = len(digits)\n        for i in range(n - 1, -1, -1):\n            digits[i] += 1\n            digits[i] %= 10\n            if digits[i] != 0:\n                return digits\n        return [1] + digits",
+  "sourceGoCode": "func plusOne(digits []int) []int {\n\tn := len(digits)\n\tfor i := n - 1; i >= 0; i-- {\n\t\tdigits[i]++\n\t\tdigits[i] %= 10\n\t\tif digits[i] != 0 {\n\t\t\treturn digits\n\t\t}\n\t}\n\treturn append([]int{1}, digits...)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

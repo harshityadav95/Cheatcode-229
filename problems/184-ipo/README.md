@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`ipo`)
 - Go: `code.go` (`Solve184`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+502+IPO+solution)
 
 ## Problem Statement
 

@@ -20,6 +20,7 @@ import {
   PenTool,
   ShieldCheck,
   Building2,
+  Library,
 } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -81,6 +82,8 @@ interface LandingPageProps {
   onBrowseAll: () => void
   onRandomProblem: () => void
   onOpenProblem: (problem: Problem) => void
+  importedCount: number
+  onLeetCodeClone: () => void
 }
 
 export function LandingPage({
@@ -90,6 +93,8 @@ export function LandingPage({
   onBrowseAll,
   onRandomProblem,
   onOpenProblem,
+  importedCount,
+  onLeetCodeClone,
 }: LandingPageProps) {
   // Pre-calculate number of problems per pattern
   const patternCounts = useMemo(() => {
@@ -146,6 +151,16 @@ export function LandingPage({
               <Shuffle className="mr-2 size-5" />
               Random Challenge
             </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="h-12 px-8 font-semibold border-slate-300 bg-white/50 text-slate-700 hover:bg-slate-100 dark:border-slate-800 dark:bg-slate-900/50 dark:text-slate-300 dark:hover:bg-slate-800 cursor-pointer"
+              onClick={onLeetCodeClone}
+              disabled={importedCount === 0}
+            >
+              <Library className="mr-2 size-5" />
+              LeetCode Clone
+            </Button>
           </div>
 
           {/* Quick Statistics Grid */}
@@ -154,7 +169,7 @@ export function LandingPage({
               { value: `${problems.length}`, label: "Curated Problems" },
               { value: `${patterns.length}`, label: "Algorithmic Patterns" },
               { value: "Go + Python", label: "Dual reference code" },
-              { value: "Local Storage", label: "Auto-saved notes" },
+              { value: importedCount ? importedCount.toLocaleString() : "3,962", label: "Imported records" },
             ].map((stat, i) => (
               <Card key={i} className="border border-slate-200 bg-white/60 backdrop-blur-sm dark:border-slate-900 dark:bg-slate-950/60">
                 <CardContent className="p-5">

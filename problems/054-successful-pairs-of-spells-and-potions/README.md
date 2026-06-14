@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`successful_pairs_of_spells_and_potions`)
 - Go: `code.go` (`Solve054`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+2300+Successful+Pairs+of+Spells+and+Potions+solution)
 
 ## Problem Statement
 

@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+230+Kth+Smallest+Element+in+a+BST+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0230.Kth Smallest Element in a BST",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:\n        stk = []\n        while root or stk:\n            if root:\n                stk.append(root)\n                root = root.left\n            else:\n                root = stk.pop()\n                k -= 1\n                if k == 0:\n                    return root.val\n                root = root.right",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc kthSmallest(root *TreeNode, k int) int {\n\tstk := []*TreeNode{}\n\tfor root != nil || len(stk) > 0 {\n\t\tif root != nil {\n\t\t\tstk = append(stk, root)\n\t\t\troot = root.Left\n\t\t} else {\n\t\t\troot = stk[len(stk)-1]\n\t\t\tstk = stk[:len(stk)-1]\n\t\t\tk--\n\t\t\tif k == 0 {\n\t\t\t\treturn root.Val\n\t\t\t}\n\t\t\troot = root.Right\n\t\t}\n\t}\n\treturn 0\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

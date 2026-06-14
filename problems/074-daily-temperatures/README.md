@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`daily_temperatures`)
 - Go: `code.go` (`Solve074`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+739+Daily+Temperatures+solution)
 
 ## Problem Statement
 

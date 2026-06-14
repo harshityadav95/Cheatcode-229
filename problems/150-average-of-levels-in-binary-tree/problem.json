@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+637+Average+of+Levels+in+Binary+Tree+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0600-0699/0637.Average of Levels in Binary Tree",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def averageOfLevels(self, root: Optional[TreeNode]) -> List[float]:\n        q = deque([root])\n        ans = []\n        while q:\n            s, n = 0, len(q)\n            for _ in range(n):\n                root = q.popleft()\n                s += root.val\n                if root.left:\n                    q.append(root.left)\n                if root.right:\n                    q.append(root.right)\n            ans.append(s / n)\n        return ans",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc averageOfLevels(root *TreeNode) []float64 {\n\tq := []*TreeNode{root}\n\tans := []float64{}\n\tfor len(q) > 0 {\n\t\tn := len(q)\n\t\ts := 0\n\t\tfor i := 0; i < n; i++ {\n\t\t\troot = q[0]\n\t\t\tq = q[1:]\n\t\t\ts += root.Val\n\t\t\tif root.Left != nil {\n\t\t\t\tq = append(q, root.Left)\n\t\t\t}\n\t\t\tif root.Right != nil {\n\t\t\t\tq = append(q, root.Right)\n\t\t\t}\n\t\t}\n\t\tans = append(ans, float64(s)/float64(n))\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -7,6 +7,7 @@
 - Space: O(n*m) or O(1)
 - Python: `code.py` (`maximum_subarray`)
 - Go: `code.go` (`Solve176`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+53+Maximum+Subarray+solution)
 
 ## Problem Statement
 

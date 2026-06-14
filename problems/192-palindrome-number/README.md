@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`palindrome_number`)
 - Go: `code.go` (`Solve192`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+9+Palindrome+Number+solution)
 
 ## Problem Statement
 

@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+207+Course+Schedule+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0207.Course Schedule",
+  "sourcePythonCode": "class Solution:\n    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:\n        g = [[] for _ in range(numCourses)]\n        indeg = [0] * numCourses\n        for a, b in prerequisites:\n            g[b].append(a)\n            indeg[a] += 1\n        q = [i for i, x in enumerate(indeg) if x == 0]\n        for i in q:\n            numCourses -= 1\n            for j in g[i]:\n                indeg[j] -= 1\n                if indeg[j] == 0:\n                    q.append(j)\n        return numCourses == 0",
+  "sourceGoCode": "func canFinish(numCourses int, prerequisites [][]int) bool {\n\tg := make([][]int, numCourses)\n\tindeg := make([]int, numCourses)\n\tfor _, p := range prerequisites {\n\t\ta, b := p[0], p[1]\n\t\tg[b] = append(g[b], a)\n\t\tindeg[a]++\n\t}\n\tq := []int{}\n\tfor i, x := range indeg {\n\t\tif x == 0 {\n\t\t\tq = append(q, i)\n\t\t}\n\t}\n\tfor len(q) > 0 {\n\t\ti := q[0]\n\t\tq = q[1:]\n\t\tnumCourses--\n\t\tfor _, j := range g[i] {\n\t\t\tindeg[j]--\n\t\t\tif indeg[j] == 0 {\n\t\t\t\tq = append(q, j)\n\t\t\t}\n\t\t}\n\t}\n\treturn numCourses == 0\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -7,6 +7,7 @@
 - Space: O(n*m) or O(1)
 - Python: `code.py` (`maximum_product_subarray`)
 - Go: `code.go` (`Solve211`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+152+Maximum+Product+Subarray+solution)
 
 ## Problem Statement
 

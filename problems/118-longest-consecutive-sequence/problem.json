@@ -95,6 +95,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+128+Longest+Consecutive+Sequence+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0128.Longest Consecutive Sequence",
+  "sourcePythonCode": "class Solution:\n    def longestConsecutive(self, nums: List[int]) -> int:\n        s = set(nums)\n        ans = 0\n        d = defaultdict(int)\n        for x in nums:\n            y = x\n            while y in s:\n                s.remove(y)\n                y += 1\n            d[x] = d[y] + y - x\n            ans = max(ans, d[x])\n        return ans",
+  "sourceGoCode": "func longestConsecutive(nums []int) (ans int) {\n\ts := map[int]bool{}\n\tfor _, x := range nums {\n\t\ts[x] = true\n\t}\n\td := map[int]int{}\n\tfor _, x := range nums {\n\t\ty := x\n\t\tfor s[y] {\n\t\t\tdelete(s, y)\n\t\t\ty++\n\t\t}\n\t\td[x] = d[y] + y - x\n\t\tans = max(ans, d[x])\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

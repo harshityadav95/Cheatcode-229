@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`basic_calculator`)
 - Go: `code.go` (`Solve126`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+224+Basic+Calculator+solution)
 
 ## Problem Statement
 

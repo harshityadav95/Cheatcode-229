@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`happy_number`)
 - Go: `code.go` (`Solve116`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+202+Happy+Number+solution)
 
 ## Problem Statement
 

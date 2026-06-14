@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+54+Spiral+Matrix+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0054.Spiral Matrix",
+  "sourcePythonCode": "class Solution:\n    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:\n        m, n = len(matrix), len(matrix[0])\n        dirs = (0, 1, 0, -1, 0)\n        vis = [[False] * n for _ in range(m)]\n        i = j = k = 0\n        ans = []\n        for _ in range(m * n):\n            ans.append(matrix[i][j])\n            vis[i][j] = True\n            x, y = i + dirs[k], j + dirs[k + 1]\n            if x < 0 or x >= m or y < 0 or y >= n or vis[x][y]:\n                k = (k + 1) % 4\n            i += dirs[k]\n            j += dirs[k + 1]\n        return ans",
+  "sourceGoCode": "func spiralOrder(matrix [][]int) (ans []int) {\n\tm, n := len(matrix), len(matrix[0])\n\tvis := make([][]bool, m)\n\tfor i := range vis {\n\t\tvis[i] = make([]bool, n)\n\t}\n\tdirs := [5]int{0, 1, 0, -1, 0}\n\ti, j, k := 0, 0, 0\n\tfor h := m * n; h > 0; h-- {\n\t\tans = append(ans, matrix[i][j])\n\t\tvis[i][j] = true\n\t\tx, y := i+dirs[k], j+dirs[k+1]\n\t\tif x < 0 || x >= m || y < 0 || y >= n || vis[x][y] {\n\t\t\tk = (k + 1) % 4\n\t\t}\n\t\ti, j = i+dirs[k], j+dirs[k+1]\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

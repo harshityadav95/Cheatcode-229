@@ -7,6 +7,7 @@
 - Space: O(1) unless recursion/map
 - Python: `code.py` (`copy_list_with_random_pointer`)
 - Go: `code.go` (`Solve130`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+138+Copy+List+with+Random+Pointer+solution)
 
 ## Problem Statement
 

@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+28+Find+the+Index+of+the+First+Occurrence+in+a+String+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0028.Find the Index of the First Occurrence in a String",
+  "sourcePythonCode": "class Solution:\n    def strStr(self, haystack: str, needle: str) -> int:\n        n, m = len(haystack), len(needle)\n        for i in range(n - m + 1):\n            if haystack[i : i + m] == needle:\n                return i\n        return -1",
+  "sourceGoCode": "func strStr(haystack string, needle string) int {\n\tn, m := len(haystack), len(needle)\n\tfor i := 0; i <= n-m; i++ {\n\t\tif haystack[i:i+m] == needle {\n\t\t\treturn i\n\t\t}\n\t}\n\treturn -1\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

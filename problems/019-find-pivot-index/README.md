@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`find_pivot_index`)
 - Go: `code.go` (`Solve019`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+724+Find+Pivot+Index+solution)
 
 ## Problem Statement
 

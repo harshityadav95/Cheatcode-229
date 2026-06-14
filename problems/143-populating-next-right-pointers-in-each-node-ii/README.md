@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`populating_next_right_pointers_in_each_node_ii`)
 - Go: `code.go` (`Solve143`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+117+Populating+Next+Right+Pointers+in+Each+Node+II+solution)
 
 ## Problem Statement
 

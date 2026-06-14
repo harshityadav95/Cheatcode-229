@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+14+Longest+Common+Prefix+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0014.Longest Common Prefix",
+  "sourcePythonCode": "class Solution:\n    def longestCommonPrefix(self, strs: List[str]) -> str:\n        for i in range(len(strs[0])):\n            for s in strs[1:]:\n                if len(s) <= i or s[i] != strs[0][i]:\n                    return s[:i]\n        return strs[0]",
+  "sourceGoCode": "func longestCommonPrefix(strs []string) string {\n\tn := len(strs)\n\tfor i := range strs[0] {\n\t\tfor j := 1; j < n; j++ {\n\t\t\tif len(strs[j]) <= i || strs[j][i] != strs[0][i] {\n\t\t\t\treturn strs[0][:i]\n\t\t\t}\n\t\t}\n\t}\n\treturn strs[0]\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

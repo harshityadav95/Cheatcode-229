@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+130+Surrounded+Regions+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0130.Surrounded Regions",
+  "sourcePythonCode": "class Solution:\n    def solve(self, board: List[List[str]]) -> None:\n        def dfs(i: int, j: int):\n            if not (0 <= i < m and 0 <= j < n and board[i][j] == \"O\"):\n                return\n            board[i][j] = \".\"\n            for a, b in pairwise((-1, 0, 1, 0, -1)):\n                dfs(i + a, j + b)\n\n        m, n = len(board), len(board[0])\n        for i in range(m):\n            dfs(i, 0)\n            dfs(i, n - 1)\n        for j in range(n):\n            dfs(0, j)\n            dfs(m - 1, j)\n        for i in range(m):\n            for j in range(n):\n                if board[i][j] == \".\":\n                    board[i][j] = \"O\"\n                elif board[i][j] == \"O\":\n                    board[i][j] = \"X\"",
+  "sourceGoCode": "func solve(board [][]byte) {\n\tm, n := len(board), len(board[0])\n\tdirs := [5]int{-1, 0, 1, 0, -1}\n\tvar dfs func(i, j int)\n\tdfs = func(i, j int) {\n\t\tif i < 0 || i >= m || j < 0 || j >= n || board[i][j] != 'O' {\n\t\t\treturn\n\t\t}\n\t\tboard[i][j] = '.'\n\t\tfor k := 0; k < 4; k++ {\n\t\t\tdfs(i+dirs[k], j+dirs[k+1])\n\t\t}\n\t}\n\tfor i := 0; i < m; i++ {\n\t\tdfs(i, 0)\n\t\tdfs(i, n-1)\n\t}\n\tfor j := 0; j < n; j++ {\n\t\tdfs(0, j)\n\t\tdfs(m-1, j)\n\t}\n\tfor i, row := range board {\n\t\tfor j, c := range row {\n\t\t\tif c == '.' {\n\t\t\t\tboard[i][j] = 'O'\n\t\t\t} else if c == 'O' {\n\t\t\t\tboard[i][j] = 'X'\n\t\t\t}\n\t\t}\n\t}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

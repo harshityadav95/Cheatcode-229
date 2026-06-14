@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+162+Find+Peak+Element+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0162.Find Peak Element",
+  "sourcePythonCode": "class Solution:\n    def findPeakElement(self, nums: List[int]) -> int:\n        left, right = 0, len(nums) - 1\n        while left < right:\n            mid = (left + right) >> 1\n            if nums[mid] > nums[mid + 1]:\n                right = mid\n            else:\n                left = mid + 1\n        return left",
+  "sourceGoCode": "func findPeakElement(nums []int) int {\n\tleft, right := 0, len(nums)-1\n\tfor left < right {\n\t\tmid := (left + right) >> 1\n\t\tif nums[mid] > nums[mid+1] {\n\t\t\tright = mid\n\t\t} else {\n\t\t\tleft = mid + 1\n\t\t}\n\t}\n\treturn left\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

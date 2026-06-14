@@ -7,6 +7,7 @@
 - Space: O(depth + output)
 - Python: `code.py` (`letter_combinations_of_a_phone_number`)
 - Go: `code.go` (`Solve057`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+17+Letter+Combinations+of+a+Phone+Number+solution)
 
 ## Problem Statement
 

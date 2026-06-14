@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`substring_with_concatenation_of_all_words`)
 - Go: `code.go` (`Solve103`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+30+Substring+with+Concatenation+of+All+Words+solution)
 
 ## Problem Statement
 

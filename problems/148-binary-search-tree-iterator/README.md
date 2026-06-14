@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`binary_search_tree_iterator`)
 - Go: `code.go` (`Solve148`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+173+Binary+Search+Tree+Iterator+solution)
 
 ## Problem Statement
 

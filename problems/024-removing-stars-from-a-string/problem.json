@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+2390+Removing+Stars+From+a+String+solution",
+  "leetcodeMainPath": "leetcode-main/solution/2300-2399/2390.Removing Stars From a String",
+  "sourcePythonCode": "class Solution:\n    def removeStars(self, s: str) -> str:\n        ans = []\n        for c in s:\n            if c == '*':\n                ans.pop()\n            else:\n                ans.append(c)\n        return ''.join(ans)",
+  "sourceGoCode": "func removeStars(s string) string {\n\tans := []rune{}\n\tfor _, c := range s {\n\t\tif c == '*' {\n\t\t\tans = ans[:len(ans)-1]\n\t\t} else {\n\t\t\tans = append(ans, c)\n\t\t}\n\t}\n\treturn string(ans)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

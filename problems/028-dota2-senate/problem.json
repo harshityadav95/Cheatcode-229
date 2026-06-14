@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+649+Dota2+Senate+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0600-0699/0649.Dota2 Senate",
+  "sourcePythonCode": "class Solution:\n    def predictPartyVictory(self, senate: str) -> str:\n        qr = deque()\n        qd = deque()\n        for i, c in enumerate(senate):\n            if c == \"R\":\n                qr.append(i)\n            else:\n                qd.append(i)\n        n = len(senate)\n        while qr and qd:\n            if qr[0] < qd[0]:\n                qr.append(qr[0] + n)\n            else:\n                qd.append(qd[0] + n)\n            qr.popleft()\n            qd.popleft()\n        return \"Radiant\" if qr else \"Dire\"",
+  "sourceGoCode": "func predictPartyVictory(senate string) string {\n\tn := len(senate)\n\tqr := []int{}\n\tqd := []int{}\n\tfor i, c := range senate {\n\t\tif c == 'R' {\n\t\t\tqr = append(qr, i)\n\t\t} else {\n\t\t\tqd = append(qd, i)\n\t\t}\n\t}\n\tfor len(qr) > 0 && len(qd) > 0 {\n\t\tr, d := qr[0], qd[0]\n\t\tqr, qd = qr[1:], qd[1:]\n\t\tif r < d {\n\t\t\tqr = append(qr, r+n)\n\t\t} else {\n\t\t\tqd = append(qd, d+n)\n\t\t}\n\t}\n\tif len(qr) > 0 {\n\t\treturn \"Radiant\"\n\t}\n\treturn \"Dire\"\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`same_tree`)
 - Go: `code.go` (`Solve138`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+100+Same+Tree+solution)
 
 ## Problem Statement
 

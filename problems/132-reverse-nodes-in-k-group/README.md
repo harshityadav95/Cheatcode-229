@@ -7,6 +7,7 @@
 - Space: O(1) unless recursion/map
 - Python: `code.py` (`reverse_nodes_in_k_group`)
 - Go: `code.go` (`Solve132`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+25+Reverse+Nodes+in+k-Group+solution)
 
 ## Problem Statement
 

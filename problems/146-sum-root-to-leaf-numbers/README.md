@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`sum_root_to_leaf_numbers`)
 - Go: `code.go` (`Solve146`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+129+Sum+Root+to+Leaf+Numbers+solution)
 
 ## Problem Statement
 

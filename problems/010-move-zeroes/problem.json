@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+283+Move+Zeroes+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0283.Move Zeroes",
+  "sourcePythonCode": "class Solution:\n    def moveZeroes(self, nums: List[int]) -> None:\n        k = 0\n        for i, x in enumerate(nums):\n            if x:\n                nums[k], nums[i] = nums[i], nums[k]\n                k += 1",
+  "sourceGoCode": "func moveZeroes(nums []int) {\n\tk := 0\n\tfor i, x := range nums {\n\t\tif x != 0 {\n\t\t\tnums[i], nums[k] = nums[k], nums[i]\n\t\t\tk++\n\t\t}\n\t}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

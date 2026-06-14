@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+125+Valid+Palindrome+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0125.Valid Palindrome",
+  "sourcePythonCode": "class Solution:\n    def isPalindrome(self, s: str) -> bool:\n        i, j = 0, len(s) - 1\n        while i < j:\n            if not s[i].isalnum():\n                i += 1\n            elif not s[j].isalnum():\n                j -= 1\n            elif s[i].lower() != s[j].lower():\n                return False\n            else:\n                i, j = i + 1, j - 1\n        return True",
+  "sourceGoCode": "func isPalindrome(s string) bool {\n\ti, j := 0, len(s)-1\n\tfor i < j {\n\t\tif !isalnum(s[i]) {\n\t\t\ti++\n\t\t} else if !isalnum(s[j]) {\n\t\t\tj--\n\t\t} else if tolower(s[i]) != tolower(s[j]) {\n\t\t\treturn false\n\t\t} else {\n\t\t\ti, j = i+1, j-1\n\t\t}\n\t}\n\treturn true\n}\n\nfunc isalnum(ch byte) bool {\n\treturn (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z') || (ch >= '0' && ch <= '9')\n}\n\nfunc tolower(ch byte) byte {\n\tif ch >= 'A' && ch <= 'Z' {\n\t\treturn ch + 32\n\t}\n\treturn ch\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

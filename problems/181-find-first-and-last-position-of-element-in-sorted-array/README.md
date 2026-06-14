@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`find_first_and_last_position_of_element_in_sorted_array`)
 - Go: `code.go` (`Solve181`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+34+Find+First+and+Last+Position+of+Element+in+Sorted+Array+solution)
 
 ## Problem Statement
 

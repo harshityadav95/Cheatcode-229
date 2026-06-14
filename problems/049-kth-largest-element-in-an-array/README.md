@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`kth_largest_element_in_an_array`)
 - Go: `code.go` (`Solve049`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+215+Kth+Largest+Element+in+an+Array+solution)
 
 ## Problem Statement
 

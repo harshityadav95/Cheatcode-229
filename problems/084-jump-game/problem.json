@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+55+Jump+Game+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0055.Jump Game",
+  "sourcePythonCode": "class Solution:\n    def canJump(self, nums: List[int]) -> bool:\n        mx = 0\n        for i, x in enumerate(nums):\n            if mx < i:\n                return False\n            mx = max(mx, i + x)\n        return True",
+  "sourceGoCode": "func canJump(nums []int) bool {\n\tmx := 0\n\tfor i, x := range nums {\n\t\tif mx < i {\n\t\t\treturn false\n\t\t}\n\t\tmx = max(mx, i+x)\n\t}\n\treturn true\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

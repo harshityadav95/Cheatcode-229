@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`dota2_senate`)
 - Go: `code.go` (`Solve028`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+649+Dota2+Senate+solution)
 
 ## Problem Statement
 

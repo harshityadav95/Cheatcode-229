@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+222+Count+Complete+Tree+Nodes+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0222.Count Complete Tree Nodes",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def countNodes(self, root: Optional[TreeNode]) -> int:\n        if root is None:\n            return 0\n        return 1 + self.countNodes(root.left) + self.countNodes(root.right)",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc countNodes(root *TreeNode) int {\n\tif root == nil {\n\t\treturn 0\n\t}\n\treturn 1 + countNodes(root.Left) + countNodes(root.Right)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

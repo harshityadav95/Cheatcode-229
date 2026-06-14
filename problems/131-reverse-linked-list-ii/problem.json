@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+92+Reverse+Linked+List+II+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0092.Reverse Linked List II",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def reverseBetween(\n        self, head: Optional[ListNode], left: int, right: int\n    ) -> Optional[ListNode]:\n        if head.next is None or left == right:\n            return head\n        dummy = ListNode(0, head)\n        pre = dummy\n        for _ in range(left - 1):\n            pre = pre.next\n        p, q = pre, pre.next\n        cur = q\n        for _ in range(right - left + 1):\n            t = cur.next\n            cur.next = pre\n            pre, cur = cur, t\n        p.next = pre\n        q.next = cur\n        return dummy.next",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc reverseBetween(head *ListNode, left int, right int) *ListNode {\n\tif head.Next == nil || left == right {\n\t\treturn head\n\t}\n\tdummy := &ListNode{0, head}\n\tpre := dummy\n\tfor i := 0; i < left-1; i++ {\n\t\tpre = pre.Next\n\t}\n\tp, q := pre, pre.Next\n\tcur := q\n\tfor i := 0; i < right-left+1; i++ {\n\t\tt := cur.Next\n\t\tcur.Next = pre\n\t\tpre = cur\n\t\tcur = t\n\t}\n\tp.Next = pre\n\tq.Next = cur\n\treturn dummy.Next\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

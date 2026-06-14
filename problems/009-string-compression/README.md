@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`string_compression`)
 - Go: `code.go` (`Solve009`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+443+String+Compression+solution)
 
 ## Problem Statement
 

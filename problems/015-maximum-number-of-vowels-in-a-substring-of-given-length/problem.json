@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1456+Maximum+Number+of+Vowels+in+a+Substring+of+Given+Length+solution",
+  "leetcodeMainPath": "leetcode-main/solution/1400-1499/1456.Maximum Number of Vowels in a Substring of Given Length",
+  "sourcePythonCode": "class Solution:\n    def maxVowels(self, s: str, k: int) -> int:\n        vowels = set(\"aeiou\")\n        ans = cnt = sum(c in vowels for c in s[:k])\n        for i in range(k, len(s)):\n            cnt += int(s[i] in vowels) - int(s[i - k] in vowels)\n            ans = max(ans, cnt)\n        return ans",
+  "sourceGoCode": "func maxVowels(s string, k int) int {\n\tisVowel := func(c byte) bool {\n\t\treturn c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'\n\t}\n\tcnt := 0\n\tfor i := 0; i < k; i++ {\n\t\tif isVowel(s[i]) {\n\t\t\tcnt++\n\t\t}\n\t}\n\tans := cnt\n\tfor i := k; i < len(s); i++ {\n\t\tif isVowel(s[i-k]) {\n\t\t\tcnt--\n\t\t}\n\t\tif isVowel(s[i]) {\n\t\t\tcnt++\n\t\t}\n\t\tans = max(ans, cnt)\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

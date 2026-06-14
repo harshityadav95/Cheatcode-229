@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`greatest_common_divisor_of_strings`)
 - Go: `code.go` (`Solve002`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1071+Greatest+Common+Divisor+of+Strings+solution)
 
 ## Problem Statement
 

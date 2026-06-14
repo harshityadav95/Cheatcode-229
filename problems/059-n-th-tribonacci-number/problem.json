@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1137+N-th+Tribonacci+Number+solution",
+  "leetcodeMainPath": "leetcode-main/solution/1100-1199/1137.N-th Tribonacci Number",
+  "sourcePythonCode": "class Solution:\n    def tribonacci(self, n: int) -> int:\n        a, b, c = 0, 1, 1\n        for _ in range(n):\n            a, b, c = b, c, a + b + c\n        return a",
+  "sourceGoCode": "func tribonacci(n int) int {\n\ta, b, c := 0, 1, 1\n\tfor i := 0; i < n; i++ {\n\t\ta, b, c = b, c, a+b+c\n\t}\n\treturn a\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

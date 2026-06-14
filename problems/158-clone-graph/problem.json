@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+133+Clone+Graph+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0133.Clone Graph",
+  "sourcePythonCode": "\"\"\"\n# Definition for a Node.\nclass Node:\n    def __init__(self, val = 0, neighbors = None):\n        self.val = val\n        self.neighbors = neighbors if neighbors is not None else []\n\"\"\"\n\nfrom typing import Optional\n\n\nclass Solution:\n    def cloneGraph(self, node: Optional[\"Node\"]) -> Optional[\"Node\"]:\n        def dfs(node):\n            if node is None:\n                return None\n            if node in g:\n                return g[node]\n            cloned = Node(node.val)\n            g[node] = cloned\n            for nxt in node.neighbors:\n                cloned.neighbors.append(dfs(nxt))\n            return cloned\n\n        g = defaultdict()\n        return dfs(node)",
+  "sourceGoCode": "/**\n * Definition for a Node.\n * type Node struct {\n *     Val int\n *     Neighbors []*Node\n * }\n */\n\nfunc cloneGraph(node *Node) *Node {\n\tg := map[*Node]*Node{}\n\tvar dfs func(node *Node) *Node\n\tdfs = func(node *Node) *Node {\n\t\tif node == nil {\n\t\t\treturn nil\n\t\t}\n\t\tif n, ok := g[node]; ok {\n\t\t\treturn n\n\t\t}\n\t\tcloned := &Node{node.Val, []*Node{}}\n\t\tg[node] = cloned\n\t\tfor _, nxt := range node.Neighbors {\n\t\t\tcloned.Neighbors = append(cloned.Neighbors, dfs(nxt))\n\t\t}\n\t\treturn cloned\n\t}\n\treturn dfs(node)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

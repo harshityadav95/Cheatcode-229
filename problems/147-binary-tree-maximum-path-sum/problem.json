@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+124+Binary+Tree+Maximum+Path+Sum+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0124.Binary Tree Maximum Path Sum",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def maxPathSum(self, root: Optional[TreeNode]) -> int:\n        def dfs(root: Optional[TreeNode]) -> int:\n            if root is None:\n                return 0\n            left = max(0, dfs(root.left))\n            right = max(0, dfs(root.right))\n            nonlocal ans\n            ans = max(ans, root.val + left + right)\n            return root.val + max(left, right)\n\n        ans = -inf\n        dfs(root)\n        return ans",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc maxPathSum(root *TreeNode) int {\n\tans := -1001\n\tvar dfs func(*TreeNode) int\n\tdfs = func(root *TreeNode) int {\n\t\tif root == nil {\n\t\t\treturn 0\n\t\t}\n\t\tleft := max(0, dfs(root.Left))\n\t\tright := max(0, dfs(root.Right))\n\t\tans = max(ans, left+right+root.Val)\n\t\treturn max(left, right) + root.Val\n\t}\n\tdfs(root)\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -87,6 +87,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+53+Maximum+Subarray+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0053.Maximum Subarray",
+  "sourcePythonCode": "class Solution:\n    def maxSubArray(self, nums: List[int]) -> int:\n        ans = f = nums[0]\n        for x in nums[1:]:\n            f = max(f, 0) + x\n            ans = max(ans, f)\n        return ans",
+  "sourceGoCode": "func maxSubArray(nums []int) int {\n\tans, f := nums[0], nums[0]\n\tfor _, x := range nums[1:] {\n\t\tf = max(f, 0) + x\n\t\tans = max(ans, f)\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

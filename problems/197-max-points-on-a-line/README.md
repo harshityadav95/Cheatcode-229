@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`max_points_on_a_line`)
 - Go: `code.go` (`Solve197`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+149+Max+Points+on+a+Line+solution)
 
 ## Problem Statement
 

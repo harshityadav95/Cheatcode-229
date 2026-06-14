@@ -95,6 +95,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+268+Missing+Number+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0268.Missing Number",
+  "sourcePythonCode": "class Solution:\n    def missingNumber(self, nums: List[int]) -> int:\n        return reduce(xor, (i ^ v for i, v in enumerate(nums, 1)))",
+  "sourceGoCode": "func missingNumber(nums []int) (ans int) {\n\tn := len(nums)\n\tans = n\n\tfor i, v := range nums {\n\t\tans ^= (i ^ v)\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

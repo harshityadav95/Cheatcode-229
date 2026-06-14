@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`evaluate_reverse_polish_notation`)
 - Go: `code.go` (`Solve125`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+150+Evaluate+Reverse+Polish+Notation+solution)
 
 ## Problem Statement
 

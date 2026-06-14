@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`convert_sorted_array_to_binary_search_tree`)
 - Go: `code.go` (`Solve172`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+108+Convert+Sorted+Array+to+Binary+Search+Tree+solution)
 
 ## Problem Statement
 

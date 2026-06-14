@@ -7,6 +7,7 @@
 - Space: O(1) unless recursion/map
 - Python: `code.py` (`delete_the_middle_node_of_a_linked_list`)
 - Go: `code.go` (`Solve029`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+2095+Delete+the+Middle+Node+of+a+Linked+List+solution)
 
 ## Problem Statement
 

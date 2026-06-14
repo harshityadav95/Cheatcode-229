@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`two_sum_ii_input_array_is_sorted`)
 - Go: `code.go` (`Solve099`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+167+Two+Sum+II+-+Input+Array+Is+Sorted+solution)
 
 ## Problem Statement
 

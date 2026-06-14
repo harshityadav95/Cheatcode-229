@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+206+Reverse+Linked+List+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0206.Reverse Linked List",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def reverseList(self, head: ListNode) -> ListNode:\n        dummy = ListNode()\n        curr = head\n        while curr:\n            next = curr.next\n            curr.next = dummy.next\n            dummy.next = curr\n            curr = next\n        return dummy.next",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc reverseList(head *ListNode) *ListNode {\n\tdummy := &ListNode{}\n\tcurr := head\n\tfor curr != nil {\n\t\tnext := curr.Next\n\t\tcurr.Next = dummy.Next\n\t\tdummy.Next = curr\n\t\tcurr = next\n\t}\n\treturn dummy.Next\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

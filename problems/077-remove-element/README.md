@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`remove_element`)
 - Go: `code.go` (`Solve077`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+27+Remove+Element+solution)
 
 ## Problem Statement
 

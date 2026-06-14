@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`count_good_nodes_in_binary_tree`)
 - Go: `code.go` (`Solve035`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1448+Count+Good+Nodes+in+Binary+Tree+solution)
 
 ## Problem Statement
 

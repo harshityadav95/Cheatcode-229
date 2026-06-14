@@ -86,6 +86,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+918+Maximum+Sum+Circular+Subarray+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0900-0999/0918.Maximum Sum Circular Subarray",
+  "sourcePythonCode": "class Solution:\n    def maxSubarraySumCircular(self, nums: List[int]) -> int:\n        pmi, pmx = 0, -inf\n        ans, s, smi = -inf, 0, inf\n        for x in nums:\n            s += x\n            ans = max(ans, s - pmi)\n            smi = min(smi, s - pmx)\n            pmi = min(pmi, s)\n            pmx = max(pmx, s)\n        return max(ans, s - smi)",
+  "sourceGoCode": "func maxSubarraySumCircular(nums []int) int {\n\tconst inf = 1 << 30\n\tpmi, pmx := 0, -inf\n\tans, s, smi := -inf, 0, inf\n\tfor _, x := range nums {\n\t\ts += x\n\t\tans = max(ans, s-pmi)\n\t\tsmi = min(smi, s-pmx)\n\t\tpmi = min(pmi, s)\n\t\tpmx = max(pmx, s)\n\t}\n\treturn max(ans, s-smi)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

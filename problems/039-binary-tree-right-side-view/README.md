@@ -7,6 +7,7 @@
 - Space: O(w)
 - Python: `code.py` (`binary_tree_right_side_view`)
 - Go: `code.go` (`Solve039`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+199+Binary+Tree+Right+Side+View+solution)
 
 ## Problem Statement
 

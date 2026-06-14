@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+3+Longest+Substring+Without+Repeating+Characters+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0003.Longest Substring Without Repeating Characters",
+  "sourcePythonCode": "class Solution:\n    def lengthOfLongestSubstring(self, s: str) -> int:\n        cnt = Counter()\n        ans = l = 0\n        for r, c in enumerate(s):\n            cnt[c] += 1\n            while cnt[c] > 1:\n                cnt[s[l]] -= 1\n                l += 1\n            ans = max(ans, r - l + 1)\n        return ans",
+  "sourceGoCode": "func lengthOfLongestSubstring(s string) (ans int) {\n\tcnt := [128]int{}\n\tl := 0\n\tfor r, c := range s {\n\t\tcnt[c]++\n\t\tfor cnt[c] > 1 {\n\t\t\tcnt[s[l]]--\n\t\t\tl++\n\t\t}\n\t\tans = max(ans, r-l+1)\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

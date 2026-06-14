@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`valid_palindrome`)
 - Go: `code.go` (`Solve098`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+125+Valid+Palindrome+solution)
 
 ## Problem Statement
 

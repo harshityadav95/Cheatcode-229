@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+209+Minimum+Size+Subarray+Sum+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0209.Minimum Size Subarray Sum",
+  "sourcePythonCode": "class Solution:\n    def minSubArrayLen(self, target: int, nums: List[int]) -> int:\n        n = len(nums)\n        s = list(accumulate(nums, initial=0))\n        ans = n + 1\n        for i, x in enumerate(s):\n            j = bisect_left(s, x + target)\n            if j <= n:\n                ans = min(ans, j - i)\n        return ans if ans <= n else 0",
+  "sourceGoCode": "func minSubArrayLen(target int, nums []int) int {\n\tn := len(nums)\n\ts := make([]int, n+1)\n\tfor i, x := range nums {\n\t\ts[i+1] = s[i] + x\n\t}\n\tans := n + 1\n\tfor i, x := range s {\n\t\tj := sort.SearchInts(s, x+target)\n\t\tif j <= n {\n\t\t\tans = min(ans, j-i)\n\t\t}\n\t}\n\tif ans == n+1 {\n\t\treturn 0\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

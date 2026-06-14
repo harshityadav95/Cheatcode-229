@@ -7,6 +7,7 @@
 - Space: O(n*m) or O(1)
 - Python: `code.py` (`minimum_path_sum`)
 - Go: `code.go` (`Solve203`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+64+Minimum+Path+Sum+solution)
 
 ## Problem Statement
 

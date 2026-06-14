@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`path_sum_iii`)
 - Go: `code.go` (`Solve036`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+437+Path+Sum+III+solution)
 
 ## Problem Statement
 

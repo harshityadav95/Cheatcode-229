@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+173+Binary+Search+Tree+Iterator+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0173.Binary Search Tree Iterator",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass BSTIterator:\n    def __init__(self, root: TreeNode):\n        def inorder(root):\n            if root:\n                inorder(root.left)\n                self.vals.append(root.val)\n                inorder(root.right)\n\n        self.cur = 0\n        self.vals = []\n        inorder(root)\n\n    def next(self) -> int:\n        res = self.vals[self.cur]\n        self.cur += 1\n        return res\n\n    def hasNext(self) -> bool:\n        return self.cur < len(self.vals)\n\n\n# Your BSTIterator object will be instantiated and called as such:\n# obj = BSTIterator(root)\n# param_1 = obj.next()\n# param_2 = obj.hasNext()",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\ntype BSTIterator struct {\n\tstack []*TreeNode\n}\n\nfunc Constructor(root *TreeNode) BSTIterator {\n\tvar stack []*TreeNode\n\tfor ; root != nil; root = root.Left {\n\t\tstack = append(stack, root)\n\t}\n\treturn BSTIterator{\n\t\tstack: stack,\n\t}\n}\n\nfunc (this *BSTIterator) Next() int {\n\tcur := this.stack[len(this.stack)-1]\n\tthis.stack = this.stack[:len(this.stack)-1]\n\tfor node := cur.Right; node != nil; node = node.Left {\n\t\tthis.stack = append(this.stack, node)\n\t}\n\treturn cur.Val\n}\n\nfunc (this *BSTIterator) HasNext() bool {\n\treturn len(this.stack) > 0\n}\n\n/**\n * Your BSTIterator object will be instantiated and called as such:\n * obj := Constructor(root);\n * param_1 := obj.Next();\n * param_2 := obj.HasNext();\n */",
   "files": {
     "python": "code.py",
     "go": "code.go"
