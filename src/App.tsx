@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
 import {
-  ArrowDown,
   BookOpen,
   CheckCircle2,
   ChevronLeft,
@@ -22,7 +21,6 @@ import {
   PlayCircle,
   Search,
   Sparkles,
-  Shuffle,
   Sun,
   Target,
 } from 'lucide-react'
@@ -40,6 +38,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Textarea } from '@/components/ui/textarea'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { patterns, problems, type Problem } from '@/data/problems'
+import { LandingPage } from '@/components/LandingPage'
 import './App.css'
 
 type DifficultyFilter = Problem['difficulty'] | 'All'
@@ -316,6 +315,14 @@ function App() {
   const showLanding = route.kind === 'landing'
   const catalogMode: CatalogMode = route.kind === 'leetcode' ? 'leetcode' : 'curated'
 
+  const handleSelectPattern = (patternName: string) => {
+    setPattern(patternName)
+    const firstProb = problems.find((p) => p.pattern === patternName)
+    if (firstProb) {
+      openProblem(firstProb)
+    }
+  }
+
   return (
     <TooltipProvider>
       <main className="min-h-screen bg-white text-slate-950 dark:bg-slate-950 dark:text-slate-100">
@@ -386,12 +393,14 @@ function App() {
         </header>
 
         {showLanding && (
-          <LandingHero
-            problemCount={problems.length}
-            patternCount={patterns.length}
+          <LandingPage
+            problems={problems}
+            patterns={patterns}
             importedCount={importedProblems.length}
-            onBrowse={browseProblems}
+            onSelectPattern={handleSelectPattern}
+            onBrowseAll={browseProblems}
             onRandomProblem={openRandomProblem}
+            onOpenProblem={openProblem}
             onLeetCodeClone={openLeetCodeClone}
           />
         )}
@@ -444,91 +453,6 @@ function App() {
         )}
       </main>
     </TooltipProvider>
-  )
-}
-
-function LandingHero({
-  problemCount,
-  patternCount,
-  importedCount,
-  onBrowse,
-  onRandomProblem,
-  onLeetCodeClone,
-}: {
-  problemCount: number
-  patternCount: number
-  importedCount: number
-  onBrowse: () => void
-  onRandomProblem: () => void
-  onLeetCodeClone: () => void
-}) {
-  return (
-    <section className="landing-hero relative isolate overflow-hidden bg-slate-950 text-white">
-      <img
-        src="/cheatcode-hero.png"
-        alt=""
-        className="absolute inset-0 -z-20 h-full w-full object-cover"
-      />
-      <div className="absolute inset-0 -z-10 bg-slate-950/65" />
-      <div className="mx-auto flex h-full max-w-[1500px] items-center px-4 py-10 sm:px-6 lg:px-8">
-        <div className="max-w-3xl space-y-6">
-          <Badge className="border border-cyan-300/40 bg-cyan-300/15 text-cyan-50">
-            DSA 2026
-          </Badge>
-          <div className="space-y-4">
-            <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-normal text-white sm:text-5xl lg:text-6xl">
-              Cheatcode 229
-            </h1>
-            <p className="max-w-2xl text-base leading-7 text-slate-100 sm:text-lg">
-              A focused interview workspace for problem statements, proof sketches, diagrams, and Python/Go solution files.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            <Button
-              type="button"
-              size="lg"
-              className="h-10 bg-white text-slate-950 hover:bg-cyan-50"
-              onClick={onBrowse}
-            >
-              <ArrowDown className="size-4" />
-              Browse problems
-            </Button>
-            <Button
-              type="button"
-              variant="outline"
-              size="lg"
-              className="h-10 border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white"
-              onClick={onRandomProblem}
-            >
-              <Shuffle className="size-4" />
-              Random problem
-            </Button>
-            <Button
-              type="button"
-              variant="outline"
-              size="lg"
-              className="h-10 border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white"
-              onClick={onLeetCodeClone}
-              disabled={importedCount === 0}
-            >
-              <Library className="size-4" />
-              LeetCode clone
-            </Button>
-          </div>
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-200">
-            <span>
-              <strong className="text-white">{problemCount}</strong> problems
-            </span>
-            <span>
-              <strong className="text-white">{patternCount}</strong> patterns
-            </span>
-            <span>
-              <strong className="text-white">{importedCount || '3,962'}</strong> imported LeetCode records
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
   )
 }
 

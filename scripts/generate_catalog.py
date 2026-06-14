@@ -671,7 +671,7 @@ def problem_references(problem: dict) -> list[dict[str, object]]:
         problem["pattern"],
         ("LeetCode topic reference", "algorithms"),
     )
-    return [
+    refs = [
         {
             "label": "LeetCode problem statement",
             "url": problem_url,
@@ -689,6 +689,13 @@ def problem_references(problem: dict) -> list[dict[str, object]]:
             "kind": "topic",
         },
     ]
+    if problem["leetcode"] == 1768:
+        refs.append({
+            "label": "Doocs LeetCode reference",
+            "url": "https://github.com/doocs/leetcode/blob/main/solution/1700-1799/1768.Merge%20Strings%20Alternately/README_EN.md",
+            "kind": "solutions",
+        })
+    return refs
 
 
 def go_name(index: int) -> str:
@@ -1018,6 +1025,23 @@ def parse_problems() -> list[dict]:
 
 def python_kernel_code(problem: dict) -> str:
     func = problem["pythonFunction"]
+    if problem["leetcode"] == 1768:
+        return (
+            f"def {func}(*args):\n"
+            f"    \"\"\"Reference kernel for 1768. Merge Strings Alternately.\n\n"
+            "    The website explains the exact platform adaptation. This function is\n"
+            "    intentionally small so tests can import every problem module.\n"
+            "    \"\"\"\n"
+            "    from itertools import zip_longest\n"
+            "    class Solution:\n"
+            "        def mergeAlternately(self, word1: str, word2: str) -> str:\n"
+            "            return ''.join(a + b for a, b in zip_longest(word1, word2, fillvalue=''))\n"
+            "    if not args:\n"
+            "        return ''\n"
+            "    word1 = args[0]\n"
+            "    word2 = args[1] if len(args) > 1 else ''\n"
+            "    return Solution().mergeAlternately(word1, word2)\n"
+        )
     snippet = PY_PATTERN_SNIPPETS.get(problem["pattern"], PY_PATTERN_SNIPPETS["Array / String"])
     return (
         f"def {func}(*args):\n"
@@ -1031,6 +1055,35 @@ def python_kernel_code(problem: dict) -> str:
 
 def python_code(problem: dict) -> str:
     func = problem["pythonFunction"]
+    if problem["leetcode"] == 1768:
+        return (
+            "from __future__ import annotations\n\n"
+            "import bisect\n"
+            "import heapq\n"
+            "import math\n"
+            "from collections import Counter, defaultdict, deque\n"
+            "from typing import Any\n"
+            "from itertools import zip_longest\n\n\n"
+            "class Solution:\n"
+            "    def mergeAlternately(self, word1: str, word2: str) -> str:\n"
+            "        return ''.join(a + b for a, b in zip_longest(word1, word2, fillvalue=''))\n\n\n"
+            "def solve(*args: Any) -> Any:\n"
+            "    \"\"\"Complete runnable solution entry point for 1768. Merge Strings Alternately.\n\n"
+            "    Replace the demo print in __main__ with parsed arguments from the\n"
+            "    platform, or call solve(...) directly from your own tests.\n"
+            "    \"\"\"\n"
+            "    if not args:\n"
+            "        return ''\n"
+            "    word1 = args[0]\n"
+            "    word2 = args[1] if len(args) > 1 else ''\n"
+            "    return Solution().mergeAlternately(word1, word2)\n\n\n"
+            f"{func} = solve\n\n\n"
+            'if __name__ == "__main__":\n'
+            f"    print({json.dumps(str(problem['leetcode']) + '. ' + problem['title'])})\n"
+            f"    print('Sample input:', {json.dumps(problem['example']['input'])})\n"
+            f"    print('Expected output:', {json.dumps(problem['example']['output'])})\n"
+            "    print('Call solve(...) with parsed arguments for this problem.')\n"
+        )
     snippet = PY_PATTERN_SNIPPETS.get(problem["pattern"], PY_PATTERN_SNIPPETS["Array / String"])
     return (
         "from __future__ import annotations\n\n"
@@ -1055,6 +1108,34 @@ def python_code(problem: dict) -> str:
 
 
 def go_kernel_code(problem: dict) -> str:
+    if problem["leetcode"] == 1768:
+        return (
+            f"// 1768. Merge Strings Alternately\n"
+            f"func Solve001(args ...any) any {{\n"
+            "	if len(args) < 2 {\n"
+            "		return \"\"\n"
+            "	}\n"
+            "	word1, ok1 := args[0].(string)\n"
+            "	word2, ok2 := args[1].(string)\n"
+            "	if !ok1 || !ok2 {\n"
+            "		return \"\"\n"
+            "	}\n"
+            "	return mergeAlternately(word1, word2)\n"
+            "}\n\n"
+            "func mergeAlternately(word1 string, word2 string) string {\n"
+            "	m, n := len(word1), len(word2)\n"
+            "	ans := make([]byte, 0, m+n)\n"
+            "	for i := 0; i < m || i < n; i++ {\n"
+            "		if i < m {\n"
+            "			ans = append(ans, word1[i])\n"
+            "		}\n"
+            "		if i < n {\n"
+            "			ans = append(ans, word2[i])\n"
+            "		}\n"
+            "	}\n"
+            "	return string(ans)\n"
+            "}\n"
+        )
     snippet = GO_PATTERN_SNIPPETS.get(problem["pattern"], GO_PATTERN_SNIPPETS["Array / String"])
     return (
         f"// {problem['leetcode']}. {problem['title']}\n"
@@ -1065,6 +1146,42 @@ def go_kernel_code(problem: dict) -> str:
 
 
 def go_code(problem: dict) -> str:
+    if problem["leetcode"] == 1768:
+        return (
+            "package main\n\n"
+            'import "fmt"\n\n'
+            "// 1768. Merge Strings Alternately\n"
+            "func Solve001(args ...any) any {\n"
+            "\tif len(args) < 2 {\n"
+            "\t\treturn \"\"\n"
+            "\t}\n"
+            "\tword1, ok1 := args[0].(string)\n"
+            "\tword2, ok2 := args[1].(string)\n"
+            "\tif !ok1 || !ok2 {\n"
+            "\t\treturn \"\"\n"
+            "\t}\n"
+            "\treturn mergeAlternately(word1, word2)\n"
+            "}\n\n"
+            "func mergeAlternately(word1 string, word2 string) string {\n"
+            "\tm, n := len(word1), len(word2)\n"
+            "\tans := make([]byte, 0, m+n)\n"
+            "\tfor i := 0; i < m || i < n; i++ {\n"
+            "\t\tif i < m {\n"
+            "\t\t\tans = append(ans, word1[i])\n"
+            "\t\t}\n"
+            "\t\tif i < n {\n"
+            "\t\t\tans = append(ans, word2[i])\n"
+            "\t\t}\n"
+            "\t}\n"
+            "\treturn string(ans)\n"
+            "}\n\n"
+            "func main() {\n"
+            "\tfmt.Println(\"1768. Merge Strings Alternately\")\n"
+            "\tfmt.Println(\"Sample input:\", \"word1=\\\"abc\\\", word2=\\\"pq\\\"\")\n"
+            "\tfmt.Println(\"Expected output:\", \"\\\"apbqc\\\"\")\n"
+            "\tfmt.Println(\"Call Solve001(...) with parsed arguments for this problem.\")\n"
+            "}\n"
+        )
     snippet = GO_PATTERN_SNIPPETS.get(problem["pattern"], GO_PATTERN_SNIPPETS["Array / String"])
     return (
         "package main\n\n"
