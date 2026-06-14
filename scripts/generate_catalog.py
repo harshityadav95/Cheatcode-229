@@ -18,6 +18,8 @@ from urllib.parse import quote_plus
 ROOT = Path(__file__).resolve().parents[1]
 PDF_NAME = "DSA_2026_BW_RENDERED_DIAGRAMS.pdf"
 LEETCODE_MAIN_SOLUTION = ROOT / "leetcode-main" / "solution"
+PROBLEMS_DIR = ROOT / "problems"
+LEETCODE_SOURCE_FIELDS = ("leetcodeMainPath", "sourcePythonCode", "sourceGoCode")
 
 
 RAW_PROBLEMS = """
@@ -640,11 +642,31 @@ def youtube_video_url(leetcode: int, title: str) -> str:
     return f"https://www.youtube.com/results?search_query={query}"
 
 
-def load_leetcode_main_sources() -> dict[int, dict[str, str]]:
-    if not LEETCODE_MAIN_SOLUTION.exists():
-        return {}
-
+def load_committed_leetcode_sources() -> dict[int, dict[str, str]]:
     sources: dict[int, dict[str, str]] = {}
+    for problem_path in sorted(PROBLEMS_DIR.glob("*/problem.json")):
+        try:
+            problem = json.loads(problem_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+
+        source = {
+            field: problem[field]
+            for field in LEETCODE_SOURCE_FIELDS
+            if isinstance(problem.get(field), str) and problem[field]
+        }
+        leetcode = problem.get("leetcode")
+        if source and isinstance(leetcode, int):
+            sources[leetcode] = source
+
+    return sources
+
+
+def load_leetcode_main_sources() -> dict[int, dict[str, str]]:
+    sources = load_committed_leetcode_sources()
+    if not LEETCODE_MAIN_SOLUTION.exists():
+        return sources
+
     for readme_path in sorted(LEETCODE_MAIN_SOLUTION.glob("*/*/README_EN.md")):
         match = re.match(r"^0*(\d+)\.", readme_path.parent.name)
         if not match:
