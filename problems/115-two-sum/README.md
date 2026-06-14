@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`two_sum`)
 - Go: `code.go` (`Solve115`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1+Two+Sum+solution)
 
 ## Problem Statement
 

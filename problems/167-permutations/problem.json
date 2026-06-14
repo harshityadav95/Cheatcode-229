@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+46+Permutations+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0046.Permutations",
+  "sourcePythonCode": "class Solution:\n    def permute(self, nums: List[int]) -> List[List[int]]:\n        def dfs(i: int):\n            if i >= n:\n                ans.append(t[:])\n                return\n            for j, x in enumerate(nums):\n                if not vis[j]:\n                    vis[j] = True\n                    t[i] = x\n                    dfs(i + 1)\n                    vis[j] = False\n\n        n = len(nums)\n        vis = [False] * n\n        t = [0] * n\n        ans = []\n        dfs(0)\n        return ans",
+  "sourceGoCode": "func permute(nums []int) (ans [][]int) {\n\tn := len(nums)\n\tt := make([]int, n)\n\tvis := make([]bool, n)\n\tvar dfs func(int)\n\tdfs = func(i int) {\n\t\tif i == n {\n\t\t\tans = append(ans, slices.Clone(t))\n\t\t\treturn\n\t\t}\n\t\tfor j, x := range nums {\n\t\t\tif !vis[j] {\n\t\t\t\tvis[j] = true\n\t\t\t\tt[i] = x\n\t\t\t\tdfs(i + 1)\n\t\t\t\tvis[j] = false\n\t\t\t}\n\t\t}\n\t}\n\tdfs(0)\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

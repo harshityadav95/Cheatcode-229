@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`best_time_to_buy_and_sell_stock`)
 - Go: `code.go` (`Solve082`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+121+Best+Time+to+Buy+and+Sell+Stock+solution)
 
 ## Problem Statement
 

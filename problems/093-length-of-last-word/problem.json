@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+58+Length+of+Last+Word+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0058.Length of Last Word",
+  "sourcePythonCode": "class Solution:\n    def lengthOfLastWord(self, s: str) -> int:\n        i = len(s) - 1\n        while i >= 0 and s[i] == ' ':\n            i -= 1\n        j = i\n        while j >= 0 and s[j] != ' ':\n            j -= 1\n        return i - j",
+  "sourceGoCode": "func lengthOfLastWord(s string) int {\n\ti := len(s) - 1\n\tfor i >= 0 && s[i] == ' ' {\n\t\ti--\n\t}\n\tj := i\n\tfor j >= 0 && s[j] != ' ' {\n\t\tj--\n\t}\n\treturn i - j\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

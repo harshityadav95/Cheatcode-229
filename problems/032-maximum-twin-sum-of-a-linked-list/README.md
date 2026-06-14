@@ -7,6 +7,7 @@
 - Space: O(1) unless recursion/map
 - Python: `code.py` (`maximum_twin_sum_of_a_linked_list`)
 - Go: `code.go` (`Solve032`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+2130+Maximum+Twin+Sum+of+a+Linked+List+solution)
 
 ## Problem Statement
 

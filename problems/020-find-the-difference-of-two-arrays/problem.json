@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+2215+Find+the+Difference+of+Two+Arrays+solution",
+  "leetcodeMainPath": "leetcode-main/solution/2200-2299/2215.Find the Difference of Two Arrays",
+  "sourcePythonCode": "class Solution:\n    def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:\n        s1, s2 = set(nums1), set(nums2)\n        return [list(s1 - s2), list(s2 - s1)]",
+  "sourceGoCode": "func findDifference(nums1 []int, nums2 []int) [][]int {\n\ts1, s2 := make(map[int]bool), make(map[int]bool)\n\tfor _, v := range nums1 {\n\t\ts1[v] = true\n\t}\n\tfor _, v := range nums2 {\n\t\ts2[v] = true\n\t}\n\tans := make([][]int, 2)\n\tfor v := range s1 {\n\t\tif !s2[v] {\n\t\t\tans[0] = append(ans[0], v)\n\t\t}\n\t}\n\tfor v := range s2 {\n\t\tif !s1[v] {\n\t\t\tans[1] = append(ans[1], v)\n\t\t}\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

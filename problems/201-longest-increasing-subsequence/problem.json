@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+300+Longest+Increasing+Subsequence+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0300-0399/0300.Longest Increasing Subsequence",
+  "sourcePythonCode": "class Solution:\n    def lengthOfLIS(self, nums: List[int]) -> int:\n        n = len(nums)\n        f = [1] * n\n        for i in range(1, n):\n            for j in range(i):\n                if nums[j] < nums[i]:\n                    f[i] = max(f[i], f[j] + 1)\n        return max(f)",
+  "sourceGoCode": "func lengthOfLIS(nums []int) int {\n\tn := len(nums)\n\tf := make([]int, n)\n\tfor i := range f {\n\t\tf[i] = 1\n\t}\n\tans := 1\n\tfor i := 1; i < n; i++ {\n\t\tfor j := 0; j < i; j++ {\n\t\t\tif nums[j] < nums[i] {\n\t\t\t\tf[i] = max(f[i], f[j]+1)\n\t\t\t\tans = max(ans, f[i])\n\t\t\t}\n\t\t}\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

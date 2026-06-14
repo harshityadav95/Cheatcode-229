@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`find_peak_element`)
 - Go: `code.go` (`Solve055`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+162+Find+Peak+Element+solution)
 
 ## Problem Statement
 

@@ -7,6 +7,7 @@
 - Space: O(n*m) or O(1)
 - Python: `code.py` (`interleaving_string`)
 - Go: `code.go` (`Solve206`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+97+Interleaving+String+solution)
 
 ## Problem Statement
 

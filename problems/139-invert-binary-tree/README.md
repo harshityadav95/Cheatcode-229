@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`invert_binary_tree`)
 - Go: `code.go` (`Solve139`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+226+Invert+Binary+Tree+solution)
 
 ## Problem Statement
 

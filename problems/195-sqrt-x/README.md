@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`sqrt_x`)
 - Go: `code.go` (`Solve195`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+69+Sqrt%28x%29+solution)
 
 ## Problem Statement
 

@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+105+Construct+Binary+Tree+from+Preorder+and+Inorder+Traversal+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0105.Construct Binary Tree from Preorder and Inorder Traversal",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:\n        def dfs(i: int, j: int, n: int) -> Optional[TreeNode]:\n            if n <= 0:\n                return None\n            v = preorder[i]\n            k = d[v]\n            l = dfs(i + 1, j, k - j)\n            r = dfs(i + 1 + k - j, k + 1, n - k + j - 1)\n            return TreeNode(v, l, r)\n\n        d = {v: i for i, v in enumerate(inorder)}\n        return dfs(0, 0, len(preorder))",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc buildTree(preorder []int, inorder []int) *TreeNode {\n\td := map[int]int{}\n\tfor i, x := range inorder {\n\t\td[x] = i\n\t}\n\tvar dfs func(i, j, n int) *TreeNode\n\tdfs = func(i, j, n int) *TreeNode {\n\t\tif n <= 0 {\n\t\t\treturn nil\n\t\t}\n\t\tv := preorder[i]\n\t\tk := d[v]\n\t\tl := dfs(i+1, j, k-j)\n\t\tr := dfs(i+1+k-j, k+1, n-1-(k-j))\n\t\treturn &TreeNode{v, l, r}\n\t}\n\treturn dfs(0, 0, len(preorder))\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

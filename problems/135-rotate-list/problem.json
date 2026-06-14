@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+61+Rotate+List+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0061.Rotate List",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:\n        if head is None or head.next is None:\n            return head\n        cur, n = head, 0\n        while cur:\n            n += 1\n            cur = cur.next\n        k %= n\n        if k == 0:\n            return head\n        fast = slow = head\n        for _ in range(k):\n            fast = fast.next\n        while fast.next:\n            fast, slow = fast.next, slow.next\n\n        ans = slow.next\n        slow.next = None\n        fast.next = head\n        return ans",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc rotateRight(head *ListNode, k int) *ListNode {\n\tif head == nil || head.Next == nil {\n\t\treturn head\n\t}\n\tcur := head\n\tn := 0\n\tfor cur != nil {\n\t\tcur = cur.Next\n\t\tn++\n\t}\n\tk %= n\n\tif k == 0 {\n\t\treturn head\n\t}\n\tfast, slow := head, head\n\tfor i := 0; i < k; i++ {\n\t\tfast = fast.Next\n\t}\n\tfor fast.Next != nil {\n\t\tfast = fast.Next\n\t\tslow = slow.Next\n\t}\n\tans := slow.Next\n\tslow.Next = nil\n\tfast.Next = head\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

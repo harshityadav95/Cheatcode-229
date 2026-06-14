@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+82+Remove+Duplicates+from+Sorted+List+II+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0082.Remove Duplicates from Sorted List II",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:\n        dummy = pre = ListNode(next=head)\n        cur = head\n        while cur:\n            while cur.next and cur.next.val == cur.val:\n                cur = cur.next\n            if pre.next == cur:\n                pre = cur\n            else:\n                pre.next = cur.next\n            cur = cur.next\n        return dummy.next",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc deleteDuplicates(head *ListNode) *ListNode {\n\tdummy := &ListNode{Next: head}\n\tpre, cur := dummy, head\n\tfor cur != nil {\n\t\tfor cur.Next != nil && cur.Next.Val == cur.Val {\n\t\t\tcur = cur.Next\n\t\t}\n\t\tif pre.Next == cur {\n\t\t\tpre = cur\n\t\t} else {\n\t\t\tpre.Next = cur.Next\n\t\t}\n\t\tcur = cur.Next\n\t}\n\treturn dummy.Next\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

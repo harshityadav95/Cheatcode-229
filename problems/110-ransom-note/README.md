@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`ransom_note`)
 - Go: `code.go` (`Solve110`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+383+Ransom+Note+solution)
 
 ## Problem Statement
 

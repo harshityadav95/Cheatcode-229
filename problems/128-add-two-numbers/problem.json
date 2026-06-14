@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+2+Add+Two+Numbers+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0002.Add Two Numbers",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def addTwoNumbers(\n        self, l1: Optional[ListNode], l2: Optional[ListNode]\n    ) -> Optional[ListNode]:\n        dummy = ListNode()\n        carry, curr = 0, dummy\n        while l1 or l2 or carry:\n            s = (l1.val if l1 else 0) + (l2.val if l2 else 0) + carry\n            carry, val = divmod(s, 10)\n            curr.next = ListNode(val)\n            curr = curr.next\n            l1 = l1.next if l1 else None\n            l2 = l2.next if l2 else None\n        return dummy.next",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {\n\tdummy := &ListNode{}\n\tcarry := 0\n\tcur := dummy\n\tfor l1 != nil || l2 != nil || carry != 0 {\n\t\ts := carry\n\t\tif l1 != nil {\n\t\t\ts += l1.Val\n\t\t}\n\t\tif l2 != nil {\n\t\t\ts += l2.Val\n\t\t}\n\t\tcarry = s / 10\n\t\tcur.Next = &ListNode{s % 10, nil}\n\t\tcur = cur.Next\n\t\tif l1 != nil {\n\t\t\tl1 = l1.Next\n\t\t}\n\t\tif l2 != nil {\n\t\t\tl2 = l2.Next\n\t\t}\n\t}\n\treturn dummy.Next\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

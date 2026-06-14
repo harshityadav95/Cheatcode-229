@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1161+Maximum+Level+Sum+of+a+Binary+Tree+solution",
+  "leetcodeMainPath": "leetcode-main/solution/1100-1199/1161.Maximum Level Sum of a Binary Tree",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def maxLevelSum(self, root: Optional[TreeNode]) -> int:\n        q = deque([root])\n        mx = -inf\n        i = 0\n        while q:\n            i += 1\n            s = 0\n            for _ in range(len(q)):\n                node = q.popleft()\n                s += node.val\n                if node.left:\n                    q.append(node.left)\n                if node.right:\n                    q.append(node.right)\n            if mx < s:\n                mx = s\n                ans = i\n        return ans",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc maxLevelSum(root *TreeNode) int {\n\tq := []*TreeNode{root}\n\tmx := -0x3f3f3f3f\n\ti := 0\n\tans := 0\n\tfor len(q) > 0 {\n\t\ti++\n\t\ts := 0\n\t\tfor n := len(q); n > 0; n-- {\n\t\t\troot = q[0]\n\t\t\tq = q[1:]\n\t\t\ts += root.Val\n\t\t\tif root.Left != nil {\n\t\t\t\tq = append(q, root.Left)\n\t\t\t}\n\t\t\tif root.Right != nil {\n\t\t\t\tq = append(q, root.Right)\n\t\t\t}\n\t\t}\n\t\tif mx < s {\n\t\t\tmx = s\n\t\t\tans = i\n\t\t}\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -7,6 +7,7 @@
 - Space: O(1) unless recursion/map
 - Python: `code.py` (`reorder_list`)
 - Go: `code.go` (`Solve222`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+143+Reorder+List+solution)
 
 ## Problem Statement
 

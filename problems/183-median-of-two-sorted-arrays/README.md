@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`median_of_two_sorted_arrays`)
 - Go: `code.go` (`Solve183`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+4+Median+of+Two+Sorted+Arrays+solution)
 
 ## Problem Statement
 

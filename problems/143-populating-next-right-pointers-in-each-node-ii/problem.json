@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+117+Populating+Next+Right+Pointers+in+Each+Node+II+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0117.Populating Next Right Pointers in Each Node II",
+  "sourcePythonCode": "\"\"\"\n# Definition for a Node.\nclass Node:\n    def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):\n        self.val = val\n        self.left = left\n        self.right = right\n        self.next = next\n\"\"\"\n\n\nclass Solution:\n    def connect(self, root: \"Node\") -> \"Node\":\n        if root is None:\n            return root\n        q = deque([root])\n        while q:\n            p = None\n            for _ in range(len(q)):\n                node = q.popleft()\n                if p:\n                    p.next = node\n                p = node\n                if node.left:\n                    q.append(node.left)\n                if node.right:\n                    q.append(node.right)\n        return root",
+  "sourceGoCode": "/**\n * Definition for a Node.\n * type Node struct {\n *     Val int\n *     Left *Node\n *     Right *Node\n *     Next *Node\n * }\n */\n\nfunc connect(root *Node) *Node {\n\tif root == nil {\n\t\treturn root\n\t}\n\tq := []*Node{root}\n\tfor len(q) > 0 {\n\t\tvar p *Node\n\t\tfor n := len(q); n > 0; n-- {\n\t\t\tnode := q[0]\n\t\t\tq = q[1:]\n\t\t\tif p != nil {\n\t\t\t\tp.Next = node\n\t\t\t}\n\t\t\tp = node\n\t\t\tif node.Left != nil {\n\t\t\t\tq = append(q, node.Left)\n\t\t\t}\n\t\t\tif node.Right != nil {\n\t\t\t\tq = append(q, node.Right)\n\t\t\t}\n\t\t}\n\t}\n\treturn root\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

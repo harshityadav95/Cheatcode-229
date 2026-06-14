@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`validate_binary_search_tree`)
 - Go: `code.go` (`Solve155`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+98+Validate+Binary+Search+Tree+solution)
 
 ## Problem Statement
 

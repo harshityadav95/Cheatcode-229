@@ -96,6 +96,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+136+Single+Number+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0136.Single Number",
+  "sourcePythonCode": "class Solution:\n    def singleNumber(self, nums: List[int]) -> int:\n        return reduce(xor, nums)",
+  "sourceGoCode": "func singleNumber(nums []int) (ans int) {\n\tfor _, v := range nums {\n\t\tans ^= v\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

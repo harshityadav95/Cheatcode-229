@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+71+Simplify+Path+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0071.Simplify Path",
+  "sourcePythonCode": "class Solution:\n    def simplifyPath(self, path: str) -> str:\n        stk = []\n        for s in path.split('/'):\n            if not s or s == '.':\n                continue\n            if s == '..':\n                if stk:\n                    stk.pop()\n            else:\n                stk.append(s)\n        return '/' + '/'.join(stk)",
+  "sourceGoCode": "func simplifyPath(path string) string {\n\tvar stk []string\n\tfor _, s := range strings.Split(path, \"/\") {\n\t\tif s == \"\" || s == \".\" {\n\t\t\tcontinue\n\t\t}\n\t\tif s == \"..\" {\n\t\t\tif len(stk) > 0 {\n\t\t\t\tstk = stk[0 : len(stk)-1]\n\t\t\t}\n\t\t} else {\n\t\t\tstk = append(stk, s)\n\t\t}\n\t}\n\treturn \"/\" + strings.Join(stk, \"/\")\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

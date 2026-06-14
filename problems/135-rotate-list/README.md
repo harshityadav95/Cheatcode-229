@@ -7,6 +7,7 @@
 - Space: O(1) unless recursion/map
 - Python: `code.py` (`rotate_list`)
 - Go: `code.go` (`Solve135`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+61+Rotate+List+solution)
 
 ## Problem Statement
 

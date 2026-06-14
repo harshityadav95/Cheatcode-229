@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`sum_of_two_integers`)
 - Go: `code.go` (`Solve212`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+371+Sum+of+Two+Integers+solution)
 
 ## Problem Statement
 

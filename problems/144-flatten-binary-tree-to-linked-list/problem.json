@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+114+Flatten+Binary+Tree+to+Linked+List+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0114.Flatten Binary Tree to Linked List",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def flatten(self, root: Optional[TreeNode]) -> None:\n        \"\"\"\n        Do not return anything, modify root in-place instead.\n        \"\"\"\n        while root:\n            if root.left:\n                pre = root.left\n                while pre.right:\n                    pre = pre.right\n                pre.right = root.right\n                root.right = root.left\n                root.left = None\n            root = root.right",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc flatten(root *TreeNode) {\n\tfor root != nil {\n\t\tif root.Left != nil {\n\t\t\tpre := root.Left\n\t\t\tfor pre.Right != nil {\n\t\t\t\tpre = pre.Right\n\t\t\t}\n\t\t\tpre.Right = root.Right\n\t\t\troot.Right = root.Left\n\t\t\troot.Left = nil\n\t\t}\n\t\troot = root.Right\n\t}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

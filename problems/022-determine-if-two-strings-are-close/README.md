@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`determine_if_two_strings_are_close`)
 - Go: `code.go` (`Solve022`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1657+Determine+if+Two+Strings+Are+Close+solution)
 
 ## Problem Statement
 

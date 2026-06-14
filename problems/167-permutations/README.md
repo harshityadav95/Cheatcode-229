@@ -7,6 +7,7 @@
 - Space: O(depth + output)
 - Python: `code.py` (`permutations`)
 - Go: `code.go` (`Solve167`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+46+Permutations+solution)
 
 ## Problem Statement
 

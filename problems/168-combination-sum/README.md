@@ -7,6 +7,7 @@
 - Space: O(depth + output)
 - Python: `code.py` (`combination_sum`)
 - Go: `code.go` (`Solve168`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+39+Combination+Sum+solution)
 
 ## Problem Statement
 

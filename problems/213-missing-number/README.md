@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`missing_number`)
 - Go: `code.go` (`Solve213`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+268+Missing+Number+solution)
 
 ## Problem Statement
 

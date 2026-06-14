@@ -87,6 +87,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+57+Insert+Interval+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0057.Insert Interval",
+  "sourcePythonCode": "class Solution:\n    def insert(\n        self, intervals: List[List[int]], newInterval: List[int]\n    ) -> List[List[int]]:\n        def merge(intervals: List[List[int]]) -> List[List[int]]:\n            intervals.sort()\n            ans = [intervals[0]]\n            for s, e in intervals[1:]:\n                if ans[-1][1] < s:\n                    ans.append([s, e])\n                else:\n                    ans[-1][1] = max(ans[-1][1], e)\n            return ans\n\n        intervals.append(newInterval)\n        return merge(intervals)",
+  "sourceGoCode": "func insert(intervals [][]int, newInterval []int) [][]int {\n\tmerge := func(intervals [][]int) (ans [][]int) {\n\t\tsort.Slice(intervals, func(i, j int) bool { return intervals[i][0] < intervals[j][0] })\n\t\tans = append(ans, intervals[0])\n\t\tfor _, e := range intervals[1:] {\n\t\t\tif ans[len(ans)-1][1] < e[0] {\n\t\t\t\tans = append(ans, e)\n\t\t\t} else {\n\t\t\t\tans[len(ans)-1][1] = max(ans[len(ans)-1][1], e[1])\n\t\t\t}\n\t\t}\n\t\treturn\n\t}\n\tintervals = append(intervals, newInterval)\n\treturn merge(intervals)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

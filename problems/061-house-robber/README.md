@@ -7,6 +7,7 @@
 - Space: O(state)
 - Python: `code.py` (`house_robber`)
 - Go: `code.go` (`Solve061`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+198+House+Robber+solution)
 
 ## Problem Statement
 

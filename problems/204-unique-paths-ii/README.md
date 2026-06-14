@@ -7,6 +7,7 @@
 - Space: O(n*m) or O(1)
 - Python: `code.py` (`unique_paths_ii`)
 - Go: `code.go` (`Solve204`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+63+Unique+Paths+II+solution)
 
 ## Problem Statement
 

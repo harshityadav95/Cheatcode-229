@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+127+Word+Ladder+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0127.Word Ladder",
+  "sourcePythonCode": "class Solution:\n    def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:\n        words = set(wordList)\n        q = deque([beginWord])\n        ans = 1\n        while q:\n            ans += 1\n            for _ in range(len(q)):\n                s = q.popleft()\n                s = list(s)\n                for i in range(len(s)):\n                    ch = s[i]\n                    for j in range(26):\n                        s[i] = chr(ord('a') + j)\n                        t = ''.join(s)\n                        if t not in words:\n                            continue\n                        if t == endWord:\n                            return ans\n                        q.append(t)\n                        words.remove(t)\n                    s[i] = ch\n        return 0",
+  "sourceGoCode": "func ladderLength(beginWord string, endWord string, wordList []string) int {\n\twords := make(map[string]bool)\n\tfor _, word := range wordList {\n\t\twords[word] = true\n\t}\n\tq := []string{beginWord}\n\tans := 1\n\tfor len(q) > 0 {\n\t\tans++\n\t\tfor i := len(q); i > 0; i-- {\n\t\t\ts := q[0]\n\t\t\tq = q[1:]\n\t\t\tchars := []byte(s)\n\t\t\tfor j := 0; j < len(chars); j++ {\n\t\t\t\tch := chars[j]\n\t\t\t\tfor k := 'a'; k <= 'z'; k++ {\n\t\t\t\t\tchars[j] = byte(k)\n\t\t\t\t\tt := string(chars)\n\t\t\t\t\tif !words[t] {\n\t\t\t\t\t\tcontinue\n\t\t\t\t\t}\n\t\t\t\t\tif t == endWord {\n\t\t\t\t\t\treturn ans\n\t\t\t\t\t}\n\t\t\t\t\tq = append(q, t)\n\t\t\t\t\twords[t] = false\n\t\t\t\t}\n\t\t\t\tchars[j] = ch\n\t\t\t}\n\t\t}\n\t}\n\treturn 0\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

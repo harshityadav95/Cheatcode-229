@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`maximum_average_subarray_i`)
 - Go: `code.go` (`Solve014`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+643+Maximum+Average+Subarray+I+solution)
 
 ## Problem Statement
 

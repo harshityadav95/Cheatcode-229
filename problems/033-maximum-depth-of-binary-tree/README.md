@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`maximum_depth_of_binary_tree`)
 - Go: `code.go` (`Solve033`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+104+Maximum+Depth+of+Binary+Tree+solution)
 
 ## Problem Statement
 

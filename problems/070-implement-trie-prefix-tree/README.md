@@ -7,6 +7,7 @@
 - Space: O(total characters)
 - Python: `code.py` (`implement_trie_prefix_tree`)
 - Go: `code.go` (`Solve070`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+208+Implement+Trie+%28Prefix+Tree%29+solution)
 
 ## Problem Statement
 

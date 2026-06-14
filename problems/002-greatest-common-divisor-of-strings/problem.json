@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1071+Greatest+Common+Divisor+of+Strings+solution",
+  "leetcodeMainPath": "leetcode-main/solution/1000-1099/1071.Greatest Common Divisor of Strings",
+  "sourcePythonCode": "class Solution:\n    def gcdOfStrings(self, str1: str, str2: str) -> str:\n        def check(a, b):\n            c = \"\"\n            while len(c) < len(b):\n                c += a\n            return c == b\n\n        for i in range(min(len(str1), len(str2)), 0, -1):\n            t = str1[:i]\n            if check(t, str1) and check(t, str2):\n                return t\n        return ''",
+  "sourceGoCode": "func gcdOfStrings(str1 string, str2 string) string {\n\tif str1+str2 != str2+str1 {\n\t\treturn \"\"\n\t}\n\tn := gcd(len(str1), len(str2))\n\treturn str1[:n]\n}\n\nfunc gcd(a, b int) int {\n\tif b == 0 {\n\t\treturn a\n\t}\n\treturn gcd(b, a%b)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`delete_node_in_a_bst`)
 - Go: `code.go` (`Solve042`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+450+Delete+Node+in+a+BST+solution)
 
 ## Problem Statement
 

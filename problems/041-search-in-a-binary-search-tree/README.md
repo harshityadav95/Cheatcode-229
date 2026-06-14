@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`search_in_a_binary_search_tree`)
 - Go: `code.go` (`Solve041`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+700+Search+in+a+Binary+Search+Tree+solution)
 
 ## Problem Statement
 

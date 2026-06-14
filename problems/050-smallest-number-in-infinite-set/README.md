@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`smallest_number_in_infinite_set`)
 - Go: `code.go` (`Solve050`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+2336+Smallest+Number+in+Infinite+Set+solution)
 
 ## Problem Statement
 

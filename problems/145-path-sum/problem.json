@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+112+Path+Sum+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0112.Path Sum",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:\n        def dfs(root, s):\n            if root is None:\n                return False\n            s += root.val\n            if root.left is None and root.right is None and s == targetSum:\n                return True\n            return dfs(root.left, s) or dfs(root.right, s)\n\n        return dfs(root, 0)",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc hasPathSum(root *TreeNode, targetSum int) bool {\n\tvar dfs func(*TreeNode, int) bool\n\tdfs = func(root *TreeNode, s int) bool {\n\t\tif root == nil {\n\t\t\treturn false\n\t\t}\n\t\ts += root.Val\n\t\tif root.Left == nil && root.Right == nil && s == targetSum {\n\t\t\treturn true\n\t\t}\n\t\treturn dfs(root.Left, s) || dfs(root.Right, s)\n\t}\n\treturn dfs(root, 0)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+48+Rotate+Image+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0048.Rotate Image",
+  "sourcePythonCode": "class Solution:\n    def rotate(self, matrix: List[List[int]]) -> None:\n        n = len(matrix)\n        for i in range(n >> 1):\n            for j in range(n):\n                matrix[i][j], matrix[n - i - 1][j] = matrix[n - i - 1][j], matrix[i][j]\n        for i in range(n):\n            for j in range(i):\n                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]",
+  "sourceGoCode": "func rotate(matrix [][]int) {\n\tn := len(matrix)\n\tfor i := 0; i < n>>1; i++ {\n\t\tfor j := 0; j < n; j++ {\n\t\t\tmatrix[i][j], matrix[n-i-1][j] = matrix[n-i-1][j], matrix[i][j]\n\t\t}\n\t}\n\tfor i := 0; i < n; i++ {\n\t\tfor j := 0; j < i; j++ {\n\t\t\tmatrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]\n\t\t}\n\t}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

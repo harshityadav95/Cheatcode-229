@@ -13,9 +13,11 @@ import base64
 import zlib
 from collections import Counter
 from pathlib import Path
+from urllib.parse import quote_plus
 
 ROOT = Path(__file__).resolve().parents[1]
 PDF_NAME = "DSA_2026_BW_RENDERED_DIAGRAMS.pdf"
+LEETCODE_MAIN_SOLUTION = ROOT / "leetcode-main" / "solution"
 
 
 RAW_PROBLEMS = """
@@ -633,6 +635,36 @@ def leetcode_url(problem: dict) -> str:
     return f"https://leetcode.com/problems/{leetcode_slug(problem)}/"
 
 
+def youtube_video_url(leetcode: int, title: str) -> str:
+    query = quote_plus(f"LeetCode {leetcode} {title} solution")
+    return f"https://www.youtube.com/results?search_query={query}"
+
+
+def load_leetcode_main_sources() -> dict[int, dict[str, str]]:
+    if not LEETCODE_MAIN_SOLUTION.exists():
+        return {}
+
+    sources: dict[int, dict[str, str]] = {}
+    for readme_path in sorted(LEETCODE_MAIN_SOLUTION.glob("*/*/README_EN.md")):
+        match = re.match(r"^0*(\d+)\.", readme_path.parent.name)
+        if not match:
+            continue
+
+        leetcode = int(match.group(1))
+        source: dict[str, str] = {
+            "leetcodeMainPath": str(readme_path.parent.relative_to(ROOT)),
+        }
+        python_path = readme_path.parent / "Solution.py"
+        go_path = readme_path.parent / "Solution.go"
+        if python_path.exists():
+            source["sourcePythonCode"] = python_path.read_text(encoding="utf-8", errors="replace").strip()
+        if go_path.exists():
+            source["sourceGoCode"] = go_path.read_text(encoding="utf-8", errors="replace").strip()
+        sources[leetcode] = source
+
+    return sources
+
+
 def problem_references(problem: dict) -> list[dict[str, object]]:
     problem_url = leetcode_url(problem)
     topic_label, topic_slug = PATTERN_REFERENCE_TAGS.get(
@@ -1071,6 +1103,7 @@ def problem_readme(problem: dict) -> str:
 - Space: {problem['space']}
 - Python: `code.py` (`{problem['pythonFunction']}`)
 - Go: `code.go` (`{problem['goFunction']}`)
+- Video: [YouTube search]({problem['videoUrl']})
 
 ## Problem Statement
 
@@ -1156,8 +1189,11 @@ def write(path: Path, content: str) -> None:
 
 def main() -> None:
     problems = parse_problems()
+    leetcode_main_sources = load_leetcode_main_sources()
 
     for problem in problems:
+        problem["videoUrl"] = youtube_video_url(problem["leetcode"], problem["title"])
+        problem.update(leetcode_main_sources.get(problem["leetcode"], {}))
         problem["pythonCode"] = python_code(problem)
         problem["goCode"] = go_code(problem)
         write_problem_folder(problem)
@@ -1202,6 +1238,10 @@ export interface Problem {
   goFunction: string;
   pythonCode: string;
   goCode: string;
+  videoUrl: string;
+  leetcodeMainPath?: string;
+  sourcePythonCode?: string;
+  sourceGoCode?: string;
 }
 
 """

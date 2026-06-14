@@ -88,6 +88,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+69+Sqrt%28x%29+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0069.Sqrt(x)",
+  "sourcePythonCode": "class Solution:\n    def mySqrt(self, x: int) -> int:\n        l, r = 0, x\n        while l < r:\n            mid = (l + r + 1) >> 1\n            if mid > x // mid:\n                r = mid - 1\n            else:\n                l = mid\n        return l",
+  "sourceGoCode": "func mySqrt(x int) int {\n\treturn sort.Search(x+1, func(i int) bool { return i*i > x }) - 1\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

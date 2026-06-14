@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+994+Rotting+Oranges+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0900-0999/0994.Rotting Oranges",
+  "sourcePythonCode": "class Solution:\n    def orangesRotting(self, grid: List[List[int]]) -> int:\n        m, n = len(grid), len(grid[0])\n        cnt = 0\n        q = deque()\n        for i, row in enumerate(grid):\n            for j, x in enumerate(row):\n                if x == 2:\n                    q.append((i, j))\n                elif x == 1:\n                    cnt += 1\n        ans = 0\n        dirs = (-1, 0, 1, 0, -1)\n        while q and cnt:\n            ans += 1\n            for _ in range(len(q)):\n                i, j = q.popleft()\n                for a, b in pairwise(dirs):\n                    x, y = i + a, j + b\n                    if 0 <= x < m and 0 <= y < n and grid[x][y] == 1:\n                        grid[x][y] = 2\n                        q.append((x, y))\n                        cnt -= 1\n                        if cnt == 0:\n                            return ans\n        return -1 if cnt else 0",
+  "sourceGoCode": "func orangesRotting(grid [][]int) int {\n\tm, n := len(grid), len(grid[0])\n\tq := [][2]int{}\n\tcnt := 0\n\tfor i, row := range grid {\n\t\tfor j, x := range row {\n\t\t\tif x == 1 {\n\t\t\t\tcnt++\n\t\t\t} else if x == 2 {\n\t\t\t\tq = append(q, [2]int{i, j})\n\t\t\t}\n\t\t}\n\t}\n\tdirs := [5]int{-1, 0, 1, 0, -1}\n\tfor ans := 1; len(q) > 0 && cnt > 0; ans++ {\n\t\tfor k := len(q); k > 0; k-- {\n\t\t\tp := q[0]\n\t\t\tq = q[1:]\n\t\t\tfor d := 0; d < 4; d++ {\n\t\t\t\tx, y := p[0]+dirs[d], p[1]+dirs[d+1]\n\t\t\t\tif x >= 0 && x < m && y >= 0 && y < n && grid[x][y] == 1 {\n\t\t\t\t\tgrid[x][y] = 2\n\t\t\t\t\tq = append(q, [2]int{x, y})\n\t\t\t\t\tif cnt--; cnt == 0 {\n\t\t\t\t\t\treturn ans\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\tif cnt > 0 {\n\t\treturn -1\n\t}\n\treturn 0\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+424+Longest+Repeating+Character+Replacement+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0400-0499/0424.Longest Repeating Character Replacement",
+  "sourcePythonCode": "class Solution:\n    def characterReplacement(self, s: str, k: int) -> int:\n        cnt = Counter()\n        l = mx = 0\n        for r, c in enumerate(s):\n            cnt[c] += 1\n            mx = max(mx, cnt[c])\n            if r - l + 1 - mx > k:\n                cnt[s[l]] -= 1\n                l += 1\n        return len(s) - l",
+  "sourceGoCode": "func characterReplacement(s string, k int) int {\n\tcnt := [26]int{}\n\tl, mx := 0, 0\n\tfor r, c := range s {\n\t\tcnt[c-'A']++\n\t\tmx = max(mx, cnt[c-'A'])\n\t\tif r-l+1-mx > k {\n\t\t\tcnt[s[l]-'A']--\n\t\t\tl++\n\t\t}\n\t}\n\treturn len(s) - l\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

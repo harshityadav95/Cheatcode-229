@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`koko_eating_bananas`)
 - Go: `code.go` (`Solve056`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+875+Koko+Eating+Bananas+solution)
 
 ## Problem Statement
 

@@ -95,6 +95,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+238+Product+of+Array+Except+Self+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0238.Product of Array Except Self",
+  "sourcePythonCode": "class Solution:\n    def productExceptSelf(self, nums: List[int]) -> List[int]:\n        n = len(nums)\n        ans = [0] * n\n        left = right = 1\n        for i, x in enumerate(nums):\n            ans[i] = left\n            left *= x\n        for i in range(n - 1, -1, -1):\n            ans[i] *= right\n            right *= nums[i]\n        return ans",
+  "sourceGoCode": "func productExceptSelf(nums []int) []int {\n\tn := len(nums)\n\tans := make([]int, n)\n\tleft, right := 1, 1\n\tfor i, x := range nums {\n\t\tans[i] = left\n\t\tleft *= x\n\t}\n\tfor i := n - 1; i >= 0; i-- {\n\t\tans[i] *= right\n\t\tright *= nums[i]\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

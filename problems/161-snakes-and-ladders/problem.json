@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+909+Snakes+and+Ladders+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0900-0999/0909.Snakes and Ladders",
+  "sourcePythonCode": "class Solution:\n    def snakesAndLadders(self, board: List[List[int]]) -> int:\n        n = len(board)\n        q = deque([1])\n        vis = {1}\n        ans = 0\n        m = n * n\n        while q:\n            for _ in range(len(q)):\n                x = q.popleft()\n                if x == m:\n                    return ans\n                for y in range(x + 1, min(x + 6, m) + 1):\n                    i, j = divmod(y - 1, n)\n                    if i & 1:\n                        j = n - j - 1\n                    i = n - i - 1\n                    z = y if board[i][j] == -1 else board[i][j]\n                    if z not in vis:\n                        vis.add(z)\n                        q.append(z)\n            ans += 1\n        return -1",
+  "sourceGoCode": "func snakesAndLadders(board [][]int) int {\n\tn := len(board)\n\tq := []int{1}\n\tm := n * n\n\tvis := make([]bool, m+1)\n\tvis[1] = true\n\n\tfor ans := 0; len(q) > 0; ans++ {\n\t\tfor k := len(q); k > 0; k-- {\n\t\t\tx := q[0]\n\t\t\tq = q[1:]\n\t\t\tif x == m {\n\t\t\t\treturn ans\n\t\t\t}\n\t\t\tfor y := x + 1; y <= min(x+6, m); y++ {\n\t\t\t\ti, j := (y-1)/n, (y-1)%n\n\t\t\t\tif i%2 == 1 {\n\t\t\t\t\tj = n - j - 1\n\t\t\t\t}\n\t\t\t\ti = n - i - 1\n\t\t\t\tz := y\n\t\t\t\tif board[i][j] != -1 {\n\t\t\t\t\tz = board[i][j]\n\t\t\t\t}\n\t\t\t\tif !vis[z] {\n\t\t\t\t\tvis[z] = true\n\t\t\t\t\tq = append(q, z)\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\treturn -1\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

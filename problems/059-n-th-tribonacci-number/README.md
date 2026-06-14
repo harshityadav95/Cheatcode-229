@@ -7,6 +7,7 @@
 - Space: O(state)
 - Python: `code.py` (`n_th_tribonacci_number`)
 - Go: `code.go` (`Solve059`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1137+N-th+Tribonacci+Number+solution)
 
 ## Problem Statement
 

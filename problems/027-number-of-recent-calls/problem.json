@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+933+Number+of+Recent+Calls+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0900-0999/0933.Number of Recent Calls",
+  "sourcePythonCode": "class RecentCounter:\n    def __init__(self):\n        self.q = deque()\n\n    def ping(self, t: int) -> int:\n        self.q.append(t)\n        while self.q[0] < t - 3000:\n            self.q.popleft()\n        return len(self.q)\n\n\n# Your RecentCounter object will be instantiated and called as such:\n# obj = RecentCounter()\n# param_1 = obj.ping(t)",
+  "sourceGoCode": "type RecentCounter struct {\n\tq []int\n}\n\nfunc Constructor() RecentCounter {\n\treturn RecentCounter{[]int{}}\n}\n\nfunc (this *RecentCounter) Ping(t int) int {\n\tthis.q = append(this.q, t)\n\tfor this.q[0] < t-3000 {\n\t\tthis.q = this.q[1:]\n\t}\n\treturn len(this.q)\n}\n\n/**\n * Your RecentCounter object will be instantiated and called as such:\n * obj := Constructor();\n * param_1 := obj.Ping(t);\n */",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`summary_ranges`)
 - Go: `code.go` (`Solve119`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+228+Summary+Ranges+solution)
 
 ## Problem Statement
 

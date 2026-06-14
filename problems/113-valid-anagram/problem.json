@@ -95,6 +95,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+242+Valid+Anagram+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0242.Valid Anagram",
+  "sourcePythonCode": "class Solution:\n    def isAnagram(self, s: str, t: str) -> bool:\n        if len(s) != len(t):\n            return False\n        cnt = Counter(s)\n        for c in t:\n            cnt[c] -= 1\n            if cnt[c] < 0:\n                return False\n        return True",
+  "sourceGoCode": "func isAnagram(s string, t string) bool {\n\tif len(s) != len(t) {\n\t\treturn false\n\t}\n\tcnt := [26]int{}\n\tfor i := 0; i < len(s); i++ {\n\t\tcnt[s[i]-'a']++\n\t\tcnt[t[i]-'a']--\n\t}\n\tfor _, v := range cnt {\n\t\tif v != 0 {\n\t\t\treturn false\n\t\t}\n\t}\n\treturn true\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -15,6 +15,7 @@ dist-ssr
 *.local
 output/
 .playwright-cli/
+leetcode-main/
 
 # Editor directories and files
 .vscode/*
@@ -26,4 +27,6 @@ output/
 *.njsproj
 *.sln
 *.sw?
+.DS_Store
+.DS_Store
 .DS_Store

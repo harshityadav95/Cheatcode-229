@@ -88,6 +88,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+122+Best+Time+to+Buy+and+Sell+Stock+II+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0122.Best Time to Buy and Sell Stock II",
+  "sourcePythonCode": "class Solution:\n    def maxProfit(self, prices: List[int]) -> int:\n        return sum(max(0, b - a) for a, b in pairwise(prices))",
+  "sourceGoCode": "func maxProfit(prices []int) (ans int) {\n\tfor i, v := range prices[1:] {\n\t\tt := v - prices[i]\n\t\tif t > 0 {\n\t\t\tans += t\n\t\t}\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

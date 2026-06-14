@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+169+Majority+Element+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0169.Majority Element",
+  "sourcePythonCode": "class Solution:\n    def majorityElement(self, nums: List[int]) -> int:\n        cnt = m = 0\n        for x in nums:\n            if cnt == 0:\n                m, cnt = x, 1\n            else:\n                cnt += 1 if m == x else -1\n        return m",
+  "sourceGoCode": "func majorityElement(nums []int) int {\n\tvar cnt, m int\n\tfor _, x := range nums {\n\t\tif cnt == 0 {\n\t\t\tm, cnt = x, 1\n\t\t} else {\n\t\t\tif m == x {\n\t\t\t\tcnt++\n\t\t\t} else {\n\t\t\t\tcnt--\n\t\t\t}\n\t\t}\n\t}\n\treturn m\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

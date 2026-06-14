@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1732+Find+the+Highest+Altitude+solution",
+  "leetcodeMainPath": "leetcode-main/solution/1700-1799/1732.Find the Highest Altitude",
+  "sourcePythonCode": "class Solution:\n    def largestAltitude(self, gain: List[int]) -> int:\n        return max(accumulate(gain, initial=0))",
+  "sourceGoCode": "func largestAltitude(gain []int) (ans int) {\n\th := 0\n\tfor _, v := range gain {\n\t\th += v\n\t\tif ans < h {\n\t\t\tans = h\n\t\t}\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

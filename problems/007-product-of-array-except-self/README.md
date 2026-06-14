@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`product_of_array_except_self`)
 - Go: `code.go` (`Solve007`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+238+Product+of+Array+Except+Self+solution)
 
 ## Problem Statement
 

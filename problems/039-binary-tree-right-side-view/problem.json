@@ -95,6 +95,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+199+Binary+Tree+Right+Side+View+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0199.Binary Tree Right Side View",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def rightSideView(self, root: Optional[TreeNode]) -> List[int]:\n        ans = []\n        if root is None:\n            return ans\n        q = deque([root])\n        while q:\n            ans.append(q[0].val)\n            for _ in range(len(q)):\n                node = q.popleft()\n                if node.right:\n                    q.append(node.right)\n                if node.left:\n                    q.append(node.left)\n        return ans",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc rightSideView(root *TreeNode) (ans []int) {\n\tif root == nil {\n\t\treturn\n\t}\n\tq := []*TreeNode{root}\n\tfor len(q) > 0 {\n\t\tans = append(ans, q[0].Val)\n\t\tfor k := len(q); k > 0; k-- {\n\t\t\tnode := q[0]\n\t\t\tq = q[1:]\n\t\t\tif node.Right != nil {\n\t\t\t\tq = append(q, node.Right)\n\t\t\t}\n\t\t\tif node.Left != nil {\n\t\t\t\tq = append(q, node.Left)\n\t\t\t}\n\t\t}\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

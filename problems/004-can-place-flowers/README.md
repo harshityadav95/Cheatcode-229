@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`can_place_flowers`)
 - Go: `code.go` (`Solve004`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+605+Can+Place+Flowers+solution)
 
 ## Problem Statement
 

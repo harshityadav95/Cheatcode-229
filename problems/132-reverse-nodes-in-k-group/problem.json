@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+25+Reverse+Nodes+in+k-Group+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0025.Reverse Nodes in k-Group",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:\n        def reverse(head: Optional[ListNode]) -> Optional[ListNode]:\n            dummy = ListNode()\n            cur = head\n            while cur:\n                nxt = cur.next\n                cur.next = dummy.next\n                dummy.next = cur\n                cur = nxt\n            return dummy.next\n\n        dummy = pre = ListNode(next=head)\n        while pre:\n            cur = pre\n            for _ in range(k):\n                cur = cur.next\n                if cur is None:\n                    return dummy.next\n            node = pre.next\n            nxt = cur.next\n            cur.next = None\n            pre.next = reverse(node)\n            node.next = nxt\n            pre = node\n        return dummy.next",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc reverseKGroup(head *ListNode, k int) *ListNode {\n\tdummy := &ListNode{Next: head}\n\tpre := dummy\n\n\tfor pre != nil {\n\t\tcur := pre\n\t\tfor i := 0; i < k; i++ {\n\t\t\tcur = cur.Next\n\t\t\tif cur == nil {\n\t\t\t\treturn dummy.Next\n\t\t\t}\n\t\t}\n\n\t\tnode := pre.Next\n\t\tnxt := cur.Next\n\t\tcur.Next = nil\n\t\tpre.Next = reverse(node)\n\t\tnode.Next = nxt\n\t\tpre = node\n\t}\n\treturn dummy.Next\n}\n\nfunc reverse(head *ListNode) *ListNode {\n\tvar dummy *ListNode\n\tcur := head\n\tfor cur != nil {\n\t\tnxt := cur.Next\n\t\tcur.Next = dummy\n\t\tdummy = cur\n\t\tcur = nxt\n\t}\n\treturn dummy\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

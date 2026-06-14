@@ -7,6 +7,7 @@
 - Space: O(V+E)
 - Python: `code.py` (`number_of_islands`)
 - Go: `code.go` (`Solve156`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+200+Number+of+Islands+solution)
 
 ## Problem Statement
 

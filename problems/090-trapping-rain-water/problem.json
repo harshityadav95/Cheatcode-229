@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+42+Trapping+Rain+Water+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0042.Trapping Rain Water",
+  "sourcePythonCode": "class Solution:\n    def trap(self, height: List[int]) -> int:\n        n = len(height)\n        left = [height[0]] * n\n        right = [height[-1]] * n\n        for i in range(1, n):\n            left[i] = max(left[i - 1], height[i])\n            right[n - i - 1] = max(right[n - i], height[n - i - 1])\n        return sum(min(l, r) - h for l, r, h in zip(left, right, height))",
+  "sourceGoCode": "func trap(height []int) (ans int) {\n\tn := len(height)\n\tleft := make([]int, n)\n\tright := make([]int, n)\n\tleft[0], right[n-1] = height[0], height[n-1]\n\tfor i := 1; i < n; i++ {\n\t\tleft[i] = max(left[i-1], height[i])\n\t\tright[n-i-1] = max(right[n-i], height[n-i-1])\n\t}\n\tfor i, h := range height {\n\t\tans += min(left[i], right[i]) - h\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

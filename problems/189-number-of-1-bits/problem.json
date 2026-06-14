@@ -96,6 +96,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+191+Number+of+1+Bits+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0191.Number of 1 Bits",
+  "sourcePythonCode": "class Solution:\n    def hammingWeight(self, n: int) -> int:\n        ans = 0\n        while n:\n            n &= n - 1\n            ans += 1\n        return ans",
+  "sourceGoCode": "func hammingWeight(num uint32) int {\n\tans := 0\n\tfor num != 0 {\n\t\tnum &= num - 1\n\t\tans++\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -88,6 +88,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+9+Palindrome+Number+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0009.Palindrome Number",
+  "sourcePythonCode": "class Solution:\n    def isPalindrome(self, x: int) -> bool:\n        if x < 0 or (x and x % 10 == 0):\n            return False\n        y = 0\n        while y < x:\n            y = y * 10 + x % 10\n            x //= 10\n        return x in (y, y // 10)",
+  "sourceGoCode": "func isPalindrome(x int) bool {\n\tif x < 0 || (x > 0 && x%10 == 0) {\n\t\treturn false\n\t}\n\ty := 0\n\tfor ; y < x; x /= 10 {\n\t\ty = y*10 + x%10\n\t}\n\treturn x == y || x == y/10\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

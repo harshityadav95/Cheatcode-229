@@ -7,6 +7,7 @@
 - Space: O(V+E)
 - Python: `code.py` (`pacific_atlantic_water_flow`)
 - Go: `code.go` (`Solve216`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+417+Pacific+Atlantic+Water+Flow+solution)
 
 ## Problem Statement
 

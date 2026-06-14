@@ -46,3 +46,75 @@ code {
 svg text {
   letter-spacing: 0;
 }
+
+.leetcode-html {
+  color: rgb(30 41 59);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.dark .leetcode-html {
+  color: rgb(203 213 225);
+}
+
+.leetcode-html :where(p, ul, ol, pre, table, blockquote) {
+  margin: 0 0 1rem;
+}
+
+.leetcode-html :where(strong) {
+  color: rgb(15 23 42);
+  font-weight: 650;
+}
+
+.dark .leetcode-html :where(strong) {
+  color: rgb(241 245 249);
+}
+
+.leetcode-html :where(ul, ol) {
+  padding-left: 1.35rem;
+}
+
+.leetcode-html :where(li) {
+  margin: 0.35rem 0;
+}
+
+.leetcode-html :where(code) {
+  border-radius: 0.35rem;
+  background: rgb(241 245 249);
+  padding: 0.08rem 0.35rem;
+  color: rgb(15 23 42);
+  font-size: 0.9em;
+}
+
+.dark .leetcode-html :where(code) {
+  background: rgb(30 41 59);
+  color: rgb(226 232 240);
+}
+
+.leetcode-html :where(pre) {
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(226 232 240);
+  background: rgb(248 250 252);
+  padding: 1rem;
+  color: rgb(15 23 42);
+  white-space: pre-wrap;
+}
+
+.dark .leetcode-html :where(pre) {
+  border-color: rgb(30 41 59);
+  background: rgb(15 23 42);
+  color: rgb(226 232 240);
+}
+
+.leetcode-html :where(img) {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.leetcode-html :where(a) {
+  color: rgb(8 145 178);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

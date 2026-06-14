@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+392+Is+Subsequence+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0300-0399/0392.Is Subsequence",
+  "sourcePythonCode": "class Solution:\n    def isSubsequence(self, s: str, t: str) -> bool:\n        i = j = 0\n        while i < len(s) and j < len(t):\n            if s[i] == t[j]:\n                i += 1\n            j += 1\n        return i == len(s)",
+  "sourceGoCode": "func isSubsequence(s string, t string) bool {\n\ti, j, m, n := 0, 0, len(s), len(t)\n\tfor i < m && j < n {\n\t\tif s[i] == t[j] {\n\t\t\ti++\n\t\t}\n\t\tj++\n\t}\n\treturn i == m\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

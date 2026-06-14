@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`text_justification`)
 - Go: `code.go` (`Solve097`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+68+Text+Justification+solution)
 
 ## Problem Statement
 

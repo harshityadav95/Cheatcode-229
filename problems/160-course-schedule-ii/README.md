@@ -7,6 +7,7 @@
 - Space: O(V+E)
 - Python: `code.py` (`course_schedule_ii`)
 - Go: `code.go` (`Solve160`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+210+Course+Schedule+II+solution)
 
 ## Problem Statement
 

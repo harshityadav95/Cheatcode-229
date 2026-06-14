@@ -88,6 +88,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+374+Guess+Number+Higher+or+Lower+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0300-0399/0374.Guess Number Higher or Lower",
+  "sourcePythonCode": "# The guess API is already defined for you.\n# @param num, your guess\n# @return -1 if num is higher than the picked number\n#          1 if num is lower than the picked number\n#          otherwise return 0\n# def guess(num: int) -> int:\n\n\nclass Solution:\n    def guessNumber(self, n: int) -> int:\n        return bisect.bisect(range(1, n + 1), 0, key=lambda x: -guess(x))",
+  "sourceGoCode": "/**\n * Forward declaration of guess API.\n * @param  num   your guess\n * @return \t     -1 if num is higher than the picked number\n *\t\t\t      1 if num is lower than the picked number\n *               otherwise return 0\n * func guess(num int) int;\n */\n\nfunc guessNumber(n int) int {\n\treturn sort.Search(n, func(i int) bool {\n\t\ti++\n\t\treturn guess(i) <= 0\n\t}) + 1\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

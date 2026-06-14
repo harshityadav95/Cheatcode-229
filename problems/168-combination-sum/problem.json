@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+39+Combination+Sum+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0039.Combination Sum",
+  "sourcePythonCode": "class Solution:\n    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:\n        def dfs(i: int, s: int):\n            if s == 0:\n                ans.append(t[:])\n                return\n            if s < candidates[i]:\n                return\n            for j in range(i, len(candidates)):\n                t.append(candidates[j])\n                dfs(j, s - candidates[j])\n                t.pop()\n\n        candidates.sort()\n        t = []\n        ans = []\n        dfs(0, target)\n        return ans",
+  "sourceGoCode": "func combinationSum(candidates []int, target int) (ans [][]int) {\n\tsort.Ints(candidates)\n\tt := []int{}\n\tvar dfs func(i, s int)\n\tdfs = func(i, s int) {\n\t\tif s == 0 {\n\t\t\tans = append(ans, slices.Clone(t))\n\t\t\treturn\n\t\t}\n\t\tif s < candidates[i] {\n\t\t\treturn\n\t\t}\n\t\tfor j := i; j < len(candidates); j++ {\n\t\t\tt = append(t, candidates[j])\n\t\t\tdfs(j, s-candidates[j])\n\t\t\tt = t[:len(t)-1]\n\t\t}\n\t}\n\tdfs(0, target)\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

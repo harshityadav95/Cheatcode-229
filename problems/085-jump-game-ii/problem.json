@@ -88,6 +88,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+45+Jump+Game+II+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0045.Jump Game II",
+  "sourcePythonCode": "class Solution:\n    def jump(self, nums: List[int]) -> int:\n        ans = mx = last = 0\n        for i, x in enumerate(nums[:-1]):\n            mx = max(mx, i + x)\n            if last == i:\n                ans += 1\n                last = mx\n        return ans",
+  "sourceGoCode": "func jump(nums []int) (ans int) {\n\tmx, last := 0, 0\n\tfor i, x := range nums[:len(nums)-1] {\n\t\tmx = max(mx, i+x)\n\t\tif last == i {\n\t\t\tans++\n\t\t\tlast = mx\n\t\t}\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

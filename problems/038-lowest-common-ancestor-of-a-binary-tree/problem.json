@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+236+Lowest+Common+Ancestor+of+a+Binary+Tree+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0236.Lowest Common Ancestor of a Binary Tree",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\n\nclass Solution:\n    def lowestCommonAncestor(\n        self, root: \"TreeNode\", p: \"TreeNode\", q: \"TreeNode\"\n    ) -> \"TreeNode\":\n        if root in (None, p, q):\n            return root\n        left = self.lowestCommonAncestor(root.left, p, q)\n        right = self.lowestCommonAncestor(root.right, p, q)\n        return root if left and right else (left or right)",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {\n\tif root == nil || root == p || root == q {\n\t\treturn root\n\t}\n\tleft := lowestCommonAncestor(root.Left, p, q)\n\tright := lowestCommonAncestor(root.Right, p, q)\n\tif left != nil && right != nil {\n\t\treturn root\n\t}\n\tif left != nil {\n\t\treturn left\n\t}\n\treturn right\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -7,6 +7,7 @@
 - Space: O(depth + output)
 - Python: `code.py` (`combination_sum_iii`)
 - Go: `code.go` (`Solve058`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+216+Combination+Sum+III+solution)
 
 ## Problem Statement
 

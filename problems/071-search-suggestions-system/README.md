@@ -7,6 +7,7 @@
 - Space: O(total characters)
 - Python: `code.py` (`search_suggestions_system`)
 - Go: `code.go` (`Solve071`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1268+Search+Suggestions+System+solution)
 
 ## Problem Statement
 

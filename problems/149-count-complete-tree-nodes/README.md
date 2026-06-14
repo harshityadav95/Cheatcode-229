@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`count_complete_tree_nodes`)
 - Go: `code.go` (`Solve149`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+222+Count+Complete+Tree+Nodes+solution)
 
 ## Problem Statement
 

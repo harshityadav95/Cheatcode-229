@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`reverse_bits`)
 - Go: `code.go` (`Solve188`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+190+Reverse+Bits+solution)
 
 ## Problem Statement
 

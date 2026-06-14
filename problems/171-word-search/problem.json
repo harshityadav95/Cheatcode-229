@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+79+Word+Search+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0079.Word Search",
+  "sourcePythonCode": "class Solution:\n    def exist(self, board: List[List[str]], word: str) -> bool:\n        def dfs(i: int, j: int, k: int) -> bool:\n            if k == len(word) - 1:\n                return board[i][j] == word[k]\n            if board[i][j] != word[k]:\n                return False\n            c = board[i][j]\n            board[i][j] = \"0\"\n            for a, b in pairwise((-1, 0, 1, 0, -1)):\n                x, y = i + a, j + b\n                ok = 0 <= x < m and 0 <= y < n and board[x][y] != \"0\"\n                if ok and dfs(x, y, k + 1):\n                    return True\n            board[i][j] = c\n            return False\n\n        m, n = len(board), len(board[0])\n        return any(dfs(i, j, 0) for i in range(m) for j in range(n))",
+  "sourceGoCode": "func exist(board [][]byte, word string) bool {\n\tm, n := len(board), len(board[0])\n\tvar dfs func(int, int, int) bool\n\tdfs = func(i, j, k int) bool {\n\t\tif k == len(word)-1 {\n\t\t\treturn board[i][j] == word[k]\n\t\t}\n\t\tif board[i][j] != word[k] {\n\t\t\treturn false\n\t\t}\n\t\tdirs := [5]int{-1, 0, 1, 0, -1}\n\t\tc := board[i][j]\n\t\tboard[i][j] = '0'\n\t\tfor u := 0; u < 4; u++ {\n\t\t\tx, y := i+dirs[u], j+dirs[u+1]\n\t\t\tif x >= 0 && x < m && y >= 0 && y < n && board[x][y] != '0' && dfs(x, y, k+1) {\n\t\t\t\treturn true\n\t\t\t}\n\t\t}\n\t\tboard[i][j] = c\n\t\treturn false\n\t}\n\tfor i := 0; i < m; i++ {\n\t\tfor j := 0; j < n; j++ {\n\t\t\tif dfs(i, j, 0) {\n\t\t\t\treturn true\n\t\t\t}\n\t\t}\n\t}\n\treturn false\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

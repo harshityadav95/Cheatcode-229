@@ -7,6 +7,7 @@
 - Space: O(V+E)
 - Python: `code.py` (`nearest_exit_from_entrance_in_maze`)
 - Go: `code.go` (`Solve047`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1926+Nearest+Exit+from+Entrance+in+Maze+solution)
 
 ## Problem Statement
 

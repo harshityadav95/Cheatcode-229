@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`min_stack`)
 - Go: `code.go` (`Solve124`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+155+Min+Stack+solution)
 
 ## Problem Statement
 

@@ -7,6 +7,7 @@
 - Space: O(1) unless recursion/map
 - Python: `code.py` (`sort_list`)
 - Go: `code.go` (`Solve173`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+148+Sort+List+solution)
 
 ## Problem Statement
 

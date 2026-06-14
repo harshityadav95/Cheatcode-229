@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`majority_element`)
 - Go: `code.go` (`Solve080`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+169+Majority+Element+solution)
 
 ## Problem Statement
 

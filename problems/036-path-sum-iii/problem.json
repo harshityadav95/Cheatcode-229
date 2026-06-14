@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+437+Path+Sum+III+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0400-0499/0437.Path Sum III",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def pathSum(self, root: Optional[TreeNode], targetSum: int) -> int:\n        def dfs(node, s):\n            if node is None:\n                return 0\n            s += node.val\n            ans = cnt[s - targetSum]\n            cnt[s] += 1\n            ans += dfs(node.left, s)\n            ans += dfs(node.right, s)\n            cnt[s] -= 1\n            return ans\n\n        cnt = Counter({0: 1})\n        return dfs(root, 0)",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc pathSum(root *TreeNode, targetSum int) int {\n\tcnt := map[int]int{0: 1}\n\tvar dfs func(*TreeNode, int) int\n\tdfs = func(node *TreeNode, s int) int {\n\t\tif node == nil {\n\t\t\treturn 0\n\t\t}\n\t\ts += node.Val\n\t\tans := cnt[s-targetSum]\n\t\tcnt[s]++\n\t\tans += dfs(node.Left, s) + dfs(node.Right, s)\n\t\tcnt[s]--\n\t\treturn ans\n\t}\n\treturn dfs(root, 0)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

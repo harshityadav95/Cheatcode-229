@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+547+Number+of+Provinces+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0500-0599/0547.Number of Provinces",
+  "sourcePythonCode": "class Solution:\n    def findCircleNum(self, isConnected: List[List[int]]) -> int:\n        def dfs(i: int):\n            vis[i] = True\n            for j, x in enumerate(isConnected[i]):\n                if not vis[j] and x:\n                    dfs(j)\n\n        n = len(isConnected)\n        vis = [False] * n\n        ans = 0\n        for i in range(n):\n            if not vis[i]:\n                dfs(i)\n                ans += 1\n        return ans",
+  "sourceGoCode": "func findCircleNum(isConnected [][]int) (ans int) {\n\tn := len(isConnected)\n\tvis := make([]bool, n)\n\tvar dfs func(int)\n\tdfs = func(i int) {\n\t\tvis[i] = true\n\t\tfor j, x := range isConnected[i] {\n\t\t\tif !vis[j] && x == 1 {\n\t\t\t\tdfs(j)\n\t\t\t}\n\t\t}\n\t}\n\tfor i, v := range vis {\n\t\tif !v {\n\t\t\tans++\n\t\t\tdfs(i)\n\t\t}\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

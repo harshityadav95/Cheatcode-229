@@ -86,6 +86,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+152+Maximum+Product+Subarray+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0152.Maximum Product Subarray",
+  "sourcePythonCode": "class Solution:\n    def maxProduct(self, nums: List[int]) -> int:\n        ans = f = g = nums[0]\n        for x in nums[1:]:\n            ff, gg = f, g\n            f = max(x, ff * x, gg * x)\n            g = min(x, ff * x, gg * x)\n            ans = max(ans, f)\n        return ans",
+  "sourceGoCode": "func maxProduct(nums []int) int {\n\tf, g, ans := nums[0], nums[0], nums[0]\n\tfor _, x := range nums[1:] {\n\t\tff, gg := f, g\n\t\tf = max(x, max(ff*x, gg*x))\n\t\tg = min(x, min(ff*x, gg*x))\n\t\tans = max(ans, f)\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+86+Partition+List+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0086.Partition List",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:\n        l = ListNode()\n        r = ListNode()\n        tl, tr = l, r\n        while head:\n            if head.val < x:\n                tl.next = head\n                tl = tl.next\n            else:\n                tr.next = head\n                tr = tr.next\n            head = head.next\n        tr.next = None\n        tl.next = r.next\n        return l.next",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc partition(head *ListNode, x int) *ListNode {\n\tl, r := &ListNode{}, &ListNode{}\n\ttl, tr := l, r\n\tfor ; head != nil; head = head.Next {\n\t\tif head.Val < x {\n\t\t\ttl.Next = head\n\t\t\ttl = tl.Next\n\t\t} else {\n\t\t\ttr.Next = head\n\t\t\ttr = tr.Next\n\t\t}\n\t}\n\ttr.Next = nil\n\ttl.Next = r.Next\n\treturn l.Next\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

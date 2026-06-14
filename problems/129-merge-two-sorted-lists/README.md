@@ -7,6 +7,7 @@
 - Space: O(1) unless recursion/map
 - Python: `code.py` (`merge_two_sorted_lists`)
 - Go: `code.go` (`Solve129`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+21+Merge+Two+Sorted+Lists+solution)
 
 ## Problem Statement
 

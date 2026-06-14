@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1207+Unique+Number+of+Occurrences+solution",
+  "leetcodeMainPath": "leetcode-main/solution/1200-1299/1207.Unique Number of Occurrences",
+  "sourcePythonCode": "class Solution:\n    def uniqueOccurrences(self, arr: List[int]) -> bool:\n        cnt = Counter(arr)\n        return len(set(cnt.values())) == len(cnt)",
+  "sourceGoCode": "func uniqueOccurrences(arr []int) bool {\n\tcnt := map[int]int{}\n\tfor _, x := range arr {\n\t\tcnt[x]++\n\t}\n\tvis := map[int]bool{}\n\tfor _, v := range cnt {\n\t\tif vis[v] {\n\t\t\treturn false\n\t\t}\n\t\tvis[v] = true\n\t}\n\treturn true\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

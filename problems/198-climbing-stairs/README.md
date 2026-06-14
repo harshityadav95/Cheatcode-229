@@ -7,6 +7,7 @@
 - Space: O(state)
 - Python: `code.py` (`climbing_stairs`)
 - Go: `code.go` (`Solve198`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+70+Climbing+Stairs+solution)
 
 ## Problem Statement
 

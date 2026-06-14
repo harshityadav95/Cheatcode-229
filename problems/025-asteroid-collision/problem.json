@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+735+Asteroid+Collision+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0700-0799/0735.Asteroid Collision",
+  "sourcePythonCode": "class Solution:\n    def asteroidCollision(self, asteroids: List[int]) -> List[int]:\n        stk = []\n        for x in asteroids:\n            if x > 0:\n                stk.append(x)\n            else:\n                while stk and stk[-1] > 0 and stk[-1] < -x:\n                    stk.pop()\n                if stk and stk[-1] == -x:\n                    stk.pop()\n                elif not stk or stk[-1] < 0:\n                    stk.append(x)\n        return stk",
+  "sourceGoCode": "func asteroidCollision(asteroids []int) (stk []int) {\n\tfor _, x := range asteroids {\n\t\tif x > 0 {\n\t\t\tstk = append(stk, x)\n\t\t} else {\n\t\t\tfor len(stk) > 0 && stk[len(stk)-1] > 0 && stk[len(stk)-1] < -x {\n\t\t\t\tstk = stk[:len(stk)-1]\n\t\t\t}\n\t\t\tif len(stk) > 0 && stk[len(stk)-1] == -x {\n\t\t\t\tstk = stk[:len(stk)-1]\n\t\t\t} else if len(stk) == 0 || stk[len(stk)-1] < 0 {\n\t\t\t\tstk = append(stk, x)\n\t\t\t}\n\t\t}\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

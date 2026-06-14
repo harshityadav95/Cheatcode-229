@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`h_index`)
 - Go: `code.go` (`Solve086`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+274+H-Index+solution)
 
 ## Problem Statement
 

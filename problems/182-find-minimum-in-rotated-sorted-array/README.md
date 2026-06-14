@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`find_minimum_in_rotated_sorted_array`)
 - Go: `code.go` (`Solve182`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+153+Find+Minimum+in+Rotated+Sorted+Array+solution)
 
 ## Problem Statement
 

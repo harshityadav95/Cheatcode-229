@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`merge_intervals`)
 - Go: `code.go` (`Solve120`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+56+Merge+Intervals+solution)
 
 ## Problem Statement
 

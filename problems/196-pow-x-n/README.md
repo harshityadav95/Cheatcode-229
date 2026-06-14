@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`pow_x_n`)
 - Go: `code.go` (`Solve196`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+50+Pow%28x%2C+n%29+solution)
 
 ## Problem Statement
 

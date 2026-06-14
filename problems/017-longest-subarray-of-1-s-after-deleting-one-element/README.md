@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`longest_subarray_of_1_s_after_deleting_one_element`)
 - Go: `code.go` (`Solve017`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1493+Longest+Subarray+of+1%27s+After+Deleting+One+Element+solution)
 
 ## Problem Statement
 

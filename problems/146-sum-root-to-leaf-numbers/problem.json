@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+129+Sum+Root+to+Leaf+Numbers+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0129.Sum Root to Leaf Numbers",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def sumNumbers(self, root: Optional[TreeNode]) -> int:\n        def dfs(root, s):\n            if root is None:\n                return 0\n            s = s * 10 + root.val\n            if root.left is None and root.right is None:\n                return s\n            return dfs(root.left, s) + dfs(root.right, s)\n\n        return dfs(root, 0)",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc sumNumbers(root *TreeNode) int {\n\tvar dfs func(*TreeNode, int) int\n\tdfs = func(root *TreeNode, s int) int {\n\t\tif root == nil {\n\t\t\treturn 0\n\t\t}\n\t\ts = s*10 + root.Val\n\t\tif root.Left == nil && root.Right == nil {\n\t\t\treturn s\n\t\t}\n\t\treturn dfs(root.Left, s) + dfs(root.Right, s)\n\t}\n\treturn dfs(root, 0)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

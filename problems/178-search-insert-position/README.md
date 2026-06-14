@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`search_insert_position`)
 - Go: `code.go` (`Solve178`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+35+Search+Insert+Position+solution)
 
 ## Problem Statement
 

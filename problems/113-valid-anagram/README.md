@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`valid_anagram`)
 - Go: `code.go` (`Solve113`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+242+Valid+Anagram+solution)
 
 ## Problem Statement
 

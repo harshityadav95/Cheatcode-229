@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+2130+Maximum+Twin+Sum+of+a+Linked+List+solution",
+  "leetcodeMainPath": "leetcode-main/solution/2100-2199/2130.Maximum Twin Sum of a Linked List",
+  "sourcePythonCode": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def pairSum(self, head: Optional[ListNode]) -> int:\n        s = []\n        while head:\n            s.append(head.val)\n            head = head.next\n        n = len(s)\n        return max(s[i] + s[-(i + 1)] for i in range(n >> 1))",
+  "sourceGoCode": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc pairSum(head *ListNode) int {\n\tvar s []int\n\tfor ; head != nil; head = head.Next {\n\t\ts = append(s, head.Val)\n\t}\n\tans, n := 0, len(s)\n\tfor i := 0; i < (n >> 1); i++ {\n\t\tif ans < s[i]+s[n-i-1] {\n\t\t\tans = s[i] + s[n-i-1]\n\t\t}\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

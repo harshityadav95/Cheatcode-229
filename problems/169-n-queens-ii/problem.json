@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+52+N-Queens+II+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0052.N-Queens II",
+  "sourcePythonCode": "class Solution:\n    def totalNQueens(self, n: int) -> int:\n        def dfs(i: int):\n            if i == n:\n                nonlocal ans\n                ans += 1\n                return\n            for j in range(n):\n                a, b = i + j, i - j + n\n                if cols[j] or dg[a] or udg[b]:\n                    continue\n                cols[j] = dg[a] = udg[b] = True\n                dfs(i + 1)\n                cols[j] = dg[a] = udg[b] = False\n\n        cols = [False] * 10\n        dg = [False] * 20\n        udg = [False] * 20\n        ans = 0\n        dfs(0)\n        return ans",
+  "sourceGoCode": "func totalNQueens(n int) (ans int) {\n\tcols := [10]bool{}\n\tdg := [20]bool{}\n\tudg := [20]bool{}\n\tvar dfs func(int)\n\tdfs = func(i int) {\n\t\tif i == n {\n\t\t\tans++\n\t\t\treturn\n\t\t}\n\t\tfor j := 0; j < n; j++ {\n\t\t\ta, b := i+j, i-j+n\n\t\t\tif cols[j] || dg[a] || udg[b] {\n\t\t\t\tcontinue\n\t\t\t}\n\t\t\tcols[j], dg[a], udg[b] = true, true, true\n\t\t\tdfs(i + 1)\n\t\t\tcols[j], dg[a], udg[b] = false, false, false\n\t\t}\n\t}\n\tdfs(0)\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -86,6 +86,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+97+Interleaving+String+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0097.Interleaving String",
+  "sourcePythonCode": "class Solution:\n    def isInterleave(self, s1: str, s2: str, s3: str) -> bool:\n        @cache\n        def dfs(i: int, j: int) -> bool:\n            if i >= m and j >= n:\n                return True\n            k = i + j\n            if i < m and s1[i] == s3[k] and dfs(i + 1, j):\n                return True\n            if j < n and s2[j] == s3[k] and dfs(i, j + 1):\n                return True\n            return False\n\n        m, n = len(s1), len(s2)\n        if m + n != len(s3):\n            return False\n        return dfs(0, 0)",
+  "sourceGoCode": "func isInterleave(s1 string, s2 string, s3 string) bool {\n\tm, n := len(s1), len(s2)\n\tif m+n != len(s3) {\n\t\treturn false\n\t}\n\n\tf := map[int]bool{}\n\tvar dfs func(int, int) bool\n\tdfs = func(i, j int) bool {\n\t\tif i >= m && j >= n {\n\t\t\treturn true\n\t\t}\n\t\tif v, ok := f[i*200+j]; ok {\n\t\t\treturn v\n\t\t}\n\t\tk := i + j\n\t\tf[i*200+j] = (i < m && s1[i] == s3[k] && dfs(i+1, j)) || (j < n && s2[j] == s3[k] && dfs(i, j+1))\n\t\treturn f[i*200+j]\n\t}\n\treturn dfs(0, 0)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

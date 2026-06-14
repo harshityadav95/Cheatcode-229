@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`leaf_similar_trees`)
 - Go: `code.go` (`Solve034`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+872+Leaf-Similar+Trees+solution)
 
 ## Problem Statement
 

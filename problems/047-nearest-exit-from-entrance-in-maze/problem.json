@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1926+Nearest+Exit+from+Entrance+in+Maze+solution",
+  "leetcodeMainPath": "leetcode-main/solution/1900-1999/1926.Nearest Exit from Entrance in Maze",
+  "sourcePythonCode": "class Solution:\n    def nearestExit(self, maze: List[List[str]], entrance: List[int]) -> int:\n        m, n = len(maze), len(maze[0])\n        i, j = entrance\n        q = deque([(i, j)])\n        maze[i][j] = \"+\"\n        ans = 0\n        while q:\n            ans += 1\n            for _ in range(len(q)):\n                i, j = q.popleft()\n                for a, b in [[0, -1], [0, 1], [-1, 0], [1, 0]]:\n                    x, y = i + a, j + b\n                    if 0 <= x < m and 0 <= y < n and maze[x][y] == \".\":\n                        if x == 0 or x == m - 1 or y == 0 or y == n - 1:\n                            return ans\n                        q.append((x, y))\n                        maze[x][y] = \"+\"\n        return -1",
+  "sourceGoCode": "func nearestExit(maze [][]byte, entrance []int) int {\n\tm, n := len(maze), len(maze[0])\n\tq := [][2]int{{entrance[0], entrance[1]}}\n\tmaze[entrance[0]][entrance[1]] = '+'\n\tdirs := []int{-1, 0, 1, 0, -1}\n\tfor ans := 1; len(q) > 0; ans++ {\n\t\tfor k := len(q); k > 0; k-- {\n\t\t\tp := q[0]\n\t\t\tq = q[1:]\n\t\t\tfor l := 0; l < 4; l++ {\n\t\t\t\tx, y := p[0]+dirs[l], p[1]+dirs[l+1]\n\t\t\t\tif x >= 0 && x < m && y >= 0 && y < n && maze[x][y] == '.' {\n\t\t\t\t\tif x == 0 || x == m-1 || y == 0 || y == n-1 {\n\t\t\t\t\t\treturn ans\n\t\t\t\t\t}\n\t\t\t\t\tq = append(q, [2]int{x, y})\n\t\t\t\t\tmaze[x][y] = '+'\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\treturn -1\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

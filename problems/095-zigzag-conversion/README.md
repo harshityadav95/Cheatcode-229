@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`zigzag_conversion`)
 - Go: `code.go` (`Solve095`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+6+Zigzag+Conversion+solution)
 
 ## Problem Statement
 

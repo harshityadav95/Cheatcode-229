@@ -7,6 +7,7 @@
 - Space: O(depth + output)
 - Python: `code.py` (`generate_parentheses`)
 - Go: `code.go` (`Solve170`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+22+Generate+Parentheses+solution)
 
 ## Problem Statement
 

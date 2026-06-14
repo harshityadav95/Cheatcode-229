@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`merge_sorted_array`)
 - Go: `code.go` (`Solve076`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+88+Merge+Sorted+Array+solution)
 
 ## Problem Statement
 

@@ -95,6 +95,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+67+Add+Binary+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0067.Add Binary",
+  "sourcePythonCode": "class Solution:\n    def addBinary(self, a: str, b: str) -> str:\n        ans = []\n        i, j, carry = len(a) - 1, len(b) - 1, 0\n        while i >= 0 or j >= 0 or carry:\n            carry += (0 if i < 0 else int(a[i])) + (0 if j < 0 else int(b[j]))\n            carry, v = divmod(carry, 2)\n            ans.append(str(v))\n            i, j = i - 1, j - 1\n        return \"\".join(ans[::-1])",
+  "sourceGoCode": "func addBinary(a string, b string) string {\n\ti, j := len(a)-1, len(b)-1\n\tans := []byte{}\n\tfor carry := 0; i >= 0 || j >= 0 || carry > 0; i, j = i-1, j-1 {\n\t\tif i >= 0 {\n\t\t\tcarry += int(a[i] - '0')\n\t\t}\n\t\tif j >= 0 {\n\t\t\tcarry += int(b[j] - '0')\n\t\t}\n\t\tans = append(ans, byte(carry%2+'0'))\n\t\tcarry /= 2\n\t}\n\tfor i, j := 0, len(ans)-1; i < j; i, j = i+1, j-1 {\n\t\tans[i], ans[j] = ans[j], ans[i]\n\t}\n\treturn string(ans)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

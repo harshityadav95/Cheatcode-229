@@ -86,6 +86,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+120+Triangle+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0120.Triangle",
+  "sourcePythonCode": "class Solution:\n    def minimumTotal(self, triangle: List[List[int]]) -> int:\n        n = len(triangle)\n        f = [[0] * (n + 1) for _ in range(n + 1)]\n        for i in range(n - 1, -1, -1):\n            for j in range(i + 1):\n                f[i][j] = min(f[i + 1][j], f[i + 1][j + 1]) + triangle[i][j]\n        return f[0][0]",
+  "sourceGoCode": "func minimumTotal(triangle [][]int) int {\n\tn := len(triangle)\n\tf := make([][]int, n+1)\n\tfor i := range f {\n\t\tf[i] = make([]int, n+1)\n\t}\n\tfor i := n - 1; i >= 0; i-- {\n\t\tfor j := 0; j <= i; j++ {\n\t\t\tf[i][j] = min(f[i+1][j], f[i+1][j+1]) + triangle[i][j]\n\t\t}\n\t}\n\treturn f[0][0]\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

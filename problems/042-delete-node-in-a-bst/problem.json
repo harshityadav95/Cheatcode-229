@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+450+Delete+Node+in+a+BST+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0400-0499/0450.Delete Node in a BST",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:\n        if root is None:\n            return None\n        if root.val > key:\n            root.left = self.deleteNode(root.left, key)\n            return root\n        if root.val < key:\n            root.right = self.deleteNode(root.right, key)\n            return root\n        if root.left is None:\n            return root.right\n        if root.right is None:\n            return root.left\n        node = root.right\n        while node.left:\n            node = node.left\n        node.left = root.left\n        root = root.right\n        return root",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc deleteNode(root *TreeNode, key int) *TreeNode {\n\tif root == nil {\n\t\treturn nil\n\t}\n\tif root.Val > key {\n\t\troot.Left = deleteNode(root.Left, key)\n\t\treturn root\n\t}\n\tif root.Val < key {\n\t\troot.Right = deleteNode(root.Right, key)\n\t\treturn root\n\t}\n\tif root.Left == nil {\n\t\treturn root.Right\n\t}\n\tif root.Right == nil {\n\t\treturn root.Left\n\t}\n\tnode := root.Right\n\tfor node.Left != nil {\n\t\tnode = node.Left\n\t}\n\tnode.Left = root.Left\n\troot = root.Right\n\treturn root\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

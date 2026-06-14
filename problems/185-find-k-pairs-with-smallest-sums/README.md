@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`find_k_pairs_with_smallest_sums`)
 - Go: `code.go` (`Solve185`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+373+Find+K+Pairs+with+Smallest+Sums+solution)
 
 ## Problem Statement
 

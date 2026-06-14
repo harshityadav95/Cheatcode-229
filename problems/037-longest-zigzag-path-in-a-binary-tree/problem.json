@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1372+Longest+ZigZag+Path+in+a+Binary+Tree+solution",
+  "leetcodeMainPath": "leetcode-main/solution/1300-1399/1372.Longest ZigZag Path in a Binary Tree",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def longestZigZag(self, root: TreeNode) -> int:\n        def dfs(root, l, r):\n            if root is None:\n                return\n            nonlocal ans\n            ans = max(ans, l, r)\n            dfs(root.left, r + 1, 0)\n            dfs(root.right, 0, l + 1)\n\n        ans = 0\n        dfs(root, 0, 0)\n        return ans",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc longestZigZag(root *TreeNode) int {\n\tans := 0\n\tvar dfs func(root *TreeNode, l, r int)\n\tdfs = func(root *TreeNode, l, r int) {\n\t\tif root == nil {\n\t\t\treturn\n\t\t}\n\t\tans = max(ans, max(l, r))\n\t\tdfs(root.Left, r+1, 0)\n\t\tdfs(root.Right, 0, l+1)\n\t}\n\tdfs(root, 0, 0)\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

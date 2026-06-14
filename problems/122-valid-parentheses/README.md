@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`valid_parentheses`)
 - Go: `code.go` (`Solve122`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+20+Valid+Parentheses+solution)
 
 ## Problem Statement
 

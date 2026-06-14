@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+108+Convert+Sorted+Array+to+Binary+Search+Tree+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0108.Convert Sorted Array to Binary Search Tree",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:\n        def dfs(l: int, r: int) -> Optional[TreeNode]:\n            if l > r:\n                return None\n            mid = (l + r) >> 1\n            return TreeNode(nums[mid], dfs(l, mid - 1), dfs(mid + 1, r))\n\n        return dfs(0, len(nums) - 1)",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc sortedArrayToBST(nums []int) *TreeNode {\n\tvar dfs func(int, int) *TreeNode\n\tdfs = func(l, r int) *TreeNode {\n\t\tif l > r {\n\t\t\treturn nil\n\t\t}\n\t\tmid := (l + r) >> 1\n\t\treturn &TreeNode{nums[mid], dfs(l, mid-1), dfs(mid+1, r)}\n\t}\n\treturn dfs(0, len(nums)-1)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

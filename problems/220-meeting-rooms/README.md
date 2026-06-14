@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`meeting_rooms`)
 - Go: `code.go` (`Solve220`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+252+Meeting+Rooms+solution)
 
 ## Problem Statement
 

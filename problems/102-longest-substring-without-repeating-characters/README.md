@@ -7,6 +7,7 @@
 - Space: O(k) to O(n)
 - Python: `code.py` (`longest_substring_without_repeating_characters`)
 - Go: `code.go` (`Solve102`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+3+Longest+Substring+Without+Repeating+Characters+solution)
 
 ## Problem Statement
 

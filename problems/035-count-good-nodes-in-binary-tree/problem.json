@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1448+Count+Good+Nodes+in+Binary+Tree+solution",
+  "leetcodeMainPath": "leetcode-main/solution/1400-1499/1448.Count Good Nodes in Binary Tree",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def goodNodes(self, root: TreeNode) -> int:\n        def dfs(root: TreeNode, mx: int):\n            if root is None:\n                return\n            nonlocal ans\n            if mx <= root.val:\n                ans += 1\n                mx = root.val\n            dfs(root.left, mx)\n            dfs(root.right, mx)\n\n        ans = 0\n        dfs(root, -1000000)\n        return ans",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc goodNodes(root *TreeNode) (ans int) {\n\tvar dfs func(*TreeNode, int)\n\tdfs = func(root *TreeNode, mx int) {\n\t\tif root == nil {\n\t\t\treturn\n\t\t}\n\t\tif mx <= root.Val {\n\t\t\tans++\n\t\t\tmx = root.Val\n\t\t}\n\t\tdfs(root.Left, mx)\n\t\tdfs(root.Right, mx)\n\t}\n\tdfs(root, -10001)\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

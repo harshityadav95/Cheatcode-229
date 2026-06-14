@@ -88,6 +88,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+334+Increasing+Triplet+Subsequence+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0300-0399/0334.Increasing Triplet Subsequence",
+  "sourcePythonCode": "class Solution:\n    def increasingTriplet(self, nums: List[int]) -> bool:\n        mi, mid = inf, inf\n        for num in nums:\n            if num > mid:\n                return True\n            if num <= mi:\n                mi = num\n            else:\n                mid = num\n        return False",
+  "sourceGoCode": "func increasingTriplet(nums []int) bool {\n\tmin, mid := math.MaxInt32, math.MaxInt32\n\tfor _, num := range nums {\n\t\tif num > mid {\n\t\t\treturn true\n\t\t}\n\t\tif num <= min {\n\t\t\tmin = num\n\t\t} else {\n\t\t\tmid = num\n\t\t}\n\t}\n\treturn false\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

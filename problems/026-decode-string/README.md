@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`decode_string`)
 - Go: `code.go` (`Solve026`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+394+Decode+String+solution)
 
 ## Problem Statement
 

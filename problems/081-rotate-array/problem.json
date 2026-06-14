@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+189+Rotate+Array+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0189.Rotate Array",
+  "sourcePythonCode": "class Solution:\n    def rotate(self, nums: List[int], k: int) -> None:\n        def reverse(i: int, j: int):\n            while i < j:\n                nums[i], nums[j] = nums[j], nums[i]\n                i, j = i + 1, j - 1\n\n        n = len(nums)\n        k %= n\n        reverse(0, n - 1)\n        reverse(0, k - 1)\n        reverse(k, n - 1)",
+  "sourceGoCode": "func rotate(nums []int, k int) {\n\tn := len(nums)\n\tk %= n\n\treverse := func(i, j int) {\n\t\tfor ; i < j; i, j = i+1, j-1 {\n\t\t\tnums[i], nums[j] = nums[j], nums[i]\n\t\t}\n\t}\n\treverse(0, n-1)\n\treverse(0, k-1)\n\treverse(k, n-1)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

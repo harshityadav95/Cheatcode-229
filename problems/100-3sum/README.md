@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`problem_3sum`)
 - Go: `code.go` (`Solve100`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+15+3Sum+solution)
 
 ## Problem Statement
 

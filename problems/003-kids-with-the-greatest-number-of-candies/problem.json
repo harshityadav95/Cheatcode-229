@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+1431+Kids+With+the+Greatest+Number+of+Candies+solution",
+  "leetcodeMainPath": "leetcode-main/solution/1400-1499/1431.Kids With the Greatest Number of Candies",
+  "sourcePythonCode": "class Solution:\n    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:\n        mx = max(candies)\n        return [candy + extraCandies >= mx for candy in candies]",
+  "sourceGoCode": "func kidsWithCandies(candies []int, extraCandies int) (ans []bool) {\n\tmx := slices.Max(candies)\n\tfor _, candy := range candies {\n\t\tans = append(ans, candy+extraCandies >= mx)\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

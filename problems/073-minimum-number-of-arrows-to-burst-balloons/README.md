@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`minimum_number_of_arrows_to_burst_balloons`)
 - Go: `code.go` (`Solve073`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+452+Minimum+Number+of+Arrows+to+Burst+Balloons+solution)
 
 ## Problem Statement
 

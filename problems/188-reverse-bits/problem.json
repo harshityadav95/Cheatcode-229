@@ -96,6 +96,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+190+Reverse+Bits+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0190.Reverse Bits",
+  "sourcePythonCode": "class Solution:\n    def reverseBits(self, n: int) -> int:\n        ans = 0\n        for i in range(32):\n            ans |= (n & 1) << (31 - i)\n            n >>= 1\n        return ans",
+  "sourceGoCode": "func reverseBits(n uint32) (ans uint32) {\n\tfor i := 0; i < 32; i++ {\n\t\tans |= (n & 1) << (31 - i)\n\t\tn >>= 1\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

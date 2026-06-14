@@ -7,6 +7,7 @@
 - Space: O(n*m) or O(1)
 - Python: `code.py` (`best_time_to_buy_and_sell_stock_with_transaction_fee`)
 - Go: `code.go` (`Solve065`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+714+Best+Time+to+Buy+and+Sell+Stock+with+Transaction+Fee+solution)
 
 ## Problem Statement
 

@@ -87,6 +87,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+435+Non-overlapping+Intervals+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0400-0499/0435.Non-overlapping Intervals",
+  "sourcePythonCode": "class Solution:\n    def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:\n        intervals.sort(key=lambda x: x[1])\n        ans = len(intervals)\n        pre = -inf\n        for l, r in intervals:\n            if pre <= l:\n                ans -= 1\n                pre = r\n        return ans",
+  "sourceGoCode": "func eraseOverlapIntervals(intervals [][]int) int {\n\tsort.Slice(intervals, func(i, j int) bool {\n\t\treturn intervals[i][1] < intervals[j][1]\n\t})\n\tans := len(intervals)\n\tpre := math.MinInt32\n\tfor _, e := range intervals {\n\t\tl, r := e[0], e[1]\n\t\tif pre <= l {\n\t\t\tans--\n\t\t\tpre = r\n\t\t}\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

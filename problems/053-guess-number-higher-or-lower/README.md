@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`guess_number_higher_or_lower`)
 - Go: `code.go` (`Solve053`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+374+Guess+Number+Higher+or+Lower+solution)
 
 ## Problem Statement
 

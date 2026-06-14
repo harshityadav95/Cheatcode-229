@@ -86,6 +86,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+252+Meeting+Rooms+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0252.Meeting Rooms",
+  "sourcePythonCode": "class Solution:\n    def canAttendMeetings(self, intervals: List[List[int]]) -> bool:\n        intervals.sort()\n        return all(a[1] <= b[0] for a, b in pairwise(intervals))",
+  "sourceGoCode": "func canAttendMeetings(intervals [][]int) bool {\n\tsort.Slice(intervals, func(i, j int) bool {\n\t\treturn intervals[i][0] < intervals[j][0]\n\t})\n\tfor i := 1; i < len(intervals); i++ {\n\t\tif intervals[i][0] < intervals[i-1][1] {\n\t\t\treturn false\n\t\t}\n\t}\n\treturn true\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

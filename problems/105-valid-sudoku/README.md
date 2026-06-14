@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`valid_sudoku`)
 - Go: `code.go` (`Solve105`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+36+Valid+Sudoku+solution)
 
 ## Problem Statement
 

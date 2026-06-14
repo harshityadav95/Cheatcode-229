@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`longest_consecutive_sequence`)
 - Go: `code.go` (`Solve118`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+128+Longest+Consecutive+Sequence+solution)
 
 ## Problem Statement
 

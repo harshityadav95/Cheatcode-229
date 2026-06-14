@@ -7,6 +7,7 @@
 - Space: O(1) unless recursion/map
 - Python: `code.py` (`odd_even_linked_list`)
 - Go: `code.go` (`Solve030`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+328+Odd+Even+Linked+List+solution)
 
 ## Problem Statement
 

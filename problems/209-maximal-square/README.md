@@ -7,6 +7,7 @@
 - Space: O(n*m) or O(1)
 - Python: `code.py` (`maximal_square`)
 - Go: `code.go` (`Solve209`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+221+Maximal+Square+solution)
 
 ## Problem Statement
 

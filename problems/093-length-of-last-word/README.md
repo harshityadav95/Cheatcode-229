@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`length_of_last_word`)
 - Go: `code.go` (`Solve093`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+58+Length+of+Last+Word+solution)
 
 ## Problem Statement
 

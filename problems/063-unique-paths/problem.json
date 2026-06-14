@@ -87,6 +87,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+62+Unique+Paths+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0062.Unique Paths",
+  "sourcePythonCode": "class Solution:\n    def uniquePaths(self, m: int, n: int) -> int:\n        f = [[0] * n for _ in range(m)]\n        f[0][0] = 1\n        for i in range(m):\n            for j in range(n):\n                if i:\n                    f[i][j] += f[i - 1][j]\n                if j:\n                    f[i][j] += f[i][j - 1]\n        return f[-1][-1]",
+  "sourceGoCode": "func uniquePaths(m int, n int) int {\n\tf := make([][]int, m)\n\tfor i := range f {\n\t\tf[i] = make([]int, n)\n\t}\n\tf[0][0] = 1\n\tfor i := 0; i < m; i++ {\n\t\tfor j := 0; j < n; j++ {\n\t\t\tif i > 0 {\n\t\t\t\tf[i][j] += f[i-1][j]\n\t\t\t}\n\t\t\tif j > 0 {\n\t\t\t\tf[i][j] += f[i][j-1]\n\t\t\t}\n\t\t}\n\t}\n\treturn f[m-1][n-1]\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

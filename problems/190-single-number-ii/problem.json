@@ -95,6 +95,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+137+Single+Number+II+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0137.Single Number II",
+  "sourcePythonCode": "class Solution:\n    def singleNumber(self, nums: List[int]) -> int:\n        ans = 0\n        for i in range(32):\n            cnt = sum(num >> i & 1 for num in nums)\n            if cnt % 3:\n                if i == 31:\n                    ans -= 1 << i\n                else:\n                    ans |= 1 << i\n        return ans",
+  "sourceGoCode": "func singleNumber(nums []int) int {\n\tans := int32(0)\n\tfor i := 0; i < 32; i++ {\n\t\tcnt := int32(0)\n\t\tfor _, num := range nums {\n\t\t\tcnt += int32(num) >> i & 1\n\t\t}\n\t\tcnt %= 3\n\t\tans |= cnt << i\n\t}\n\treturn int(ans)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

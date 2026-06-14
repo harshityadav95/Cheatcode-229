@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`simplify_path`)
 - Go: `code.go` (`Solve123`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+71+Simplify+Path+solution)
 
 ## Problem Statement
 

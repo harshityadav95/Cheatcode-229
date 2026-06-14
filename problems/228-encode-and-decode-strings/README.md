@@ -7,6 +7,7 @@
 - Space: O(total characters)
 - Python: `code.py` (`encode_and_decode_strings`)
 - Go: `code.go` (`Solve228`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+271+Encode+and+Decode+Strings+solution)
 
 ## Problem Statement
 

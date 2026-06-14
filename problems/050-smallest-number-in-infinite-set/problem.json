@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+2336+Smallest+Number+in+Infinite+Set+solution",
+  "leetcodeMainPath": "leetcode-main/solution/2300-2399/2336.Smallest Number in Infinite Set",
+  "sourcePythonCode": "class SmallestInfiniteSet:\n    def __init__(self):\n        self.s = SortedSet(range(1, 1001))\n\n    def popSmallest(self) -> int:\n        x = self.s[0]\n        self.s.remove(x)\n        return x\n\n    def addBack(self, num: int) -> None:\n        self.s.add(num)\n\n\n# Your SmallestInfiniteSet object will be instantiated and called as such:\n# obj = SmallestInfiniteSet()\n# param_1 = obj.popSmallest()\n# obj.addBack(num)",
+  "sourceGoCode": "type SmallestInfiniteSet struct {\n\ts *treemap.Map\n}\n\nfunc Constructor() SmallestInfiniteSet {\n\ts := treemap.NewWithIntComparator()\n\tfor i := 1; i <= 1000; i++ {\n\t\ts.Put(i, nil)\n\t}\n\treturn SmallestInfiniteSet{s}\n}\n\nfunc (this *SmallestInfiniteSet) PopSmallest() int {\n\tx, _ := this.s.Min()\n\tthis.s.Remove(x.(int))\n\treturn x.(int)\n}\n\nfunc (this *SmallestInfiniteSet) AddBack(num int) {\n\tthis.s.Put(num, nil)\n}\n\n/**\n * Your SmallestInfiniteSet object will be instantiated and called as such:\n * obj := Constructor();\n * param_1 := obj.PopSmallest();\n * obj.AddBack(num);\n */",
   "files": {
     "python": "code.py",
     "go": "code.go"

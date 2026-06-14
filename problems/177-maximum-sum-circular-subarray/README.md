@@ -7,6 +7,7 @@
 - Space: O(n*m) or O(1)
 - Python: `code.py` (`maximum_sum_circular_subarray`)
 - Go: `code.go` (`Solve177`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+918+Maximum+Sum+Circular+Subarray+solution)
 
 ## Problem Statement
 

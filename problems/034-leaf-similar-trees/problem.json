@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+872+Leaf-Similar+Trees+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0800-0899/0872.Leaf-Similar Trees",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:\n        def dfs(root: Optional[TreeNode], nums: List[int]) -> None:\n            if root.left == root.right:\n                nums.append(root.val)\n                return\n            if root.left:\n                dfs(root.left, nums)\n            if root.right:\n                dfs(root.right, nums)\n\n        l1, l2 = [], []\n        dfs(root1, l1)\n        dfs(root2, l2)\n        return l1 == l2",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc leafSimilar(root1 *TreeNode, root2 *TreeNode) bool {\n\tl1, l2 := []int{}, []int{}\n\tvar dfs func(*TreeNode, *[]int)\n\tdfs = func(root *TreeNode, nums *[]int) {\n\t\tif root.Left == root.Right {\n\t\t\t*nums = append(*nums, root.Val)\n\t\t\treturn\n\t\t}\n\t\tif root.Left != nil {\n\t\t\tdfs(root.Left, nums)\n\t\t}\n\t\tif root.Right != nil {\n\t\t\tdfs(root.Right, nums)\n\t\t}\n\t}\n\tdfs(root1, &l1)\n\tdfs(root2, &l2)\n\treturn reflect.DeepEqual(l1, l2)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

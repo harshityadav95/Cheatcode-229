@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+210+Course+Schedule+II+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0210.Course Schedule II",
+  "sourcePythonCode": "class Solution:\n    def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:\n        g = defaultdict(list)\n        indeg = [0] * numCourses\n        for a, b in prerequisites:\n            g[b].append(a)\n            indeg[a] += 1\n        ans = []\n        q = deque(i for i, x in enumerate(indeg) if x == 0)\n        while q:\n            i = q.popleft()\n            ans.append(i)\n            for j in g[i]:\n                indeg[j] -= 1\n                if indeg[j] == 0:\n                    q.append(j)\n        return ans if len(ans) == numCourses else []",
+  "sourceGoCode": "func findOrder(numCourses int, prerequisites [][]int) []int {\n\tg := make([][]int, numCourses)\n\tindeg := make([]int, numCourses)\n\tfor _, p := range prerequisites {\n\t\ta, b := p[0], p[1]\n\t\tg[b] = append(g[b], a)\n\t\tindeg[a]++\n\t}\n\tq := []int{}\n\tfor i, x := range indeg {\n\t\tif x == 0 {\n\t\t\tq = append(q, i)\n\t\t}\n\t}\n\tans := []int{}\n\tfor len(q) > 0 {\n\t\ti := q[0]\n\t\tq = q[1:]\n\t\tans = append(ans, i)\n\t\tfor _, j := range g[i] {\n\t\t\tindeg[j]--\n\t\t\tif indeg[j] == 0 {\n\t\t\t\tq = append(q, j)\n\t\t\t}\n\t\t}\n\t}\n\tif len(ans) == numCourses {\n\t\treturn ans\n\t}\n\treturn []int{}\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

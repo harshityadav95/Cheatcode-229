@@ -7,6 +7,7 @@
 - Space: O(V+E)
 - Python: `code.py` (`rotting_oranges`)
 - Go: `code.go` (`Solve048`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+994+Rotting+Oranges+solution)
 
 ## Problem Statement
 

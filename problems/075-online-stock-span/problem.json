@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+901+Online+Stock+Span+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0900-0999/0901.Online Stock Span",
+  "sourcePythonCode": "class StockSpanner:\n    def __init__(self):\n        self.stk = []\n\n    def next(self, price: int) -> int:\n        cnt = 1\n        while self.stk and self.stk[-1][0] <= price:\n            cnt += self.stk.pop()[1]\n        self.stk.append((price, cnt))\n        return cnt\n\n\n# Your StockSpanner object will be instantiated and called as such:\n# obj = StockSpanner()\n# param_1 = obj.next(price)",
+  "sourceGoCode": "type StockSpanner struct {\n\tstk []pair\n}\n\nfunc Constructor() StockSpanner {\n\treturn StockSpanner{[]pair{}}\n}\n\nfunc (this *StockSpanner) Next(price int) int {\n\tcnt := 1\n\tfor len(this.stk) > 0 && this.stk[len(this.stk)-1].price <= price {\n\t\tcnt += this.stk[len(this.stk)-1].cnt\n\t\tthis.stk = this.stk[:len(this.stk)-1]\n\t}\n\tthis.stk = append(this.stk, pair{price, cnt})\n\treturn cnt\n}\n\ntype pair struct{ price, cnt int }\n\n/**\n * Your StockSpanner object will be instantiated and called as such:\n * obj := Constructor();\n * param_1 := obj.Next(price);\n */",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -90,6 +90,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+150+Evaluate+Reverse+Polish+Notation+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0150.Evaluate Reverse Polish Notation",
+  "sourcePythonCode": "import operator\n\n\nclass Solution:\n    def evalRPN(self, tokens: List[str]) -> int:\n        opt = {\n            \"+\": operator.add,\n            \"-\": operator.sub,\n            \"*\": operator.mul,\n            \"/\": operator.truediv,\n        }\n        s = []\n        for token in tokens:\n            if token in opt:\n                s.append(int(opt[token](s.pop(-2), s.pop(-1))))\n            else:\n                s.append(int(token))\n        return s[0]",
+  "sourceGoCode": "func evalRPN(tokens []string) int {\n\t// https://github.com/emirpasic/gods#arraystack\n\tstk := arraystack.New()\n\tfor _, token := range tokens {\n\t\tif len(token) > 1 || token[0] >= '0' && token[0] <= '9' {\n\t\t\tnum, _ := strconv.Atoi(token)\n\t\t\tstk.Push(num)\n\t\t} else {\n\t\t\ty := popInt(stk)\n\t\t\tx := popInt(stk)\n\t\t\tswitch token {\n\t\t\tcase \"+\":\n\t\t\t\tstk.Push(x + y)\n\t\t\tcase \"-\":\n\t\t\t\tstk.Push(x - y)\n\t\t\tcase \"*\":\n\t\t\t\tstk.Push(x * y)\n\t\t\tdefault:\n\t\t\t\tstk.Push(x / y)\n\t\t\t}\n\t\t}\n\t}\n\treturn popInt(stk)\n}\n\nfunc popInt(stack *arraystack.Stack) int {\n\tv, _ := stack.Pop()\n\treturn v.(int)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

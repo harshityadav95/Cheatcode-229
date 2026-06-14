@@ -7,6 +7,7 @@
 - Space: O(V+E)
 - Python: `code.py` (`reorder_routes_to_make_all_paths_lead_to_the_city_zero`)
 - Go: `code.go` (`Solve045`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1466+Reorder+Routes+to+Make+All+Paths+Lead+to+the+City+Zero+solution)
 
 ## Problem Statement
 

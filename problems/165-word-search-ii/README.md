@@ -7,6 +7,7 @@
 - Space: O(total characters)
 - Python: `code.py` (`word_search_ii`)
 - Go: `code.go` (`Solve165`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+212+Word+Search+II+solution)
 
 ## Problem Statement
 

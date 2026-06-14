@@ -7,6 +7,7 @@
 - Space: O(w)
 - Python: `code.py` (`maximum_level_sum_of_a_binary_tree`)
 - Go: `code.go` (`Solve040`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+1161+Maximum+Level+Sum+of+a+Binary+Tree+solution)
 
 ## Problem Statement
 

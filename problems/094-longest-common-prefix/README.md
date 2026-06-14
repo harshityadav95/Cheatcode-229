@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`longest_common_prefix`)
 - Go: `code.go` (`Solve094`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+14+Longest+Common+Prefix+solution)
 
 ## Problem Statement
 

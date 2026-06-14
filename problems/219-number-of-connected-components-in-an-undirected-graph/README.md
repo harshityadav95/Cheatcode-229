@@ -7,6 +7,7 @@
 - Space: O(V+E)
 - Python: `code.py` (`number_of_connected_components_in_an_undirected_graph`)
 - Go: `code.go` (`Solve219`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+323+Number+of+Connected+Components+in+an+Undirected+Graph+solution)
 
 ## Problem Statement
 

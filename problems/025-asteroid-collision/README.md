@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`asteroid_collision`)
 - Go: `code.go` (`Solve025`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+735+Asteroid+Collision+solution)
 
 ## Problem Statement
 

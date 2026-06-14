@@ -86,6 +86,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+714+Best+Time+to+Buy+and+Sell+Stock+with+Transaction+Fee+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0700-0799/0714.Best Time to Buy and Sell Stock with Transaction Fee",
+  "sourcePythonCode": "class Solution:\n    def maxProfit(self, prices: List[int], fee: int) -> int:\n        @cache\n        def dfs(i: int, j: int) -> int:\n            if i >= len(prices):\n                return 0\n            ans = dfs(i + 1, j)\n            if j:\n                ans = max(ans, prices[i] + dfs(i + 1, 0) - fee)\n            else:\n                ans = max(ans, -prices[i] + dfs(i + 1, 1))\n            return ans\n\n        return dfs(0, 0)",
+  "sourceGoCode": "func maxProfit(prices []int, fee int) int {\n\tn := len(prices)\n\tf := make([][2]int, n)\n\tfor i := range f {\n\t\tf[i] = [2]int{-1, -1}\n\t}\n\tvar dfs func(i, j int) int\n\tdfs = func(i, j int) int {\n\t\tif i >= n {\n\t\t\treturn 0\n\t\t}\n\t\tif f[i][j] != -1 {\n\t\t\treturn f[i][j]\n\t\t}\n\t\tans := dfs(i+1, j)\n\t\tif j > 0 {\n\t\t\tans = max(ans, prices[i]+dfs(i+1, 0)-fee)\n\t\t} else {\n\t\t\tans = max(ans, -prices[i]+dfs(i+1, 1))\n\t\t}\n\t\tf[i][j] = ans\n\t\treturn ans\n\t}\n\treturn dfs(0, 0)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

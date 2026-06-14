@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+100+Same+Tree+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0100.Same Tree",
+  "sourcePythonCode": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, val=0, left=None, right=None):\n#         self.val = val\n#         self.left = left\n#         self.right = right\nclass Solution:\n    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:\n        if p == q:\n            return True\n        if p is None or q is None or p.val != q.val:\n            return False\n        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)",
+  "sourceGoCode": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc isSameTree(p *TreeNode, q *TreeNode) bool {\n\tif p == q {\n\t\treturn true\n\t}\n\tif p == nil || q == nil || p.Val != q.Val {\n\t\treturn false\n\t}\n\treturn isSameTree(p.Left, q.Left) && isSameTree(p.Right, q.Right)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

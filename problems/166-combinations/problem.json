@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+77+Combinations+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0077.Combinations",
+  "sourcePythonCode": "class Solution:\n    def combine(self, n: int, k: int) -> List[List[int]]:\n        def dfs(i: int):\n            if len(t) == k:\n                ans.append(t[:])\n                return\n            if i > n:\n                return\n            t.append(i)\n            dfs(i + 1)\n            t.pop()\n            dfs(i + 1)\n\n        ans = []\n        t = []\n        dfs(1)\n        return ans",
+  "sourceGoCode": "func combine(n int, k int) (ans [][]int) {\n\tt := []int{}\n\tvar dfs func(int)\n\tdfs = func(i int) {\n\t\tif len(t) == k {\n\t\t\tans = append(ans, slices.Clone(t))\n\t\t\treturn\n\t\t}\n\t\tif i > n {\n\t\t\treturn\n\t\t}\n\t\tt = append(t, i)\n\t\tdfs(i + 1)\n\t\tt = t[:len(t)-1]\n\t\tdfs(i + 1)\n\t}\n\tdfs(1)\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

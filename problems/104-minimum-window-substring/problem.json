@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+76+Minimum+Window+Substring+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0076.Minimum Window Substring",
+  "sourcePythonCode": "class Solution:\n    def minWindow(self, s: str, t: str) -> str:\n        need = Counter(t)\n        window = Counter()\n        cnt = l = 0\n        k, mi = -1, inf\n        for r, c in enumerate(s):\n            window[c] += 1\n            if need[c] >= window[c]:\n                cnt += 1\n            while cnt == len(t):\n                if r - l + 1 < mi:\n                    mi = r - l + 1\n                    k = l\n                if need[s[l]] >= window[s[l]]:\n                    cnt -= 1\n                window[s[l]] -= 1\n                l += 1\n        return \"\" if k < 0 else s[k : k + mi]",
+  "sourceGoCode": "func minWindow(s string, t string) string {\n\tneed := make([]int, 128)\n\twindow := make([]int, 128)\n\tfor i := 0; i < len(t); i++ {\n\t\tneed[t[i]]++\n\t}\n\n\tm, n := len(s), len(t)\n\tk, mi, cnt := -1, m+1, 0\n\n\tfor l, r := 0, 0; r < m; r++ {\n\t\tc := s[r]\n\t\tif window[c]++; window[c] <= need[c] {\n\t\t\tcnt++\n\t\t}\n\t\tfor cnt == n {\n\t\t\tif r-l+1 < mi {\n\t\t\t\tmi = r - l + 1\n\t\t\t\tk = l\n\t\t\t}\n\n\t\t\tc = s[l]\n\t\t\tif window[c] <= need[c] {\n\t\t\t\tcnt--\n\t\t\t}\n\t\t\twindow[c]--\n\t\t\tl++\n\t\t}\n\t}\n\tif k < 0 {\n\t\treturn \"\"\n\t}\n\treturn s[k : k+mi]\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

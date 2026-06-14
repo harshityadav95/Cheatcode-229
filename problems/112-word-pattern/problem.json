@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+290+Word+Pattern+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0290.Word Pattern",
+  "sourcePythonCode": "class Solution:\n    def wordPattern(self, pattern: str, s: str) -> bool:\n        ws = s.split()\n        if len(pattern) != len(ws):\n            return False\n        d1 = {}\n        d2 = {}\n        for a, b in zip(pattern, ws):\n            if (a in d1 and d1[a] != b) or (b in d2 and d2[b] != a):\n                return False\n            d1[a] = b\n            d2[b] = a\n        return True",
+  "sourceGoCode": "func wordPattern(pattern string, s string) bool {\n\tws := strings.Split(s, \" \")\n\tif len(ws) != len(pattern) {\n\t\treturn false\n\t}\n\td1 := map[rune]string{}\n\td2 := map[string]rune{}\n\tfor i, a := range pattern {\n\t\tb := ws[i]\n\t\tif v, ok := d1[a]; ok && v != b {\n\t\t\treturn false\n\t\t}\n\t\tif v, ok := d2[b]; ok && v != a {\n\t\t\treturn false\n\t\t}\n\t\td1[a] = b\n\t\td2[b] = a\n\t}\n\treturn true\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

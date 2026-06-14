@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`meeting_rooms_ii`)
 - Go: `code.go` (`Solve221`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+253+Meeting+Rooms+II+solution)
 
 ## Problem Statement
 

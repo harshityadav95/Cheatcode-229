@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`number_of_1_bits`)
 - Go: `code.go` (`Solve189`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+191+Number+of+1+Bits+solution)
 
 ## Problem Statement
 

@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+746+Min+Cost+Climbing+Stairs+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0700-0799/0746.Min Cost Climbing Stairs",
+  "sourcePythonCode": "class Solution:\n    def minCostClimbingStairs(self, cost: List[int]) -> int:\n        @cache\n        def dfs(i: int) -> int:\n            if i >= len(cost):\n                return 0\n            return cost[i] + min(dfs(i + 1), dfs(i + 2))\n\n        return min(dfs(0), dfs(1))",
+  "sourceGoCode": "func minCostClimbingStairs(cost []int) int {\n\tn := len(cost)\n\tf := make([]int, n)\n\tfor i := range f {\n\t\tf[i] = -1\n\t}\n\tvar dfs func(int) int\n\tdfs = func(i int) int {\n\t\tif i >= n {\n\t\t\treturn 0\n\t\t}\n\t\tif f[i] < 0 {\n\t\t\tf[i] = cost[i] + min(dfs(i+1), dfs(i+2))\n\t\t}\n\t\treturn f[i]\n\t}\n\treturn min(dfs(0), dfs(1))\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

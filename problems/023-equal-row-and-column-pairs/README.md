@@ -7,6 +7,7 @@
 - Space: O(n)
 - Python: `code.py` (`equal_row_and_column_pairs`)
 - Go: `code.go` (`Solve023`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+2352+Equal+Row+and+Column+Pairs+solution)
 
 ## Problem Statement
 

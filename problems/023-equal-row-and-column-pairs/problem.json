@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+2352+Equal+Row+and+Column+Pairs+solution",
+  "leetcodeMainPath": "leetcode-main/solution/2300-2399/2352.Equal Row and Column Pairs",
+  "sourcePythonCode": "class Solution:\n    def equalPairs(self, grid: List[List[int]]) -> int:\n        n = len(grid)\n        ans = 0\n        for i in range(n):\n            for j in range(n):\n                ans += all(grid[i][k] == grid[k][j] for k in range(n))\n        return ans",
+  "sourceGoCode": "func equalPairs(grid [][]int) (ans int) {\n\tfor i := range grid {\n\t\tfor j := range grid {\n\t\t\tok := 1\n\t\t\tfor k := range grid {\n\t\t\t\tif grid[i][k] != grid[k][j] {\n\t\t\t\t\tok = 0\n\t\t\t\t\tbreak\n\t\t\t\t}\n\t\t\t}\n\t\t\tans += ok\n\t\t}\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

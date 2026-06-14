@@ -94,6 +94,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+198+House+Robber+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0198.House Robber",
+  "sourcePythonCode": "class Solution:\n    def rob(self, nums: List[int]) -> int:\n        @cache\n        def dfs(i: int) -> int:\n            if i >= len(nums):\n                return 0\n            return max(nums[i] + dfs(i + 2), dfs(i + 1))\n\n        return dfs(0)",
+  "sourceGoCode": "func rob(nums []int) int {\n\tn := len(nums)\n\tf := make([]int, n)\n\tfor i := range f {\n\t\tf[i] = -1\n\t}\n\tvar dfs func(int) int\n\tdfs = func(i int) int {\n\t\tif i >= n {\n\t\t\treturn 0\n\t\t}\n\t\tif f[i] < 0 {\n\t\t\tf[i] = max(nums[i]+dfs(i+2), dfs(i+1))\n\t\t}\n\t\treturn f[i]\n\t}\n\treturn dfs(0)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -7,6 +7,7 @@
 - Space: O(1) unless recursion/map
 - Python: `code.py` (`linked_list_cycle`)
 - Go: `code.go` (`Solve127`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+141+Linked+List+Cycle+solution)
 
 ## Problem Statement
 

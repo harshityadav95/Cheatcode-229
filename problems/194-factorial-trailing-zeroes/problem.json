@@ -88,6 +88,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+172+Factorial+Trailing+Zeroes+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0172.Factorial Trailing Zeroes",
+  "sourcePythonCode": "class Solution:\n    def trailingZeroes(self, n: int) -> int:\n        ans = 0\n        while n:\n            n //= 5\n            ans += n\n        return ans",
+  "sourceGoCode": "func trailingZeroes(n int) int {\n\tans := 0\n\tfor n > 0 {\n\t\tn /= 5\n\t\tans += n\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

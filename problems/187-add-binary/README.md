@@ -7,6 +7,7 @@
 - Space: O(1)
 - Python: `code.py` (`add_binary`)
 - Go: `code.go` (`Solve187`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+67+Add+Binary+solution)
 
 ## Problem Statement
 

@@ -7,6 +7,7 @@
 - Space: O(state)
 - Python: `code.py` (`domino_and_tromino_tiling`)
 - Go: `code.go` (`Solve062`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+790+Domino+and+Tromino+Tiling+solution)
 
 ## Problem Statement
 

@@ -89,6 +89,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+138+Copy+List+with+Random+Pointer+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0100-0199/0138.Copy List with Random Pointer",
+  "sourcePythonCode": "\"\"\"\n# Definition for a Node.\nclass Node:\n    def __init__(self, x: int, next: 'Node' = None, random: 'Node' = None):\n        self.val = int(x)\n        self.next = next\n        self.random = random\n\"\"\"\n\n\nclass Solution:\n    def copyRandomList(self, head: \"Optional[Node]\") -> \"Optional[Node]\":\n        d = {}\n        dummy = tail = Node(0)\n        cur = head\n        while cur:\n            node = Node(cur.val)\n            tail.next = node\n            tail = tail.next\n            d[cur] = node\n            cur = cur.next\n        cur = head\n        while cur:\n            d[cur].random = d[cur.random] if cur.random else None\n            cur = cur.next\n        return dummy.next",
+  "sourceGoCode": "/**\n * Definition for a Node.\n * type Node struct {\n *     Val int\n *     Next *Node\n *     Random *Node\n * }\n */\n\nfunc copyRandomList(head *Node) *Node {\n\tdummy := &Node{}\n\ttail := dummy\n\td := map[*Node]*Node{}\n\tfor cur := head; cur != nil; cur = cur.Next {\n\t\tnode := &Node{Val: cur.Val}\n\t\td[cur] = node\n\t\ttail.Next = node\n\t\ttail = node\n\t}\n\tfor cur := head; cur != nil; cur = cur.Next {\n\t\tif cur.Random != nil {\n\t\t\td[cur].Random = d[cur.Random]\n\t\t}\n\t}\n\treturn dummy.Next\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

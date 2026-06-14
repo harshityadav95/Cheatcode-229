@@ -7,6 +7,7 @@
 - Space: O(h)
 - Python: `code.py` (`symmetric_tree`)
 - Go: `code.go` (`Solve140`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+101+Symmetric+Tree+solution)
 
 ## Problem Statement
 

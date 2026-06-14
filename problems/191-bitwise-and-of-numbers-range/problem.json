@@ -95,6 +95,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+201+Bitwise+AND+of+Numbers+Range+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0201.Bitwise AND of Numbers Range",
+  "sourcePythonCode": "class Solution:\n    def rangeBitwiseAnd(self, left: int, right: int) -> int:\n        while left < right:\n            right &= right - 1\n        return right",
+  "sourceGoCode": "func rangeBitwiseAnd(left int, right int) int {\n\tfor left < right {\n\t\tright &= (right - 1)\n\t}\n\treturn right\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+322+Coin+Change+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0300-0399/0322.Coin Change",
+  "sourcePythonCode": "class Solution:\n    def coinChange(self, coins: List[int], amount: int) -> int:\n        m, n = len(coins), amount\n        f = [[inf] * (n + 1) for _ in range(m + 1)]\n        f[0][0] = 0\n        for i, x in enumerate(coins, 1):\n            for j in range(n + 1):\n                f[i][j] = f[i - 1][j]\n                if j >= x:\n                    f[i][j] = min(f[i][j], f[i][j - x] + 1)\n        return -1 if f[m][n] >= inf else f[m][n]",
+  "sourceGoCode": "func coinChange(coins []int, amount int) int {\n\tm, n := len(coins), amount\n\tf := make([][]int, m+1)\n\tconst inf = 1 << 30\n\tfor i := range f {\n\t\tf[i] = make([]int, n+1)\n\t\tfor j := range f[i] {\n\t\t\tf[i][j] = inf\n\t\t}\n\t}\n\tf[0][0] = 0\n\tfor i := 1; i <= m; i++ {\n\t\tfor j := 0; j <= n; j++ {\n\t\t\tf[i][j] = f[i-1][j]\n\t\t\tif j >= coins[i-1] {\n\t\t\t\tf[i][j] = min(f[i][j], f[i][j-coins[i-1]]+1)\n\t\t\t}\n\t\t}\n\t}\n\tif f[m][n] > n {\n\t\treturn -1\n\t}\n\treturn f[m][n]\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

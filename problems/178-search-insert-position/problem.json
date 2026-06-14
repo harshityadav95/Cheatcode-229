@@ -88,6 +88,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+35+Search+Insert+Position+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0000-0099/0035.Search Insert Position",
+  "sourcePythonCode": "class Solution:\n    def searchInsert(self, nums: List[int], target: int) -> int:\n        l, r = 0, len(nums)\n        while l < r:\n            mid = (l + r) >> 1\n            if nums[mid] >= target:\n                r = mid\n            else:\n                l = mid + 1\n        return l",
+  "sourceGoCode": "func searchInsert(nums []int, target int) int {\n\tl, r := 0, len(nums)\n\tfor l < r {\n\t\tmid := (l + r) >> 1\n\t\tif nums[mid] >= target {\n\t\t\tr = mid\n\t\t} else {\n\t\t\tl = mid + 1\n\t\t}\n\t}\n\treturn l\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

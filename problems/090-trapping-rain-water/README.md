@@ -7,6 +7,7 @@
 - Space: O(1) to O(n)
 - Python: `code.py` (`trapping_rain_water`)
 - Go: `code.go` (`Solve090`)
+- Video: [YouTube search](https://www.youtube.com/results?search_query=LeetCode+42+Trapping+Rain+Water+solution)
 
 ## Problem Statement
 

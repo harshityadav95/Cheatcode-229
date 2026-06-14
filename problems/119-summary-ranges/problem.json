@@ -93,6 +93,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+228+Summary+Ranges+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0228.Summary Ranges",
+  "sourcePythonCode": "class Solution:\n    def summaryRanges(self, nums: List[int]) -> List[str]:\n        def f(i: int, j: int) -> str:\n            return str(nums[i]) if i == j else f'{nums[i]}->{nums[j]}'\n\n        i = 0\n        n = len(nums)\n        ans = []\n        while i < n:\n            j = i\n            while j + 1 < n and nums[j + 1] == nums[j] + 1:\n                j += 1\n            ans.append(f(i, j))\n            i = j + 1\n        return ans",
+  "sourceGoCode": "func summaryRanges(nums []int) (ans []string) {\n\tf := func(i, j int) string {\n\t\tif i == j {\n\t\t\treturn strconv.Itoa(nums[i])\n\t\t}\n\t\treturn strconv.Itoa(nums[i]) + \"->\" + strconv.Itoa(nums[j])\n\t}\n\tfor i, j, n := 0, 0, len(nums); i < n; i = j + 1 {\n\t\tj = i\n\t\tfor j+1 < n && nums[j+1] == nums[j]+1 {\n\t\t\tj++\n\t\t}\n\t\tans = append(ans, f(i, j))\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

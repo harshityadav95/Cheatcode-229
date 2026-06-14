@@ -92,6 +92,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+213+House+Robber+II+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0213.House Robber II",
+  "sourcePythonCode": "class Solution:\n    def rob(self, nums: List[int]) -> int:\n        def _rob(nums):\n            f = g = 0\n            for x in nums:\n                f, g = max(f, g), f + x\n            return max(f, g)\n\n        if len(nums) == 1:\n            return nums[0]\n        return max(_rob(nums[1:]), _rob(nums[:-1]))",
+  "sourceGoCode": "func rob(nums []int) int {\n\tn := len(nums)\n\tif n == 1 {\n\t\treturn nums[0]\n\t}\n\treturn max(robRange(nums, 0, n-2), robRange(nums, 1, n-1))\n}\n\nfunc robRange(nums []int, l, r int) int {\n\tf, g := 0, 0\n\tfor _, x := range nums[l : r+1] {\n\t\tf, g = max(f, g), f+x\n\t}\n\treturn max(f, g)\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

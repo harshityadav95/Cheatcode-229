@@ -91,6 +91,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+200+Number+of+Islands+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0200.Number of Islands",
+  "sourcePythonCode": "class Solution:\n    def numIslands(self, grid: List[List[str]]) -> int:\n        def dfs(i, j):\n            grid[i][j] = '0'\n            for a, b in pairwise(dirs):\n                x, y = i + a, j + b\n                if 0 <= x < m and 0 <= y < n and grid[x][y] == '1':\n                    dfs(x, y)\n\n        ans = 0\n        dirs = (-1, 0, 1, 0, -1)\n        m, n = len(grid), len(grid[0])\n        for i in range(m):\n            for j in range(n):\n                if grid[i][j] == '1':\n                    dfs(i, j)\n                    ans += 1\n        return ans",
+  "sourceGoCode": "func numIslands(grid [][]byte) int {\n\tm, n := len(grid), len(grid[0])\n\tvar dfs func(i, j int)\n\tdfs = func(i, j int) {\n\t\tgrid[i][j] = '0'\n\t\tdirs := []int{-1, 0, 1, 0, -1}\n\t\tfor k := 0; k < 4; k++ {\n\t\t\tx, y := i+dirs[k], j+dirs[k+1]\n\t\t\tif x >= 0 && x < m && y >= 0 && y < n && grid[x][y] == '1' {\n\t\t\t\tdfs(x, y)\n\t\t\t}\n\t\t}\n\t}\n\tans := 0\n\tfor i := 0; i < m; i++ {\n\t\tfor j := 0; j < n; j++ {\n\t\t\tif grid[i][j] == '1' {\n\t\t\t\tdfs(i, j)\n\t\t\t\tans++\n\t\t\t}\n\t\t}\n\t}\n\treturn ans\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

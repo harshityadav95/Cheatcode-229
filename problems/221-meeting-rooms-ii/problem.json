@@ -86,6 +86,10 @@
       "kind": "topic"
     }
   ],
+  "videoUrl": "https://www.youtube.com/results?search_query=LeetCode+253+Meeting+Rooms+II+solution",
+  "leetcodeMainPath": "leetcode-main/solution/0200-0299/0253.Meeting Rooms II",
+  "sourcePythonCode": "class Solution:\n    def minMeetingRooms(self, intervals: List[List[int]]) -> int:\n        m = max(e[1] for e in intervals)\n        d = [0] * (m + 1)\n        for l, r in intervals:\n            d[l] += 1\n            d[r] -= 1\n        ans = s = 0\n        for v in d:\n            s += v\n            ans = max(ans, s)\n        return ans",
+  "sourceGoCode": "func minMeetingRooms(intervals [][]int) (ans int) {\n\tm := 0\n\tfor _, e := range intervals {\n\t\tm = max(m, e[1])\n\t}\n\n\td := make([]int, m+1)\n\tfor _, e := range intervals {\n\t\td[e[0]]++\n\t\td[e[1]]--\n\t}\n\n\ts := 0\n\tfor _, v := range d {\n\t\ts += v\n\t\tans = max(ans, s)\n\t}\n\treturn\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"
