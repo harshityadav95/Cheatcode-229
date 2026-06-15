@@ -97,6 +97,10 @@
   "leetcodeMainPath": "leetcode-main/solution/0200-0299/0274.H-Index",
   "sourcePythonCode": "class Solution:\n    def hIndex(self, citations: List[int]) -> int:\n        citations.sort(reverse=True)\n        for h in range(len(citations), 0, -1):\n            if citations[h - 1] >= h:\n                return h\n        return 0",
   "sourceGoCode": "func hIndex(citations []int) int {\n\tsort.Ints(citations)\n\tn := len(citations)\n\tfor h := n; h > 0; h-- {\n\t\tif citations[n-h] >= h {\n\t\t\treturn h\n\t\t}\n\t}\n\treturn 0\n}",
+  "sourceJavaCode": "class Solution {\n    public int hIndex(int[] citations) {\n        Arrays.sort(citations);\n        int n = citations.length;\n        for (int h = n; h > 0; --h) {\n            if (citations[n - h] >= h) {\n                return h;\n            }\n        }\n        return 0;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int hIndex(vector<int>& citations) {\n        sort(citations.rbegin(), citations.rend());\n        for (int h = citations.size(); h; --h) {\n            if (citations[h - 1] >= h) {\n                return h;\n            }\n        }\n        return 0;\n    }\n};",
+  "sourceTypescriptCode": "function hIndex(citations: number[]): number {\n    citations.sort((a, b) => b - a);\n    for (let h = citations.length; h; --h) {\n        if (citations[h - 1] >= h) {\n            return h;\n        }\n    }\n    return 0;\n}",
+  "sourceRustCode": "impl Solution {\n    #[allow(dead_code)]\n    pub fn h_index(citations: Vec<i32>) -> i32 {\n        let mut citations = citations;\n        citations.sort_by(|&lhs, &rhs| rhs.cmp(&lhs));\n\n        let n = citations.len();\n\n        for i in (1..=n).rev() {\n            if citations[i - 1] >= (i as i32) {\n                return i as i32;\n            }\n        }\n\n        0\n    }\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

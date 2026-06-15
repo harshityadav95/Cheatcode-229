@@ -93,6 +93,12 @@
   "leetcodeMainPath": "leetcode-main/solution/0100-0199/0121.Best Time to Buy and Sell Stock",
   "sourcePythonCode": "class Solution:\n    def maxProfit(self, prices: List[int]) -> int:\n        ans, mi = 0, inf\n        for v in prices:\n            ans = max(ans, v - mi)\n            mi = min(mi, v)\n        return ans",
   "sourceGoCode": "func maxProfit(prices []int) (ans int) {\n\tmi := prices[0]\n\tfor _, v := range prices {\n\t\tans = max(ans, v-mi)\n\t\tmi = min(mi, v)\n\t}\n\treturn\n}",
+  "sourceJavaCode": "class Solution {\n    public int maxProfit(int[] prices) {\n        int ans = 0, mi = prices[0];\n        for (int v : prices) {\n            ans = Math.max(ans, v - mi);\n            mi = Math.min(mi, v);\n        }\n        return ans;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int maxProfit(vector<int>& prices) {\n        int ans = 0, mi = prices[0];\n        for (int& v : prices) {\n            ans = max(ans, v - mi);\n            mi = min(mi, v);\n        }\n        return ans;\n    }\n};",
+  "sourceTypescriptCode": "function maxProfit(prices: number[]): number {\n    let ans = 0;\n    let mi = prices[0];\n    for (const v of prices) {\n        ans = Math.max(ans, v - mi);\n        mi = Math.min(mi, v);\n    }\n    return ans;\n}",
+  "sourceJavascriptCode": "/**\n * @param {number[]} prices\n * @return {number}\n */\nvar maxProfit = function (prices) {\n    let ans = 0;\n    let mi = prices[0];\n    for (const v of prices) {\n        ans = Math.max(ans, v - mi);\n        mi = Math.min(mi, v);\n    }\n    return ans;\n};",
+  "sourceRustCode": "impl Solution {\n    pub fn max_profit(prices: Vec<i32>) -> i32 {\n        let mut ans = 0;\n        let mut mi = prices[0];\n        for &v in &prices {\n            ans = ans.max(v - mi);\n            mi = mi.min(v);\n        }\n        ans\n    }\n}",
+  "sourceCsharpCode": "public class Solution {\n    public int MaxProfit(int[] prices) {\n        int ans = 0, mi = prices[0];\n        foreach (int v in prices) {\n            ans = Math.Max(ans, v - mi);\n            mi = Math.Min(mi, v);\n        }\n        return ans;\n    }\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

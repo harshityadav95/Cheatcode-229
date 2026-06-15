@@ -90,6 +90,10 @@
   "leetcodeMainPath": "leetcode-main/solution/0200-0299/0252.Meeting Rooms",
   "sourcePythonCode": "class Solution:\n    def canAttendMeetings(self, intervals: List[List[int]]) -> bool:\n        intervals.sort()\n        return all(a[1] <= b[0] for a, b in pairwise(intervals))",
   "sourceGoCode": "func canAttendMeetings(intervals [][]int) bool {\n\tsort.Slice(intervals, func(i, j int) bool {\n\t\treturn intervals[i][0] < intervals[j][0]\n\t})\n\tfor i := 1; i < len(intervals); i++ {\n\t\tif intervals[i][0] < intervals[i-1][1] {\n\t\t\treturn false\n\t\t}\n\t}\n\treturn true\n}",
+  "sourceJavaCode": "class Solution {\n    public boolean canAttendMeetings(int[][] intervals) {\n        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);\n        for (int i = 1; i < intervals.length; ++i) {\n            if (intervals[i - 1][1] > intervals[i][0]) {\n                return false;\n            }\n        }\n        return true;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    bool canAttendMeetings(vector<vector<int>>& intervals) {\n        ranges::sort(intervals, [](const auto& a, const auto& b) {\n            return a[0] < b[0];\n        });\n        for (int i = 1; i < intervals.size(); ++i) {\n            if (intervals[i - 1][1] > intervals[i][0]) {\n                return false;\n            }\n        }\n        return true;\n    }\n};",
+  "sourceTypescriptCode": "function canAttendMeetings(intervals: number[][]): boolean {\n    intervals.sort((a, b) => a[0] - b[0]);\n    for (let i = 1; i < intervals.length; ++i) {\n        if (intervals[i][0] < intervals[i - 1][1]) {\n            return false;\n        }\n    }\n    return true;\n}",
+  "sourceRustCode": "impl Solution {\n    pub fn can_attend_meetings(mut intervals: Vec<Vec<i32>>) -> bool {\n        intervals.sort_by(|a, b| a[0].cmp(&b[0]));\n        for i in 1..intervals.len() {\n            if intervals[i - 1][1] > intervals[i][0] {\n                return false;\n            }\n        }\n        true\n    }\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

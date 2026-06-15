@@ -98,6 +98,13 @@
   "leetcodeMainPath": "leetcode-main/solution/0200-0299/0217.Contains Duplicate",
   "sourcePythonCode": "class Solution:\n    def containsDuplicate(self, nums: List[int]) -> bool:\n        return any(a == b for a, b in pairwise(sorted(nums)))",
   "sourceGoCode": "func containsDuplicate(nums []int) bool {\n\tsort.Ints(nums)\n\tfor i, v := range nums[1:] {\n\t\tif v == nums[i] {\n\t\t\treturn true\n\t\t}\n\t}\n\treturn false\n}",
+  "sourceJavaCode": "class Solution {\n    public boolean containsDuplicate(int[] nums) {\n        Arrays.sort(nums);\n        for (int i = 0; i < nums.length - 1; ++i) {\n            if (nums[i] == nums[i + 1]) {\n                return true;\n            }\n        }\n        return false;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    bool containsDuplicate(vector<int>& nums) {\n        sort(nums.begin(), nums.end());\n        for (int i = 0; i < nums.size() - 1; ++i) {\n            if (nums[i] == nums[i + 1]) {\n                return true;\n            }\n        }\n        return false;\n    }\n};",
+  "sourceTypescriptCode": "function containsDuplicate(nums: number[]): boolean {\n    nums.sort((a, b) => a - b);\n    const n = nums.length;\n    for (let i = 1; i < n; i++) {\n        if (nums[i - 1] === nums[i]) {\n            return true;\n        }\n    }\n    return false;\n}",
+  "sourceJavascriptCode": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar containsDuplicate = function (nums) {\n    return new Set(nums).size !== nums.length;\n};",
+  "sourceRustCode": "impl Solution {\n    pub fn contains_duplicate(mut nums: Vec<i32>) -> bool {\n        nums.sort();\n        let n = nums.len();\n        for i in 1..n {\n            if nums[i - 1] == nums[i] {\n                return true;\n            }\n        }\n        false\n    }\n}",
+  "sourceCsharpCode": "public class Solution {\n    public bool ContainsDuplicate(int[] nums) {\n        return nums.Distinct().Count() < nums.Length;\n    }\n}",
+  "sourceCCode": "int cmp(const void* a, const void* b) {\n    return *(int*) a - *(int*) b;\n}\n\nbool containsDuplicate(int* nums, int numsSize) {\n    qsort(nums, numsSize, sizeof(int), cmp);\n    for (int i = 1; i < numsSize; i++) {\n        if (nums[i - 1] == nums[i]) {\n            return 1;\n        }\n    }\n    return 0;\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

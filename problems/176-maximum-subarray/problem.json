@@ -91,6 +91,12 @@
   "leetcodeMainPath": "leetcode-main/solution/0000-0099/0053.Maximum Subarray",
   "sourcePythonCode": "class Solution:\n    def maxSubArray(self, nums: List[int]) -> int:\n        ans = f = nums[0]\n        for x in nums[1:]:\n            f = max(f, 0) + x\n            ans = max(ans, f)\n        return ans",
   "sourceGoCode": "func maxSubArray(nums []int) int {\n\tans, f := nums[0], nums[0]\n\tfor _, x := range nums[1:] {\n\t\tf = max(f, 0) + x\n\t\tans = max(ans, f)\n\t}\n\treturn ans\n}",
+  "sourceJavaCode": "class Solution {\n    public int maxSubArray(int[] nums) {\n        int ans = nums[0];\n        for (int i = 1, f = nums[0]; i < nums.length; ++i) {\n            f = Math.max(f, 0) + nums[i];\n            ans = Math.max(ans, f);\n        }\n        return ans;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int maxSubArray(vector<int>& nums) {\n        int ans = nums[0], f = nums[0];\n        for (int i = 1; i < nums.size(); ++i) {\n            f = max(f, 0) + nums[i];\n            ans = max(ans, f);\n        }\n        return ans;\n    }\n};",
+  "sourceTypescriptCode": "function maxSubArray(nums: number[]): number {\n    let [ans, f] = [nums[0], nums[0]];\n    for (let i = 1; i < nums.length; ++i) {\n        f = Math.max(f, 0) + nums[i];\n        ans = Math.max(ans, f);\n    }\n    return ans;\n}",
+  "sourceJavascriptCode": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar maxSubArray = function (nums) {\n    let [ans, f] = [nums[0], nums[0]];\n    for (let i = 1; i < nums.length; ++i) {\n        f = Math.max(f, 0) + nums[i];\n        ans = Math.max(ans, f);\n    }\n    return ans;\n};",
+  "sourceRustCode": "impl Solution {\n    pub fn max_sub_array(nums: Vec<i32>) -> i32 {\n        let n = nums.len();\n        let mut ans = nums[0];\n        let mut f = nums[0];\n        for i in 1..n {\n            f = f.max(0) + nums[i];\n            ans = ans.max(f);\n        }\n        ans\n    }\n}",
+  "sourceCsharpCode": "public class Solution {\n    public int MaxSubArray(int[] nums) {\n        int ans = nums[0], f = nums[0];\n        for (int i = 1; i < nums.Length; ++i) {\n            f = Math.Max(f, 0) + nums[i];\n            ans = Math.Max(ans, f);\n        }\n        return ans;\n    }\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

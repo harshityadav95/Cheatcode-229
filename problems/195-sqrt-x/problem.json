@@ -92,6 +92,11 @@
   "leetcodeMainPath": "leetcode-main/solution/0000-0099/0069.Sqrt(x)",
   "sourcePythonCode": "class Solution:\n    def mySqrt(self, x: int) -> int:\n        l, r = 0, x\n        while l < r:\n            mid = (l + r + 1) >> 1\n            if mid > x // mid:\n                r = mid - 1\n            else:\n                l = mid\n        return l",
   "sourceGoCode": "func mySqrt(x int) int {\n\treturn sort.Search(x+1, func(i int) bool { return i*i > x }) - 1\n}",
+  "sourceJavaCode": "class Solution {\n    public int mySqrt(int x) {\n        int l = 0, r = x;\n        while (l < r) {\n            int mid = (l + r + 1) >>> 1;\n            if (mid > x / mid) {\n                r = mid - 1;\n            } else {\n                l = mid;\n            }\n        }\n        return l;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int mySqrt(int x) {\n        int l = 0, r = x;\n        while (l < r) {\n            int mid = (l + r + 1ll) >> 1;\n            if (mid > x / mid) {\n                r = mid - 1;\n            } else {\n                l = mid;\n            }\n        }\n        return l;\n    }\n};",
+  "sourceJavascriptCode": "/**\n * @param {number} x\n * @return {number}\n */\nvar mySqrt = function (x) {\n    let [l, r] = [0, x];\n    while (l < r) {\n        const mid = (l + r + 1) >> 1;\n        if (mid > x / mid) {\n            r = mid - 1;\n        } else {\n            l = mid;\n        }\n    }\n    return l;\n};",
+  "sourceRustCode": "impl Solution {\n    pub fn my_sqrt(x: i32) -> i32 {\n        let mut l = 0;\n        let mut r = x;\n\n        while l < r {\n            let mid = (l + r + 1) / 2;\n\n            if mid > x / mid {\n                r = mid - 1;\n            } else {\n                l = mid;\n            }\n        }\n\n        l\n    }\n}",
+  "sourceCsharpCode": "public class Solution {\n    public int MySqrt(int x) {\n        int l = 0, r = x;\n        while (l < r) {\n            int mid = (l + r + 1) >>> 1;\n            if (mid > x / mid) {\n                r = mid - 1;\n            } else {\n                l = mid;\n            }\n        }\n        return l;\n    }\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

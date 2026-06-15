@@ -100,6 +100,9 @@
   "leetcodeMainPath": "leetcode-main/solution/0300-0399/0338.Counting Bits",
   "sourcePythonCode": "class Solution:\n    def countBits(self, n: int) -> List[int]:\n        return [i.bit_count() for i in range(n + 1)]",
   "sourceGoCode": "func countBits(n int) []int {\n\tans := make([]int, n+1)\n\tfor i := 0; i <= n; i++ {\n\t\tans[i] = bits.OnesCount(uint(i))\n\t}\n\treturn ans\n}",
+  "sourceJavaCode": "class Solution {\n    public int[] countBits(int n) {\n        int[] ans = new int[n + 1];\n        for (int i = 0; i <= n; ++i) {\n            ans[i] = Integer.bitCount(i);\n        }\n        return ans;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    vector<int> countBits(int n) {\n        vector<int> ans(n + 1);\n        for (int i = 0; i <= n; ++i) {\n            ans[i] = __builtin_popcount(i);\n        }\n        return ans;\n    }\n};",
+  "sourceTypescriptCode": "function countBits(n: number): number[] {\n    const ans: number[] = Array(n + 1).fill(0);\n    for (let i = 0; i <= n; ++i) {\n        ans[i] = bitCount(i);\n    }\n    return ans;\n}\n\nfunction bitCount(n: number): number {\n    let count = 0;\n    while (n) {\n        n &= n - 1;\n        ++count;\n    }\n    return count;\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

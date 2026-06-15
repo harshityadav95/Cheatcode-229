@@ -96,6 +96,10 @@
   "leetcodeMainPath": "leetcode-main/solution/1100-1199/1137.N-th Tribonacci Number",
   "sourcePythonCode": "class Solution:\n    def tribonacci(self, n: int) -> int:\n        a, b, c = 0, 1, 1\n        for _ in range(n):\n            a, b, c = b, c, a + b + c\n        return a",
   "sourceGoCode": "func tribonacci(n int) int {\n\ta, b, c := 0, 1, 1\n\tfor i := 0; i < n; i++ {\n\t\ta, b, c = b, c, a+b+c\n\t}\n\treturn a\n}",
+  "sourceJavaCode": "class Solution {\n    public int tribonacci(int n) {\n        int a = 0, b = 1, c = 1;\n        while (n-- > 0) {\n            int d = a + b + c;\n            a = b;\n            b = c;\n            c = d;\n        }\n        return a;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int tribonacci(int n) {\n        long long a = 0, b = 1, c = 1;\n        while (n--) {\n            long long d = a + b + c;\n            a = b;\n            b = c;\n            c = d;\n        }\n        return (int) a;\n    }\n};",
+  "sourceTypescriptCode": "function tribonacci(n: number): number {\n    let [a, b, c] = [0, 1, 1];\n    while (n--) {\n        let d = a + b + c;\n        a = b;\n        b = c;\n        c = d;\n    }\n    return a;\n}",
+  "sourceJavascriptCode": "/**\n * @param {number} n\n * @return {number}\n */\nvar tribonacci = function (n) {\n    let a = 0;\n    let b = 1;\n    let c = 1;\n    while (n--) {\n        let d = a + b + c;\n        a = b;\n        b = c;\n        c = d;\n    }\n    return a;\n};",
   "files": {
     "python": "code.py",
     "go": "code.go"

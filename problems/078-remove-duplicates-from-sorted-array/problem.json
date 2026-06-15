@@ -97,6 +97,12 @@
   "leetcodeMainPath": "leetcode-main/solution/0000-0099/0026.Remove Duplicates from Sorted Array",
   "sourcePythonCode": "class Solution:\n    def removeDuplicates(self, nums: List[int]) -> int:\n        k = 0\n        for x in nums:\n            if k == 0 or x != nums[k - 1]:\n                nums[k] = x\n                k += 1\n        return k",
   "sourceGoCode": "func removeDuplicates(nums []int) int {\n\tk := 0\n\tfor _, x := range nums {\n\t\tif k == 0 || x != nums[k-1] {\n\t\t\tnums[k] = x\n\t\t\tk++\n\t\t}\n\t}\n\treturn k\n}",
+  "sourceJavaCode": "class Solution {\n    public int removeDuplicates(int[] nums) {\n        int k = 0;\n        for (int x : nums) {\n            if (k == 0 || x != nums[k - 1]) {\n                nums[k++] = x;\n            }\n        }\n        return k;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int removeDuplicates(vector<int>& nums) {\n        int k = 0;\n        for (int x : nums) {\n            if (k == 0 || x != nums[k - 1]) {\n                nums[k++] = x;\n            }\n        }\n        return k;\n    }\n};",
+  "sourceTypescriptCode": "function removeDuplicates(nums: number[]): number {\n    let k: number = 0;\n    for (const x of nums) {\n        if (k === 0 || x !== nums[k - 1]) {\n            nums[k++] = x;\n        }\n    }\n    return k;\n}",
+  "sourceJavascriptCode": "/**\n * @param {number[]} nums\n * @return {number}\n */\nvar removeDuplicates = function (nums) {\n    let k = 0;\n    for (const x of nums) {\n        if (k === 0 || x !== nums[k - 1]) {\n            nums[k++] = x;\n        }\n    }\n    return k;\n};",
+  "sourceRustCode": "impl Solution {\n    pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {\n        let mut k = 0;\n        for i in 0..nums.len() {\n            if k == 0 || nums[i] != nums[k - 1] {\n                nums[k] = nums[i];\n                k += 1;\n            }\n        }\n        k as i32\n    }\n}",
+  "sourceCsharpCode": "public class Solution {\n    public int RemoveDuplicates(int[] nums) {\n        int k = 0;\n        foreach (int x in nums) {\n            if (k == 0 || x != nums[k - 1]) {\n                nums[k++] = x;\n            }\n        }\n        return k;\n    }\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

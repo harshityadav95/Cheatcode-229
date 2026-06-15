@@ -37,7 +37,7 @@ Construct a quad tree from a square binary grid, merging uniform regions into le
 
 ### Intuition
 
-discard dominated a... A safe greedy step keeps a state that is never worse for any future suffix.
+Divide grid into 4 quadrants recursively; merge if all values are identical.
 
 ### Brute Force Baseline
 

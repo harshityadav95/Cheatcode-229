@@ -189,7 +189,15 @@ def main() -> None:
         raise SystemExit(f"missing source directory: {SOURCE_ROOT}")
 
     if OUTPUT_ROOT.exists():
-        shutil.rmtree(OUTPUT_ROOT)
+        for _ in range(5):
+            try:
+                shutil.rmtree(OUTPUT_ROOT)
+                break
+            except OSError:
+                import time
+                time.sleep(0.2)
+        else:
+            shutil.rmtree(OUTPUT_ROOT, ignore_errors=True)
     DETAILS_ROOT.mkdir(parents=True, exist_ok=True)
 
     problems = []

@@ -120,9 +120,14 @@ export function LandingPage({
       {/* Hero Section */}
       <section className="relative mx-auto max-w-[1400px] px-4 pt-16 pb-12 sm:px-6 lg:px-8 lg:pt-24 lg:pb-16">
         <div className="flex flex-col items-center text-center">
-          <Badge className="mb-4 border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-sm font-medium text-cyan-600 dark:text-cyan-400">
-            DSA Preparation 2026
-          </Badge>
+          <div className="mb-4 flex flex-wrap justify-center gap-2">
+            <Badge className="border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-sm font-medium text-cyan-600 dark:text-cyan-400">
+              DSA Preparation 2026
+            </Badge>
+            <Badge className="border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-sm font-medium text-emerald-600 dark:text-emerald-400">
+              {problems.length + (importedCount || 3962)} Total Problems
+            </Badge>
+          </div>
           <h1 className="max-w-4xl text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
             Crack Technical Interviews with{" "}
             <span className="bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 bg-clip-text text-transparent dark:from-cyan-400 dark:via-teal-400 dark:to-indigo-400">

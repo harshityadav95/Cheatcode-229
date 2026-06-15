@@ -97,6 +97,12 @@
   "leetcodeMainPath": "leetcode-main/solution/0000-0099/0058.Length of Last Word",
   "sourcePythonCode": "class Solution:\n    def lengthOfLastWord(self, s: str) -> int:\n        i = len(s) - 1\n        while i >= 0 and s[i] == ' ':\n            i -= 1\n        j = i\n        while j >= 0 and s[j] != ' ':\n            j -= 1\n        return i - j",
   "sourceGoCode": "func lengthOfLastWord(s string) int {\n\ti := len(s) - 1\n\tfor i >= 0 && s[i] == ' ' {\n\t\ti--\n\t}\n\tj := i\n\tfor j >= 0 && s[j] != ' ' {\n\t\tj--\n\t}\n\treturn i - j\n}",
+  "sourceJavaCode": "class Solution {\n    public int lengthOfLastWord(String s) {\n        int i = s.length() - 1;\n        while (i >= 0 && s.charAt(i) == ' ') {\n            --i;\n        }\n        int j = i;\n        while (j >= 0 && s.charAt(j) != ' ') {\n            --j;\n        }\n        return i - j;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int lengthOfLastWord(string s) {\n        int i = s.size() - 1;\n        while (~i && s[i] == ' ') {\n            --i;\n        }\n        int j = i;\n        while (~j && s[j] != ' ') {\n            --j;\n        }\n        return i - j;\n    }\n};",
+  "sourceTypescriptCode": "function lengthOfLastWord(s: string): number {\n    let i = s.length - 1;\n    while (i >= 0 && s[i] === ' ') {\n        --i;\n    }\n    let j = i;\n    while (j >= 0 && s[j] !== ' ') {\n        --j;\n    }\n    return i - j;\n}",
+  "sourceJavascriptCode": "/**\n * @param {string} s\n * @return {number}\n */\nvar lengthOfLastWord = function (s) {\n    let i = s.length - 1;\n    while (i >= 0 && s[i] === ' ') {\n        --i;\n    }\n    let j = i;\n    while (j >= 0 && s[j] !== ' ') {\n        --j;\n    }\n    return i - j;\n};",
+  "sourceRustCode": "impl Solution {\n    pub fn length_of_last_word(s: String) -> i32 {\n        let s = s.trim_end();\n        let n = s.len();\n        for (i, c) in s.char_indices().rev() {\n            if c == ' ' {\n                return (n - i - 1) as i32;\n            }\n        }\n        n as i32\n    }\n}",
+  "sourceCsharpCode": "public class Solution {\n    public int LengthOfLastWord(string s) {\n        int i = s.Length - 1;\n        while (i >= 0 && s[i] == ' ') {\n            --i;\n        }\n        int j = i;\n        while (j >= 0 && s[j] != ' ') {\n            --j;\n        }\n        return i - j;\n    }\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

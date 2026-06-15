@@ -37,7 +37,7 @@ Return whether an integer reads the same forward and backward without converting
 
 ### Intuition
 
-discard dominated a... A safe greedy step keeps a state that is never worse for any future suffix.
+Compare digits from both ends moving inward using left and right pointers.
 
 ### Brute Force Baseline
 

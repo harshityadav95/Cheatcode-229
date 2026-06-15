@@ -17,15 +17,18 @@
   "time": "O(n) or O(log n)",
   "space": "O(1)",
   "diagram": {
-    "type": "greedy",
+    "type": "tree",
     "seed": 689
   },
   "diagramNotes": [
-    "local choice",
-    "dominant state",
-    "best answer",
-    "discard dominated a...",
-    "A safe greedy step keeps a state that is never worse for any future suffix."
+    "grid",
+    "topLeft",
+    "topRight",
+    "bottomLeft",
+    "bottomRight",
+    "leaf",
+    "val",
+    "Divide grid into 4 quadrants recursively; merge if all values are identical."
   ],
   "example": {
     "input": "grid=[[1,1],[1,1]]",
@@ -40,7 +43,7 @@
     "int vs int64 in Go?",
     "Exact return shape?"
   ],
-  "intuition": "discard dominated a... A safe greedy step keeps a state that is never worse for any future suffix.",
+  "intuition": "Divide grid into 4 quadrants recursively; merge if all values are identical.",
   "brute": "Try all choices recursively or simulate every path. Correct but exponential or quadratic.",
   "optimized": "Identify the state that dominates future decisions, then greedily update it while scanning once. Alternative: Some greedy tasks can also be solved by DP first; convert to greedy after finding the redundant state.",
   "invariant": "The maintained state is at least as good as any alternative state with the same processed prefix.",
@@ -92,6 +95,8 @@
   "leetcodeMainPath": "leetcode-main/solution/0400-0499/0427.Construct Quad Tree",
   "sourcePythonCode": "\"\"\"\n# Definition for a QuadTree node.\nclass Node:\n    def __init__(self, val, isLeaf, topLeft, topRight, bottomLeft, bottomRight):\n        self.val = val\n        self.isLeaf = isLeaf\n        self.topLeft = topLeft\n        self.topRight = topRight\n        self.bottomLeft = bottomLeft\n        self.bottomRight = bottomRight\n\"\"\"\n\n\nclass Solution:\n    def construct(self, grid: List[List[int]]) -> 'Node':\n        def dfs(a, b, c, d):\n            zero = one = 0\n            for i in range(a, c + 1):\n                for j in range(b, d + 1):\n                    if grid[i][j] == 0:\n                        zero = 1\n                    else:\n                        one = 1\n            isLeaf = zero + one == 1\n            val = isLeaf and one\n            if isLeaf:\n                return Node(grid[a][b], True)\n            topLeft = dfs(a, b, (a + c) // 2, (b + d) // 2)\n            topRight = dfs(a, (b + d) // 2 + 1, (a + c) // 2, d)\n            bottomLeft = dfs((a + c) // 2 + 1, b, c, (b + d) // 2)\n            bottomRight = dfs((a + c) // 2 + 1, (b + d) // 2 + 1, c, d)\n            return Node(val, isLeaf, topLeft, topRight, bottomLeft, bottomRight)\n\n        return dfs(0, 0, len(grid) - 1, len(grid[0]) - 1)",
   "sourceGoCode": "/**\n * Definition for a QuadTree node.\n * type Node struct {\n *     Val bool\n *     IsLeaf bool\n *     TopLeft *Node\n *     TopRight *Node\n *     BottomLeft *Node\n *     BottomRight *Node\n * }\n */\n\nfunc construct(grid [][]int) *Node {\n\tvar dfs func(a, b, c, d int) *Node\n\tdfs = func(a, b, c, d int) *Node {\n\t\tzero, one := 0, 0\n\t\tfor i := a; i <= c; i++ {\n\t\t\tfor j := b; j <= d; j++ {\n\t\t\t\tif grid[i][j] == 0 {\n\t\t\t\t\tzero = 1\n\t\t\t\t} else {\n\t\t\t\t\tone = 1\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tisLeaf := zero+one == 1\n\t\tval := isLeaf && one == 1\n\t\tnode := &Node{Val: val, IsLeaf: isLeaf}\n\t\tif isLeaf {\n\t\t\treturn node\n\t\t}\n\t\tnode.TopLeft = dfs(a, b, (a+c)/2, (b+d)/2)\n\t\tnode.TopRight = dfs(a, (b+d)/2+1, (a+c)/2, d)\n\t\tnode.BottomLeft = dfs((a+c)/2+1, b, c, (b+d)/2)\n\t\tnode.BottomRight = dfs((a+c)/2+1, (b+d)/2+1, c, d)\n\t\treturn node\n\t}\n\treturn dfs(0, 0, len(grid)-1, len(grid[0])-1)\n}",
+  "sourceJavaCode": "/*\n// Definition for a QuadTree node.\nclass Node {\n    public boolean val;\n    public boolean isLeaf;\n    public Node topLeft;\n    public Node topRight;\n    public Node bottomLeft;\n    public Node bottomRight;\n\n\n    public Node() {\n        this.val = false;\n        this.isLeaf = false;\n        this.topLeft = null;\n        this.topRight = null;\n        this.bottomLeft = null;\n        this.bottomRight = null;\n    }\n\n    public Node(boolean val, boolean isLeaf) {\n        this.val = val;\n        this.isLeaf = isLeaf;\n        this.topLeft = null;\n        this.topRight = null;\n        this.bottomLeft = null;\n        this.bottomRight = null;\n    }\n\n    public Node(boolean val, boolean isLeaf, Node topLeft, Node topRight, Node bottomLeft, Node\nbottomRight) { this.val = val; this.isLeaf = isLeaf; this.topLeft = topLeft; this.topRight =\ntopRight; this.bottomLeft = bottomLeft; this.bottomRight = bottomRight;\n    }\n};\n*/\n\nclass Solution {\n    public Node construct(int[][] grid) {\n        return dfs(0, 0, grid.length - 1, grid[0].length - 1, grid);\n    }\n\n    private Node dfs(int a, int b, int c, int d, int[][] grid) {\n        int zero = 0, one = 0;\n        for (int i = a; i <= c; ++i) {\n            for (int j = b; j <= d; ++j) {\n                if (grid[i][j] == 0) {\n                    zero = 1;\n                } else {\n                    one = 1;\n                }\n            }\n        }\n        boolean isLeaf = zero + one == 1;\n        boolean val = isLeaf && one == 1;\n        Node node = new Node(val, isLeaf);\n        if (isLeaf) {\n            return node;\n        }\n        node.topLeft = dfs(a, b, (a + c) / 2, (b + d) / 2, grid);\n        node.topRight = dfs(a, (b + d) / 2 + 1, (a + c) / 2, d, grid);\n        node.bottomLeft = dfs((a + c) / 2 + 1, b, c, (b + d) / 2, grid);\n        node.bottomRight = dfs((a + c) / 2 + 1, (b + d) / 2 + 1, c, d, grid);\n        return node;\n    }\n}",
+  "sourceCppCode": "/*\n// Definition for a QuadTree node.\nclass Node {\npublic:\n    bool val;\n    bool isLeaf;\n    Node* topLeft;\n    Node* topRight;\n    Node* bottomLeft;\n    Node* bottomRight;\n\n    Node() {\n        val = false;\n        isLeaf = false;\n        topLeft = NULL;\n        topRight = NULL;\n        bottomLeft = NULL;\n        bottomRight = NULL;\n    }\n\n    Node(bool _val, bool _isLeaf) {\n        val = _val;\n        isLeaf = _isLeaf;\n        topLeft = NULL;\n        topRight = NULL;\n        bottomLeft = NULL;\n        bottomRight = NULL;\n    }\n\n    Node(bool _val, bool _isLeaf, Node* _topLeft, Node* _topRight, Node* _bottomLeft, Node* _bottomRight) {\n        val = _val;\n        isLeaf = _isLeaf;\n        topLeft = _topLeft;\n        topRight = _topRight;\n        bottomLeft = _bottomLeft;\n        bottomRight = _bottomRight;\n    }\n};\n*/\n\nclass Solution {\npublic:\n    Node* construct(vector<vector<int>>& grid) {\n        return dfs(0, 0, grid.size() - 1, grid[0].size() - 1, grid);\n    }\n\n    Node* dfs(int a, int b, int c, int d, vector<vector<int>>& grid) {\n        int zero = 0, one = 0;\n        for (int i = a; i <= c; ++i) {\n            for (int j = b; j <= d; ++j) {\n                if (grid[i][j])\n                    one = 1;\n                else\n                    zero = 1;\n            }\n        }\n        bool isLeaf = zero + one == 1;\n        bool val = isLeaf && one;\n        Node* node = new Node(val, isLeaf);\n        if (isLeaf) return node;\n        node->topLeft = dfs(a, b, (a + c) / 2, (b + d) / 2, grid);\n        node->topRight = dfs(a, (b + d) / 2 + 1, (a + c) / 2, d, grid);\n        node->bottomLeft = dfs((a + c) / 2 + 1, b, c, (b + d) / 2, grid);\n        node->bottomRight = dfs((a + c) / 2 + 1, (b + d) / 2 + 1, c, d, grid);\n        return node;\n    }\n};",
   "files": {
     "python": "code.py",
     "go": "code.go"

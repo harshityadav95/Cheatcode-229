@@ -97,6 +97,12 @@
   "leetcodeMainPath": "leetcode-main/solution/0000-0099/0027.Remove Element",
   "sourcePythonCode": "class Solution:\n    def removeElement(self, nums: List[int], val: int) -> int:\n        k = 0\n        for x in nums:\n            if x != val:\n                nums[k] = x\n                k += 1\n        return k",
   "sourceGoCode": "func removeElement(nums []int, val int) int {\n\tk := 0\n\tfor _, x := range nums {\n\t\tif x != val {\n\t\t\tnums[k] = x\n\t\t\tk++\n\t\t}\n\t}\n\treturn k\n}",
+  "sourceJavaCode": "class Solution {\n    public int removeElement(int[] nums, int val) {\n        int k = 0;\n        for (int x : nums) {\n            if (x != val) {\n                nums[k++] = x;\n            }\n        }\n        return k;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int removeElement(vector<int>& nums, int val) {\n        int k = 0;\n        for (int x : nums) {\n            if (x != val) {\n                nums[k++] = x;\n            }\n        }\n        return k;\n    }\n};",
+  "sourceTypescriptCode": "function removeElement(nums: number[], val: number): number {\n    let k: number = 0;\n    for (const x of nums) {\n        if (x !== val) {\n            nums[k++] = x;\n        }\n    }\n    return k;\n}",
+  "sourceJavascriptCode": "/**\n * @param {number[]} nums\n * @param {number} val\n * @return {number}\n */\nvar removeElement = function (nums, val) {\n    let k = 0;\n    for (const x of nums) {\n        if (x !== val) {\n            nums[k++] = x;\n        }\n    }\n    return k;\n};",
+  "sourceRustCode": "impl Solution {\n    pub fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {\n        let mut k = 0;\n        for i in 0..nums.len() {\n            if nums[i] != val {\n                nums[k] = nums[i];\n                k += 1;\n            }\n        }\n        k as i32\n    }\n}",
+  "sourceCsharpCode": "public class Solution {\n    public int RemoveElement(int[] nums, int val) {\n        int k = 0;\n        foreach (int x in nums) {\n            if (x != val) {\n                nums[k++] = x;\n            }\n        }\n        return k;\n    }\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"
