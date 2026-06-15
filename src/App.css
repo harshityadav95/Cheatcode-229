@@ -129,6 +129,18 @@ svg text {
   outline: none;
 }
 
+.codeleet-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--lc-border);
+  background: var(--lc-panel);
+  padding: 14px 16px;
+  color: var(--lc-muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
 .lc-panel {
   overflow: hidden;
   border: 1px solid var(--lc-border);
