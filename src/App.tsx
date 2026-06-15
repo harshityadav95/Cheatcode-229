@@ -538,8 +538,17 @@ function App() {
             onSidebarWidthChange={updateSidebarWidth}
           />
         )}
+        <SiteFooter />
       </main>
     </TooltipProvider>
+  )
+}
+
+function SiteFooter() {
+  return (
+    <footer className="codeleet-footer">
+      <span>Developed by Solvepao Research</span>
+    </footer>
   )
 }
 
