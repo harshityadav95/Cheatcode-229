@@ -99,6 +99,9 @@
   "leetcodeMainPath": "leetcode-main/solution/1300-1399/1318.Minimum Flips to Make a OR b Equal to c",
   "sourcePythonCode": "class Solution:\n    def minFlips(self, a: int, b: int, c: int) -> int:\n        ans = 0\n        for i in range(32):\n            x, y, z = a >> i & 1, b >> i & 1, c >> i & 1\n            ans += x + y if z == 0 else int(x == 0 and y == 0)\n        return ans",
   "sourceGoCode": "func minFlips(a int, b int, c int) (ans int) {\n\tfor i := 0; i < 32; i++ {\n\t\tx, y, z := a>>i&1, b>>i&1, c>>i&1\n\t\tif z == 0 {\n\t\t\tans += x + y\n\t\t} else if x == 0 && y == 0 {\n\t\t\tans++\n\t\t}\n\t}\n\treturn\n}",
+  "sourceJavaCode": "class Solution {\n    public int minFlips(int a, int b, int c) {\n        int ans = 0;\n        for (int i = 0; i < 32; ++i) {\n            int x = a >> i & 1, y = b >> i & 1, z = c >> i & 1;\n            ans += z == 0 ? x + y : (x == 0 && y == 0 ? 1 : 0);\n        }\n        return ans;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int minFlips(int a, int b, int c) {\n        int ans = 0;\n        for (int i = 0; i < 32; ++i) {\n            int x = a >> i & 1, y = b >> i & 1, z = c >> i & 1;\n            ans += z == 0 ? x + y : (x == 0 && y == 0 ? 1 : 0);\n        }\n        return ans;\n    }\n};",
+  "sourceTypescriptCode": "function minFlips(a: number, b: number, c: number): number {\n    let ans = 0;\n    for (let i = 0; i < 32; ++i) {\n        const [x, y, z] = [(a >> i) & 1, (b >> i) & 1, (c >> i) & 1];\n        ans += z === 0 ? x + y : x + y === 0 ? 1 : 0;\n    }\n    return ans;\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

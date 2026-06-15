@@ -92,6 +92,12 @@
   "leetcodeMainPath": "leetcode-main/solution/0100-0199/0122.Best Time to Buy and Sell Stock II",
   "sourcePythonCode": "class Solution:\n    def maxProfit(self, prices: List[int]) -> int:\n        return sum(max(0, b - a) for a, b in pairwise(prices))",
   "sourceGoCode": "func maxProfit(prices []int) (ans int) {\n\tfor i, v := range prices[1:] {\n\t\tt := v - prices[i]\n\t\tif t > 0 {\n\t\t\tans += t\n\t\t}\n\t}\n\treturn\n}",
+  "sourceJavaCode": "class Solution {\n    public int maxProfit(int[] prices) {\n        int ans = 0;\n        for (int i = 1; i < prices.length; ++i) {\n            ans += Math.max(0, prices[i] - prices[i - 1]);\n        }\n        return ans;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int maxProfit(vector<int>& prices) {\n        int ans = 0;\n        for (int i = 1; i < prices.size(); ++i) ans += max(0, prices[i] - prices[i - 1]);\n        return ans;\n    }\n};",
+  "sourceTypescriptCode": "function maxProfit(prices: number[]): number {\n    let ans = 0;\n    for (let i = 1; i < prices.length; i++) {\n        ans += Math.max(0, prices[i] - prices[i - 1]);\n    }\n    return ans;\n}",
+  "sourceJavascriptCode": "/**\n * @param {number[]} prices\n * @return {number}\n */\nvar maxProfit = function (prices) {\n    let ans = 0;\n    for (let i = 1; i < prices.length; i++) {\n        ans += Math.max(0, prices[i] - prices[i - 1]);\n    }\n    return ans;\n};",
+  "sourceRustCode": "impl Solution {\n    pub fn max_profit(prices: Vec<i32>) -> i32 {\n        let mut res = 0;\n        for i in 1..prices.len() {\n            res += (0).max(prices[i] - prices[i - 1]);\n        }\n        res\n    }\n}",
+  "sourceCsharpCode": "public class Solution {\n    public int MaxProfit(int[] prices) {\n        int ans = 0;\n        for (int i = 1; i < prices.Length; ++i) {\n            ans += Math.Max(0, prices[i] - prices[i - 1]);\n        }\n        return ans;\n    }\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

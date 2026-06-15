@@ -97,6 +97,11 @@
   "leetcodeMainPath": "leetcode-main/solution/0000-0099/0070.Climbing Stairs",
   "sourcePythonCode": "class Solution:\n    def climbStairs(self, n: int) -> int:\n        a, b = 0, 1\n        for _ in range(n):\n            a, b = b, a + b\n        return b",
   "sourceGoCode": "func climbStairs(n int) int {\n\ta, b := 0, 1\n\tfor i := 0; i < n; i++ {\n\t\ta, b = b, a+b\n\t}\n\treturn b\n}",
+  "sourceJavaCode": "class Solution {\n    public int climbStairs(int n) {\n        int a = 0, b = 1;\n        for (int i = 0; i < n; ++i) {\n            int c = a + b;\n            a = b;\n            b = c;\n        }\n        return b;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int climbStairs(int n) {\n        int a = 0, b = 1;\n        for (int i = 0; i < n; ++i) {\n            int c = a + b;\n            a = b;\n            b = c;\n        }\n        return b;\n    }\n};",
+  "sourceTypescriptCode": "function climbStairs(n: number): number {\n    let p = 1;\n    let q = 1;\n    for (let i = 1; i < n; i++) {\n        [p, q] = [q, p + q];\n    }\n    return q;\n}",
+  "sourceJavascriptCode": "/**\n * @param {number} n\n * @return {number}\n */\nvar climbStairs = function (n) {\n    let a = 0,\n        b = 1;\n    for (let i = 0; i < n; ++i) {\n        const c = a + b;\n        a = b;\n        b = c;\n    }\n    return b;\n};",
+  "sourceRustCode": "impl Solution {\n    pub fn climb_stairs(n: i32) -> i32 {\n        let (mut p, mut q) = (1, 1);\n        for i in 1..n {\n            let t = p + q;\n            p = q;\n            q = t;\n        }\n        q\n    }\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

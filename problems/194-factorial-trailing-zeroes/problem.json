@@ -92,6 +92,9 @@
   "leetcodeMainPath": "leetcode-main/solution/0100-0199/0172.Factorial Trailing Zeroes",
   "sourcePythonCode": "class Solution:\n    def trailingZeroes(self, n: int) -> int:\n        ans = 0\n        while n:\n            n //= 5\n            ans += n\n        return ans",
   "sourceGoCode": "func trailingZeroes(n int) int {\n\tans := 0\n\tfor n > 0 {\n\t\tn /= 5\n\t\tans += n\n\t}\n\treturn ans\n}",
+  "sourceJavaCode": "class Solution {\n    public int trailingZeroes(int n) {\n        int ans = 0;\n        while (n > 0) {\n            n /= 5;\n            ans += n;\n        }\n        return ans;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int trailingZeroes(int n) {\n        int ans = 0;\n        while (n) {\n            n /= 5;\n            ans += n;\n        }\n        return ans;\n    }\n};",
+  "sourceTypescriptCode": "function trailingZeroes(n: number): number {\n    let ans = 0;\n    while (n > 0) {\n        n = Math.floor(n / 5);\n        ans += n;\n    }\n    return ans;\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

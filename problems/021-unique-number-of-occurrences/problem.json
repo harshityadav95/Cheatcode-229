@@ -98,6 +98,9 @@
   "leetcodeMainPath": "leetcode-main/solution/1200-1299/1207.Unique Number of Occurrences",
   "sourcePythonCode": "class Solution:\n    def uniqueOccurrences(self, arr: List[int]) -> bool:\n        cnt = Counter(arr)\n        return len(set(cnt.values())) == len(cnt)",
   "sourceGoCode": "func uniqueOccurrences(arr []int) bool {\n\tcnt := map[int]int{}\n\tfor _, x := range arr {\n\t\tcnt[x]++\n\t}\n\tvis := map[int]bool{}\n\tfor _, v := range cnt {\n\t\tif vis[v] {\n\t\t\treturn false\n\t\t}\n\t\tvis[v] = true\n\t}\n\treturn true\n}",
+  "sourceJavaCode": "class Solution {\n    public boolean uniqueOccurrences(int[] arr) {\n        Map<Integer, Integer> cnt = new HashMap<>();\n        for (int x : arr) {\n            cnt.merge(x, 1, Integer::sum);\n        }\n        return new HashSet<>(cnt.values()).size() == cnt.size();\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    bool uniqueOccurrences(vector<int>& arr) {\n        unordered_map<int, int> cnt;\n        for (int& x : arr) {\n            ++cnt[x];\n        }\n        unordered_set<int> vis;\n        for (auto& [_, v] : cnt) {\n            if (vis.count(v)) {\n                return false;\n            }\n            vis.insert(v);\n        }\n        return true;\n    }\n};",
+  "sourceTypescriptCode": "function uniqueOccurrences(arr: number[]): boolean {\n    const cnt: Map<number, number> = new Map();\n    for (const x of arr) {\n        cnt.set(x, (cnt.get(x) || 0) + 1);\n    }\n    return cnt.size === new Set(cnt.values()).size;\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

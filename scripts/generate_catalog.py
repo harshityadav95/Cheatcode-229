@@ -19,7 +19,21 @@ ROOT = Path(__file__).resolve().parents[1]
 PDF_NAME = "DSA_2026_BW_RENDERED_DIAGRAMS.pdf"
 LEETCODE_MAIN_SOLUTION = ROOT / "leetcode-main" / "solution"
 PROBLEMS_DIR = ROOT / "problems"
-LEETCODE_SOURCE_FIELDS = ("leetcodeMainPath", "sourcePythonCode", "sourceGoCode")
+LEETCODE_SOURCE_FIELDS = (
+    "leetcodeMainPath",
+    "sourcePythonCode",
+    "sourceGoCode",
+    "sourceJavaCode",
+    "sourceCppCode",
+    "sourceTypescriptCode",
+    "sourceJavascriptCode",
+    "sourceRustCode",
+    "sourceCsharpCode",
+    "sourceCCode",
+    "sourceKotlinCode",
+    "sourceSwiftCode",
+    "sourceSqlCode",
+)
 
 
 RAW_PROBLEMS = """
@@ -667,21 +681,35 @@ def load_leetcode_main_sources() -> dict[int, dict[str, str]]:
     if not LEETCODE_MAIN_SOLUTION.exists():
         return sources
 
+    lang_mapping = {
+        "Solution.py": "sourcePythonCode",
+        "Solution.go": "sourceGoCode",
+        "Solution.java": "sourceJavaCode",
+        "Solution.cpp": "sourceCppCode",
+        "Solution.ts": "sourceTypescriptCode",
+        "Solution.js": "sourceJavascriptCode",
+        "Solution.rs": "sourceRustCode",
+        "Solution.cs": "sourceCsharpCode",
+        "Solution.c": "sourceCCode",
+        "Solution.kt": "sourceKotlinCode",
+        "Solution.swift": "sourceSwiftCode",
+        "Solution.sql": "sourceSqlCode",
+    }
+
     for readme_path in sorted(LEETCODE_MAIN_SOLUTION.glob("*/*/README_EN.md")):
         match = re.match(r"^0*(\d+)\.", readme_path.parent.name)
         if not match:
             continue
 
         leetcode = int(match.group(1))
-        source: dict[str, str] = {
-            "leetcodeMainPath": str(readme_path.parent.relative_to(ROOT)),
-        }
-        python_path = readme_path.parent / "Solution.py"
-        go_path = readme_path.parent / "Solution.go"
-        if python_path.exists():
-            source["sourcePythonCode"] = python_path.read_text(encoding="utf-8", errors="replace").strip()
-        if go_path.exists():
-            source["sourceGoCode"] = go_path.read_text(encoding="utf-8", errors="replace").strip()
+        source = sources.get(leetcode, {})
+        source["leetcodeMainPath"] = str(readme_path.parent.relative_to(ROOT))
+
+        for filename, field in lang_mapping.items():
+            path = readme_path.parent / filename
+            if path.exists():
+                source[field] = path.read_text(encoding="utf-8", errors="replace").strip()
+
         sources[leetcode] = source
 
     return sources
@@ -1330,9 +1358,44 @@ def main() -> None:
     problems = parse_problems()
     leetcode_main_sources = load_leetcode_main_sources()
 
+    # Custom overrides for incorrect/placeholder diagrams in the source PDF
+    DIAGRAM_OVERRIDES = {
+        427: {  # Construct Quad Tree
+            "type": "tree",
+            "notes": [
+                "grid", "topLeft", "topRight", "bottomLeft", "bottomRight", "leaf", "val",
+                "Divide grid into 4 quadrants recursively; merge if all values are identical."
+            ]
+        },
+        9: {  # Palindrome Number
+            "type": "pointers",
+            "notes": [
+                "1", "2", "3", "2", "1", "match",
+                "Compare digits from both ends moving inward using left and right pointers."
+            ]
+        },
+        66: {  # Plus One
+            "type": "array",
+            "notes": [
+                "1", "2", "9", "+1", "3", "0",
+                "Traverse digits right-to-left, handling carry propagation."
+            ]
+        }
+    }
+
     for problem in problems:
         problem["videoUrl"] = youtube_video_url(problem["leetcode"], problem["title"])
         problem.update(leetcode_main_sources.get(problem["leetcode"], {}))
+
+        # Apply diagram overrides
+        lc_num = problem["leetcode"]
+        if lc_num in DIAGRAM_OVERRIDES:
+            override = DIAGRAM_OVERRIDES[lc_num]
+            problem["diagram"]["type"] = override["type"]
+            problem["diagramNotes"] = override["notes"]
+            # Recompute intuition to match new notes
+            problem["intuition"] = override["notes"][-1]
+
         problem["pythonCode"] = python_code(problem)
         problem["goCode"] = go_code(problem)
         write_problem_folder(problem)
@@ -1381,6 +1444,16 @@ export interface Problem {
   leetcodeMainPath?: string;
   sourcePythonCode?: string;
   sourceGoCode?: string;
+  sourceJavaCode?: string;
+  sourceCppCode?: string;
+  sourceTypescriptCode?: string;
+  sourceJavascriptCode?: string;
+  sourceRustCode?: string;
+  sourceCsharpCode?: string;
+  sourceCCode?: string;
+  sourceKotlinCode?: string;
+  sourceSwiftCode?: string;
+  sourceSqlCode?: string;
 }
 
 """

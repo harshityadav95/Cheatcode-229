@@ -37,7 +37,7 @@ Add one to a nonnegative integer represented as an array of decimal digits.
 
 ### Intuition
 
-discard dominated a... A safe greedy step keeps a state that is never worse for any future suffix.
+Traverse digits right-to-left, handling carry propagation.
 
 ### Brute Force Baseline
 

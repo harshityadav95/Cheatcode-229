@@ -93,6 +93,12 @@
   "leetcodeMainPath": "leetcode-main/solution/0000-0099/0055.Jump Game",
   "sourcePythonCode": "class Solution:\n    def canJump(self, nums: List[int]) -> bool:\n        mx = 0\n        for i, x in enumerate(nums):\n            if mx < i:\n                return False\n            mx = max(mx, i + x)\n        return True",
   "sourceGoCode": "func canJump(nums []int) bool {\n\tmx := 0\n\tfor i, x := range nums {\n\t\tif mx < i {\n\t\t\treturn false\n\t\t}\n\t\tmx = max(mx, i+x)\n\t}\n\treturn true\n}",
+  "sourceJavaCode": "class Solution {\n    public boolean canJump(int[] nums) {\n        int mx = 0;\n        for (int i = 0; i < nums.length; ++i) {\n            if (mx < i) {\n                return false;\n            }\n            mx = Math.max(mx, i + nums[i]);\n        }\n        return true;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    bool canJump(vector<int>& nums) {\n        int mx = 0;\n        for (int i = 0; i < nums.size(); ++i) {\n            if (mx < i) {\n                return false;\n            }\n            mx = max(mx, i + nums[i]);\n        }\n        return true;\n    }\n};",
+  "sourceTypescriptCode": "function canJump(nums: number[]): boolean {\n    let mx: number = 0;\n    for (let i = 0; i < nums.length; ++i) {\n        if (mx < i) {\n            return false;\n        }\n        mx = Math.max(mx, i + nums[i]);\n    }\n    return true;\n}",
+  "sourceJavascriptCode": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nvar canJump = function (nums) {\n    let mx = 0;\n    for (let i = 0; i < nums.length; ++i) {\n        if (mx < i) {\n            return false;\n        }\n        mx = Math.max(mx, i + nums[i]);\n    }\n    return true;\n};",
+  "sourceRustCode": "impl Solution {\n    #[allow(dead_code)]\n    pub fn can_jump(nums: Vec<i32>) -> bool {\n        let n = nums.len();\n        let mut mx = 0;\n\n        for i in 0..n {\n            if mx < i {\n                return false;\n            }\n            mx = std::cmp::max(mx, i + (nums[i] as usize));\n        }\n\n        true\n    }\n}",
+  "sourceCsharpCode": "public class Solution {\n    public bool CanJump(int[] nums) {\n        int mx = 0;\n        for (int i = 0; i < nums.Length; ++i) {\n            if (mx < i) {\n                return false;\n            }\n            mx = Math.Max(mx, i + nums[i]);\n        }\n        return true;\n    }\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

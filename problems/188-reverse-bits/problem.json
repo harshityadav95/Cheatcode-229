@@ -100,6 +100,11 @@
   "leetcodeMainPath": "leetcode-main/solution/0100-0199/0190.Reverse Bits",
   "sourcePythonCode": "class Solution:\n    def reverseBits(self, n: int) -> int:\n        ans = 0\n        for i in range(32):\n            ans |= (n & 1) << (31 - i)\n            n >>= 1\n        return ans",
   "sourceGoCode": "func reverseBits(n uint32) (ans uint32) {\n\tfor i := 0; i < 32; i++ {\n\t\tans |= (n & 1) << (31 - i)\n\t\tn >>= 1\n\t}\n\treturn\n}",
+  "sourceJavaCode": "public class Solution {\n    // you need treat n as an unsigned value\n    public int reverseBits(int n) {\n        int ans = 0;\n        for (int i = 0; i < 32 && n != 0; ++i) {\n            ans |= (n & 1) << (31 - i);\n            n >>>= 1;\n        }\n        return ans;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    uint32_t reverseBits(uint32_t n) {\n        uint32_t ans = 0;\n        for (int i = 0; i < 32 && n; ++i) {\n            ans |= (n & 1) << (31 - i);\n            n >>= 1;\n        }\n        return ans;\n    }\n};",
+  "sourceTypescriptCode": "function reverseBits(n: number): number {\n    let ans = 0;\n    for (let i = 0; i < 32 && n; ++i) {\n        ans |= (n & 1) << (31 - i);\n        n >>= 1;\n    }\n    return ans >>> 0;\n}",
+  "sourceJavascriptCode": "/**\n * @param {number} n - a positive integer\n * @return {number} - a positive integer\n */\nvar reverseBits = function (n) {\n    let ans = 0;\n    for (let i = 0; i < 32 && n; ++i) {\n        ans |= (n & 1) << (31 - i);\n        n >>= 1;\n    }\n    return ans >>> 0;\n};",
+  "sourceRustCode": "impl Solution {\n    pub fn reverse_bits(mut n: u32) -> u32 {\n        let mut ans = 0;\n        for i in 0..32 {\n            ans |= (n & 1) << (31 - i);\n            n >>= 1;\n        }\n        ans\n    }\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

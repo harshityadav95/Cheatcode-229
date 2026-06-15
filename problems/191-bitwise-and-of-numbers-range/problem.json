@@ -99,6 +99,10 @@
   "leetcodeMainPath": "leetcode-main/solution/0200-0299/0201.Bitwise AND of Numbers Range",
   "sourcePythonCode": "class Solution:\n    def rangeBitwiseAnd(self, left: int, right: int) -> int:\n        while left < right:\n            right &= right - 1\n        return right",
   "sourceGoCode": "func rangeBitwiseAnd(left int, right int) int {\n\tfor left < right {\n\t\tright &= (right - 1)\n\t}\n\treturn right\n}",
+  "sourceJavaCode": "class Solution {\n    public int rangeBitwiseAnd(int left, int right) {\n        while (left < right) {\n            right &= (right - 1);\n        }\n        return right;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int rangeBitwiseAnd(int left, int right) {\n        while (left < right) {\n            right &= (right - 1);\n        }\n        return right;\n    }\n};",
+  "sourceJavascriptCode": "/**\n * @param {number} left\n * @param {number} right\n * @return {number}\n */\nvar rangeBitwiseAnd = function (left, right) {\n    while (left < right) {\n        right &= right - 1;\n    }\n    return right;\n};",
+  "sourceCsharpCode": "public class Solution {\n    public int RangeBitwiseAnd(int left, int right) {\n        while (left < right) {\n            right &= (right - 1);\n        }\n        return right;\n    }\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

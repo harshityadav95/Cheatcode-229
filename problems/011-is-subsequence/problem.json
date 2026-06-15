@@ -98,6 +98,12 @@
   "leetcodeMainPath": "leetcode-main/solution/0300-0399/0392.Is Subsequence",
   "sourcePythonCode": "class Solution:\n    def isSubsequence(self, s: str, t: str) -> bool:\n        i = j = 0\n        while i < len(s) and j < len(t):\n            if s[i] == t[j]:\n                i += 1\n            j += 1\n        return i == len(s)",
   "sourceGoCode": "func isSubsequence(s string, t string) bool {\n\ti, j, m, n := 0, 0, len(s), len(t)\n\tfor i < m && j < n {\n\t\tif s[i] == t[j] {\n\t\t\ti++\n\t\t}\n\t\tj++\n\t}\n\treturn i == m\n}",
+  "sourceJavaCode": "class Solution {\n    public boolean isSubsequence(String s, String t) {\n        int m = s.length(), n = t.length();\n        int i = 0, j = 0;\n        while (i < m && j < n) {\n            if (s.charAt(i) == t.charAt(j)) {\n                ++i;\n            }\n            ++j;\n        }\n        return i == m;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    bool isSubsequence(string s, string t) {\n        int m = s.size(), n = t.size();\n        int i = 0, j = 0;\n        for (; i < m && j < n; ++j) {\n            if (s[i] == t[j]) {\n                ++i;\n            }\n        }\n        return i == m;\n    }\n};",
+  "sourceTypescriptCode": "function isSubsequence(s: string, t: string): boolean {\n    const m = s.length;\n    const n = t.length;\n    let i = 0;\n    for (let j = 0; i < m && j < n; ++j) {\n        if (s[i] === t[j]) {\n            ++i;\n        }\n    }\n    return i === m;\n}",
+  "sourceRustCode": "impl Solution {\n    pub fn is_subsequence(s: String, t: String) -> bool {\n        let (s, t) = (s.as_bytes(), t.as_bytes());\n        let n = t.len();\n        let mut i = 0;\n        for &c in s.iter() {\n            while i < n && t[i] != c {\n                i += 1;\n            }\n            if i == n {\n                return false;\n            }\n            i += 1;\n        }\n        true\n    }\n}",
+  "sourceCsharpCode": "public class Solution {\n    public bool IsSubsequence(string s, string t) {\n        int m = s.Length, n = t.Length;\n        int i = 0, j = 0;\n        for (; i < m && j < n; ++j) {\n            if (s[i] == t[j]) {\n                ++i;\n            }\n        }\n        return i == m;\n    }\n}",
+  "sourceCCode": "bool isSubsequence(char* s, char* t) {\n    int m = strlen(s);\n    int n = strlen(t);\n    int i = 0;\n    for (int j = 0; i < m && j < n; ++j) {\n        if (s[i] == t[j]) {\n            ++i;\n        }\n    }\n    return i == m;\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"

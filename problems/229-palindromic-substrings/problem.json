@@ -90,6 +90,9 @@
   "leetcodeMainPath": "leetcode-main/solution/0600-0699/0647.Palindromic Substrings",
   "sourcePythonCode": "class Solution:\n    def countSubstrings(self, s: str) -> int:\n        ans, n = 0, len(s)\n        for k in range(n * 2 - 1):\n            i, j = k // 2, (k + 1) // 2\n            while ~i and j < n and s[i] == s[j]:\n                ans += 1\n                i, j = i - 1, j + 1\n        return ans",
   "sourceGoCode": "func countSubstrings(s string) int {\n\tans, n := 0, len(s)\n\tfor k := 0; k < n*2-1; k++ {\n\t\ti, j := k/2, (k+1)/2\n\t\tfor i >= 0 && j < n && s[i] == s[j] {\n\t\t\tans++\n\t\t\ti, j = i-1, j+1\n\t\t}\n\t}\n\treturn ans\n}",
+  "sourceJavaCode": "class Solution {\n    public int countSubstrings(String s) {\n        int ans = 0;\n        int n = s.length();\n        for (int k = 0; k < n * 2 - 1; ++k) {\n            int i = k / 2, j = (k + 1) / 2;\n            while (i >= 0 && j < n && s.charAt(i) == s.charAt(j)) {\n                ++ans;\n                --i;\n                ++j;\n            }\n        }\n        return ans;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int countSubstrings(string s) {\n        int ans = 0;\n        int n = s.size();\n        for (int k = 0; k < n * 2 - 1; ++k) {\n            int i = k / 2, j = (k + 1) / 2;\n            while (~i && j < n && s[i] == s[j]) {\n                ++ans;\n                --i;\n                ++j;\n            }\n        }\n        return ans;\n    }\n};",
+  "sourceJavascriptCode": "/**\n * @param {string} s\n * @return {number}\n */\nvar countSubstrings = function (s) {\n    let ans = 0;\n    const n = s.length;\n    for (let k = 0; k < n * 2 - 1; ++k) {\n        let i = k >> 1;\n        let j = (k + 1) >> 1;\n        while (~i && j < n && s[i] == s[j]) {\n            ++ans;\n            --i;\n            ++j;\n        }\n    }\n    return ans;\n};",
   "files": {
     "python": "code.py",
     "go": "code.go"

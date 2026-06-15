@@ -97,6 +97,11 @@
   "leetcodeMainPath": "leetcode-main/solution/1700-1799/1732.Find the Highest Altitude",
   "sourcePythonCode": "class Solution:\n    def largestAltitude(self, gain: List[int]) -> int:\n        return max(accumulate(gain, initial=0))",
   "sourceGoCode": "func largestAltitude(gain []int) (ans int) {\n\th := 0\n\tfor _, v := range gain {\n\t\th += v\n\t\tif ans < h {\n\t\t\tans = h\n\t\t}\n\t}\n\treturn\n}",
+  "sourceJavaCode": "class Solution {\n    public int largestAltitude(int[] gain) {\n        int ans = 0, h = 0;\n        for (int v : gain) {\n            h += v;\n            ans = Math.max(ans, h);\n        }\n        return ans;\n    }\n}",
+  "sourceCppCode": "class Solution {\npublic:\n    int largestAltitude(vector<int>& gain) {\n        int ans = 0, h = 0;\n        for (int v : gain) h += v, ans = max(ans, h);\n        return ans;\n    }\n};",
+  "sourceJavascriptCode": "/**\n * @param {number[]} gain\n * @return {number}\n */\nvar largestAltitude = function (gain) {\n    let ans = 0;\n    let h = 0;\n    for (const v of gain) {\n        h += v;\n        ans = Math.max(ans, h);\n    }\n    return ans;\n};",
+  "sourceRustCode": "impl Solution {\n    pub fn largest_altitude(gain: Vec<i32>) -> i32 {\n        let mut ans = 0;\n        let mut h = 0;\n        for v in gain.iter() {\n            h += v;\n            ans = ans.max(h);\n        }\n        ans\n    }\n}",
+  "sourceCCode": "#define max(a, b) (((a) > (b)) ? (a) : (b))\n\nint largestAltitude(int* gain, int gainSize) {\n    int ans = 0;\n    int h = 0;\n    for (int i = 0; i < gainSize; i++) {\n        h += gain[i];\n        ans = max(ans, h);\n    }\n    return ans;\n}",
   "files": {
     "python": "code.py",
     "go": "code.go"
