@@ -1,0 +1,232 @@
+<h2 id="solution" level="2" class="group/heading relative"><a href="#solution" class="absolute -translate-y-1/2 cursor-pointer pr-0.5 text-xs !text-sd-muted-foreground opacity-0 right-full top-1/2 group-hover/heading:opacity-100" aria-hidden="true" tabindex="-1"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link absolute h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em] left-1/2 top-1/2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" spacing="square"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg></div></a>Solution</h2>
+<hr>
+<h3 id="overview" level="3" class="group/heading relative"><a href="#overview" class="absolute -translate-y-1/2 cursor-pointer pr-0.5 text-xs !text-sd-muted-foreground opacity-0 right-full top-1/2 group-hover/heading:opacity-100" aria-hidden="true" tabindex="-1"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link absolute h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em] left-1/2 top-1/2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" spacing="square"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg></div></a>Overview</h3>
+<p>In this problem, we are looking for the Greatest Common Divisor of two strings, which for convenience we will consider as the <strong>GCD string</strong>. To remove ambiguity, here we regard:</p>
+<ul>
+<li>all strings that divides both str1 and str2 as <strong>divisible strings</strong>.</li>
+<li>the longest string among all <strong>divisible strings</strong> as the <strong>GCD string</strong>.</li>
+</ul>
+<hr>
+<h3 id="approach-1-brute-force" level="3" class="group/heading relative"><a href="#approach-1-brute-force" class="absolute -translate-y-1/2 cursor-pointer pr-0.5 text-xs !text-sd-muted-foreground opacity-0 right-full top-1/2 group-hover/heading:opacity-100" aria-hidden="true" tabindex="-1"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link absolute h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em] left-1/2 top-1/2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" spacing="square"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg></div></a>Approach 1: Brute Force</h3>
+<h4 id="intuition">Intuition</h4>
+<p>We start by introducing a brute force method that checks every possible string until we find the GCD string. Before we do that, let's clarify a few things:</p>
+<blockquote>
+<p>What are the possible candidate strings?</p>
+</blockquote>
+<p>Here we make use of prefix strings. If a string <code>base</code> is the GCD string, it must be a prefix of both <code>str1</code> and <code>str2</code>. So instead of trying every combination of characters, we instead just take each prefix string of <code>str1</code> (or <code>str2</code>) and check if it is the GCD string.</p>
+<blockquote>
+<p>What is the order we should check in?</p>
+</blockquote>
+<p>As the problem indicates that we should look for the greatest common divisor string (longest length), we should start with the longest possible prefix string, which is the shorter string between <code>str1</code> and <code>str2</code> (any longer string is guaranteed not to be a divisible string since it will be longer than at least one string). If the current <code>base</code> is not valid, we can check the next shorter prefix by removing the last character from <code>base</code>.</p>
+<p><img alt="img" src="../Figures/1071/bf1.png"></p>
+<blockquote>
+<p>How to verify if <code>base</code> is the GCD string?</p>
+</blockquote>
+<p>If <code>base</code> is the GCD string, then both <code>str1</code> and <code>str2</code> are made up of multiples of <code>base</code>, so we just need to check if <code>str1</code> and <code>str2</code> can be made up of multiple <code>base</code> concatenations. We first check if the length of <code>str</code> is divisible by the length of <code>base</code>. If so, we multiply <code>base</code> by the number of times the lengths divide and check if the made-up string equals <code>str</code>.</p>
+<p><img alt="img" src="../Figures/1071/bf2.png"></p>
+<br>
+<h4 id="algorithm">Algorithm</h4>
+<ol>
+<li data-length="1">
+<p>Find the shorter string among <code>str1</code> and <code>str2</code>, without loss of generality, let it be <code>str1</code>.</p>
+</li>
+<li data-length="1">
+<p>Start with <code>base = str1</code>, and check if both <code>str1</code> and <code>str2</code> are made of multiples of <code>base</code>.</p>
+<ul>
+<li>If so, return <code>base</code>.</li>
+<li>Otherwise, we shall try a shorter string by removing the last character from <code>base</code>.</li>
+</ul>
+</li>
+<li data-length="1">
+<p>If we have checked all prefix strings without finding the GCD string, return <code>""</code>.</p>
+</li>
+</ol>
+<h4 id="implementation">Implementation</h4>
+<div class="editorial-code-block border border-slate-200 dark:border-slate-800 rounded-lg overflow-hidden my-4">
+  <div class="bg-slate-50 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 py-2 text-xs font-semibold text-slate-500 dark:text-slate-400">
+    Solutions
+  </div>
+  <details open="" class="border-b border-slate-200 dark:border-slate-800 last:border-b-0">
+    <summary class="px-4 py-2 bg-slate-50 dark:bg-slate-900 font-semibold text-xs cursor-pointer select-none border-b border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/50">C++</summary>
+    <pre class="p-4 bg-slate-100 dark:bg-slate-950 font-mono text-xs overflow-x-auto text-slate-800 dark:text-slate-200"><code>class Solution {
+public:
+    bool valid(string str1, string str2, int k) {
+        int len1 = str1.size(), len2 = str2.size();
+        if (len1 % k &gt; 0 || len2 % k &gt; 0) {
+            return false;
+        } else {
+            string base = str1.substr(0, k);
+            int n1 = len1 / k, n2 = len2 / k;
+            return str1 == joinWords(base, n1) &amp;&amp; str2 == joinWords(base, n2);
+        }
+    }
+    string joinWords(string str, int k) {
+        string ans = "";
+        for (int i = 0; i &lt; k; ++i) {
+            ans += str;
+        }
+        return ans;
+    }
+    
+    
+    string gcdOfStrings(string str1, string str2) {
+        int len1 = str1.length(), len2 = str2.length();
+        for (int i = min(len1, len2); i &gt;= 1; --i) {
+            if (valid(str1, str2, i)) {
+                return str1.substr(0, i);
+            }
+        }
+        return "";
+    }
+};</code></pre>
+  </details>
+  <details class="border-b border-slate-200 dark:border-slate-800 last:border-b-0">
+    <summary class="px-4 py-2 bg-slate-50 dark:bg-slate-900 font-semibold text-xs cursor-pointer select-none border-b border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/50">Java</summary>
+    <pre class="p-4 bg-slate-100 dark:bg-slate-950 font-mono text-xs overflow-x-auto text-slate-800 dark:text-slate-200"><code>class Solution {
+    public boolean valid(String str1, String str2, int k) {
+        int len1 = str1.length(), len2 = str2.length();
+        if (len1 % k &gt; 0 || len2 % k &gt; 0) {
+            return false;
+        } else {
+            String base = str1.substring(0, k);
+            return str1.replace(base, "").isEmpty() &amp;&amp; str2.replace(base, "").isEmpty();
+        }
+    }
+    
+    
+    public String gcdOfStrings(String str1, String str2) {
+        int len1 = str1.length(), len2 = str2.length();
+        for (int i = Math.min(len1, len2); i &gt;= 1; --i) {
+            if (valid(str1, str2, i)) {
+                return str1.substring(0, i);
+            }
+        }
+        return "";
+    }
+}</code></pre>
+  </details>
+  <details class="border-b border-slate-200 dark:border-slate-800 last:border-b-0">
+    <summary class="px-4 py-2 bg-slate-50 dark:bg-slate-900 font-semibold text-xs cursor-pointer select-none border-b border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/50">Python3</summary>
+    <pre class="p-4 bg-slate-100 dark:bg-slate-950 font-mono text-xs overflow-x-auto text-slate-800 dark:text-slate-200"><code>
+class Solution:
+    def gcdOfStrings(self, str1: str, str2: str) -&gt; str:
+        len1, len2 = len(str1), len(str2)
+        
+        def valid(k):
+            if len1 % k or len2 % k: 
+                return False
+            n1, n2 = len1 // k, len2 // k
+            base = str1[:k]
+            return str1 == n1 * base and str2 == n2 * base 
+        
+        for i in range(min(len1, len2), 0, -1):
+            if valid(i):
+                return str1[:i]
+        return ""</code></pre>
+  </details></div>
+<h4 id="complexity-analysis">Complexity Analysis</h4>
+<p>Let <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.625em; vertical-align: -0.1944em;"></span><span class="mord mathnormal">m</span><span class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span></span></span></span></span> be the lengths of the two input strings <code>str1</code> and <code>str2</code>.</p>
+<ul>
+<li>
+<p>Time complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mop">min</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mclose">))</span></span></span></span></span><br>
+We checked every prefix string <code>base</code> of the shorter string among <code>str1</code> and <code>str2</code>, and verify if both strings are made by multiples of <code>base</code>. There are up to <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mop">min</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span> prefix strings to verify and each check involves iterating over the two input strings to check if the current <code>base</code> is the GCD string, which costs <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span>. Therefore, the overall time complexity is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mop">min</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mclose">))</span></span></span></span></span>.</p>
+</li>
+<li>
+<p>Space complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mop">min</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">))</span></span></span></span></span><br>
+We need to keep a copy of <code>base</code> in each iteration, which takes <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mop">min</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">))</span></span></span></span></span> space.</p>
+<br>
+</li>
+</ul>
+<hr>
+<h3 id="approach-2-greatest-common-divisor" level="3" class="group/heading relative"><a href="#approach-2-greatest-common-divisor" class="absolute -translate-y-1/2 cursor-pointer pr-0.5 text-xs !text-sd-muted-foreground opacity-0 right-full top-1/2 group-hover/heading:opacity-100" aria-hidden="true" tabindex="-1"><div class="relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link absolute h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em] left-1/2 top-1/2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" spacing="square"><path fill="currentColor" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg></div></a>Approach 2: Greatest Common Divisor</h3>
+<h4 id="intuition-1">Intuition</h4>
+<p>Here is a more mathematical approach to the problem. Note that this approach is more advanced/elegant and you should not feel discouraged if you do not come up with it on the spot in an interview.</p>
+<p><strong>1. How to verify if there exists any divisible string?</strong></p>
+<p>Suppose there exists a divisible string <code>base</code>, we can write <code>str1</code> and <code>str2</code> in the form of multiples of <code>base</code>. Take the following picture as an example.</p>
+<p><img alt="img" src="../Figures/1071/gcd1.png"></p>
+<p>Since both strings contains multiples of the identical segment <code>base</code>, their concatenation must be consistent, regardless of the order <code>(str1 + str2 = str2 + str1)</code>.</p>
+<p><img alt="img" src="../Figures/1071/gcd2.png"></p>
+<p>Therefore, we need to check if two concatenations made by <code>str1</code> and <code>str2</code> in both orders are the same. If they are not consistent, it means there is no divisible strings and we should return <code>""</code> as required. Otherwise, there exists a GCD string of <code>str1</code> and <code>str2</code>.</p>
+<p><strong>2. If there are divisible strings, what is the length of the GCD string?</strong></p>
+<p>We focus on the substring <code>gcdBase</code> whose length equals the greatest common divisor of the lengths of <code>str1</code> and <code>str2</code> (take the above picture as an example, the lengths of <code>str1</code> and <code>str2</code> are <code>9</code> and <code>6</code>, so we focus on the substring of length <code>3</code>, which is <code>gcdBase = ABC</code>). We will show that if there exists divisible strings, then the <code>gcdBase</code> must be the GCD string.</p>
+<p>For convenience, we refer to the length of <code>str1</code>, <code>str2</code> and <code>gcdBase</code> as <code>m</code>, <code>n</code>, <code>gcdLength</code> respectively.</p>
+<blockquote>
+<p>Is it possible for the GCD string to be shorter than <code>gcdBase</code>?</p>
+</blockquote>
+<p>No. We can prove it by contradiction. Assume that a string <code>shorterBase</code> is shorter than <code>gcdBase</code> (<code>shorterLength &lt; gcdLength</code>, and <code>gcdBase</code> is not the GCD string).</p>
+<ul>
+<li>
+<p><code>shorterBase</code> is a divisible string, thus <code>shorterLength</code> is a divisor of <code>m</code> and <code>n</code>.</p>
+</li>
+<li>
+<p>Since <code>gcdLength</code> is the greatest common divisor of <code>m</code> and <code>n</code>, <code>gcdLength</code> is divisible by <code>shorterLength</code>.</p>
+</li>
+<li>
+<p>Both <code>str1</code> and <code>str2</code> contains multiples of <code>gcdBase</code>, so <code>gcdBase</code> is also a divisible string, which means that the GCD string is at least as long as <code>gcdBase</code>.</p>
+</li>
+<li>
+<p>Therefore it is not possible for the GCD string to be shorter than <code>gcdBase</code>.</p>
+</li>
+</ul>
+<p>Let's look at the following example where <code>gcdBase = ABCABC</code>. Note that we are not sure if <code>gcdBase</code> is the GCD string yet.</p>
+<p><img alt="img" src="../Figures/1071/exp_2.png"></p>
+<p>There exists a shorter substring <code>shorterBase = ABC</code> which divides both <code>str1</code> and <code>str2</code>. Can this divisible string be the GCD of strings?</p>
+<p><img alt="img" src="../Figures/1071/exp_3.png"></p>
+<p>Both <code>str1</code> and <code>str2</code> contain multiples of <code>shorterBase</code>.</p>
+<p><img alt="img" src="../Figures/1071/exp_4.png"></p>
+<p>Recall that the length of <code>gcdBase</code> is the GCD of the lengths of <code>str1</code> and <code>str2</code>, thus it is divisible by the length of <code>shorterBase</code>.</p>
+<p><img alt="img" src="../Figures/1071/exp_5.png"></p>
+<p>Since <code>gcdLength</code> is a divisor of both <code>m</code> and <code>n</code>, both <code>str1</code> and <code>str2</code> contain multiples of <code>gcdBase</code>, thus <code>gcdBase</code> is also a divisible string.</p>
+<p><img alt="img" src="../Figures/1071/exp_6.png"></p>
+<p>We have shown that if there is a shorter string that divides both str1 and str2, then <code>gcdBase</code> is also a divisible string, so a divisible string shorter than <code>gcdBase</code> can never be the GCD  string.</p>
+<blockquote>
+<p>Is it possible for the a string longer than <code>gcdBase</code> to be divisible, and thus <code>gcdBase</code> is not the GCD string?</p>
+</blockquote>
+<p>No. Assume that there exists a string <code>longerBase</code> that is a divisible string with length <code>longerLength &gt; gcdLength</code>,</p>
+<ul>
+<li>
+<p>Since <code>longerBase</code> is a divisible string, its length <code>longerLength</code> must be a divisor of <code>m</code> and <code>n</code>.</p>
+</li>
+<li>
+<p>This contradicts the assumption that <code>gcdLength</code> is the GCD of <code>m</code> and <code>n</code>.</p>
+</li>
+<li>
+<p>Therefore there doesn't exist a divisible string longer than <code>gcdBase</code>.</p>
+</li>
+</ul>
+<p><strong>In conclusion, if there exists divisible strings, the GCD string must be <code>gcdBase</code>.</strong></p>
+<br>
+<h4 id="algorithm-1">Algorithm</h4>
+<ol>
+<li data-length="1">
+<p>Check if the concatenations of <code>str1</code> and <code>str2</code> in different orders are the same.</p>
+<ul>
+<li>If not, return <code>""</code>.</li>
+</ul>
+</li>
+<li data-length="1">
+<p>Get the GCD <code>gcdLength</code> of the two lengths of <code>str1</code> and <code>str2</code>.</p>
+</li>
+<li data-length="1">
+<p>Return the prefix string with a length of <code>gcdLength</code> of either <code>str1</code> or <code>str2</code> as the answer.</p>
+</li>
+</ol>
+<h4 id="implementation-1">Implementation</h4>
+
+<h4 id="complexity-analysis-1">Complexity Analysis</h4>
+<p>Let <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.625em; vertical-align: -0.1944em;"></span><span class="mord mathnormal">m</span><span class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span></span></span></span></span> be the lengthes of the two input strings <code>str1</code> and <code>str2</code>.</p>
+<ul>
+<li>
+<p>Time complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span></p>
+<ul>
+<li>We need to compare the two concatenations of length <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span>, it takes <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span> time.</li>
+<li>We calculate the GCD using binary Euclidean algorithm, it takes <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mop">lo<span style="margin-right: 0.01389em;">g</span></span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span> time.</li>
+<li>To sum up, the overall time complexity is <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span>.</li>
+</ul>
+</li>
+<li>
+<p>Space complexity: <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span><br>
+We need to compare the two concatenations of length <span class="math math-inline"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span>.</p>
+</li>
+</ul>
+<br>

@@ -1,0 +1,33 @@
+import { chromium } from 'playwright';
+import fs from 'fs';
+
+async function run() {
+  const browser = await chromium.launch({ headless: true });
+  const page = await browser.newPage();
+  try {
+    const url = 'https://leetcode.com/problems/greatest-common-divisor-of-strings/editorial/';
+    console.log(`Navigating to ${url}...`);
+    await page.setExtraHTTPHeaders({
+      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    });
+    await page.goto(url, { waitUntil: 'domcontentloaded' });
+    await page.waitForTimeout(7000);
+    
+    const frames = page.frames();
+    const playgroundFrames = frames.filter(f => f.url().includes('/playground/'));
+    console.log(`Found ${playgroundFrames.length} playground frames.`);
+    
+    if (playgroundFrames.length > 0) {
+      const frame = playgroundFrames[0];
+      const innerHTML = await frame.evaluate(() => document.body.innerHTML);
+      fs.writeFileSync('scripts/iframe_inner_debug.html', innerHTML);
+      console.log("Saved inner HTML. Length:", innerHTML.length);
+    }
+  } catch (err) {
+    console.error("Error:", err);
+  } finally {
+    await browser.close();
+  }
+}
+
+run();

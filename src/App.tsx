@@ -70,6 +70,7 @@ interface ImportedProblemDetail extends ImportedProblemIndex {
   descriptionHtml: string
   solutionText: string
   solutionMarkdown: string
+  editorialHtml?: string
   code: Record<string, { label: string; language: string; code: string }>
   sourcePath: string
 }
@@ -1916,9 +1917,16 @@ function ImportedEditorialPane({ detail, loading }: { detail: ImportedProblemDet
         </CardTitle>
       </CardHeader>
       <CardContent className="p-4 sm:p-5">
-        <p className="whitespace-pre-wrap text-sm leading-7 text-[#333b48] dark:text-slate-300">
-          {detail.solutionText || 'No editorial text was included in the imported source.'}
-        </p>
+        {detail.editorialHtml ? (
+          <div
+            className="leetcode-html min-w-0 leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: detail.editorialHtml }}
+          />
+        ) : (
+          <p className="whitespace-pre-wrap text-sm leading-7 text-[#333b48] dark:text-slate-300">
+            {detail.solutionText || 'No editorial text was included in the imported source.'}
+          </p>
+        )}
       </CardContent>
     </Card>
   )
@@ -2360,12 +2368,12 @@ function SolutionCodePanel({ snippets }: { snippets: CodeSnippet[] }) {
       <CardContent className="p-3 sm:p-4">
         {snippets.length > 0 ? (
           <Tabs defaultValue={defaultValue}>
-            <TabsList className="flex flex-wrap h-auto group-data-horizontal/tabs:h-auto w-full bg-[#f2f3f5] p-1 gap-1 justify-start dark:bg-slate-900">
+            <TabsList className="flex flex-wrap h-auto !h-auto group-data-horizontal/tabs:!h-auto w-full bg-[#f2f3f5] p-1 gap-1 justify-start dark:bg-slate-900">
               {snippets.map((snippet) => (
                 <TabsTrigger
                   key={snippet.label}
                   value={snippet.label}
-                  className="min-h-8 text-xs sm:text-sm px-3 sm:px-4 flex-initial"
+                  className="h-8 !h-8 text-xs sm:text-sm px-3 sm:px-4 flex-initial"
                 >
                   {snippet.label}
                 </TabsTrigger>
